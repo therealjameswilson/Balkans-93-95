@@ -117,6 +117,131 @@ function formatNumber(value) {
   return Number(value || 0).toLocaleString("en-US");
 }
 
+function itemIdFromUrl(url = "") {
+  const itemMatch = url.match(/\/items\/show\/([^/?#]+)/);
+  if (itemMatch) return `item ${itemMatch[1]}`;
+
+  const catalogMatch = url.match(/\/id\/([^/?#]+)/);
+  if (catalogMatch) return `NAID ${catalogMatch[1]}`;
+
+  return "";
+}
+
+function repositoryLabel(record) {
+  const sourceUrl = `${record.url || ""} ${record.sourcePdfUrl || ""}`;
+  if (/catalog\.archives\.gov|NARAprodstorage/i.test(sourceUrl)) {
+    return "National Archives and Records Administration, National Archives Catalog";
+  }
+
+  return "William J. Clinton Presidential Library, Clinton Digital Library";
+}
+
+function normalizedIdentifier(identifier = "") {
+  return identifier.replace(/\s+\/\s+/g, "; ");
+}
+
+function locatorLabel(record) {
+  const itemId = itemIdFromUrl(record.url);
+  const control = normalizedIdentifier(record.identifier);
+  if (itemId && control.includes(itemId)) return "";
+  return itemId;
+}
+
+function sentenceCase(value = "") {
+  return value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : value;
+}
+
+function sourcePdfLabel(record) {
+  if (isDirectItem(record)) {
+    return `direct embedded PDF, pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}`;
+  }
+
+  if (record.sourcePdfPages) {
+    return `source packet PDF, pp. ${record.sourcePdfPages}; document-level PDF extracted for review`;
+  }
+
+  return "PDF locator recorded; source page range pending";
+}
+
+function localExtractLabel(record) {
+  if (!isExtractedDocument(record)) return "direct item PDF";
+  if (!record.localPdfPageCount) return "local extracted PDF";
+  return `${record.localPdfPageCount} local PDF pages, including any provenance marker pages`;
+}
+
+function sourceNoteDraft(record) {
+  const control = normalizedIdentifier(record.identifier);
+  const itemId = locatorLabel(record);
+  const citationStem = [repositoryLabel(record), record.collection, control, itemId].filter(Boolean).join(", ");
+  const sourcePdf = sentenceCase(sourcePdfLabel(record));
+  const reviewClause =
+    "Original classification/handling, drafting or notetaker data, distribution/clearance, annotations, attachments, and excisions require PDF-level verification before final FRUS selection.";
+
+  return `Source: ${citationStem}. ${sourcePdf}. ${reviewClause}`;
+}
+
+function citationOpenItems(record) {
+  const items = [
+    "classification/handling controls",
+    record.kind === "Telcon" ? "call metadata and notetakers" : "meeting place/time, participants, and notetakers",
+    "drafting, clearance, approval, and distribution lines",
+    "principal annotations, attachments not printed, and related documents",
+    "excisions and withheld-text accounting"
+  ];
+  return items.join("; ");
+}
+
+function citationRows(record) {
+  return [
+    {
+      label: "Repository / custody",
+      value: repositoryLabel(record),
+      status: "Ready"
+    },
+    {
+      label: "Collection / control",
+      value: [record.collection, normalizedIdentifier(record.identifier)].filter(Boolean).join(", "),
+      status: "Ready"
+    },
+    {
+      label: "Record locator",
+      value: [locatorLabel(record), record.url].filter(Boolean).join("; "),
+      status: "Ready"
+    },
+    {
+      label: "PDF / page range",
+      value: `${sourcePdfLabel(record)}; ${pageLabel(record.pageCount)} counted as conversation text; ${localExtractLabel(record)}.`,
+      status: "Ready"
+    },
+    {
+      label: "Classification / handling",
+      value: "Extract from original markings in the PDF header or face sheet, then place immediately after the source locator.",
+      status: "PDF"
+    },
+    {
+      label: "Drafting / clearance / distribution",
+      value:
+        "Capture drafter, notetaker, clearance, approval, distribution, sent/received, and read-status lines where present.",
+      status: "PDF"
+    },
+    {
+      label: "Meeting / call metadata",
+      value: `${record.kind}; ${record.date}; counterpart: ${record.counterpart}. Verify place, exact time, participants, and time zone against the PDF.`,
+      status: "Check"
+    },
+    {
+      label: "Annotations / attachments",
+      value: "Check for marginalia, handwritten action notes, attached tabs, and documents that should be noted as attached but not printed.",
+      status: "PDF"
+    },
+    {
+      label: "Declassification accounting",
+      value: `Retain ${pageLabel(record.pageCount)} and source pp. ${record.sourcePdfPages || "pending"}; add excisions, deletion counts, and wholly withheld cross-references after review.`,
+      status: "Partial"
+    }
+  ];
+}
+
 function renderStats(data) {
   const conversations = conversationRecords(data);
 
@@ -332,9 +457,9 @@ function renderFrusMethod(data) {
       chronologyMeasure
     ),
     methodCard(
-      "First Footnote Prep",
+      "Source Note Drafts",
       "Partial",
-      "Each card preserves custody and source-page evidence; original classification, distribution, drafting, and read-status fields still need transcript-level extraction.",
+      "Each card now starts its candidate note in FRUS order: repository, collection/control number, record locator, PDF source pages, then original-document metadata to verify.",
       `${sourceNotes.length}/${conversations.length} candidate source notes; ${sourceRanges.length}/${conversations.length} source page ranges.`
     ),
     methodCard(
@@ -400,40 +525,49 @@ function renderReadinessPanel(data) {
 
 function renderSourceNotePanel(data) {
   const conversations = conversationRecords(data);
+  const locatorReady = conversations.filter((record) => record.collection && record.identifier && record.url).length;
+  const pageReady = conversations.filter((record) => record.pageCount && record.sourcePdfPages).length;
+  const meetingReady = conversations.filter((record) => record.date && record.counterpart && record.kind).length;
   const heading = document.createElement("h3");
-  heading.textContent = "First-Footnote Worklist";
+  heading.textContent = "Source Note Worklist";
   const list = document.createElement("div");
   list.className = "source-note-list";
   list.append(
     readinessRow(
-      "Source and custody",
+      "Source and locator stem",
       "Ready",
-      `${conversations.filter((record) => record.collection && record.identifier).length}/${conversations.length}`,
-      "Collection, identifier, record URL, PDF URL, and source pages are retained on the cards."
+      `${locatorReady}/${conversations.length}`,
+      "Candidate notes begin with repository, collection, control number, item or NAID, and the record URL in the order used by FRUS source notes."
     ),
     readinessRow(
-      "Original classification",
+      "PDF page accounting",
+      pageReady === conversations.length ? "Ready" : "Partial",
+      `${pageReady}/${conversations.length}`,
+      "The cards preserve source packet pages, counted conversation pages, and whether the displayed PDF is direct or locally extracted."
+    ),
+    readinessRow(
+      "Classification / handling controls",
       "Next",
       "PDF/OCR",
-      "Extract classification markings from each PDF before moving a document into a draft selection list."
+      "FRUS notes place markings such as classification and handling controls immediately after the locator; extract these from the PDF header or face sheet."
     ),
     readinessRow(
-      "Distribution and drafting",
+      "Drafting / clearance / distribution",
       "Next",
       "PDF/OCR",
-      "Capture drafter, participants, distribution, and notetaker lines where present."
+      "Record drafter, clearance, approval, distribution, notetaker, sent/received, and read-status lines where the original carries them."
     ),
     readinessRow(
-      "Principal read-status",
-      "Next",
-      "Manual",
-      "Flag whether the President or major policy advisers read or acted on the document."
+      "Meeting / call metadata",
+      "Partial",
+      `${meetingReady}/${conversations.length}`,
+      "Each lead has date, type, and counterpart; verify place, exact time, participants, and time zone against the PDF text."
     ),
     readinessRow(
-      "Excisions and withheld text",
+      "Annotations, attachments, excisions",
       "Next",
       "Manual",
-      "Record line/page deletions and wholly withheld documents in chronological place."
+      "Add marginalia, attached-but-not-printed tabs, related documents, deletion counts, and wholly withheld cross-references in the final note."
     )
   );
 
@@ -512,25 +646,30 @@ function sourceNoteDetails(record) {
   const details = document.createElement("details");
   details.className = "source-note-details";
   const summary = document.createElement("summary");
-  summary.textContent = "FRUS source-note prep";
+  summary.textContent = "FRUS-style source note";
 
-  const list = document.createElement("ul");
-  const items = [
-    ["Candidate source", record.sourceNote || `${record.collection}, ${record.identifier}.`],
-    ["Placement", "Use conversation date/time for chronology; verify Washington time if the document records a different local time."],
-    ["Page accounting", `${pageLabel(record.pageCount)}${record.sourcePdfPages ? `; source pages ${record.sourcePdfPages}` : ""}.`],
-    ["Before selection", "Extract original classification, distribution, drafting/notetaker metadata, read-status, and any excision or withheld-text notation."]
-  ];
+  const draft = document.createElement("p");
+  draft.className = "source-note-draft";
+  draft.textContent = sourceNoteDraft(record);
 
-  for (const [label, value] of items) {
-    const li = document.createElement("li");
-    const strong = document.createElement("strong");
-    strong.textContent = `${label}: `;
-    li.append(strong, document.createTextNode(value));
-    list.append(li);
+  const ledger = document.createElement("dl");
+  ledger.className = "citation-ledger";
+
+  for (const row of citationRows(record)) {
+    const item = document.createElement("div");
+    item.className = "citation-ledger-row";
+    const term = document.createElement("dt");
+    term.textContent = row.label;
+    const definition = document.createElement("dd");
+    const status = document.createElement("span");
+    status.className = `citation-status ${row.status.toLowerCase()}`;
+    status.textContent = row.status;
+    definition.append(status, document.createTextNode(row.value));
+    item.append(term, definition);
+    ledger.append(item);
   }
 
-  details.append(summary, list);
+  details.append(summary, draft, ledger);
   return details;
 }
 
@@ -685,8 +824,11 @@ function exportFilteredConversations(data) {
     "collection",
     "pageCount",
     "sourcePdfPages",
+    "sourcePdfUrl",
     "pdfUrl",
     "recordUrl",
+    "frusStyleSourceNoteDraft",
+    "citationOpenItems",
     "compilerUse"
   ];
   const rows = filteredConversations(data).map((record) => [
@@ -698,8 +840,11 @@ function exportFilteredConversations(data) {
     record.collection,
     record.pageCount,
     record.sourcePdfPages,
+    record.sourcePdfUrl || "",
     record.pdfUrl,
     record.url,
+    sourceNoteDraft(record),
+    citationOpenItems(record),
     record.compilerUse
   ]);
   const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");

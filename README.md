@@ -26,6 +26,11 @@ published "About the Series" guidance for FRUS production:
 - A FRUS production-readiness console maps the evidence to Office of the
   Historian expectations for comprehensive coverage, chronological placement,
   first-footnote/source-note metadata, and declassification accounting.
+- The memcon/telcon cards now draft citation stems in the same order used by
+  FRUS source notes in Volume XXXI: repository/custody, collection or control
+  number, item/NAID locator, PDF page range, then original classification,
+  handling controls, drafting/clearance/distribution, annotations, attachments,
+  and declassification/excision accounting to verify from the PDF.
 - `data/compiler-map.json` is the canonical data file.
 - `data/compiler-map.js` mirrors the same data for direct filesystem preview.
 - `assets/balkans-compiler-map.svg` is the local visual asset used in the hero.
@@ -76,9 +81,11 @@ counted conversation pages. Every displayed conversation card has a PDF link,
 source-page metadata, and provenance labeling that distinguishes direct Clinton
 Library item PDFs from locally extracted packet documents.
 
-The memcon/telcon table can also export the active filtered set as CSV, and each
-conversation card contains a collapsed source-note prep block for the metadata a
-FRUS compiler needs before moving a document into a draft selection list.
+The memcon/telcon table can also export the active filtered set as CSV. Each
+conversation card contains a collapsed FRUS-style source-note block with a draft
+`Source:` note, a locator/page ledger, and open PDF-level checks for
+classification, handling controls, drafting, clearance, distribution, marginalia,
+attachments not printed, and excisions.
 
 ## Local Preview
 
