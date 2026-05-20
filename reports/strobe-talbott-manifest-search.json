@@ -1,0 +1,1078 @@
+{
+  "generatedAt": "2026-05-19T21:51:56.710Z",
+  "source": "https://therealjameswilson.github.io/strobe-talbott-foia/data/manifest_enriched.csv",
+  "manifestUrl": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
+  "rowCount": 1474,
+  "matchedCount": 67,
+  "buckets": {
+    "inVolumeConversations": 0,
+    "inVolumeContext": 4,
+    "postVolumeFollowOn": 47,
+    "undatedOrContext": 16
+  },
+  "records": [
+    {
+      "documentId": "C09000039",
+      "date": "5/8/1998",
+      "year": 1998,
+      "title": "OFFICIAL INFORMAL - DRAFT MEMCON OF IVANOV MEETING",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "description": "State Department FOIA record C09000039, dated 5/8/1998, released in the Mar 2025 FOIA Library release, is titled \"OFFICIAL INFORMAL - DRAFT MEMCON OF IVANOV MEETING\". The released text begins: \"ACCOMPANYING IVANOV WAS NORTH AMERICAN AFFAIRS @INFO: PRT(01) SSO(01) DIRBCTOR VASILIY SREDIN, THIRD EUROPEAN DEPARTMENT 080719L MAY 98 DMO (TOTAL COPIBS:003) DEPUTY DIRBCTOR TOLKACH, AND DESK OFFICER FOR THE FORMER YUGOSLAVIA ALEKSANDR ST… ACCOMPANYING THE DEPUTY SECRETARY WERE EMBASSY MOSCOW ACTING DCM JOHN ORDWAY AND POLOFF (NOTETAKER).\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 18,
+      "matchedTerms": [
+        "yugoslav"
+      ],
+      "conversationTerms": [
+        "memcon",
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000045",
+      "date": "7/12/1997",
+      "year": 1997,
+      "title": "MEMORANDUM OF CONVERSATION BETWEEN SECRETARY OF STATE ALBRIGHT AND RUSSIAN FOREIGN MINISTER PRIMAKOV RUSSIA: ST. PETERSBURG JULY 12, 1997 AT DINNER IN \"NOBLES' NEST\" RESTAURANT (DVORYANSKOYE GNEZDO) BOSNIA w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000045/C09000045.pdf",
+      "description": "State Department FOIA record C09000045, dated 7/12/1997, released in the Oct 2024 FOIA Library release, is titled \"MEMORANDUM OF CONVERSATION BETWEEN SECRETARY OF STATE ALBRIGHT AND RUSSIAN FOREIGN MINISTER PRIMAKOV RUSSIA: ST. PETERSBURG JULY 12, 1997 AT DINNER IN \"NOBLES' NEST\" RESTAURANT (DVORYANSKOYE GNEZDO) BOSNIA w/Attachment(s)\". The released text begins: \"URG JULY PETERSBURG 12, 1997 JULY 12, 1997 ovC AT DINNER IN AT DINNER \"NOBLES'' NEST\" IN \"NOBLES RESTAU RANT (DVORY ANSKOY E NEST\" RESTAURANT (DVORYANSKOYE GNEZDO GNEZDO)) / BOSNIA BOSNIA S'( Primakov Let's avoid Primakov 1.. i- Let's such… ItIt us nothing. also _,-{ ~ to unites Plavli. unites ~~'s opponents Plavesteels against her opponents against a…",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 18,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": [
+        "memorandum of conversation",
+        "conversation"
+      ]
+    },
+    {
+      "documentId": "C09000051",
+      "date": "12/20/1995",
+      "year": 1995,
+      "title": "December 20, 1995 Letter From Michael Nacht To Strobe Talbott W/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000051/C09000051.pdf",
+      "description": "State Department FOIA record C09000051, dated 12/20/1995, released in the July 2022 FOIA Library release, is titled \"December 20, 1995 Letter From Michael Nacht To Strobe Talbott W/Attachment(s)\". The released text begins: \"S ASSISTANT r ;_---- )\" ASSISTANT DIRECTOR DIRECTOR UNITID UNITED STATES STATES ARMS ARMS toNTROL fOINTROL AND AND DISARMAMENT DISARMAMENT AGENCY AGENCY EYES EYES ONLY PERSONAL PERSONAL AND ONLY AND CONFIDENTIAL CONFIDENTIAL v~ t (c, /c...… With the With the Bosnia Bosnia peace accord peace accord and and major major progress progress in in the the Middle Middle East, East, the the need need for for an an additional additional foreign foreign policy policy success is success…\"",
+      "descriptionSource": "pdf",
+      "bucket": "inVolumeContext",
+      "score": 16,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000009",
+      "date": "8/31/1995",
+      "year": 1995,
+      "title": "BOSNIA: SECRETARY-KOZYREV LETTER",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000009/C09000009.pdf",
+      "description": "State Department FOIA record C09000009, dated 8/31/1995, released in the June 2022 FOIA Library release, is titled \"BOSNIA: SECRETARY-KOZYREV LETTER\". Issued under FOIA case F-2017-13804 as part of the June 2022 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "inVolumeContext",
+      "score": 16,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000007",
+      "date": "3/31/1998",
+      "year": 1998,
+      "title": "Kosovo Road Map",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2023/FL-2017-13804/DOC_0C09000007/C09000007.pdf",
+      "description": "State Department FOIA record C09000007, dated 3/31/1998, released in the Oct 2023 FOIA Library release, is titled \"Kosovo Road Map\". The released text begins: \"Fu11 Dayton implementation, keep Bosnia (and • PRIORITY: Full Croatia/Eastern Slavonia) on track. • IF POSSIBLE: Preserve CG solidarity and Trans-Atlantic comity. Means • An American diplomatic initiative targeted on Slobo — - independent of, but coordinated with, CG, OSCE, EU, et alia.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 15,
+      "matchedTerms": [
+        "bosnia",
+        "dayton",
+        "croatia",
+        "kosovo",
+        "eastern slavonia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000041",
+      "date": "5/28/1998",
+      "year": 1998,
+      "title": "May 28, 1998 Letter From Strobe Talbott To Sven Alkalaj w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2023/FL-2017-13804/DOC_0C09000041/C09000041.pdf",
+      "description": "State Department FOIA record C09000041, dated 5/28/1998, released in the Oct 2023 FOIA Library release, is titled \"May 28, 1998 Letter From Strobe Talbott To Sven Alkalaj w/Attachment(s)\". The released text begins: \"Copies tO: Copies ss to: THE DEPUTY SECRETARY OF STATE THEDEPUTYSECRETARYOFSTATE 1J WASHINGTON WASHINGTON DD Pp E l.. 'IU TT May 26, May 28, 1998 1998 M GG C Dear Mr. Along Along with with your your fellow fellow Ambassadors from Ambassadors from the Republic Republic of of Croatia, Croatia, the the Former Former Yugoslav Republic Yugoslav Republic ofof Macedonia Macedonia and and the the Republic Repub…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 14,
+      "matchedTerms": [
+        "yugoslav",
+        "croatia",
+        "macedonia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000039",
+      "date": "1/14/1999",
+      "year": 1999,
+      "title": "Our Balkan team and structure",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "description": "State Department FOIA record C09000039, dated 1/14/1999, released in the Sep 2023 FOIA Library release, is titled \"Our Balkan team and structure\". The released text begins: \"Let's bring Jim Dobbins over from the NSC to replace Bob Gelbard SIRS and Special Representative of the President and Secretary of State as S/RS Stare for Balkan Peace issues (the exact title may still need some refinement). refinernent). Jim would be responsible for managing Dayton peace implementation, the Kosovo crisis, and all what I call war-and-peace issues in the former Yugoslavia.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 12,
+      "matchedTerms": [
+        "dayton",
+        "yugoslav",
+        "balkan",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000033",
+      "date": "10/9/1998",
+      "year": 1998,
+      "title": "1998 ELECTIONS IN MACEDONIA ICG Report w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Dec2023/FL-2017-13804/DOC_0C09000033/C09000033.pdf",
+      "description": "State Department FOIA record C09000033, dated 10/9/1998, released in the Dec 2023 FOIA Library release, is titled \"1998 ELECTIONS IN MACEDONIA ICG Report w/Attachment(s)\". The released text begins: \"The forthcoming poll is Macedonia's third general election since the disintegration of one-party communist rule. Moreover. it takes place in the shaJo‘v of ethnic violence between Serbs and ethnic Albanians in the neighbouring Serbian province of Kosovo and political instability in neighbouring Albania.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 12,
+      "matchedTerms": [
+        "serbia",
+        "serbian",
+        "kosovo",
+        "macedonia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000010",
+      "date": "10/13/1995",
+      "year": 1995,
+      "title": "Memorandum from Strobe Talbott to Ambassador Holbrooke",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000010/C09000010.pdf",
+      "description": "State Department FOIA record C09000010, dated 10/13/1995, released in the June 2022 FOIA Library release, is titled \"Memorandum from Strobe Talbott to Ambassador Holbrooke\". Issued under FOIA case F-2017-13804 as part of the June 2022 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "inVolumeContext",
+      "score": 11,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000026",
+      "date": "10/26/1997",
+      "year": 1997,
+      "title": "October 26, 1997 Note From Strobe Talbott To Bob Gelbard W/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "description": "State Department FOIA record C09000026, dated 10/26/1997, released in the Sep 2022 FOIA Library release, is titled \"October 26, 1997 Note From Strobe Talbott To Bob Gelbard W/Attachment(s)\". The released text begins: \"THE WASlll'~C1n, hJ~T j; lo. !'}Ji '' ,,,n. 11,.1011111 h. 1 09 the.rest the rest of Liia<# ic~ empire isis Karadzic's a a hliuse house ofcards. cards. He He wouldn u•ouldn't't ~ast last long.\" long.\" Bosnian City Is Is Key !>muggled -a Westerndiplomat —a Western smuggled cigarettes, diplomatin in Bosnio1 &ism cigarettes, gasoline gasoline and and building building materials. materials.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 11,
+      "matchedTerms": [
+        "bosnia",
+        "karadzic"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000068",
+      "date": "12/14/1995",
+      "year": 1995,
+      "title": "Note from Strobe Talbott to ASSISTANT Secretary Holbrooke",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000068/C09000068.pdf",
+      "description": "State Department FOIA record C09000068, dated 12/14/1995, released in the June 2022 FOIA Library release, is titled \"Note from Strobe Talbott to ASSISTANT Secretary Holbrooke\". Issued under FOIA case F-2017-13804 as part of the June 2022 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "inVolumeContext",
+      "score": 11,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000061",
+      "date": "8/3/1996",
+      "year": 1996,
+      "title": "August 3, 1996 Letter From Strobe Talbott To Nancy Pelosi w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000061/C09000061.pdf",
+      "description": "State Department FOIA record C09000061, dated 8/3/1996, released in the June 2024 FOIA Library release, is titled \"August 3, 1996 Letter From Strobe Talbott To Nancy Pelosi w/Attachment(s)\". The released text begins: \"I very much appreciated your your kind words.. The \"no The \"no instructions\" instructions decision decision was aa tough tough call , but call, but we certainly certainly agree on how it helped us get to get to Dayton and stop the fighting fighting in Bosnia.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 11,
+      "matchedTerms": [
+        "bosnia",
+        "dayton"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000023",
+      "date": "n/a",
+      "year": null,
+      "title": "SUMMARY OF KEY FINDINGS BY THE DEMOCRATIC MEMBERS OF THE SELECT SUBCOMMITTEE ON THE UNITED STATES ROLE IN IRANIAN ARMS TRANSFERS TO CROATIA AND BOSNIA",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000023/C09000023.pdf",
+      "description": "State Department FOIA record C09000023, dated n/a, released in the Apr 2024 FOIA Library release, is titled \"SUMMARY OF KEY FINDINGS BY THE DEMOCRATIC MEMBERS OF THE SELECT SUBCOMMITTEE ON THE UNITED STATES ROLE IN IRANIAN ARMS TRANSFERS TO CROATIA AND BOSNIA\". The released text begins: \"The September 21, 1991 until June Toe Minority reviewed thousands of pagcs pages of classified classified. and a.c.d uncIassified unclani materials, materials. press reports, academic works. and other material in the public ac:ademic works… The Select Subcommittee interviewed and deposed approximately seventy currint former Conner U.S.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 11,
+      "matchedTerms": [
+        "bosnia",
+        "croatia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000038",
+      "date": "n/a",
+      "year": null,
+      "title": "Master Talking Points Kosovo w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Dec2023/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+      "description": "State Department FOIA record C09000038, dated n/a, released in the Dec 2023 FOIA Library release, is titled \"Master Talking Points Kosovo w/Attachment(s)\". The released text begins: \"Thus, NATO has agreed to hold off execution of military action for 96 hours while we see if Milosevic demonstrates an intention to fully comply with 1199 and to follow-through on his agreement for a verification regime. They would report to the OSCE Verification Mission headquarters, in Pristina.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 11,
+      "matchedTerms": [
+        "milosevic",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000040",
+      "date": "n/a",
+      "year": null,
+      "title": "Handwritten Note From Strobe Talbott to Sandy w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000040/C09000040.pdf",
+      "description": "State Department FOIA record C09000040, dated n/a, released in the Sep 2023 FOIA Library release, is titled \"Handwritten Note From Strobe Talbott to Sandy w/Attachment(s)\". The released text begins: \"If that that Is Primakov's message to President Slo- is Mr. SIo- .... .. .. --~·· · \\--~...., ··~(f / bodan Mllosevlc Milosevic of of Yugoslavia today, N•mha Tibboll Nat.stha TIAbott the mission may help.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 11,
+      "matchedTerms": [
+        "yugoslav",
+        "milosevic"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000074",
+      "date": "n/a",
+      "year": null,
+      "title": "THE BEST CHANCE FOR THE BALKANS",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000074/C09000074.pdf",
+      "description": "State Department FOIA record C09000074, dated n/a, released in the Apr 2024 FOIA Library release, is titled \"THE BEST CHANCE FOR THE BALKANS\". The released text begins: \"ON SCHEDULE.' SCHEDULE.9 AJ;fJ,,id, The·Bosnian elections were eft'ential etiential for establishing the ne4.v ~ r>·-.-- political ,. institutions that bep alive whatever . will Imp whatever chance that .,,_ ~ ~,1., fractured country hat h… I i and no hope or venue .fkr '\"d greater cooperation amona or areater among Bosnia'• Bosnia's etb ·c ethnic V Nf ,,,..,s eqmmunities. tOmmunities.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 11,
+      "matchedTerms": [
+        "bosnia",
+        "balkan"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000034",
+      "date": "11/27/1997",
+      "year": 1997,
+      "title": "November 27, 1997 Note From Strobe Talbott To COS/Elaine Shocas",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000034/C09000034.pdf",
+      "description": "State Department FOIA record C09000034, dated 11/27/1997, released in the Sep 2022 FOIA Library release, is titled \"November 27, 1997 Note From Strobe Talbott To COS/Elaine Shocas\". The released text begins: \"Sherman CC: EUR — - Amb. ~ Grossman )an From Strobe Talbott e.rJ After the PC on Wednesday, I spoke to MKA about Copenhagen & the OSCE ministerial. I'm also conscious of the substantive agenda for the OSCE meeting: Bosnia/post-SFOR and European security in general (in which NATO enlargement, our Baltic strategy, etc. loom large).\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000029",
+      "date": "12/16/1996",
+      "year": 1996,
+      "title": "December 16, 1996 letters From Strobe Talbott",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000029/C09000029.pdf",
+      "description": "State Department FOIA record C09000029, dated 12/16/1996, released in the May 2022 FOIA Library release, is titled \"December 16, 1996 letters From Strobe Talbott\". The released text begins: \"Wheeler: It was a special pleasure to speak at the Dayton Town Meeting and reminisce about the many hours we worked last November to accomplish the signing of the Accords. The Department greatly appreciates the cooperation of the Air Force Association in arranging this conference.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "dayton"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000030",
+      "date": "12/4/1996",
+      "year": 1996,
+      "title": "December 4, 1996 Note FROM STROBE TALBOTT, IN OSLO TO THE SECRETARY OF STATE - ALL COPIES TO THE SECRETARY",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000030/C09000030.pdf",
+      "description": "State Department FOIA record C09000030, dated 12/4/1996, released in the Apr 2024 FOIA Library release, is titled \"December 4, 1996 Note FROM STROBE TALBOTT, IN OSLO TO THE SECRETARY OF STATE - ALL COPIES TO THE SECRETARY\". The released text begins: \"Except for Albania, this the only country in Europe I've never visited before. Before flying here, I had a fairly interesting meeting with Primakov in London today at Lancaster House, on the margins of the Bosnia meeting.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000031",
+      "date": "12/6/1996",
+      "year": 1996,
+      "title": "December 6, 1996 Note From To Chris",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000031/C09000031.pdf",
+      "description": "State Department FOIA record C09000031, dated 12/6/1996, released in the Apr 2024 FOIA Library release, is titled \"December 6, 1996 Note From To Chris\". The released text begins: \"Therefore I'm putting down in this memo some thoughts about the two most immediate issues we face:Russia-NATO and Bosnian bad guys. On the first, there is good news and bad news coming out of my session with Primakov and the follow-up meeting he had with Kinkel.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000093",
+      "date": "2/12/1997",
+      "year": 1997,
+      "title": "February 12, 1997 Note From Strobe Talbott To Amb. Gelbard",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000093/C09000093.pdf",
+      "description": "State Department FOIA record C09000093, dated 2/12/1997, released in the Feb 2024 FOIA Library release, is titled \"February 12, 1997 Note From Strobe Talbott To Amb. Gelbard\". The released text begins: \"Gelbard, INL From Strobe Talbott • On the matter we've been discussing so bracingly, overnight I've taken a personal hand at doing some strategic redrafting, and I had a good conversation with Marc this morning. In Bosnia, the Middle East, Cyprus and Nagorno-Karabakh, the or real estate. hardest issues and the showstoppers are almost always ones of That should not be the case here!\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": [
+        "conversation"
+      ]
+    },
+    {
+      "documentId": "C09000027",
+      "date": "5/4/1999",
+      "year": 1999,
+      "title": "DEPUTY SECRETARY'S APRIL 27 MEETING WITH VIKTOR CHERNOMYRDIN",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+      "description": "State Department FOIA record C09000027, dated 5/4/1999, released in the June 2024 FOIA Library release, is titled \"DEPUTY SECRETARY'S APRIL 27 MEETING WITH VIKTOR CHERNOMYRDIN\". The released text begins: \"DEPUTY DEPUTY SECRETARY SECRETARY TALBOTT MET WITH VIKTOR CHERNOYMYRDIN, APRIL 27 WITH CHERNOYMYRDIN, RUSSIAN RUSSIAN S SPECIAL ENVOY FOR A YUGOSLAV SETTLEMENT. SESSION AT THE INCLUDING AN EXTENDED ONE-ON-ONE SESSION INCLUDING END, THE DISCUSSION LASTED END, LASTED FOR OVER TWO HOURS.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 10,
+      "matchedTerms": [
+        "yugoslav"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000019",
+      "date": "10/10/1996",
+      "year": 1996,
+      "title": "SELECT SUBCOMMUNITIES RELEASES FINDINGS ON CLINTON'S POLICY REGARDING IRANIAN ARMS TRANSFERS TO BOSNIA",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000019/C09000019.pdf",
+      "description": "State Department FOIA record C09000019, dated 10/10/1996, released in the July 2024 FOIA Library release, is titled \"SELECT SUBCOMMUNITIES RELEASES FINDINGS ON CLINTON'S POLICY REGARDING IRANIAN ARMS TRANSFERS TO BOSNIA\". The released text begins: \"Lia_LLTLY, IIOW .-1.IUJ L. llU\\__'lA:',.. CASS ISM-LING F.P, CONGRESS OF THE UNITED STATES .'1.CUL HAS1INCS. tHSTI:-cs. f ...•.•.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000021",
+      "date": "10/10/1996",
+      "year": 1996,
+      "title": "Q & A's",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000021/C09000021.pdf",
+      "description": "State Department FOIA record C09000021, dated 10/10/1996, released in the July 2024 FOIA Library release, is titled \"Q & A's\". The released text begins: \"Q Ambassadors Galbraith and Redman find Bosnia: Ambassadors find under attack themselves under attack on Capitol Capitol Hill Hill today. A group of of that there was Republicans have charged that was wrong-doing, or or there may have been wrong-doing either either on their part part or or on part of the part of American American officials in in connection with the flow flow…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000024",
+      "date": "10/24/1997",
+      "year": 1997,
+      "title": "October 24, 1997 Note From Strobe Talbott To Wendy Sherman W/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000024/C09000024.pdf",
+      "description": "State Department FOIA record C09000024, dated 10/24/1997, released in the Sep 2022 FOIA Library release, is titled \"October 24, 1997 Note From Strobe Talbott To Wendy Sherman W/Attachment(s)\". The released text begins: \"I did so on the margins of the Bosnia PC yesterday. Attached, on the two sides of the note card, is our exchange.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000026",
+      "date": "12/21/1998",
+      "year": 1998,
+      "title": "December 21, 1998 Letter From To Yuri",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "description": "State Department FOIA record C09000026, dated 12/21/1998, released in the Mar 2025 FOIA Library release, is titled \"December 21, 1998 Letter From To Yuri\". The released text begins: \"Igor Sergeyevich and I were seated next to each other at the Bosnia Peace Implementation Conference in Madrid, so we had a bit of a chance, amidst other business, to compare impressions. As you can imagine, these past few days since I returned from Moscow and Madrid have been pretty hectic, hence the delay in my getting back to you with some initial reactions to the ideas I heard in Moscow about CFE.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000027",
+      "date": "12/3/1997",
+      "year": 1997,
+      "title": "Handwritten Note w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+      "description": "State Department FOIA record C09000027, dated 12/3/1997, released in the Apr 2023 FOIA Library release, is titled \"Handwritten Note w/Attachment(s)\". The released text begins: \"The current debate over NATO's role in Bosnia, and its implications for the Alliance's future, however, leads me to hazard a few comments based upon my peacekeeping and NATO experience. The Alliance's essential function, it seems to me, is to link American power to European security, counterbalancing that of Russia, and thereby maintaining an equilibrium among Europe's major powers.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000047",
+      "date": "12/4/2000",
+      "year": 2000,
+      "title": "TFSRO2: KOSOVO: RUSSIAN REACTION TO NATO AIR STRIKES, JUNE 1",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000047/C09000047.pdf",
+      "description": "State Department FOIA record C09000047, dated 12/4/2000, released in the May 2022 FOIA Library release, is titled \"TFSRO2: KOSOVO: RUSSIAN REACTION TO NATO AIR STRIKES, JUNE 1\". The released text begins: \"(U) CHERNOMYRDIN TOLD REPORTERS IN BONN JUNE 1 BEFORE STARTING A ONE-ON-ONE MEETING WITH DEPSEC TALBOTT THAT THERE IS A CHANCE OF RESOLVING THE YUGOSLAV CRISIS THROUGH A PEACE SETTLEMENT; MUCH WILL DEPEND ON THE POSITION OF THE WEST. HE DECLINED TO SPECULATE ON THE OUTCOME OF THE BONN TALKS, BUT SAID HE AND AHTISAARI WOULD TRAVEL TO BELGRADE WEDNESDAY. 2.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "yugoslav",
+        "kosovo"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000013",
+      "date": "12/9/1997",
+      "year": 1997,
+      "title": "Intervention by Deputy Secretary of State Strobe Talbott w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000013/C09000013.pdf",
+      "description": "State Department FOIA record C09000013, dated 12/9/1997, released in the Mar 2023 FOIA Library release, is titled \"Intervention by Deputy Secretary of State Strobe Talbott w/Attachment(s)\". The released text begins: \"09/12 12 '97 97 19:04 04 FA1 FAX Lan FL-2017-13804 B-00002119998 \"UNCLASSIFIED\" 2/2/2023 FL-2017-13804 2-2-23 1 BOSNIA PEACE IM.PLEMENTATION BOSNIA IMPLEMENTATION CONFERENCE PETERSBERG CONTROL ROOM Telephone: Telephone: (49-02223) 908-439… Chairman, and to the German Government for your hospitality.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000026",
+      "date": "3/3/1996",
+      "year": 1996,
+      "title": "Organizational structure for Bosnia w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "description": "State Department FOIA record C09000026, dated 3/3/1996, released in the Apr 2024 FOIA Library release, is titled \"Organizational structure for Bosnia w/Attachment(s)\". The released text begins: \"Addressees outside the Department of State should handle the document in accordance with the above instructiODS. instructions. When this document is no longer needed, the reci~ent recipient is responsible for seeing that it is destroyed deatroped and for mailing a record destruction to of aestruction Mr.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000020",
+      "date": "3/8/1996",
+      "year": 1996,
+      "title": "Dissent Message on Russian Participation in IFOR",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000020/C09000020.pdf",
+      "description": "State Department FOIA record C09000020, dated 3/8/1996, released in the Oct 2024 FOIA Library release, is titled \"Dissent Message on Russian Participation in IFOR\". The released text begins: \"I I regret regret the the delay delay in in responding, responding, but but the the pace pace ofof our our diplomacy diplomacy f o llowing Hyde following Park and Hyde Park and Dayton Dayton has not slackened. has not slackened. Still, Still, II welcome the o pportunity to address the concerns in welcome the opportunity to address the concerns in your message your message and and to t o dr~w some initial draw some initial lessons lessons from from NATO's and Russi…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "dayton"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000039",
+      "date": "4/12/1999",
+      "year": 1999,
+      "title": "MILOSEVIC SEEKING PRIVATE RUSSIAN INTERMEDIARY?",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "description": "State Department FOIA record C09000039, dated 4/12/1999, released in the June 2024 FOIA Library release, is titled \"MILOSEVIC SEEKING PRIVATE RUSSIAN INTERMEDIARY?\". The released text begins: \"CLASSIFIED BY CLASSIFIED BY AMBASSADOR AMBASSADOR JAMES COLLINS. NIKOLAYEV ASKED ASKED A A STAFF MEMBER TO SOUND SOUND OUT USG REACTION USG REACTION BEFORE BEFORE SEEKING SEEKING APPOINTMENTS WITH WITH THE U.S.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "milosevic"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000031",
+      "date": "4/20/1999",
+      "year": 1999,
+      "title": "Some Thoughts about Slobodan Milosevic w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000031/C09000031.pdf",
+      "description": "State Department FOIA record C09000031, dated 4/20/1999, released in the June 2024 FOIA Library release, is titled \"Some Thoughts about Slobodan Milosevic w/Attachment(s)\". The released text begins: \"Until now, 5\\, 4\\ Milosevic. tJntil while while often often reprehensible, reprehensible, his his behavior behavior was was coolly coolly and and cruelly cruelly ~ calculating. calculating. Recent actions, especially Recent actions, especially the the D(, ~II .J.i bizarre reversals in the refugee flow, suggest an increasingly bizarre reversals in the refugee flow, euggest an increaeingly ~ G it1J:.. irrational irrational patt…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 8,
+      "matchedTerms": [
+        "milosevic"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000011",
+      "date": "n/a",
+      "year": null,
+      "title": "ST Notes for Flotus trip 6/20 w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000011/C09000011.pdf",
+      "description": "State Department FOIA record C09000011, dated n/a, released in the Sep 2023 FOIA Library release, is titled \"ST Notes for Flotus trip 6/20 w/Attachment(s)\". The released text begins: \"ONE .••• ONE.... . . . what you saw in Bosnia....\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 8,
+      "matchedTerms": [
+        "bosnia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000017",
+      "date": "n/a",
+      "year": null,
+      "title": "Talking Points W/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+      "description": "State Department FOIA record C09000017, dated n/a, released in the July 2022 FOIA Library release, is titled \"Talking Points W/Attachment(s)\". The released text begins: \"If the elections collapse or are arc a debacle. debacle, the credibility of our whole wholc policy will be under attack. The success of Dayton a year earJier earlier will have given way to a perceived policy failure.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 8,
+      "matchedTerms": [
+        "dayton"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000016",
+      "date": "10/21/1998",
+      "year": 1998,
+      "title": "Kosovo - Compliance Gameplan",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000016/C09000016.pdf",
+      "description": "State Department FOIA record C09000016, dated 10/21/1998, released in the Mar 2025 FOIA Library release, is titled \"Kosovo - Compliance Gameplan\". The released text begins: \"It is unlikely that Milosevic will be in full compliance early next week and NATO must prepare for that scenario. Sandy's report of the Permreps lunch Tuesday made clear that Allies are in denial on this point.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "milosevic",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000044",
+      "date": "10/7/1998",
+      "year": 1998,
+      "title": "Weekly Report from the Department of State",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+      "description": "State Department FOIA record C09000044, dated 10/7/1998, released in the Apr 2023 FOIA Library release, is titled \"Weekly Report from the Department of State\". The released text begins: \"KEY DEPARTMENT NEWS • (U) Kosovo: UN Secretary General Kofi Annan issued a report October 5 on the Federal Republic of Yugoslavia's (FRY) compliance with UN Security Council Resolutions 1160 and 1199 related to Kosovo. Despite the Serb Prime Ministez's claim that peace prevails in Kosovo and that armed activities ceased on September 28, the report concludes that the violence there continued unabated in the week following adoption of UNSCR 1199 -- despite…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "yugoslav",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000008",
+      "date": "3/30/1998",
+      "year": 1998,
+      "title": "Kosovo Road Map",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2023/FL-2017-13804/DOC_0C09000008/C09000008.pdf",
+      "description": "State Department FOIA record C09000008, dated 3/30/1998, released in the Oct 2023 FOIA Library release, is titled \"Kosovo Road Map\". The released text begins: \"Serbia quLtion). the constitutional/juridical ~ qu2stoior21_,- • SECONDARY: Preserve as much as possible of CG and Trans- Atlantic comity. Means • An Ainerican American diplomatic initiative targeted primarily on Slobo -— independent of, but coordinated with, CG, OSCE, EU, et alia.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "serbia",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000038",
+      "date": "3/8/1999",
+      "year": 1999,
+      "title": "Special Advisor for Kosovo and Dayton Implementation",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+      "description": "State Department FOIA record C09000038, dated 3/8/1999, released in the Sep 2023 FOIA Library release, is titled \"Special Advisor for Kosovo and Dayton Implementation\". The released text begins: \"Dobbins, Dobbins , Jr.. to to be Special Advisor Special Advisor of President and the Seeretary ot the President Secretary of of State for for Kosovo Kosevc and ,ina Dayton Implementation.. The The White House concurs in this recommendation..\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "dayton",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000009",
+      "date": "4/12/1999",
+      "year": 1999,
+      "title": "HUMANITARIAN UPDATE NUMBER 13 Kosovo TASK FORCE 0930 EDT Monday, April 12, 1999",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000009/C09000009.pdf",
+      "description": "State Department FOIA record C09000009, dated 4/12/1999, released in the June 2024 FOIA Library release, is titled \"HUMANITARIAN UPDATE NUMBER 13 Kosovo TASK FORCE 0930 EDT Monday, April 12, 1999\". The released text begins: \"Montenegro has 309,500. t~~ total to 63,700. bas seen only 1100 new arrivals, bringing tha ;nta1 ~a. IOM has 13 international staff' in Skopje to coordinate evacuation,,with evacua~~ _ UNHCR (Geneva-RMAfl'F telcon).\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": [
+        "telcon"
+      ]
+    },
+    {
+      "documentId": "C09000020",
+      "date": "4/28/1999",
+      "year": 1999,
+      "title": "RECOMMENDED NEXT STEPS ON RUSSIA/KOSOVO DIPLOMACY",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000020/C09000020.pdf",
+      "description": "State Department FOIA record C09000020, dated 4/28/1999, released in the June 2024 FOIA Library release, is titled \"RECOMMENDED NEXT STEPS ON RUSSIA/KOSOVO DIPLOMACY\". The released text begins: \"ALBRIGHT AND APNSA BERGER AND MP OVP FlIBRTH FUERTH ON BERLIN) FROM STROBE TALBOTT (IN SUBJECT: RECOMMENDED NEXT STEPS ON RUSSIA/KOSOVO DIPLOMACY Moscow is the eye of a diplomatic storm this week, and the forecast calls for more of the sam… In some ways, better Moscow than Belgrade, since flying envoys tend to get in the way of other aircraft with work to do in the skies over Serbia.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "serbia",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000037",
+      "date": "5/15/1999",
+      "year": 1999,
+      "title": "International Peace Plan for Kosovo",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000037/C09000037.pdf",
+      "description": "State Department FOIA record C09000037, dated 5/15/1999, released in the June 2024 FOIA Library release, is titled \"International Peace Plan for Kosovo\". The released text begins: \"This would create conditions for international community for contacts with Yugoslav leadership to get their consent for the implementation of the international International Peace Plan. When the FRY leadership commits itself to the implementation of international peace plan described below and proceeds to implement its obligations, NATO would cease combat military activities directed against the FRY.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "yugoslav",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000029",
+      "date": "9/2/1998",
+      "year": 1998,
+      "title": "Kosovo DC Discussion on Use of Force; September 4; 2:00 pm; the White House",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000029/C09000029.pdf",
+      "description": "State Department FOIA record C09000029, dated 9/2/1998, released in the Mar 2025 FOIA Library release, is titled \"Kosovo DC Discussion on Use of Force; September 4; 2:00 pm; the White House\". The released text begins: \"In our judgement, without a credible threat of force in Kosovo, it is unlikely that the international community will be able to leverage the kind of concessions out of Milosevic that are needed to come to closure on a political settlement. The uncertainty that surrounds NATO's role in Kosovo is severely limiting the influence that NATO planning exerts on the political track and damaging the credibility of the Alliance.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 6,
+      "matchedTerms": [
+        "milosevic",
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000112",
+      "date": "10/14/1997",
+      "year": 1997,
+      "title": "October 14, 1997 Note From Strobe Talbott To SS",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000112/C09000112.pdf",
+      "description": "State Department FOIA record C09000112, dated 10/14/1997, released in the Sep 2022 FOIA Library release, is titled \"October 14, 1997 Note From Strobe Talbott To SS\". The released text begins: \"P.S.) SS: FYI, Dick Holbrooke is meeting today in Nice (rhymes wi~h grease) with Berezovsky. I asked him to hit (r~Y°:1':~ with ' hard at Iran/missiles, Gazprom, religious law and the prospects for a good summit next year.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 5,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000023",
+      "date": "5/3/1999",
+      "year": 1999,
+      "title": "TFSR02: DEPSEC TALBOTT'S APRIL 28 MEETING WITH UNHCR OGATA",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000023/C09000023.pdf",
+      "description": "State Department FOIA record C09000023, dated 5/3/1999, released in the June 2024 FOIA Library release, is titled \"TFSR02: DEPSEC TALBOTT'S APRIL 28 MEETING WITH UNHCR OGATA\". The released text begins: \"HE EXPRESSED CONCERN ABOUT THE FRAGILE POLITICAL EXPRESSED POLITICAL SITUATION IN IN MACEDONIA, NOTING MACEDONIA, NOTING THAT PUBLIC PUBLIC CRITICISM CRITICISM OF THE THE GOVERNMENT MIGHT BACKFIRE. OGATA SAIDSAID CAMP CAMP CONSTRUCTION CONSTRUCTION IN IN BOTH ALBANIA AND ALBANIA AND MACEDONIA MUST MUST ACCELLERATE ACCELLERATE URGENTLY.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 5,
+      "matchedTerms": [
+        "macedonia"
+      ],
+      "conversationTerms": [
+        "meeting"
+      ]
+    },
+    {
+      "documentId": "C09000002",
+      "date": "n/a",
+      "year": null,
+      "title": "Telephone Call to German FM Fischer on Green. Party's Special Congress on Kosovo w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000002/C09000002.pdf",
+      "description": "State Department FOIA record C09000002, dated n/a, released in the June 2024 FOIA Library release, is titled \"Telephone Call to German FM Fischer on Green. Party's Special Congress on Kosovo w/Attachment(s)\". The released text begins: \"BACKGROUND: • raucous debate on The Green Party held a raucous Kosovo policy on May 13. Fischer was struck in the head by a paint bomb and taken to the in hospital for treatment of a ruptured eardrum. later returned to the podium.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 5,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": [
+        "phone call"
+      ]
+    },
+    {
+      "documentId": "C09000045",
+      "date": "1/31/1996",
+      "year": 1996,
+      "title": "January 31, 1996 note from Strobe Talbott to Richard Holbrooke",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000045/C09000045.pdf",
+      "description": "State Department FOIA record C09000045, dated 1/31/1996, released in the May 2022 FOIA Library release, is titled \"January 31, 1996 note from Strobe Talbott to Richard Holbrooke\". Issued under FOIA case F-2017-13804 as part of the May 2022 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000077",
+      "date": "10/12/1996",
+      "year": 1996,
+      "title": "October 12, 1996 Note From Strobe Talbott To Richard Holbrooke",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000077/C09000077.pdf",
+      "description": "State Department FOIA record C09000077, dated 10/12/1996, released in the June 2024 FOIA Library release, is titled \"October 12, 1996 Note From Strobe Talbott To Richard Holbrooke\". The released text begins: \"Thanks for all the help you gave me both - v--, in blocking out and ;lacing BiI1 Perry has a piece in the same issue. placing this piece. Bill r (' Hoge & Co. must have concluded that the Administration will wiIl survive the shelf life of the October issue.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000084",
+      "date": "11/23/1996",
+      "year": 1996,
+      "title": "November 23, 1996 Note To Dick Holbrooke w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000084/C09000084.pdf",
+      "description": "State Department FOIA record C09000084, dated 11/23/1996, released in the Apr 2024 FOIA Library release, is titled \"November 23, 1996 Note To Dick Holbrooke w/Attachment(s)\". The released text begins: \"A-00000748364 \"UNCLASSIFIED\" [2/15/24] 3 (6 /(j FL-2017-13804 ,/ Saturday, November 23, 1996 To Dick Holbrooke Dick: Thanks for the Rusk-Ball stuff, which I finally got around to reading this weekend. Another interesting relationship was the one between Rusk and Bowles.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000033",
+      "date": "12/21/1997",
+      "year": 1997,
+      "title": "December 21, 1997 Note From Strobe Talbott To Derek Shearer w/Attached Facsimile Transmission",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Jan2024/FL-2017-13804/DOC_0C09000033/C09000033.pdf",
+      "description": "State Department FOIA record C09000033, dated 12/21/1997, released in the Jan 2024 FOIA Library release, is titled \"December 21, 1997 Note From Strobe Talbott To Derek Shearer w/Attached Facsimile Transmission\". The released text begins: \"EU more comprehensive (Romania and Cyprus from South, Estonia from North — how to treat Slovenia?), but it's not so far along as NATO. Somehow we need to get across the idea that we're working now to tend to the Northern and Southern tiers.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "slovenia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000008",
+      "date": "2/9/1996",
+      "year": 1996,
+      "title": "February 9, 1996 Note From Strobe Talbott To Chris",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000008/C09000008.pdf",
+      "description": "State Department FOIA record C09000008, dated 2/9/1996, released in the July 2022 FOIA Library release, is titled \"February 9, 1996 Note From Strobe Talbott To Chris\". The released text begins: \"I think it would be helpful helpful if you were to to call call Bob Bob in in Paris tomorrow tomorrow {Saturday) (Saturday ) and make a of points couple of that would be reassuring to pnirrts that to him . him. E'j r~t, the upcoming Holbrooke mission First, si to the to t region -- which makes imminent imminent sense sense -- -- came came about about apparently apparently in in a way that ic that lPft Bob both ,ft Bnh both in in the the dark dark…\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000013",
+      "date": "2/9/1998",
+      "year": 1998,
+      "title": "Fax From Strobe Talbott To Ambassador Holbrooke w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2023/FL-2017-13804/DOC_0C09000013/C09000013.pdf",
+      "description": "State Department FOIA record C09000013, dated 2/9/1998, released in the Oct 2023 FOIA Library release, is titled \"Fax From Strobe Talbott To Ambassador Holbrooke w/Attachment(s)\". The released text begins: \"After some further reflection, I've zeroed in on a theme that will be -— at least when fleshed out with specifics -— rather controversial. I'd like to seize two bulls by the horns: Russia/NATO and Turkey/EU.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000034",
+      "date": "7/28/1997",
+      "year": 1997,
+      "title": "OFFICIAL INFORMAL FROM ACTING SECRETARY TALBOTT",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000034/C09000034.pdf",
+      "description": "State Department FOIA record C09000034, dated 7/28/1997, released in the Feb 2024 FOIA Library release, is titled \"OFFICIAL INFORMAL FROM ACTING SECRETARY TALBOTT\". The released text begins: \"(B). 2. -fe+ DICK: 2. -E£-} DICK: WHAT A WHAT A TERRIFIC TERRIFIC PIECE PIECE ON ON THE THE LADY LADY MACBETH MACBETH OF OF THE THE BALKANS!\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "balkan"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000019",
+      "date": "9/8/1996",
+      "year": 1996,
+      "title": "September 8, 1996 Note From Strobe Talbott To Chris",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000019/C09000019.pdf",
+      "description": "State Department FOIA record C09000019, dated 9/8/1996, released in the Apr 2024 FOIA Library release, is titled \"September 8, 1996 Note From Strobe Talbott To Chris\". The released text begins: \"That leaves us with an urgency. Sandy Berger called me yesterday to say that he feels we must turn to Dick Holbrooke to do this.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000020",
+      "date": "9/8/1996",
+      "year": 1996,
+      "title": "September 8, 1996 Note From Strobe Talbott To Chris",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000020/C09000020.pdf",
+      "description": "State Department FOIA record C09000020, dated 9/8/1996, released in the Apr 2024 FOIA Library release, is titled \"September 8, 1996 Note From Strobe Talbott To Chris\". The released text begins: \"That leaves us with an urgency. Sandy Berger called me yesterday to say that he feels we must turn to Dick liolbrooke Holbrooke to do this.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000021",
+      "date": "9/8/1996",
+      "year": 1996,
+      "title": "September 8, 1996 Note From Strobe Talbott To Chris",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2024/FL-2017-13804/DOC_0C09000021/C09000021.pdf",
+      "description": "State Department FOIA record C09000021, dated 9/8/1996, released in the Apr 2024 FOIA Library release, is titled \"September 8, 1996 Note From Strobe Talbott To Chris\". The released text begins: \"That leaves leaves us with an us with an urgency. urgency. Sandy Sandy Berger Berger called called me to say yesterday to me yesterday say that that he he feels feels we must turn we must turn to to Dick Holbrooke to Dick Holbrooke to do do this. this.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000007",
+      "date": "n/a",
+      "year": null,
+      "title": "Kosovo w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000007/C09000007.pdf",
+      "description": "State Department FOIA record C09000007, dated n/a, released in the June 2024 FOIA Library release, is titled \"Kosovo w/Attachment(s)\". The released text begins: \"NSA Berger spoke Berger spoke to to Solana, who agreed toto work with us to to get get NATO to to for possible troop deployments into update contingency plans for into non- non- environments. The group will will probably want to want to focus focus on the the issues issues you will will discuss with the the President President this afternoon.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000013",
+      "date": "n/a",
+      "year": null,
+      "title": "Russia needs peace in the Balkans.",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000013/C09000013.pdf",
+      "description": "State Department FOIA record C09000013, dated n/a, released in the Sep 2023 FOIA Library release, is titled \"Russia needs peace in the Balkans.\". Issued under FOIA case F-2017-13804 as part of the Sep 2023 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "balkan"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000014",
+      "date": "n/a",
+      "year": null,
+      "title": "ROME SCRIPT",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000014/C09000014.pdf",
+      "description": "State Department FOIA record C09000014, dated n/a, released in the Feb 2024 FOIA Library release, is titled \"ROME SCRIPT\". The released text begins: \"(independence not!) 2. nonviolence, 3. unconditional dialogue, 4. rights of Kosovar Serbs and others. OSCE > Kosovo, • First, Phase I: defuse bomb, Gonzalez> FRY, Gonzalez establish positive climate for coupled with FRY > negs (coming weeks and OSCE months); 5. non-interference by Belgrade in Kosovar parallel institutions; 6. permission fo…\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000014",
+      "date": "n/a",
+      "year": null,
+      "title": "Fax from Strobe Talbott to Amb. Richard Holbrooke",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000014/C09000014.pdf",
+      "description": "State Department FOIA record C09000014, dated n/a, released in the June 2022 FOIA Library release, is titled \"Fax from Strobe Talbott to Amb. Richard Holbrooke\". Issued under FOIA case F-2017-13804 as part of the June 2022 FOIA Library release in the Strobe Talbott collection. Searchable text was not extracted for this rendering; consult the source PDF for full content.",
+      "descriptionSource": "metadata",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "holbrooke"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000015",
+      "date": "n/a",
+      "year": null,
+      "title": "LONDON SCRIPT",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000015/C09000015.pdf",
+      "description": "State Department FOIA record C09000015, dated n/a, released in the Feb 2024 FOIA Library release, is titled \"LONDON SCRIPT\". The released text begins: \"OSCE principles on 1. territorial integrity (independence not!) 2. nonviolence, 3. unconditional dialogue, 4. rights of Kosovar Serbs and others. • Belgrade... l. CBMs 1. cessation of repression ⇒ ad hoc inter-communal 2. pull-back of special arrangements police to barracks and warehousing of heavy weapons;* • Stand down dmm on repression means reducing security prescncc securitv presence in Kosovo…\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000016",
+      "date": "n/a",
+      "year": null,
+      "title": "NATO SCRIPT",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000016/C09000016.pdf",
+      "description": "State Department FOIA record C09000016, dated n/a, released in the Feb 2024 FOIA Library release, is titled \"NATO SCRIPT\". The released text begins: \", FL-2017-13804 FL-2017-13804 8-00002608432 B-00002608432 \"UNCLASSIFIED\" [1/4/2024] (1/4/2024) Page Page 63 I \"UNCLASSIFIED\" 63 3. 3. test of Euro-Atlantic Euro-Atlantic NATO NATO SCRIPT institutions institutions -— including including • J… OSCE > Kosovo, Gonzalez> FRY (all 3 Gonzalez missions), coupled with nnissiorts), FRY>OSCE FRY OSCE =5 ==-> two-stages?\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000016",
+      "date": "n/a",
+      "year": null,
+      "title": "Even though the military action continues, the search for a diplomatic outcome must also continue. I want to talk about how we can work together on that.",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000016/C09000016.pdf",
+      "description": "State Department FOIA record C09000016, dated n/a, released in the Oct 2024 FOIA Library release, is titled \"Even though the military action continues, the search for a diplomatic outcome must also continue. I want to talk about how we can work together on that.\". The released text begins: \"Chemomyrdin j I{ ,j--v4 -✓ Le,,,-./ • 11Iy My l ted`m ean ~sly sly know Victor Stepanovich well; we respect him; we ~ hof imhim as a problem-solver. We're not just trying to achieve a lasting peace in the Balkans; we're also trying to bring about an outcome that will ensure for Russia a leading role in the achievement and enforcement of that peace.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "balkan"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000022",
+      "date": "n/a",
+      "year": null,
+      "title": "note To David Johnson at osce about slovenian dep for min coming to vienna as ambassador",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000022/C09000022.pdf",
+      "description": "State Department FOIA record C09000022, dated n/a, released in the Sep 2023 FOIA Library release, is titled \"note To David Johnson at osce about slovenian dep for min coming to vienna as ambassador\". The released text begins: \"St}t17 2 Jer/ _sri t,t,/ sifiy--/V/ficr\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "slovenia"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000113",
+      "date": "n/a",
+      "year": null,
+      "title": "Master Checklist",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000113/C09000113.pdf",
+      "description": "State Department FOIA record C09000113, dated n/a, released in the Feb 2024 FOIA Library release, is titled \"Master Checklist\". The released text begins: \"Kosovo II. 2nd II. 2 Tier Tier ► Script!! > Script!! 6. Latvia Latvia > ► Draft Draft leg: mcets meets OSCE OSCE tests, YMP's demands Iran Missiles/Heavy 3.\"",
+      "descriptionSource": "pdf",
+      "bucket": "undatedOrContext",
+      "score": 3,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": []
+    },
+    {
+      "documentId": "C09000042",
+      "date": "4/13/1999",
+      "year": 1999,
+      "title": "Under Secretary Pickering's Meeting with Russian Deputy Foreign Minister Georgiy Mamedov, April 9, 1999, Dresden, Germany w/Attachment(s)",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000042/C09000042.pdf",
+      "description": "State Department FOIA record C09000042, dated 4/13/1999, released in the June 2024 FOIA Library release, is titled \"Under Secretary Pickering's Meeting with Russian Deputy Foreign Minister Georgiy Mamedov, April 9, 1999, Dresden, Germany w/Attachment(s)\". The released text begins: \"The conversations with Mamedov discussion centered on efforts to craft an approach on Kosovo that could bring NATO and Russia together. Basic elements would be a G8 ministerial that could endorse introduction of a Chapter VII resolution in the UNSC.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 2,
+      "matchedTerms": [
+        "kosovo"
+      ],
+      "conversationTerms": [
+        "meeting",
+        "conversation"
+      ]
+    },
+    {
+      "documentId": "C09000122",
+      "date": "3/25/1998",
+      "year": 1998,
+      "title": "March 25, 1998 Letter From Strobe Talbott To Paul Reid",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2023/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+      "description": "State Department FOIA record C09000122, dated 3/25/1998, released in the Oct 2023 FOIA Library release, is titled \"March 25, 1998 Letter From Strobe Talbott To Paul Reid\". The released text begins: \"I know it's not easy to arrange and choreograph visits by visiting firemen under the thc best of circumstances, but you and your last-rninute schedule changes with aplomb. The progress staff handled our last-minute we registered in building neighborhood support for our position on Kosovo began hegan in Slovenia, and your astute insights helped ensure we locked the Slovenes in.\"",
+      "descriptionSource": "pdf",
+      "bucket": "postVolumeFollowOn",
+      "score": 1,
+      "matchedTerms": [
+        "kosovo",
+        "slovenia"
+      ],
+      "conversationTerms": []
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+{
+  "generatedAt": "2026-05-19T21:43:53.095Z",
+  "tool": "NARA Scout",
+  "toolUrl": "https://therealjameswilson.github.io/nara-scout/",
+  "query": "(Memorandum of Conversation OR Memorandum of Telephone Conversation OR memcon OR telcon) AND (Bosnia OR Yugoslavia OR Sarajevo OR Dayton OR Milosevic OR Izetbegovic OR Srebrenica OR Croatia OR Holbrooke)",
+  "sanitizedQuery": "(Memorandum of Conversation OR Memorandum of Telephone Conversation OR memcon OR telcon) AND (Bosnia OR Yugoslavia OR Sarajevo OR Dayton OR Milosevic OR Izetbegovic OR Srebrenica OR Croatia OR Holbrooke)",
+  "years": {
+    "from": "1993",
+    "to": "1995"
+  },
+  "scope": {
+    "name": "All Clinton administration collections",
+    "collectionCount": 132
+  },
+  "collectionResults": [
+    {
+      "naid": "2524453",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "119564603",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524447",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525018",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "1224781",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525029",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "2524459",
+      "total": 9,
+      "hits": 9,
+      "error": null
+    },
+    {
+      "naid": "101784492",
+      "total": 4,
+      "hits": 4,
+      "error": null
+    },
+    {
+      "naid": "2534568",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525017",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2534574",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524450",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7386739",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "2534575",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524458",
+      "total": 8,
+      "hits": 8,
+      "error": null
+    },
+    {
+      "naid": "7385959",
+      "total": 10,
+      "hits": 10,
+      "error": null
+    },
+    {
+      "naid": "342802399",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2534565",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525059",
+      "total": 156,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2524451",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "612954",
+      "total": 204,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7386505",
+      "total": 133,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2524466",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525022",
+      "total": 28,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "5957395",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "594648",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2534573",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388773",
+      "total": 4,
+      "hits": 4,
+      "error": null
+    },
+    {
+      "naid": "2524452",
+      "total": 35,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2534569",
+      "total": 6,
+      "hits": 6,
+      "error": null
+    },
+    {
+      "naid": "2534571",
+      "total": 395,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "594546",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "1766805",
+      "total": 528,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2534580",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6005960",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525058",
+      "total": 55,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2525016",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525024",
+      "total": 66,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7388844",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "630636",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525025",
+      "total": 44,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2524457",
+      "total": 65,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2524455",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525015",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524467",
+      "total": 5,
+      "hits": 5,
+      "error": null
+    },
+    {
+      "naid": "2524463",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524449",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    },
+    {
+      "naid": "7388838",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388802",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525028",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7385958",
+      "total": 3,
+      "hits": 3,
+      "error": null
+    },
+    {
+      "naid": "7385965",
+      "total": 21,
+      "hits": 21,
+      "error": null
+    },
+    {
+      "naid": "7349214",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2534570",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "2534584",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    },
+    {
+      "naid": "7388808",
+      "total": 116,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "6107047",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6107005",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388760",
+      "total": 55,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2534582",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "594462",
+      "total": 68,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2525026",
+      "total": 7,
+      "hits": 7,
+      "error": null
+    },
+    {
+      "naid": "2521316",
+      "total": 13,
+      "hits": 13,
+      "error": null
+    },
+    {
+      "naid": "2534572",
+      "total": 706,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2525032",
+      "total": 4,
+      "hits": 4,
+      "error": null
+    },
+    {
+      "naid": "2525014",
+      "total": 20,
+      "hits": 20,
+      "error": null
+    },
+    {
+      "naid": "2534567",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "2524460",
+      "total": 51,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2525057",
+      "total": 4,
+      "hits": 4,
+      "error": null
+    },
+    {
+      "naid": "7388748",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525021",
+      "total": 79,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "6120199",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525031",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7385961",
+      "total": 6,
+      "hits": 6,
+      "error": null
+    },
+    {
+      "naid": "2524456",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7410105",
+      "total": 384,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7388836",
+      "total": 43,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7388842",
+      "total": 40,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7385963",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    },
+    {
+      "naid": "7385962",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525056",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524462",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "71404562",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "627797",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388775",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388751",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388763",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "2534586",
+      "total": 8,
+      "hits": 8,
+      "error": null
+    },
+    {
+      "naid": "7385957",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6005967",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388766",
+      "total": 35,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "2524461",
+      "total": 32,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "7385960",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7387422",
+      "total": 23,
+      "hits": 23,
+      "error": null
+    },
+    {
+      "naid": "20015396",
+      "total": 3,
+      "hits": 3,
+      "error": null
+    },
+    {
+      "naid": "7388800",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388843",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7386837",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7385723",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7387463",
+      "total": 22,
+      "hits": 22,
+      "error": null
+    },
+    {
+      "naid": "7386504",
+      "total": 97,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "613035",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2524454",
+      "total": 372,
+      "hits": 25,
+      "error": null
+    },
+    {
+      "naid": "6012491",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388805",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7385964",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    },
+    {
+      "naid": "6120204",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "1040718",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525020",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6106992",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388841",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7387655",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7387424",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "2525027",
+      "total": 3,
+      "hits": 3,
+      "error": null
+    },
+    {
+      "naid": "6005964",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388837",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388840",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7385966",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388835",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6106851",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7387376",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388753",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6012502",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "7388768",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    },
+    {
+      "naid": "6107001",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6005962",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6106972",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "5957378",
+      "total": 1,
+      "hits": 1,
+      "error": null
+    },
+    {
+      "naid": "6107050",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "18515054",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6014648",
+      "total": 0,
+      "hits": 0,
+      "error": null
+    },
+    {
+      "naid": "6120129",
+      "total": 2,
+      "hits": 2,
+      "error": null
+    }
+  ],
+  "uniqueRecords": 801,
+  "declassifiedRecords": 12,
+  "records": [
+    {
+      "naId": "404512705",
+      "title": "[01/30/1996-01/31/1996]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 51,
+      "catalogUrl": "https://catalog.archives.gov/id/404512705",
+      "digitalUrl": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/24194021/Batch0006/24194021-20220882F-001-002-2023-001.JPG",
+      "collection": "Records of the National Security Council (Clinton Administration)",
+      "series": "Emails",
+      "ancestors": [
+        {
+          "naId": "2525024",
+          "title": "Records of the National Security Council (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "24194021",
+          "title": "Emails",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "24325775",
+      "title": "[AIDS and Africa and Drugs] [January 10, 2000 - May 1, 2000]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/24325775",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/75/3257/24325775/content/presidential-libraries/foia/2006-0003-F/ag-t-20015426-20060003f-005-001-2015.pdf",
+      "collection": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+      "series": "Vice Presidential Automated Records Management System (ARMS) Email",
+      "ancestors": [
+        {
+          "naId": "20015396",
+          "title": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "20015426",
+          "title": "Vice Presidential Automated Records Management System (ARMS) Email",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "24325767",
+      "title": "[AIDS and Africa, ACT UP] [June 9, 2000]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/24325767",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/67/3257/24325767/content/presidential-libraries/foia/2006-0003-F/ag-t-20015426-20060003f-004-003-2015.pdf",
+      "collection": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+      "series": "Vice Presidential Automated Records Management System (ARMS) Email",
+      "ancestors": [
+        {
+          "naId": "20015396",
+          "title": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "20015426",
+          "title": "Vice Presidential Automated Records Management System (ARMS) Email",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "23869271",
+      "title": "[Energy Tax, BTU, Carbon Tax, Environmental Tax, May 25, 1993 through June 7, 1993]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/23869271",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/71/8692/23869271/content/presidential-libraries/foia/2014-0026-F/ag-t-20015426-20140026F-002-001-2015.pdf",
+      "collection": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+      "series": "Vice Presidential Automated Records Management System (ARMS) Email",
+      "ancestors": [
+        {
+          "naId": "20015396",
+          "title": "Electronic Records of the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "20015426",
+          "title": "Vice Presidential Automated Records Management System (ARMS) Email",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "40491643",
+      "title": "[Ireland]-Adams, Gerry-September 1994 [2]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/40491643",
+      "digitalUrl": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585765/Batch0002/42-t-7585765-20110355F-001-008-2016.pdf",
+      "collection": "Records of the National Security Council Staff Director (Clinton Administration)",
+      "series": "Nancy Soderberg's Files",
+      "ancestors": [
+        {
+          "naId": "7388836",
+          "title": "Records of the National Security Council Staff Director (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "7585765",
+          "title": "Nancy Soderberg's Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "404512699",
+      "title": "9300198",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 19,
+      "catalogUrl": "https://catalog.archives.gov/id/404512699",
+      "digitalUrl": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/26457815/Batch0006/26457815-20220880F-001-003-2023-001.JPG",
+      "collection": "Records of the National Security Council Records Management Office (Clinton Administration)",
+      "series": "NSC (National Security Council) Records Management System",
+      "ancestors": [
+        {
+          "naId": "7388808",
+          "title": "Records of the National Security Council Records Management Office (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "26457815",
+          "title": "NSC (National Security Council) Records Management System",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "134757514",
+      "title": "Cuba Policy 95 96 [2]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/134757514",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2016/2016-0920-F/42-t-4483049-20160920F-015-009-2018.pdf",
+      "collection": "Records of the Office of Legislative Affairs (Clinton Administration)",
+      "series": "Al Maldon's Files",
+      "ancestors": [
+        {
+          "naId": "2525014",
+          "title": "Records of the Office of Legislative Affairs (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "4483049",
+          "title": "Al Maldon's Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "23869265",
+      "title": "Economic Plan Energy Tax (new)",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/23869265",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/65/8692/23869265/content/presidential-libraries/foia/2014-0026-F/ag-t-6012477-20140026F-001-004-2015.pdf",
+      "collection": "Records of the Office of Domestic Policy in the Office of the Vice President (Clinton Administration)",
+      "series": "Kristin Schneeman's Files",
+      "ancestors": [
+        {
+          "naId": "5957378",
+          "title": "Records of the Office of Domestic Policy in the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "6012477",
+          "title": "Kristin Schneeman's Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "40491694",
+      "title": "Ireland-London Bombing-Outside Comments, February 9, 1996 [2]",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/40491694",
+      "digitalUrl": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585765/Batch0002/42-t-7585765-20110355F-005-002-2016.pdf",
+      "collection": "Records of the National Security Council Staff Director (Clinton Administration)",
+      "series": "Nancy Soderberg's Files",
+      "ancestors": [
+        {
+          "naId": "7388836",
+          "title": "Records of the National Security Council Staff Director (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "7585765",
+          "title": "Nancy Soderberg's Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "163545436",
+      "title": "Memcon between President William Jefferson Clinton and President Boris Yeltsin",
+      "description": "",
+      "level": "item",
+      "category": "declassified",
+      "digitalObjects": 38,
+      "catalogUrl": "https://catalog.archives.gov/id/163545436",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/7585721/7-YeltsinHydePark_Page_01.jpg",
+      "collection": "Records of the National Security Council Records Management Office (Clinton Administration)",
+      "series": "Presidential Records Series (PRS) Files",
+      "ancestors": [
+        {
+          "naId": "7388808",
+          "title": "Records of the National Security Council Records Management Office (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "7585721",
+          "title": "Presidential Records Series (PRS) Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "24325779",
+      "title": "Papers Fact Sheet What Has Been Reported AIDS Drugs for South Africa",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/24325779",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3257/24325779/content/presidential-libraries/foia/2006-0003-F/ag-t-6120190-20060003f-005-003-2015.pdf",
+      "collection": "Records of the Office of the Chief of Staff and Administration in the Office of the Vice President (Clinton Administration)",
+      "series": "Public Liaison Files",
+      "ancestors": [
+        {
+          "naId": "6120129",
+          "title": "Records of the Office of the Chief of Staff and Administration in the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "6120190",
+          "title": "Public Liaison Files",
+          "level": "series"
+        }
+      ]
+    },
+    {
+      "naId": "24325783",
+      "title": "South Africa AIDS",
+      "description": "",
+      "level": "fileUnit",
+      "category": "declassified",
+      "digitalObjects": 1,
+      "catalogUrl": "https://catalog.archives.gov/id/24325783",
+      "digitalUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/83/3257/24325783/content/presidential-libraries/foia/2006-0003-F/ag-t-6120191-20060003f-005-005-2015.pdf",
+      "collection": "Records of the Office of the Chief of Staff and Administration in the Office of the Vice President (Clinton Administration)",
+      "series": "General Files of Rachel Sullivan and Kate Murphy",
+      "ancestors": [
+        {
+          "naId": "6120129",
+          "title": "Records of the Office of the Chief of Staff and Administration in the Office of the Vice President (Clinton Administration)",
+          "level": "collection"
+        },
+        {
+          "naId": "6120191",
+          "title": "General Files of Rachel Sullivan and Kate Murphy",
+          "level": "series"
+        }
+      ]
+    }
+  ]
+}

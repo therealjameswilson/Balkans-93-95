@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
+  <title id="title">Balkans compiler research map</title>
+  <desc id="desc">A stylized map and timeline for FRUS Volume XV source discovery.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dcecef"/>
+      <stop offset="1" stop-color="#b7d1d5"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f1e4"/>
+      <stop offset="1" stop-color="#e0d1bc"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#173c5d" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="620" fill="url(#sea)"/>
+  <path d="M0 0H920V620H0Z" fill="#f6f1e7" opacity="0.18"/>
+  <path d="M92 0c42 58 84 101 126 128 52 34 89 68 112 103 26 40 24 82-6 128-23 36-21 67 5 93 27 26 61 37 101 35 63-2 103 25 121 82H0V0Z" fill="#9ebfc4" opacity="0.48"/>
+  <path d="M315 2c49 44 87 78 116 101 63 49 111 97 145 144 27 38 49 89 66 153 17 63 50 115 98 156 21 18 38 39 51 64H920V0Z" fill="url(#land)"/>
+  <path d="M395 32c-8 34-22 64-42 89-17 21-19 45-7 72 9 21 6 39-8 55-18 20-25 44-22 72 4 33 25 55 63 65 25 6 45 20 59 42 11 18 30 28 56 31 38 5 67 21 87 48 22 29 55 46 99 50 29 3 54 14 76 33h164V0H407Z" fill="#eadbc8"/>
+  <path d="M430 54c50 45 86 90 108 135 17 34 41 64 72 90 33 27 48 60 47 100-1 41 18 74 56 100 30 20 57 44 81 72" fill="none" stroke="#d2b98e" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+  <path d="M344 146c44 19 82 48 114 87 35 42 73 75 114 99 31 18 61 47 89 87 24 34 58 60 103 78" fill="none" stroke="#f7f1e4" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="44" width="274" height="146" rx="8" fill="#fffdf8" stroke="#d7cabb"/>
+    <text x="78" y="82" fill="#a83a3d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">VOLUME XV</text>
+    <text x="78" y="116" fill="#18222d" font-family="Georgia, serif" font-size="30" font-weight="700">Wars in the Balkans</text>
+    <text x="78" y="146" fill="#5e6872" font-family="Inter, Arial, sans-serif" font-size="16">1993-1995 compiler source map</text>
+  </g>
+
+  <g fill="#173c5d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">
+    <circle cx="470" cy="315" r="7" fill="#a83a3d"/>
+    <text x="485" y="320">Sarajevo</text>
+    <circle cx="392" cy="230" r="7" fill="#216c70"/>
+    <text x="304" y="225">Zagreb</text>
+    <circle cx="600" cy="250" r="7" fill="#516d49"/>
+    <text x="616" y="255">Belgrade</text>
+    <circle cx="535" cy="365" r="7" fill="#a83a3d"/>
+    <text x="550" y="371">Srebrenica</text>
+    <circle cx="325" cy="398" r="7" fill="#b98731"/>
+    <text x="230" y="404">Adriatic</text>
+  </g>
+
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M470 315C548 286 588 264 600 250" stroke="#a83a3d"/>
+    <path d="M470 315C425 280 399 252 392 230" stroke="#216c70"/>
+    <path d="M470 315C506 335 528 352 535 365" stroke="#516d49"/>
+  </g>
+
+  <g transform="translate(84 444)">
+    <rect width="752" height="112" rx="8" fill="#173c5d" opacity="0.96"/>
+    <line x1="74" y1="56" x2="676" y2="56" stroke="#f7f1e4" stroke-width="3" opacity="0.8"/>
+    <g fill="#fffdf8" font-family="Inter, Arial, sans-serif">
+      <circle cx="74" cy="56" r="9" fill="#e8c16e"/>
+      <text x="48" y="91" font-size="15" font-weight="800">1993</text>
+      <text x="24" y="30" font-size="13">Options</text>
+
+      <circle cx="290" cy="56" r="9" fill="#e8c16e"/>
+      <text x="264" y="91" font-size="15" font-weight="800">1994</text>
+      <text x="238" y="30" font-size="13">Contact Group</text>
+
+      <circle cx="506" cy="56" r="9" fill="#e8c16e"/>
+      <text x="480" y="91" font-size="15" font-weight="800">1995</text>
+      <text x="452" y="30" font-size="13">Crisis to Dayton</text>
+
+      <circle cx="676" cy="56" r="9" fill="#e8c16e"/>
+      <text x="650" y="91" font-size="15" font-weight="800">Paris</text>
+      <text x="630" y="30" font-size="13">Signing</text>
+    </g>
+  </g>
+
+  <g transform="translate(650 66)">
+    <rect width="190" height="142" rx="8" fill="#fffdf8" stroke="#d7cabb"/>
+    <text x="18" y="36" fill="#a83a3d" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">SOURCE CLUSTERS</text>
+    <g font-family="Inter, Arial, sans-serif" font-size="14" fill="#18222d">
+      <circle cx="22" cy="62" r="5" fill="#173c5d"/>
+      <text x="36" y="67">NSC folders</text>
+      <circle cx="22" cy="88" r="5" fill="#216c70"/>
+      <text x="36" y="93">PC/DC summaries</text>
+      <circle cx="22" cy="114" r="5" fill="#516d49"/>
+      <text x="36" y="119">BTF intelligence</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRUS 1993-2000 Volume XV Compiler Workspace</title>
+    <meta
+      name="description"
+      content="A public compiler workspace for source discovery, document triage, and chronology-building for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="FRUS Volume XV compiler workspace home">
+        <span class="brand-mark">XV</span>
+        <span>Wars in the Balkans</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#lanes">Lanes</a>
+        <a href="#conversations">Memcons/Telcons</a>
+        <a href="#sources">Sources</a>
+        <a href="#chronology">Chronology</a>
+        <a href="#questions">Questions</a>
+        <a href="#queue">Queue</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">FRUS 1993-2000, Volume XV</p>
+          <h1 id="hero-title">Balkans Compiler Workspace</h1>
+          <p class="lede">
+            A working map for the still-researched <em>Wars in the Balkans,
+            1993-1995</em> volume: source collections, candidate document lanes,
+            policy chronology, and open questions a compiler can turn into a
+            selection checklist.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#sources">Triage Source Leads</a>
+            <a class="button secondary" href="#chronology">Review Timeline</a>
+          </div>
+        </div>
+        <aside class="volume-panel" aria-label="Volume status">
+          <img
+            src="assets/balkans-compiler-map.svg"
+            alt="Research map showing the Balkans, key capitals, allied diplomacy, and the 1993 to 1995 policy arc."
+          />
+          <dl>
+            <div>
+              <dt>Official Title</dt>
+              <dd>Wars in the Balkans, 1993-1995</dd>
+            </div>
+            <div>
+              <dt>Series Status</dt>
+              <dd id="volume-status">Being Researched</dd>
+            </div>
+            <div>
+              <dt>Working Center</dt>
+              <dd>Bosnia, Croatia, Serbia, NATO, UN</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Compiler workspace summary">
+        <div>
+          <span id="total-sources">0</span>
+          <p>source leads</p>
+        </div>
+        <div>
+          <span id="total-lanes">0</span>
+          <p>research lanes</p>
+        </div>
+        <div>
+          <span id="total-conversations">0</span>
+          <p>memcon/telcon records</p>
+        </div>
+        <div>
+          <span id="total-pages">0</span>
+          <p>conversation pages</p>
+        </div>
+        <div>
+          <span id="total-events">0</span>
+          <p>chronology anchors</p>
+        </div>
+      </section>
+
+      <section class="section" id="lanes" aria-labelledby="lanes-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Research Architecture</p>
+            <h2 id="lanes-title">Compiler Lanes</h2>
+          </div>
+          <p class="section-note">
+            Built around the policy sequence a FRUS volume will need to document:
+            option review, allied management, intelligence support, coercive
+            diplomacy, atrocity response, and Dayton.
+          </p>
+        </div>
+        <div id="lanes-root" class="lane-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Declassified Conversations</p>
+            <h2 id="conversations-title">Memcons and Telcons</h2>
+          </div>
+          <p class="section-note">
+            These are item-level and extracted document-level Clinton Digital
+            Library leads for presidential, allied, NATO, and Contact Group
+            conversations that can anchor the documentary sequence.
+          </p>
+        </div>
+        <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
+      </section>
+
+      <section class="section source-section" id="sources" aria-labelledby="sources-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Document Discovery</p>
+            <h2 id="sources-title">Source Matrix</h2>
+          </div>
+          <label class="search-field">
+            <span>Search</span>
+            <input id="source-search" type="search" autocomplete="off" />
+          </label>
+        </div>
+        <div id="source-filters" class="filter-row" aria-label="Source type filters"></div>
+        <div id="sources-root" class="source-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section split-section" id="chronology" aria-labelledby="chronology-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Policy Sequence</p>
+            <h2 id="chronology-title">Chronology Anchors</h2>
+          </div>
+          <p class="section-note">
+            Events here are not a final documentary table. They are the date
+            spine for matching memcons, telcons, PC/DC records, cables, and
+            intelligence products.
+          </p>
+        </div>
+        <div id="chronology-root" class="timeline" aria-live="polite"></div>
+      </section>
+
+      <section class="section" id="questions" aria-labelledby="questions-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selection Pressure</p>
+            <h2 id="questions-title">Open Compiler Questions</h2>
+          </div>
+        </div>
+        <div id="questions-root" class="question-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section queue-section" id="queue" aria-labelledby="queue-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Harvest Plan</p>
+            <h2 id="queue-title">Next Source Queue</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Target</th>
+                <th scope="col">Why It Matters</th>
+                <th scope="col">Next Action</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="queue-root"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section method-section" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Controls</p>
+            <h2 id="method-title">Compiler Notes</h2>
+          </div>
+        </div>
+        <div class="method-grid">
+          <article>
+            <h3>Scope Boundary</h3>
+            <p>
+              The page is scoped to the official Volume XV title and 1993-1995
+              date range. Post-1995 material is flagged only when it clarifies
+              the Dayton handoff or a source trail.
+            </p>
+          </article>
+          <article>
+            <h3>Citation Discipline</h3>
+            <p>
+              Source cards preserve collection names, identifiers, institutional
+              custody, and direct links so later harvested records can keep a
+              clean provenance chain.
+            </p>
+          </article>
+          <article>
+            <h3>Future Data</h3>
+            <p>
+              The interface renders from <code>data/compiler-map.json</code>.
+              Real document rows can be added there without changing the page
+              structure.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Companion workspace for
+        <a href="https://history.state.gov/historicaldocuments/frus1993-00v15">FRUS 1993-2000, Volume XV</a>.
+        Source leads reviewed May 19, 2026.
+      </p>
+    </footer>
+
+    <script src="data/compiler-map.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

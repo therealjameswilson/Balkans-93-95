@@ -1,0 +1,1530 @@
+window.COMPILER_MAP_DATA = {
+  "volume": {
+    "title": "Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995",
+    "shortTitle": "Wars in the Balkans, 1993-1995",
+    "status": "Being Researched",
+    "coreDecisionYear": "1995",
+    "officialUrl": "https://history.state.gov/historicaldocuments/frus1993-00v15",
+    "statusUrl": "https://history.state.gov/historicaldocuments/status-of-the-series",
+    "lastReviewed": "2026-05-19"
+  },
+  "lanes": [
+    {
+      "number": 1,
+      "title": "Opening Review and Vance-Owen",
+      "period": "January-June 1993",
+      "focus": "Capture how the new administration inherited Bosnia policy, tested diplomatic plans, and weighed lift-and-strike, no-fly-zone enforcement, humanitarian relief, and recognition issues.",
+      "mustFind": [
+        "Presidential and NSC option papers",
+        "PC/DC summaries on early policy review",
+        "State and allied reaction cables"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Lift-and-Strike, UNPROFOR, and Safe Areas",
+      "period": "1993-1994",
+      "focus": "Track the recurring decision loop around the arms embargo, NATO air power, UN protection, safe areas, and congressional pressure.",
+      "mustFind": [
+        "Deputies and Principals Committee decision records",
+        "No-fly-zone and safe-area implementation papers",
+        "Congressional and public diplomacy pressure points"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Federation and Contact Group Diplomacy",
+      "period": "March-December 1994",
+      "focus": "Document the Washington Agreement, Contact Group diplomacy, pressure on Belgrade and Pale, and the Bihac crisis that forced renewed policy review.",
+      "mustFind": [
+        "Holbrooke, Christopher, and Lake memoranda",
+        "Contact Group ministerial and allied telcon records",
+        "Bihac intelligence and military assessments"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "1995 Crisis Escalation",
+      "period": "January-July 1995",
+      "focus": "Build the document spine for the January-to-July escalation: Bosnia/Croatia PC/DC meetings, hostage crisis, UNPROFOR withdrawal planning, Srebrenica, and allied coordination.",
+      "mustFind": [
+        "PC/DC summaries and BTF support memoranda",
+        "Clinton memcons and telcons with allied leaders",
+        "Srebrenica and war-crimes reporting"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Coercive Diplomacy and Dayton",
+      "period": "August-November 1995",
+      "focus": "Follow the shift from crisis response to coercive diplomacy, including NATO air operations, Contact Group terms, shuttle diplomacy, and the Dayton proximity talks.",
+      "mustFind": [
+        "Lake-to-President memoranda",
+        "State Department negotiation cables",
+        "Presidential calls with Izetbegovic, Tudjman, Milosevic, and allied leaders"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Implementation Handoff",
+      "period": "November-December 1995",
+      "focus": "Mark the transition from war termination to implementation: IFOR/NATO commitments, Paris signing, alliance presentation, and unresolved accountability issues.",
+      "mustFind": [
+        "Paris signing materials and photographs",
+        "NATO implementation and force-deployment papers",
+        "War-crimes and sanctions follow-through records"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "frus-volume",
+      "title": "Official FRUS Volume XV Page",
+      "identifier": "frus1993-00v15",
+      "institution": "Office of the Historian",
+      "type": "Control",
+      "priority": "Anchor",
+      "description": "The official landing page identifies the volume title and states that the volume is currently being researched.",
+      "compilerUse": "Use as the canonical title, date boundary, and public status reference for all downstream records.",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v15",
+      "tags": [
+        "Official",
+        "Status",
+        "Volume XV"
+      ]
+    },
+    {
+      "id": "status-page",
+      "title": "Status of the FRUS Series",
+      "identifier": "Status table",
+      "institution": "Office of the Historian",
+      "type": "Control",
+      "priority": "Anchor",
+      "description": "The production table lists the volume under Being Researched and places related 1993-2000 European volumes in the same production plan.",
+      "compilerUse": "Check whether the volume moves from research to clearance and flag adjacent volumes with overlapping evidence.",
+      "url": "https://history.state.gov/historicaldocuments/status-of-the-series",
+      "tags": [
+        "Official",
+        "Production",
+        "Adjacent volumes"
+      ]
+    },
+    {
+      "id": "bosnia-foia",
+      "title": "Bosnia Collection",
+      "identifier": "2008-0994-F",
+      "institution": "Clinton Digital Library",
+      "type": "Collection",
+      "priority": "Core",
+      "description": "NSC European Affairs files from Jane Holl and Donald Kerrick, covering Bosnia-related memoranda, talking points, letters, reports, press guidance, news articles, and State Department cables.",
+      "compilerUse": "Primary folder map for humanitarian aid, UNPROFOR, lift-and-strike, Vance-Owen, Carter cease-fire efforts, and 1993-1995 policy traffic.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/169",
+      "tags": [
+        "NSC",
+        "Bosnia",
+        "UNPROFOR",
+        "Arms embargo"
+      ]
+    },
+    {
+      "id": "btf",
+      "title": "Bosnian Declassified Records",
+      "identifier": "BTF collection",
+      "institution": "Clinton Digital Library",
+      "type": "Intelligence",
+      "priority": "Core",
+      "description": "More than 300 declassified records related to the Director of Central Intelligence Interagency Balkan Task Force and intelligence support for Bosnia policy.",
+      "compilerUse": "Pair intelligence products with PC/DC meetings, military option papers, and 1995 decision points.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/37",
+      "tags": [
+        "BTF",
+        "CIA",
+        "PC/DC",
+        "1995"
+      ]
+    },
+    {
+      "id": "vershbow",
+      "title": "Alexander Vershbow - Bosnia",
+      "identifier": "2013-0687-F",
+      "institution": "Clinton Digital Library",
+      "type": "Collection",
+      "priority": "Core",
+      "description": "NSC European Affairs files from 1994 to early 1996, including PC/DC summaries, UN Security Council decisions, intelligence-related records, and Carter cease-fire materials.",
+      "compilerUse": "Dense folder sequence for late-1994 Bihac, 1995 Bosnia/Croatia meetings, and the policy road into Dayton.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/178",
+      "tags": [
+        "NSC",
+        "Vershbow",
+        "Bihac",
+        "Dayton"
+      ]
+    },
+    {
+      "id": "genocide-yugoslavia",
+      "title": "Genocide in Yugoslavia",
+      "identifier": "2006-0647-F",
+      "institution": "Clinton Digital Library",
+      "type": "War Crimes",
+      "priority": "High",
+      "description": "Records on ethnic cleansing, Srebrenica, war-crimes accountability, reports, correspondence, talking points, cables, press guidance, and related memoranda.",
+      "compilerUse": "Build the Srebrenica and atrocity-response documentary trail and separate operational evidence from public messaging.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/132",
+      "tags": [
+        "Srebrenica",
+        "War crimes",
+        "ICTY",
+        "Atrocities"
+      ]
+    },
+    {
+      "id": "pc-dc-mdr",
+      "title": "PC/DC Meetings on Bosnia",
+      "identifier": "2010-0533-M",
+      "institution": "Clinton Digital Library",
+      "type": "MDR",
+      "priority": "Core",
+      "description": "Mandatory Declassification Review release covering Principals Committee and Deputies Committee meetings on Bosnia from 1993 through 1995.",
+      "compilerUse": "Use summaries of conclusions as the decision backbone for every chapter lane.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "tags": [
+        "Principals Committee",
+        "Deputies Committee",
+        "Decision records"
+      ]
+    },
+    {
+      "id": "bosnia-memcons",
+      "title": "Clinton-Izetbegovic Memcons and Telcons",
+      "identifier": "2011-0964-M",
+      "institution": "Clinton Digital Library",
+      "type": "MDR",
+      "priority": "Core",
+      "description": "Mandatory Declassification Review release with President Clinton conversations with Bosnian President Alija Izetbegovic from 1993 through 1995, plus a Milosevic pull-aside memcon.",
+      "compilerUse": "Anchor presidential diplomacy with Bosnian leadership and cross-check chronology against schedule records.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "tags": [
+        "Memcon",
+        "Telcon",
+        "Izetbegovic",
+        "Milosevic"
+      ]
+    },
+    {
+      "id": "getting-dayton",
+      "title": "Summer 1995 Dayton-Track Documents",
+      "identifier": "2012-0799-M",
+      "institution": "Clinton Digital Library",
+      "type": "MDR",
+      "priority": "High",
+      "description": "Mandatory Declassification Review release of summer 1995 Bosnia documents referenced in Getting to Dayton, including Lake, NSC, and State Department materials.",
+      "compilerUse": "Bridge the July crisis, current strategy review, and the diplomatic track that produced Dayton.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36591",
+      "tags": [
+        "Getting to Dayton",
+        "Lake",
+        "State Department",
+        "Strategy"
+      ]
+    },
+    {
+      "id": "allied-leaders",
+      "title": "Allied Leader Memcons and Telcons",
+      "identifier": "2013-0517-M",
+      "institution": "Clinton Digital Library",
+      "type": "MDR",
+      "priority": "High",
+      "description": "Mandatory Declassification Review release of Clinton conversations with Jacques Chirac, Helmut Kohl, and John Major on Bosnia in June-July 1995, plus a Christopher-de Charette telcon.",
+      "compilerUse": "Document alliance management after the hostage crisis, before and after Srebrenica, and during air-power negotiations.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "tags": [
+        "Chirac",
+        "Kohl",
+        "Major",
+        "Christopher"
+      ]
+    },
+    {
+      "id": "croatia",
+      "title": "Declassified Documents Concerning Croatia",
+      "identifier": "2014-0311-M",
+      "institution": "Clinton Digital Library",
+      "type": "MDR",
+      "priority": "High",
+      "description": "Mandatory Declassification Review release with material on Croatia, including a strategy paper, a demarche to Milosevic, and a January 17, 1995 cable on a meeting with Milosevic.",
+      "compilerUse": "Add the Croatia/Krajina and Milosevic pressure track to the Bosnia-centered source base.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/57229",
+      "tags": [
+        "Croatia",
+        "Milosevic",
+        "Krajina",
+        "War crimes"
+      ]
+    },
+    {
+      "id": "paris-av",
+      "title": "Balkan Peace Agreement AV Finding Aid",
+      "identifier": "2007-1036-F",
+      "institution": "Clinton Digital Library",
+      "type": "Visual",
+      "priority": "Contextual",
+      "description": "Photographs from the Balkan Peace Agreement meetings in Paris on December 14, 1995, including Clinton, Christopher, Holbrooke, Izetbegovic, Tudjman, Milosevic, and allied leaders.",
+      "compilerUse": "Verify Paris signing participants and support final-volume contextual apparatus.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/48201",
+      "tags": [
+        "Paris",
+        "Dayton",
+        "Photographs",
+        "Signing"
+      ]
+    },
+    {
+      "id": "daily-schedule",
+      "title": "President Clinton's Daily Schedule",
+      "identifier": "Schedule collection",
+      "institution": "Clinton Digital Library",
+      "type": "Chronology",
+      "priority": "Contextual",
+      "description": "Digitized presidential schedules for the Clinton administration.",
+      "compilerUse": "Verify meeting and call times before assigning date lines to memcons and telcons.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/39",
+      "tags": [
+        "Schedule",
+        "Date line",
+        "Verification"
+      ]
+    },
+    {
+      "id": "memcons-collection",
+      "title": "Memcons - Memoranda of Conversation",
+      "identifier": "collection 255",
+      "institution": "Clinton Digital Library",
+      "type": "Conversation",
+      "priority": "Anchor",
+      "description": "Collection-level index for declassified memoranda of face-to-face presidential and vice-presidential conversations.",
+      "compilerUse": "Use as the item-level entry point for meetings with Chirac, Major, NATO leaders, Yeltsin, and other foreign officials that intersect the Balkans story.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/255",
+      "tags": [
+        "Memcon",
+        "Foreign leaders",
+        "NSC records"
+      ]
+    },
+    {
+      "id": "telcons-collection",
+      "title": "Telcons - Memoranda of Telephone Conversation",
+      "identifier": "collection 256",
+      "institution": "Clinton Digital Library",
+      "type": "Conversation",
+      "priority": "Anchor",
+      "description": "Collection-level index for declassified memoranda of telephone conversations with foreign leaders.",
+      "compilerUse": "Use as the item-level entry point for calls with Mitterrand, Chirac, Major, Kohl, Yeltsin, and other leaders during Bosnia policy review.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/256",
+      "tags": [
+        "Telcon",
+        "Foreign leaders",
+        "NSC records"
+      ]
+    },
+    {
+      "id": "bosnia-telcons-folder",
+      "title": "Telcons and Memcons Folder",
+      "identifier": "2008-0994-F, Box 26",
+      "institution": "Clinton Digital Library",
+      "type": "Conversation",
+      "priority": "Core",
+      "description": "A Bosnia collection folder titled Telcons and Memcons from NSC European Affairs files.",
+      "compilerUse": "Use as the folder-level check against item-level memcon/telcon records, especially for November 1994 and 1995 conversation packets.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/62806",
+      "tags": [
+        "Bosnia",
+        "Memcon",
+        "Telcon",
+        "Folder"
+      ]
+    },
+    {
+      "id": "nara-scout-memcon-search",
+      "title": "NARA Scout Memcon/Telcon Search",
+      "identifier": "2026-05-19 search",
+      "institution": "NARA Scout / National Archives Catalog",
+      "type": "Conversation",
+      "priority": "Core",
+      "description": "Computer Use search run through NARA Scout against all Clinton administration collections, 1993-1995, narrowed to declassified digitized records and memcon/telcon plus Bosnia/Dayton/Balkans terms.",
+      "compilerUse": "Use as the NARA Catalog cross-check against the Clinton Library item pages; the useful declassified hit was the Clinton-Yeltsin Hyde Park memcon on Bosnia implementation.",
+      "url": "https://therealjameswilson.github.io/nara-scout/#q=%28%22Memorandum+of+Conversation%22+OR+%22Memorandum+of+Telephone+Conversation%22+OR+memcon+OR+telcon%29+AND+%28Bosnia+OR+Yugoslavia+OR+Sarajevo+OR+Dayton+OR+Milosevic+OR+Izetbegovic+OR+Srebrenica+OR+Croatia+OR+Holbrooke%29&from=1993&to=1995&sort=relevance&perColl=25&perPage=50&scope=clinton%2C7386739%2C7386505",
+      "tags": [
+        "NARA Scout",
+        "NARA Catalog",
+        "NAID 163545436",
+        "Declassified"
+      ]
+    },
+    {
+      "id": "strobe-talbott-foia",
+      "title": "Strobe Talbott FOIA Case F-2017-13804",
+      "identifier": "F-2017-13804 manifest",
+      "institution": "State Department FOIA Library / Strobe Talbott FOIA Research Desk",
+      "type": "Collection",
+      "priority": "High",
+      "description": "Public manifest of 1,474 Talbott FOIA records with enriched descriptions and direct State Department PDF links. The manifest search found 67 Balkans hits: four in-volume contextual leads, no new 1993-1995 memcon/telcon candidates, and a larger post-1995 Kosovo/Bosnia follow-on cluster.",
+      "compilerUse": "Use for the Russia-facing diplomatic side channel around Kozyrev, Holbrooke, Dayton implementation, and the Volume XVI handoff; pull C09000009, C09000010, C09000068, and C09000051 first.",
+      "url": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
+      "tags": [
+        "Talbott",
+        "State FOIA",
+        "Russia",
+        "Holbrooke",
+        "Kozyrev"
+      ]
+    },
+    {
+      "id": "declassified-docs",
+      "title": "Declassified Documents Collection",
+      "identifier": "MDR collection",
+      "institution": "Clinton Digital Library",
+      "type": "Collection",
+      "priority": "High",
+      "description": "Foreign-affairs MDR collection with Bosnia, no-fly-zone, endgame strategy, NATO, and related releases.",
+      "compilerUse": "Sweep for small MDR releases that do not sit cleanly inside the larger Bosnia collection.",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/36",
+      "tags": [
+        "MDR",
+        "No-fly zone",
+        "NATO",
+        "Endgame"
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "id": "mitterrand-1993-02-15",
+      "date": "Feb 15, 1993",
+      "sortDate": "1993-02-15",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "counterpart": "Francois Mitterrand",
+      "identifier": "2015-0774-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Yugoslav War",
+        "Russia"
+      ],
+      "compilerUse": "Early allied call for the opening Clinton review of Bosnia policy, useful for Vance-Owen and allied-consultation framing.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101348",
+      "tags": [
+        "France",
+        "Opening review",
+        "Allied diplomacy"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101348; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf."
+    },
+    {
+      "id": "mitterrand-1993-03-17",
+      "date": "Mar 17, 1993",
+      "sortDate": "1993-03-17",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "counterpart": "Francois Mitterrand",
+      "identifier": "2015-0774-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Milosevic",
+        "Yeltsin",
+        "G7"
+      ],
+      "compilerUse": "Captures early Bosnia diplomacy where Russia, Serbia, and G7 coordination overlap.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101349",
+      "tags": [
+        "France",
+        "G7",
+        "Milosevic"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101349; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf."
+    },
+    {
+      "id": "gore-izetbegovic-1993-03-26",
+      "date": "Mar 26, 1993",
+      "sortDate": "1993-03-26",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Vice President Gore and President Alija Izetbegovic",
+      "counterpart": "Al Gore; Alija Izetbegovic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Vance-Owen",
+        "Bosnia and Herzegovina",
+        "Bosnian Croat relations",
+        "Eastern Bosnia"
+      ],
+      "compilerUse": "Vice-presidential conversation lead for the opening review, Vance-Owen implementation, and early safe-area concerns.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/bosnia/1993-03-26-gore-izetbegovic-memcon.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "3-7",
+      "pageCount": 5,
+      "localPdfPageCount": 5,
+      "extractionStatus": "Extracted source pages 3-7 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 3-7.",
+      "tags": [
+        "Izetbegovic",
+        "Gore",
+        "Vance-Owen"
+      ]
+    },
+    {
+      "id": "mitterrand-1993-04-20",
+      "date": "Apr 20, 1993",
+      "sortDate": "1993-04-20",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "counterpart": "Francois Mitterrand",
+      "identifier": "2015-0774-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Yugoslav War",
+        "NATO",
+        "Turkey"
+      ],
+      "compilerUse": "Pairs Bosnia policy with NATO and allied regional concerns during the first spring of the administration.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101350",
+      "tags": [
+        "France",
+        "NATO",
+        "Vance-Owen"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf",
+      "pageCount": 4,
+      "sourcePdfPages": "1-4",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101350; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf."
+    },
+    {
+      "id": "mitterrand-1993-05-06",
+      "date": "May 6, 1993",
+      "sortDate": "1993-05-06",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "counterpart": "Francois Mitterrand",
+      "identifier": "2015-0774-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Yugoslav War",
+        "United Nations Security Council"
+      ],
+      "compilerUse": "Useful for tracing the UN Security Council and allied diplomatic line before safe-area and no-fly-zone enforcement matured.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101351",
+      "tags": [
+        "France",
+        "UN Security Council",
+        "Safe areas"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101351; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf."
+    },
+    {
+      "id": "izetbegovic-1993-09-08",
+      "date": "Sep 8, 1993",
+      "sortDate": "1993-09-08",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
+      "counterpart": "Alija Izetbegovic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Safe areas",
+        "Negotiations",
+        "Refugees"
+      ],
+      "compilerUse": "Presidential meeting lead for the 1993 Bosnia review after Vance-Owen and before the 1994 federation track.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1993-09-08-izetbegovic-1993-09-08.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "10-15",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "extractionStatus": "Extracted source pages 10-15 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 10-15.",
+      "tags": [
+        "Izetbegovic",
+        "Presidential diplomacy",
+        "1993"
+      ]
+    },
+    {
+      "id": "izetbegovic-1994-09-25",
+      "date": "Sep 25, 1994",
+      "sortDate": "1994-09-25",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
+      "counterpart": "Alija Izetbegovic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Contact Group",
+        "Federation",
+        "Sanctions"
+      ],
+      "compilerUse": "Mid-1994 presidential meeting lead for Contact Group diplomacy and the Bosnian government's posture before Bihac.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1994-09-25-izetbegovic-1994-09-25.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "18-25",
+      "pageCount": 8,
+      "localPdfPageCount": 8,
+      "extractionStatus": "Extracted source pages 18-25 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 18-25.",
+      "tags": [
+        "Izetbegovic",
+        "Contact Group",
+        "Federation"
+      ]
+    },
+    {
+      "id": "mitterrand-1994-11-23",
+      "date": "Nov 23, 1994",
+      "sortDate": "1994-11-23",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "counterpart": "Francois Mitterrand",
+      "identifier": "2015-0774-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "UNPROFOR",
+        "Aerial bombing",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Milosevic"
+      ],
+      "compilerUse": "Late-1994 allied call for the Bihac crisis and renewed debate over air power, UNPROFOR, and Milosevic pressure.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101400",
+      "tags": [
+        "France",
+        "Bihac",
+        "UNPROFOR",
+        "Air power"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101400; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf."
+    },
+    {
+      "id": "izetbegovic-tudjman-1994-12-05",
+      "date": "Dec 5, 1994",
+      "sortDate": "1994-12-05",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Presidents Izetbegovic and Tudjman",
+      "counterpart": "Alija Izetbegovic; Franjo Tudjman",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Bihac",
+        "Federation"
+      ],
+      "compilerUse": "Regional presidential meeting for the late-1994 Bihac crisis and the Bosniak-Croat federation relationship.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1994-12-05-izetbegovic-tudjman-1994-12-05.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "27-29",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 27-29 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 27-29.",
+      "tags": [
+        "Izetbegovic",
+        "Tudjman",
+        "Bihac",
+        "Croatia"
+      ]
+    },
+    {
+      "id": "claes-1995-03-07",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - NATO Secretary General Willy Claes",
+      "counterpart": "Willy Claes",
+      "identifier": "2015-0755-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "NATO",
+        "UNPROFOR",
+        "Russia",
+        "Partnership for Peace"
+      ],
+      "compilerUse": "A NATO-facing conversation lead for the 1995 escalation lane and the alliance-management chapter.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101431",
+      "tags": [
+        "NATO",
+        "UNPROFOR",
+        "Alliance"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf",
+      "pageCount": 6,
+      "sourcePdfPages": "1-6",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101431; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf."
+    },
+    {
+      "id": "major-1995-04-04",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
+      "counterpart": "John Major",
+      "identifier": "2012-0801-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "United Kingdom",
+        "Bosnia packet",
+        "Allied diplomacy"
+      ],
+      "compilerUse": "Item-level Major meeting inside the Bosnia-focused 2012-0801-M packet; use with packet description and schedule checks.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101436",
+      "tags": [
+        "United Kingdom",
+        "Major",
+        "Memcon"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf",
+      "pageCount": 15,
+      "sourcePdfPages": "1-15",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101436; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf."
+    },
+    {
+      "id": "chirac-1995-05-27",
+      "date": "May 27, 1995",
+      "sortDate": "1995-05-27",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2017-0775-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "UNPROFOR",
+        "Aerial bombing",
+        "Bosnia and Herzegovina",
+        "Yeltsin",
+        "Milosevic"
+      ],
+      "compilerUse": "Key call for the May 1995 hostage/air-power crisis and coordination with France, Russia, and pressure on Milosevic.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/118528",
+      "tags": [
+        "France",
+        "Hostage crisis",
+        "Air power"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf",
+      "pageCount": 4,
+      "sourcePdfPages": "1-4",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/118528; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf."
+    },
+    {
+      "id": "chirac-1995-06-14",
+      "date": "Jun 14, 1995",
+      "sortDate": "1995-06-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2013-0517-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "UNPROFOR",
+        "Bosnia and Herzegovina",
+        "Milosevic",
+        "World Bank"
+      ],
+      "compilerUse": "Allied-leader memcon in the June-July Bosnia release; use for post-hostage-crisis French alignment.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101402",
+      "tags": [
+        "France",
+        "UNPROFOR",
+        "Allied leaders"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf",
+      "pageCount": 10,
+      "sourcePdfPages": "1-10",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101402; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf."
+    },
+    {
+      "id": "major-1995-06-16",
+      "date": "Jun 16, 1995",
+      "sortDate": "1995-06-16",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
+      "counterpart": "John Major",
+      "identifier": "2012-0801-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "United Kingdom",
+        "Bosnia packet",
+        "Allied diplomacy"
+      ],
+      "compilerUse": "Item-level Major meeting in the 1995 Bosnia/Northern Ireland packet, useful for UK alignment after the hostage crisis.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101439",
+      "tags": [
+        "United Kingdom",
+        "Major",
+        "Allied leaders"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101439; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf."
+    },
+    {
+      "id": "kohl-1995-07-13",
+      "date": "Jul 13, 1995",
+      "sortDate": "1995-07-13",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - Chancellor Helmut Kohl of Germany",
+      "counterpart": "Helmut Kohl",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Srebrenica",
+        "UNPROFOR",
+        "Bosnia",
+        "Chirac"
+      ],
+      "compilerUse": "Post-Srebrenica allied telcon with Kohl on UNPROFOR, Chirac's proposal, and German support.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-13-kohl-1995-07-13.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "35-37",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 35-37 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 35-37.",
+      "tags": [
+        "Germany",
+        "Kohl",
+        "Srebrenica",
+        "UNPROFOR"
+      ]
+    },
+    {
+      "id": "chirac-1995-07-13",
+      "date": "Jul 13, 1995",
+      "sortDate": "1995-07-13",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Srebrenica",
+        "UNPROFOR",
+        "Bosnia",
+        "Ground forces"
+      ],
+      "compilerUse": "Immediate Srebrenica crisis telcon with Chirac on ground-force options, UNPROFOR, and the arms embargo.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-13-chirac-1995-07-13.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "51-55",
+      "pageCount": 5,
+      "localPdfPageCount": 5,
+      "extractionStatus": "Extracted source pages 51-55 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 51-55.",
+      "tags": [
+        "France",
+        "Chirac",
+        "Srebrenica",
+        "UNPROFOR"
+      ]
+    },
+    {
+      "id": "chirac-1995-07-19",
+      "date": "Jul 19, 1995",
+      "sortDate": "1995-07-19",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Gorazde",
+        "Air strikes",
+        "Bosnia",
+        "London meeting"
+      ],
+      "compilerUse": "Allied telcon on the eve of the London meeting, warning options, air power, and French ground-force concerns.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-19-chirac-1995-07-19.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "66-71",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "extractionStatus": "Extracted source pages 66-71 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 66-71.",
+      "tags": [
+        "France",
+        "Chirac",
+        "Gorazde",
+        "Air power"
+      ]
+    },
+    {
+      "id": "major-1995-07-19",
+      "date": "Jul 19, 1995",
+      "sortDate": "1995-07-19",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - Prime Minister John Major of the United Kingdom",
+      "counterpart": "John Major",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Gorazde",
+        "UNPROFOR",
+        "Bosnia",
+        "Chirac"
+      ],
+      "compilerUse": "British telcon aligning positions after Clinton's Chirac call and before the London meeting.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-19-major-1995-07-19.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "76-83",
+      "pageCount": 8,
+      "localPdfPageCount": 8,
+      "extractionStatus": "Extracted source pages 76-83 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 76-83.",
+      "tags": [
+        "United Kingdom",
+        "Major",
+        "London meeting",
+        "UNPROFOR"
+      ]
+    },
+    {
+      "id": "christopher-de-charette-1995-07-19",
+      "date": "Jul 19, 1995",
+      "sortDate": "1995-07-19",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - Secretary Christopher and Foreign Minister de Charette",
+      "counterpart": "Herve de Charette",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Bosnia",
+        "Gorazde",
+        "London meeting",
+        "France"
+      ],
+      "compilerUse": "Secretary-level French telcon for the London meeting and allied negotiation over Gorazde after Srebrenica.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-19-christopher-de-charette-1995-07-19.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "2-4",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 2-4 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 2-4.",
+      "tags": [
+        "Christopher",
+        "de Charette",
+        "France",
+        "London meeting"
+      ]
+    },
+    {
+      "id": "izetbegovic-1995-07-20",
+      "date": "Jul 20, 1995",
+      "sortDate": "1995-07-20",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Clinton and President Alija Izetbegovic",
+      "counterpart": "Alija Izetbegovic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Srebrenica",
+        "Bosnia and Herzegovina",
+        "Air strikes",
+        "London meeting"
+      ],
+      "compilerUse": "Direct post-Srebrenica presidential call with the Bosnian president on air power and allied diplomacy.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-07-20-izetbegovic-1995-07-20.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "32-34",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 32-34 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 32-34.",
+      "tags": [
+        "Izetbegovic",
+        "Srebrenica",
+        "Air power",
+        "Telcon"
+      ]
+    },
+    {
+      "id": "chirac-1995-07-20",
+      "date": "Jul 20, 1995",
+      "sortDate": "1995-07-20",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2013-0517-M",
+      "collection": "Declassified documents concerning Bosnia",
+      "subjects": [
+        "Gorazde",
+        "Air strikes",
+        "Bosnia",
+        "London meeting"
+      ],
+      "compilerUse": "Follow-up Chirac telcon during the London meeting window on red lines, airstrikes, and Islamic-world reaction.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-20-chirac-1995-07-20.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "sourcePdfPages": "93-95",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 93-95 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Extracted from packet PDF pages 93-95.",
+      "tags": [
+        "France",
+        "Chirac",
+        "London meeting",
+        "Air power"
+      ]
+    },
+    {
+      "id": "chirac-1995-07-24",
+      "date": "Jul 24, 1995",
+      "sortDate": "1995-07-24",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2017-0775-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Aerial bombing",
+        "Bosnia and Herzegovina",
+        "Boutros-Ghali",
+        "United Nations"
+      ],
+      "compilerUse": "Post-Srebrenica call lead for air-power authorization, UN coordination, and French/U.S. pressure.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/118529",
+      "tags": [
+        "France",
+        "Srebrenica",
+        "Air power",
+        "UN"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf",
+      "pageCount": 4,
+      "sourcePdfPages": "1-4",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/118529; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf."
+    },
+    {
+      "id": "chirac-1995-08-07",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2017-0775-M",
+      "collection": "Telcons - Memoranda of Telephone Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Genocide",
+        "Yugoslav War"
+      ],
+      "compilerUse": "Direct post-Srebrenica telcon lead for genocide framing and allied action before the Dayton track accelerates.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/118530",
+      "tags": [
+        "France",
+        "Genocide",
+        "Srebrenica"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf",
+      "pageCount": 3,
+      "sourcePdfPages": "1-3",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/118530; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf."
+    },
+    {
+      "id": "yeltsin-1995-10-23-hyde-park-one-on-one",
+      "date": "Oct 23, 1995",
+      "sortDate": "1995-10-23",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Clinton-Yeltsin One-on-One at Hyde Park",
+      "counterpart": "Boris Yeltsin",
+      "identifier": "2014-0948-M / NAID 163545436",
+      "collection": "National Archives Catalog / Clinton NSC Records Management Office",
+      "subjects": [
+        "Bosnia implementation force",
+        "Russia-NATO",
+        "IFOR",
+        "CFE",
+        "Hyde Park"
+      ],
+      "compilerUse": "Extracted one-on-one memcon for Russian participation in post-Dayton peace implementation and NATO command arrangements.",
+      "url": "https://catalog.archives.gov/id/163545436",
+      "pdfUrl": "documents/extracted/1995-10-23-yeltsin-1995-10-23-hyde-park-one-on-one.pdf",
+      "sourcePdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/7585721/7-YeltsinHydePark.pdf",
+      "sourcePdfPages": "5-16",
+      "pageCount": 12,
+      "localPdfPageCount": 13,
+      "extractionStatus": "Extracted source pages 5-16 as the actual conversation and appended source marker page 1 as provenance.",
+      "sourceNote": "Source: National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M / NAID 163545436, https://catalog.archives.gov/id/163545436. Extracted from packet PDF pages 5-16.",
+      "tags": [
+        "Russia",
+        "Yeltsin",
+        "Hyde Park",
+        "IFOR",
+        "NAID 163545436"
+      ]
+    },
+    {
+      "id": "yeltsin-1995-10-23-hyde-park-lunch",
+      "date": "Oct 23, 1995",
+      "sortDate": "1995-10-23",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Lunch with President Boris Yeltsin",
+      "counterpart": "Boris Yeltsin",
+      "identifier": "2014-0948-M / NAID 163545436",
+      "collection": "National Archives Catalog / Clinton NSC Records Management Office",
+      "subjects": [
+        "Bosnia implementation force",
+        "Russia-NATO",
+        "IFOR",
+        "Hyde Park"
+      ],
+      "compilerUse": "Extracted Hyde Park lunch memcon continuing the Bosnia implementation discussion after the one-on-one.",
+      "url": "https://catalog.archives.gov/id/163545436",
+      "pdfUrl": "documents/extracted/1995-10-23-yeltsin-1995-10-23-hyde-park-lunch.pdf",
+      "sourcePdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/7585721/7-YeltsinHydePark.pdf",
+      "sourcePdfPages": "31-35",
+      "pageCount": 5,
+      "localPdfPageCount": 6,
+      "extractionStatus": "Extracted source pages 31-35 as the actual conversation and appended source marker page 18 as provenance.",
+      "sourceNote": "Source: National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M / NAID 163545436, https://catalog.archives.gov/id/163545436. Extracted from packet PDF pages 31-35.",
+      "tags": [
+        "Russia",
+        "Yeltsin",
+        "Hyde Park",
+        "IFOR",
+        "NAID 163545436"
+      ]
+    },
+    {
+      "id": "izetbegovic-tudjman-1995-10-24",
+      "date": "Oct 24, 1995",
+      "sortDate": "1995-10-24",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Presidents Izetbegovic and Tudjman",
+      "counterpart": "Alija Izetbegovic; Franjo Tudjman",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Dayton preparations",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Yeltsin"
+      ],
+      "compilerUse": "Pre-Dayton meeting that links Bosnian-Croatian coordination to Clinton's Hyde Park discussion with Yeltsin.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-10-24-izetbegovic-tudjman-1995-10-24.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "37-43",
+      "pageCount": 7,
+      "localPdfPageCount": 7,
+      "extractionStatus": "Extracted source pages 37-43 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 37-43.",
+      "tags": [
+        "Izetbegovic",
+        "Tudjman",
+        "Dayton",
+        "Russia"
+      ]
+    },
+    {
+      "id": "gonzalez-1995-12-03",
+      "date": "Dec 3, 1995",
+      "sortDate": "1995-12-03",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation with Spanish Prime Minister Felipe Gonzalez",
+      "counterpart": "Felipe Gonzalez",
+      "identifier": "2015-0548-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Dayton Peace Accords",
+        "NATO",
+        "OSCE",
+        "European Union"
+      ],
+      "compilerUse": "Post-Dayton European consultation lead for implementation, NATO, OSCE, and EU context.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/118881",
+      "tags": [
+        "Spain",
+        "Dayton",
+        "Implementation"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf",
+      "pageCount": 10,
+      "sourcePdfPages": "1-10",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/118881; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf."
+    },
+    {
+      "id": "chirac-1995-12-14",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "counterpart": "Jacques Chirac",
+      "identifier": "2017-0775-M",
+      "collection": "Memcons - Memoranda of Conversation",
+      "subjects": [
+        "Bosnia and Herzegovina",
+        "Dayton Peace Accords",
+        "Russia",
+        "Yeltsin",
+        "NATO",
+        "International War Crimes Tribunal"
+      ],
+      "compilerUse": "Paris signing-day memcon for the volume close: Dayton implementation, Russia, NATO, and war-crimes accountability.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/118556",
+      "tags": [
+        "France",
+        "Paris signing",
+        "Dayton",
+        "ICTY"
+      ],
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf",
+      "pageCount": 6,
+      "sourcePdfPages": "1-6",
+      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
+      "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/118556; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf."
+    },
+    {
+      "id": "izetbegovic-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Alija Izetbegovic",
+      "counterpart": "Alija Izetbegovic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Paris signing",
+        "Dayton implementation",
+        "IFOR",
+        "Sarajevo"
+      ],
+      "compilerUse": "Signing-day Bosnian pull-aside on IFOR safety, Sarajevo, federation politics, and implementation risks.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-izetbegovic-1995-12-14-pull-aside.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "55-57",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 55-57 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 55-57.",
+      "tags": [
+        "Izetbegovic",
+        "Paris signing",
+        "Dayton",
+        "Pull-aside"
+      ]
+    },
+    {
+      "id": "tudjman-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Franjo Tudjman",
+      "counterpart": "Franjo Tudjman",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Eastern Slavonia",
+        "Dayton implementation",
+        "Croatia",
+        "War crimes"
+      ],
+      "compilerUse": "Signing-day Croatia pull-aside for Eastern Slavonia and implementation issues adjacent to the Bosnia settlement.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-tudjman-1995-12-14-pull-aside.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "52-53",
+      "pageCount": 2,
+      "localPdfPageCount": 2,
+      "extractionStatus": "Extracted source pages 52-53 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 52-53.",
+      "tags": [
+        "Tudjman",
+        "Croatia",
+        "Paris signing",
+        "Pull-aside"
+      ]
+    },
+    {
+      "id": "milosevic-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Slobodan Milosevic",
+      "counterpart": "Slobodan Milosevic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Paris signing",
+        "Dayton implementation",
+        "Sarajevo",
+        "Federal Republic of Yugoslavia"
+      ],
+      "compilerUse": "Signing-day Milosevic pull-aside for implementation discipline, Sarajevo, and post-Dayton normalization pressure.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-milosevic-1995-12-14-pull-aside.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "59-61",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Extracted source pages 59-61 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 59-61.",
+      "tags": [
+        "Milosevic",
+        "Paris signing",
+        "Dayton",
+        "Pull-aside"
+      ]
+    },
+    {
+      "id": "quadrilateral-1995-12-14",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Quadrilateral Meeting with Tudjman, Izetbegovic, and Milosevic",
+      "counterpart": "Franjo Tudjman; Alija Izetbegovic; Slobodan Milosevic",
+      "identifier": "2011-0964-M",
+      "collection": "Declassified Documents concerning Bosnia",
+      "subjects": [
+        "Paris signing",
+        "Dayton implementation",
+        "IFOR",
+        "Eastern Slavonia"
+      ],
+      "compilerUse": "Signing-day quadrilateral memcon for Dayton implementation, IFOR, Eastern Slavonia, and regional assurances.",
+      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-quadrilateral-1995-12-14.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "sourcePdfPages": "47-50",
+      "pageCount": 4,
+      "localPdfPageCount": 4,
+      "extractionStatus": "Extracted source pages 47-50 from the packet as the actual conversation document.",
+      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 47-50.",
+      "tags": [
+        "Paris signing",
+        "Dayton",
+        "Izetbegovic",
+        "Milosevic",
+        "Tudjman"
+      ]
+    }
+  ],
+  "chronology": [
+    {
+      "date": "Jan 1993",
+      "title": "Clinton administration inherits Bosnia policy",
+      "detail": "Early transition and intelligence materials frame Bosnia, Croatia, Serbia, and the former Yugoslavia as immediate foreign-policy problems.",
+      "sourceCue": "BTF; Bosnia Collection"
+    },
+    {
+      "date": "Spring 1993",
+      "title": "Vance-Owen, no-fly enforcement, and lift-and-strike debates",
+      "detail": "The documentary spine should connect diplomatic plans, NATO/UN enforcement questions, safe areas, and pressure to lift the arms embargo.",
+      "sourceCue": "Bosnia Collection; PC/DC MDR"
+    },
+    {
+      "date": "Mar 1994",
+      "title": "Washington Agreement and Bosniak-Croat Federation",
+      "detail": "The federation track reshaped the military and diplomatic balance and should be paired with Contact Group and Croatia records.",
+      "sourceCue": "Bosnia Collection; Croatia MDR"
+    },
+    {
+      "date": "Nov-Dec 1994",
+      "title": "Bihac crisis and renewed policy review",
+      "detail": "Late-1994 intelligence and PC materials show the administration revisiting options after battlefield reverses and allied strains.",
+      "sourceCue": "Vershbow; BTF"
+    },
+    {
+      "date": "Jan-May 1995",
+      "title": "Bosnia and Croatia enter the PC/DC cadence",
+      "detail": "Regular summaries of conclusions and BTF memoranda connect sanctions, Croatia, UNPROFOR, and air-power choices.",
+      "sourceCue": "BTF; PC/DC MDR"
+    },
+    {
+      "date": "May-Jun 1995",
+      "title": "Hostage crisis and UNPROFOR withdrawal planning",
+      "detail": "The core record set should connect allied calls, PC/DC meetings, NATO planning, and intelligence assessments of Bosnian Serb capabilities.",
+      "sourceCue": "Allied Leader MDR; BTF"
+    },
+    {
+      "date": "Jul 1995",
+      "title": "Srebrenica and allied decision pressure",
+      "detail": "War-crimes evidence, public messaging, allied coordination, and policy review need a single cross-source trail.",
+      "sourceCue": "Genocide in Yugoslavia; Allied Leader MDR"
+    },
+    {
+      "date": "Aug-Sep 1995",
+      "title": "Coercive diplomacy accelerates",
+      "detail": "NATO air operations, Contact Group terms, battlefield changes, and shuttle diplomacy converge into the Dayton track.",
+      "sourceCue": "Getting to Dayton MDR; Vershbow; Talbott FOIA"
+    },
+    {
+      "date": "Nov 1995",
+      "title": "Dayton proximity talks",
+      "detail": "The final negotiation phase should be matched to presidential calls, State cables, NSC memoranda, and allied consultations.",
+      "sourceCue": "Bosnia memcons; State/NSC leads"
+    },
+    {
+      "date": "Dec 1995",
+      "title": "Paris signing and implementation handoff",
+      "detail": "The volume handoff should preserve the diplomatic settlement, NATO implementation, and unresolved accountability questions.",
+      "sourceCue": "Paris AV; Declassified Documents; Talbott FOIA"
+    }
+  ],
+  "questions": [
+    {
+      "title": "Where is the presidential decision record?",
+      "lane": "Lanes 1, 4, and 5",
+      "status": "Open",
+      "detail": "The volume needs a clean chain from presidential briefing to PC/DC recommendation to diplomatic or military action.",
+      "sourceLeads": [
+        "Clinton-Izetbegovic memcons and telcons",
+        "President Clinton's Daily Schedule",
+        "BTF memoranda and PC/DC summaries"
+      ]
+    },
+    {
+      "title": "How did intelligence shape policy?",
+      "lane": "Lanes 3, 4, and 5",
+      "status": "Seeded",
+      "detail": "The Bosnian Declassified Records make it possible to pair intelligence support with each key meeting, especially in 1995.",
+      "sourceLeads": [
+        "BTF collection",
+        "Alexander Vershbow - Bosnia",
+        "Getting to Dayton MDR"
+      ]
+    },
+    {
+      "title": "Which allied consultations changed the outcome?",
+      "lane": "Lanes 2, 4, and 5",
+      "status": "Open",
+      "detail": "The compiler should identify when British, French, German, Russian, UN, and NATO positions constrained or enabled U.S. action.",
+      "sourceLeads": [
+        "Allied Leader memcons and telcons",
+        "Contact Group folders",
+        "State Department negotiation cables",
+        "Strobe Talbott FOIA Russia/Holbrooke leads"
+      ]
+    },
+    {
+      "title": "How should Srebrenica be documented?",
+      "lane": "Lane 4",
+      "status": "Open",
+      "detail": "Atrocity reporting, war-crimes accountability, allied response, public explanation, and policy reassessment need distinct evidence lines.",
+      "sourceLeads": [
+        "Genocide in Yugoslavia",
+        "BTF July 1995 records",
+        "War-crimes MDRs"
+      ]
+    },
+    {
+      "title": "Where does Croatia fit in a Bosnia-heavy volume?",
+      "lane": "Lanes 3, 4, and 5",
+      "status": "Seeded",
+      "detail": "Croatia records are essential for the federation, Krajina, Milosevic pressure, and the regional military balance before Dayton.",
+      "sourceLeads": [
+        "Croatia MDR 2014-0311-M",
+        "Vershbow Bosnia folders",
+        "BTF Bosnia/Croatia summaries"
+      ]
+    },
+    {
+      "title": "What marks the handoff to Volume XVI?",
+      "lane": "Lane 6",
+      "status": "Ready",
+      "detail": "The official series plan has a later Wars in the Balkans volume for 1995-2000, so this page should flag records that belong to implementation rather than war termination.",
+      "sourceLeads": [
+        "FRUS status page",
+        "Paris AV finding aid",
+        "Operation Joint Endeavour folders"
+      ]
+    }
+  ],
+  "harvestQueue": [
+    {
+      "target": "Bosnia Collection folder index",
+      "why": "Largest NSC source map for 1993-1995 Bosnia policy.",
+      "nextAction": "Harvest folder titles, box labels, item URLs, and any attached PDFs.",
+      "status": "Not started"
+    },
+    {
+      "target": "BTF item list",
+      "why": "Pairs intelligence assessments with PC/DC decision meetings.",
+      "nextAction": "Extract dated item titles and group by meeting date.",
+      "status": "Seeded"
+    },
+    {
+      "target": "MDR 2010-0533-M",
+      "why": "Direct PC/DC summaries are the core decision backbone.",
+      "nextAction": "Download PDFs, count pages, and normalize meeting metadata.",
+      "status": "Not started"
+    },
+    {
+      "target": "Memcon/telcon MDRs",
+      "why": "Presidential diplomacy needs precise date lines and participants.",
+      "nextAction": "Cross-check with daily schedules and allied leader releases.",
+      "status": "Not started"
+    },
+    {
+      "target": "Srebrenica and war-crimes records",
+      "why": "Separates atrocity evidence, legal accountability, and public message traffic.",
+      "nextAction": "Build a July-August 1995 issue chronology.",
+      "status": "Not started"
+    },
+    {
+      "target": "Dayton and Paris records",
+      "why": "Sets the terminal boundary for the volume and implementation handoff.",
+      "nextAction": "Collect negotiation, signing, and IFOR source leads.",
+      "status": "Not started"
+    },
+    {
+      "target": "Strobe Talbott FOIA manifest leads",
+      "why": "Adds State Department/Russia-side documentary leads outside the Clinton Library memcon/telcon indexes.",
+      "nextAction": "Pull PDFs for C09000009, C09000010, C09000068, and C09000051; keep later Kosovo hits in a Volume XVI/follow-on bucket.",
+      "status": "Seeded"
+    }
+  ]
+};
