@@ -16,6 +16,9 @@ and Office of the Historian materials.
 - `styles.css` contains the responsive layout and visual system.
 - `app.js` renders the compiler lanes, memcon/telcon cards, source cards,
   chronology, questions, and queue from data.
+- The public page includes an evidence audit board, coverage bars, a
+  counterpart index, and live filters for memcons/telcons by kind, year, and
+  keyword.
 - `data/compiler-map.json` is the canonical data file.
 - `data/compiler-map.js` mirrors the same data for direct filesystem preview.
 - `assets/balkans-compiler-map.svg` is the local visual asset used in the hero.
@@ -58,6 +61,13 @@ The first-pass source matrix covers:
 - Alexander Vershbow's Bosnia files, `2013-0687-F`.
 - PC/DC, memcon/telcon, Croatia, Srebrenica, and Dayton-track MDR releases.
 - Paris signing and daily schedule contextual sources.
+
+## Evidence Audit
+
+The page currently surfaces `32` document-level memcon/telcon records and `166`
+counted conversation pages. Every displayed conversation card has a PDF link,
+source-page metadata, and provenance labeling that distinguishes direct Clinton
+Library item PDFs from locally extracted packet documents.
 
 ## Local Preview
 

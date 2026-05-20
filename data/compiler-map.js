@@ -6,7 +6,7 @@ window.COMPILER_MAP_DATA = {
     "coreDecisionYear": "1995",
     "officialUrl": "https://history.state.gov/historicaldocuments/frus1993-00v15",
     "statusUrl": "https://history.state.gov/historicaldocuments/status-of-the-series",
-    "lastReviewed": "2026-05-19"
+    "lastReviewed": "2026-05-20"
   },
   "lanes": [
     {

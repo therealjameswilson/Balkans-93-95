@@ -8,7 +8,7 @@
       name="description"
       content="A public compiler workspace for source discovery, document triage, and chronology-building for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260520-levelup2" />
   </head>
   <body>
     <header class="site-header">
@@ -17,6 +17,7 @@
         <span>Wars in the Balkans</span>
       </a>
       <nav aria-label="Primary navigation">
+        <a href="#audit">Audit</a>
         <a href="#lanes">Lanes</a>
         <a href="#conversations">Memcons/Telcons</a>
         <a href="#sources">Sources</a>
@@ -87,6 +88,25 @@
         </div>
       </section>
 
+      <section class="section audit-section" id="audit" aria-labelledby="audit-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Evidence Control</p>
+            <h2 id="audit-title">Compiler Audit Board</h2>
+          </div>
+          <p class="section-note">
+            A quick-read ledger for what is already document-level, what is
+            only a source trail, and where the highest-density conversation
+            evidence sits.
+          </p>
+        </div>
+        <div id="audit-root" class="audit-grid" aria-live="polite"></div>
+        <div class="evidence-layout">
+          <div id="coverage-root" class="coverage-panel" aria-live="polite"></div>
+          <div id="counterpart-root" class="counterpart-panel" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="section" id="lanes" aria-labelledby="lanes-title">
         <div class="section-heading">
           <div>
@@ -114,6 +134,27 @@
             conversations that can anchor the documentary sequence.
           </p>
         </div>
+        <div class="conversation-tools" aria-label="Conversation filters">
+          <label class="search-field">
+            <span>Search conversations</span>
+            <input
+              id="conversation-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Counterpart, subject, tag"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Kind</p>
+            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Conversation kind filters"></div>
+          </div>
+          <div>
+            <p class="tool-label">Year</p>
+            <div id="conversation-year-filters" class="filter-row compact" aria-label="Conversation year filters"></div>
+          </div>
+          <button id="conversation-reset" class="reset-button" type="button">Reset</button>
+        </div>
+        <p id="conversation-summary" class="result-summary" aria-live="polite"></p>
         <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
       </section>
 
@@ -219,11 +260,11 @@
       <p>
         Companion workspace for
         <a href="https://history.state.gov/historicaldocuments/frus1993-00v15">FRUS 1993-2000, Volume XV</a>.
-        Source leads reviewed May 19, 2026.
+        Source leads reviewed May 20, 2026.
       </p>
     </footer>
 
-    <script src="data/compiler-map.js"></script>
-    <script src="app.js"></script>
+    <script src="data/compiler-map.js?v=20260520-levelup2"></script>
+    <script src="app.js?v=20260520-levelup2"></script>
   </body>
 </html>
