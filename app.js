@@ -23,12 +23,16 @@ const nodes = {
   auditRoot: document.querySelector("#audit-root"),
   coverageRoot: document.querySelector("#coverage-root"),
   counterpartRoot: document.querySelector("#counterpart-root"),
+  frusMethodRoot: document.querySelector("#frus-method-root"),
+  readinessRoot: document.querySelector("#readiness-root"),
+  sourceNoteRoot: document.querySelector("#source-note-root"),
   lanesRoot: document.querySelector("#lanes-root"),
   conversationRoot: document.querySelector("#conversation-root"),
   conversationSearch: document.querySelector("#conversation-search"),
   conversationKindFilters: document.querySelector("#conversation-kind-filters"),
   conversationYearFilters: document.querySelector("#conversation-year-filters"),
   conversationReset: document.querySelector("#conversation-reset"),
+  conversationExport: document.querySelector("#conversation-export"),
   conversationSummary: document.querySelector("#conversation-summary"),
   sourceFilters: document.querySelector("#source-filters"),
   sourceSearch: document.querySelector("#source-search"),
@@ -256,6 +260,186 @@ function renderCounterparts(conversations) {
   nodes.counterpartRoot.replaceChildren(heading, list);
 }
 
+function methodCard(title, status, detail, measure) {
+  const card = document.createElement("article");
+  card.className = "frus-method-card";
+
+  const top = document.createElement("div");
+  top.className = "method-card-top";
+  const heading = document.createElement("h3");
+  heading.textContent = title;
+  const badge = document.createElement("span");
+  badge.className = `readiness-status ${status.toLowerCase().replace(/\s+/g, "-")}`;
+  badge.textContent = status;
+  top.append(heading, badge);
+
+  const body = document.createElement("p");
+  body.textContent = detail;
+
+  const foot = document.createElement("p");
+  foot.className = "audit-meta";
+  foot.textContent = measure;
+
+  card.append(top, body, foot);
+  return card;
+}
+
+function readinessRow(label, status, count, detail) {
+  const row = document.createElement("div");
+  row.className = "readiness-row";
+
+  const labelWrap = document.createElement("div");
+  const name = document.createElement("strong");
+  name.textContent = label;
+  const note = document.createElement("p");
+  note.textContent = detail;
+  labelWrap.append(name, note);
+
+  const countItem = document.createElement("span");
+  countItem.className = "readiness-count";
+  countItem.textContent = count;
+
+  const statusItem = document.createElement("span");
+  statusItem.className = `readiness-status ${status.toLowerCase().replace(/\s+/g, "-")}`;
+  statusItem.textContent = status;
+
+  row.append(labelWrap, countItem, statusItem);
+  return row;
+}
+
+function renderFrusMethod(data) {
+  const conversations = conversationRecords(data);
+  const direct = conversations.filter(isDirectItem);
+  const extracted = conversations.filter(isExtractedDocument);
+  const sourceNotes = conversations.filter((record) => record.sourceNote);
+  const sourceRanges = conversations.filter((record) => record.sourcePdfPages);
+  const chronologyYears = groupCounts(conversations, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
+    a.label.localeCompare(b.label)
+  );
+  const chronologyMeasure = chronologyYears.map((item) => `${item.label}: ${item.count}`).join(" / ");
+
+  nodes.frusMethodRoot.replaceChildren(
+    methodCard(
+      "Selection Standard",
+      "Mapped",
+      "Focus the workspace on major policy decisions and significant diplomatic activity, then test each lead against the volume's decision sequence.",
+      `${data.lanes.length} research lanes, ${data.chronology.length} chronology anchors, ${data.sources.length} source trails.`
+    ),
+    methodCard(
+      "Chronological Placement",
+      "Ready",
+      "Memcons and telcons are ordered by conversation date for FRUS-style placement, not by release packet or item discovery order.",
+      chronologyMeasure
+    ),
+    methodCard(
+      "First Footnote Prep",
+      "Partial",
+      "Each card preserves custody and source-page evidence; original classification, distribution, drafting, and read-status fields still need transcript-level extraction.",
+      `${sourceNotes.length}/${conversations.length} candidate source notes; ${sourceRanges.length}/${conversations.length} source page ranges.`
+    ),
+    methodCard(
+      "Declassification Accounting",
+      "Partial",
+      "The page counts document pages and distinguishes direct from extracted PDFs; excisions and withheld-text counts remain a review queue item.",
+      `${sumPages(conversations)} counted pages; ${direct.length} direct PDFs; ${extracted.length} extracted PDFs.`
+    )
+  );
+
+  renderReadinessPanel(data);
+  renderSourceNotePanel(data);
+}
+
+function renderReadinessPanel(data) {
+  const conversations = conversationRecords(data);
+  const withPdfs = conversations.filter((record) => record.pdfUrl);
+  const withDates = conversations.filter((record) => record.sortDate);
+  const withPages = conversations.filter((record) => record.pageCount);
+  const withSourceRanges = conversations.filter((record) => record.sourcePdfPages);
+  const withCompilerUse = conversations.filter((record) => record.compilerUse);
+  const anchorSources = data.sources.filter((source) => ["Anchor", "Core"].includes(source.priority));
+
+  const heading = document.createElement("h3");
+  heading.textContent = "Production Readiness";
+  const list = document.createElement("div");
+  list.className = "readiness-list";
+  list.append(
+    readinessRow(
+      "Document-level PDFs",
+      withPdfs.length === conversations.length ? "Ready" : "Gap",
+      `${withPdfs.length}/${conversations.length}`,
+      "Every selected conversation should resolve to a direct or extracted PDF."
+    ),
+    readinessRow(
+      "Chronology by event date",
+      withDates.length === conversations.length ? "Ready" : "Gap",
+      `${withDates.length}/${conversations.length}`,
+      "Conversation cards sort by the time/date of the conversation."
+    ),
+    readinessRow(
+      "Page counts and source ranges",
+      withPages.length === conversations.length && withSourceRanges.length === conversations.length ? "Ready" : "Gap",
+      `${withPages.length}/${conversations.length}`,
+      "Supports page accounting, extraction checks, and declassification review notes."
+    ),
+    readinessRow(
+      "Compiler-use rationale",
+      withCompilerUse.length === conversations.length ? "Ready" : "Partial",
+      `${withCompilerUse.length}/${conversations.length}`,
+      "Each candidate records why it might belong in the documentary sequence."
+    ),
+    readinessRow(
+      "Anchor and core source trails",
+      "Seeded",
+      `${anchorSources.length}/${data.sources.length}`,
+      "Prioritized sources keep the collection search tied to major decisions."
+    )
+  );
+
+  nodes.readinessRoot.replaceChildren(heading, list);
+}
+
+function renderSourceNotePanel(data) {
+  const conversations = conversationRecords(data);
+  const heading = document.createElement("h3");
+  heading.textContent = "First-Footnote Worklist";
+  const list = document.createElement("div");
+  list.className = "source-note-list";
+  list.append(
+    readinessRow(
+      "Source and custody",
+      "Ready",
+      `${conversations.filter((record) => record.collection && record.identifier).length}/${conversations.length}`,
+      "Collection, identifier, record URL, PDF URL, and source pages are retained on the cards."
+    ),
+    readinessRow(
+      "Original classification",
+      "Next",
+      "PDF/OCR",
+      "Extract classification markings from each PDF before moving a document into a draft selection list."
+    ),
+    readinessRow(
+      "Distribution and drafting",
+      "Next",
+      "PDF/OCR",
+      "Capture drafter, participants, distribution, and notetaker lines where present."
+    ),
+    readinessRow(
+      "Principal read-status",
+      "Next",
+      "Manual",
+      "Flag whether the President or major policy advisers read or acted on the document."
+    ),
+    readinessRow(
+      "Excisions and withheld text",
+      "Next",
+      "Manual",
+      "Record line/page deletions and wholly withheld documents in chronological place."
+    )
+  );
+
+  nodes.sourceNoteRoot.replaceChildren(heading, list);
+}
+
 function renderLanes(data) {
   nodes.lanesRoot.replaceChildren();
 
@@ -322,6 +506,32 @@ function createConversationLinks(record) {
   }
 
   return links;
+}
+
+function sourceNoteDetails(record) {
+  const details = document.createElement("details");
+  details.className = "source-note-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "FRUS source-note prep";
+
+  const list = document.createElement("ul");
+  const items = [
+    ["Candidate source", record.sourceNote || `${record.collection}, ${record.identifier}.`],
+    ["Placement", "Use conversation date/time for chronology; verify Washington time if the document records a different local time."],
+    ["Page accounting", `${pageLabel(record.pageCount)}${record.sourcePdfPages ? `; source pages ${record.sourcePdfPages}` : ""}.`],
+    ["Before selection", "Extract original classification, distribution, drafting/notetaker metadata, read-status, and any excision or withheld-text notation."]
+  ];
+
+  for (const [label, value] of items) {
+    const li = document.createElement("li");
+    const strong = document.createElement("strong");
+    strong.textContent = `${label}: `;
+    li.append(strong, document.createTextNode(value));
+    list.append(li);
+  }
+
+  details.append(summary, list);
+  return details;
 }
 
 function conversationTextMatch(record) {
@@ -454,11 +664,53 @@ function renderConversations(data) {
     extraction.className = "conversation-provenance";
     extraction.textContent = record.extractionStatus || "PDF provenance recorded in source metadata.";
 
-    body.append(top, meta, use, subjects, extraction, createTagRow(record.tags));
+    body.append(top, meta, use, subjects, extraction, sourceNoteDetails(record), createTagRow(record.tags));
 
     card.append(date, body, createConversationLinks(record));
     nodes.conversationRoot.append(card);
   }
+}
+
+function csvCell(value) {
+  return `"${String(value ?? "").replace(/"/g, '""')}"`;
+}
+
+function exportFilteredConversations(data) {
+  const fields = [
+    "date",
+    "kind",
+    "title",
+    "counterpart",
+    "identifier",
+    "collection",
+    "pageCount",
+    "sourcePdfPages",
+    "pdfUrl",
+    "recordUrl",
+    "compilerUse"
+  ];
+  const rows = filteredConversations(data).map((record) => [
+    record.date,
+    record.kind,
+    record.title,
+    record.counterpart,
+    record.identifier,
+    record.collection,
+    record.pageCount,
+    record.sourcePdfPages,
+    record.pdfUrl,
+    record.url,
+    record.compilerUse
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  const blob = new Blob([`${csv}\n`], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "balkans-93-95-filtered-memcons-telcons.csv";
+  document.body.append(link);
+  link.click();
+  URL.revokeObjectURL(link.href);
+  link.remove();
 }
 
 function renderFilters(data) {
@@ -634,6 +886,10 @@ function bindSearch(data) {
     renderConversationFilters(data);
     renderConversations(data);
   });
+
+  nodes.conversationExport.addEventListener("click", () => {
+    exportFilteredConversations(data);
+  });
 }
 
 async function loadOptionalJson(url) {
@@ -670,6 +926,7 @@ async function init() {
     const [data, reports] = await Promise.all([loadData(), loadReports()]);
     renderStats(data);
     renderAudit(data, reports);
+    renderFrusMethod(data);
     renderLanes(data);
     renderConversationFilters(data);
     renderConversations(data);

@@ -10,6 +10,10 @@ process, but it gives the compiler a source matrix, issue lanes, declassified
 memcon/telcon leads, chronology anchors, and a harvest queue for Clinton Library
 and Office of the Historian materials.
 
+The compiler-facing workflow is aligned with the Office of the Historian's
+published "About the Series" guidance for FRUS production:
+<https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries>.
+
 ## Page Structure
 
 - `index.html` is the static GitHub Pages entry point.
@@ -19,6 +23,9 @@ and Office of the Historian materials.
 - The public page includes an evidence audit board, coverage bars, a
   counterpart index, and live filters for memcons/telcons by kind, year, and
   keyword.
+- A FRUS production-readiness console maps the evidence to Office of the
+  Historian expectations for comprehensive coverage, chronological placement,
+  first-footnote/source-note metadata, and declassification accounting.
 - `data/compiler-map.json` is the canonical data file.
 - `data/compiler-map.js` mirrors the same data for direct filesystem preview.
 - `assets/balkans-compiler-map.svg` is the local visual asset used in the hero.
@@ -68,6 +75,10 @@ The page currently surfaces `32` document-level memcon/telcon records and `166`
 counted conversation pages. Every displayed conversation card has a PDF link,
 source-page metadata, and provenance labeling that distinguishes direct Clinton
 Library item PDFs from locally extracted packet documents.
+
+The memcon/telcon table can also export the active filtered set as CSV, and each
+conversation card contains a collapsed source-note prep block for the metadata a
+FRUS compiler needs before moving a document into a draft selection list.
 
 ## Local Preview
 

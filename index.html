@@ -8,7 +8,7 @@
       name="description"
       content="A public compiler workspace for source discovery, document triage, and chronology-building for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
-    <link rel="stylesheet" href="styles.css?v=20260520-levelup2" />
+    <link rel="stylesheet" href="styles.css?v=20260520-frus-method" />
   </head>
   <body>
     <header class="site-header">
@@ -18,6 +18,7 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#audit">Audit</a>
+        <a href="#frus-method">Method</a>
         <a href="#lanes">Lanes</a>
         <a href="#conversations">Memcons/Telcons</a>
         <a href="#sources">Sources</a>
@@ -107,6 +108,26 @@
         </div>
       </section>
 
+      <section class="section frus-method-section" id="frus-method" aria-labelledby="frus-method-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">FRUS Production Fit</p>
+            <h2 id="frus-method-title">Selection Readiness Console</h2>
+          </div>
+          <p class="section-note">
+            Mapped to the Office of the Historian's
+            <a href="https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries">About the Series</a>
+            guidance: comprehensive major-decision coverage, chronology by
+            event time, source-note discipline, and declassification accounting.
+          </p>
+        </div>
+        <div id="frus-method-root" class="frus-method-grid" aria-live="polite"></div>
+        <div class="readiness-layout">
+          <div id="readiness-root" class="readiness-panel" aria-live="polite"></div>
+          <div id="source-note-root" class="source-note-panel" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="section" id="lanes" aria-labelledby="lanes-title">
         <div class="section-heading">
           <div>
@@ -153,6 +174,7 @@
             <div id="conversation-year-filters" class="filter-row compact" aria-label="Conversation year filters"></div>
           </div>
           <button id="conversation-reset" class="reset-button" type="button">Reset</button>
+          <button id="conversation-export" class="reset-button export-button" type="button">Export CSV</button>
         </div>
         <p id="conversation-summary" class="result-summary" aria-live="polite"></p>
         <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
@@ -264,7 +286,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260520-levelup2"></script>
-    <script src="app.js?v=20260520-levelup2"></script>
+    <script src="data/compiler-map.js?v=20260520-frus-method"></script>
+    <script src="app.js?v=20260520-frus-method"></script>
   </body>
 </html>
