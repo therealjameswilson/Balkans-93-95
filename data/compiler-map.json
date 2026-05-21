@@ -8,74 +8,6 @@
     "statusUrl": "https://history.state.gov/historicaldocuments/status-of-the-series",
     "lastReviewed": "2026-05-20"
   },
-  "lanes": [
-    {
-      "number": 1,
-      "title": "Opening Review and Vance-Owen",
-      "period": "January-June 1993",
-      "focus": "Capture how the new administration inherited Bosnia policy, tested diplomatic plans, and weighed lift-and-strike, no-fly-zone enforcement, humanitarian relief, and recognition issues.",
-      "mustFind": [
-        "Presidential and NSC option papers",
-        "PC/DC summaries on early policy review",
-        "State and allied reaction cables"
-      ]
-    },
-    {
-      "number": 2,
-      "title": "Lift-and-Strike, UNPROFOR, and Safe Areas",
-      "period": "1993-1994",
-      "focus": "Track the recurring decision loop around the arms embargo, NATO air power, UN protection, safe areas, and congressional pressure.",
-      "mustFind": [
-        "Deputies and Principals Committee decision records",
-        "No-fly-zone and safe-area implementation papers",
-        "Congressional and public diplomacy pressure points"
-      ]
-    },
-    {
-      "number": 3,
-      "title": "Federation and Contact Group Diplomacy",
-      "period": "March-December 1994",
-      "focus": "Document the Washington Agreement, Contact Group diplomacy, pressure on Belgrade and Pale, and the Bihac crisis that forced renewed policy review.",
-      "mustFind": [
-        "Holbrooke, Christopher, and Lake memoranda",
-        "Contact Group ministerial and allied telcon records",
-        "Bihac intelligence and military assessments"
-      ]
-    },
-    {
-      "number": 4,
-      "title": "1995 Crisis Escalation",
-      "period": "January-July 1995",
-      "focus": "Build the document spine for the January-to-July escalation: Bosnia/Croatia PC/DC meetings, hostage crisis, UNPROFOR withdrawal planning, Srebrenica, and allied coordination.",
-      "mustFind": [
-        "PC/DC summaries and BTF support memoranda",
-        "Clinton memcons and telcons with allied leaders",
-        "Srebrenica and war-crimes reporting"
-      ]
-    },
-    {
-      "number": 5,
-      "title": "Coercive Diplomacy and Dayton",
-      "period": "August-November 1995",
-      "focus": "Follow the shift from crisis response to coercive diplomacy, including NATO air operations, Contact Group terms, shuttle diplomacy, and the Dayton proximity talks.",
-      "mustFind": [
-        "Lake-to-President memoranda",
-        "State Department negotiation cables",
-        "Presidential calls with Izetbegovic, Tudjman, Milosevic, and allied leaders"
-      ]
-    },
-    {
-      "number": 6,
-      "title": "Implementation Handoff",
-      "period": "November-December 1995",
-      "focus": "Mark the transition from war termination to implementation: IFOR/NATO commitments, Paris signing, alliance presentation, and unresolved accountability issues.",
-      "mustFind": [
-        "Paris signing materials and photographs",
-        "NATO implementation and force-deployment papers",
-        "War-crimes and sanctions follow-through records"
-      ]
-    }
-  ],
   "sources": [
     {
       "id": "frus-volume",
@@ -185,7 +117,7 @@
       "type": "MDR",
       "priority": "Core",
       "description": "Mandatory Declassification Review release covering Principals Committee and Deputies Committee meetings on Bosnia from 1993 through 1995.",
-      "compilerUse": "Use summaries of conclusions as the decision backbone for every chapter lane.",
+      "compilerUse": "Use summaries of conclusions only as contextual source leads when checking the presidential conversation inventory.",
       "url": "https://clinton.presidentiallibraries.us/items/show/36614",
       "tags": [
         "Principals Committee",
@@ -201,7 +133,7 @@
       "type": "MDR",
       "priority": "Core",
       "description": "Mandatory Declassification Review release with President Clinton conversations with Bosnian President Alija Izetbegovic from 1993 through 1995, plus a Milosevic pull-aside memcon.",
-      "compilerUse": "Anchor presidential diplomacy with Bosnian leadership and cross-check chronology against schedule records.",
+      "compilerUse": "Anchor presidential diplomacy with Bosnian leadership and cross-check dates against schedule records.",
       "url": "https://clinton.presidentiallibraries.us/items/show/36589",
       "tags": [
         "Memcon",
@@ -269,7 +201,7 @@
       "type": "Visual",
       "priority": "Contextual",
       "description": "Photographs from the Balkan Peace Agreement meetings in Paris on December 14, 1995, including Clinton, Christopher, Holbrooke, Izetbegovic, Tudjman, Milosevic, and allied leaders.",
-      "compilerUse": "Verify Paris signing participants and support final-volume contextual apparatus.",
+      "compilerUse": "Verify Paris signing participants only as context for dated presidential conversation records.",
       "url": "https://clinton.presidentiallibraries.us/items/show/48201",
       "tags": [
         "Paris",
@@ -283,7 +215,7 @@
       "title": "President Clinton's Daily Schedule",
       "identifier": "Schedule collection",
       "institution": "Clinton Digital Library",
-      "type": "Chronology",
+      "type": "Schedule",
       "priority": "Contextual",
       "description": "Digitized presidential schedules for the Clinton administration.",
       "compilerUse": "Verify meeting and call times before assigning date lines to memcons and telcons.",
@@ -367,8 +299,8 @@
       "institution": "State Department FOIA Library / Strobe Talbott FOIA Research Desk",
       "type": "Collection",
       "priority": "High",
-      "description": "Public manifest of 1,474 Talbott FOIA records with enriched descriptions and direct State Department PDF links. The manifest search found 67 Balkans hits: four in-volume contextual leads, no new 1993-1995 memcon/telcon candidates, and a larger post-1995 Kosovo/Bosnia follow-on cluster.",
-      "compilerUse": "Use for the Russia-facing diplomatic side channel around Kozyrev, Holbrooke, Dayton implementation, and the Volume XVI handoff; pull C09000009, C09000010, C09000068, and C09000051 first.",
+      "description": "Public manifest of 1,474 Talbott FOIA records with enriched descriptions and direct State Department PDF links. The manifest search found 67 Balkans hits: four in-volume contextual leads, no additional 1993-1995 memcon/telcon records, and a larger post-1995 Kosovo/Bosnia follow-on cluster.",
+      "compilerUse": "Use for Russia-facing diplomatic context around Kozyrev, Holbrooke, Dayton implementation, and post-1995 follow-on records; pull C09000009, C09000010, C09000068, and C09000051 first.",
       "url": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
       "tags": [
         "Talbott",
@@ -451,36 +383,6 @@
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
       "sourceNote": "Source: Clinton Digital Library item page https://clinton.presidentiallibraries.us/items/show/101349; direct embedded PDF https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf."
-    },
-    {
-      "id": "gore-izetbegovic-1993-03-26",
-      "date": "Mar 26, 1993",
-      "sortDate": "1993-03-26",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Vice President Gore and President Alija Izetbegovic",
-      "counterpart": "Al Gore; Alija Izetbegovic",
-      "identifier": "2011-0964-M",
-      "collection": "Declassified Documents concerning Bosnia",
-      "subjects": [
-        "Vance-Owen",
-        "Bosnia and Herzegovina",
-        "Bosnian Croat relations",
-        "Eastern Bosnia"
-      ],
-      "compilerUse": "Vice-presidential conversation lead for the opening review, Vance-Owen implementation, and early safe-area concerns.",
-      "url": "https://clinton.presidentiallibraries.us/items/show/36589",
-      "pdfUrl": "documents/bosnia/1993-03-26-gore-izetbegovic-memcon.pdf",
-      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
-      "sourcePdfPages": "3-7",
-      "pageCount": 5,
-      "localPdfPageCount": 5,
-      "extractionStatus": "Extracted source pages 3-7 from the packet as the actual conversation document.",
-      "sourceNote": "Source: Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Extracted from packet PDF pages 3-7.",
-      "tags": [
-        "Izetbegovic",
-        "Gore",
-        "Vance-Owen"
-      ]
     },
     {
       "id": "mitterrand-1993-04-20",
@@ -673,7 +575,7 @@
         "Russia",
         "Partnership for Peace"
       ],
-      "compilerUse": "A NATO-facing conversation lead for the 1995 escalation lane and the alliance-management chapter.",
+      "compilerUse": "A NATO-facing presidential conversation lead for the 1995 escalation period and alliance-management context.",
       "url": "https://clinton.presidentiallibraries.us/items/show/101431",
       "tags": [
         "NATO",
@@ -1212,7 +1114,7 @@
         "NATO",
         "International War Crimes Tribunal"
       ],
-      "compilerUse": "Paris signing-day memcon for the volume close: Dayton implementation, Russia, NATO, and war-crimes accountability.",
+      "compilerUse": "Paris signing-day presidential memcon covering Dayton implementation, Russia, NATO, and war-crimes accountability.",
       "url": "https://clinton.presidentiallibraries.us/items/show/118556",
       "tags": [
         "France",
@@ -1352,137 +1254,6 @@
       ]
     }
   ],
-  "chronology": [
-    {
-      "date": "Jan 1993",
-      "title": "Clinton administration inherits Bosnia policy",
-      "detail": "Early transition and intelligence materials frame Bosnia, Croatia, Serbia, and the former Yugoslavia as immediate foreign-policy problems.",
-      "sourceCue": "BTF; Bosnia Collection"
-    },
-    {
-      "date": "Spring 1993",
-      "title": "Vance-Owen, no-fly enforcement, and lift-and-strike debates",
-      "detail": "The documentary spine should connect diplomatic plans, NATO/UN enforcement questions, safe areas, and pressure to lift the arms embargo.",
-      "sourceCue": "Bosnia Collection; PC/DC MDR"
-    },
-    {
-      "date": "Mar 1994",
-      "title": "Washington Agreement and Bosniak-Croat Federation",
-      "detail": "The federation track reshaped the military and diplomatic balance and should be paired with Contact Group and Croatia records.",
-      "sourceCue": "Bosnia Collection; Croatia MDR"
-    },
-    {
-      "date": "Nov-Dec 1994",
-      "title": "Bihac crisis and renewed policy review",
-      "detail": "Late-1994 intelligence and PC materials show the administration revisiting options after battlefield reverses and allied strains.",
-      "sourceCue": "Vershbow; BTF"
-    },
-    {
-      "date": "Jan-May 1995",
-      "title": "Bosnia and Croatia enter the PC/DC cadence",
-      "detail": "Regular summaries of conclusions and BTF memoranda connect sanctions, Croatia, UNPROFOR, and air-power choices.",
-      "sourceCue": "BTF; PC/DC MDR"
-    },
-    {
-      "date": "May-Jun 1995",
-      "title": "Hostage crisis and UNPROFOR withdrawal planning",
-      "detail": "The core record set should connect allied calls, PC/DC meetings, NATO planning, and intelligence assessments of Bosnian Serb capabilities.",
-      "sourceCue": "Allied Leader MDR; BTF"
-    },
-    {
-      "date": "Jul 1995",
-      "title": "Srebrenica and allied decision pressure",
-      "detail": "War-crimes evidence, public messaging, allied coordination, and policy review need a single cross-source trail.",
-      "sourceCue": "Genocide in Yugoslavia; Allied Leader MDR"
-    },
-    {
-      "date": "Aug-Sep 1995",
-      "title": "Coercive diplomacy accelerates",
-      "detail": "NATO air operations, Contact Group terms, battlefield changes, and shuttle diplomacy converge into the Dayton track.",
-      "sourceCue": "Getting to Dayton MDR; Vershbow; Talbott FOIA"
-    },
-    {
-      "date": "Nov 1995",
-      "title": "Dayton proximity talks",
-      "detail": "The final negotiation phase should be matched to presidential calls, State cables, NSC memoranda, and allied consultations.",
-      "sourceCue": "Bosnia memcons; State/NSC leads"
-    },
-    {
-      "date": "Dec 1995",
-      "title": "Paris signing and implementation handoff",
-      "detail": "The volume handoff should preserve the diplomatic settlement, NATO implementation, and unresolved accountability questions.",
-      "sourceCue": "Paris AV; Declassified Documents; Talbott FOIA"
-    }
-  ],
-  "questions": [
-    {
-      "title": "Where is the presidential decision record?",
-      "lane": "Lanes 1, 4, and 5",
-      "status": "Open",
-      "detail": "The volume needs a clean chain from presidential briefing to PC/DC recommendation to diplomatic or military action.",
-      "sourceLeads": [
-        "Clinton-Izetbegovic memcons and telcons",
-        "President Clinton's Daily Schedule",
-        "BTF memoranda and PC/DC summaries"
-      ]
-    },
-    {
-      "title": "How did intelligence shape policy?",
-      "lane": "Lanes 3, 4, and 5",
-      "status": "Seeded",
-      "detail": "The Bosnian Declassified Records make it possible to pair intelligence support with each key meeting, especially in 1995.",
-      "sourceLeads": [
-        "BTF collection",
-        "Alexander Vershbow - Bosnia",
-        "Getting to Dayton MDR"
-      ]
-    },
-    {
-      "title": "Which allied consultations changed the outcome?",
-      "lane": "Lanes 2, 4, and 5",
-      "status": "Open",
-      "detail": "The compiler should identify when British, French, German, Russian, UN, and NATO positions constrained or enabled U.S. action.",
-      "sourceLeads": [
-        "Allied Leader memcons and telcons",
-        "Contact Group folders",
-        "State Department negotiation cables",
-        "Strobe Talbott FOIA Russia/Holbrooke leads"
-      ]
-    },
-    {
-      "title": "How should Srebrenica be documented?",
-      "lane": "Lane 4",
-      "status": "Open",
-      "detail": "Atrocity reporting, war-crimes accountability, allied response, public explanation, and policy reassessment need distinct evidence lines.",
-      "sourceLeads": [
-        "Genocide in Yugoslavia",
-        "BTF July 1995 records",
-        "War-crimes MDRs"
-      ]
-    },
-    {
-      "title": "Where does Croatia fit in a Bosnia-heavy volume?",
-      "lane": "Lanes 3, 4, and 5",
-      "status": "Seeded",
-      "detail": "Croatia records are essential for the federation, Krajina, Milosevic pressure, and the regional military balance before Dayton.",
-      "sourceLeads": [
-        "Croatia MDR 2014-0311-M",
-        "Vershbow Bosnia folders",
-        "BTF Bosnia/Croatia summaries"
-      ]
-    },
-    {
-      "title": "What marks the handoff to Volume XVI?",
-      "lane": "Lane 6",
-      "status": "Ready",
-      "detail": "The official series plan has a later Wars in the Balkans volume for 1995-2000, so this page should flag records that belong to implementation rather than war termination.",
-      "sourceLeads": [
-        "FRUS status page",
-        "Paris AV finding aid",
-        "Operation Joint Endeavour folders"
-      ]
-    }
-  ],
   "harvestQueue": [
     {
       "target": "Bosnia Collection folder index",
@@ -1498,7 +1269,7 @@
     },
     {
       "target": "MDR 2010-0533-M",
-      "why": "Direct PC/DC summaries are the core decision backbone.",
+      "why": "Direct PC/DC summaries help verify context around dated presidential conversations.",
       "nextAction": "Download PDFs, count pages, and normalize meeting metadata.",
       "status": "Not started"
     },
@@ -1511,12 +1282,12 @@
     {
       "target": "Srebrenica and war-crimes records",
       "why": "Separates atrocity evidence, legal accountability, and public message traffic.",
-      "nextAction": "Build a July-August 1995 issue chronology.",
+      "nextAction": "Collect dated July-August 1995 item titles and check for presidential conversations.",
       "status": "Not started"
     },
     {
       "target": "Dayton and Paris records",
-      "why": "Sets the terminal boundary for the volume and implementation handoff.",
+      "why": "Helps identify whether late-1995 conversation records are war-termination or implementation context.",
       "nextAction": "Collect negotiation, signing, and IFOR source leads.",
       "status": "Not started"
     },

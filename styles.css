@@ -243,7 +243,7 @@ dd {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
   padding: 0 0 44px;
 }
@@ -506,18 +506,14 @@ dd {
   background: var(--red);
 }
 
-.lane-grid,
 .source-grid,
-.question-grid,
 .method-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.lane-card,
 .source-card,
-.question-card,
 .method-grid article {
   min-width: 0;
   padding: 20px;
@@ -526,34 +522,15 @@ dd {
   border-radius: 8px;
 }
 
-.lane-card {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: 12px;
-  border-top: 5px solid var(--teal);
-}
-
-.lane-card:nth-child(2n) {
-  border-top-color: var(--olive);
-}
-
-.lane-card:nth-child(3n) {
-  border-top-color: var(--gold);
-}
-
-.lane-top,
-.source-top,
-.question-top {
+.source-top {
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 12px;
 }
 
-.lane-number,
 .source-type,
-.priority,
-.status-pill {
+.priority {
   flex: 0 0 auto;
   min-height: 28px;
   padding: 6px 8px;
@@ -569,42 +546,33 @@ dd {
   background: var(--teal);
 }
 
-.priority.high,
-.status-pill.open {
+.priority.high {
   background: var(--red);
 }
 
-.priority.core,
-.status-pill.ready {
+.priority.core {
   background: var(--olive);
 }
 
-.priority.anchor,
-.status-pill.seeded {
+.priority.anchor {
   color: var(--ink);
   background: #e8c16e;
 }
 
-.lane-period,
-.source-meta,
-.question-meta {
+.source-meta {
   margin: 0 0 12px;
   color: var(--muted);
   font-size: 0.88rem;
   font-weight: 780;
 }
 
-.lane-card p,
 .source-card p,
-.question-card p,
 .method-grid p {
   color: #394550;
   line-height: 1.58;
 }
 
-.lane-card ul,
-.source-card ul,
-.question-card ul {
+.source-card ul {
   display: grid;
   gap: 8px;
   margin: 0;
@@ -1061,9 +1029,7 @@ td:first-child {
   .stats,
   .audit-grid,
   .frus-method-grid,
-  .lane-grid,
   .source-grid,
-  .question-grid,
   .method-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1120,9 +1086,7 @@ td:first-child {
   .stats,
   .audit-grid,
   .frus-method-grid,
-  .lane-grid,
   .source-grid,
-  .question-grid,
   .method-grid {
     grid-template-columns: 1fr;
   }

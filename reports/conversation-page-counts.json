@@ -1,9 +1,9 @@
 {
   "generatedAt": "2026-05-19T22:06:41.830Z",
   "directItemCount": 14,
-  "extractedDocumentCount": 18,
-  "conversationRecordCount": 32,
-  "pageTotal": 166,
+  "extractedDocumentCount": 17,
+  "conversationRecordCount": 31,
+  "pageTotal": 161,
   "direct": [
     {
       "id": "mitterrand-1993-02-15",
@@ -133,15 +133,6 @@
     }
   ],
   "extracted": [
-    {
-      "id": "gore-izetbegovic-1993-03-26",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Vice President Gore and President Alija Izetbegovic",
-      "pageCount": 5,
-      "pdfUrl": "documents/bosnia/1993-03-26-gore-izetbegovic-memcon.pdf",
-      "sourcePdfPages": "3-7",
-      "extractionStatus": "Extracted source pages 3-7 from the packet as the actual conversation document."
-    },
     {
       "id": "izetbegovic-1993-09-08",
       "kind": "Memcon",

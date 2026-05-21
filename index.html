@@ -6,9 +6,9 @@
     <title>FRUS 1993-2000 Volume XV Compiler Workspace</title>
     <meta
       name="description"
-      content="A public compiler workspace for source discovery, document triage, and chronology-building for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
+      content="A public compiler workspace with a chronological inventory of declassified President Clinton memcons and telcons for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
-    <link rel="stylesheet" href="styles.css?v=20260520-source-notes" />
+    <link rel="stylesheet" href="styles.css?v=20260521-inventory" />
   </head>
   <body>
     <header class="site-header">
@@ -19,11 +19,8 @@
       <nav aria-label="Primary navigation">
         <a href="#audit">Audit</a>
         <a href="#frus-method">Method</a>
-        <a href="#lanes">Lanes</a>
         <a href="#conversations">Memcons/Telcons</a>
         <a href="#sources">Sources</a>
-        <a href="#chronology">Chronology</a>
-        <a href="#questions">Questions</a>
         <a href="#queue">Queue</a>
       </nav>
     </header>
@@ -34,14 +31,15 @@
           <p class="kicker">FRUS 1993-2000, Volume XV</p>
           <h1 id="hero-title">Balkans Compiler Workspace</h1>
           <p class="lede">
-            A working map for the still-researched <em>Wars in the Balkans,
-            1993-1995</em> volume: source collections, candidate document lanes,
-            policy chronology, and open questions a compiler can turn into a
-            selection checklist.
+            A chronological inventory of declassified U.S. presidential
+            memcons and telcons identified for President Clinton and the
+            still-researched <em>Wars in the Balkans, 1993-1995</em> volume.
+            It is not a recommendation about which documents to print or how
+            the volume should be organized.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#sources">Triage Source Leads</a>
-            <a class="button secondary" href="#chronology">Review Timeline</a>
+            <a class="button primary" href="#conversations">Review Conversations</a>
+            <a class="button secondary" href="#sources">Check Sources</a>
           </div>
         </div>
         <aside class="volume-panel" aria-label="Volume status">
@@ -72,20 +70,16 @@
           <p>source leads</p>
         </div>
         <div>
-          <span id="total-lanes">0</span>
-          <p>research lanes</p>
-        </div>
-        <div>
           <span id="total-conversations">0</span>
-          <p>memcon/telcon records</p>
+          <p>Clinton memcon/telcon records</p>
         </div>
         <div>
           <span id="total-pages">0</span>
           <p>conversation pages</p>
         </div>
         <div>
-          <span id="total-events">0</span>
-          <p>chronology anchors</p>
+          <span id="total-source-ranges">0</span>
+          <p>source page ranges</p>
         </div>
       </section>
 
@@ -96,9 +90,9 @@
             <h2 id="audit-title">Compiler Audit Board</h2>
           </div>
           <p class="section-note">
-            A quick-read ledger for what is already document-level, what is
-            only a source trail, and where the highest-density conversation
-            evidence sits.
+            A quick-read ledger for the declassified presidential conversation
+            inventory: document-level PDFs, page counts, source ranges, and
+            collection coverage.
           </p>
         </div>
         <div id="audit-root" class="audit-grid" aria-live="polite"></div>
@@ -111,15 +105,17 @@
       <section class="section frus-method-section" id="frus-method" aria-labelledby="frus-method-title">
         <div class="section-heading">
           <div>
-            <p class="kicker">FRUS Production Fit</p>
-            <h2 id="frus-method-title">Selection Readiness Console</h2>
+            <p class="kicker">Inventory Controls</p>
+            <h2 id="frus-method-title">Inventory Method</h2>
           </div>
           <p class="section-note">
-            Mapped to the Office of the Historian's
+            The mission here is narrow. This page supports the Office of the
+            Historian's
             <a href="https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries">About the Series</a>
-            guidance: comprehensive major-decision coverage, chronology by
-            event time, source-note discipline, and declassification accounting,
-            with citation fields ordered after
+            source-note and declassification discipline, but it does not decide
+            what belongs in the volume. It lists declassified presidential
+            conversations chronologically for compiler review, with citation
+            fields ordered after
             <a href="https://history.state.gov/historicaldocuments/frus1989-92v31">Volume XXXI</a>
             source-note practice.
           </p>
@@ -131,31 +127,17 @@
         </div>
       </section>
 
-      <section class="section" id="lanes" aria-labelledby="lanes-title">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">Research Architecture</p>
-            <h2 id="lanes-title">Compiler Lanes</h2>
-          </div>
-          <p class="section-note">
-            Built around the policy sequence a FRUS volume will need to document:
-            option review, allied management, intelligence support, coercive
-            diplomacy, atrocity response, and Dayton.
-          </p>
-        </div>
-        <div id="lanes-root" class="lane-grid" aria-live="polite"></div>
-      </section>
-
       <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
         <div class="section-heading">
           <div>
             <p class="kicker">Declassified Conversations</p>
-            <h2 id="conversations-title">Memcons and Telcons</h2>
+            <h2 id="conversations-title">Chronological Clinton Memcons and Telcons</h2>
           </div>
           <p class="section-note">
-            These are item-level and extracted document-level Clinton Digital
-            Library leads for presidential, allied, NATO, and Contact Group
-            conversations that can anchor the documentary sequence.
+            The list is ordered by conversation date and limited to declassified
+            U.S. presidential memcons and telcons identified in the searched
+            public releases. Presence here means "available for consideration,"
+            not "recommended for inclusion."
           </p>
         </div>
         <div class="conversation-tools" aria-label="Conversation filters">
@@ -187,7 +169,7 @@
         <div class="section-heading">
           <div>
             <p class="kicker">Document Discovery</p>
-            <h2 id="sources-title">Source Matrix</h2>
+            <h2 id="sources-title">Completeness Source Matrix</h2>
           </div>
           <label class="search-field">
             <span>Search</span>
@@ -198,36 +180,11 @@
         <div id="sources-root" class="source-grid" aria-live="polite"></div>
       </section>
 
-      <section class="section split-section" id="chronology" aria-labelledby="chronology-title">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">Policy Sequence</p>
-            <h2 id="chronology-title">Chronology Anchors</h2>
-          </div>
-          <p class="section-note">
-            Events here are not a final documentary table. They are the date
-            spine for matching memcons, telcons, PC/DC records, cables, and
-            intelligence products.
-          </p>
-        </div>
-        <div id="chronology-root" class="timeline" aria-live="polite"></div>
-      </section>
-
-      <section class="section" id="questions" aria-labelledby="questions-title">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">Selection Pressure</p>
-            <h2 id="questions-title">Open Compiler Questions</h2>
-          </div>
-        </div>
-        <div id="questions-root" class="question-grid" aria-live="polite"></div>
-      </section>
-
       <section class="section queue-section" id="queue" aria-labelledby="queue-title">
         <div class="section-heading">
           <div>
-            <p class="kicker">Harvest Plan</p>
-            <h2 id="queue-title">Next Source Queue</h2>
+            <p class="kicker">Completeness Plan</p>
+            <h2 id="queue-title">Next Source Checks</h2>
           </div>
         </div>
         <div class="table-wrap">
@@ -254,11 +211,11 @@
         </div>
         <div class="method-grid">
           <article>
-            <h3>Scope Boundary</h3>
+            <h3>Not A Selection List</h3>
             <p>
-              The page is scoped to the official Volume XV title and 1993-1995
-              date range. Post-1995 material is flagged only when it clarifies
-              the Dayton handoff or a source trail.
+              The page does not say which documents should appear in FRUS and
+              does not propose a chapter structure. It inventories available
+              declassified presidential conversations for consideration.
             </p>
           </article>
           <article>
@@ -273,8 +230,8 @@
             <h3>Future Data</h3>
             <p>
               The interface renders from <code>data/compiler-map.json</code>.
-              Real document rows can be added there without changing the page
-              structure.
+              Additional declassified Clinton memcons and telcons can be added
+              there without changing the page structure.
             </p>
           </article>
         </div>
@@ -289,7 +246,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260520-source-notes"></script>
-    <script src="app.js?v=20260520-source-notes"></script>
+    <script src="data/compiler-map.js?v=20260521-inventory"></script>
+    <script src="app.js?v=20260521-inventory"></script>
   </body>
 </html>

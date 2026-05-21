@@ -15,10 +15,9 @@ const state = {
 
 const nodes = {
   totalSources: document.querySelector("#total-sources"),
-  totalLanes: document.querySelector("#total-lanes"),
   totalConversations: document.querySelector("#total-conversations"),
   totalPages: document.querySelector("#total-pages"),
-  totalEvents: document.querySelector("#total-events"),
+  totalSourceRanges: document.querySelector("#total-source-ranges"),
   status: document.querySelector("#volume-status"),
   auditRoot: document.querySelector("#audit-root"),
   coverageRoot: document.querySelector("#coverage-root"),
@@ -26,7 +25,6 @@ const nodes = {
   frusMethodRoot: document.querySelector("#frus-method-root"),
   readinessRoot: document.querySelector("#readiness-root"),
   sourceNoteRoot: document.querySelector("#source-note-root"),
-  lanesRoot: document.querySelector("#lanes-root"),
   conversationRoot: document.querySelector("#conversation-root"),
   conversationSearch: document.querySelector("#conversation-search"),
   conversationKindFilters: document.querySelector("#conversation-kind-filters"),
@@ -37,8 +35,6 @@ const nodes = {
   sourceFilters: document.querySelector("#source-filters"),
   sourceSearch: document.querySelector("#source-search"),
   sourcesRoot: document.querySelector("#sources-root"),
-  chronologyRoot: document.querySelector("#chronology-root"),
-  questionsRoot: document.querySelector("#questions-root"),
   queueRoot: document.querySelector("#queue-root")
 };
 
@@ -175,7 +171,7 @@ function sourceNoteDraft(record) {
   const citationStem = [repositoryLabel(record), record.collection, control, itemId].filter(Boolean).join(", ");
   const sourcePdf = sentenceCase(sourcePdfLabel(record));
   const reviewClause =
-    "Original classification/handling, drafting or notetaker data, distribution/clearance, annotations, attachments, and excisions require PDF-level verification before final FRUS selection.";
+    "Original classification/handling, drafting or notetaker data, distribution/clearance, annotations, attachments, and excisions require PDF-level verification before compiler review.";
 
   return `Source: ${citationStem}. ${sourcePdf}. ${reviewClause}`;
 }
@@ -246,10 +242,9 @@ function renderStats(data) {
   const conversations = conversationRecords(data);
 
   nodes.totalSources.textContent = data.sources.length.toString();
-  nodes.totalLanes.textContent = data.lanes.length.toString();
   nodes.totalConversations.textContent = conversations.length.toString();
   nodes.totalPages.textContent = sumPages(conversations).toString();
-  nodes.totalEvents.textContent = data.chronology.length.toString();
+  nodes.totalSourceRanges.textContent = conversations.filter((record) => record.sourcePdfPages).length.toString();
   nodes.status.textContent = data.volume.status;
 }
 
@@ -438,29 +433,29 @@ function renderFrusMethod(data) {
   const extracted = conversations.filter(isExtractedDocument);
   const sourceNotes = conversations.filter((record) => record.sourceNote);
   const sourceRanges = conversations.filter((record) => record.sourcePdfPages);
-  const chronologyYears = groupCounts(conversations, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
+  const dateYears = groupCounts(conversations, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
     a.label.localeCompare(b.label)
   );
-  const chronologyMeasure = chronologyYears.map((item) => `${item.label}: ${item.count}`).join(" / ");
+  const dateMeasure = dateYears.map((item) => `${item.label}: ${item.count}`).join(" / ");
 
   nodes.frusMethodRoot.replaceChildren(
     methodCard(
-      "Selection Standard",
-      "Mapped",
-      "Focus the workspace on major policy decisions and significant diplomatic activity, then test each lead against the volume's decision sequence.",
-      `${data.lanes.length} research lanes, ${data.chronology.length} chronology anchors, ${data.sources.length} source trails.`
+      "Mission Boundary",
+      "Set",
+      "This page is not a proposed FRUS selection list and does not suggest how the volume should be structured.",
+      "It inventories declassified U.S. presidential memcons and telcons for the compiler to consider."
     ),
     methodCard(
-      "Chronological Placement",
+      "Chronological Inventory",
       "Ready",
-      "Memcons and telcons are ordered by conversation date for FRUS-style placement, not by release packet or item discovery order.",
-      chronologyMeasure
+      "President Clinton memcons and telcons are ordered by conversation date, not by release packet or item discovery order.",
+      dateMeasure
     ),
     methodCard(
       "Source Note Drafts",
       "Partial",
-      "Each card now starts its candidate note in FRUS order: repository, collection/control number, record locator, PDF source pages, then original-document metadata to verify.",
-      `${sourceNotes.length}/${conversations.length} candidate source notes; ${sourceRanges.length}/${conversations.length} source page ranges.`
+      "Each card starts its draft note in FRUS order: repository, collection/control number, record locator, PDF source pages, then original-document metadata to verify.",
+      `${sourceNotes.length}/${conversations.length} draft source notes; ${sourceRanges.length}/${conversations.length} source page ranges.`
     ),
     methodCard(
       "Declassification Accounting",
@@ -484,7 +479,7 @@ function renderReadinessPanel(data) {
   const anchorSources = data.sources.filter((source) => ["Anchor", "Core"].includes(source.priority));
 
   const heading = document.createElement("h3");
-  heading.textContent = "Production Readiness";
+  heading.textContent = "Inventory Readiness";
   const list = document.createElement("div");
   list.className = "readiness-list";
   list.append(
@@ -492,10 +487,10 @@ function renderReadinessPanel(data) {
       "Document-level PDFs",
       withPdfs.length === conversations.length ? "Ready" : "Gap",
       `${withPdfs.length}/${conversations.length}`,
-      "Every selected conversation should resolve to a direct or extracted PDF."
+      "Every listed conversation should resolve to a direct or extracted PDF."
     ),
     readinessRow(
-      "Chronology by event date",
+      "Conversation-date ordering",
       withDates.length === conversations.length ? "Ready" : "Gap",
       `${withDates.length}/${conversations.length}`,
       "Conversation cards sort by the time/date of the conversation."
@@ -507,16 +502,16 @@ function renderReadinessPanel(data) {
       "Supports page accounting, extraction checks, and declassification review notes."
     ),
     readinessRow(
-      "Compiler-use rationale",
+      "Inventory relevance note",
       withCompilerUse.length === conversations.length ? "Ready" : "Partial",
       `${withCompilerUse.length}/${conversations.length}`,
-      "Each candidate records why it might belong in the documentary sequence."
+      "Each record notes why it is relevant to the declassified conversation inventory, without recommending inclusion."
     ),
     readinessRow(
       "Anchor and core source trails",
       "Seeded",
       `${anchorSources.length}/${data.sources.length}`,
-      "Prioritized sources keep the collection search tied to major decisions."
+      "Prioritized sources keep the completeness search tied to public Clinton Library and NARA release paths."
     )
   );
 
@@ -537,7 +532,7 @@ function renderSourceNotePanel(data) {
       "Source and locator stem",
       "Ready",
       `${locatorReady}/${conversations.length}`,
-      "Candidate notes begin with repository, collection, control number, item or NAID, and the record URL in the order used by FRUS source notes."
+      "Draft notes begin with repository, collection, control number, item or NAID, and the record URL in the order used by FRUS source notes."
     ),
     readinessRow(
       "PDF page accounting",
@@ -572,45 +567,6 @@ function renderSourceNotePanel(data) {
   );
 
   nodes.sourceNoteRoot.replaceChildren(heading, list);
-}
-
-function renderLanes(data) {
-  nodes.lanesRoot.replaceChildren();
-
-  for (const lane of data.lanes) {
-    const card = document.createElement("article");
-    card.className = "lane-card";
-
-    const top = document.createElement("div");
-    top.className = "lane-top";
-
-    const headingWrap = document.createElement("div");
-    const heading = document.createElement("h3");
-    heading.textContent = lane.title;
-    const period = document.createElement("p");
-    period.className = "lane-period";
-    period.textContent = lane.period;
-    headingWrap.append(heading, period);
-
-    const number = document.createElement("span");
-    number.className = "lane-number";
-    number.textContent = `Lane ${lane.number}`;
-
-    top.append(headingWrap, number);
-
-    const focus = document.createElement("p");
-    focus.textContent = lane.focus;
-
-    const list = document.createElement("ul");
-    for (const item of lane.mustFind) {
-      const li = document.createElement("li");
-      li.textContent = item;
-      list.append(li);
-    }
-
-    card.append(top, focus, list);
-    nodes.lanesRoot.append(card);
-  }
 }
 
 function byDateThenType(a, b) {
@@ -934,68 +890,6 @@ function renderSources(data) {
   }
 }
 
-function renderChronology(data) {
-  nodes.chronologyRoot.replaceChildren();
-
-  for (const event of data.chronology) {
-    const item = document.createElement("article");
-    item.className = "timeline-item";
-
-    const date = document.createElement("div");
-    date.className = "timeline-date";
-    date.textContent = event.date;
-
-    const body = document.createElement("div");
-    const heading = document.createElement("h3");
-    heading.textContent = event.title;
-    const detail = document.createElement("p");
-    detail.textContent = event.detail;
-    body.append(heading, detail);
-
-    const source = document.createElement("div");
-    source.className = "timeline-source";
-    source.textContent = event.sourceCue;
-
-    item.append(date, body, source);
-    nodes.chronologyRoot.append(item);
-  }
-}
-
-function renderQuestions(data) {
-  nodes.questionsRoot.replaceChildren();
-
-  for (const question of data.questions) {
-    const card = document.createElement("article");
-    card.className = "question-card";
-
-    const top = document.createElement("div");
-    top.className = "question-top";
-    const heading = document.createElement("h3");
-    heading.textContent = question.title;
-    const status = document.createElement("span");
-    status.className = `status-pill ${question.status.toLowerCase()}`;
-    status.textContent = question.status;
-    top.append(heading, status);
-
-    const meta = document.createElement("p");
-    meta.className = "question-meta";
-    meta.textContent = question.lane;
-
-    const detail = document.createElement("p");
-    detail.textContent = question.detail;
-
-    const list = document.createElement("ul");
-    for (const lead of question.sourceLeads) {
-      const li = document.createElement("li");
-      li.textContent = lead;
-      list.append(li);
-    }
-
-    card.append(top, meta, detail, list);
-    nodes.questionsRoot.append(card);
-  }
-}
-
 function renderQueue(data) {
   nodes.queueRoot.replaceChildren();
 
@@ -1072,13 +966,10 @@ async function init() {
     renderStats(data);
     renderAudit(data, reports);
     renderFrusMethod(data);
-    renderLanes(data);
     renderConversationFilters(data);
     renderConversations(data);
     renderFilters(data);
     renderSources(data);
-    renderChronology(data);
-    renderQuestions(data);
     renderQueue(data);
     bindSearch(data);
   } catch (error) {

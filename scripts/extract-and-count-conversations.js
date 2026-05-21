@@ -37,21 +37,6 @@ const PACKETS = {
 
 const PACKET_EXTRACTS = [
   {
-    id: "gore-izetbegovic-1993-03-26",
-    packet: "bosnia20110964",
-    pages: "3-7",
-    date: "Mar 26, 1993",
-    sortDate: "1993-03-26",
-    kind: "Memcon",
-    title: "Memorandum of Conversation - Vice President Gore and President Alija Izetbegovic",
-    counterpart: "Al Gore; Alija Izetbegovic",
-    subjects: ["Vance-Owen", "Bosnia and Herzegovina", "Bosnian Croat relations", "Eastern Bosnia"],
-    compilerUse:
-      "Vice-presidential conversation lead for the opening review, Vance-Owen implementation, and early safe-area concerns.",
-    tags: ["Izetbegovic", "Gore", "Vance-Owen"],
-    out: "documents/bosnia/1993-03-26-gore-izetbegovic-memcon.pdf"
-  },
-  {
     id: "izetbegovic-1993-09-08",
     packet: "bosnia20110964",
     pages: "10-15",
