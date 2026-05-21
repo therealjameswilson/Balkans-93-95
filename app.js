@@ -1,5 +1,6 @@
 const DATA_URL = "data/compiler-map.json";
 const REPORT_URLS = {
+  documents: "reports/document-page-counts.json",
   conversations: "reports/conversation-page-counts.json",
   nara: "reports/nara-scout-memcon-telcon-search.json",
   talbott: "reports/strobe-talbott-manifest-search.json"
@@ -78,7 +79,11 @@ function createTagRow(tags = []) {
 }
 
 function conversationRecords(data) {
-  return data.conversations.filter((record) => ["Memcon", "Telcon"].includes(record.kind));
+  return (data.documents || data.conversations || []).slice();
+}
+
+function conversationSubsetRecords(data) {
+  return (data.conversations || []).filter((record) => ["Memcon", "Telcon"].includes(record.kind));
 }
 
 function sumPages(records) {
@@ -101,8 +106,8 @@ function groupCounts(records, labelFor) {
   return [...groups.values()];
 }
 
-function isDirectItem(record) {
-  return /^https:\/\/clinton\.presidentiallibraries\.us\/files\/original\//.test(record.pdfUrl || "");
+function isDirectPdf(record) {
+  return /^https?:\/\/.+\.pdf(?:[?#].*)?$/i.test(record.pdfUrl || "");
 }
 
 function isExtractedDocument(record) {
@@ -148,8 +153,8 @@ function sentenceCase(value = "") {
 }
 
 function sourcePdfLabel(record) {
-  if (isDirectItem(record)) {
-    return `direct embedded PDF, pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}`;
+  if (isDirectPdf(record)) {
+    return `direct PDF, pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}`;
   }
 
   if (record.sourcePdfPages) {
@@ -160,12 +165,14 @@ function sourcePdfLabel(record) {
 }
 
 function localExtractLabel(record) {
-  if (!isExtractedDocument(record)) return "direct item PDF";
+  if (!isExtractedDocument(record)) return isDirectPdf(record) ? "direct PDF" : "PDF locator";
   if (!record.localPdfPageCount) return "local extracted PDF";
-  return `${record.localPdfPageCount} local PDF pages, including any provenance marker pages`;
+  return `${record.localPdfPageCount} local PDF pages, including annotation sheet when present`;
 }
 
 function sourceNoteDraft(record) {
+  if (record.sourceNote) return record.sourceNote;
+
   const control = normalizedIdentifier(record.identifier);
   const itemId = locatorLabel(record);
   const citationStem = [repositoryLabel(record), record.collection, control, itemId].filter(Boolean).join(", ");
@@ -188,6 +195,12 @@ function citationOpenItems(record) {
 }
 
 function citationRows(record) {
+  const metadataLabel = record.kind === "Telcon" ? "Call metadata" : record.kind === "Memcon" ? "Meeting metadata" : "Document metadata";
+  const metadataValue =
+    record.kind === "Telcon" || record.kind === "Memcon"
+      ? `${record.kind}; ${record.date}; counterpart: ${record.counterpart || "not recorded"}. Verify place, exact time, participants, and time zone against the PDF.`
+      : `${record.kind || "Document"}; ${record.date}. Verify drafter/addressee, office symbols, exact date, distribution, and attachments against the PDF.`;
+
   return [
     {
       label: "Repository / custody",
@@ -206,7 +219,7 @@ function citationRows(record) {
     },
     {
       label: "PDF / page range",
-      value: `${sourcePdfLabel(record)}; ${pageLabel(record.pageCount)} counted as conversation text; ${localExtractLabel(record)}.`,
+      value: `${sourcePdfLabel(record)}; ${pageLabel(record.pageCount)} counted as document text; ${localExtractLabel(record)}.`,
       status: "Ready"
     },
     {
@@ -221,8 +234,8 @@ function citationRows(record) {
       status: "PDF"
     },
     {
-      label: "Meeting / call metadata",
-      value: `${record.kind}; ${record.date}; counterpart: ${record.counterpart}. Verify place, exact time, participants, and time zone against the PDF.`,
+      label: metadataLabel,
+      value: metadataValue,
       status: "Check"
     },
     {
@@ -232,19 +245,19 @@ function citationRows(record) {
     },
     {
       label: "Declassification accounting",
-      value: `Retain ${pageLabel(record.pageCount)} and source pp. ${record.sourcePdfPages || "pending"}; add excisions, deletion counts, and wholly withheld cross-references after review.`,
+      value: `Retain ${pageLabel(record.pageCount)} and source pp. ${record.sourcePdfPages || "pending"}; note annotation-sheet page, excisions, deletion counts, and wholly withheld cross-references after review.`,
       status: "Partial"
     }
   ];
 }
 
 function renderStats(data) {
-  const conversations = conversationRecords(data);
+  const documents = conversationRecords(data);
 
   nodes.totalSources.textContent = data.sources.length.toString();
-  nodes.totalConversations.textContent = conversations.length.toString();
-  nodes.totalPages.textContent = sumPages(conversations).toString();
-  nodes.totalSourceRanges.textContent = conversations.filter((record) => record.sourcePdfPages).length.toString();
+  nodes.totalConversations.textContent = documents.length.toString();
+  nodes.totalPages.textContent = sumPages(documents).toString();
+  nodes.totalSourceRanges.textContent = documents.filter((record) => record.sourcePdfPages).length.toString();
   nodes.status.textContent = data.volume.status;
 }
 
@@ -275,14 +288,16 @@ function auditCard(title, value, detail, meta) {
 }
 
 function renderAudit(data, reports = {}) {
-  const conversations = conversationRecords(data);
-  const direct = conversations.filter(isDirectItem);
-  const extracted = conversations.filter(isExtractedDocument);
-  const pending = conversations.filter((record) => !record.pageCount);
-  const memcons = conversations.filter((record) => record.kind === "Memcon");
-  const telcons = conversations.filter((record) => record.kind === "Telcon");
+  const documents = conversationRecords(data);
+  const conversations = conversationSubsetRecords(data);
+  const direct = documents.filter(isDirectPdf);
+  const extracted = documents.filter(isExtractedDocument);
+  const pending = documents.filter((record) => !record.pageCount);
+  const memcons = documents.filter((record) => record.kind === "Memcon");
+  const telcons = documents.filter((record) => record.kind === "Telcon");
+  const packetAnnotated = documents.filter((record) => record.annotationSheet);
   const denseYear = sortByValueDesc(
-    groupCounts(conversations, (record) => (record.sortDate || "").slice(0, 4)).map((item) => ({
+    groupCounts(documents, (record) => (record.sortDate || "").slice(0, 4)).map((item) => ({
       label: item.label,
       value: item.count,
       pages: item.pages
@@ -296,16 +311,16 @@ function renderAudit(data, reports = {}) {
 
   nodes.auditRoot.replaceChildren(
     auditCard(
-      "Conversation Evidence",
-      `${formatNumber(conversations.length)} records`,
-      `${formatNumber(sumPages(conversations))} counted pages: ${formatNumber(memcons.length)} memcons and ${formatNumber(telcons.length)} telcons.`,
+      "Document Evidence",
+      `${formatNumber(documents.length)} records`,
+      `${formatNumber(sumPages(documents))} counted pages: ${formatNumber(memcons.length)} memcons and ${formatNumber(telcons.length)} telcons remain visible inside the broader chronology.`,
       `${pending.length} records still need page counts.`
     ),
     auditCard(
       "PDF Coverage",
       `${formatNumber(direct.length + extracted.length)} PDFs`,
-      `${formatNumber(direct.length)} direct Clinton Library item PDFs and ${formatNumber(extracted.length)} extracted packet documents.`,
-      "Each displayed memcon/telcon card has a PDF link and source-page metadata."
+      `${formatNumber(direct.length)} direct PDFs and ${formatNumber(extracted.length)} extracted packet documents.`,
+      `${formatNumber(packetAnnotated.length)} extracted PDFs append source packet page 1 as an annotation sheet.`
     ),
     auditCard(
       "Discovery Sweeps",
@@ -317,14 +332,14 @@ function renderAudit(data, reports = {}) {
       "Highest Density",
       denseYear ? denseYear.label : "N/A",
       denseYear
-        ? `${formatNumber(denseYear.value)} conversations and ${formatNumber(denseYear.pages)} pages cluster in ${denseYear.label}.`
-        : "No conversation dates available.",
-      "Use this to prioritize the 1995 coercive diplomacy and Dayton sequence."
+        ? `${formatNumber(denseYear.value)} documents and ${formatNumber(denseYear.pages)} pages cluster in ${denseYear.label}.`
+        : "No document dates available.",
+      `${formatNumber(conversations.length)} records remain in the memcon/telcon subset.`
     )
   );
 
-  renderCoverage(conversations);
-  renderCounterparts(conversations);
+  renderCoverage(documents);
+  renderCounterparts(documents);
 }
 
 function renderCoverage(conversations) {
@@ -357,12 +372,12 @@ function renderCoverage(conversations) {
 }
 
 function renderCounterparts(conversations) {
-  const groups = groupCounts(conversations, (record) => record.counterpart)
+  const groups = groupCounts(conversations, (record) => record.counterpart || record.documentScope || record.kind)
     .sort((a, b) => b.count - a.count || b.pages - a.pages || a.label.localeCompare(b.label))
     .slice(0, 10);
 
   const heading = document.createElement("h3");
-  heading.textContent = "Counterpart Index";
+  heading.textContent = "People / Form Index";
   const list = document.createElement("div");
   list.className = "counterpart-list";
 
@@ -428,12 +443,14 @@ function readinessRow(label, status, count, detail) {
 }
 
 function renderFrusMethod(data) {
-  const conversations = conversationRecords(data);
-  const direct = conversations.filter(isDirectItem);
-  const extracted = conversations.filter(isExtractedDocument);
-  const sourceNotes = conversations.filter((record) => record.sourceNote);
-  const sourceRanges = conversations.filter((record) => record.sourcePdfPages);
-  const dateYears = groupCounts(conversations, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
+  const documents = conversationRecords(data);
+  const conversations = conversationSubsetRecords(data);
+  const direct = documents.filter(isDirectPdf);
+  const extracted = documents.filter(isExtractedDocument);
+  const sourceNotes = documents.filter((record) => record.sourceNote);
+  const sourceRanges = documents.filter((record) => record.sourcePdfPages);
+  const inferredDates = documents.filter((record) => record.dateCertainty === "inferred");
+  const dateYears = groupCounts(documents, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
     a.label.localeCompare(b.label)
   );
   const dateMeasure = dateYears.map((item) => `${item.label}: ${item.count}`).join(" / ");
@@ -443,25 +460,25 @@ function renderFrusMethod(data) {
       "Mission Boundary",
       "Set",
       "This page is not a proposed FRUS selection list and does not suggest how the volume should be structured.",
-      "It inventories declassified U.S. presidential memcons and telcons for the compiler to consider."
+      "It inventories declassified U.S. records for chronological consideration by the compiler."
     ),
     methodCard(
       "Chronological Inventory",
       "Ready",
-      "President Clinton memcons and telcons are ordered by conversation date, not by release packet or item discovery order.",
+      "Records are ordered by document date, not by release packet or item discovery order; inferred dates are labeled.",
       dateMeasure
     ),
     methodCard(
       "Source Note Drafts",
       "Partial",
       "Each card starts its draft note in FRUS order: repository, collection/control number, record locator, PDF source pages, then original-document metadata to verify.",
-      `${sourceNotes.length}/${conversations.length} draft source notes; ${sourceRanges.length}/${conversations.length} source page ranges.`
+      `${sourceNotes.length}/${documents.length} draft source notes; ${sourceRanges.length}/${documents.length} source page ranges.`
     ),
     methodCard(
       "Declassification Accounting",
       "Partial",
-      "The page counts document pages and distinguishes direct from extracted PDFs; excisions and withheld-text counts remain a review queue item.",
-      `${sumPages(conversations)} counted pages; ${direct.length} direct PDFs; ${extracted.length} extracted PDFs.`
+      "Packet PDFs are reduced to the pages of each memo or record, with the packet first page appended as an annotation sheet.",
+      `${sumPages(documents)} counted pages; ${direct.length} direct PDFs; ${extracted.length} extracted PDFs; ${inferredDates.length} inferred-date records; ${conversations.length} memcon/telcon records.`
     )
   );
 
@@ -470,12 +487,13 @@ function renderFrusMethod(data) {
 }
 
 function renderReadinessPanel(data) {
-  const conversations = conversationRecords(data);
-  const withPdfs = conversations.filter((record) => record.pdfUrl);
-  const withDates = conversations.filter((record) => record.sortDate);
-  const withPages = conversations.filter((record) => record.pageCount);
-  const withSourceRanges = conversations.filter((record) => record.sourcePdfPages);
-  const withCompilerUse = conversations.filter((record) => record.compilerUse);
+  const documents = conversationRecords(data);
+  const withPdfs = documents.filter((record) => record.pdfUrl);
+  const withDates = documents.filter((record) => record.sortDate);
+  const withPages = documents.filter((record) => record.pageCount);
+  const withSourceRanges = documents.filter((record) => record.sourcePdfPages);
+  const withCompilerUse = documents.filter((record) => record.compilerUse);
+  const withAnnotation = documents.filter((record) => isExtractedDocument(record) && record.annotationSheet);
   const anchorSources = data.sources.filter((source) => ["Anchor", "Core"].includes(source.priority));
 
   const heading = document.createElement("h3");
@@ -485,27 +503,33 @@ function renderReadinessPanel(data) {
   list.append(
     readinessRow(
       "Document-level PDFs",
-      withPdfs.length === conversations.length ? "Ready" : "Gap",
-      `${withPdfs.length}/${conversations.length}`,
-      "Every listed conversation should resolve to a direct or extracted PDF."
+      withPdfs.length === documents.length ? "Ready" : "Gap",
+      `${withPdfs.length}/${documents.length}`,
+      "Every listed record should resolve to a direct or extracted PDF."
     ),
     readinessRow(
-      "Conversation-date ordering",
-      withDates.length === conversations.length ? "Ready" : "Gap",
-      `${withDates.length}/${conversations.length}`,
-      "Conversation cards sort by the time/date of the conversation."
+      "Chronological ordering",
+      withDates.length === documents.length ? "Ready" : "Gap",
+      `${withDates.length}/${documents.length}`,
+      "Records sort by document date; undated records use a labeled best-fit chronology."
     ),
     readinessRow(
       "Page counts and source ranges",
-      withPages.length === conversations.length && withSourceRanges.length === conversations.length ? "Ready" : "Gap",
-      `${withPages.length}/${conversations.length}`,
+      withPages.length === documents.length && withSourceRanges.length === documents.length ? "Ready" : "Gap",
+      `${withPages.length}/${documents.length}`,
       "Supports page accounting, extraction checks, and declassification review notes."
     ),
     readinessRow(
+      "Packet annotation sheets",
+      withAnnotation.length === documents.filter(isExtractedDocument).length ? "Ready" : "Gap",
+      `${withAnnotation.length}/${documents.filter(isExtractedDocument).length}`,
+      "Every packet-extracted PDF appends the source packet first page after the document pages."
+    ),
+    readinessRow(
       "Inventory relevance note",
-      withCompilerUse.length === conversations.length ? "Ready" : "Partial",
-      `${withCompilerUse.length}/${conversations.length}`,
-      "Each record notes why it is relevant to the declassified conversation inventory, without recommending inclusion."
+      withCompilerUse.length === documents.length ? "Ready" : "Partial",
+      `${withCompilerUse.length}/${documents.length}`,
+      "Each record notes why it is relevant to the declassified document inventory, without recommending inclusion."
     ),
     readinessRow(
       "Anchor and core source trails",
@@ -519,10 +543,10 @@ function renderReadinessPanel(data) {
 }
 
 function renderSourceNotePanel(data) {
-  const conversations = conversationRecords(data);
-  const locatorReady = conversations.filter((record) => record.collection && record.identifier && record.url).length;
-  const pageReady = conversations.filter((record) => record.pageCount && record.sourcePdfPages).length;
-  const meetingReady = conversations.filter((record) => record.date && record.counterpart && record.kind).length;
+  const documents = conversationRecords(data);
+  const locatorReady = documents.filter((record) => record.collection && record.identifier && (record.url || record.pdfUrl)).length;
+  const pageReady = documents.filter((record) => record.pageCount && record.sourcePdfPages).length;
+  const metadataReady = documents.filter((record) => record.date && record.kind).length;
   const heading = document.createElement("h3");
   heading.textContent = "Source Note Worklist";
   const list = document.createElement("div");
@@ -531,14 +555,14 @@ function renderSourceNotePanel(data) {
     readinessRow(
       "Source and locator stem",
       "Ready",
-      `${locatorReady}/${conversations.length}`,
+      `${locatorReady}/${documents.length}`,
       "Draft notes begin with repository, collection, control number, item or NAID, and the record URL in the order used by FRUS source notes."
     ),
     readinessRow(
       "PDF page accounting",
-      pageReady === conversations.length ? "Ready" : "Partial",
-      `${pageReady}/${conversations.length}`,
-      "The cards preserve source packet pages, counted conversation pages, and whether the displayed PDF is direct or locally extracted."
+      pageReady === documents.length ? "Ready" : "Partial",
+      `${pageReady}/${documents.length}`,
+      "The cards preserve source packet pages, counted document pages, annotation sheets, and whether the displayed PDF is direct or locally extracted."
     ),
     readinessRow(
       "Classification / handling controls",
@@ -555,8 +579,8 @@ function renderSourceNotePanel(data) {
     readinessRow(
       "Meeting / call metadata",
       "Partial",
-      `${meetingReady}/${conversations.length}`,
-      "Each lead has date, type, and counterpart; verify place, exact time, participants, and time zone against the PDF text."
+      `${metadataReady}/${documents.length}`,
+      "Each lead has date and form; for conversations, verify place, exact time, participants, and time zone against the PDF text."
     ),
     readinessRow(
       "Annotations, attachments, excisions",
@@ -636,7 +660,11 @@ function conversationTextMatch(record) {
     record.counterpart,
     record.identifier,
     record.collection,
+    record.repository,
     record.compilerUse,
+    record.documentScope,
+    record.documentType,
+    record.dateBasis,
     record.kind,
     ...(record.subjects || []),
     ...(record.tags || [])
@@ -694,18 +722,19 @@ function renderConversations(data) {
   nodes.conversationRoot.replaceChildren();
 
   const records = filteredConversations(data);
-  const direct = records.filter(isDirectItem).length;
+  const direct = records.filter(isDirectPdf).length;
   const extracted = records.filter(isExtractedDocument).length;
+  const annotated = records.filter((record) => record.annotationSheet).length;
   nodes.conversationSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
     conversationRecords(data).length
   )} records, ${formatNumber(sumPages(records))} pages, ${formatNumber(direct)} direct PDFs, ${formatNumber(
     extracted
-  )} extracted PDFs.`;
+  )} extracted PDFs, ${formatNumber(annotated)} with annotation sheets.`;
 
   if (!records.length) {
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "No memcons or telcons match the current filters.";
+    empty.textContent = "No declassified records match the current filters.";
     nodes.conversationRoot.append(empty);
     return;
   }
@@ -728,18 +757,25 @@ function renderConversations(data) {
     const badges = document.createElement("div");
     badges.className = "conversation-badges";
     const kind = document.createElement("span");
-    kind.className = `source-type ${record.kind.toLowerCase()}`;
+    kind.className = `source-type ${record.kind.toLowerCase().replace(/\s+/g, "-")}`;
     kind.textContent = record.kind;
     const provenance = document.createElement("span");
     provenance.className = `source-type ${isExtractedDocument(record) ? "extracted" : "direct"}`;
     provenance.textContent = isExtractedDocument(record) ? "Extracted PDF" : "Direct PDF";
     badges.append(kind, provenance);
+    if (record.dateCertainty === "inferred") {
+      const inferred = document.createElement("span");
+      inferred.className = "source-type inferred";
+      inferred.textContent = "Inferred date";
+      badges.append(inferred);
+    }
     top.append(heading, badges);
 
     const meta = document.createElement("p");
     meta.className = "source-meta";
     meta.textContent = [
       record.counterpart,
+      record.documentScope,
       record.identifier,
       record.collection,
       pageLabel(record.pageCount),
@@ -749,17 +785,26 @@ function renderConversations(data) {
       .join(" | ");
 
     const use = document.createElement("p");
-    use.textContent = record.compilerUse;
+    use.textContent = record.compilerUse || "";
 
     const subjects = document.createElement("p");
     subjects.className = "conversation-subjects";
-    subjects.textContent = record.subjects.join(" / ");
+    subjects.textContent = (record.subjects || []).join(" / ");
 
     const extraction = document.createElement("p");
     extraction.className = "conversation-provenance";
     extraction.textContent = record.extractionStatus || "PDF provenance recorded in source metadata.";
 
-    body.append(top, meta, use, subjects, extraction, sourceNoteDetails(record), createTagRow(record.tags));
+    body.append(top, meta);
+    if (use.textContent) body.append(use);
+    if (subjects.textContent) body.append(subjects);
+    if (record.dateBasis) {
+      const dateBasis = document.createElement("p");
+      dateBasis.className = "conversation-provenance";
+      dateBasis.textContent = `Chronology note: ${record.dateBasis}`;
+      body.append(dateBasis);
+    }
+    body.append(extraction, sourceNoteDetails(record), createTagRow(record.tags));
 
     card.append(date, body, createConversationLinks(record));
     nodes.conversationRoot.append(card);
@@ -776,9 +821,11 @@ function exportFilteredConversations(data) {
     "kind",
     "title",
     "counterpart",
+    "documentScope",
     "identifier",
     "collection",
     "pageCount",
+    "localPdfPageCount",
     "sourcePdfPages",
     "sourcePdfUrl",
     "pdfUrl",
@@ -792,9 +839,11 @@ function exportFilteredConversations(data) {
     record.kind,
     record.title,
     record.counterpart,
+    record.documentScope,
     record.identifier,
     record.collection,
     record.pageCount,
+    record.localPdfPageCount || "",
     record.sourcePdfPages,
     record.sourcePdfUrl || "",
     record.pdfUrl,
@@ -807,7 +856,7 @@ function exportFilteredConversations(data) {
   const blob = new Blob([`${csv}\n`], { type: "text/csv;charset=utf-8" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
-  link.download = "balkans-93-95-filtered-memcons-telcons.csv";
+  link.download = "balkans-93-95-filtered-declassified-documents.csv";
   document.body.append(link);
   link.click();
   URL.revokeObjectURL(link.href);
@@ -942,13 +991,14 @@ async function loadOptionalJson(url) {
 }
 
 async function loadReports() {
-  const [conversations, nara, talbott] = await Promise.all([
+  const [documents, conversations, nara, talbott] = await Promise.all([
+    loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
     loadOptionalJson(REPORT_URLS.nara),
     loadOptionalJson(REPORT_URLS.talbott)
   ]);
 
-  return { conversations, nara, talbott };
+  return { documents, conversations, nara, talbott };
 }
 
 async function loadData() {

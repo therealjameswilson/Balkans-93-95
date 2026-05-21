@@ -6,9 +6,10 @@
     <title>FRUS 1993-2000 Volume XV Compiler Workspace</title>
     <meta
       name="description"
-      content="A public compiler workspace with a chronological inventory of declassified President Clinton memcons and telcons for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
+      content="A public compiler workspace with a chronological inventory of declassified U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
-    <link rel="stylesheet" href="styles.css?v=20260521-inventory" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=20260521-broad-docs" />
   </head>
   <body>
     <header class="site-header">
@@ -19,7 +20,7 @@
       <nav aria-label="Primary navigation">
         <a href="#audit">Audit</a>
         <a href="#frus-method">Method</a>
-        <a href="#conversations">Memcons/Telcons</a>
+        <a href="#conversations">Documents</a>
         <a href="#sources">Sources</a>
         <a href="#queue">Queue</a>
       </nav>
@@ -31,14 +32,15 @@
           <p class="kicker">FRUS 1993-2000, Volume XV</p>
           <h1 id="hero-title">Balkans Compiler Workspace</h1>
           <p class="lede">
-            A chronological inventory of declassified U.S. presidential
-            memcons and telcons identified for President Clinton and the
-            still-researched <em>Wars in the Balkans, 1993-1995</em> volume.
-            It is not a recommendation about which documents to print or how
-            the volume should be organized.
+            A chronological inventory of declassified U.S. records covering
+            the Balkans during 1993-1995, including President Clinton
+            memcons/telcons, NSC Principals and Deputies Committee summaries,
+            policy memoranda, cables, and in-period Talbott FOIA records. It
+            is not a recommendation about which documents to print or how the
+            volume should be organized.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#conversations">Review Conversations</a>
+            <a class="button primary" href="#conversations">Review Documents</a>
             <a class="button secondary" href="#sources">Check Sources</a>
           </div>
         </div>
@@ -71,11 +73,11 @@
         </div>
         <div>
           <span id="total-conversations">0</span>
-          <p>Clinton memcon/telcon records</p>
+          <p>declassified records</p>
         </div>
         <div>
           <span id="total-pages">0</span>
-          <p>conversation pages</p>
+          <p>document pages</p>
         </div>
         <div>
           <span id="total-source-ranges">0</span>
@@ -90,9 +92,9 @@
             <h2 id="audit-title">Compiler Audit Board</h2>
           </div>
           <p class="section-note">
-            A quick-read ledger for the declassified presidential conversation
-            inventory: document-level PDFs, page counts, source ranges, and
-            collection coverage.
+            A quick-read ledger for the broader declassified document
+            inventory: document-level PDFs, page counts, source ranges,
+            annotation sheets, and collection coverage.
           </p>
         </div>
         <div id="audit-root" class="audit-grid" aria-live="polite"></div>
@@ -113,9 +115,9 @@
             Historian's
             <a href="https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries">About the Series</a>
             source-note and declassification discipline, but it does not decide
-            what belongs in the volume. It lists declassified presidential
-            conversations chronologically for compiler review, with citation
-            fields ordered after
+            what belongs in the volume. It lists declassified U.S. records,
+            including presidential conversations, chronologically for compiler
+            review, with citation fields ordered after
             <a href="https://history.state.gov/historicaldocuments/frus1989-92v31">Volume XXXI</a>
             source-note practice.
           </p>
@@ -130,33 +132,34 @@
       <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
         <div class="section-heading">
           <div>
-            <p class="kicker">Declassified Conversations</p>
-            <h2 id="conversations-title">Chronological Clinton Memcons and Telcons</h2>
+            <p class="kicker">Declassified Records</p>
+            <h2 id="conversations-title">Chronological Clinton-Era Balkans Documents</h2>
           </div>
           <p class="section-note">
-            The list is ordered by conversation date and limited to declassified
-            U.S. presidential memcons and telcons identified in the searched
-            public releases. Presence here means "available for consideration,"
-            not "recommended for inclusion."
+            The list is ordered by document date across the searched public
+            releases. Packet PDFs are reduced to the pages of each document,
+            with page 1 of the source PDF appended as an annotation sheet.
+            Presence here means "available for consideration," not
+            "recommended for inclusion."
           </p>
         </div>
-        <div class="conversation-tools" aria-label="Conversation filters">
+        <div class="conversation-tools" aria-label="Document filters">
           <label class="search-field">
-            <span>Search conversations</span>
+            <span>Search documents</span>
             <input
               id="conversation-search"
               type="search"
               autocomplete="off"
-              placeholder="Counterpart, subject, tag"
+              placeholder="Person, subject, source, tag"
             />
           </label>
           <div>
-            <p class="tool-label">Kind</p>
-            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Conversation kind filters"></div>
+            <p class="tool-label">Form</p>
+            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Document form filters"></div>
           </div>
           <div>
             <p class="tool-label">Year</p>
-            <div id="conversation-year-filters" class="filter-row compact" aria-label="Conversation year filters"></div>
+            <div id="conversation-year-filters" class="filter-row compact" aria-label="Document year filters"></div>
           </div>
           <button id="conversation-reset" class="reset-button" type="button">Reset</button>
           <button id="conversation-export" class="reset-button export-button" type="button">Export CSV</button>
@@ -215,7 +218,7 @@
             <p>
               The page does not say which documents should appear in FRUS and
               does not propose a chapter structure. It inventories available
-              declassified presidential conversations for consideration.
+              declassified U.S. records for consideration.
             </p>
           </article>
           <article>
@@ -230,7 +233,7 @@
             <h3>Future Data</h3>
             <p>
               The interface renders from <code>data/compiler-map.json</code>.
-              Additional declassified Clinton memcons and telcons can be added
+              Additional declassified Clinton-era Balkans records can be added
               there without changing the page structure.
             </p>
           </article>
@@ -242,11 +245,11 @@
       <p>
         Companion workspace for
         <a href="https://history.state.gov/historicaldocuments/frus1993-00v15">FRUS 1993-2000, Volume XV</a>.
-        Source leads reviewed May 20, 2026.
+        Source leads reviewed May 21, 2026.
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260521-inventory"></script>
-    <script src="app.js?v=20260521-inventory"></script>
+    <script src="data/compiler-map.js?v=20260521-broad-docs"></script>
+    <script src="app.js?v=20260521-broad-docs"></script>
   </body>
 </html>

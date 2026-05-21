@@ -1,15 +1,15 @@
 # FRUS 1993-2000 Volume XV Compiler Workspace
 
 A GitHub Pages workspace for helping a FRUS compiler review a chronological
-inventory of declassified U.S. presidential memcons and telcons for
+inventory of declassified U.S. Clinton-era records for
 *Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the
 Balkans, 1993-1995*.
 
 The Office of the Historian currently lists this volume as **Being Researched**.
 This page is a companion research aid: it does not replace the official FRUS
 process and does not recommend documents for inclusion or propose a volume
-structure. Its mission is to provide declassified President Clinton memcons and
-telcons chronologically, with source and page metadata, so the compiler can
+structure. Its mission is to provide declassified U.S. records covering the
+Balkans chronologically, with source and page metadata, so the compiler can
 consider them.
 
 The compiler-facing workflow is aligned with the Office of the Historian's
@@ -20,15 +20,15 @@ published "About the Series" guidance for FRUS production:
 
 - `index.html` is the static GitHub Pages entry point.
 - `styles.css` contains the responsive layout and visual system.
-- `app.js` renders the chronological memcon/telcon inventory, source cards, and
+- `app.js` renders the chronological declassified-document inventory, source cards, and
   completeness queue from data.
 - The public page includes an evidence audit board, coverage bars, a
-  counterpart index, and live filters for memcons/telcons by kind, year, and
+  people/form index, and live filters for records by form, year, and
   keyword.
 - A FRUS inventory-method console keeps the evidence aligned with chronological
   ordering, source-note metadata, and declassification accounting without making
   selection judgments.
-- The memcon/telcon cards now draft citation stems in the same order used by
+- The document cards draft citation stems in the same order used by
   FRUS source notes in Volume XXXI: repository/custody, collection or control
   number, item/NAID locator, PDF page range, then original classification,
   handling controls, drafting/clearance/distribution, annotations, attachments,
@@ -41,6 +41,9 @@ published "About the Series" guidance for FRUS production:
 - `scripts/search-strobe-talbott-manifest.js` scores the public Strobe Talbott
   FOIA manifest for Balkans, Bosnia, Dayton, Holbrooke, Russia, and Kosovo
   follow-on leads.
+- `scripts/build-broad-document-inventory.js` builds the expanded chronology,
+  extracts packet PDF page ranges, appends page 1 of each source packet as an
+  annotation sheet, and writes document page-count metadata.
 - `scripts/extract-and-count-conversations.js` resolves direct Clinton Library
   memcon/telcon PDFs, extracts document-level memcons and telcons from packet
   PDFs, and records page counts.
@@ -50,6 +53,8 @@ published "About the Series" guidance for FRUS production:
   manifest sweep and separates in-volume leads from post-1995 follow-on items.
 - `reports/conversation-page-counts.json` records the direct and extracted
   memcon/telcon page-count audit.
+- `reports/document-page-counts.json` records the expanded document inventory
+  page-count audit.
 - `documents/` contains extracted document-level PDFs from packet sources.
 
 ## Source Focus
@@ -63,7 +68,13 @@ The first-pass source matrix supports completeness checks across:
   Felipe Gonzalez, with direct PDF links and counted pages.
 - Extracted packet-level President Clinton memcons and telcons for Izetbegovic,
   Tudjman, Milosevic, Chirac, Kohl, Major, Christopher-de Charette, and Yeltsin,
-  with source page ranges and counted conversation pages.
+  with source page ranges and counted document pages.
+- Extracted NSC Principals and Deputies Committee summaries from the PC/DC
+  Bosnia MDR packet.
+- Extracted August 1995 endgame strategy papers from the Getting to Dayton MDR
+  packet.
+- Extracted Croatia, Z-4, Milosevic, Srebrenica/London, and allied-diplomacy
+  policy records from Clinton Library MDR packets.
 - NARA Scout / National Archives Catalog cross-check for digitized
   declassified memcons and telcons, including NAID `163545436`, the
   Clinton-Yeltsin Hyde Park memcon on Bosnia implementation.
@@ -78,13 +89,16 @@ The first-pass source matrix supports completeness checks across:
 
 ## Evidence Audit
 
-The page currently surfaces `31` document-level President Clinton memcon/telcon
-records and `161` counted conversation pages. Every displayed conversation card
-has a PDF link, source-page metadata, and provenance labeling that distinguishes
-direct Clinton Library item PDFs from locally extracted packet documents.
+The page currently surfaces `95` chronological declassified records and `327`
+counted document pages, including `31` memcon/telcon records.
+Every displayed card has a PDF link, source-page metadata, and provenance
+labeling that distinguishes direct PDFs from locally extracted packet documents.
 
-The memcon/telcon table can also export the active filtered set as CSV. Each
-conversation card contains a collapsed FRUS-style source-note block with a draft
+Packet extractions include only the document pages and append page 1 of the
+source PDF as an annotation sheet for the compiler's provenance review.
+
+The document table can also export the active filtered set as CSV. Each
+document card contains a collapsed FRUS-style source-note block with a draft
 `Source:` note, a locator/page ledger, and open PDF-level checks for
 classification, handling controls, drafting, clearance, distribution, marginalia,
 attachments not printed, and excisions.

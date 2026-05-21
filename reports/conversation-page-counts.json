@@ -1,290 +1,382 @@
 {
-  "generatedAt": "2026-05-19T22:06:41.830Z",
-  "directItemCount": 14,
-  "extractedDocumentCount": 17,
+  "generatedAt": "2026-05-21T18:49:31.321Z",
   "conversationRecordCount": 31,
   "pageTotal": 161,
-  "direct": [
+  "directItemCount": 14,
+  "extractedDocumentCount": 17,
+  "sourcePacketAnnotation": "Packet extractions append page 1 of the original source PDF after the extracted document pages.",
+  "records": [
     {
       "id": "mitterrand-1993-02-15",
+      "date": "Feb 15, 1993",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
       "pageCount": 3,
+      "localPdfPageCount": 3,
       "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf",
       "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101348. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "mitterrand-1993-03-17",
+      "date": "Mar 17, 1993",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
       "pageCount": 3,
+      "localPdfPageCount": 3,
       "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf",
       "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101349. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "mitterrand-1993-04-20",
+      "date": "Apr 20, 1993",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
       "pageCount": 4,
+      "localPdfPageCount": 4,
       "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf",
       "sourcePdfPages": "1-4",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101350. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "mitterrand-1993-05-06",
+      "date": "May 6, 1993",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
       "pageCount": 3,
+      "localPdfPageCount": 3,
       "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf",
       "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101351. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
-    {
-      "id": "mitterrand-1994-11-23",
-      "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
-      "pageCount": 3,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf",
-      "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "claes-1995-03-07",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - NATO Secretary General Willy Claes",
-      "pageCount": 6,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf",
-      "sourcePdfPages": "1-6",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "major-1995-04-04",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
-      "pageCount": 15,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf",
-      "sourcePdfPages": "1-15",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "chirac-1995-05-27",
-      "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
-      "pageCount": 4,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf",
-      "sourcePdfPages": "1-4",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "chirac-1995-06-14",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - President Jacques Chirac of France",
-      "pageCount": 10,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf",
-      "sourcePdfPages": "1-10",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "major-1995-06-16",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
-      "pageCount": 3,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf",
-      "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "chirac-1995-07-24",
-      "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
-      "pageCount": 4,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf",
-      "sourcePdfPages": "1-4",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "chirac-1995-08-07",
-      "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
-      "pageCount": 3,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf",
-      "sourcePdfPages": "1-3",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "gonzalez-1995-12-03",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation with Spanish Prime Minister Felipe Gonzalez",
-      "pageCount": 10,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf",
-      "sourcePdfPages": "1-10",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    },
-    {
-      "id": "chirac-1995-12-14",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - President Jacques Chirac of France",
-      "pageCount": 6,
-      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf",
-      "sourcePdfPages": "1-6",
-      "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF."
-    }
-  ],
-  "extracted": [
     {
       "id": "izetbegovic-1993-09-08",
+      "date": "Sep 8, 1993",
       "kind": "Memcon",
       "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
       "pageCount": 6,
+      "localPdfPageCount": 7,
       "pdfUrl": "documents/extracted/1993-09-08-izetbegovic-1993-09-08.pdf",
       "sourcePdfPages": "10-15",
-      "extractionStatus": "Extracted source pages 10-15 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 10-15; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "izetbegovic-1994-09-25",
+      "date": "Sep 25, 1994",
       "kind": "Memcon",
       "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
       "pageCount": 8,
+      "localPdfPageCount": 9,
       "pdfUrl": "documents/extracted/1994-09-25-izetbegovic-1994-09-25.pdf",
       "sourcePdfPages": "18-25",
-      "extractionStatus": "Extracted source pages 18-25 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 18-25; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "mitterrand-1994-11-23",
+      "date": "Nov 23, 1994",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf",
+      "sourcePdfPages": "1-3",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101400. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "izetbegovic-tudjman-1994-12-05",
+      "date": "Dec 5, 1994",
       "kind": "Memcon",
       "title": "Memorandum of Conversation - Presidents Izetbegovic and Tudjman",
       "pageCount": 3,
+      "localPdfPageCount": 4,
       "pdfUrl": "documents/extracted/1994-12-05-izetbegovic-tudjman-1994-12-05.pdf",
       "sourcePdfPages": "27-29",
-      "extractionStatus": "Extracted source pages 27-29 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 27-29; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
-      "id": "izetbegovic-1995-07-20",
+      "id": "claes-1995-03-07",
+      "date": "Mar 7, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - NATO Secretary General Willy Claes",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf",
+      "sourcePdfPages": "1-6",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0755-M, https://clinton.presidentiallibraries.us/items/show/101431. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "major-1995-04-04",
+      "date": "Apr 4, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
+      "pageCount": 15,
+      "localPdfPageCount": 15,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf",
+      "sourcePdfPages": "1-15",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101436. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf; 15 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "chirac-1995-05-27",
+      "date": "May 27, 1995",
       "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - President Clinton and President Alija Izetbegovic",
-      "pageCount": 3,
-      "pdfUrl": "documents/extracted/1995-07-20-izetbegovic-1995-07-20.pdf",
-      "sourcePdfPages": "32-34",
-      "extractionStatus": "Extracted source pages 32-34 from the packet as the actual conversation document."
-    },
-    {
-      "id": "izetbegovic-tudjman-1995-10-24",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Presidents Izetbegovic and Tudjman",
-      "pageCount": 7,
-      "pdfUrl": "documents/extracted/1995-10-24-izetbegovic-tudjman-1995-10-24.pdf",
-      "sourcePdfPages": "37-43",
-      "extractionStatus": "Extracted source pages 37-43 from the packet as the actual conversation document."
-    },
-    {
-      "id": "quadrilateral-1995-12-14",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Quadrilateral Meeting with Tudjman, Izetbegovic, and Milosevic",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
       "pageCount": 4,
-      "pdfUrl": "documents/extracted/1995-12-14-quadrilateral-1995-12-14.pdf",
-      "sourcePdfPages": "47-50",
-      "extractionStatus": "Extracted source pages 47-50 from the packet as the actual conversation document."
+      "localPdfPageCount": 4,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf",
+      "sourcePdfPages": "1-4",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118528. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
-      "id": "tudjman-1995-12-14-pull-aside",
+      "id": "chirac-1995-06-14",
+      "date": "Jun 14, 1995",
       "kind": "Memcon",
-      "title": "Memorandum of Conversation - Pull-Aside with President Franjo Tudjman",
-      "pageCount": 2,
-      "pdfUrl": "documents/extracted/1995-12-14-tudjman-1995-12-14-pull-aside.pdf",
-      "sourcePdfPages": "52-53",
-      "extractionStatus": "Extracted source pages 52-53 from the packet as the actual conversation document."
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "pageCount": 10,
+      "localPdfPageCount": 10,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf",
+      "sourcePdfPages": "1-10",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101402. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
-      "id": "izetbegovic-1995-12-14-pull-aside",
+      "id": "major-1995-06-16",
+      "date": "Jun 16, 1995",
       "kind": "Memcon",
-      "title": "Memorandum of Conversation - Pull-Aside with President Alija Izetbegovic",
+      "title": "Memorandum of Conversation - Prime Minister John Major of the United Kingdom",
       "pageCount": 3,
-      "pdfUrl": "documents/extracted/1995-12-14-izetbegovic-1995-12-14-pull-aside.pdf",
-      "sourcePdfPages": "55-57",
-      "extractionStatus": "Extracted source pages 55-57 from the packet as the actual conversation document."
-    },
-    {
-      "id": "milosevic-1995-12-14-pull-aside",
-      "kind": "Memcon",
-      "title": "Memorandum of Conversation - Pull-Aside with President Slobodan Milosevic",
-      "pageCount": 3,
-      "pdfUrl": "documents/extracted/1995-12-14-milosevic-1995-12-14-pull-aside.pdf",
-      "sourcePdfPages": "59-61",
-      "extractionStatus": "Extracted source pages 59-61 from the packet as the actual conversation document."
-    },
-    {
-      "id": "christopher-de-charette-1995-07-19",
-      "kind": "Telcon",
-      "title": "Memorandum of Telephone Conversation - Secretary Christopher and Foreign Minister de Charette",
-      "pageCount": 3,
-      "pdfUrl": "documents/extracted/1995-07-19-christopher-de-charette-1995-07-19.pdf",
-      "sourcePdfPages": "2-4",
-      "extractionStatus": "Extracted source pages 2-4 from the packet as the actual conversation document."
+      "localPdfPageCount": 3,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf",
+      "sourcePdfPages": "1-3",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101439. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "kohl-1995-07-13",
+      "date": "Jul 13, 1995",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - Chancellor Helmut Kohl of Germany",
       "pageCount": 3,
+      "localPdfPageCount": 4,
       "pdfUrl": "documents/extracted/1995-07-13-kohl-1995-07-13.pdf",
       "sourcePdfPages": "35-37",
-      "extractionStatus": "Extracted source pages 35-37 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 35-37; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "chirac-1995-07-13",
+      "date": "Jul 13, 1995",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
       "pageCount": 5,
+      "localPdfPageCount": 6,
       "pdfUrl": "documents/extracted/1995-07-13-chirac-1995-07-13.pdf",
       "sourcePdfPages": "51-55",
-      "extractionStatus": "Extracted source pages 51-55 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 51-55; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "chirac-1995-07-19",
+      "date": "Jul 19, 1995",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
       "pageCount": 6,
+      "localPdfPageCount": 7,
       "pdfUrl": "documents/extracted/1995-07-19-chirac-1995-07-19.pdf",
       "sourcePdfPages": "66-71",
-      "extractionStatus": "Extracted source pages 66-71 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 66-71; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "major-1995-07-19",
+      "date": "Jul 19, 1995",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - Prime Minister John Major of the United Kingdom",
       "pageCount": 8,
+      "localPdfPageCount": 9,
       "pdfUrl": "documents/extracted/1995-07-19-major-1995-07-19.pdf",
       "sourcePdfPages": "76-83",
-      "extractionStatus": "Extracted source pages 76-83 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 76-83; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "christopher-de-charette-1995-07-19",
+      "date": "Jul 19, 1995",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - Secretary Christopher and Foreign Minister de Charette",
+      "pageCount": 3,
+      "localPdfPageCount": 4,
+      "pdfUrl": "documents/extracted/1995-07-19-christopher-de-charette-1995-07-19.pdf",
+      "sourcePdfPages": "2-4",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 2-4; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "izetbegovic-1995-07-20",
+      "date": "Jul 20, 1995",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Clinton and President Alija Izetbegovic",
+      "pageCount": 3,
+      "localPdfPageCount": 4,
+      "pdfUrl": "documents/extracted/1995-07-20-izetbegovic-1995-07-20.pdf",
+      "sourcePdfPages": "32-34",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 32-34; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "chirac-1995-07-20",
+      "date": "Jul 20, 1995",
       "kind": "Telcon",
       "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
       "pageCount": 3,
+      "localPdfPageCount": 4,
       "pdfUrl": "documents/extracted/1995-07-20-chirac-1995-07-20.pdf",
       "sourcePdfPages": "93-95",
-      "extractionStatus": "Extracted source pages 93-95 from the packet as the actual conversation document."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 93-95; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "chirac-1995-07-24",
+      "date": "Jul 24, 1995",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "pageCount": 4,
+      "localPdfPageCount": 4,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf",
+      "sourcePdfPages": "1-4",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118529. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "chirac-1995-08-07",
+      "date": "Aug 7, 1995",
+      "kind": "Telcon",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf",
+      "sourcePdfPages": "1-3",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118530. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "yeltsin-1995-10-23-hyde-park-one-on-one",
+      "date": "Oct 23, 1995",
       "kind": "Memcon",
       "title": "Memorandum of Conversation - Clinton-Yeltsin One-on-One at Hyde Park",
       "pageCount": 12,
+      "localPdfPageCount": 13,
       "pdfUrl": "documents/extracted/1995-10-23-yeltsin-1995-10-23-hyde-park-one-on-one.pdf",
       "sourcePdfPages": "5-16",
-      "extractionStatus": "Extracted source pages 5-16 as the actual conversation and appended source marker page 1 as provenance."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 5-16; 12 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
       "id": "yeltsin-1995-10-23-hyde-park-lunch",
+      "date": "Oct 23, 1995",
       "kind": "Memcon",
       "title": "Memorandum of Conversation - Lunch with President Boris Yeltsin",
       "pageCount": 5,
+      "localPdfPageCount": 6,
       "pdfUrl": "documents/extracted/1995-10-23-yeltsin-1995-10-23-hyde-park-lunch.pdf",
       "sourcePdfPages": "31-35",
-      "extractionStatus": "Extracted source pages 31-35 as the actual conversation and appended source marker page 18 as provenance."
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Secret. Extracted from source packet PDF pages 31-35; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "izetbegovic-tudjman-1995-10-24",
+      "date": "Oct 24, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Presidents Izetbegovic and Tudjman",
+      "pageCount": 7,
+      "localPdfPageCount": 8,
+      "pdfUrl": "documents/extracted/1995-10-24-izetbegovic-tudjman-1995-10-24.pdf",
+      "sourcePdfPages": "37-43",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Secret. Extracted from source packet PDF pages 37-43; 7 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "gonzalez-1995-12-03",
+      "date": "Dec 3, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation with Spanish Prime Minister Felipe Gonzalez",
+      "pageCount": 10,
+      "localPdfPageCount": 10,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf",
+      "sourcePdfPages": "1-10",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0548-M, https://clinton.presidentiallibraries.us/items/show/118881. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "chirac-1995-12-14",
+      "date": "Dec 14, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "pdfUrl": "https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf",
+      "sourcePdfPages": "1-6",
+      "annotationSheet": null,
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118556. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "izetbegovic-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Alija Izetbegovic",
+      "pageCount": 3,
+      "localPdfPageCount": 4,
+      "pdfUrl": "documents/extracted/1995-12-14-izetbegovic-1995-12-14-pull-aside.pdf",
+      "sourcePdfPages": "55-57",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 55-57; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "tudjman-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Franjo Tudjman",
+      "pageCount": 2,
+      "localPdfPageCount": 3,
+      "pdfUrl": "documents/extracted/1995-12-14-tudjman-1995-12-14-pull-aside.pdf",
+      "sourcePdfPages": "52-53",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 52-53; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "milosevic-1995-12-14-pull-aside",
+      "date": "Dec 14, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Pull-Aside with President Slobodan Milosevic",
+      "pageCount": 3,
+      "localPdfPageCount": 4,
+      "pdfUrl": "documents/extracted/1995-12-14-milosevic-1995-12-14-pull-aside.pdf",
+      "sourcePdfPages": "59-61",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 59-61; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "quadrilateral-1995-12-14",
+      "date": "Dec 14, 1995",
+      "kind": "Memcon",
+      "title": "Memorandum of Conversation - Quadrilateral Meeting with Tudjman, Izetbegovic, and Milosevic",
+      "pageCount": 4,
+      "localPdfPageCount": 5,
+      "pdfUrl": "documents/extracted/1995-12-14-quadrilateral-1995-12-14.pdf",
+      "sourcePdfPages": "47-50",
+      "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 47-50; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment."
     }
   ]
 }

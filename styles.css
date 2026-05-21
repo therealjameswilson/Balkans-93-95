@@ -873,6 +873,18 @@ dd {
   background: var(--olive);
 }
 
+.source-type.policy-memo,
+.source-type.policy-paper,
+.source-type.presidential-memo,
+.source-type.nsc-summary {
+  background: var(--navy);
+}
+
+.source-type.cable,
+.source-type.state-foia-record {
+  background: var(--red);
+}
+
 .source-type.packet {
   color: var(--ink);
   background: #e8c16e;
@@ -887,6 +899,11 @@ dd {
 .source-type.extracted {
   color: var(--ink);
   background: #e8c16e;
+}
+
+.source-type.inferred {
+  color: var(--ink);
+  background: #d9c9b6;
 }
 
 .conversation-links {
