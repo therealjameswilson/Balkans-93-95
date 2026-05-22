@@ -60,6 +60,10 @@ published "About the Series" guidance for FRUS production:
   Papers packages from GovInfo, searches all document granules for Balkans
   terms, excludes reviewed false positives, and records GovInfo source-page
   counts for each selected public record.
+- `scripts/search-source-crosscheck.js` checks the same NARA Catalog/NARA Scout
+  source families used by companion Clinton Europe compiler pages, de-duplicates
+  against the current chronology and research sweep, and counts pages for
+  in-period Balkans PDF leads.
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
@@ -75,6 +79,9 @@ published "About the Series" guidance for FRUS production:
 - `reports/public-papers-balkans-search.json` records the GovInfo Public Papers
   sweep, selected public records, reviewed exclusions, raw hits, and counted
   Public Papers source pages.
+- `reports/source-crosscheck-potential-documents.json` records potential
+  digitized document leads from NARA Catalog collection `7388808` and NARA Scout
+  scopes `7386505`, `7386739`, and `7388773`.
 - `documents/` contains extracted document-level PDFs from packet sources.
 
 ## Source Focus
@@ -98,6 +105,9 @@ The first-pass source matrix supports completeness checks across:
 - NARA Scout / National Archives Catalog cross-check for digitized
   declassified memcons and telcons, including NAID `163545436`, the
   Clinton-Yeltsin Hyde Park memcon on Bosnia implementation.
+- NARA Catalog collection `7388808` and NARA Scout source-family checks used in
+  companion Clinton Europe compiler pages, now represented as potential
+  research-collection document leads rather than chronology selections.
 - Strobe Talbott FOIA case `F-2017-13804`, including `12` reviewed standalone
   direct FOIA records on Bosnia, IFOR, Russia, Dayton implementation,
   Spain/UNPROFOR, Turkey/Kosovo, and NATO-Bosnia linkages.
@@ -137,6 +147,11 @@ The research-collections section adds `200` ranked folder targets and `9`
 supplemental collection leads from the research plan. The online sweep found
 `462` selected declassified/digitized PDF leads across `93` ranked targets and
 `1` supplemental target, with `16,293` counted PDF pages.
+
+The source-family cross-check searched `1,956` NARA Catalog/NARA Scout candidate
+records from the companion-page source families, skipped `135` records already
+surfaced here, and adds `163` in-period potential digitized document leads
+totaling `2,087` counted PDF pages to the research-collections section.
 
 The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,
 found `405` Balkans-related full-text hits, reviewed `20` in-volume hits, and

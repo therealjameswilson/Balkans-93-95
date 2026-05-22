@@ -295,6 +295,23 @@
       ]
     },
     {
+      "id": "nara-source-family-crosscheck",
+      "title": "NARA Catalog Source-Family Cross-Check",
+      "identifier": "NAID 7388808; scopes 7386505, 7386739, 7388773",
+      "institution": "National Archives Catalog / NARA Scout",
+      "type": "Catalog Cross-Check",
+      "priority": "High",
+      "description": "Same source families used by companion Clinton Europe compiler pages: NARA Catalog collection 7388808 and NARA Scout NSC Europe-facing scopes. The cross-check added 163 in-period digitized PDF leads totaling 2,087 counted pages after skipping 135 already surfaced records.",
+      "compilerUse": "Use as a research-collections-only set of potential digitized document leads. These are not inclusion recommendations and do not impose a FRUS volume structure.",
+      "url": "reports/source-crosscheck-potential-documents.json",
+      "tags": [
+        "NARA Catalog",
+        "NARA Scout",
+        "Source cross-check",
+        "Potential documents"
+      ]
+    },
+    {
       "id": "strobe-talbott-foia",
       "title": "Strobe Talbott FOIA Case F-2017-13804",
       "identifier": "F-2017-13804 manifest",

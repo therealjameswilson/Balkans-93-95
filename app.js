@@ -5,7 +5,8 @@ const REPORT_URLS = {
   nara: "reports/nara-scout-memcon-telcon-search.json",
   talbott: "reports/strobe-talbott-manifest-search.json",
   researchCollections: "reports/research-collection-search.json",
-  publicPapers: "reports/public-papers-balkans-search.json"
+  publicPapers: "reports/public-papers-balkans-search.json",
+  sourceCrosscheck: "reports/source-crosscheck-potential-documents.json"
 };
 
 const state = {
@@ -387,6 +388,8 @@ function renderAudit(data, reports = {}) {
     .reduce((sum, record) => sum + (record.pageCount || 0), 0);
   const publicPaperRecords = reports.publicPapers?.summary?.selectedRecords || publicStatements;
   const publicPaperRows = reports.publicPapers?.summary?.scannedGranules || 0;
+  const sourceCrosscheckRecords = reports.sourceCrosscheck?.summary?.addedPotentialDocuments || 0;
+  const sourceCrosscheckPages = reports.sourceCrosscheck?.summary?.countedPages || 0;
 
   nodes.auditRoot.replaceChildren(
     auditCard(
@@ -403,9 +406,9 @@ function renderAudit(data, reports = {}) {
     ),
     auditCard(
       "Discovery Sweeps",
-      `${formatNumber(naraRecords + talbottHits + publicPaperRecords)} leads`,
-      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules.`,
-      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages.`
+      `${formatNumber(naraRecords + talbottHits + publicPaperRecords + sourceCrosscheckRecords)} leads`,
+      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules; ${formatNumber(sourceCrosscheckRecords)} NARA source-family potential documents.`,
+      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages; source-family leads add ${formatNumber(sourceCrosscheckPages)} counted pages.`
     ),
     auditCard(
       "Highest Density",
@@ -687,7 +690,7 @@ function renderSourceNotePanel(data) {
 }
 
 function researchFiles(report = {}) {
-  return (report.digitizedFiles || []).slice();
+  return [...(report.digitizedFiles || []), ...(report.sourceCrosscheckFiles || [])];
 }
 
 function relationshipLabel(value = "") {
@@ -695,7 +698,9 @@ function relationshipLabel(value = "") {
     "exact-folder-title": "Folder-title match",
     "strong-subject-match": "Subject lead",
     "regional-topic-match": "Regional lead",
-    "topic-match": "Topic lead"
+    "topic-match": "Topic lead",
+    "nara-catalog-7388808": "NARA 7388808 cross-check",
+    "nara-scout-europe-scopes": "NARA Scout cross-check"
   };
   return labels[value] || value || "Unclassified";
 }
@@ -750,9 +755,16 @@ function researchTargetsWithFiles(report = {}) {
 
 function renderResearchSummary(report = {}) {
   const summary = report.summary || {};
+  const sourceCrosscheck = report.sourceCrosscheckSummary || {};
   const exactFiles = researchFiles(report).filter((file) =>
     (file.targets || []).some((target) => target.relationship === "exact-folder-title")
   ).length;
+  const totalFiles = researchFiles(report).length;
+  const totalPages = researchFiles(report).reduce((sum, file) => sum + (file.pageCount || 0), 0);
+  const baseFiles = summary.uniqueDigitizedFiles || (report.digitizedFiles || []).length;
+  const basePages = summary.countedPages || (report.digitizedFiles || []).reduce((sum, file) => sum + (file.pageCount || 0), 0);
+  const crosscheckFiles = sourceCrosscheck.addedPotentialDocuments || 0;
+  const crosscheckPages = sourceCrosscheck.countedPages || 0;
 
   nodes.researchSummaryRoot.replaceChildren(
     auditCard(
@@ -763,15 +775,21 @@ function renderResearchSummary(report = {}) {
     ),
     auditCard(
       "Digitized Files",
-      formatNumber(summary.uniqueDigitizedFiles),
-      `${formatNumber(summary.rankedTargetsWithDigitizedFiles)} ranked folder targets and ${formatNumber(summary.supplementalTargetsWithDigitizedFiles)} supplemental target produced declassified/digitized PDF leads.`,
+      formatNumber(totalFiles),
+      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads plus ${formatNumber(crosscheckFiles)} NARA source-family potential documents.`,
       `${formatNumber(exactFiles)} files have folder-title matches.`
     ),
     auditCard(
       "Page Accounting",
-      formatNumber(summary.countedPages),
-      "Pages are counted from the public PDFs surfaced by the Clinton Digital Library sweep.",
-      "Large folder PDFs are kept as collection leads, not converted into chronology entries here."
+      formatNumber(totalPages),
+      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} pages counted from the NARA source-family cross-check.`,
+      "Large folder PDFs and source-family leads are kept as research leads, not converted into chronology entries here."
+    ),
+    auditCard(
+      "Source Check",
+      formatNumber(crosscheckFiles),
+      "Checked the companion-page NARA Catalog collection 7388808 and NARA Scout scopes 7386505, 7386739, and 7388773 for in-period Balkans PDF leads.",
+      "Potential documents only; this does not recommend inclusion or volume structure."
     ),
     auditCard(
       "Mission Boundary",
@@ -917,6 +935,8 @@ function renderResearchFiles(report = {}) {
     meta.className = "source-meta";
     meta.textContent = [
       target.rank ? `Rank ${target.rank}` : target.type,
+      file.date ? `Date ${file.date}` : "",
+      file.identifier || "",
       target.oaBox ? `OA/box ${target.oaBox}` : "",
       target.staff,
       pageLabel(file.pageCount),
@@ -977,6 +997,9 @@ function exportResearchFiles(report = {}) {
     "title",
     "pageCount",
     "confidence",
+    "date",
+    "identifier",
+    "sourceFamily",
     "relationship",
     "rank",
     "oaBox",
@@ -993,6 +1016,9 @@ function exportResearchFiles(report = {}) {
       file.title,
       file.pageCount || "",
       file.confidence || "",
+      file.date || "",
+      file.identifier || "",
+      file.sourceFamily || "",
       relationshipLabel(target.relationship),
       target.rank || "",
       target.oaBox || "",
@@ -1029,6 +1055,16 @@ function renderResearchCollections(report) {
   renderResearchRelationshipFilters(report);
   renderResearchFiles(report);
   renderResearchTargets(report);
+}
+
+function combineResearchReports(researchCollections, sourceCrosscheck) {
+  if (!researchCollections) return null;
+  return {
+    ...researchCollections,
+    sourceCrosscheck,
+    sourceCrosscheckSummary: sourceCrosscheck?.summary || null,
+    sourceCrosscheckFiles: sourceCrosscheck?.potentialDocuments || []
+  };
 }
 
 function byDateThenType(a, b) {
@@ -1450,16 +1486,17 @@ async function loadOptionalJson(url) {
 }
 
 async function loadReports() {
-  const [documents, conversations, nara, talbott, researchCollections, publicPapers] = await Promise.all([
+  const [documents, conversations, nara, talbott, researchCollections, publicPapers, sourceCrosscheck] = await Promise.all([
     loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
     loadOptionalJson(REPORT_URLS.nara),
     loadOptionalJson(REPORT_URLS.talbott),
     loadOptionalJson(REPORT_URLS.researchCollections),
-    loadOptionalJson(REPORT_URLS.publicPapers)
+    loadOptionalJson(REPORT_URLS.publicPapers),
+    loadOptionalJson(REPORT_URLS.sourceCrosscheck)
   ]);
 
-  return { documents, conversations, nara, talbott, researchCollections, publicPapers };
+  return { documents, conversations, nara, talbott, researchCollections, publicPapers, sourceCrosscheck };
 }
 
 async function loadData() {
@@ -1474,17 +1511,18 @@ async function loadData() {
 async function init() {
   try {
     const [data, reports] = await Promise.all([loadData(), loadReports()]);
+    const researchReport = combineResearchReports(reports.researchCollections, reports.sourceCrosscheck);
     renderStats(data);
     renderAudit(data, reports);
     renderFrusMethod(data);
-    renderResearchCollections(reports.researchCollections);
+    renderResearchCollections(researchReport);
     renderConversationFilters(data);
     renderConversations(data);
     renderFilters(data);
     renderSources(data);
     renderQueue(data);
     bindSearch(data);
-    bindResearchSearch(reports.researchCollections);
+    bindResearchSearch(researchReport);
   } catch (error) {
     nodes.sourcesRoot.innerHTML = '<p class="empty-state">Compiler data could not be loaded.</p>';
   }
