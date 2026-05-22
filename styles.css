@@ -435,6 +435,98 @@ dd {
   margin-top: 14px;
 }
 
+.research-overview-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 14px;
+  margin: 14px 0;
+}
+
+.research-panel {
+  min-width: 0;
+  padding: 20px;
+  background: rgba(255, 253, 248, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.research-tier-list,
+.research-supplemental-list,
+.research-file-list {
+  display: grid;
+  gap: 10px;
+}
+
+.research-tier-row,
+.research-supplemental-row {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(215, 202, 187, 0.72);
+}
+
+.research-tier-row:last-child,
+.research-supplemental-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.research-tier-row strong,
+.research-supplemental-row strong {
+  color: var(--navy);
+}
+
+.research-tier-row span,
+.research-supplemental-row span {
+  color: #394550;
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
+.research-file-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: start;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--teal);
+  border-radius: 8px;
+}
+
+.research-file-card h3 {
+  overflow-wrap: anywhere;
+}
+
+.research-links {
+  min-width: 108px;
+}
+
+.research-target-details {
+  margin-top: 18px;
+}
+
+.research-target-details summary {
+  width: fit-content;
+  min-height: 38px;
+  padding: 9px 12px;
+  color: var(--navy);
+  background: rgba(255, 253, 248, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.research-target-details .table-wrap {
+  margin-top: 12px;
+}
+
+.source-type.collection {
+  background: var(--red);
+}
+
 .readiness-list,
 .source-note-list {
   display: grid;
@@ -1053,6 +1145,7 @@ td:first-child {
 
   .evidence-layout,
   .readiness-layout,
+  .research-overview-layout,
   .conversation-tools {
     grid-template-columns: 1fr;
   }
@@ -1074,8 +1167,16 @@ td:first-child {
     grid-template-columns: 120px minmax(0, 1fr);
   }
 
+  .research-file-card {
+    grid-template-columns: 1fr;
+  }
+
   .conversation-links {
     grid-column: 2;
+  }
+
+  .research-file-card .conversation-links {
+    grid-column: auto;
   }
 
   .timeline-source {
@@ -1139,6 +1240,10 @@ td:first-child {
   }
 
   .conversation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .research-file-card {
     grid-template-columns: 1fr;
   }
 

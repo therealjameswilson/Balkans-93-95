@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260521-broad-docs" />
+    <link rel="stylesheet" href="styles.css?v=20260522-research-collections" />
   </head>
   <body>
     <header class="site-header">
@@ -20,6 +20,7 @@
       <nav aria-label="Primary navigation">
         <a href="#audit">Audit</a>
         <a href="#frus-method">Method</a>
+        <a href="#research-collections">Collections</a>
         <a href="#conversations">Documents</a>
         <a href="#sources">Sources</a>
         <a href="#queue">Queue</a>
@@ -127,6 +128,64 @@
           <div id="readiness-root" class="readiness-panel" aria-live="polite"></div>
           <div id="source-note-root" class="source-note-panel" aria-live="polite"></div>
         </div>
+      </section>
+
+      <section class="section research-section" id="research-collections" aria-labelledby="research-collections-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Research Collections</p>
+            <h2 id="research-collections-title">2013-0185-M Online Collection Sweep</h2>
+          </div>
+          <p class="section-note">
+            This section incorporates the 200-folder research plan as a
+            collection map and records which Clinton Digital Library searches
+            surfaced declassified, digitized PDFs. It is a discovery and
+            provenance aid, not a recommendation about what to include or how
+            to structure the volume.
+          </p>
+        </div>
+        <div id="research-summary-root" class="audit-grid research-summary-grid" aria-live="polite"></div>
+        <div class="research-overview-layout">
+          <div id="research-tier-root" class="research-panel" aria-live="polite"></div>
+          <div id="research-supplemental-root" class="research-panel" aria-live="polite"></div>
+        </div>
+        <div class="conversation-tools research-tools" aria-label="Research collection file filters">
+          <label class="search-field">
+            <span>Search collection files</span>
+            <input
+              id="research-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Folder, staff, subject, title"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Match</p>
+            <div id="research-relationship-filters" class="filter-row compact" aria-label="Research file match filters"></div>
+          </div>
+          <button id="research-reset" class="reset-button" type="button">Reset</button>
+          <button id="research-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="research-file-summary" class="result-summary" aria-live="polite"></p>
+        <div id="research-files-root" class="research-file-list" aria-live="polite"></div>
+        <details class="research-target-details">
+          <summary>Show all searched ranked folders</summary>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Rank</th>
+                  <th scope="col">OA Box</th>
+                  <th scope="col">Folder Target</th>
+                  <th scope="col">Staff</th>
+                  <th scope="col">Online Result</th>
+                  <th scope="col">Sample Files</th>
+                </tr>
+              </thead>
+              <tbody id="research-targets-root"></tbody>
+            </table>
+          </div>
+        </details>
       </section>
 
       <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
@@ -249,7 +308,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260521-broad-docs"></script>
-    <script src="app.js?v=20260521-broad-docs"></script>
+    <script src="data/compiler-map.js?v=20260522-research-collections"></script>
+    <script src="app.js?v=20260522-research-collections"></script>
   </body>
 </html>

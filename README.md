@@ -20,14 +20,18 @@ published "About the Series" guidance for FRUS production:
 
 - `index.html` is the static GitHub Pages entry point.
 - `styles.css` contains the responsive layout and visual system.
-- `app.js` renders the chronological declassified-document inventory, source cards, and
-  completeness queue from data.
+- `app.js` renders the chronological declassified-document inventory, research
+  collection sweep, source cards, and completeness queue from data.
 - The public page includes an evidence audit board, coverage bars, a
   people/form index, and live filters for records by form, year, and
   keyword.
 - A FRUS inventory-method console keeps the evidence aligned with chronological
   ordering, source-note metadata, and declassification accounting without making
   selection judgments.
+- A separate research-collections section incorporates the 200-folder
+  2013-0185-M research plan and the online Clinton Digital Library sweep,
+  while keeping collection discovery distinct from document-selection or
+  volume-structure judgments.
 - The document cards draft citation stems in the same order used by
   FRUS source notes in Volume XXXI: repository/custody, collection or control
   number, item/NAID locator, PDF page range, then original classification,
@@ -47,6 +51,10 @@ published "About the Series" guidance for FRUS production:
 - `scripts/extract-and-count-conversations.js` resolves direct Clinton Library
   memcon/telcon PDFs, extracts document-level memcons and telcons from packet
   PDFs, and records page counts.
+- `scripts/search-research-collections.js` parses the 2013-0185-M research plan,
+  searches the Clinton Digital Library for each ranked and supplemental
+  collection target through a browser context, de-duplicates declassified
+  digitized PDFs, and records page counts.
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
@@ -55,6 +63,9 @@ published "About the Series" guidance for FRUS production:
   memcon/telcon page-count audit.
 - `reports/document-page-counts.json` records the expanded document inventory
   page-count audit.
+- `reports/research-collection-search.json` records the ranked-folder and
+  supplemental collection sweep, including selected digitized files, public
+  item/PDF links, match confidence, provenance-note drafts, and counted pages.
 - `documents/` contains extracted document-level PDFs from packet sources.
 
 ## Source Focus
@@ -82,6 +93,10 @@ The first-pass source matrix supports completeness checks across:
   leads for the Secretary-Kozyrev Bosnia letter, Talbott-Holbrooke traffic, and
   late-1995 implementation context.
 - Clinton Digital Library Bosnia collection, `2008-0994-F`.
+- Clinton Digital Library FOIA folder releases surfaced from the 2013-0185-M
+  research plan, including `2008-0994-F`, `2013-0687-F`, PC/DC files,
+  Bosnia monthly files, Holl early-period files, Kerrick subject files,
+  Balkan Crisis notebooks, and the 72-page `Telcons and Memcons` folder.
 - Bosnian Declassified Records and the DCI Interagency Balkan Task Force trail.
 - Alexander Vershbow's Bosnia files, `2013-0687-F`.
 - PC/DC, memcon/telcon, Croatia, Srebrenica, and Dayton-track MDR releases.
@@ -102,6 +117,11 @@ document card contains a collapsed FRUS-style source-note block with a draft
 `Source:` note, a locator/page ledger, and open PDF-level checks for
 classification, handling controls, drafting, clearance, distribution, marginalia,
 attachments not printed, and excisions.
+
+The research-collections section adds `200` ranked folder targets and `9`
+supplemental collection leads from the research plan. The online sweep found
+`462` selected declassified/digitized PDF leads across `93` ranked targets and
+`1` supplemental target, with `16,293` counted PDF pages.
 
 ## Local Preview
 

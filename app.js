@@ -3,7 +3,8 @@ const REPORT_URLS = {
   documents: "reports/document-page-counts.json",
   conversations: "reports/conversation-page-counts.json",
   nara: "reports/nara-scout-memcon-telcon-search.json",
-  talbott: "reports/strobe-talbott-manifest-search.json"
+  talbott: "reports/strobe-talbott-manifest-search.json",
+  researchCollections: "reports/research-collection-search.json"
 };
 
 const state = {
@@ -11,7 +12,9 @@ const state = {
   search: "",
   conversationKind: "All",
   conversationYear: "All",
-  conversationSearch: ""
+  conversationSearch: "",
+  researchRelationship: "All",
+  researchSearch: ""
 };
 
 const nodes = {
@@ -33,6 +36,16 @@ const nodes = {
   conversationReset: document.querySelector("#conversation-reset"),
   conversationExport: document.querySelector("#conversation-export"),
   conversationSummary: document.querySelector("#conversation-summary"),
+  researchSummaryRoot: document.querySelector("#research-summary-root"),
+  researchTierRoot: document.querySelector("#research-tier-root"),
+  researchSupplementalRoot: document.querySelector("#research-supplemental-root"),
+  researchSearch: document.querySelector("#research-search"),
+  researchRelationshipFilters: document.querySelector("#research-relationship-filters"),
+  researchReset: document.querySelector("#research-reset"),
+  researchExport: document.querySelector("#research-export"),
+  researchFileSummary: document.querySelector("#research-file-summary"),
+  researchFilesRoot: document.querySelector("#research-files-root"),
+  researchTargetsRoot: document.querySelector("#research-targets-root"),
   sourceFilters: document.querySelector("#source-filters"),
   sourceSearch: document.querySelector("#source-search"),
   sourcesRoot: document.querySelector("#sources-root"),
@@ -593,6 +606,351 @@ function renderSourceNotePanel(data) {
   nodes.sourceNoteRoot.replaceChildren(heading, list);
 }
 
+function researchFiles(report = {}) {
+  return (report.digitizedFiles || []).slice();
+}
+
+function relationshipLabel(value = "") {
+  const labels = {
+    "exact-folder-title": "Folder-title match",
+    "strong-subject-match": "Subject lead",
+    "regional-topic-match": "Regional lead",
+    "topic-match": "Topic lead"
+  };
+  return labels[value] || value || "Unclassified";
+}
+
+function firstResearchTarget(file) {
+  return (file.targets && file.targets[0]) || {};
+}
+
+function researchFileTextMatch(file) {
+  if (!state.researchSearch) return true;
+  const targets = (file.targets || [])
+    .map((target) => [target.rank, target.oaBox, target.folderTitle, target.staff, target.tier, target.relationship].join(" "))
+    .join(" ");
+  const haystack = [
+    file.title,
+    file.originalFile,
+    file.sourceNoteDraft,
+    file.itemUrl,
+    file.pdfUrl,
+    targets
+  ]
+    .join(" ")
+    .toLowerCase();
+  return haystack.includes(state.researchSearch.toLowerCase());
+}
+
+function filteredResearchFiles(report = {}) {
+  return researchFiles(report)
+    .filter((file) => {
+      if (state.researchRelationship === "All") return true;
+      return (file.targets || []).some((target) => relationshipLabel(target.relationship) === state.researchRelationship);
+    })
+    .filter(researchFileTextMatch)
+    .sort((a, b) => {
+      const targetA = firstResearchTarget(a);
+      const targetB = firstResearchTarget(b);
+      return (
+        (targetA.rank || 9999) - (targetB.rank || 9999) ||
+        b.score - a.score ||
+        a.title.localeCompare(b.title)
+      );
+    });
+}
+
+function researchTargetsWithFiles(report = {}) {
+  const fileById = new Map(researchFiles(report).map((file) => [file.id, file]));
+  return (report.rankedTargets || []).map((target) => ({
+    ...target,
+    files: (target.selectedFileIds || []).map((id) => fileById.get(id)).filter(Boolean)
+  }));
+}
+
+function renderResearchSummary(report = {}) {
+  const summary = report.summary || {};
+  const exactFiles = researchFiles(report).filter((file) =>
+    (file.targets || []).some((target) => target.relationship === "exact-folder-title")
+  ).length;
+
+  nodes.researchSummaryRoot.replaceChildren(
+    auditCard(
+      "Collection Targets",
+      formatNumber(summary.rankedFolderTargets),
+      `${formatNumber(summary.supplementalTargets)} supplemental collection leads from the research plan were searched alongside the ranked folders.`,
+      report.collection || "NSC European Affairs, Clinton Presidential Records, 2013-0185-M"
+    ),
+    auditCard(
+      "Digitized Files",
+      formatNumber(summary.uniqueDigitizedFiles),
+      `${formatNumber(summary.rankedTargetsWithDigitizedFiles)} ranked folder targets and ${formatNumber(summary.supplementalTargetsWithDigitizedFiles)} supplemental target produced declassified/digitized PDF leads.`,
+      `${formatNumber(exactFiles)} files have folder-title matches.`
+    ),
+    auditCard(
+      "Page Accounting",
+      formatNumber(summary.countedPages),
+      "Pages are counted from the public PDFs surfaced by the Clinton Digital Library sweep.",
+      "Large folder PDFs are kept as collection leads, not converted into chronology entries here."
+    ),
+    auditCard(
+      "Mission Boundary",
+      "Separate",
+      "This section maps research collections and online files. It does not recommend inclusion or impose the structure of the FRUS volume.",
+      "The chronological document list remains a separate review surface."
+    )
+  );
+}
+
+function renderResearchTiers(report = {}) {
+  const targets = researchTargetsWithFiles(report);
+  const byTier = new Map(
+    (report.tiers || []).map((tier) => [tier.id, { ...tier, targets: [], pages: 0, files: 0, seenFiles: new Set() }])
+  );
+  for (const target of targets) {
+    const item = byTier.get(target.tierId);
+    if (!item) continue;
+    item.targets.push(target);
+    for (const file of target.files) {
+      if (item.seenFiles.has(file.id)) continue;
+      item.seenFiles.add(file.id);
+      item.files += 1;
+      item.pages += file.pageCount || 0;
+    }
+  }
+
+  const tierHeading = document.createElement("h3");
+  tierHeading.textContent = "Ranked Collection Tiers";
+  const tierList = document.createElement("div");
+  tierList.className = "research-tier-list";
+
+  for (const tier of byTier.values()) {
+    const matched = tier.targets.filter((target) => target.files.length).length;
+    const row = document.createElement("div");
+    row.className = "research-tier-row";
+    const label = document.createElement("strong");
+    label.textContent = `Tier ${tier.number}: ${tier.title}`;
+    const detail = document.createElement("span");
+    detail.textContent = `${formatNumber(matched)}/${formatNumber(tier.targets.length)} targets with digitized files | ${formatNumber(tier.files)} files | ${formatNumber(tier.pages)} pages`;
+    row.append(label, detail);
+    tierList.append(row);
+  }
+
+  nodes.researchTierRoot.replaceChildren(tierHeading, tierList);
+}
+
+function renderResearchSupplemental(report = {}) {
+  const heading = document.createElement("h3");
+  heading.textContent = "Supplemental Collection Leads";
+  const list = document.createElement("div");
+  list.className = "research-supplemental-list";
+
+  for (const item of report.supplementalTargets || []) {
+    const row = document.createElement("div");
+    row.className = "research-supplemental-row";
+    const title = document.createElement("strong");
+    title.textContent = item.label;
+    const detail = document.createElement("span");
+    detail.textContent = `${formatNumber(item.selectedFileCount)} selected files from ${formatNumber(item.pdfHitCount)} PDF search hits. ${item.note || ""}`;
+    row.append(title, detail);
+    list.append(row);
+  }
+
+  nodes.researchSupplementalRoot.replaceChildren(heading, list);
+}
+
+function renderResearchRelationshipFilters(report = {}) {
+  const relationships = [
+    "All",
+    ...new Set(
+      researchFiles(report)
+        .flatMap((file) => (file.targets || []).map((target) => relationshipLabel(target.relationship)))
+        .filter(Boolean)
+        .sort()
+    )
+  ];
+
+  renderButtonGroup(nodes.researchRelationshipFilters, relationships, state.researchRelationship, (value) => {
+    state.researchRelationship = value;
+    renderResearchRelationshipFilters(report);
+    renderResearchFiles(report);
+  });
+}
+
+function createResearchLinks(file) {
+  const links = document.createElement("div");
+  links.className = "conversation-links research-links";
+
+  for (const [label, url] of [
+    ["Open PDF", file.pdfUrl],
+    ["Open record", file.itemUrl]
+  ]) {
+    if (!url) continue;
+    const link = document.createElement("a");
+    link.className = "source-link";
+    link.href = url;
+    link.rel = "noreferrer";
+    link.textContent = label;
+    links.append(link);
+  }
+
+  return links;
+}
+
+function renderResearchFiles(report = {}) {
+  const files = filteredResearchFiles(report);
+  nodes.researchFilesRoot.replaceChildren();
+  nodes.researchFileSummary.textContent = `Showing ${formatNumber(files.length)} of ${formatNumber(
+    researchFiles(report).length
+  )} digitized file leads, ${formatNumber(files.reduce((sum, file) => sum + (file.pageCount || 0), 0))} counted pages.`;
+
+  if (!files.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = "No research collection files match the current filters.";
+    nodes.researchFilesRoot.append(empty);
+    return;
+  }
+
+  for (const file of files) {
+    const target = firstResearchTarget(file);
+    const card = document.createElement("article");
+    card.className = "research-file-card";
+
+    const body = document.createElement("div");
+    const top = document.createElement("div");
+    top.className = "conversation-top";
+    const heading = document.createElement("h3");
+    heading.textContent = file.title;
+    const badges = document.createElement("div");
+    badges.className = "conversation-badges";
+    const relationship = document.createElement("span");
+    relationship.className = "source-type collection";
+    relationship.textContent = relationshipLabel(target.relationship);
+    const confidence = document.createElement("span");
+    confidence.className = `source-type ${file.confidence === "high" ? "direct" : "packet"}`;
+    confidence.textContent = `${file.confidence || "unscored"} confidence`;
+    badges.append(relationship, confidence);
+    top.append(heading, badges);
+
+    const meta = document.createElement("p");
+    meta.className = "source-meta";
+    meta.textContent = [
+      target.rank ? `Rank ${target.rank}` : target.type,
+      target.oaBox ? `OA/box ${target.oaBox}` : "",
+      target.staff,
+      pageLabel(file.pageCount),
+      target.folderTitle
+    ]
+      .filter(Boolean)
+      .join(" | ");
+
+    const sourceNote = document.createElement("details");
+    sourceNote.className = "source-note-details";
+    const summary = document.createElement("summary");
+    summary.textContent = "FRUS-style provenance lead";
+    const note = document.createElement("p");
+    note.className = "source-note-draft";
+    note.textContent = file.sourceNoteDraft || "Provenance lead pending.";
+    sourceNote.append(summary, note);
+
+    const original = document.createElement("p");
+    original.className = "conversation-provenance";
+    original.textContent = file.originalFile ? `Library file path/title: ${file.originalFile}` : "";
+
+    body.append(top, meta, sourceNote);
+    if (original.textContent) body.append(original);
+    card.append(body, createResearchLinks(file));
+    nodes.researchFilesRoot.append(card);
+  }
+}
+
+function renderResearchTargets(report = {}) {
+  nodes.researchTargetsRoot.replaceChildren();
+  for (const target of researchTargetsWithFiles(report)) {
+    const row = document.createElement("tr");
+    const values = [
+      target.rank,
+      target.oaBox,
+      target.folderTitle,
+      target.staff,
+      target.files.length
+        ? `${formatNumber(target.files.length)} files / ${formatNumber(target.files.reduce((sum, file) => sum + (file.pageCount || 0), 0))} pages`
+        : `${formatNumber(target.pdfHitCount)} PDF hits; no selected declassified in-period file`,
+      target.files
+        .slice(0, 3)
+        .map((file) => file.title)
+        .join(" | ")
+    ];
+
+    for (const value of values) {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      row.append(cell);
+    }
+    nodes.researchTargetsRoot.append(row);
+  }
+}
+
+function exportResearchFiles(report = {}) {
+  const fields = [
+    "title",
+    "pageCount",
+    "confidence",
+    "relationship",
+    "rank",
+    "oaBox",
+    "folderTarget",
+    "staff",
+    "itemUrl",
+    "pdfUrl",
+    "originalFile",
+    "sourceNoteDraft"
+  ];
+  const rows = filteredResearchFiles(report).map((file) => {
+    const target = firstResearchTarget(file);
+    return [
+      file.title,
+      file.pageCount || "",
+      file.confidence || "",
+      relationshipLabel(target.relationship),
+      target.rank || "",
+      target.oaBox || "",
+      target.folderTitle || "",
+      target.staff || "",
+      file.itemUrl,
+      file.pdfUrl,
+      file.originalFile,
+      file.sourceNoteDraft
+    ];
+  });
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  const blob = new Blob([`${csv}\n`], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "balkans-93-95-research-collection-files.csv";
+  document.body.append(link);
+  link.click();
+  URL.revokeObjectURL(link.href);
+  link.remove();
+}
+
+function renderResearchCollections(report) {
+  if (!report) {
+    nodes.researchSummaryRoot.replaceChildren(
+      auditCard("Research Collections", "Pending", "The online research collection report has not loaded.", "")
+    );
+    return;
+  }
+
+  renderResearchSummary(report);
+  renderResearchTiers(report);
+  renderResearchSupplemental(report);
+  renderResearchRelationshipFilters(report);
+  renderResearchFiles(report);
+  renderResearchTargets(report);
+}
+
 function byDateThenType(a, b) {
   return (a.sortDate || "").localeCompare(b.sortDate || "") || a.title.localeCompare(b.title);
 }
@@ -980,6 +1338,27 @@ function bindSearch(data) {
   });
 }
 
+function bindResearchSearch(report) {
+  if (!report) return;
+
+  nodes.researchSearch.addEventListener("input", (event) => {
+    state.researchSearch = event.target.value.trim();
+    renderResearchFiles(report);
+  });
+
+  nodes.researchReset.addEventListener("click", () => {
+    state.researchRelationship = "All";
+    state.researchSearch = "";
+    nodes.researchSearch.value = "";
+    renderResearchRelationshipFilters(report);
+    renderResearchFiles(report);
+  });
+
+  nodes.researchExport.addEventListener("click", () => {
+    exportResearchFiles(report);
+  });
+}
+
 async function loadOptionalJson(url) {
   try {
     const response = await fetch(url);
@@ -991,14 +1370,15 @@ async function loadOptionalJson(url) {
 }
 
 async function loadReports() {
-  const [documents, conversations, nara, talbott] = await Promise.all([
+  const [documents, conversations, nara, talbott, researchCollections] = await Promise.all([
     loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
     loadOptionalJson(REPORT_URLS.nara),
-    loadOptionalJson(REPORT_URLS.talbott)
+    loadOptionalJson(REPORT_URLS.talbott),
+    loadOptionalJson(REPORT_URLS.researchCollections)
   ]);
 
-  return { documents, conversations, nara, talbott };
+  return { documents, conversations, nara, talbott, researchCollections };
 }
 
 async function loadData() {
@@ -1016,12 +1396,14 @@ async function init() {
     renderStats(data);
     renderAudit(data, reports);
     renderFrusMethod(data);
+    renderResearchCollections(reports.researchCollections);
     renderConversationFilters(data);
     renderConversations(data);
     renderFilters(data);
     renderSources(data);
     renderQueue(data);
     bindSearch(data);
+    bindResearchSearch(reports.researchCollections);
   } catch (error) {
     nodes.sourcesRoot.innerHTML = '<p class="empty-state">Compiler data could not be loaded.</p>';
   }
