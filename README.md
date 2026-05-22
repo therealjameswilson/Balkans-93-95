@@ -1,16 +1,16 @@
 # FRUS 1993-2000 Volume XV Compiler Workspace
 
 A GitHub Pages workspace for helping a FRUS compiler review a chronological
-inventory of declassified U.S. Clinton-era records for
+inventory of declassified and public U.S. Clinton-era records for
 *Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the
 Balkans, 1993-1995*.
 
 The Office of the Historian currently lists this volume as **Being Researched**.
 This page is a companion research aid: it does not replace the official FRUS
 process and does not recommend documents for inclusion or propose a volume
-structure. Its mission is to provide declassified U.S. records covering the
-Balkans chronologically, with source and page metadata, so the compiler can
-consider them.
+structure. Its mission is to provide declassified U.S. records and Clinton
+Public Papers records covering the Balkans chronologically, with source and
+page metadata, so the compiler can consider them.
 
 The compiler-facing workflow is aligned with the Office of the Historian's
 published "About the Series" guidance for FRUS production:
@@ -20,8 +20,8 @@ published "About the Series" guidance for FRUS production:
 
 - `index.html` is the static GitHub Pages entry point.
 - `styles.css` contains the responsive layout and visual system.
-- `app.js` renders the chronological declassified-document inventory, research
-  collection sweep, source cards, and completeness queue from data.
+- `app.js` renders the chronological declassified/public-record inventory,
+  research collection sweep, source cards, and completeness queue from data.
 - The public page includes an evidence audit board, coverage bars, a
   people/form index, and live filters for records by form, year, and
   keyword.
@@ -56,6 +56,10 @@ published "About the Series" guidance for FRUS production:
   searches the Clinton Digital Library for each ranked and supplemental
   collection target through a browser context, de-duplicates declassified
   digitized PDFs, and records page counts.
+- `scripts/search-public-papers.js` downloads the six 1993-1995 Clinton Public
+  Papers packages from GovInfo, searches all document granules for Balkans
+  terms, excludes reviewed false positives, and records GovInfo source-page
+  counts for each selected public record.
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
@@ -68,6 +72,9 @@ published "About the Series" guidance for FRUS production:
 - `reports/research-collection-search.json` records the ranked-folder and
   supplemental collection sweep, including selected digitized files, public
   item/PDF links, match confidence, provenance-note drafts, and counted pages.
+- `reports/public-papers-balkans-search.json` records the GovInfo Public Papers
+  sweep, selected public records, reviewed exclusions, raw hits, and counted
+  Public Papers source pages.
 - `documents/` contains extracted document-level PDFs from packet sources.
 
 ## Source Focus
@@ -94,6 +101,11 @@ The first-pass source matrix supports completeness checks across:
 - Strobe Talbott FOIA case `F-2017-13804`, including `12` reviewed standalone
   direct FOIA records on Bosnia, IFOR, Russia, Dayton implementation,
   Spain/UNPROFOR, Turkey/Kosovo, and NATO-Bosnia linkages.
+- Clinton Public Papers GovInfo packages `PPP-1993-book1` through
+  `PPP-1995-book2`, adding public statements, exchanges, interviews, messages,
+  letters, radio addresses, and news conferences that mention Bosnia,
+  Yugoslavia, Serbia/Serbs, Croatia/Croats, Macedonia, Kosovo, UNPROFOR, IFOR,
+  Dayton, and related terms.
 - Clinton Digital Library Bosnia collection, `2008-0994-F`.
 - Clinton Digital Library FOIA folder releases surfaced from the 2013-0185-M
   research plan, including `2008-0994-F`, `2013-0687-F`, PC/DC files,
@@ -106,8 +118,9 @@ The first-pass source matrix supports completeness checks across:
 
 ## Evidence Audit
 
-The page currently surfaces `103` chronological declassified records and `387`
-counted document pages, including `31` memcon/telcon records.
+The page currently surfaces `549` chronological declassified and public records
+and `2,251` counted document pages, including `31` memcon/telcon records and
+`446` Clinton Public Papers records.
 Every displayed card has a PDF link, source-page metadata, and provenance
 labeling that distinguishes direct PDFs from locally extracted packet documents.
 
@@ -128,6 +141,11 @@ supplemental collection leads from the research plan. The online sweep found
 The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,
 found `405` Balkans-related full-text hits, reviewed `20` in-volume hits, and
 adds `12` standalone direct State FOIA records totaling `70` counted pages.
+
+The GovInfo Public Papers sweep searched all `3,472` document granules across
+the six 1993-1995 Clinton Public Papers packages, found `466` in-period
+Balkans-related hits, excluded `20` reviewed false positives, and adds `446`
+public records totaling `1,864` counted Public Papers pages.
 
 ## Local Preview
 

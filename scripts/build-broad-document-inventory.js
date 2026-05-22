@@ -10,6 +10,7 @@ const DATA_PATH = path.join(ROOT, "data", "compiler-map.json");
 const DATA_JS_PATH = path.join(ROOT, "data", "compiler-map.js");
 const REPORT_PATH = path.join(ROOT, "reports", "document-page-counts.json");
 const CONVERSATION_REPORT_PATH = path.join(ROOT, "reports", "conversation-page-counts.json");
+const PUBLIC_PAPERS_REPORT_PATH = path.join(ROOT, "reports", "public-papers-balkans-search.json");
 const CACHE_DIR = path.join("/private/tmp", "balkans-93-95-conversation-pdfs");
 
 const PACKETS = {
@@ -1418,14 +1419,29 @@ function asDocument(record, overrides = {}) {
     ...normalized,
     ...overrides,
     documentScope,
-    documentType: record.kind,
+    documentType: record.documentType || record.kind,
     subjects: normalized.subjects || [],
     tags: normalized.tags || []
   };
 }
 
 function sortRecords(a, b) {
-  return (a.sortDate || "").localeCompare(b.sortDate || "") || (a.title || "").localeCompare(b.title || "");
+  const sourceOrderA = Number.isFinite(a.sourceOrder) ? a.sourceOrder : Number.MAX_SAFE_INTEGER;
+  const sourceOrderB = Number.isFinite(b.sourceOrder) ? b.sourceOrder : Number.MAX_SAFE_INTEGER;
+  return (
+    (a.sortDate || "").localeCompare(b.sortDate || "") ||
+    sourceOrderA - sourceOrderB ||
+    (a.title || "").localeCompare(b.title || "")
+  );
+}
+
+function loadPublicPapersRecords() {
+  if (!fs.existsSync(PUBLIC_PAPERS_REPORT_PATH)) return [];
+  const report = JSON.parse(fs.readFileSync(PUBLIC_PAPERS_REPORT_PATH, "utf8"));
+  return (report.selectedRecords || []).map((record) => ({
+    ...record,
+    sourceReport: "reports/public-papers-balkans-search.json"
+  }));
 }
 
 function reportRecord(record) {
@@ -1461,17 +1477,19 @@ async function main() {
   const broadOnly = extracted.filter((record) => !existingConversationIds.has(record.id));
   const directTalbott = [];
   for (const record of TALBOTT_DIRECT) directTalbott.push(await enrichTalbott(record));
+  const publicPapers = loadPublicPapersRecords();
 
   data.documents = [
     ...data.conversations.map((record) => asDocument(record, { documentScope: "Conversation" })),
     ...broadOnly.map((record) => asDocument(record)),
-    ...directTalbott.map((record) => asDocument(record, { documentScope: "State FOIA context" }))
+    ...directTalbott.map((record) => asDocument(record, { documentScope: "State FOIA context" })),
+    ...publicPapers.map((record) => asDocument(record, { documentScope: "Public statement" }))
   ].sort(sortRecords);
 
   data.volume = {
     ...data.volume,
     inventoryScope:
-      "Chronological public inventory of declassified U.S. records covering Balkans policy, 1993-1995; not a selection list or proposed volume structure.",
+      "Chronological public inventory of declassified and public U.S. records covering Balkans policy, 1993-1995; not a selection list or proposed volume structure.",
     sourceNoteStandard:
       "FRUS-style source-note stems follow George H.W. Bush-era Office of the Historian practice: repository and file/control locator first; classification/handling next; then markings, distribution, attachments, annotations, and declassification accounting."
   };

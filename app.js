@@ -4,7 +4,8 @@ const REPORT_URLS = {
   conversations: "reports/conversation-page-counts.json",
   nara: "reports/nara-scout-memcon-telcon-search.json",
   talbott: "reports/strobe-talbott-manifest-search.json",
-  researchCollections: "reports/research-collection-search.json"
+  researchCollections: "reports/research-collection-search.json",
+  publicPapers: "reports/public-papers-balkans-search.json"
 };
 
 const state = {
@@ -147,6 +148,10 @@ function repositoryLabel(record) {
     return "National Archives and Records Administration, National Archives Catalog";
   }
 
+  if (/govinfo\.gov/i.test(sourceUrl)) {
+    return record.repository || "Government Publishing Office, GovInfo";
+  }
+
   if (/foia\.state\.gov/i.test(sourceUrl)) {
     return record.repository || "Department of State, FOIA Virtual Reading Room";
   }
@@ -203,6 +208,16 @@ function sourceNoteDraft(record) {
 }
 
 function citationOpenItems(record) {
+  if (record.documentScope === "Public statement") {
+    return [
+      "official GovInfo title and date",
+      "Public Papers source pagination",
+      "speaker, place, and event context",
+      "editorial note and transcript status",
+      "whether the record is presidential text, exchange, joint statement, or press secretary statement"
+    ].join("; ");
+  }
+
   const items = [
     "classification/handling controls",
     record.kind === "Telcon" ? "call metadata and notetakers" : "meeting place/time, participants, and notetakers",
@@ -214,6 +229,44 @@ function citationOpenItems(record) {
 }
 
 function citationRows(record) {
+  if (record.documentScope === "Public statement") {
+    return [
+      {
+        label: "Repository / custody",
+        value: repositoryLabel(record),
+        status: "Ready"
+      },
+      {
+        label: "Collection / control",
+        value: [record.collection, normalizedIdentifier(record.identifier)].filter(Boolean).join(", "),
+        status: "Ready"
+      },
+      {
+        label: "Record locator",
+        value: [record.granule, record.url].filter(Boolean).join("; "),
+        status: "Ready"
+      },
+      {
+        label: "PDF / page range",
+        value: `direct GovInfo granule PDF, pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}; ${pageLabel(
+          record.pageCount
+        )} counted from Public Papers pagination.`,
+        status: "Ready"
+      },
+      {
+        label: "Publication metadata",
+        value: `${record.publicPaperForm || record.kind || "Public Papers record"}; ${record.date}. Verify official title, date, speaker/place, transcript status, and editorial note against GovInfo.`,
+        status: "Check"
+      },
+      {
+        label: "FRUS treatment note",
+        value:
+          "Public record rather than a declassified archival document; use only as chronological public context unless the compiler chooses otherwise.",
+        status: "Ready"
+      }
+    ];
+  }
+
   const metadataLabel = record.kind === "Telcon" ? "Call metadata" : record.kind === "Memcon" ? "Meeting metadata" : "Document metadata";
   const metadataValue =
     record.kind === "Telcon" || record.kind === "Memcon"
@@ -328,12 +381,18 @@ function renderAudit(data, reports = {}) {
   const talbottRows = reports.talbott?.rowCount || 0;
   const talbottStandalone = reports.talbott?.summary?.selectedStandaloneRecords || reports.talbott?.buckets?.inVolumeContext || 0;
   const talbottStandalonePages = reports.talbott?.summary?.selectedStandalonePages || 0;
+  const publicStatements = documents.filter((record) => record.documentScope === "Public statement").length;
+  const publicStatementPages = documents
+    .filter((record) => record.documentScope === "Public statement")
+    .reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const publicPaperRecords = reports.publicPapers?.summary?.selectedRecords || publicStatements;
+  const publicPaperRows = reports.publicPapers?.summary?.scannedGranules || 0;
 
   nodes.auditRoot.replaceChildren(
     auditCard(
       "Document Evidence",
       `${formatNumber(documents.length)} records`,
-      `${formatNumber(sumPages(documents))} counted pages: ${formatNumber(memcons.length)} memcons and ${formatNumber(telcons.length)} telcons remain visible inside the broader chronology.`,
+      `${formatNumber(sumPages(documents))} counted pages: ${formatNumber(memcons.length)} memcons, ${formatNumber(telcons.length)} telcons, and ${formatNumber(publicStatements)} Clinton Public Papers records remain visible inside the broader chronology.`,
       `${pending.length} records still need page counts.`
     ),
     auditCard(
@@ -344,9 +403,9 @@ function renderAudit(data, reports = {}) {
     ),
     auditCard(
       "Discovery Sweeps",
-      `${formatNumber(naraRecords + talbottHits)} leads`,
-      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows.`,
-      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records are in the chronology, with ${formatNumber(talbottStandalonePages)} counted pages.`
+      `${formatNumber(naraRecords + talbottHits + publicPaperRecords)} leads`,
+      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules.`,
+      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages.`
     ),
     auditCard(
       "Highest Density",
@@ -480,7 +539,7 @@ function renderFrusMethod(data) {
       "Mission Boundary",
       "Set",
       "This page is not a proposed FRUS selection list and does not suggest how the volume should be structured.",
-      "It inventories declassified U.S. records for chronological consideration by the compiler."
+      "It inventories declassified and public U.S. records for chronological consideration by the compiler."
     ),
     methodCard(
       "Chronological Inventory",
@@ -497,7 +556,7 @@ function renderFrusMethod(data) {
     methodCard(
       "Declassification Accounting",
       "Partial",
-      "Packet PDFs are reduced to the pages of each memo or record, with the packet first page appended as an annotation sheet.",
+      "Packet PDFs are reduced to the pages of each memo or record, with the packet first page appended as an annotation sheet; public statements retain GovInfo source pagination.",
       `${sumPages(documents)} counted pages; ${direct.length} direct PDFs; ${extracted.length} extracted PDFs; ${inferredDates.length} inferred-date records; ${conversations.length} memcon/telcon records.`
     )
   );
@@ -515,6 +574,7 @@ function renderReadinessPanel(data) {
   const withCompilerUse = documents.filter((record) => record.compilerUse);
   const withAnnotation = documents.filter((record) => isExtractedDocument(record) && record.annotationSheet);
   const anchorSources = data.sources.filter((source) => ["Anchor", "Core"].includes(source.priority));
+  const publicStatements = documents.filter((record) => record.documentScope === "Public statement");
 
   const heading = document.createElement("h3");
   heading.textContent = "Inventory Readiness";
@@ -546,16 +606,22 @@ function renderReadinessPanel(data) {
       "Every packet-extracted PDF appends the source packet first page after the document pages."
     ),
     readinessRow(
+      "Public Papers metadata",
+      publicStatements.length ? "Ready" : "Seeded",
+      publicStatements.length.toString(),
+      "GovInfo Public Papers records use official source pagination and publication metadata rather than declassification fields."
+    ),
+    readinessRow(
       "Inventory relevance note",
       withCompilerUse.length === documents.length ? "Ready" : "Partial",
       `${withCompilerUse.length}/${documents.length}`,
-      "Each record notes why it is relevant to the declassified document inventory, without recommending inclusion."
+      "Each record notes why it is relevant to the chronological inventory, without recommending inclusion."
     ),
     readinessRow(
       "Anchor and core source trails",
       "Seeded",
       `${anchorSources.length}/${data.sources.length}`,
-      "Prioritized sources keep the completeness search tied to public Clinton Library and NARA release paths."
+      "Prioritized sources keep the completeness search tied to Clinton Library, NARA, State FOIA, and GovInfo release paths."
     )
   );
 
@@ -567,6 +633,7 @@ function renderSourceNotePanel(data) {
   const locatorReady = documents.filter((record) => record.collection && record.identifier && (record.url || record.pdfUrl)).length;
   const pageReady = documents.filter((record) => record.pageCount && record.sourcePdfPages).length;
   const metadataReady = documents.filter((record) => record.date && record.kind).length;
+  const publicStatements = documents.filter((record) => record.documentScope === "Public statement").length;
   const heading = document.createElement("h3");
   heading.textContent = "Source Note Worklist";
   const list = document.createElement("div");
@@ -588,7 +655,13 @@ function renderSourceNotePanel(data) {
       "Classification / handling controls",
       "Next",
       "PDF/OCR",
-      "FRUS notes place markings such as classification and handling controls immediately after the locator; extract these from the PDF header or face sheet."
+      "For declassified records, extract markings from the PDF header or face sheet; Public Papers records instead require GovInfo publication metadata checks."
+    ),
+    readinessRow(
+      "Public Papers publication metadata",
+      publicStatements ? "Ready" : "Seeded",
+      publicStatements.toString(),
+      "GovInfo records carry public title, date, source pagination, and granule locators for the public-statement layer."
     ),
     readinessRow(
       "Drafting / clearance / distribution",
@@ -1377,15 +1450,16 @@ async function loadOptionalJson(url) {
 }
 
 async function loadReports() {
-  const [documents, conversations, nara, talbott, researchCollections] = await Promise.all([
+  const [documents, conversations, nara, talbott, researchCollections, publicPapers] = await Promise.all([
     loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
     loadOptionalJson(REPORT_URLS.nara),
     loadOptionalJson(REPORT_URLS.talbott),
-    loadOptionalJson(REPORT_URLS.researchCollections)
+    loadOptionalJson(REPORT_URLS.researchCollections),
+    loadOptionalJson(REPORT_URLS.publicPapers)
   ]);
 
-  return { documents, conversations, nara, talbott, researchCollections };
+  return { documents, conversations, nara, talbott, researchCollections, publicPapers };
 }
 
 async function loadData() {

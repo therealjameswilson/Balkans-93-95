@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-22T11:02:15.745Z",
-  "documentRecordCount": 103,
+  "generatedAt": "2026-05-22T11:44:33.606Z",
+  "documentRecordCount": 549,
   "conversationRecordCount": 31,
   "extractedDocumentCount": 77,
-  "directDocumentCount": 26,
-  "documentPageTotal": 387,
+  "directDocumentCount": 472,
+  "documentPageTotal": 2251,
   "sourcePacketAnnotation": "Every packet extraction appends page 1 of the original source PDF after the extracted document pages.",
   "extracted": [
     {
