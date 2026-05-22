@@ -301,8 +301,8 @@ window.COMPILER_MAP_DATA = {
       "institution": "State Department FOIA Library / Strobe Talbott FOIA Research Desk",
       "type": "Collection",
       "priority": "High",
-      "description": "Public manifest of 1,474 Talbott FOIA records with enriched descriptions and direct State Department PDF links. The manifest search found 67 Balkans hits: four in-volume contextual leads, no additional 1993-1995 memcon/telcon records, and a larger post-1995 Kosovo/Bosnia follow-on cluster.",
-      "compilerUse": "Use for Russia-facing diplomatic context around Kozyrev, Holbrooke, Dayton implementation, and post-1995 follow-on records; pull C09000009, C09000010, C09000068, and C09000051 first.",
+      "description": "Public manifest of 1,474 Talbott FOIA records with enriched descriptions and direct State Department PDF links. The full-PDF text sweep found 405 Balkans hits, including 20 in-volume hits reviewed down to 12 standalone direct FOIA records with 70 counted pages.",
+      "compilerUse": "Use for Russia-facing diplomatic context around Kozyrev, Holbrooke, Dayton implementation, IFOR, Spain/UNPROFOR, Turkey/Kosovo, and NATO-Bosnia linkages. The chronology now surfaces the 12 reviewed standalone Talbott records while keeping post-1995 Kosovo/Bosnia follow-on hits separate.",
       "url": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
       "tags": [
         "Talbott",
@@ -2519,6 +2519,42 @@ window.COMPILER_MAP_DATA = {
       "documentType": "NSC Summary"
     },
     {
+      "id": "talbott-C09000058-1994-05-02",
+      "documentId": "C09000058",
+      "date": "May 2, 1994",
+      "sortDate": "1994-05-02",
+      "kind": "Presidential Memo",
+      "title": "Memorandum From Acting S/S Talbott to President Clinton: Your Appearance on CNN Tomorrow",
+      "identifier": "C09000058 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000058",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf",
+      "subjects": [
+        "President Clinton",
+        "Bosnia",
+        "Air power",
+        "UNPROFOR",
+        "Safe areas"
+      ],
+      "compilerUse": "Standalone Talbott FOIA presidential briefing memorandum with a substantial Bosnia-policy section for the May 1994 CNN appearance.",
+      "tags": [
+        "Talbott FOIA",
+        "President Clinton",
+        "Bosnia",
+        "UNPROFOR"
+      ],
+      "cacheName": "C09000058-1994-05-02.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf",
+      "sourcePdfPages": "1-10",
+      "pageCount": 10,
+      "localPdfPageCount": 10,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000058; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf. Direct FOIA PDF; 10 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Presidential Memo"
+    },
+    {
       "id": "pcdc-1994-05-20-bosnia-summary",
       "packet": "pcDc20100533",
       "pages": "47-48",
@@ -2993,6 +3029,41 @@ window.COMPILER_MAP_DATA = {
       "documentType": "Memcon"
     },
     {
+      "id": "talbott-C09000052-1994-12-12",
+      "documentId": "C09000052",
+      "date": "Dec 12, 1994",
+      "sortDate": "1994-12-12",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Strobe Talbott to Yuri",
+      "identifier": "C09000052 (May 2022 release) / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000052",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "subjects": [
+        "Russia",
+        "NATO expansion",
+        "Bosnia",
+        "Budapest summit"
+      ],
+      "compilerUse": "Standalone private Talbott letter placing Bosnia inside the U.S.-Russian strategic bargaining after the Budapest NATO-expansion dispute.",
+      "tags": [
+        "Talbott FOIA",
+        "Russia",
+        "Bosnia",
+        "NATO"
+      ],
+      "cacheName": "C09000052-1994-12-12.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "sourcePdfPages": "1-7",
+      "pageCount": 7,
+      "localPdfPageCount": 7,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (May 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Diplomatic Letter"
+    },
+    {
       "id": "pcdc-1994-12-12-bosnia-principals-summary",
       "packet": "pcDc20100533",
       "pages": "71-73",
@@ -3215,6 +3286,42 @@ window.COMPILER_MAP_DATA = {
       "documentType": "NSC Summary"
     },
     {
+      "id": "talbott-C09000085-1995-02-23",
+      "documentId": "C09000085",
+      "date": "Feb 23, 1995",
+      "sortDate": "1995-02-23",
+      "kind": "Briefing Memo",
+      "title": "Memorandum From Acting Secretary Talbott to Secretary Brown: Your Visit to Spain",
+      "identifier": "C09000085 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000085",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf",
+      "subjects": [
+        "Spain",
+        "UNPROFOR",
+        "Bosnia",
+        "Contact Group",
+        "Croatia"
+      ],
+      "compilerUse": "Standalone Talbott briefing memorandum for Secretary Brown's Madrid trip, including Spain's Bosnia peacekeeping role and Contact Group concerns.",
+      "tags": [
+        "Talbott FOIA",
+        "Spain",
+        "UNPROFOR",
+        "Contact Group"
+      ],
+      "cacheName": "C09000085-1995-02-23.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf",
+      "sourcePdfPages": "1-6",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000085; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Briefing Memo"
+    },
+    {
       "id": "claes-1995-03-07",
       "date": "Mar 7, 1995",
       "sortDate": "1995-03-07",
@@ -3278,6 +3385,42 @@ window.COMPILER_MAP_DATA = {
       "localPdfPageCount": 15,
       "documentScope": "Conversation",
       "documentType": "Memcon"
+    },
+    {
+      "id": "talbott-C09000078-1995-04-11",
+      "documentId": "C09000078",
+      "date": "Apr 11, 1995",
+      "sortDate": "1995-04-11",
+      "kind": "Public Remarks",
+      "title": "Remarks by Deputy Secretary Talbott: U.S.-Turkish Leadership in the Post-Cold War World",
+      "identifier": "C09000078 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000078",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf",
+      "subjects": [
+        "Turkey",
+        "Bosnia-Herzegovina",
+        "Kosovo",
+        "War crimes",
+        "Former Yugoslavia"
+      ],
+      "compilerUse": "Standalone Talbott remarks with a discrete former-Yugoslavia policy passage on Bosnia, Kosovo, Serbia, peacekeeping, and war crimes.",
+      "tags": [
+        "Talbott FOIA",
+        "Turkey",
+        "Former Yugoslavia",
+        "Kosovo"
+      ],
+      "cacheName": "C09000078-1995-04-11.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf",
+      "sourcePdfPages": "1-16",
+      "pageCount": 16,
+      "localPdfPageCount": 16,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000078; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf. Direct FOIA PDF; 16 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Public Remarks"
     },
     {
       "id": "pcdc-1995-05-09-bosnia-deputies-summary",
@@ -3386,6 +3529,77 @@ window.COMPILER_MAP_DATA = {
       "localPdfPageCount": 4,
       "documentScope": "Conversation",
       "documentType": "Telcon"
+    },
+    {
+      "id": "talbott-C09000098-1995-06-07",
+      "documentId": "C09000098",
+      "date": "Jun 7, 1995",
+      "sortDate": "1995-06-07",
+      "kind": "Official-Informal",
+      "title": "Official-Informal Message From Talbott to Mamedov",
+      "identifier": "C09000098 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000098",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf",
+      "subjects": [
+        "Clinton-Yeltsin diplomacy",
+        "Bosnia",
+        "Milosevic",
+        "Contact Group",
+        "NATO-Russia"
+      ],
+      "compilerUse": "Standalone official-informal message previewing Bosnia and Milosevic as Clinton-Yeltsin agenda items before Halifax.",
+      "tags": [
+        "Talbott FOIA",
+        "Russia",
+        "Bosnia",
+        "Milosevic"
+      ],
+      "cacheName": "C09000098-1995-06-07.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf",
+      "sourcePdfPages": "1-6",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000098; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Official-Informal"
+    },
+    {
+      "id": "talbott-C09000087-1995-06-13",
+      "documentId": "C09000087",
+      "date": "Jun 13, 1995",
+      "sortDate": "1995-06-13",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Yuri Mamedov to Strobe Talbott",
+      "identifier": "C09000087 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000087",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf",
+      "subjects": [
+        "Former Yugoslavia",
+        "Contact Group",
+        "Clinton-Yeltsin diplomacy",
+        "Halifax summit"
+      ],
+      "compilerUse": "Standalone Mamedov letter to Talbott on the Halifax presidents' meeting, former Yugoslavia, and U.S.-Russian Contact Group cooperation.",
+      "tags": [
+        "Talbott FOIA",
+        "Russia",
+        "Former Yugoslavia",
+        "Contact Group"
+      ],
+      "cacheName": "C09000087-1995-06-13.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf",
+      "sourcePdfPages": "1-3",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000087; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf. Direct FOIA PDF; 3 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Diplomatic Letter"
     },
     {
       "id": "chirac-1995-06-14",
@@ -4408,6 +4622,42 @@ window.COMPILER_MAP_DATA = {
       "documentType": "State FOIA Record"
     },
     {
+      "id": "talbott-C09000055-1995-10-19",
+      "documentId": "C09000055",
+      "date": "Oct 19, 1995",
+      "sortDate": "1995-10-19",
+      "kind": "Dissent Channel Message",
+      "title": "Dissent Channel Message: Bringing Russia into IFOR: Wrong Assumption, Wrong Objective",
+      "identifier": "C09000055 / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000055",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf",
+      "subjects": [
+        "IFOR",
+        "Russia",
+        "Bosnia",
+        "Hyde Park summit",
+        "NATO"
+      ],
+      "compilerUse": "Standalone dissent-channel document on the prospective Russian role in the Bosnia Peace Implementation Force before the Hyde Park summit.",
+      "tags": [
+        "Talbott FOIA",
+        "Dissent Channel",
+        "IFOR",
+        "Russia"
+      ],
+      "cacheName": "C09000055-1995-10-19.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf",
+      "sourcePdfPages": "1-5",
+      "pageCount": 5,
+      "localPdfPageCount": 5,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000055; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf. Direct FOIA PDF; 5 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Dissent Channel Message"
+    },
+    {
       "id": "yeltsin-1995-10-23-hyde-park-one-on-one",
       "packet": "yeltsin20140948",
       "pages": "5-16",
@@ -4893,6 +5143,42 @@ window.COMPILER_MAP_DATA = {
       "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000051; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000051/C09000051.pdf. Direct FOIA PDF; 4 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
       "documentScope": "Policy document",
       "documentType": "State FOIA Record"
+    },
+    {
+      "id": "talbott-C09000052-1995-12-27",
+      "documentId": "C09000052",
+      "date": "Dec 27, 1995",
+      "sortDate": "1995-12-27",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Henry Kissinger to Strobe Talbott on Bosnia, Russia, and NATO Enlargement",
+      "identifier": "C09000052 (July 2022 release) / F-2017-13804",
+      "collection": "Strobe Talbott FOIA case F-2017-13804",
+      "repository": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/search/results.aspx?searchText=C09000052",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "subjects": [
+        "Bosnia",
+        "Dayton implementation",
+        "Russia",
+        "NATO enlargement",
+        "Henry Kissinger"
+      ],
+      "compilerUse": "Standalone post-signing letter in Talbott's files on Russian cooperation in Bosnia and its relationship to NATO enlargement.",
+      "tags": [
+        "Talbott FOIA",
+        "Bosnia",
+        "Russia",
+        "NATO"
+      ],
+      "cacheName": "C09000052-1995-12-27.pdf",
+      "sourcePdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "sourcePdfPages": "1-7",
+      "pageCount": 7,
+      "localPdfPageCount": 7,
+      "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (July 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "documentScope": "Policy document",
+      "documentType": "Diplomatic Letter"
     }
   ]
 };

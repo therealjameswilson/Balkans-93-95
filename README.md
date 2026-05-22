@@ -43,8 +43,9 @@ published "About the Series" guidance for FRUS production:
 - `scripts/search-nara-scout-memcons.js` reproduces the NARA Scout
   memcon/telcon search against the National Archives Catalog.
 - `scripts/search-strobe-talbott-manifest.js` scores the public Strobe Talbott
-  FOIA manifest for Balkans, Bosnia, Dayton, Holbrooke, Russia, and Kosovo
-  follow-on leads.
+  FOIA manifest, downloads and full-text searches the direct PDFs, counts pages,
+  and separates reviewed in-volume standalone records from false positives and
+  post-1995 follow-on leads.
 - `scripts/build-broad-document-inventory.js` builds the expanded chronology,
   extracts packet PDF page ranges, appends page 1 of each source packet as an
   annotation sheet, and writes document page-count metadata.
@@ -58,7 +59,8 @@ published "About the Series" guidance for FRUS production:
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
-  manifest sweep and separates in-volume leads from post-1995 follow-on items.
+  manifest/PDF sweep, selected standalone direct FOIA records, reviewed
+  exclusions, and post-1995 follow-on items.
 - `reports/conversation-page-counts.json` records the direct and extracted
   memcon/telcon page-count audit.
 - `reports/document-page-counts.json` records the expanded document inventory
@@ -89,9 +91,9 @@ The first-pass source matrix supports completeness checks across:
 - NARA Scout / National Archives Catalog cross-check for digitized
   declassified memcons and telcons, including NAID `163545436`, the
   Clinton-Yeltsin Hyde Park memcon on Bosnia implementation.
-- Strobe Talbott FOIA case `F-2017-13804`, including in-volume contextual
-  leads for the Secretary-Kozyrev Bosnia letter, Talbott-Holbrooke traffic, and
-  late-1995 implementation context.
+- Strobe Talbott FOIA case `F-2017-13804`, including `12` reviewed standalone
+  direct FOIA records on Bosnia, IFOR, Russia, Dayton implementation,
+  Spain/UNPROFOR, Turkey/Kosovo, and NATO-Bosnia linkages.
 - Clinton Digital Library Bosnia collection, `2008-0994-F`.
 - Clinton Digital Library FOIA folder releases surfaced from the 2013-0185-M
   research plan, including `2008-0994-F`, `2013-0687-F`, PC/DC files,
@@ -104,7 +106,7 @@ The first-pass source matrix supports completeness checks across:
 
 ## Evidence Audit
 
-The page currently surfaces `95` chronological declassified records and `327`
+The page currently surfaces `103` chronological declassified records and `387`
 counted document pages, including `31` memcon/telcon records.
 Every displayed card has a PDF link, source-page metadata, and provenance
 labeling that distinguishes direct PDFs from locally extracted packet documents.
@@ -122,6 +124,10 @@ The research-collections section adds `200` ranked folder targets and `9`
 supplemental collection leads from the research plan. The online sweep found
 `462` selected declassified/digitized PDF leads across `93` ranked targets and
 `1` supplemental target, with `16,293` counted PDF pages.
+
+The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,
+found `405` Balkans-related full-text hits, reviewed `20` in-volume hits, and
+adds `12` standalone direct State FOIA records totaling `70` counted pages.
 
 ## Local Preview
 

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-21T18:49:31.318Z",
-  "documentRecordCount": 95,
+  "generatedAt": "2026-05-22T11:02:15.745Z",
+  "documentRecordCount": 103,
   "conversationRecordCount": 31,
   "extractedDocumentCount": 77,
-  "directDocumentCount": 18,
-  "documentPageTotal": 327,
+  "directDocumentCount": 26,
+  "documentPageTotal": 387,
   "sourcePacketAnnotation": "Every packet extraction appends page 1 of the original source PDF after the extracted document pages.",
   "extracted": [
     {
@@ -934,6 +934,78 @@
   ],
   "directTalbott": [
     {
+      "id": "talbott-C09000058-1994-05-02",
+      "date": "May 2, 1994",
+      "kind": "Presidential Memo",
+      "title": "Memorandum From Acting S/S Talbott to President Clinton: Your Appearance on CNN Tomorrow",
+      "pageCount": 10,
+      "localPdfPageCount": 10,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf",
+      "sourcePdfPages": "1-10",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000058; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf. Direct FOIA PDF; 10 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000052-1994-12-12",
+      "date": "Dec 12, 1994",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Strobe Talbott to Yuri",
+      "pageCount": 7,
+      "localPdfPageCount": 7,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "sourcePdfPages": "1-7",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (May 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000085-1995-02-23",
+      "date": "Feb 23, 1995",
+      "kind": "Briefing Memo",
+      "title": "Memorandum From Acting Secretary Talbott to Secretary Brown: Your Visit to Spain",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf",
+      "sourcePdfPages": "1-6",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000085; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000078-1995-04-11",
+      "date": "Apr 11, 1995",
+      "kind": "Public Remarks",
+      "title": "Remarks by Deputy Secretary Talbott: U.S.-Turkish Leadership in the Post-Cold War World",
+      "pageCount": 16,
+      "localPdfPageCount": 16,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf",
+      "sourcePdfPages": "1-16",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000078; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf. Direct FOIA PDF; 16 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000098-1995-06-07",
+      "date": "Jun 7, 1995",
+      "kind": "Official-Informal",
+      "title": "Official-Informal Message From Talbott to Mamedov",
+      "pageCount": 6,
+      "localPdfPageCount": 6,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf",
+      "sourcePdfPages": "1-6",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000098; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000087-1995-06-13",
+      "date": "Jun 13, 1995",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Yuri Mamedov to Strobe Talbott",
+      "pageCount": 3,
+      "localPdfPageCount": 3,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf",
+      "sourcePdfPages": "1-3",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000087; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf. Direct FOIA PDF; 3 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
       "id": "talbott-C09000009",
       "date": "Aug 31, 1995",
       "kind": "State FOIA Record",
@@ -958,6 +1030,18 @@
       "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000010; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000010/C09000010.pdf. Direct FOIA PDF; 3 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
     },
     {
+      "id": "talbott-C09000055-1995-10-19",
+      "date": "Oct 19, 1995",
+      "kind": "Dissent Channel Message",
+      "title": "Dissent Channel Message: Bringing Russia into IFOR: Wrong Assumption, Wrong Objective",
+      "pageCount": 5,
+      "localPdfPageCount": 5,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf",
+      "sourcePdfPages": "1-5",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000055; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf. Direct FOIA PDF; 5 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
       "id": "talbott-C09000068",
       "date": "Dec 14, 1995",
       "kind": "State FOIA Record",
@@ -980,6 +1064,18 @@
       "sourcePdfPages": "1-4",
       "annotationSheet": null,
       "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000051; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000051/C09000051.pdf. Direct FOIA PDF; 4 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
+    },
+    {
+      "id": "talbott-C09000052-1995-12-27",
+      "date": "Dec 27, 1995",
+      "kind": "Diplomatic Letter",
+      "title": "Letter From Henry Kissinger to Strobe Talbott on Bosnia, Russia, and NATO Enlargement",
+      "pageCount": 7,
+      "localPdfPageCount": 7,
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf",
+      "sourcePdfPages": "1-7",
+      "annotationSheet": null,
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (July 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment."
     }
   ]
 }

@@ -147,6 +147,12 @@ function repositoryLabel(record) {
     return "National Archives and Records Administration, National Archives Catalog";
   }
 
+  if (/foia\.state\.gov/i.test(sourceUrl)) {
+    return record.repository || "Department of State, FOIA Virtual Reading Room";
+  }
+
+  if (record.repository) return record.repository;
+
   return "William J. Clinton Presidential Library, Clinton Digital Library";
 }
 
@@ -320,7 +326,8 @@ function renderAudit(data, reports = {}) {
   const naraUnique = reports.nara?.uniqueRecords || 0;
   const talbottHits = reports.talbott?.matchedCount || reports.talbott?.records?.length || 0;
   const talbottRows = reports.talbott?.rowCount || 0;
-  const talbottContext = reports.talbott?.buckets?.inVolumeContext || 0;
+  const talbottStandalone = reports.talbott?.summary?.selectedStandaloneRecords || reports.talbott?.buckets?.inVolumeContext || 0;
+  const talbottStandalonePages = reports.talbott?.summary?.selectedStandalonePages || 0;
 
   nodes.auditRoot.replaceChildren(
     auditCard(
@@ -338,8 +345,8 @@ function renderAudit(data, reports = {}) {
     auditCard(
       "Discovery Sweeps",
       `${formatNumber(naraRecords + talbottHits)} leads`,
-      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott manifest hits from ${formatNumber(talbottRows)} rows.`,
-      `${formatNumber(talbottContext)} Talbott hits are in-volume contextual leads.`
+      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows.`,
+      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records are in the chronology, with ${formatNumber(talbottStandalonePages)} counted pages.`
     ),
     auditCard(
       "Highest Density",
