@@ -6,7 +6,7 @@ window.COMPILER_MAP_DATA = {
     "coreDecisionYear": "1995",
     "officialUrl": "https://history.state.gov/historicaldocuments/frus1993-00v15",
     "statusUrl": "https://history.state.gov/historicaldocuments/status-of-the-series",
-    "lastReviewed": "2026-05-22",
+    "lastReviewed": "2026-05-24",
     "inventoryScope": "Chronological public inventory of declassified and public U.S. records covering Balkans policy, 1993-1995; not a selection list or proposed volume structure.",
     "sourceNoteStandard": "FRUS-style source-note stems follow George H.W. Bush-era Office of the Historian practice: repository and file/control locator first; classification/handling next; then markings, distribution, attachments, annotations, and declassification accounting."
   },
@@ -345,6 +345,77 @@ window.COMPILER_MAP_DATA = {
         "Clinton",
         "Bosnia",
         "Dayton"
+      ]
+    },
+    {
+      "id": "state-foia-balkans-sweep",
+      "title": "State FOIA Virtual Reading Room Balkans Sweep",
+      "identifier": "1993-1995 State FOIA API search",
+      "institution": "Department of State, FOIA Virtual Reading Room",
+      "type": "State FOIA",
+      "priority": "High",
+      "description": "Reproducible sweep of State FOIA released documents for Bosnia, Dayton, Sarajevo, Srebrenica, Bihac, Gorazde, Milosevic, Izetbegovic, Tudjman, Croatia, Krajina, Kosovo, Macedonia, UNPROFOR, IFOR, Holbrooke, Frasure, and former Yugoslavia terms. The first pass selected 250 high-confidence candidate cable/memorandum leads totaling 2,169 counted pages.",
+      "compilerUse": "Use as the State Department gap-mitigation layer. These are candidate leads until cable metadata, drafting/clearance, distribution, attachments, and excisions are verified against each PDF.",
+      "url": "reports/state-foia-balkans-search.json",
+      "tags": [
+        "State FOIA",
+        "Cables",
+        "Belgrade",
+        "Holbrooke",
+        "Milosevic"
+      ]
+    },
+    {
+      "id": "compiler-gap-register",
+      "title": "Compiler Gap Register",
+      "identifier": "reports/compiler-gap-register.json",
+      "institution": "Project production control",
+      "type": "Risk Register",
+      "priority": "High",
+      "description": "Generated compiler-risk register that tracks 8 gaps, 5 source pools, and a 70-item extraction/promotion queue across State FOIA, Clinton Library research PDFs, NARA source-family leads, Defense/JCS, CIA/BTF, regional balance, memcon/telcon reconciliation, and source-note finalization.",
+      "compilerUse": "Use as the live production-control surface for source-family risk. It does not recommend inclusion or impose a volume structure.",
+      "url": "reports/compiler-gap-register.json",
+      "tags": [
+        "Gap register",
+        "Risk",
+        "Extraction queue",
+        "Source pools"
+      ]
+    },
+    {
+      "id": "clinton-library-2013-0185-m-finding-aids",
+      "title": "2013-0185-M Finding Aid Parts 1-4",
+      "identifier": "2013-0185-M Parts 1-4",
+      "institution": "William J. Clinton Presidential Library",
+      "type": "Finding Aid",
+      "priority": "Core",
+      "description": "Four Clinton Library finding-aid PDFs totaling 1,290 pages, parsed into an onsite pull plan with 1,648 priority folder targets and 309 OA/ID call-slip batches.",
+      "compilerUse": "Use before and during a Clinton Library visit to batch call slips, prioritize Soderberg PC/DC notes, Records Management PC/DC files, Lake/Berger/Holbrooke files, humanitarian and war-crimes folders, and follow-on implementation checks without treating the folder list as an inclusion recommendation.",
+      "url": "reports/clinton-library-visit-plan.json",
+      "tags": [
+        "Clinton Library",
+        "2013-0185-M",
+        "Finding aid",
+        "Onsite research",
+        "PC/DC"
+      ]
+    },
+    {
+      "id": "defense-jcs-source-pool",
+      "title": "Defense, JCS, and Military Implementation Source Pool",
+      "identifier": "Follow-up source pool",
+      "institution": "NARA Catalog / Defense and Joint Chiefs source paths",
+      "type": "Source Gap",
+      "priority": "High",
+      "description": "Follow-up source pool for IFOR, Deliberate Force, no-fly-zone enforcement, lift-and-strike, withdrawal and contingency planning, SECDEF, OSD, and JCS records.",
+      "compilerUse": "Use to keep the military implementation gap explicit until a dedicated Defense/JCS search report is added.",
+      "url": "https://catalog.archives.gov/",
+      "tags": [
+        "Defense",
+        "JCS",
+        "IFOR",
+        "Air power",
+        "Source gap"
       ]
     },
     {

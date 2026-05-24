@@ -1,0 +1,1147 @@
+{
+  "generatedAt": "2026-05-23T13:51:03.686Z",
+  "missionBoundary": "This register identifies compiler-risk gaps and mitigation queues. It does not recommend document inclusion and does not impose a FRUS volume structure.",
+  "metrics": {
+    "chronologyRecords": 549,
+    "chronologyPages": 2251,
+    "archivalChronologyRecords": 103,
+    "publicStatementRecords": 446,
+    "candidateLeadCount": 875,
+    "candidateLeadPages": 20549,
+    "byYear": {
+      "1993": {
+        "count": 152,
+        "pages": 633
+      },
+      "1994": {
+        "count": 169,
+        "pages": 671
+      },
+      "1995": {
+        "count": 228,
+        "pages": 947
+      }
+    },
+    "byScope": {
+      "Conversation": {
+        "count": 31,
+        "pages": 161
+      },
+      "Policy document": {
+        "count": 71,
+        "pages": 221
+      },
+      "Public statement": {
+        "count": 446,
+        "pages": 1864
+      },
+      "Vice presidential conversation": {
+        "count": 1,
+        "pages": 5
+      }
+    },
+    "byRepository": {
+      "Department of State, FOIA Virtual Reading Room": {
+        "count": 12,
+        "pages": 70
+      },
+      "Government Publishing Office, GovInfo": {
+        "count": 446,
+        "pages": 1864
+      },
+      "National Archives and Records Administration, National Archives Catalog": {
+        "count": 2,
+        "pages": 17
+      },
+      "William J. Clinton Presidential Library, Clinton Digital Library": {
+        "count": 89,
+        "pages": 300
+      }
+    }
+  },
+  "summary": {
+    "gaps": 8,
+    "mitigated": 4,
+    "open": 4,
+    "critical": 2,
+    "high": 3,
+    "medium": 3,
+    "sourcePools": 5,
+    "extractionQueue": 70,
+    "candidateLeads": 875
+  },
+  "sourcePools": [
+    {
+      "id": "state-foia",
+      "label": "Department of State FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/",
+      "status": "Mitigated by candidate layer",
+      "currentLeads": 250,
+      "countedPages": 2169,
+      "remainingRisk": "Search totals remain larger than the selected layer; central files and bureau file paths still require archival verification."
+    },
+    {
+      "id": "clinton-research-pdfs",
+      "label": "Clinton Digital Library research-plan PDFs",
+      "url": "https://clinton.presidentiallibraries.us/",
+      "status": "Mitigated by ranked target queue",
+      "currentLeads": 462,
+      "countedPages": 16293,
+      "remainingRisk": "22 ranked targets have PDF hits but no selected in-period file yet."
+    },
+    {
+      "id": "nara-crosscheck",
+      "label": "NARA Catalog collection 7388808 and NARA Scout Europe scopes",
+      "url": "https://catalog.archives.gov/",
+      "status": "Mitigated by candidate layer",
+      "currentLeads": 163,
+      "countedPages": 2087,
+      "remainingRisk": "Candidate leads need duplicate review and document-boundary extraction before promotion."
+    },
+    {
+      "id": "cia-btf",
+      "label": "CIA / Balkan Task Force and Clinton Library BTF collection",
+      "url": "https://clinton.presidentiallibraries.us/collections/show/37",
+      "status": "Open",
+      "currentLeads": 29,
+      "countedPages": 171,
+      "remainingRisk": "Intelligence products are still folder-level leads and need document-level extraction."
+    },
+    {
+      "id": "defense-jcs",
+      "label": "Defense, JCS, OSD, IFOR, air-power, and contingency planning",
+      "url": "https://catalog.archives.gov/",
+      "status": "Open",
+      "currentLeads": 34,
+      "countedPages": 0,
+      "remainingRisk": "Military implementation is present as scattered State/NARA leads, not as a verified Defense/JCS source base."
+    }
+  ],
+  "extractionQueue": [
+    {
+      "id": "research-target-2",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "POTUS Memos",
+      "reason": "16 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-33",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "Peace Plans",
+      "reason": "35 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-34",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "Oplan 40104-Withdrawal",
+      "reason": "2 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-35",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "PCDC [file]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-36",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "POTUS Letters",
+      "reason": "24 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-42",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "Rapid Reaction Force",
+      "reason": "40 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-47",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "High",
+      "title": "SerbiaMontenegro",
+      "reason": "4 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-52",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia — September 1995 Early-Mid [Flds 1–7]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-82",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Early October 1995 [Flds 1–5]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-83",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Early November 1995 [Flds 2–3]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-84",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Late October–Early November 1995 [Flds 1–2]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-85",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Late November 1995 [Flds 1–3]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-86",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Early December 1995 [Flds 1–4]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-87",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Bosnia, Late December 1995 [Fld 2]",
+      "reason": "5 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-140",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Recognition of Macedonia",
+      "reason": "4 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-141",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Press Clippings [reference]",
+      "reason": "40 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-181",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "UNCRO (UN Confidence Restoration Operation)",
+      "reason": "31 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-183",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "U.N. [general]",
+      "reason": "40 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-187",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Pol Mil Plan",
+      "reason": "4 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "research-target-188",
+      "sourceFamily": "Clinton Digital Library research plan",
+      "priority": "Medium",
+      "title": "Intelligence Sharing",
+      "reason": "40 PDF search hits but no selected in-period declassified file yet.",
+      "nextAction": "Open the target PDFs, separate document boundaries, and promote dated declassified records into candidate-document review."
+    },
+    {
+      "id": "state-foia-c17798434-1",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "DEMARCHE TO SERBIAN PRESIDENT MILOSEVIC",
+      "date": "1994-11-03",
+      "pageCount": 9,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798434/C17798434.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1994STATE297120; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798437-2",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "TFSR01: FRY/BOSNIA BORDER CLOSURE -- U.S. NON-PAPER",
+      "date": "1994-11-04",
+      "pageCount": 8,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798437/C17798437.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1994STATE298604; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798458-3",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "CONTACT GROUP: NOVEMBER 29 MEETING WITH MILOSEVIC",
+      "date": "1994-11-30",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798458/C17798458.pdf",
+      "reason": "STATE to TOSEC; F-2007-03885; 1994STATE319601; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798463-4",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "TFSROL: FRY/BOSNIA BORDER CLOSURE -- SECOND U.S. NON-PAPER",
+      "date": "1994-12-03",
+      "pageCount": 9,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798463/C17798463.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1994STATE322853; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798482-5",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "CONTACT GROUP: DECEMBER 15 MEETINGS",
+      "date": "1994-12-20",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798482/C17798482.pdf",
+      "reason": "STATE to ZAGREB; F-2007-03885; 1994STATE335774; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798484-6",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "GUIDANCE FOR DECEMBER 21 NAC",
+      "date": "1994-12-21",
+      "pageCount": 4,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798484/C17798484.pdf",
+      "reason": "STATE to USNATO; F-2007-03885; 1994STATE336812; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798492-7",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "DEMARCHE TO BELGRADE: KRAJINA SERB INVOLVEMENT IN BOSNIA",
+      "date": "1994-12-29",
+      "pageCount": 3,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798492/C17798492.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1994STATE342005; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798497-8",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "KOZYREV-TO-CHRISTOPHER \"ORAL MESSAGE\" ON - EXTENSION OF UNSCR 943",
+      "date": "1995-01-07",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798497/C17798497.pdf",
+      "reason": "STATE to MOSCOW; F-2007-03885; 1995STATE004758; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798499-9",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "DEMARCHE TO MILOSEVIC ON CROATIA AND UNPROFOR",
+      "date": "1995-01-14",
+      "pageCount": 4,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798499/C17798499.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE011303; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798500-10",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "CONTACT GROUP MEETING WITH GOBH FOLLOWING PALE ENCOUNTER",
+      "date": "1995-01-19",
+      "pageCount": 8,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798500/C17798500.pdf",
+      "reason": "STATE to LONDON; F-2007-03885; 1995STATE014059; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798504-11",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "OFFICIAL-INFORMAL",
+      "date": "1995-01-26",
+      "pageCount": 5,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798504/C17798504.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE020161; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798505-12",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "RUSSIAN REQUEST ON Z-4 PLAN PRESENTATION",
+      "date": "1995-01-27",
+      "pageCount": 4,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798505/C17798505.pdf",
+      "reason": "STATE to ZAGREB; F-2007-03885; 1995STATE021440; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798509-13",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "NATO/BOSNIA: GUIDANCE FOR FEBRUARY 1 NAC ON THE CONTACT GROUP,           UNPROFOR WITHDRAWAL, ETC.",
+      "date": "1995-02-01",
+      "pageCount": 8,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798509/C17798509.pdf",
+      "reason": "STATE to USNATO; F-2007-03885; 1995STATE025835; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798520-14",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "CONTACT GROUP MEETING IN MUNICH (FEB 5)",
+      "date": "1995-02-09",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798520/C17798520.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE033432; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798524-15",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "OFFICIAL-INFORMAL",
+      "date": "1995-02-15",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798524/C17798524.pdf",
+      "reason": "STATE to MOSCOW; F-2007-03885; 1995STATE038899; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798526-16",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "NATO/BOSNIA: GUIDANCE FOR FEBRUARY 15 NAC",
+      "date": "1995-02-15",
+      "pageCount": 7,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798526/C17798526.pdf",
+      "reason": "STATE to USNATO; F-2007-03885; 1995STATE039029; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798528-17",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "POINTS FOR APPROACHING MILOSEVIC",
+      "date": "1995-02-15",
+      "pageCount": 2,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798528/C17798528.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE038894; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798530-18",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "GUIDANCE ON U.S. POLICY ON SERBIAN SANCTIONS RELIEF",
+      "date": "1995-02-16",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798530/C17798530.pdf",
+      "reason": "STATE to EURPO; F-2007-03885; 1995STATE040768; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798531-19",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "OFFICIAL - INFORMAL",
+      "date": "1995-02-16",
+      "pageCount": 3,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798531/C17798531.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE040481; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798532-20",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "ENLISTING BULGARIAN SUPPORT FOR CONTACT GROUP EFFORTS(9502714)",
+      "date": "1995-02-17",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798532/C17798532.pdf",
+      "reason": "STATE to SOFIA; F-2007-03885; 1995STATE041636; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17799047-21",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "LUNCHEON WITH MILOSEVIC--HE DIDN'T SAY NO",
+      "date": "1995-02-17",
+      "pageCount": 7,
+      "url": "https://foia.state.gov/DOCUMENTS/6-FY2014/F-2007-03885/DOC_0C17799047/C17799047.pdf",
+      "reason": "BELGRADE to STATE; F-2007-03885; 1995BELGRADE00823; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798539-22",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "GUIDANCE ON U.S. POLICY ON SERBIAN SANCTIONS RELIEF",
+      "date": "1995-02-22",
+      "pageCount": 11,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798539/C17798539.pdf",
+      "reason": "STATE to EURPO; F-2007-03885; 1995STATE044090; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798541-23",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "LETTER FROM KOZYREV TO CHRISTOPHER",
+      "date": "1995-02-23",
+      "pageCount": 5,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798541/C17798541.pdf",
+      "reason": "STATE to MOSCOW; F-2007-03885; 1995STATE044633; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798550-24",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "APPROACH TO BERISHA ON KOSOVO",
+      "date": "1995-02-25",
+      "pageCount": 7,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798550/C17798550.pdf",
+      "reason": "STATE to TIRANA; F-2007-03885; 1995STATE047429; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798554-25",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "TARNOFF AND MAMEDOV DISCUSS BOSNIA/CROATIA AND G-7/8 ISSUES",
+      "date": "1995-02-25",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798554/C17798554.pdf",
+      "reason": "STATE to MOSCOW; F-2007-03885; 1995STATE047292; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798556-26",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "BULGARIAN FONMIN PIRINSKI AFFIRMS COMMITMENT TO REFORMS; UNDERTAKES TO SUPPORT CONTACT GROUP PROPOSAL WITH MILOSEVIC",
+      "date": "1995-02-25",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798556/C17798556.pdf",
+      "reason": "STATE to SOFIA; F-2007-03885; 1995STATE047507; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17799054-27",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "OFFICIAL-INFORMAL",
+      "date": "1995-02-27",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/6-FY2014/F-2007-03885/DOC_0C17799054/C17799054.pdf",
+      "reason": "BELGRADE to STATE; F-2007-03885; 1995BELGRADE00926; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798563-28",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "U/S TARNOFF'S MEETING WITH FRENCH CJCS ADM LANXADE, FEB 23",
+      "date": "1995-02-28",
+      "pageCount": 10,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798563/C17798563.pdf",
+      "reason": "STATE to PARIS; F-2007-03885; 1995STATE049691; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798576-29",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "CROATIAN THINKING ON THE UNPROFOR MANDATE",
+      "date": "1995-03-03",
+      "pageCount": 6,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798576/C17798576.pdf",
+      "reason": "STATE to ZAGREB; F-2007-03885; 1995STATE052806; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "state-foia-c17798582-30",
+      "sourceFamily": "State FOIA Virtual Reading Room",
+      "priority": "High",
+      "title": "OFFICIAL-INFORMAL",
+      "date": "1995-03-09",
+      "pageCount": 2,
+      "url": "https://foia.state.gov/DOCUMENTS/3-FY2014/F-2007-03885ER1/DOC_0C17798582/C17798582.pdf",
+      "reason": "STATE to BELGRADE; F-2007-03885; 1995STATE058731; score 17.",
+      "nextAction": "Verify cable metadata, drafting/clearance, attachments, distribution, and excisions; then decide whether to promote to chronology."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-40572105",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "PRD-1, U.S. Policy Regarding the Situation in the Former Yugoslavia, January 22, 1993 [1]",
+      "date": "1993-01-22",
+      "pageCount": 34,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/5/5721/40572105/content/presidential-libraries/clinton/foia/2012/2012-0797-F/2012-0797-F-PDF/Box_1/42-t-7585709-20120797F-001-005-2016.pdf",
+      "reason": "NAID 40572105; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051324",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0008 DC Meeting on Former Yugoslavia, February 17, 1993",
+      "date": "1993-02-17",
+      "pageCount": 26,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-015-2016.pdf",
+      "reason": "NAID 41051324; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051325",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0009 DC Meeting on Former Yugoslavia, February 22, 1993",
+      "date": "1993-02-22",
+      "pageCount": 29,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-016-2016.pdf",
+      "reason": "NAID 41051325; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051326",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0011 DC Meeting on Bosnia-Hercegovina, February 26, 1993",
+      "date": "1993-02-26",
+      "pageCount": 2,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-017-2016.pdf",
+      "reason": "NAID 41051326; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051327",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0012 DC Meeting on Bosnia-Hercegovina, March 4, 1993",
+      "date": "1993-03-04",
+      "pageCount": 2,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-018-2016.pdf",
+      "reason": "NAID 41051327; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051328",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0013 DC Meeting on Bosnia-Hercegovina, March 9, 1993",
+      "date": "1993-03-09",
+      "pageCount": 2,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-019-2016.pdf",
+      "reason": "NAID 41051328; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051330",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0034 DC Meeting on Former Yugoslavia, May 27, 1993",
+      "date": "1993-05-27",
+      "pageCount": 17,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-021-2016.pdf",
+      "reason": "NAID 41051330; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051331",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0044 DC Meeting on Former Yugoslavia, July 26, 1993 [1]",
+      "date": "1993-07-26",
+      "pageCount": 41,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-022-2016.pdf",
+      "reason": "NAID 41051331; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051332",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0044 DC Meeting on Former Yugoslavia, July 26, 1993 [2]",
+      "date": "1993-07-26",
+      "pageCount": 46,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-023-2016.pdf",
+      "reason": "NAID 41051332; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051333",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0065 DC Meeting on Bosnia-Hercegovina Humanitarian Assistance, October 28, 1993",
+      "date": "1993-10-28",
+      "pageCount": 2,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-024-2016.pdf",
+      "reason": "NAID 41051333; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051334",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "DC0070 DC Meeting on Bosnia-Hercegovina Humanitarian Assistance, November 16, 1993",
+      "date": "1993-11-16",
+      "pageCount": 2,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-004-025-2016.pdf",
+      "reason": "NAID 41051334; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051421",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "PC0047 PC Meeting on Former Yugoslavia, December 10, 1993 [1]",
+      "date": "1993-12-10",
+      "pageCount": 46,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-008-023-2016.pdf",
+      "reason": "NAID 41051421; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051422",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "PC0047 PC Meeting on Former Yugoslavia, December 10, 1993 [2]",
+      "date": "1993-12-10",
+      "pageCount": 44,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-008-024-2016.pdf",
+      "reason": "NAID 41051422; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-41051423",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "PC0047 PC Meeting on Former Yugoslavia, December 10, 1993 [3]",
+      "date": "1993-12-10",
+      "pageCount": 24,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/7585709/42-t-7585709-20120798F-008-025-2016.pdf",
+      "reason": "NAID 41051423; Various Records Management Files (series NAID 7585709).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-233580651",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9300474 [Bosnia, Albright...]",
+      "date": "1993-12-31",
+      "pageCount": 9,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/26457815/Batch0002/26457815-20200096F-001-001-2021.pdf",
+      "reason": "NAID 233580651; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-441675715",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9304015 [Kosovo]",
+      "date": "1993-12-31",
+      "pageCount": 13,
+      "url": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/26457815/26457815-20080994F-Seg3-015-001-2024.pdf",
+      "reason": "NAID 441675715; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-233580653",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9307210 [Bosnia, Albright...]",
+      "date": "1993-12-31",
+      "pageCount": 17,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/26457815/Batch0002/26457815-20200096F-001-002-2021.pdf",
+      "reason": "NAID 233580653; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-441675716",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9308371 [Kosovo]",
+      "date": "1993-12-31",
+      "pageCount": 11,
+      "url": "https://s3.us-east-1.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/26457815/26457815-20080994F-Seg3-015-002-2024.pdf",
+      "reason": "NAID 441675716; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-233580655",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9309945 [Bosnia, Albright...]",
+      "date": "1993-12-31",
+      "pageCount": 12,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/26457815/Batch0002/26457815-20200096F-001-003-2021.pdf",
+      "reason": "NAID 233580655; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "source-crosscheck-nara-catalog-7388808-233580657",
+      "sourceFamily": "NARA Catalog collection 7388808",
+      "priority": "High",
+      "title": "9320023 [Bosnia, Albright...]",
+      "date": "1993-12-31",
+      "pageCount": 48,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/26457815/Batch0002/26457815-20200096F-001-004-2021.pdf",
+      "reason": "NAID 233580657; NSC (National Security Council) Records Management System (series NAID 26457815).",
+      "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "state-department-source-base",
+      "severity": "Critical",
+      "status": "Mitigated",
+      "area": "State Department",
+      "title": "State Department cable and memorandum base was thin",
+      "risk": "A FRUS volume cannot rely mainly on presidential records and public statements. State cables and memoranda are required to reconstruct diplomacy, instructions, reporting, and bureau-level decision traffic.",
+      "mitigation": "Added a reproducible State FOIA Virtual Reading Room sweep and candidate layer.",
+      "evidence": [
+        "The chronology itself has 12 State FOIA chronology records.",
+        "The new State FOIA sweep queried 19 packs, fetched 940 rows from 7916 total API hits, and selected 250 candidate documents.",
+        "State FOIA candidates add 2169 counted PDF pages for review."
+      ],
+      "nextActions": [
+        "Review the State FOIA candidates in date order and promote standalone, in-scope cables/memoranda into the chronology after source-note verification.",
+        "Run narrower follow-up searches by office/from-to line: BELGRADE, ZAGREB, SARAJEVO, USNATO, USUN, MOSCOW, EUR, S/S, S/P, and IO.",
+        "Separate State public-affairs products from operational cables and memoranda."
+      ],
+      "sourcePools": [
+        "state-foia"
+      ],
+      "candidateLeadIds": [
+        "state-foia-c17798434-1",
+        "state-foia-c17798437-2",
+        "state-foia-c17798458-3",
+        "state-foia-c17798463-4",
+        "state-foia-c17798482-5",
+        "state-foia-c17798484-6",
+        "state-foia-c17798492-7",
+        "state-foia-c17798497-8",
+        "state-foia-c17798499-9",
+        "state-foia-c17798500-10",
+        "state-foia-c17798504-11",
+        "state-foia-c17798505-12",
+        "state-foia-c17798509-13",
+        "state-foia-c17798520-14",
+        "state-foia-c17798524-15",
+        "state-foia-c17798526-16",
+        "state-foia-c17798528-17",
+        "state-foia-c17798530-18",
+        "state-foia-c17798531-19",
+        "state-foia-c17798532-20",
+        "state-foia-c17799047-21",
+        "state-foia-c17798539-22",
+        "state-foia-c17798541-23",
+        "state-foia-c17798550-24",
+        "state-foia-c17798554-25"
+      ]
+    },
+    {
+      "id": "folder-pdf-document-boundaries",
+      "severity": "Critical",
+      "status": "Mitigated",
+      "area": "Document Extraction",
+      "title": "Large research PDFs need document-level extraction",
+      "risk": "The research section contains thousands of pages of public PDFs. Until document boundaries are extracted, the compiler cannot rely on the site as a document-level chronology.",
+      "mitigation": "Added a generated extraction queue that prioritizes ranked targets with PDF hits but no selected file.",
+      "evidence": [
+        "462 Clinton Digital Library research leads total 16293 counted pages.",
+        "107 ranked research targets still have no selected file; 22 of them have PDF hits that need human review.",
+        "The extraction queue now starts with 20 high-priority research targets."
+      ],
+      "nextActions": [
+        "Extract POTUS Memos, POTUS Letters, Peace Plans, Rapid Reaction Force, PCDC, UNCRO, U.N. general, Pol Mil Plan, and Intelligence Sharing files first.",
+        "For each large packet, retain the first page as the annotation sheet and record exact source page spans.",
+        "Only promote extracted records after duplicate review against existing PC/DC and MDR packets."
+      ],
+      "sourcePools": [
+        "clinton-research-pdfs"
+      ],
+      "candidateLeadIds": [
+        "research-target-2",
+        "research-target-33",
+        "research-target-34",
+        "research-target-35",
+        "research-target-36",
+        "research-target-42",
+        "research-target-47",
+        "research-target-52",
+        "research-target-82",
+        "research-target-83",
+        "research-target-84",
+        "research-target-85",
+        "research-target-86",
+        "research-target-87",
+        "research-target-140",
+        "research-target-141",
+        "research-target-181",
+        "research-target-183",
+        "research-target-187",
+        "research-target-188"
+      ]
+    },
+    {
+      "id": "nara-potential-duplicates",
+      "severity": "High",
+      "status": "Mitigated",
+      "area": "NARA Catalog",
+      "title": "NARA source-family leads need duplicate and boundary review",
+      "risk": "NARA Catalog file units may be duplicate releases, folder packets, or standalone documents. Treating them as final chronology records without review would inflate the corpus.",
+      "mitigation": "Kept NARA source-family records in the research lead layer and added a review queue.",
+      "evidence": [
+        "1956 NARA Catalog/NARA Scout candidates were checked.",
+        "163 non-duplicate in-period PDF leads totaling 2087 pages were added.",
+        "135 candidates were skipped as already surfaced."
+      ],
+      "nextActions": [
+        "Review the 1993-1995 PC/DC, PRD/PDD, Kosovo, SECDEF, and Albright file-unit leads first.",
+        "Flag alternate releases of the same PC/DC summary before promotion.",
+        "Extract only the relevant document pages from packet PDFs."
+      ],
+      "sourcePools": [
+        "nara-crosscheck"
+      ],
+      "candidateLeadIds": [
+        "source-crosscheck-nara-catalog-7388808-40572105",
+        "source-crosscheck-nara-catalog-7388808-41051324",
+        "source-crosscheck-nara-catalog-7388808-41051325",
+        "source-crosscheck-nara-catalog-7388808-41051326",
+        "source-crosscheck-nara-catalog-7388808-41051327",
+        "source-crosscheck-nara-catalog-7388808-41051328",
+        "source-crosscheck-nara-catalog-7388808-41051330",
+        "source-crosscheck-nara-catalog-7388808-41051331",
+        "source-crosscheck-nara-catalog-7388808-41051332",
+        "source-crosscheck-nara-catalog-7388808-41051333",
+        "source-crosscheck-nara-catalog-7388808-41051334",
+        "source-crosscheck-nara-catalog-7388808-41051421",
+        "source-crosscheck-nara-catalog-7388808-41051422",
+        "source-crosscheck-nara-catalog-7388808-41051423",
+        "source-crosscheck-nara-catalog-7388808-233580651",
+        "source-crosscheck-nara-catalog-7388808-441675715",
+        "source-crosscheck-nara-catalog-7388808-233580653",
+        "source-crosscheck-nara-catalog-7388808-441675716",
+        "source-crosscheck-nara-catalog-7388808-233580655",
+        "source-crosscheck-nara-catalog-7388808-233580657",
+        "source-crosscheck-nara-catalog-7388808-233580659",
+        "source-crosscheck-nara-catalog-7388808-233580661",
+        "source-crosscheck-nara-catalog-7388808-233580663",
+        "source-crosscheck-nara-catalog-7388808-233580665",
+        "source-crosscheck-nara-catalog-7388808-233580667"
+      ]
+    },
+    {
+      "id": "defense-jcs-source-base",
+      "severity": "High",
+      "status": "Open",
+      "area": "Defense and Military Implementation",
+      "title": "Defense, JCS, and military implementation source base remains thin",
+      "risk": "Air strikes, IFOR, no-fly-zone enforcement, lift-and-strike, and contingency planning are central to the story but are still mostly visible through State/NARA fragments and PC/DC summaries.",
+      "mitigation": "Added the Defense/JCS source pool to the gap register and extraction queue criteria.",
+      "evidence": [
+        "17 chronology records clearly identify Defense/JCS as their source family.",
+        "52 candidate leads contain military implementation terms.",
+        "No dedicated Defense/JCS public release report exists yet in this repository."
+      ],
+      "nextActions": [
+        "Run NARA Catalog searches for SECDEF, JCS, OSD, Deliberate Force, IFOR, no-fly zone, OPLAN, and withdrawal planning.",
+        "Prioritize documents tied to PC/DC decision points and presidential calls.",
+        "Add a Defense/JCS report before claiming the military implementation gap is closed."
+      ],
+      "sourcePools": [
+        "defense-jcs"
+      ],
+      "candidateLeadIds": []
+    },
+    {
+      "id": "cia-btf-document-level",
+      "severity": "High",
+      "status": "Open",
+      "area": "Intelligence",
+      "title": "CIA/Balkan Task Force material is not document-level",
+      "risk": "Srebrenica, safe areas, war crimes, sanctions, and military assessments require intelligence-policy records. The site identifies the BTF collection, but it does not yet provide a document-level intelligence chronology.",
+      "mitigation": "Added CIA/BTF to the source-pool register and tied it to the document-boundary extraction workflow.",
+      "evidence": [
+        "5 source cards mention BTF/CIA/intelligence.",
+        "29 research leads contain BTF/CIA/intelligence terms.",
+        "47 chronology records touch war-crimes or atrocity themes, but most are public or NSC/PCDC records."
+      ],
+      "nextActions": [
+        "Harvest the BTF collection at item level and separate intelligence assessments, situation reports, and policy memos.",
+        "Cross-check CIA Reading Room and NARA Catalog for Balkan Task Force, Srebrenica, safe area, and war-crimes terms.",
+        "Keep intelligence products distinct from public statements and press guidance."
+      ],
+      "sourcePools": [
+        "cia-btf"
+      ],
+      "candidateLeadIds": []
+    },
+    {
+      "id": "regional-imbalance",
+      "severity": "Medium",
+      "status": "Mitigated",
+      "area": "Coverage Balance",
+      "title": "Bosnia dominance can hide Croatia, Kosovo, Macedonia, and Serbia/Montenegro gaps",
+      "risk": "Bosnia dominates the record set. The compiler needs explicit counters and queues so Croatia/Krajina, Kosovo, Macedonia, Serbia/Montenegro, and Eastern Slavonia are not missed.",
+      "mitigation": "Added topic counters to the gap register and State FOIA/NARA candidate layers with Kosovo, Macedonia, Krajina, and Croatia search packs.",
+      "evidence": [
+        "Chronology term counts: Bosnia 513, Croatia 123, Serbia/Montenegro 204, Kosovo 7, Macedonia 48.",
+        "State FOIA candidate term counts: Croatia 110, Kosovo 20, Macedonia 20, Serbia/Montenegro 207.",
+        "Public Papers contribute 446 records, so topic counts must distinguish public context from archival decision records."
+      ],
+      "nextActions": [
+        "Filter candidate leads by Croatia/Krajina, Kosovo, Macedonia, and Serbia/Montenegro before promoting any more Bosnia records.",
+        "Build separate candidate bundles for Z-4/Eastern Slavonia, Kosovo/Macedonia spillover, and Belgrade sanctions diplomacy.",
+        "Keep public-statement counts separate from archival-policy counts in compiler decisions."
+      ],
+      "sourcePools": [
+        "state-foia",
+        "nara-crosscheck",
+        "clinton-research-pdfs"
+      ],
+      "candidateLeadIds": [
+        "state-foia-c17798434-1",
+        "state-foia-c17798437-2",
+        "state-foia-c17798458-3",
+        "state-foia-c17798463-4",
+        "state-foia-c17798482-5",
+        "state-foia-c17798484-6",
+        "state-foia-c17798492-7",
+        "state-foia-c17798497-8",
+        "state-foia-c17798499-9",
+        "state-foia-c17798500-10",
+        "state-foia-c17798504-11",
+        "state-foia-c17798505-12",
+        "state-foia-c17798509-13",
+        "state-foia-c17798520-14",
+        "state-foia-c17798524-15",
+        "state-foia-c17798526-16",
+        "state-foia-c17798528-17",
+        "state-foia-c17798530-18",
+        "state-foia-c17798531-19",
+        "state-foia-c17798532-20",
+        "state-foia-c17799047-21",
+        "state-foia-c17798539-22",
+        "state-foia-c17798541-23",
+        "state-foia-c17798550-24",
+        "state-foia-c17798554-25",
+        "state-foia-c17798556-26",
+        "state-foia-c17799054-27",
+        "state-foia-c17798563-28",
+        "state-foia-c17798576-29",
+        "state-foia-c17798582-30"
+      ]
+    },
+    {
+      "id": "memcon-telcon-reconciliation",
+      "severity": "Medium",
+      "status": "Open",
+      "area": "Presidential Conversations",
+      "title": "Memcon/telcon completeness still depends on schedule and call-log reconciliation",
+      "risk": "The current memcon/telcon inventory is strong, but completeness requires checking schedule/call-log evidence for missing, withheld, or not-yet-digitized conversations.",
+      "mitigation": "The gap register keeps this as an explicit production task rather than implying the conversation layer is complete.",
+      "evidence": [
+        "32 memcon/telcon chronology records are present.",
+        "Conversation years: {\"1993\":{\"count\":6,\"pages\":24},\"1994\":{\"count\":3,\"pages\":14},\"1995\":{\"count\":23,\"pages\":128}}.",
+        "7 source cards point to schedule/call verification sources."
+      ],
+      "nextActions": [
+        "Reconcile each presidential call/meeting against daily schedules and foreign leader call lists.",
+        "Mark known no-document or withheld conversations in the chronology as source gaps, not absent events.",
+        "Record Washington time when available."
+      ],
+      "sourcePools": [
+        "clinton-research-pdfs"
+      ],
+      "candidateLeadIds": [
+        "mitterrand-1993-02-15",
+        "mitterrand-1993-03-17",
+        "gore-izetbegovic-1993-04-14",
+        "mitterrand-1993-04-20",
+        "mitterrand-1993-05-06",
+        "izetbegovic-1993-09-08",
+        "izetbegovic-1994-09-25",
+        "mitterrand-1994-11-23",
+        "izetbegovic-tudjman-1994-12-05",
+        "claes-1995-03-07",
+        "major-1995-04-04",
+        "chirac-1995-05-27",
+        "chirac-1995-06-14",
+        "major-1995-06-16",
+        "kohl-1995-07-13",
+        "chirac-1995-07-13",
+        "chirac-1995-07-19",
+        "major-1995-07-19",
+        "christopher-de-charette-1995-07-19",
+        "izetbegovic-1995-07-20"
+      ]
+    },
+    {
+      "id": "source-note-finalization",
+      "severity": "Medium",
+      "status": "Open",
+      "area": "Source Notes",
+      "title": "Draft source notes still need FRUS-level verification",
+      "risk": "The page uses FRUS-style source-note stems, but final FRUS treatment requires PDF-level verification of markings, attachments, marginalia, distribution, and excisions.",
+      "mitigation": "Every candidate layer now carries a source-note draft and verification warning; the gap register turns remaining verification into an explicit queue.",
+      "evidence": [
+        "549 chronology records have source-note drafts.",
+        "250 State FOIA candidates and 163 NARA source-family candidates have source-note drafts.",
+        "77 extracted chronology PDFs append source packet page 1 as an annotation sheet."
+      ],
+      "nextActions": [
+        "Open each promoted PDF and verify classification, handling controls, drafting, clearance, addressees, attachments, annotations, and excision accounting.",
+        "For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before source-note finalization.",
+        "Track attachments-not-printed and wholly withheld cross-references separately."
+      ],
+      "sourcePools": [
+        "state-foia",
+        "nara-crosscheck",
+        "clinton-research-pdfs"
+      ],
+      "candidateLeadIds": []
+    }
+  ]
+}

@@ -6,7 +6,10 @@ const REPORT_URLS = {
   talbott: "reports/strobe-talbott-manifest-search.json",
   researchCollections: "reports/research-collection-search.json",
   publicPapers: "reports/public-papers-balkans-search.json",
-  sourceCrosscheck: "reports/source-crosscheck-potential-documents.json"
+  sourceCrosscheck: "reports/source-crosscheck-potential-documents.json",
+  stateFoia: "reports/state-foia-balkans-search.json",
+  gapRegister: "reports/compiler-gap-register.json",
+  libraryVisit: "reports/clinton-library-visit-plan.json"
 };
 
 const state = {
@@ -16,7 +19,9 @@ const state = {
   conversationYear: "All",
   conversationSearch: "",
   researchRelationship: "All",
-  researchSearch: ""
+  researchSearch: "",
+  libraryPriority: "Critical + High",
+  librarySearch: ""
 };
 
 const nodes = {
@@ -28,6 +33,19 @@ const nodes = {
   auditRoot: document.querySelector("#audit-root"),
   coverageRoot: document.querySelector("#coverage-root"),
   counterpartRoot: document.querySelector("#counterpart-root"),
+  gapSummaryRoot: document.querySelector("#gap-summary-root"),
+  gapRoot: document.querySelector("#gap-root"),
+  sourcePoolRoot: document.querySelector("#source-pool-root"),
+  extractionQueueRoot: document.querySelector("#extraction-queue-root"),
+  librarySummaryRoot: document.querySelector("#library-summary-root"),
+  libraryPlanRoot: document.querySelector("#library-plan-root"),
+  libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
+  librarySearch: document.querySelector("#library-search"),
+  libraryPriorityFilters: document.querySelector("#library-priority-filters"),
+  libraryReset: document.querySelector("#library-reset"),
+  libraryExport: document.querySelector("#library-export"),
+  libraryTargetSummary: document.querySelector("#library-target-summary"),
+  libraryTargetsRoot: document.querySelector("#library-targets-root"),
   frusMethodRoot: document.querySelector("#frus-method-root"),
   readinessRoot: document.querySelector("#readiness-root"),
   sourceNoteRoot: document.querySelector("#source-note-root"),
@@ -390,6 +408,9 @@ function renderAudit(data, reports = {}) {
   const publicPaperRows = reports.publicPapers?.summary?.scannedGranules || 0;
   const sourceCrosscheckRecords = reports.sourceCrosscheck?.summary?.addedPotentialDocuments || 0;
   const sourceCrosscheckPages = reports.sourceCrosscheck?.summary?.countedPages || 0;
+  const stateFoiaRecords = reports.stateFoia?.summary?.selectedCandidateDocuments || 0;
+  const stateFoiaPages = reports.stateFoia?.summary?.countedPages || 0;
+  const openGaps = reports.gapRegister?.summary?.open || 0;
 
   nodes.auditRoot.replaceChildren(
     auditCard(
@@ -406,17 +427,17 @@ function renderAudit(data, reports = {}) {
     ),
     auditCard(
       "Discovery Sweeps",
-      `${formatNumber(naraRecords + talbottHits + publicPaperRecords + sourceCrosscheckRecords)} leads`,
-      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules; ${formatNumber(sourceCrosscheckRecords)} NARA source-family potential documents.`,
-      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages; source-family leads add ${formatNumber(sourceCrosscheckPages)} counted pages.`
+      `${formatNumber(naraRecords + talbottHits + publicPaperRecords + sourceCrosscheckRecords + stateFoiaRecords)} leads`,
+      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules; ${formatNumber(sourceCrosscheckRecords)} NARA source-family potential documents; ${formatNumber(stateFoiaRecords)} State FOIA candidates.`,
+      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages; NARA source-family leads add ${formatNumber(sourceCrosscheckPages)} pages; State FOIA candidates add ${formatNumber(stateFoiaPages)} pages.`
     ),
     auditCard(
-      "Highest Density",
-      denseYear ? denseYear.label : "N/A",
+      "Open Risks",
+      formatNumber(openGaps),
       denseYear
-        ? `${formatNumber(denseYear.value)} documents and ${formatNumber(denseYear.pages)} pages cluster in ${denseYear.label}.`
+        ? `${formatNumber(denseYear.value)} documents and ${formatNumber(denseYear.pages)} pages cluster in ${denseYear.label}; ${formatNumber(conversations.length)} records remain in the memcon/telcon subset.`
         : "No document dates available.",
-      `${formatNumber(conversations.length)} records remain in the memcon/telcon subset.`
+      "See the gap register for source-family and extraction risks."
     )
   );
 
@@ -475,6 +496,361 @@ function renderCounterparts(conversations) {
   }
 
   nodes.counterpartRoot.replaceChildren(heading, list);
+}
+
+function renderCompilerGaps(report = {}) {
+  if (!report) {
+    nodes.gapSummaryRoot.replaceChildren(
+      auditCard("Gap Register", "Pending", "The compiler gap register has not loaded.", "")
+    );
+    return;
+  }
+
+  const summary = report.summary || {};
+  const metrics = report.metrics || {};
+  nodes.gapSummaryRoot.replaceChildren(
+    auditCard(
+      "Tracked Gaps",
+      formatNumber(summary.gaps),
+      `${formatNumber(summary.mitigated)} mitigated by a reproducible layer or queue; ${formatNumber(summary.open)} remain open.`,
+      `${formatNumber(summary.critical)} critical, ${formatNumber(summary.high)} high, ${formatNumber(summary.medium)} medium.`
+    ),
+    auditCard(
+      "Candidate Leads",
+      formatNumber(summary.candidateLeads),
+      `${formatNumber(metrics.candidateLeadPages)} counted pages now sit outside the chronology for compiler review.`,
+      "Candidate leads are not selection recommendations."
+    ),
+    auditCard(
+      "Extraction Queue",
+      formatNumber(summary.extractionQueue),
+      "Prioritized follow-up items combine research-plan PDFs, State FOIA candidates, and NARA source-family leads.",
+      "Promotion to chronology requires duplicate and source-note review."
+    ),
+    auditCard(
+      "Archival Core",
+      formatNumber(metrics.archivalChronologyRecords),
+      `${formatNumber(metrics.publicStatementRecords)} Public Papers records are separated from the declassified archival chronology.`,
+      "This prevents public statements from masking source-family gaps."
+    )
+  );
+
+  nodes.gapRoot.replaceChildren();
+  for (const gap of report.gaps || []) {
+    const card = document.createElement("article");
+    card.className = "gap-card";
+
+    const top = document.createElement("div");
+    top.className = "source-top";
+    const heading = document.createElement("h3");
+    heading.textContent = gap.title;
+    const badges = document.createElement("div");
+    badges.className = "conversation-badges";
+    const severity = document.createElement("span");
+    severity.className = `priority ${priorityClass(gap.severity)}`;
+    severity.textContent = gap.severity;
+    const status = document.createElement("span");
+    status.className = `source-type ${gap.status === "Open" ? "packet" : "direct"}`;
+    status.textContent = gap.status;
+    badges.append(severity, status);
+    top.append(heading, badges);
+
+    const meta = document.createElement("p");
+    meta.className = "source-meta";
+    meta.textContent = gap.area;
+
+    const risk = document.createElement("p");
+    risk.textContent = gap.risk;
+
+    const mitigation = document.createElement("p");
+    mitigation.className = "audit-meta";
+    mitigation.textContent = `Mitigation: ${gap.mitigation}`;
+
+    const details = document.createElement("details");
+    details.className = "source-note-details";
+    const summaryNode = document.createElement("summary");
+    summaryNode.textContent = "Evidence and next actions";
+    const evidence = document.createElement("ul");
+    for (const item of gap.evidence || []) {
+      const li = document.createElement("li");
+      li.textContent = item;
+      evidence.append(li);
+    }
+    const actions = document.createElement("ol");
+    for (const item of gap.nextActions || []) {
+      const li = document.createElement("li");
+      li.textContent = item;
+      actions.append(li);
+    }
+    details.append(summaryNode, evidence, actions);
+
+    card.append(top, meta, risk, mitigation, details);
+    nodes.gapRoot.append(card);
+  }
+
+  renderSourcePools(report);
+  renderExtractionQueue(report);
+}
+
+function renderSourcePools(report = {}) {
+  const heading = document.createElement("h3");
+  heading.textContent = "Source Pools";
+  const list = document.createElement("div");
+  list.className = "research-tier-list";
+
+  for (const pool of report.sourcePools || []) {
+    const row = document.createElement("div");
+    row.className = "research-tier-row";
+    const label = document.createElement("strong");
+    label.textContent = pool.label;
+    const detail = document.createElement("span");
+    detail.textContent = `${pool.status}: ${formatNumber(pool.currentLeads)} leads; ${pool.countedPages ? `${formatNumber(pool.countedPages)} counted pages. ` : ""}${pool.remainingRisk}`;
+    row.append(label, detail);
+    list.append(row);
+  }
+
+  nodes.sourcePoolRoot.replaceChildren(heading, list);
+}
+
+function renderExtractionQueue(report = {}) {
+  const heading = document.createElement("h3");
+  heading.textContent = "Promotion Queue";
+  const list = document.createElement("div");
+  list.className = "research-supplemental-list";
+
+  for (const item of (report.extractionQueue || []).slice(0, 18)) {
+    const row = document.createElement("div");
+    row.className = "research-supplemental-row";
+    const title = document.createElement("strong");
+    title.textContent = item.title;
+    const detail = document.createElement("span");
+    detail.textContent = `${item.priority} | ${item.sourceFamily}${item.pageCount ? ` | ${pageLabel(item.pageCount)}` : ""}. ${item.nextAction}`;
+    row.append(title, detail);
+    list.append(row);
+  }
+
+  nodes.extractionQueueRoot.replaceChildren(heading, list);
+}
+
+function libraryTargets(report = {}) {
+  return [...(report.pullTargets || []), ...(report.followOnTargets || [])];
+}
+
+function libraryPriorityMatch(target) {
+  if (state.libraryPriority === "All") return true;
+  if (state.libraryPriority === "Critical + High") return ["Critical", "High"].includes(target.priority);
+  return target.priority === state.libraryPriority;
+}
+
+function libraryTextMatch(target) {
+  if (!state.librarySearch) return true;
+  const haystack = [
+    target.priority,
+    target.chronologyScope,
+    target.oaBox,
+    target.folderTitle,
+    target.staffOrOffice,
+    target.findingAidPart,
+    target.findingAidPdf,
+    target.findingAidPage,
+    target.category,
+    target.reason,
+    target.onsiteAction,
+    target.sourceNoteLead
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return haystack.includes(state.librarySearch.toLowerCase());
+}
+
+function filteredLibraryTargets(report = {}) {
+  return libraryTargets(report)
+    .filter(libraryPriorityMatch)
+    .filter(libraryTextMatch)
+    .sort((a, b) => {
+      const priorityOrder = { Critical: 0, High: 1, Medium: 2, "Follow-on": 3 };
+      return (
+        (priorityOrder[a.priority] ?? 9) - (priorityOrder[b.priority] ?? 9) ||
+        b.score - a.score ||
+        (a.dateGuess || "9999").localeCompare(b.dateGuess || "9999") ||
+        String(a.oaBox).localeCompare(String(b.oaBox)) ||
+        a.folderTitle.localeCompare(b.folderTitle)
+      );
+    });
+}
+
+function renderLibrarySummary(report = {}) {
+  const summary = report.summary || {};
+  nodes.librarySummaryRoot.replaceChildren(
+    auditCard(
+      "Finding Aid Pages",
+      formatNumber(summary.findingAidPages),
+      `${formatNumber(summary.findingAidCount)} Clinton Library PDF finding aids processed from 2013-0185-M.`,
+      `${formatNumber(summary.rawBalkansLineHits)} raw Balkans line hits kept for scoring.`
+    ),
+    auditCard(
+      "Priority Pulls",
+      formatNumber(summary.priorityPullTargets),
+      `${formatNumber(summary.critical)} critical, ${formatNumber(summary.high)} high, and ${formatNumber(summary.medium)} medium folder targets.`,
+      `${formatNumber(summary.callSlipBatches)} OA/ID call-slip batches.`
+    ),
+    auditCard(
+      "Decision Process",
+      formatNumber((summary.soderbergPcDcTargets || 0) + (summary.recordsManagementPcDcTargets || 0)),
+      `${formatNumber(summary.soderbergPcDcTargets)} Soderberg PC/DC note targets and ${formatNumber(summary.recordsManagementPcDcTargets)} Records Management PC/DC targets.`,
+      "Use these to test the committee chronology before broader subject pulls."
+    ),
+    auditCard(
+      "Conversation Leads",
+      formatNumber(summary.presidentialConversationFolderTargets),
+      "POTUS memcon/telcon and foreign-leader-call folders remain separated from the selected chronology.",
+      "Verify duplicates, restrictions, and source-note metadata onsite."
+    ),
+    auditCard(
+      "Mission Boundary",
+      "Onsite",
+      "The plan ranks folder pulls to save Clinton Library time; it does not select documents for the FRUS volume.",
+      report.sourceNoteStandard || "Folder-level provenance requires onsite verification."
+    )
+  );
+}
+
+function renderLibraryVisitPlan(report = {}) {
+  const heading = document.createElement("h3");
+  heading.textContent = "First-Day Pull Sequence";
+  const list = document.createElement("div");
+  list.className = "research-tier-list";
+
+  for (const item of report.visitPlan || []) {
+    const row = document.createElement("div");
+    row.className = "research-tier-row";
+    const label = document.createElement("strong");
+    label.textContent = `${item.rank}. ${item.timeBlock}: ${item.objective}`;
+    const detail = document.createElement("span");
+    detail.textContent = `OA/ID ${item.callSlips.join(", ")} | ${formatNumber(item.targetCount)} priority targets. ${item.action}`;
+    row.append(label, detail);
+    list.append(row);
+  }
+
+  nodes.libraryPlanRoot.replaceChildren(heading, list);
+}
+
+function renderLibraryCallSlips(report = {}) {
+  const heading = document.createElement("h3");
+  heading.textContent = "Top Call-Slip Batches";
+  const list = document.createElement("div");
+  list.className = "research-supplemental-list";
+
+  for (const batch of (report.callSlipBatches || []).slice(0, 18)) {
+    const row = document.createElement("div");
+    row.className = "research-supplemental-row";
+    const label = document.createElement("strong");
+    label.textContent = `${batch.rank}. OA/ID ${batch.oaBox} | ${batch.staffOrOffice || "folder list"}`;
+    const detail = document.createElement("span");
+    const samples = (batch.sampleFolders || []).slice(0, 3).join(" | ");
+    detail.textContent = `${formatNumber(batch.targetCount)} targets: ${formatNumber(batch.priorities?.Critical)} critical, ${formatNumber(batch.priorities?.High)} high, ${formatNumber(batch.priorities?.Medium)} medium. ${samples}`;
+    row.append(label, detail);
+    list.append(row);
+  }
+
+  nodes.libraryCallslipsRoot.replaceChildren(heading, list);
+}
+
+function renderLibraryPriorityFilters(report = {}) {
+  const priorities = ["Critical + High", "Critical", "High", "Medium", "Follow-on", "All"].filter(
+    (priority) => priority === "Critical + High" || priority === "All" || libraryTargets(report).some((target) => target.priority === priority)
+  );
+
+  renderButtonGroup(nodes.libraryPriorityFilters, priorities, state.libraryPriority, (value) => {
+    state.libraryPriority = value;
+    renderLibraryPriorityFilters(report);
+    renderLibraryTargets(report);
+  });
+}
+
+function renderLibraryTargets(report = {}) {
+  const targets = filteredLibraryTargets(report);
+  const totalTargets = libraryTargets(report).length;
+  nodes.libraryTargetSummary.textContent = `Showing ${formatNumber(targets.length)} of ${formatNumber(
+    totalTargets
+  )} Clinton Library finding-aid targets.`;
+  nodes.libraryTargetsRoot.replaceChildren();
+
+  if (!targets.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 6;
+    cell.className = "empty-state";
+    cell.textContent = "No Clinton Library pull targets match the current filters.";
+    row.append(cell);
+    nodes.libraryTargetsRoot.append(row);
+    return;
+  }
+
+  for (const target of targets) {
+    const row = document.createElement("tr");
+    const values = [
+      `${target.priority}${target.chronologyScope ? ` / ${target.chronologyScope}` : ""}`,
+      target.oaBox,
+      target.folderTitle,
+      target.staffOrOffice || "folder list",
+      `${target.findingAidPart}, p. ${target.findingAidPage}`,
+      target.onsiteAction
+    ];
+
+    for (const value of values) {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      row.append(cell);
+    }
+    nodes.libraryTargetsRoot.append(row);
+  }
+}
+
+function exportLibraryTargets(report = {}) {
+  const fields = [
+    "priority",
+    "chronologyScope",
+    "score",
+    "oaBox",
+    "folderTitle",
+    "staffOrOffice",
+    "category",
+    "findingAidPart",
+    "findingAidPdf",
+    "findingAidPage",
+    "findingAidLine",
+    "dateGuess",
+    "reason",
+    "onsiteAction",
+    "sourceNoteLead"
+  ];
+  const rows = filteredLibraryTargets(report).map((target) => fields.map((field) => target[field] || ""));
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  const blob = new Blob([`${csv}\n`], { type: "text/csv;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "balkans-93-95-clinton-library-pull-targets.csv";
+  document.body.append(link);
+  link.click();
+  URL.revokeObjectURL(link.href);
+  link.remove();
+}
+
+function renderClintonLibraryVisit(report) {
+  if (!report) {
+    nodes.librarySummaryRoot.replaceChildren(
+      auditCard("Clinton Library", "Pending", "The onsite finding-aid visit plan has not loaded.", "")
+    );
+    return;
+  }
+
+  renderLibrarySummary(report);
+  renderLibraryVisitPlan(report);
+  renderLibraryCallSlips(report);
+  renderLibraryPriorityFilters(report);
+  renderLibraryTargets(report);
 }
 
 function methodCard(title, status, detail, measure) {
@@ -690,7 +1066,7 @@ function renderSourceNotePanel(data) {
 }
 
 function researchFiles(report = {}) {
-  return [...(report.digitizedFiles || []), ...(report.sourceCrosscheckFiles || [])];
+  return [...(report.digitizedFiles || []), ...(report.sourceCrosscheckFiles || []), ...(report.stateFoiaFiles || [])];
 }
 
 function relationshipLabel(value = "") {
@@ -700,7 +1076,8 @@ function relationshipLabel(value = "") {
     "regional-topic-match": "Regional lead",
     "topic-match": "Topic lead",
     "nara-catalog-7388808": "NARA 7388808 cross-check",
-    "nara-scout-europe-scopes": "NARA Scout cross-check"
+    "nara-scout-europe-scopes": "NARA Scout cross-check",
+    "state-foia-virtual-reading-room": "State FOIA candidate"
   };
   return labels[value] || value || "Unclassified";
 }
@@ -720,6 +1097,12 @@ function researchFileTextMatch(file) {
     file.sourceNoteDraft,
     file.itemUrl,
     file.pdfUrl,
+    file.identifier,
+    file.sourceFamily,
+    file.from,
+    file.to,
+    file.messageNumber,
+    (file.matchedQueries || []).join(" "),
     targets
   ]
     .join(" ")
@@ -756,6 +1139,7 @@ function researchTargetsWithFiles(report = {}) {
 function renderResearchSummary(report = {}) {
   const summary = report.summary || {};
   const sourceCrosscheck = report.sourceCrosscheckSummary || {};
+  const stateFoia = report.stateFoiaSummary || {};
   const exactFiles = researchFiles(report).filter((file) =>
     (file.targets || []).some((target) => target.relationship === "exact-folder-title")
   ).length;
@@ -765,6 +1149,8 @@ function renderResearchSummary(report = {}) {
   const basePages = summary.countedPages || (report.digitizedFiles || []).reduce((sum, file) => sum + (file.pageCount || 0), 0);
   const crosscheckFiles = sourceCrosscheck.addedPotentialDocuments || 0;
   const crosscheckPages = sourceCrosscheck.countedPages || 0;
+  const stateFoiaFiles = stateFoia.selectedCandidateDocuments || 0;
+  const stateFoiaPages = stateFoia.countedPages || 0;
 
   nodes.researchSummaryRoot.replaceChildren(
     auditCard(
@@ -776,19 +1162,19 @@ function renderResearchSummary(report = {}) {
     auditCard(
       "Digitized Files",
       formatNumber(totalFiles),
-      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads plus ${formatNumber(crosscheckFiles)} NARA source-family potential documents.`,
+      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads, ${formatNumber(crosscheckFiles)} NARA source-family potential documents, and ${formatNumber(stateFoiaFiles)} State FOIA candidates.`,
       `${formatNumber(exactFiles)} files have folder-title matches.`
     ),
     auditCard(
       "Page Accounting",
       formatNumber(totalPages),
-      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} pages counted from the NARA source-family cross-check.`,
+      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} from NARA source-family leads; ${formatNumber(stateFoiaPages)} from State FOIA candidates.`,
       "Large folder PDFs and source-family leads are kept as research leads, not converted into chronology entries here."
     ),
     auditCard(
       "Source Check",
-      formatNumber(crosscheckFiles),
-      "Checked the companion-page NARA Catalog collection 7388808 and NARA Scout scopes 7386505, 7386739, and 7388773 for in-period Balkans PDF leads.",
+      formatNumber(crosscheckFiles + stateFoiaFiles),
+      "Checked companion-page NARA source families plus the Department of State FOIA Virtual Reading Room for in-period Balkans PDF leads.",
       "Potential documents only; this does not recommend inclusion or volume structure."
     ),
     auditCard(
@@ -1057,13 +1443,16 @@ function renderResearchCollections(report) {
   renderResearchTargets(report);
 }
 
-function combineResearchReports(researchCollections, sourceCrosscheck) {
+function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia) {
   if (!researchCollections) return null;
   return {
     ...researchCollections,
     sourceCrosscheck,
     sourceCrosscheckSummary: sourceCrosscheck?.summary || null,
-    sourceCrosscheckFiles: sourceCrosscheck?.potentialDocuments || []
+    sourceCrosscheckFiles: sourceCrosscheck?.potentialDocuments || [],
+    stateFoia,
+    stateFoiaSummary: stateFoia?.summary || null,
+    stateFoiaFiles: stateFoia?.stateFoiaDocuments || []
   };
 }
 
@@ -1475,6 +1864,27 @@ function bindResearchSearch(report) {
   });
 }
 
+function bindLibrarySearch(report) {
+  if (!report) return;
+
+  nodes.librarySearch.addEventListener("input", (event) => {
+    state.librarySearch = event.target.value.trim();
+    renderLibraryTargets(report);
+  });
+
+  nodes.libraryReset.addEventListener("click", () => {
+    state.libraryPriority = "Critical + High";
+    state.librarySearch = "";
+    nodes.librarySearch.value = "";
+    renderLibraryPriorityFilters(report);
+    renderLibraryTargets(report);
+  });
+
+  nodes.libraryExport.addEventListener("click", () => {
+    exportLibraryTargets(report);
+  });
+}
+
 async function loadOptionalJson(url) {
   try {
     const response = await fetch(url);
@@ -1486,17 +1896,42 @@ async function loadOptionalJson(url) {
 }
 
 async function loadReports() {
-  const [documents, conversations, nara, talbott, researchCollections, publicPapers, sourceCrosscheck] = await Promise.all([
+  const [
+    documents,
+    conversations,
+    nara,
+    talbott,
+    researchCollections,
+    publicPapers,
+    sourceCrosscheck,
+    stateFoia,
+    gapRegister,
+    libraryVisit
+  ] = await Promise.all([
     loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
     loadOptionalJson(REPORT_URLS.nara),
     loadOptionalJson(REPORT_URLS.talbott),
     loadOptionalJson(REPORT_URLS.researchCollections),
     loadOptionalJson(REPORT_URLS.publicPapers),
-    loadOptionalJson(REPORT_URLS.sourceCrosscheck)
+    loadOptionalJson(REPORT_URLS.sourceCrosscheck),
+    loadOptionalJson(REPORT_URLS.stateFoia),
+    loadOptionalJson(REPORT_URLS.gapRegister),
+    loadOptionalJson(REPORT_URLS.libraryVisit)
   ]);
 
-  return { documents, conversations, nara, talbott, researchCollections, publicPapers, sourceCrosscheck };
+  return {
+    documents,
+    conversations,
+    nara,
+    talbott,
+    researchCollections,
+    publicPapers,
+    sourceCrosscheck,
+    stateFoia,
+    gapRegister,
+    libraryVisit
+  };
 }
 
 async function loadData() {
@@ -1511,9 +1946,11 @@ async function loadData() {
 async function init() {
   try {
     const [data, reports] = await Promise.all([loadData(), loadReports()]);
-    const researchReport = combineResearchReports(reports.researchCollections, reports.sourceCrosscheck);
+    const researchReport = combineResearchReports(reports.researchCollections, reports.sourceCrosscheck, reports.stateFoia);
     renderStats(data);
     renderAudit(data, reports);
+    renderCompilerGaps(reports.gapRegister);
+    renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data);
     renderResearchCollections(researchReport);
     renderConversationFilters(data);
@@ -1523,6 +1960,7 @@ async function init() {
     renderQueue(data);
     bindSearch(data);
     bindResearchSearch(researchReport);
+    bindLibrarySearch(reports.libraryVisit);
   } catch (error) {
     nodes.sourcesRoot.innerHTML = '<p class="empty-state">Compiler data could not be loaded.</p>';
   }

@@ -32,6 +32,9 @@ published "About the Series" guidance for FRUS production:
   2013-0185-M research plan and the online Clinton Digital Library sweep,
   while keeping collection discovery distinct from document-selection or
   volume-structure judgments.
+- A Clinton Library onsite section parses the four 2013-0185-M finding aid
+  PDFs into call-slip batches, a first-day pull order, and folder-level
+  provenance leads for maximizing research time at the Library.
 - The document cards draft citation stems in the same order used by
   FRUS source notes in Volume XXXI: repository/custody, collection or control
   number, item/NAID locator, PDF page range, then original classification,
@@ -64,6 +67,16 @@ published "About the Series" guidance for FRUS production:
   source families used by companion Clinton Europe compiler pages, de-duplicates
   against the current chronology and research sweep, and counts pages for
   in-period Balkans PDF leads.
+- `scripts/search-state-foia-balkans.js` uses the public State FOIA search API
+  behind the Virtual Reading Room UI, runs targeted 1993-1995 Balkans searches,
+  de-duplicates direct PDFs, selects high-confidence cable/memorandum leads, and
+  counts pages.
+- `scripts/build-compiler-gap-register.js` turns the source-family audit into a
+  generated compiler-risk register, source-pool list, and extraction/promotion
+  queue.
+- `scripts/build-clinton-library-visit-plan.js` extracts text from the four
+  local 2013-0185-M finding aid PDFs, counts finding-aid pages, scores Balkans
+  folder leads, and writes an onsite Clinton Library pull plan.
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
@@ -82,6 +95,16 @@ published "About the Series" guidance for FRUS production:
 - `reports/source-crosscheck-potential-documents.json` records potential
   digitized document leads from NARA Catalog collection `7388808` and NARA Scout
   scopes `7386505`, `7386739`, and `7388773`.
+- `reports/state-foia-balkans-search.json` records the State FOIA sweep,
+  selected candidate cable/memorandum leads, metadata, direct PDFs, draft
+  source-note stems, and counted pages.
+- `reports/compiler-gap-register.json` and
+  `reports/compiler-gap-register.md` record the gap register, source pools, and
+  extraction queue.
+- `reports/clinton-library-visit-plan.json` and
+  `reports/clinton-library-visit-plan.md` record the 2013-0185-M finding-aid
+  pull plan, OA/ID call-slip batches, onsite actions, and folder-level
+  FRUS-style provenance leads.
 - `documents/` contains extracted document-level PDFs from packet sources.
 
 ## Source Focus
@@ -111,6 +134,9 @@ The first-pass source matrix supports completeness checks across:
 - Strobe Talbott FOIA case `F-2017-13804`, including `12` reviewed standalone
   direct FOIA records on Bosnia, IFOR, Russia, Dayton implementation,
   Spain/UNPROFOR, Turkey/Kosovo, and NATO-Bosnia linkages.
+- Department of State FOIA Virtual Reading Room search results for 1993-1995
+  Balkans terms, now surfaced as candidate cable/memorandum leads pending
+  source-note and duplicate review.
 - Clinton Public Papers GovInfo packages `PPP-1993-book1` through
   `PPP-1995-book2`, adding public statements, exchanges, interviews, messages,
   letters, radio addresses, and news conferences that mention Bosnia,
@@ -121,15 +147,21 @@ The first-pass source matrix supports completeness checks across:
   research plan, including `2008-0994-F`, `2013-0687-F`, PC/DC files,
   Bosnia monthly files, Holl early-period files, Kerrick subject files,
   Balkan Crisis notebooks, and the 72-page `Telcons and Memcons` folder.
+- Clinton Library 2013-0185-M finding aid parts 1-4, now parsed as an onsite
+  pull plan prioritizing Soderberg PC/DC notes, Records Management PC/DC
+  folders, Lake/Berger/Holbrooke policy files, Soderberg subject files, and
+  humanitarian/war-crimes source families.
 - Bosnian Declassified Records and the DCI Interagency Balkan Task Force trail.
 - Alexander Vershbow's Bosnia files, `2013-0687-F`.
 - PC/DC, memcon/telcon, Croatia, Srebrenica, and Dayton-track MDR releases.
+- Defense/JCS and CIA/Balkan Task Force source pools, kept explicit as open
+  compiler-risk gaps until document-level searches and extractions are complete.
 - Paris signing and daily schedule contextual sources.
 
 ## Evidence Audit
 
 The page currently surfaces `549` chronological declassified and public records
-and `2,251` counted document pages, including `31` memcon/telcon records and
+and `2,251` counted document pages, including `32` memcon/telcon-form records and
 `446` Clinton Public Papers records.
 Every displayed card has a PDF link, source-page metadata, and provenance
 labeling that distinguishes direct PDFs from locally extracted packet documents.
@@ -146,12 +178,29 @@ attachments not printed, and excisions.
 The research-collections section adds `200` ranked folder targets and `9`
 supplemental collection leads from the research plan. The online sweep found
 `462` selected declassified/digitized PDF leads across `93` ranked targets and
-`1` supplemental target, with `16,293` counted PDF pages.
+`1` supplemental target, with `16,293` counted PDF pages. With NARA source-family
+and State FOIA candidate layers included, the section now exposes `875` file
+leads totaling `20,549` counted pages outside the chronology.
+
+The Clinton Library finding-aid pass processed `4` local 2013-0185-M PDFs
+totaling `1,290` finding-aid pages. It found `2,692` raw Balkans line hits and
+generates `1,648` priority folder pull targets across `309` OA/ID call-slip
+batches, including `43` Soderberg Bosnia PC/DC note targets, `249` Records
+Management PC/DC targets, and `17` presidential conversation folder targets.
 
 The source-family cross-check searched `1,956` NARA Catalog/NARA Scout candidate
 records from the companion-page source families, skipped `135` records already
 surfaced here, and adds `163` in-period potential digitized document leads
 totaling `2,087` counted PDF pages to the research-collections section.
+
+The State FOIA sweep queried `19` targeted 1993-1995 Balkans search packs,
+fetched `940` rows from `7,916` total State FOIA API hits, identified `266`
+unique Balkans PDF rows, and adds `250` high-confidence State cable/memorandum
+candidate leads totaling `2,169` counted pages.
+
+The compiler gap register tracks `8` risks: `4` mitigated by new source layers
+or queues and `4` still open. The generated extraction/promotion queue currently
+contains `70` follow-up items.
 
 The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,
 found `405` Balkans-related full-text hits, reviewed `20` in-volume hits, and

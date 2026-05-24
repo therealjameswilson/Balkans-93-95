@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260522-source-crosscheck" />
+    <link rel="stylesheet" href="styles.css?v=20260524-library-plan" />
   </head>
   <body>
     <header class="site-header">
@@ -19,6 +19,8 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#audit">Audit</a>
+        <a href="#compiler-gaps">Gaps</a>
+        <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
         <a href="#conversations">Documents</a>
@@ -103,6 +105,80 @@
         <div class="evidence-layout">
           <div id="coverage-root" class="coverage-panel" aria-live="polite"></div>
           <div id="counterpart-root" class="counterpart-panel" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section gap-section" id="compiler-gaps" aria-labelledby="compiler-gaps-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Compiler Risk</p>
+            <h2 id="compiler-gaps-title">Gap Register and Mitigation Queue</h2>
+          </div>
+          <p class="section-note">
+            This register assumes compiler risk and tracks what has been
+            mitigated, what remains open, and which candidate leads should be
+            reviewed next. It is a production control, not a recommendation
+            about inclusion.
+          </p>
+        </div>
+        <div id="gap-summary-root" class="audit-grid gap-summary-grid" aria-live="polite"></div>
+        <div id="gap-root" class="gap-grid" aria-live="polite"></div>
+        <div class="gap-followup-layout">
+          <div id="source-pool-root" class="research-panel" aria-live="polite"></div>
+          <div id="extraction-queue-root" class="research-panel" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section research-section" id="clinton-library" aria-labelledby="clinton-library-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Onsite Research</p>
+            <h2 id="clinton-library-title">Clinton Library Finding Aid Pull Plan</h2>
+          </div>
+          <p class="section-note">
+            This section turns the four 2013-0185-M finding aid PDFs into a
+            practical onsite plan: call-slip batches, first-day pull order,
+            and folder-level provenance leads. It is a travel and discovery
+            aid, not a recommendation about which documents to include.
+          </p>
+        </div>
+        <div id="library-summary-root" class="audit-grid library-summary-grid" aria-live="polite"></div>
+        <div class="library-overview-layout">
+          <div id="library-plan-root" class="research-panel" aria-live="polite"></div>
+          <div id="library-callslips-root" class="research-panel" aria-live="polite"></div>
+        </div>
+        <div class="conversation-tools research-tools library-tools" aria-label="Clinton Library pull target filters">
+          <label class="search-field">
+            <span>Search pull targets</span>
+            <input
+              id="library-search"
+              type="search"
+              autocomplete="off"
+              placeholder="OA box, folder, staff, reason"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Priority</p>
+            <div id="library-priority-filters" class="filter-row compact" aria-label="Library pull priority filters"></div>
+          </div>
+          <button id="library-reset" class="reset-button" type="button">Reset</button>
+          <button id="library-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="library-target-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap library-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Priority</th>
+                <th scope="col">OA/ID</th>
+                <th scope="col">Folder Target</th>
+                <th scope="col">Staff / Office</th>
+                <th scope="col">Finding Aid</th>
+                <th scope="col">Onsite Action</th>
+              </tr>
+            </thead>
+            <tbody id="library-targets-root"></tbody>
+          </table>
         </div>
       </section>
 
@@ -313,7 +389,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260522-source-crosscheck"></script>
-    <script src="app.js?v=20260522-source-crosscheck"></script>
+    <script src="data/compiler-map.js?v=20260524-library-plan"></script>
+    <script src="app.js?v=20260524-library-plan"></script>
   </body>
 </html>
