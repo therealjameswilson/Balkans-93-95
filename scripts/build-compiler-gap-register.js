@@ -87,7 +87,7 @@ function markdown(report) {
     `- ${report.summary.gaps} compiler-risk gaps tracked.`,
     `- ${report.summary.mitigated} mitigated by a new reproducible source layer or queue.`,
     `- ${report.summary.open} still open after this pass.`,
-    `- ${report.summary.candidateLeads} candidate leads now sit outside the chronology for compiler review.`,
+    `- ${report.summary.candidateLeads} candidate/source leads now available for compiler review.`,
     ""
   ];
   for (const gap of report.gaps) {
@@ -113,6 +113,10 @@ function main() {
   const stateFoia = readJson("reports/state-foia-balkans-search.json");
   const publicPapers = readJson("reports/public-papers-balkans-search.json");
   const talbott = readJson("reports/strobe-talbott-manifest-search.json");
+  const btf = readJson("reports/cia-btf-document-search.json");
+  const defense = readJson("reports/defense-jcs-source-search.json");
+  const conversationReconciliation = readJson("reports/presidential-conversation-reconciliation.json");
+  const sourceNoteAudit = readJson("reports/source-note-verification-audit.json");
   const documents = data.documents || [];
   const archivalDocs = documents.filter((record) => record.documentScope !== "Public statement");
   const conversations = documents.filter((record) => ["Memcon", "Telcon"].includes(record.kind));
@@ -122,7 +126,9 @@ function main() {
   const stateDocs = stateFoia.stateFoiaDocuments || [];
   const crossDocs = sourceCrosscheck.potentialDocuments || [];
   const researchFiles = research.digitizedFiles || [];
-  const candidateLeadCount = researchFiles.length + crossDocs.length + stateDocs.length;
+  const btfDocs = btf.documents || [];
+  const defenseDocs = defense.documents || [];
+  const candidateLeadCount = researchFiles.length + crossDocs.length + stateDocs.length + btfDocs.length;
 
   const extractionQueue = [
     ...unselectedWithPdfHits.slice(0, 20).map((target) => ({
@@ -154,6 +160,28 @@ function main() {
       url: record.pdfUrl,
       reason: `${record.identifier}; ${record.sourceSeries}.`,
       nextAction: "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    })),
+    ...btfDocs.slice(0, 20).map((record) => ({
+      id: record.id,
+      sourceFamily: "CIA/Balkan Task Force document harvest",
+      priority: "High",
+      title: record.title,
+      date: record.sortDate,
+      pageCount: record.pageCount,
+      url: record.pdfUrl,
+      reason: `${record.identifier}; document-level Clinton Library BTF record.`,
+      nextAction: "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    })),
+    ...defenseDocs.slice(0, 20).map((record) => ({
+      id: record.id,
+      sourceFamily: "Defense/JCS source-base search",
+      priority: "High",
+      title: record.title,
+      date: record.sortDate,
+      pageCount: record.pageCount,
+      url: record.pdfUrl,
+      reason: `${record.sourceFamilyLabel || record.sourceFamily || record.repository}; military-implementation hit.`,
+      nextAction: "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
     }))
   ];
 
@@ -189,21 +217,37 @@ function main() {
       id: "cia-btf",
       label: "CIA / Balkan Task Force and Clinton Library BTF collection",
       url: "https://clinton.presidentiallibraries.us/collections/show/37",
-      status: "Open",
-      currentLeads: countMatches(researchFiles, /Balkan Task Force|BTF|CIA|intelligence/i),
-      countedPages: researchFiles
-        .filter((item) => /Balkan Task Force|BTF|CIA|intelligence/i.test(textOf(item)))
-        .reduce((sum, item) => sum + (item.pageCount || 0), 0),
-      remainingRisk: "Intelligence products are still folder-level leads and need document-level extraction."
+      status: "Mitigated by document-level harvest",
+      currentLeads: btf.summary.inPeriodDocuments,
+      countedPages: btf.summary.countedPages,
+      remainingRisk: "Document-level records are now surfaced; final classification, attachment, excision, and duplicate review remains a compiler task."
     },
     {
       id: "defense-jcs",
       label: "Defense, JCS, OSD, IFOR, air-power, and contingency planning",
       url: "https://catalog.archives.gov/",
-      status: "Open",
-      currentLeads: countMatches([...researchFiles, ...crossDocs, ...stateDocs], /JCS|Joint Chiefs|OSD|Defense|IFOR|air strike|no-fly|withdrawal|Oplan|military/i),
+      status: "Mitigated by dedicated source-base report",
+      currentLeads: defense.summary.selectedCandidateDocuments,
+      countedPages: defense.summary.countedPages,
+      remainingRisk: "Dedicated candidate base exists; final duplicate review and promotion remain separate compiler decisions."
+    },
+    {
+      id: "conversation-reconciliation",
+      label: "Presidential memcon/telcon schedule and call-log reconciliation",
+      url: "reports/presidential-conversation-reconciliation.json",
+      status: "Mitigated by reconciliation matrix",
+      currentLeads: conversationReconciliation.summary.conversationRecords,
+      countedPages: conversationReconciliation.summary.pages,
+      remainingRisk: `${conversationReconciliation.summary.residualOnsiteChecks} schedule/call folder leads remain for onsite absence/withheld-record checks.`
+    },
+    {
+      id: "source-note-audit",
+      label: "FRUS-style source-note verification audit",
+      url: "reports/source-note-verification-audit.json",
+      status: "Mitigated by audit queue",
+      currentLeads: sourceNoteAudit.summary.sourceNotesPresent,
       countedPages: 0,
-      remainingRisk: "Military implementation is present as scattered State/NARA leads, not as a verified Defense/JCS source base."
+      remainingRisk: `${sourceNoteAudit.summary.classificationOrHandlingNotTranscribed} chronology/conversation records still need final classification or handling transcription.`
     }
   ];
 
@@ -280,48 +324,48 @@ function main() {
     makeGap({
       id: "defense-jcs-source-base",
       severity: "High",
-      status: "Open",
+      status: "Mitigated",
       area: "Defense and Military Implementation",
       title: "Defense, JCS, and military implementation source base remains thin",
       risk:
         "Air strikes, IFOR, no-fly-zone enforcement, lift-and-strike, and contingency planning are central to the story but are still mostly visible through State/NARA fragments and PC/DC summaries.",
       mitigation:
-        "Added the Defense/JCS source pool to the gap register and extraction queue criteria.",
+        "Added a dedicated Defense/JCS source-base report that aggregates military-implementation leads across BTF, State FOIA, NARA, and Clinton Library research files.",
       evidence: [
         `${documents.filter((record) => /Defense|JCS|Joint Chiefs|OSD/i.test(textOf(record))).length} chronology records clearly identify Defense/JCS as their source family.`,
-        `${countMatches([...researchFiles, ...crossDocs, ...stateDocs], /IFOR|air strike|no-fly|withdrawal|Oplan|military|SECDEF|JCS|Joint Chiefs|Defense/i)} candidate leads contain military implementation terms.`,
-        "No dedicated Defense/JCS public release report exists yet in this repository."
+        `${defense.summary.selectedCandidateDocuments} dedicated Defense/JCS and military-implementation leads now total ${defense.summary.countedPages} counted pages.`,
+        `${defense.summary.btfDocuments} of those leads come from the document-level CIA/BTF harvest; ${defense.summary.stateFoiaDocuments} come from State FOIA.`
       ],
       nextActions: [
-        "Run NARA Catalog searches for SECDEF, JCS, OSD, Deliberate Force, IFOR, no-fly zone, OPLAN, and withdrawal planning.",
-        "Prioritize documents tied to PC/DC decision points and presidential calls.",
-        "Add a Defense/JCS report before claiming the military implementation gap is closed."
+        "Use reports/defense-jcs-source-search.json as the military-implementation review queue.",
+        "Prioritize documents tied to PC/DC decision points, presidential calls, Deliberate Force, IFOR, UNPROFOR withdrawal, and no-fly-zone enforcement.",
+        "Promote only standalone, non-duplicate records after source-note and attachment review."
       ],
       sourcePools: ["defense-jcs"],
-      candidateLeadIds: []
+      candidateLeadIds: defenseDocs.slice(0, 30).map((item) => item.id)
     }),
     makeGap({
       id: "cia-btf-document-level",
       severity: "High",
-      status: "Open",
+      status: "Mitigated",
       area: "Intelligence",
       title: "CIA/Balkan Task Force material is not document-level",
       risk:
         "Srebrenica, safe areas, war crimes, sanctions, and military assessments require intelligence-policy records. The site identifies the BTF collection, but it does not yet provide a document-level intelligence chronology.",
       mitigation:
-        "Added CIA/BTF to the source-pool register and tied it to the document-boundary extraction workflow.",
+        "Harvested the Clinton Library Bosnian Declassified Records collection at item level and promoted in-period standalone records into the chronology.",
       evidence: [
         `${data.sources.filter((source) => /BTF|CIA|Intelligence/i.test(textOf(source))).length} source cards mention BTF/CIA/intelligence.`,
-        `${sourcePools.find((pool) => pool.id === "cia-btf").currentLeads} research leads contain BTF/CIA/intelligence terms.`,
-        `${countMatches(documents, /Srebrenica|war crimes|atrocit|tribunal|ICTY|genocide/i)} chronology records touch war-crimes or atrocity themes, but most are public or NSC/PCDC records.`
+        `${btf.summary.inPeriodDocuments} document-level CIA/BTF records for 1993-1995 now add ${btf.summary.countedPages} counted pages.`,
+        `${btf.summary.defenseMilitaryDocuments} BTF records contain defense/military terms; ${btf.summary.warCrimesAtrocityDocuments} contain war-crimes or atrocity terms.`
       ],
       nextActions: [
-        "Harvest the BTF collection at item level and separate intelligence assessments, situation reports, and policy memos.",
-        "Cross-check CIA Reading Room and NARA Catalog for Balkan Task Force, Srebrenica, safe area, and war-crimes terms.",
+        "Review the cia-btf-* chronology records for duplicate releases against existing PC/DC and MDR packets.",
+        "Transcribe classification, attachment, and excision data from each BTF PDF before final source-note treatment.",
         "Keep intelligence products distinct from public statements and press guidance."
       ],
       sourcePools: ["cia-btf"],
-      candidateLeadIds: []
+      candidateLeadIds: btfDocs.slice(0, 30).map((item) => item.id)
     }),
     makeGap({
       id: "regional-imbalance",
@@ -349,48 +393,48 @@ function main() {
     makeGap({
       id: "memcon-telcon-reconciliation",
       severity: "Medium",
-      status: "Open",
+      status: "Mitigated",
       area: "Presidential Conversations",
       title: "Memcon/telcon completeness still depends on schedule and call-log reconciliation",
       risk:
         "The current memcon/telcon inventory is strong, but completeness requires checking schedule/call-log evidence for missing, withheld, or not-yet-digitized conversations.",
       mitigation:
-        "The gap register keeps this as an explicit production task rather than implying the conversation layer is complete.",
+        "Added a presidential conversation reconciliation matrix that links known memcons/telcons to schedule and call-log folder leads.",
       evidence: [
         `${conversations.length} memcon/telcon chronology records are present.`,
         `Conversation years: ${JSON.stringify(countBy(conversations, (item) => (item.sortDate || "").slice(0, 4)))}.`,
-        `${data.sources.filter((source) => /schedule|meeting|telephone/i.test(textOf(source))).length} source cards point to schedule/call verification sources.`
+        `${conversationReconciliation.summary.scheduleAndCallFolderLeads} schedule/call folder leads are now surfaced for absence/withheld-record checks.`
       ],
       nextActions: [
-        "Reconcile each presidential call/meeting against daily schedules and foreign leader call lists.",
-        "Mark known no-document or withheld conversations in the chronology as source gaps, not absent events.",
+        "Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.",
+        "Mark known no-document or withheld conversations as source gaps, not absent events.",
         "Record Washington time when available."
       ],
       sourcePools: ["clinton-research-pdfs"],
-      candidateLeadIds: conversations.map((item) => item.id).slice(0, 20)
+      candidateLeadIds: conversationReconciliation.reconciliation.map((item) => item.id).slice(0, 30)
     }),
     makeGap({
       id: "source-note-finalization",
       severity: "Medium",
-      status: "Open",
+      status: "Mitigated",
       area: "Source Notes",
       title: "Draft source notes still need FRUS-level verification",
       risk:
         "The page uses FRUS-style source-note stems, but final FRUS treatment requires PDF-level verification of markings, attachments, marginalia, distribution, and excisions.",
       mitigation:
-        "Every candidate layer now carries a source-note draft and verification warning; the gap register turns remaining verification into an explicit queue.",
+        "Added a source-note verification audit that checks FRUS-style source-note patterns, page accounting, and remaining transcription queues.",
       evidence: [
-        `${documents.filter((record) => record.sourceNote).length} chronology records have source-note drafts.`,
-        `${stateDocs.length} State FOIA candidates and ${crossDocs.length} NARA source-family candidates have source-note drafts.`,
-        `${documents.filter((record) => record.annotationSheet).length} extracted chronology PDFs append source packet page 1 as an annotation sheet.`
+        `${sourceNoteAudit.summary.sourceNotesPresent} chronology/conversation records have source notes.`,
+        `${sourceNoteAudit.summary.sourceNotePatternFailures} source notes contain raw URLs or old verification prose.`,
+        `${sourceNoteAudit.summary.classificationOrHandlingNotTranscribed} records remain in the classification/handling transcription queue.`
       ],
       nextActions: [
-        "Open each promoted PDF and verify classification, handling controls, drafting, clearance, addressees, attachments, annotations, and excision accounting.",
-        "For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before source-note finalization.",
+        "Use reports/source-note-verification-audit.json as the source-note finalization queue.",
+        "For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before final source-note clearance.",
         "Track attachments-not-printed and wholly withheld cross-references separately."
       ],
-      sourcePools: ["state-foia", "nara-crosscheck", "clinton-research-pdfs"],
-      candidateLeadIds: []
+      sourcePools: ["state-foia", "nara-crosscheck", "clinton-research-pdfs", "source-note-audit"],
+      candidateLeadIds: sourceNoteAudit.unresolvedRecords.classificationOrHandlingNotTranscribed.slice(0, 30)
     })
   ];
 
@@ -405,7 +449,7 @@ function main() {
       publicStatementRecords: documents.length - archivalDocs.length,
       candidateLeadCount,
       candidateLeadPages:
-        research.summary.countedPages + sourceCrosscheck.summary.countedPages + stateFoia.summary.countedPages,
+        research.summary.countedPages + sourceCrosscheck.summary.countedPages + stateFoia.summary.countedPages + btf.summary.countedPages,
       byYear: countBy(documents, (item) => (item.sortDate || "").slice(0, 4)),
       byScope: countBy(documents, (item) => item.documentScope),
       byRepository: countBy(documents, (item) => item.repository || item.institution || item.collection)

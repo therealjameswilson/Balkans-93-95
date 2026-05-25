@@ -1,31 +1,35 @@
 {
-  "generatedAt": "2026-05-23T13:51:03.686Z",
+  "generatedAt": "2026-05-25T23:40:05.742Z",
   "missionBoundary": "This register identifies compiler-risk gaps and mitigation queues. It does not recommend document inclusion and does not impose a FRUS volume structure.",
   "metrics": {
-    "chronologyRecords": 549,
-    "chronologyPages": 2251,
-    "archivalChronologyRecords": 103,
+    "chronologyRecords": 870,
+    "chronologyPages": 3939,
+    "archivalChronologyRecords": 424,
     "publicStatementRecords": 446,
-    "candidateLeadCount": 875,
-    "candidateLeadPages": 20549,
+    "candidateLeadCount": 1196,
+    "candidateLeadPages": 22237,
     "byYear": {
       "1993": {
-        "count": 152,
-        "pages": 633
+        "count": 190,
+        "pages": 915
       },
       "1994": {
-        "count": 169,
-        "pages": 671
+        "count": 225,
+        "pages": 918
       },
       "1995": {
-        "count": 228,
-        "pages": 947
+        "count": 455,
+        "pages": 2106
       }
     },
     "byScope": {
       "Conversation": {
         "count": 31,
         "pages": 161
+      },
+      "Intelligence / policy document": {
+        "count": 321,
+        "pages": 1688
       },
       "Policy document": {
         "count": 71,
@@ -54,21 +58,21 @@
         "pages": 17
       },
       "William J. Clinton Presidential Library, Clinton Digital Library": {
-        "count": 89,
-        "pages": 300
+        "count": 410,
+        "pages": 1988
       }
     }
   },
   "summary": {
     "gaps": 8,
-    "mitigated": 4,
-    "open": 4,
+    "mitigated": 8,
+    "open": 0,
     "critical": 2,
     "high": 3,
     "medium": 3,
-    "sourcePools": 5,
-    "extractionQueue": 70,
-    "candidateLeads": 875
+    "sourcePools": 7,
+    "extractionQueue": 110,
+    "candidateLeads": 1196
   },
   "sourcePools": [
     {
@@ -102,19 +106,37 @@
       "id": "cia-btf",
       "label": "CIA / Balkan Task Force and Clinton Library BTF collection",
       "url": "https://clinton.presidentiallibraries.us/collections/show/37",
-      "status": "Open",
-      "currentLeads": 29,
-      "countedPages": 171,
-      "remainingRisk": "Intelligence products are still folder-level leads and need document-level extraction."
+      "status": "Mitigated by document-level harvest",
+      "currentLeads": 321,
+      "countedPages": 1688,
+      "remainingRisk": "Document-level records are now surfaced; final classification, attachment, excision, and duplicate review remains a compiler task."
     },
     {
       "id": "defense-jcs",
       "label": "Defense, JCS, OSD, IFOR, air-power, and contingency planning",
       "url": "https://catalog.archives.gov/",
-      "status": "Open",
-      "currentLeads": 34,
+      "status": "Mitigated by dedicated source-base report",
+      "currentLeads": 163,
+      "countedPages": 1664,
+      "remainingRisk": "Dedicated candidate base exists; final duplicate review and promotion remain separate compiler decisions."
+    },
+    {
+      "id": "conversation-reconciliation",
+      "label": "Presidential memcon/telcon schedule and call-log reconciliation",
+      "url": "reports/presidential-conversation-reconciliation.json",
+      "status": "Mitigated by reconciliation matrix",
+      "currentLeads": 32,
+      "countedPages": 166,
+      "remainingRisk": "65 schedule/call folder leads remain for onsite absence/withheld-record checks."
+    },
+    {
+      "id": "source-note-audit",
+      "label": "FRUS-style source-note verification audit",
+      "url": "reports/source-note-verification-audit.json",
+      "status": "Mitigated by audit queue",
+      "currentLeads": 901,
       "countedPages": 0,
-      "remainingRisk": "Military implementation is present as scattered State/NARA leads, not as a verified Defense/JCS source base."
+      "remainingRisk": "351 chronology/conversation records still need final classification or handling transcription."
     }
   ],
   "extractionQueue": [
@@ -827,6 +849,446 @@
       "url": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/26457815/Batch0002/26457815-20200096F-001-004-2021.pdf",
       "reason": "NAID 233580657; NSC (National Security Council) Records Management System (series NAID 26457815).",
       "nextAction": "Check whether this is a duplicate release, folder-level packet, or standalone document; then extract document boundaries if needed."
+    },
+    {
+      "id": "cia-btf-12298",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-05, Office of European Analysis Report, Albanian Armed Forces Unprepared for Confrontation with Serbia",
+      "date": "1993-01-05",
+      "pageCount": 9,
+      "url": "https://clinton.presidentiallibraries.us/files/original/abf52be1df9f20e85ffa9367aff7d919.pdf",
+      "reason": "BTF item 12298; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12299",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-22, Presidential Review Directive 1 re U.S. Policy Regarding the Situation in the Former Yugoslavia",
+      "date": "1993-01-22",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/48b6fc3032a5e651731e0ffb83262abe.pdf",
+      "reason": "BTF item 12299; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12300",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-25, NIC Memo re Serbia and the Russian Problem",
+      "date": "1993-01-25",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/9bffcedeb8c14eabc6c930656a11b34b.pdf",
+      "reason": "BTF item 12300; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12302",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-27B, Office of Slavic and Eurasian Analysis re Moscow's Yugoslav Policy Reaching Critical Juncture",
+      "date": "1993-01-27",
+      "pageCount": 6,
+      "url": "https://clinton.presidentiallibraries.us/files/original/dc13d0bf79a5a22a0c12fe0f718fb97c.pdf",
+      "reason": "BTF item 12302; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12301",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-27A, Office of European Analysis Report re Greater Serbia A Balkan Troublemaker for the 1990s",
+      "date": "1993-01-27",
+      "pageCount": 13,
+      "url": "https://clinton.presidentiallibraries.us/files/original/fc6d09db29e7e77a0cd52c8cdcdb5059.pdf",
+      "reason": "BTF item 12301; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12303",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-01-29 BTF Memorandum re Principals Committee Meeting on the Former Yugoslavia January 28, 1993",
+      "date": "1993-01-29",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/4866549669c06656622d8efb644173d5.pdf",
+      "reason": "BTF item 12303; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12304",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-01, BTF Paper re Yugoslavia Policy Options Likely Responses",
+      "date": "1993-02-01",
+      "pageCount": 23,
+      "url": "https://clinton.presidentiallibraries.us/files/original/794e67323977d9e55001265596f85740.pdf",
+      "reason": "BTF item 12304; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12305",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-02, BTF Paper re Serbia Coping With Sanctions",
+      "date": "1993-02-02",
+      "pageCount": 11,
+      "url": "https://clinton.presidentiallibraries.us/files/original/c85f6da660ff4b4b9c6763f8e1fe8019.pdf",
+      "reason": "BTF item 12305; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12306",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-04, BTF Memorandum re Principals Committee Meeting on Yugoslavia February 3, 1993",
+      "date": "1993-02-04",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/830c19f55003497d351b0af9835b8055.pdf",
+      "reason": "BTF item 12306; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12307",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-05, Minutes of the Principals Committee Meeting on Bosnia, February 5, 1993",
+      "date": "1993-02-05",
+      "pageCount": 8,
+      "url": "https://clinton.presidentiallibraries.us/files/original/2a46a8c88bcffe1862e461b20ceeca6e.pdf",
+      "reason": "BTF item 12307; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12308",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-08, Office of European Analysis Memo re Deputies Committee Meeting on the Former",
+      "date": "1993-02-08",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/475d16bab1c5031289718c8cfb51470e.pdf",
+      "reason": "BTF item 12308; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12309",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-10, Office of European Analysis Memo re Deputies Meeting on Bosnia Policy",
+      "date": "1993-02-10",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/3f182b4ff5a35d52927b2ffe8905e01d.pdf",
+      "reason": "BTF item 12309; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12312",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-19C, Anthony Lake to President Clinton re Presidential Decision on Humanitarian Air Drops for Bosnia",
+      "date": "1993-02-19",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/897835c92840b43a1f32f9cc99e19d23.pdf",
+      "reason": "BTF item 12312; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12310",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-19A, BTF Memorandum re Principals Committee Meeting on Airdrops in",
+      "date": "1993-02-19",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/bc76105f3dff0ad5ddeb85cca3fe6ba9.pdf",
+      "reason": "BTF item 12310; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12311",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-19B, BTF Memorandum re Reactions to Secretary Christopher's February 10 Announcement of U.S. Policy toward the Former Yugoslavia",
+      "date": "1993-02-19",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/58088298769024c52f1132905af08c95.pdf",
+      "reason": "BTF item 12311; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12313",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-02-22, BTF Memorandum re Deputies Committee Meeting on the Former",
+      "date": "1993-02-22",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/8656aa58d5f18f87dc9ee42197d69152.pdf",
+      "reason": "BTF item 12313; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12314",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-03-01, BTF Memorandum re Deputies Committee Video Conference on the Former",
+      "date": "1993-03-01",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/82d5df7ca3b5ed1bb12617ce166300d1.pdf",
+      "reason": "BTF item 12314; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12315",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-03-09, BTF Memorandum re Deputies Committee Video Conference on Bosnia March 4, 1993",
+      "date": "1993-03-09",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/6353d3eada7be68a9a72f4a2033af82d.pdf",
+      "reason": "BTF item 12315; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12316",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-03-10, Office of European Analysis Memo re March 9 Deputies Meeting on Bosnia",
+      "date": "1993-03-10",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/2e41f023b59f421979de9de2155e59d3.pdf",
+      "reason": "BTF item 12316; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "cia-btf-12317",
+      "sourceFamily": "CIA/Balkan Task Force document harvest",
+      "priority": "High",
+      "title": "1993-03-23A, BTF Memorandum re Evaluation of Revised OSD Paper on Lifting Siege of Sarajevo",
+      "date": "1993-03-23",
+      "pageCount": 10,
+      "url": "https://clinton.presidentiallibraries.us/files/original/5fd9caeff9ab75a6447e3f01141efb9f.pdf",
+      "reason": "BTF item 12317; document-level Clinton Library BTF record.",
+      "nextAction": "Review source-note markings, duplicate status against PC/DC packets, attachments, and excisions before final compiler treatment."
+    },
+    {
+      "id": "defense-jcs-023-research-file-430",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1993-03-23A, BTF Memorandum re Evaluation of Revised OSD Paper on Lifting Siege of Sarajevo",
+      "date": "",
+      "pageCount": 10,
+      "url": "https://clinton.presidentiallibraries.us/files/original/5fd9caeff9ab75a6447e3f01141efb9f.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-002-research-file-037",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1993-03-23E, BTF Memorandum re Likely Consequences of Partially Lifting the Arms Embargo in Conjunction with Air Strikes",
+      "date": "",
+      "pageCount": 1,
+      "url": "https://clinton.presidentiallibraries.us/files/original/88df5925bd876ed45fd325e5916f5801.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-015-research-file-418",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1994-01-26, BTF Memorandum re Some Implications of an UNPROFOR Withdrawal from Bosnia",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/be7efb87b28d811e353fa0df7f4bb204.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-003-research-file-039",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1994-04, NIE Report re Ending U.S. Compliance with the Bosnian Arms Embargo Military and Political Implications",
+      "date": "",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/ea61b7c0f86ea58f32cabfeebbcecf30.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-024-research-file-432",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1994-05-19B, BTF Memorandum re Military Status Report for Sarajevo, Gorazde, and Tuzla",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/92e27792e830805de9d070b5f940db92.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-004-research-file-041",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1994-11-01, NIC Report re A Multilateral Lifting of the Arms Embargo on Bosnia Political and Military Implications",
+      "date": "",
+      "pageCount": 5,
+      "url": "https://clinton.presidentiallibraries.us/files/original/8939f72b76567f59598bfcc85b27dc9f.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-016-research-file-419",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1994-12-01B, NIC Report re Prospects for UNPROFOR Withdrawal from Bosnia",
+      "date": "",
+      "pageCount": 6,
+      "url": "https://clinton.presidentiallibraries.us/files/original/0ae7f6064a7107f0826a526e902dff10.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-005-research-file-069",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-03-06, Anthony Lake to President Clinton re U.S. Participation in Step Two of NATO",
+      "date": "",
+      "pageCount": 4,
+      "url": "https://clinton.presidentiallibraries.us/files/original/b255cc4c157b65d8d5b54db12c854dd9.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-014-research-file-416",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-03-08B, National Intelligence Officer for Europe Memorandum re Macedonia and UNPROFOR",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/214c66861bc5b4b65bf1a9461c5bc1e2.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-017-research-file-420",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-04-13B, Joint Chiefs of Staff Paper re UNPROFOR Information Paper",
+      "date": "",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/c5ebf8f4536cfcfef4734b0626c94d58.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-018-research-file-421",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-04-27C, BTF Report re UNPROFOR Watchful Waiting",
+      "date": "",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/842eb3192a9c552f627b3bf0de520c9c.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-019-research-file-422",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-04-27D, BTF Memorandum re UNPROFOR the Withdrawal Option",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/8603dfa2add0b1dd5ad629c61de6c49f.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-025-research-file-434",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-05-01C, Joint Chiefs of Staff Memorandum re Military Options for Reopening Sarajevo Airport",
+      "date": "",
+      "pageCount": 7,
+      "url": "https://clinton.presidentiallibraries.us/files/original/44d245028fd54da7f007154d11d622b6.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-006-research-file-070",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-05-12A, Office of the Secretary of Defense Joint Chiefs of Staff Memorandum re Proposed U.S. Policy Principals During NATO-led UNPROFOR Withdrawal",
+      "date": "",
+      "pageCount": 2,
+      "url": "https://clinton.presidentiallibraries.us/files/original/7ab0b1389eec79882746e99524717e97.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-020-research-file-423",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-05-16, Department of State Paper re Bosnia Formulating a Post-UNPROFOR Withdrawal Strategy",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/931e918d4ab6103fb0f35c1cd2d2b3eb.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-021-research-file-424",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-05-29, Anthony Lake to President Clinton re Policy for Bosnia Use of U.S. Ground Forces to Support NATO Assistance for Redeployment of UNPROFOR within Bosnia",
+      "date": "",
+      "pageCount": 3,
+      "url": "https://clinton.presidentiallibraries.us/files/original/3d1b74e2c43be1dc43785bc509c4fe83.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-022-research-file-425",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "1995-11-16B, OSD Paper re Implementing a Peace Agreement in Eastern Slavonia",
+      "date": "",
+      "pageCount": 6,
+      "url": "https://clinton.presidentiallibraries.us/files/original/b8bcfd09a02d5a657c75de85ab0f21d5.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-012-research-file-387",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "Bosnia - Air Strikes [1]",
+      "date": "",
+      "pageCount": 59,
+      "url": "https://clinton.presidentiallibraries.us/files/original/e845071d137bc1c9aa65b06c0331240b.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-013-research-file-388",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "Bosnia - Air Strikes [2]",
+      "date": "",
+      "pageCount": 37,
+      "url": "https://clinton.presidentiallibraries.us/files/original/b7f66d1c21bc259f97b5b49d806da3f9.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "defense-jcs-001-research-file-245",
+      "sourceFamily": "Defense/JCS source-base search",
+      "priority": "High",
+      "title": "Bosnia - NATO",
+      "date": "",
+      "pageCount": 27,
+      "url": "https://clinton.presidentiallibraries.us/files/original/e02bbe93693a210ac783b2ab4a91137b.pdf",
+      "reason": "undefined; military-implementation hit.",
+      "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
     }
   ],
   "gaps": [
@@ -975,48 +1437,110 @@
     {
       "id": "defense-jcs-source-base",
       "severity": "High",
-      "status": "Open",
+      "status": "Mitigated",
       "area": "Defense and Military Implementation",
       "title": "Defense, JCS, and military implementation source base remains thin",
       "risk": "Air strikes, IFOR, no-fly-zone enforcement, lift-and-strike, and contingency planning are central to the story but are still mostly visible through State/NARA fragments and PC/DC summaries.",
-      "mitigation": "Added the Defense/JCS source pool to the gap register and extraction queue criteria.",
+      "mitigation": "Added a dedicated Defense/JCS source-base report that aggregates military-implementation leads across BTF, State FOIA, NARA, and Clinton Library research files.",
       "evidence": [
-        "17 chronology records clearly identify Defense/JCS as their source family.",
-        "52 candidate leads contain military implementation terms.",
-        "No dedicated Defense/JCS public release report exists yet in this repository."
+        "53 chronology records clearly identify Defense/JCS as their source family.",
+        "163 dedicated Defense/JCS and military-implementation leads now total 1664 counted pages.",
+        "24 of those leads come from the document-level CIA/BTF harvest; 98 come from State FOIA."
       ],
       "nextActions": [
-        "Run NARA Catalog searches for SECDEF, JCS, OSD, Deliberate Force, IFOR, no-fly zone, OPLAN, and withdrawal planning.",
-        "Prioritize documents tied to PC/DC decision points and presidential calls.",
-        "Add a Defense/JCS report before claiming the military implementation gap is closed."
+        "Use reports/defense-jcs-source-search.json as the military-implementation review queue.",
+        "Prioritize documents tied to PC/DC decision points, presidential calls, Deliberate Force, IFOR, UNPROFOR withdrawal, and no-fly-zone enforcement.",
+        "Promote only standalone, non-duplicate records after source-note and attachment review."
       ],
       "sourcePools": [
         "defense-jcs"
       ],
-      "candidateLeadIds": []
+      "candidateLeadIds": [
+        "defense-jcs-023-research-file-430",
+        "defense-jcs-002-research-file-037",
+        "defense-jcs-015-research-file-418",
+        "defense-jcs-003-research-file-039",
+        "defense-jcs-024-research-file-432",
+        "defense-jcs-004-research-file-041",
+        "defense-jcs-016-research-file-419",
+        "defense-jcs-005-research-file-069",
+        "defense-jcs-014-research-file-416",
+        "defense-jcs-017-research-file-420",
+        "defense-jcs-018-research-file-421",
+        "defense-jcs-019-research-file-422",
+        "defense-jcs-025-research-file-434",
+        "defense-jcs-006-research-file-070",
+        "defense-jcs-020-research-file-423",
+        "defense-jcs-021-research-file-424",
+        "defense-jcs-022-research-file-425",
+        "defense-jcs-012-research-file-387",
+        "defense-jcs-013-research-file-388",
+        "defense-jcs-001-research-file-245",
+        "defense-jcs-007-research-file-246",
+        "defense-jcs-008-research-file-247",
+        "defense-jcs-009-research-file-248",
+        "defense-jcs-010-research-file-249",
+        "defense-jcs-011-research-file-250",
+        "defense-jcs-140-cia-btf-12298",
+        "defense-jcs-141-cia-btf-12310",
+        "defense-jcs-143-cia-btf-12320",
+        "defense-jcs-145-cia-btf-12328",
+        "defense-jcs-146-cia-btf-12331"
+      ]
     },
     {
       "id": "cia-btf-document-level",
       "severity": "High",
-      "status": "Open",
+      "status": "Mitigated",
       "area": "Intelligence",
       "title": "CIA/Balkan Task Force material is not document-level",
       "risk": "Srebrenica, safe areas, war crimes, sanctions, and military assessments require intelligence-policy records. The site identifies the BTF collection, but it does not yet provide a document-level intelligence chronology.",
-      "mitigation": "Added CIA/BTF to the source-pool register and tied it to the document-boundary extraction workflow.",
+      "mitigation": "Harvested the Clinton Library Bosnian Declassified Records collection at item level and promoted in-period standalone records into the chronology.",
       "evidence": [
-        "5 source cards mention BTF/CIA/intelligence.",
-        "29 research leads contain BTF/CIA/intelligence terms.",
-        "47 chronology records touch war-crimes or atrocity themes, but most are public or NSC/PCDC records."
+        "6 source cards mention BTF/CIA/intelligence.",
+        "321 document-level CIA/BTF records for 1993-1995 now add 1688 counted pages.",
+        "43 BTF records contain defense/military terms; 5 contain war-crimes or atrocity terms."
       ],
       "nextActions": [
-        "Harvest the BTF collection at item level and separate intelligence assessments, situation reports, and policy memos.",
-        "Cross-check CIA Reading Room and NARA Catalog for Balkan Task Force, Srebrenica, safe area, and war-crimes terms.",
+        "Review the cia-btf-* chronology records for duplicate releases against existing PC/DC and MDR packets.",
+        "Transcribe classification, attachment, and excision data from each BTF PDF before final source-note treatment.",
         "Keep intelligence products distinct from public statements and press guidance."
       ],
       "sourcePools": [
         "cia-btf"
       ],
-      "candidateLeadIds": []
+      "candidateLeadIds": [
+        "cia-btf-12298",
+        "cia-btf-12299",
+        "cia-btf-12300",
+        "cia-btf-12302",
+        "cia-btf-12301",
+        "cia-btf-12303",
+        "cia-btf-12304",
+        "cia-btf-12305",
+        "cia-btf-12306",
+        "cia-btf-12307",
+        "cia-btf-12308",
+        "cia-btf-12309",
+        "cia-btf-12312",
+        "cia-btf-12310",
+        "cia-btf-12311",
+        "cia-btf-12313",
+        "cia-btf-12314",
+        "cia-btf-12315",
+        "cia-btf-12316",
+        "cia-btf-12317",
+        "cia-btf-12318",
+        "cia-btf-12319",
+        "cia-btf-12320",
+        "cia-btf-12321",
+        "cia-btf-12322",
+        "cia-btf-12323",
+        "cia-btf-12324",
+        "cia-btf-12325",
+        "cia-btf-12326",
+        "cia-btf-12327"
+      ]
     },
     {
       "id": "regional-imbalance",
@@ -1027,7 +1551,7 @@
       "risk": "Bosnia dominates the record set. The compiler needs explicit counters and queues so Croatia/Krajina, Kosovo, Macedonia, Serbia/Montenegro, and Eastern Slavonia are not missed.",
       "mitigation": "Added topic counters to the gap register and State FOIA/NARA candidate layers with Kosovo, Macedonia, Krajina, and Croatia search packs.",
       "evidence": [
-        "Chronology term counts: Bosnia 513, Croatia 123, Serbia/Montenegro 204, Kosovo 7, Macedonia 48.",
+        "Chronology term counts: Bosnia 834, Croatia 173, Serbia/Montenegro 240, Kosovo 7, Macedonia 50.",
         "State FOIA candidate term counts: Croatia 110, Kosovo 20, Macedonia 20, Serbia/Montenegro 207.",
         "Public Papers contribute 446 records, so topic counts must distinguish public context from archival decision records."
       ],
@@ -1077,19 +1601,19 @@
     {
       "id": "memcon-telcon-reconciliation",
       "severity": "Medium",
-      "status": "Open",
+      "status": "Mitigated",
       "area": "Presidential Conversations",
       "title": "Memcon/telcon completeness still depends on schedule and call-log reconciliation",
       "risk": "The current memcon/telcon inventory is strong, but completeness requires checking schedule/call-log evidence for missing, withheld, or not-yet-digitized conversations.",
-      "mitigation": "The gap register keeps this as an explicit production task rather than implying the conversation layer is complete.",
+      "mitigation": "Added a presidential conversation reconciliation matrix that links known memcons/telcons to schedule and call-log folder leads.",
       "evidence": [
         "32 memcon/telcon chronology records are present.",
         "Conversation years: {\"1993\":{\"count\":6,\"pages\":24},\"1994\":{\"count\":3,\"pages\":14},\"1995\":{\"count\":23,\"pages\":128}}.",
-        "7 source cards point to schedule/call verification sources."
+        "65 schedule/call folder leads are now surfaced for absence/withheld-record checks."
       ],
       "nextActions": [
-        "Reconcile each presidential call/meeting against daily schedules and foreign leader call lists.",
-        "Mark known no-document or withheld conversations in the chronology as source gaps, not absent events.",
+        "Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.",
+        "Mark known no-document or withheld conversations as source gaps, not absent events.",
         "Record Washington time when available."
       ],
       "sourcePools": [
@@ -1115,33 +1639,75 @@
         "chirac-1995-07-19",
         "major-1995-07-19",
         "christopher-de-charette-1995-07-19",
-        "izetbegovic-1995-07-20"
+        "izetbegovic-1995-07-20",
+        "chirac-1995-07-20",
+        "chirac-1995-07-24",
+        "chirac-1995-08-07",
+        "yeltsin-1995-10-23-hyde-park-one-on-one",
+        "yeltsin-1995-10-23-hyde-park-lunch",
+        "izetbegovic-tudjman-1995-10-24",
+        "gonzalez-1995-12-03",
+        "chirac-1995-12-14",
+        "izetbegovic-1995-12-14-pull-aside",
+        "tudjman-1995-12-14-pull-aside"
       ]
     },
     {
       "id": "source-note-finalization",
       "severity": "Medium",
-      "status": "Open",
+      "status": "Mitigated",
       "area": "Source Notes",
       "title": "Draft source notes still need FRUS-level verification",
       "risk": "The page uses FRUS-style source-note stems, but final FRUS treatment requires PDF-level verification of markings, attachments, marginalia, distribution, and excisions.",
-      "mitigation": "Every candidate layer now carries a source-note draft and verification warning; the gap register turns remaining verification into an explicit queue.",
+      "mitigation": "Added a source-note verification audit that checks FRUS-style source-note patterns, page accounting, and remaining transcription queues.",
       "evidence": [
-        "549 chronology records have source-note drafts.",
-        "250 State FOIA candidates and 163 NARA source-family candidates have source-note drafts.",
-        "77 extracted chronology PDFs append source packet page 1 as an annotation sheet."
+        "901 chronology/conversation records have source notes.",
+        "0 source notes contain raw URLs or old verification prose.",
+        "351 records remain in the classification/handling transcription queue."
       ],
       "nextActions": [
-        "Open each promoted PDF and verify classification, handling controls, drafting, clearance, addressees, attachments, annotations, and excision accounting.",
-        "For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before source-note finalization.",
+        "Use reports/source-note-verification-audit.json as the source-note finalization queue.",
+        "For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before final source-note clearance.",
         "Track attachments-not-printed and wholly withheld cross-references separately."
       ],
       "sourcePools": [
         "state-foia",
         "nara-crosscheck",
-        "clinton-research-pdfs"
+        "clinton-research-pdfs",
+        "source-note-audit"
       ],
-      "candidateLeadIds": []
+      "candidateLeadIds": [
+        "cia-btf-12298",
+        "cia-btf-12299",
+        "cia-btf-12300",
+        "cia-btf-12302",
+        "cia-btf-12301",
+        "cia-btf-12303",
+        "cia-btf-12304",
+        "cia-btf-12305",
+        "cia-btf-12306",
+        "cia-btf-12307",
+        "cia-btf-12308",
+        "cia-btf-12309",
+        "cia-btf-12312",
+        "cia-btf-12310",
+        "cia-btf-12311",
+        "cia-btf-12313",
+        "cia-btf-12314",
+        "cia-btf-12315",
+        "cia-btf-12316",
+        "cia-btf-12317",
+        "cia-btf-12318",
+        "cia-btf-12319",
+        "cia-btf-12320",
+        "cia-btf-12321",
+        "cia-btf-12322",
+        "cia-btf-12323",
+        "cia-btf-12324",
+        "cia-btf-12325",
+        "cia-btf-12326",
+        "gore-izetbegovic-1993-04-14"
+      ]
     }
   ]
 }

@@ -8,6 +8,10 @@ const REPORT_URLS = {
   publicPapers: "reports/public-papers-balkans-search.json",
   sourceCrosscheck: "reports/source-crosscheck-potential-documents.json",
   stateFoia: "reports/state-foia-balkans-search.json",
+  btfDocuments: "reports/cia-btf-document-search.json",
+  defenseJcs: "reports/defense-jcs-source-search.json",
+  conversationReconciliation: "reports/presidential-conversation-reconciliation.json",
+  sourceNoteAudit: "reports/source-note-verification-audit.json",
   gapRegister: "reports/compiler-gap-register.json",
   libraryVisit: "reports/clinton-library-visit-plan.json"
 };
@@ -412,6 +416,10 @@ function renderAudit(data, reports = {}) {
   const sourceCrosscheckPages = reports.sourceCrosscheck?.summary?.countedPages || 0;
   const stateFoiaRecords = reports.stateFoia?.summary?.selectedCandidateDocuments || 0;
   const stateFoiaPages = reports.stateFoia?.summary?.countedPages || 0;
+  const btfRecords = reports.btfDocuments?.summary?.inPeriodDocuments || 0;
+  const btfPages = reports.btfDocuments?.summary?.countedPages || 0;
+  const defenseRecords = reports.defenseJcs?.summary?.selectedCandidateDocuments || 0;
+  const sourceNoteFailures = reports.sourceNoteAudit?.summary?.sourceNotePatternFailures ?? null;
   const openGaps = reports.gapRegister?.summary?.open || 0;
 
   nodes.auditRoot.replaceChildren(
@@ -429,9 +437,9 @@ function renderAudit(data, reports = {}) {
     ),
     auditCard(
       "Discovery Sweeps",
-      `${formatNumber(naraRecords + talbottHits + publicPaperRecords + sourceCrosscheckRecords + stateFoiaRecords)} leads`,
-      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules; ${formatNumber(sourceCrosscheckRecords)} NARA source-family potential documents; ${formatNumber(stateFoiaRecords)} State FOIA candidates.`,
-      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages; NARA source-family leads add ${formatNumber(sourceCrosscheckPages)} pages; State FOIA candidates add ${formatNumber(stateFoiaPages)} pages.`
+      `${formatNumber(naraRecords + talbottHits + publicPaperRecords + sourceCrosscheckRecords + stateFoiaRecords + btfRecords)} leads`,
+      `${formatNumber(naraRecords)} declassified NARA Scout records from ${formatNumber(naraUnique)} unique hits; ${formatNumber(talbottHits)} Strobe Talbott full-text hits from ${formatNumber(talbottRows)} rows; ${formatNumber(publicPaperRecords)} Clinton Public Papers records from ${formatNumber(publicPaperRows)} GovInfo granules; ${formatNumber(sourceCrosscheckRecords)} NARA source-family potential documents; ${formatNumber(stateFoiaRecords)} State FOIA candidates; ${formatNumber(btfRecords)} CIA/BTF documents.`,
+      `${formatNumber(talbottStandalone)} reviewed Talbott standalone records total ${formatNumber(talbottStandalonePages)} pages; Public Papers add ${formatNumber(publicStatementPages)} counted pages; NARA source-family leads add ${formatNumber(sourceCrosscheckPages)} pages; State FOIA candidates add ${formatNumber(stateFoiaPages)} pages; CIA/BTF adds ${formatNumber(btfPages)} pages.`
     ),
     auditCard(
       "Open Risks",
@@ -439,7 +447,7 @@ function renderAudit(data, reports = {}) {
       denseYear
         ? `${formatNumber(denseYear.value)} documents and ${formatNumber(denseYear.pages)} pages cluster in ${denseYear.label}; ${formatNumber(conversations.length)} records remain in the memcon/telcon subset.`
         : "No document dates available.",
-      "See the gap register for source-family and extraction risks."
+      `${formatNumber(defenseRecords)} Defense/JCS leads; source-note pattern failures: ${sourceNoteFailures === null ? "pending" : formatNumber(sourceNoteFailures)}.`
     )
   );
 
@@ -520,7 +528,7 @@ function renderCompilerGaps(report = {}) {
     auditCard(
       "Candidate Leads",
       formatNumber(summary.candidateLeads),
-      `${formatNumber(metrics.candidateLeadPages)} counted pages now sit outside the chronology for compiler review.`,
+      `${formatNumber(metrics.candidateLeadPages)} counted pages in research and candidate source layers are available for compiler review.`,
       "Candidate leads are not selection recommendations."
     ),
     auditCard(
@@ -1068,7 +1076,12 @@ function renderSourceNotePanel(data) {
 }
 
 function researchFiles(report = {}) {
-  return [...(report.digitizedFiles || []), ...(report.sourceCrosscheckFiles || []), ...(report.stateFoiaFiles || [])];
+  return [
+    ...(report.digitizedFiles || []),
+    ...(report.sourceCrosscheckFiles || []),
+    ...(report.stateFoiaFiles || []),
+    ...(report.btfFiles || [])
+  ];
 }
 
 function relationshipLabel(value = "") {
@@ -1079,7 +1092,8 @@ function relationshipLabel(value = "") {
     "topic-match": "Topic lead",
     "nara-catalog-7388808": "NARA 7388808 cross-check",
     "nara-scout-europe-scopes": "NARA Scout cross-check",
-    "state-foia-virtual-reading-room": "State FOIA candidate"
+    "state-foia-virtual-reading-room": "State FOIA candidate",
+    "cia-btf-document-level": "CIA/BTF document"
   };
   return labels[value] || value || "Unclassified";
 }
@@ -1142,6 +1156,7 @@ function renderResearchSummary(report = {}) {
   const summary = report.summary || {};
   const sourceCrosscheck = report.sourceCrosscheckSummary || {};
   const stateFoia = report.stateFoiaSummary || {};
+  const btf = report.btfSummary || {};
   const exactFiles = researchFiles(report).filter((file) =>
     (file.targets || []).some((target) => target.relationship === "exact-folder-title")
   ).length;
@@ -1153,6 +1168,8 @@ function renderResearchSummary(report = {}) {
   const crosscheckPages = sourceCrosscheck.countedPages || 0;
   const stateFoiaFiles = stateFoia.selectedCandidateDocuments || 0;
   const stateFoiaPages = stateFoia.countedPages || 0;
+  const btfFiles = btf.inPeriodDocuments || 0;
+  const btfPages = btf.countedPages || 0;
 
   nodes.researchSummaryRoot.replaceChildren(
     auditCard(
@@ -1164,20 +1181,20 @@ function renderResearchSummary(report = {}) {
     auditCard(
       "Digitized Files",
       formatNumber(totalFiles),
-      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads, ${formatNumber(crosscheckFiles)} NARA source-family potential documents, and ${formatNumber(stateFoiaFiles)} State FOIA candidates.`,
+      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads, ${formatNumber(crosscheckFiles)} NARA source-family potential documents, ${formatNumber(stateFoiaFiles)} State FOIA candidates, and ${formatNumber(btfFiles)} CIA/BTF documents.`,
       `${formatNumber(exactFiles)} files have folder-title matches.`
     ),
     auditCard(
       "Page Accounting",
       formatNumber(totalPages),
-      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} from NARA source-family leads; ${formatNumber(stateFoiaPages)} from State FOIA candidates.`,
+      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} from NARA source-family leads; ${formatNumber(stateFoiaPages)} from State FOIA candidates; ${formatNumber(btfPages)} from CIA/BTF documents.`,
       "Large folder PDFs and source-family leads are kept as research leads, not converted into chronology entries here."
     ),
     auditCard(
       "Source Check",
-      formatNumber(crosscheckFiles + stateFoiaFiles),
-      "Checked companion-page NARA source families plus the Department of State FOIA Virtual Reading Room for in-period Balkans PDF leads.",
-      "Potential documents only; this does not recommend inclusion or volume structure."
+      formatNumber(crosscheckFiles + stateFoiaFiles + btfFiles),
+      "Checked companion-page NARA source families, the Department of State FOIA Virtual Reading Room, and the Clinton Library Bosnian Declassified Records collection for in-period Balkans PDF leads.",
+      "Research leads and document-level harvests only; this does not recommend inclusion or volume structure."
     ),
     auditCard(
       "Mission Boundary",
@@ -1445,7 +1462,7 @@ function renderResearchCollections(report) {
   renderResearchTargets(report);
 }
 
-function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia) {
+function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia, btfDocuments) {
   if (!researchCollections) return null;
   return {
     ...researchCollections,
@@ -1454,7 +1471,10 @@ function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia
     sourceCrosscheckFiles: sourceCrosscheck?.potentialDocuments || [],
     stateFoia,
     stateFoiaSummary: stateFoia?.summary || null,
-    stateFoiaFiles: stateFoia?.stateFoiaDocuments || []
+    stateFoiaFiles: stateFoia?.stateFoiaDocuments || [],
+    btfDocuments,
+    btfSummary: btfDocuments?.summary || null,
+    btfFiles: btfDocuments?.documents || []
   };
 }
 
@@ -1907,6 +1927,10 @@ async function loadReports() {
     publicPapers,
     sourceCrosscheck,
     stateFoia,
+    btfDocuments,
+    defenseJcs,
+    conversationReconciliation,
+    sourceNoteAudit,
     gapRegister,
     libraryVisit
   ] = await Promise.all([
@@ -1918,6 +1942,10 @@ async function loadReports() {
     loadOptionalJson(REPORT_URLS.publicPapers),
     loadOptionalJson(REPORT_URLS.sourceCrosscheck),
     loadOptionalJson(REPORT_URLS.stateFoia),
+    loadOptionalJson(REPORT_URLS.btfDocuments),
+    loadOptionalJson(REPORT_URLS.defenseJcs),
+    loadOptionalJson(REPORT_URLS.conversationReconciliation),
+    loadOptionalJson(REPORT_URLS.sourceNoteAudit),
     loadOptionalJson(REPORT_URLS.gapRegister),
     loadOptionalJson(REPORT_URLS.libraryVisit)
   ]);
@@ -1931,6 +1959,10 @@ async function loadReports() {
     publicPapers,
     sourceCrosscheck,
     stateFoia,
+    btfDocuments,
+    defenseJcs,
+    conversationReconciliation,
+    sourceNoteAudit,
     gapRegister,
     libraryVisit
   };
@@ -1948,7 +1980,12 @@ async function loadData() {
 async function init() {
   try {
     const [data, reports] = await Promise.all([loadData(), loadReports()]);
-    const researchReport = combineResearchReports(reports.researchCollections, reports.sourceCrosscheck, reports.stateFoia);
+    const researchReport = combineResearchReports(
+      reports.researchCollections,
+      reports.sourceCrosscheck,
+      reports.stateFoia,
+      reports.btfDocuments
+    );
     renderStats(data);
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);

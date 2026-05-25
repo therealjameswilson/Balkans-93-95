@@ -1,13 +1,13 @@
 # Balkans 1993-1995 Compiler Gap Register
 
-Generated: 2026-05-23T13:51:03.686Z
+Generated: 2026-05-25T23:40:05.742Z
 
 ## Summary
 
 - 8 compiler-risk gaps tracked.
-- 4 mitigated by a new reproducible source layer or queue.
-- 4 still open after this pass.
-- 875 candidate leads now sit outside the chronology for compiler review.
+- 8 mitigated by a new reproducible source layer or queue.
+- 0 still open after this pass.
+- 1196 candidate/source leads now available for compiler review.
 
 ## Critical: State Department cable and memorandum base was thin
 
@@ -68,40 +68,40 @@ Next actions:
 
 ## High: Defense, JCS, and military implementation source base remains thin
 
-Status: Open
+Status: Mitigated
 Area: Defense and Military Implementation
 
 Air strikes, IFOR, no-fly-zone enforcement, lift-and-strike, and contingency planning are central to the story but are still mostly visible through State/NARA fragments and PC/DC summaries.
 
-Mitigation: Added the Defense/JCS source pool to the gap register and extraction queue criteria.
+Mitigation: Added a dedicated Defense/JCS source-base report that aggregates military-implementation leads across BTF, State FOIA, NARA, and Clinton Library research files.
 
 Evidence:
-- 17 chronology records clearly identify Defense/JCS as their source family.
-- 52 candidate leads contain military implementation terms.
-- No dedicated Defense/JCS public release report exists yet in this repository.
+- 53 chronology records clearly identify Defense/JCS as their source family.
+- 163 dedicated Defense/JCS and military-implementation leads now total 1664 counted pages.
+- 24 of those leads come from the document-level CIA/BTF harvest; 98 come from State FOIA.
 
 Next actions:
-- Run NARA Catalog searches for SECDEF, JCS, OSD, Deliberate Force, IFOR, no-fly zone, OPLAN, and withdrawal planning.
-- Prioritize documents tied to PC/DC decision points and presidential calls.
-- Add a Defense/JCS report before claiming the military implementation gap is closed.
+- Use reports/defense-jcs-source-search.json as the military-implementation review queue.
+- Prioritize documents tied to PC/DC decision points, presidential calls, Deliberate Force, IFOR, UNPROFOR withdrawal, and no-fly-zone enforcement.
+- Promote only standalone, non-duplicate records after source-note and attachment review.
 
 ## High: CIA/Balkan Task Force material is not document-level
 
-Status: Open
+Status: Mitigated
 Area: Intelligence
 
 Srebrenica, safe areas, war crimes, sanctions, and military assessments require intelligence-policy records. The site identifies the BTF collection, but it does not yet provide a document-level intelligence chronology.
 
-Mitigation: Added CIA/BTF to the source-pool register and tied it to the document-boundary extraction workflow.
+Mitigation: Harvested the Clinton Library Bosnian Declassified Records collection at item level and promoted in-period standalone records into the chronology.
 
 Evidence:
-- 5 source cards mention BTF/CIA/intelligence.
-- 29 research leads contain BTF/CIA/intelligence terms.
-- 47 chronology records touch war-crimes or atrocity themes, but most are public or NSC/PCDC records.
+- 6 source cards mention BTF/CIA/intelligence.
+- 321 document-level CIA/BTF records for 1993-1995 now add 1688 counted pages.
+- 43 BTF records contain defense/military terms; 5 contain war-crimes or atrocity terms.
 
 Next actions:
-- Harvest the BTF collection at item level and separate intelligence assessments, situation reports, and policy memos.
-- Cross-check CIA Reading Room and NARA Catalog for Balkan Task Force, Srebrenica, safe area, and war-crimes terms.
+- Review the cia-btf-* chronology records for duplicate releases against existing PC/DC and MDR packets.
+- Transcribe classification, attachment, and excision data from each BTF PDF before final source-note treatment.
 - Keep intelligence products distinct from public statements and press guidance.
 
 ## Medium: Bosnia dominance can hide Croatia, Kosovo, Macedonia, and Serbia/Montenegro gaps
@@ -114,7 +114,7 @@ Bosnia dominates the record set. The compiler needs explicit counters and queues
 Mitigation: Added topic counters to the gap register and State FOIA/NARA candidate layers with Kosovo, Macedonia, Krajina, and Croatia search packs.
 
 Evidence:
-- Chronology term counts: Bosnia 513, Croatia 123, Serbia/Montenegro 204, Kosovo 7, Macedonia 48.
+- Chronology term counts: Bosnia 834, Croatia 173, Serbia/Montenegro 240, Kosovo 7, Macedonia 50.
 - State FOIA candidate term counts: Croatia 110, Kosovo 20, Macedonia 20, Serbia/Montenegro 207.
 - Public Papers contribute 446 records, so topic counts must distinguish public context from archival decision records.
 
@@ -125,39 +125,39 @@ Next actions:
 
 ## Medium: Memcon/telcon completeness still depends on schedule and call-log reconciliation
 
-Status: Open
+Status: Mitigated
 Area: Presidential Conversations
 
 The current memcon/telcon inventory is strong, but completeness requires checking schedule/call-log evidence for missing, withheld, or not-yet-digitized conversations.
 
-Mitigation: The gap register keeps this as an explicit production task rather than implying the conversation layer is complete.
+Mitigation: Added a presidential conversation reconciliation matrix that links known memcons/telcons to schedule and call-log folder leads.
 
 Evidence:
 - 32 memcon/telcon chronology records are present.
 - Conversation years: {"1993":{"count":6,"pages":24},"1994":{"count":3,"pages":14},"1995":{"count":23,"pages":128}}.
-- 7 source cards point to schedule/call verification sources.
+- 65 schedule/call folder leads are now surfaced for absence/withheld-record checks.
 
 Next actions:
-- Reconcile each presidential call/meeting against daily schedules and foreign leader call lists.
-- Mark known no-document or withheld conversations in the chronology as source gaps, not absent events.
+- Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.
+- Mark known no-document or withheld conversations as source gaps, not absent events.
 - Record Washington time when available.
 
 ## Medium: Draft source notes still need FRUS-level verification
 
-Status: Open
+Status: Mitigated
 Area: Source Notes
 
 The page uses FRUS-style source-note stems, but final FRUS treatment requires PDF-level verification of markings, attachments, marginalia, distribution, and excisions.
 
-Mitigation: Every candidate layer now carries a source-note draft and verification warning; the gap register turns remaining verification into an explicit queue.
+Mitigation: Added a source-note verification audit that checks FRUS-style source-note patterns, page accounting, and remaining transcription queues.
 
 Evidence:
-- 549 chronology records have source-note drafts.
-- 250 State FOIA candidates and 163 NARA source-family candidates have source-note drafts.
-- 77 extracted chronology PDFs append source packet page 1 as an annotation sheet.
+- 901 chronology/conversation records have source notes.
+- 0 source notes contain raw URLs or old verification prose.
+- 351 records remain in the classification/handling transcription queue.
 
 Next actions:
-- Open each promoted PDF and verify classification, handling controls, drafting, clearance, addressees, attachments, annotations, and excision accounting.
-- For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before source-note finalization.
+- Use reports/source-note-verification-audit.json as the source-note finalization queue.
+- For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before final source-note clearance.
 - Track attachments-not-printed and wholly withheld cross-references separately.
 

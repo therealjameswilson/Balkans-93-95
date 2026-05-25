@@ -71,6 +71,12 @@ published "About the Series" guidance for FRUS production:
   behind the Virtual Reading Room UI, runs targeted 1993-1995 Balkans searches,
   de-duplicates direct PDFs, selects high-confidence cable/memorandum leads, and
   counts pages.
+- `scripts/harvest-cia-btf-documents.js` harvests item-level Clinton Library
+  Bosnian Declassified Records / CIA Balkan Task Force PDFs, filters in-period
+  standalone records, records provenance, and counts pages.
+- `scripts/build-gap-closure-reports.js` builds the Defense/JCS source-base
+  report, presidential-conversation reconciliation matrix, and source-note
+  verification audit used to close the compiler gap register.
 - `scripts/build-compiler-gap-register.js` turns the source-family audit into a
   generated compiler-risk register, source-pool list, and extraction/promotion
   queue.
@@ -102,6 +108,19 @@ published "About the Series" guidance for FRUS production:
 - `reports/state-foia-balkans-search.json` records the State FOIA sweep,
   selected candidate cable/memorandum leads, metadata, direct PDFs, draft
   source-note stems, and counted pages.
+- `reports/cia-btf-document-search.json` records the Clinton Library Bosnian
+  Declassified Records / CIA Balkan Task Force document harvest, selected
+  in-period standalone records, direct PDFs, source-note stems, and counted
+  pages.
+- `reports/defense-jcs-source-search.json` records Defense/JCS and military
+  implementation leads aggregated from CIA/BTF, State FOIA, NARA, and Clinton
+  Library source layers.
+- `reports/presidential-conversation-reconciliation.json` reconciles known
+  presidential memcons and telcons with schedule, call-log, and folder-level
+  absence/withheld-record checks.
+- `reports/source-note-verification-audit.json` records FRUS-style source-note
+  coverage, page-count coverage, and remaining classification/handling
+  transcription queues.
 - `reports/compiler-gap-register.json` and
   `reports/compiler-gap-register.md` record the gap register, source pools, and
   extraction queue.
@@ -147,6 +166,9 @@ The first-pass source matrix supports completeness checks across:
   Yugoslavia, Serbia/Serbs, Croatia/Croats, Macedonia, Kosovo, UNPROFOR, IFOR,
   Dayton, and related terms.
 - Clinton Digital Library Bosnia collection, `2008-0994-F`.
+- Clinton Library Bosnian Declassified Records / CIA Balkan Task Force
+  collection, now harvested at item level and promoted into the chronology as
+  standalone 1993-1995 intelligence-policy records.
 - Clinton Digital Library FOIA folder releases surfaced from the 2013-0185-M
   research plan, including `2008-0994-F`, `2013-0687-F`, PC/DC files,
   Bosnia monthly files, Holl early-period files, Kerrick subject files,
@@ -158,15 +180,18 @@ The first-pass source matrix supports completeness checks across:
 - Bosnian Declassified Records and the DCI Interagency Balkan Task Force trail.
 - Alexander Vershbow's Bosnia files, `2013-0687-F`.
 - PC/DC, memcon/telcon, Croatia, Srebrenica, and Dayton-track MDR releases.
-- Defense/JCS and CIA/Balkan Task Force source pools, kept explicit as open
-  compiler-risk gaps until document-level searches and extractions are complete.
+- Defense/JCS and CIA/Balkan Task Force source pools, now represented by
+  document-level harvests and generated review queues rather than left as open
+  source-family gaps.
 - Paris signing and daily schedule contextual sources.
 
 ## Evidence Audit
 
-The page currently surfaces `549` chronological declassified and public records
-and `2,251` counted document pages, including `32` memcon/telcon-form records and
-`446` Clinton Public Papers records.
+The page currently surfaces `870` chronological declassified and public document
+records plus `31` separate presidential memcon/telcon conversation records. The
+document inventory has `3,939` counted pages, the conversation audit has `166`
+counted pages, and the public chronology includes `446` Clinton Public Papers
+records.
 Every displayed card has a PDF link, source-page metadata, and provenance
 labeling that distinguishes direct PDFs from locally extracted packet documents.
 
@@ -182,9 +207,11 @@ attachments not printed, and excisions.
 The research-collections section adds `200` ranked folder targets and `9`
 supplemental collection leads from the research plan. The online sweep found
 `462` selected declassified/digitized PDF leads across `93` ranked targets and
-`1` supplemental target, with `16,293` counted PDF pages. With NARA source-family
-and State FOIA candidate layers included, the section now exposes `875` file
-leads totaling `20,549` counted pages outside the chronology.
+`1` supplemental target, with `16,293` counted PDF pages. With NARA
+source-family, State FOIA, and CIA/Balkan Task Force layers included, the
+combined research/candidate source layers expose `1,196` file leads totaling
+`22,237` counted pages; the `321` CIA/BTF records are also promoted into the
+chronology as document-level records.
 
 The Clinton Library finding-aid pass processed `4` local 2013-0185-M PDFs
 totaling `1,290` finding-aid pages. It found `2,692` raw Balkans line hits and
@@ -202,9 +229,29 @@ fetched `940` rows from `7,916` total State FOIA API hits, identified `266`
 unique Balkans PDF rows, and adds `250` high-confidence State cable/memorandum
 candidate leads totaling `2,169` counted pages.
 
-The compiler gap register tracks `8` risks: `4` mitigated by new source layers
-or queues and `4` still open. The generated extraction/promotion queue currently
-contains `70` follow-up items.
+The Clinton Library Bosnian Declassified Records / CIA Balkan Task Force harvest
+reviewed `340` collection items and adds `321` in-period standalone records
+totaling `1,688` counted pages, including `43` defense/military records and `5`
+war-crimes or atrocity records.
+
+The Defense/JCS source-base report aggregates `163` military-implementation
+leads totaling `1,664` counted pages from CIA/BTF, State FOIA, NARA, and Clinton
+Library source layers.
+
+The presidential-conversation reconciliation report accounts for `32`
+memcon/telcon-form chronology records totaling `166` counted pages and surfaces
+`65` schedule or call-folder leads for absence, withheld-record, and onsite
+checks.
+
+The source-note verification audit covers `901` chronology and conversation
+records, finds `0` missing source notes, `0` FRUS-style source-note pattern
+failures, and `0` pending page counts, while keeping `351` records in the
+classification/handling transcription queue for final compiler verification.
+
+The compiler gap register tracks `8` risks: all `8` are mitigated by generated
+source layers, document-level harvests, or review queues, and `0` remain open.
+The generated extraction/promotion queue currently contains `110` follow-up
+items.
 
 The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,
 found `405` Balkans-related full-text hits, reviewed `20` in-volume hits, and

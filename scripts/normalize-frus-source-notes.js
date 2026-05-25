@@ -174,10 +174,12 @@ function normalizeData() {
 
   for (const record of data.documents || []) {
     record.sourceNote = chronologySourceNote(record);
+    if (record.sourceNoteDraft) record.sourceNoteDraft = record.sourceNote;
   }
   const sourceNoteByDocumentId = new Map((data.documents || []).map((record) => [record.id, record.sourceNote]));
   for (const record of data.conversations || []) {
     record.sourceNote = sourceNoteByDocumentId.get(record.id) || chronologySourceNote(record);
+    if (record.sourceNoteDraft) record.sourceNoteDraft = record.sourceNote;
   }
 
   fs.writeFileSync(DATA_PATH, `${JSON.stringify(data, null, 2)}\n`);
@@ -192,7 +194,7 @@ function normalizeReports(data) {
   const documentReportPath = "reports/document-page-counts.json";
   if (fs.existsSync(path.join(ROOT, documentReportPath))) {
     const report = readJson(documentReportPath);
-    for (const record of [...(report.extracted || []), ...(report.directTalbott || [])]) {
+    for (const record of [...(report.extracted || []), ...(report.directTalbott || []), ...(report.directBtf || [])]) {
       if (sourceNoteById.has(record.id)) record.sourceNote = sourceNoteById.get(record.id);
     }
     writeJson(documentReportPath, report);
@@ -241,6 +243,19 @@ function normalizeReports(data) {
     for (const file of report.stateFoiaDocuments || []) file.sourceNoteDraft = stateFoiaNote(file);
     writeJson(statePath, report);
     touched.push(statePath);
+  }
+
+  const btfPath = "reports/cia-btf-document-search.json";
+  if (fs.existsSync(path.join(ROOT, btfPath))) {
+    const report = readJson(btfPath);
+    for (const record of report.documents || []) {
+      if (sourceNoteById.has(record.id)) {
+        record.sourceNote = sourceNoteById.get(record.id);
+        record.sourceNoteDraft = sourceNoteById.get(record.id);
+      }
+    }
+    writeJson(btfPath, report);
+    touched.push(btfPath);
   }
 
   const libraryPath = "reports/clinton-library-visit-plan.json";
