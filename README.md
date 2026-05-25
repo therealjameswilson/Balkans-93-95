@@ -77,6 +77,10 @@ published "About the Series" guidance for FRUS production:
 - `scripts/build-clinton-library-visit-plan.js` extracts text from the four
   local 2013-0185-M finding aid PDFs, counts finding-aid pages, scores Balkans
   folder leads, and writes an onsite Clinton Library pull plan.
+- `scripts/normalize-frus-source-notes.js` rewrites chronology and research
+  lead source-note fields into a FRUS-style order: repository and collection
+  locator, classification/handling status, source pagination, then separate
+  compiler checks in the surrounding ledger.
 - `reports/nara-scout-memcon-telcon-search.json` records the latest NARA Scout
   search run and filtered declassified records.
 - `reports/strobe-talbott-manifest-search.json` records the latest Talbott
@@ -171,7 +175,7 @@ source PDF as an annotation sheet for the compiler's provenance review.
 
 The document table can also export the active filtered set as CSV. Each
 document card contains a collapsed FRUS-style source-note block with a draft
-`Source:` note, a locator/page ledger, and open PDF-level checks for
+`Source:` note, a locator/page ledger, and separate open PDF-level checks for
 classification, handling controls, drafting, clearance, distribution, marginalia,
 attachments not printed, and excisions.
 

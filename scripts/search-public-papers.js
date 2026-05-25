@@ -256,7 +256,7 @@ function snippetFor(text, terms) {
 
 function sourceNoteFor(record) {
   const pageWord = record.pageCount === 1 ? "page" : "pages";
-  return `Source: Government Publishing Office, GovInfo, ${record.collection}, ${record.identifier}, pp. ${record.sourcePdfPages}, ${record.url}. Public Papers granule PDF; ${record.pageCount} ${pageWord} counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.`;
+  return `Source: Government Publishing Office, GovInfo, ${record.collection}, ${record.identifier}. Public record. Public Papers source pagination, pp. ${record.sourcePdfPages}; ${record.pageCount} ${pageWord}.`;
 }
 
 function parseRecord(pkg, filePath) {

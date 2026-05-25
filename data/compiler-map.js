@@ -8,7 +8,7 @@ window.COMPILER_MAP_DATA = {
     "statusUrl": "https://history.state.gov/historicaldocuments/status-of-the-series",
     "lastReviewed": "2026-05-24",
     "inventoryScope": "Chronological public inventory of declassified and public U.S. records covering Balkans policy, 1993-1995; not a selection list or proposed volume structure.",
-    "sourceNoteStandard": "FRUS-style source-note stems follow George H.W. Bush-era Office of the Historian practice: repository and file/control locator first; classification/handling next; then markings, distribution, attachments, annotations, and declassification accounting."
+    "sourceNoteStandard": "FRUS-style source notes follow Office of the Historian practice: repository and collection/file locator first; classification and handling markings next; then drafting/clearance, meeting/place, attachments, annotations, excisions, and related-document notes as verified from the record."
   },
   "sources": [
     {
@@ -462,10 +462,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101348. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101348. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Confidential"
     },
     {
       "id": "mitterrand-1993-03-17",
@@ -493,10 +494,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101349. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101349. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Confidential"
     },
     {
       "id": "mitterrand-1993-04-20",
@@ -524,10 +526,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101350. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101350. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf",
-      "localPdfPageCount": 4
+      "localPdfPageCount": 4,
+      "classification": "Confidential"
     },
     {
       "id": "mitterrand-1993-05-06",
@@ -554,10 +557,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101351. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101351. Secret. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Secret"
     },
     {
       "id": "izetbegovic-1993-09-08",
@@ -592,8 +596,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 10-15 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 10-15; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 10-15; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "izetbegovic-1994-09-25",
@@ -628,8 +632,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 18-25 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 18-25; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 18-25; 8 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "mitterrand-1994-11-23",
@@ -659,10 +663,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101400. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101400. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Confidential"
     },
     {
       "id": "izetbegovic-tudjman-1994-12-05",
@@ -698,7 +703,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 27-29 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 27-29; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 27-29; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -727,10 +732,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "sourcePdfPages": "1-6",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0755-M, https://clinton.presidentiallibraries.us/items/show/101431. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0755-M, item 101431. Secret. Digital copy, source PDF pp. 1-6; 6 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf",
-      "localPdfPageCount": 6
+      "localPdfPageCount": 6,
+      "classification": "Secret"
     },
     {
       "id": "major-1995-04-04",
@@ -757,10 +763,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 15,
       "sourcePdfPages": "1-15",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101436. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf; 15 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, item 101436. Confidential. Digital copy, source PDF pp. 1-15; 15 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf",
-      "localPdfPageCount": 15
+      "localPdfPageCount": 15,
+      "classification": "Confidential"
     },
     {
       "id": "chirac-1995-05-27",
@@ -789,10 +796,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118528. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118528. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf",
-      "localPdfPageCount": 4
+      "localPdfPageCount": 4,
+      "classification": "Confidential"
     },
     {
       "id": "chirac-1995-06-14",
@@ -820,10 +828,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 10,
       "sourcePdfPages": "1-10",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101402. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2013-0517-M, item 101402. Confidential. Digital copy, source PDF pp. 1-10; 10 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf",
-      "localPdfPageCount": 10
+      "localPdfPageCount": 10,
+      "classification": "Confidential"
     },
     {
       "id": "major-1995-06-16",
@@ -850,10 +859,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101439. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, item 101439. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Confidential"
     },
     {
       "id": "kohl-1995-07-13",
@@ -889,8 +899,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 35-37 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 35-37; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 35-37; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "chirac-1995-07-13",
@@ -926,7 +936,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 51-55 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 51-55; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 51-55; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -963,7 +973,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 66-71 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 66-71; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 66-71; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -1000,7 +1010,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 76-83 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 76-83; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Secret. Extracted from source packet PDF, pp. 76-83; 8 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret"
     },
     {
@@ -1037,7 +1047,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 2-4 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 2-4; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Secret. Extracted from source packet PDF, pp. 2-4; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret"
     },
     {
@@ -1074,8 +1084,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 32-34 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 32-34; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 32-34; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "chirac-1995-07-20",
@@ -1111,7 +1121,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 93-95 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 93-95; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 93-95; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -1141,10 +1151,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118529. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118529. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf",
-      "localPdfPageCount": 4
+      "localPdfPageCount": 4,
+      "classification": "Confidential"
     },
     {
       "id": "chirac-1995-08-07",
@@ -1171,10 +1182,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118530. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118530. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf",
-      "localPdfPageCount": 3
+      "localPdfPageCount": 3,
+      "classification": "Confidential"
     },
     {
       "id": "yeltsin-1995-10-23-hyde-park-one-on-one",
@@ -1212,8 +1224,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 5-16 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 5-16; 12 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 5-16; 12 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "yeltsin-1995-10-23-hyde-park-lunch",
@@ -1250,7 +1262,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 31-35 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Secret. Extracted from source packet PDF pages 31-35; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436. Secret. Extracted from source packet PDF, pp. 31-35; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret"
     },
     {
@@ -1287,7 +1299,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 37-43 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Secret. Extracted from source packet PDF pages 37-43; 7 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Secret. Extracted from source packet PDF, pp. 37-43; 7 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret"
     },
     {
@@ -1317,10 +1329,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 10,
       "sourcePdfPages": "1-10",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0548-M, https://clinton.presidentiallibraries.us/items/show/118881. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0548-M, item 118881. Confidential. Digital copy, source PDF pp. 1-10; 10 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf",
-      "localPdfPageCount": 10
+      "localPdfPageCount": 10,
+      "classification": "Confidential"
     },
     {
       "id": "chirac-1995-12-14",
@@ -1351,10 +1364,11 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "sourcePdfPages": "1-6",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118556. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2017-0775-M, item 118556. No classification marking. Digital copy, source PDF pp. 1-6; 6 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf",
-      "localPdfPageCount": 6
+      "localPdfPageCount": 6,
+      "classification": "No classification marking"
     },
     {
       "id": "izetbegovic-1995-12-14-pull-aside",
@@ -1390,7 +1404,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 55-57 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 55-57; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 55-57; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -1427,7 +1441,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 52-53 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 52-53; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 52-53; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential"
     },
     {
@@ -1464,8 +1478,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 59-61 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 59-61; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 59-61; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     },
     {
       "id": "quadrilateral-1995-12-14",
@@ -1502,8 +1516,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 47-50 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 47-50; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify"
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 47-50; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed"
     }
   ],
   "harvestQueue": [
@@ -1588,7 +1602,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...t program as soon as we implement it. I was surprised by the slant of the Post story this morning, because I think we'll do more than that. Bosnia Q. Mr. President, can you think of anything positive to say about the Bosnian peace plan that has been offered? The President. Yes, I think anything, any effort that increases the chance of some ultimately peaceful solution is important. But I think the United States has u...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg45, pp. 45-46, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg45. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg45. Public record. Public Papers source pagination, pp. 45-46; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1628,7 +1642,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...I hope it's going down. But until we get it way down, there will still be a lot of unused capacity in the country and a lot of idle people. Bosnia Q. Are you going to have a statement soon on Bosnia, Mr. President? The President. Well, Mr. Christopher is working on it, and we're working on it. I've spent a good deal of time on it in the last 2 weeks. But I don't have anything to say yet. It's a very difficult problem...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg52, pp. 52-53, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg52. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg52. Public record. Public Papers source pagination, pp. 52-53; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1677,7 +1691,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, balkan, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...er international leadership for peace and freedom through her commitment of troops in peacekeeping efforts around the world, in Somalia, in Bosnia, and elsewhere. Canada is our largest trading partner. Both our nations benefit enormously from the immense river of goods and services flowing across our border, with an increase of $30 billion just since the free trade agreement went into effect. It is remarkable how rel...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg53, pp. 53-56, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg53. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg53. Public record. Public Papers source pagination, pp. 53-56; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1717,7 +1731,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...yone will now pay back taxes? The President. I do. I think everybody will do what they're supposed to do. Q. Sir, when are you going to---- Bosnia Q. Sir, when do you expect to have a statement on Bosnia? The President. We're very close. I don't want to give you a specific time, but we're very close. As you know, we've done an awful lot of work on it. I spent a lot of time on it last week and a considerable amount of...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg63, pp. 63, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg63. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg63. Public record. Public Papers source pagination, pp. 63; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1757,7 +1771,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...he meat inspection program in response to reported cases of E. coli bacterial contamination.] The President. Anybody else like to be heard? Bosnia Q. Mr. President, changing the subject, since [[Page 69]] Secretary Christopher is going to talk about Bosnia this afternoon, could you at least tell us are U.S. troops a part of the initiative that will be unveiled this afternoon? The President. I think I should let Secre...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg67-2, pp. 67-69, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg67-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg67-2. Public record. Public Papers source pagination, pp. 67-69; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1812,7 +1826,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, kosovo, macedonia, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ing about the military, we have military forces in the Persian Gulf. We have military forces still in the Kuwait area. Are we going over to Bosnia- Herzegovina? And we'll be back with that question for you, Mr. President, in just a moment. [At this point, the television stations took a commercial break.] Mr. Bonds. I appreciate your enthusiasm. I think we'd save a little time if we'd hold the applause to the end so t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg73, pp. 73-85, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg73. Public Papers granule PDF; 13 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg73. Public record. Public Papers source pagination, pp. 73-85; 13 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1840,12 +1854,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101348. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101348. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/b229ce8c14cc2ebdcee0053d85f5b044.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1993-book1-doc-pg146",
@@ -1884,7 +1899,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...reat and because a lot of the people wanted us to come there, we were able to stop a lot of the fighting and provide for safety for people. Bosnia: you saw the young girl in Bosnia. A much tougher problem, because there were more weapons involved, the land is more difficult, the people have been fighting each other there for centuries, except when they have been stopped by government authority there. And we're trying...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg146, pp. 146-165, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg146. Public Papers granule PDF; 20 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg146. Public record. Public Papers source pagination, pp. 146-165; 20 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1924,7 +1939,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... remarks.] Q. Mr. President--[inaudible]---- The President. If you guys would talk, I wouldn't have to answer so many questions. [Laughter] Bosnia Q. Mr. President, are we going to airdrop supplies in to the besieged people in Bosnia? The President. It's a possibility. I want to wait a couple of more days before I announce a policy on it. Economic Program Q. Mr. President, you said in your speech that you wanted spen...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg184, pp. 184-185, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg184. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg184. Public record. Public Papers source pagination, pp. 184-185; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -1964,7 +1979,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ice www.gpo.gov] Exchange With Reporters Prior to Discussions With United Nations Secretary-General Boutros Boutros-Ghali February 23, 1993 Bosnia Q. Mr. President, is an airdrop enough to relieve the suffering? Will that do the job of getting food to people? The President. Well, if we can reach an agreement, it will help, I think. Q. How close are you to an agreement, Mr. President? The President. I don't know. We c...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg195, pp. 195, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg195. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg195. Public record. Public Papers source pagination, pp. 195; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2007,7 +2022,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Prime Minister John Major of the United Kingdom February 24, 1993 Bosnia Q. Mr. President, are you going to make an announcement on Bosnia today? On the airdrop? The President. I don't think we'll have a final announcement today. But the Prime Minister and I certainly are going to discuss that along with a number of other things. Q. Mr. Prime M...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg195-2, pp. 195-196, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg195-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg195-2. Public record. Public Papers source pagination, pp. 195-196; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2062,7 +2077,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, karadzic, izetbegovic, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nner. About the conversations we've had so far, I'd just like to make two points. First, we covered a wide range of topics. We talked about Bosnia, as you might imagine we would. We talked about the Middle East. And then the rest of our time was spent virtually exclusively talking about economic matters, about the upcoming meeting of the G-7; about the importance of trying to get an agreement under GATT and my commit...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg196, pp. 196-202, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg196. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg196. Public record. Public Papers source pagination, pp. 196-202; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2102,7 +2117,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... our two countries. Our enduring friendship is based on the common vision we share of peace and democratic principles. From peacekeepers in Bosnia and Somalia to partnership in the G-7 and in NATO, Canada has been a true global ally. Both our people benefit from our important trading relationship, with $200 billion in goods and services alone exchanged each year. Our steadfast relationship with Canada is an indispens...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg202, pp. 202, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg202. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg202. Public record. Public Papers source pagination, pp. 202; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2145,7 +2160,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...age 206] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 206]] Statement Announcing Airdrops To Provide Humanitarian Aid to Bosnia- Herzegovina February 25, 1993 The war that has raged in Bosnia-Herzegovina over the past year has taken a staggering toll: Thousands have been killed or imprisoned, thousands more are at risk due to hunger and exposure, and over 2 million people have been forced from thei...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206, pp. 206, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg206. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206. Public record. Public Papers source pagination, pp. 206; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2185,7 +2200,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nment Publishing Office www.gpo.gov] Exchange With Reporters at a Meeting With Close-Up Foundation Students From Arkansas February 25, 1993 Bosnia Q. Mr. President, do you care to say any more about the operational details of the airlift? The President. No. Q. How about explaining to the American people why it's an important issue for the United States to undertake? The President. What? Q. Why is it an important miss...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206-2, pp. 206, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg206-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206-2. Public record. Public Papers source pagination, pp. 206; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2225,7 +2240,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ow many of these nations can become and stay democracies. All you have to do to know that is to look at the problems in Somalia, to look at Bosnia, to look at the other trouble spots in the world. If we could make a garden of democracy and prosperity and free enterprise in every part of this globe, the world would be a safer and a better and a more prosperous place for the United States and for all of you to raise yo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206-3, pp. 206-214, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg206-3. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg206-3. Public record. Public Papers source pagination, pp. 206-214; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2259,7 +2274,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 2 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 2; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 2; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "Policy Memo"
@@ -2310,7 +2325,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... the fact that this is a country of people of different racial and ethnic backgrounds. When you look at what's going on today in the former Yugoslavia with the ethnic hatred--the Serbs and the Croatians and the Bosnian Muslims shooting and killing each other and starving each other, with differences, cultural and historic differences that are deep and long- lasting but, at least to the naked eye, not near as differen...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg217, pp. 217-224, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg217. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg217. Public record. Public Papers source pagination, pp. 217-224; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2344,7 +2359,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 3-4 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 3-4; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 3-4; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -2386,7 +2401,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...program. But I think you'll see a continuous stream of them coming out as we go along. Q. From you? The President. From me and from others. Bosnia Q. Mr. President, are you satisfied with the airdrops in Bosnia, the success of the airdrops? The President. Well, the last report I got this morning was pretty good, based on the last information I had. And I haven't talked directly to General Powell today, but he thinks ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg230, pp. 230, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg230. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg230. Public record. Public Papers source pagination, pp. 230; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2426,7 +2441,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "..., but that's the answer. Senator Krueger. Don't insult the Vice Presi- [[Page 233]] dent, Carl. Q. Will you? The Vice President. Next week. Bosnia Q. [Inaudible]--situation on the Bosnian airlift? Is it on or off? The President. No, it's---- Q. [Inaudible]--Aspin off the reservation? The President. No, we're continuing the airlift plan. This phase of it's going forward just as planned. And it's under continuous revie...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg232-2, pp. 232-233, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg232-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg232-2. Public record. Public Papers source pagination, pp. 232-233; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2469,7 +2484,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ng for Rotary International's programs of support for immunization of children in the world, as well as our programs of humanitarian aid in Bosnia and Croatia, gives me the opportunity--if you would accept this award on behalf of 1,100,000 Rotarians of the world in 187 countries--it would be a great pleasure-- to accept this award. The President. Thank you for your good work, and thank you for the award. I appreciate...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg236, pp. 236, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg236. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg236. Public record. Public Papers source pagination, pp. 236; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2512,7 +2527,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, karadzic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...unemployment. That is our next great test, and I think we're off to a good beginning today. [At this point, the President signed the bill.] Bosnia Q. Mr. President, do you have any response to Mr. Karadzic, who had an implied threat of violence against the United States because of its policy of airdrops? The President. Well, if that's what he meant to do, he made a terrible mistake, and it was something that I viewed...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg237, pp. 237-238, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg237. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg237. Public record. Public Papers source pagination, pp. 237-238; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2546,7 +2561,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 5-6 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 5-6; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 5-6; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -2594,7 +2609,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...t useless. I mean, we have tried ignoring the cities for 12 years, and it has not been a very successful economic strategy for the country. Bosnia Q. Are you concerned, sir, at all by indications that your mercy flights to Bosnia are actually increasing the violence there, increasing the ethnic cleansing? And if so, what could you do about it, sir? Any thought of---- The President. Well, first of all, let me say, bot...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg241, pp. 241-245, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg241. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg241. Public record. Public Papers source pagination, pp. 241-245; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2637,7 +2652,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Clinton (1993, Book I)] [March 5, 1993] [Pages 245-246] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia March 5, 1993 Q. Mr. President, can you tell us any more about the Bosnian sanctions that you're putting on today? The President. No, we'll have more to say. Q. Are these going to be unilateral or through the United Nations? The President. We'll put it out--I'm not--everyt...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg245, pp. 245-246, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg245. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg245. Public record. Public Papers source pagination, pp. 245-246; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2686,7 +2701,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nd of common purpose have made possible a remarkable amount of cooperation in recent days in meeting the challenges in Iraq and Somalia and Bosnia. Today President Mitterrand and I discussed the global partnership that we must bring to the post-cold-war world, new uncertainties and new opportunities. Both our nations and both our continents are renewing institutions of security and economic growth for this era. [[Pag...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg257-2, pp. 257-263, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg257-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg257-2. Public record. Public Papers source pagination, pp. 257-263; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2726,7 +2741,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...in no longer haunts the United States. Yet this world remains a very dangerous place. Saddam Hussein confirmed that. The tragic violence in Bosnia today reminds us of that every day. The proliferation of nuclear and other weapons of mass destruction is a growing menace, unfortunately, not a receding one, to peaceful nations. And human suffering such as that now being endured by the people of Somalia may not threaten ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg280-2, pp. 280-283, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg280-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg280-2. Public record. Public Papers source pagination, pp. 280-283; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2766,7 +2781,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ry marine who serves our Nation, from Rhein-Main Air Force Base in Germany, where Americans are leaving to airdrop lifesaving supplies into Bosnia, to Somalia, where our Armed Forces have served with great distinction and made every American proud. I'm honored to join you on Armed Forces Radio. I've had many blessings this year: the privilege of meeting Americans all across our Nation, the opportunity to hear about t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg283, pp. 283-285, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg283. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg283. Public record. Public Papers source pagination, pp. 283-285; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2800,7 +2815,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 7-8 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 7-8; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 7-8; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -2831,12 +2846,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101349. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101349. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/334e9c83f263373d7d46131c52da4f6e.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1993-book1-doc-pg323",
@@ -2875,7 +2891,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...omorrow. I don't want to discuss any individuals at this point. I will do my best to pick a truly outstanding person just as soon as I can. Bosnia Q. [Inaudible]--is to get people out of Bosnia. Are you going to be able to comply with that request? The President. President Mitterrand and I talked the other day, and he told me he was going to give some helicopters, which, as you know, he's done. And this morning was t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg323, pp. 323, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg323. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg323. Public record. Public Papers source pagination, pp. 323; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2926,7 +2942,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... he has still not done, in order for us to favor any kind of relaxation of the restrictions now on him through the U.N. That's my position. Bosnia Mr. Rather. What used to be called the Balkans, what once was Yugoslavia, is now referred to in shorthand as Bosnia. You seem--and I say this respectfully, but I want to say it directly--you seem to have been all over the place in terms of policy toward Bosnia. One, tell u...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg346-2, pp. 346-354, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg346-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg346-2. Public record. Public Papers source pagination, pp. 346-354; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -2960,7 +2976,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 9 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 9; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 9; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -3005,7 +3021,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...eece that I want to say a brief word about two issues that I know concern this audience greatly: Cyprus and the former Yugoslav Republic of Macedonia. On Cyprus, I want to give you my personal [[Page 358]] assurance that I and my administration will stay fully engaged in the U.N. process of negotiations, that we will give our full energies to helping reach a fair and permanent solution to the Cyprus dispute, and that...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg357, pp. 357-359, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg357. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg357. Public record. Public Papers source pagination, pp. 357-359; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3048,7 +3064,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r. President? The President. No, but I understand a lot of what the Chancellor says. Perhaps not as much as what he understands what I say. Bosnian Peace Agreement Q. Mr. President, how long should the Serbs [[Page 360]] be given before you push to lift the embargo? The President. Well, let me say I just hope the Serbs will sign the agreement now. Note: The exchange began at 10:40 a.m. in the Oval Office at the White...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg359-2, pp. 359-360, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg359-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg359-2. Public record. Public Papers source pagination, pp. 359-360; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3103,7 +3119,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, srebrenica, izetbegovic, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s and with each other [[Page 361]] to vigorously produce a program of support for Russia. We discussed in depth the troubling situations in Bosnia and elsewhere, and we conferred on trade and economics. We agreed that we must work hard to conclude the Uruguay GATT round this year, and we committed to work closely together in this endeavor. As two of the world's leading exporting nations, the United States and Germany...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg360, pp. 360-366, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg360. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg360. Public record. Public Papers source pagination, pp. 360-366; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3137,7 +3153,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 10-11 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 10-11; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 10-11; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -3179,7 +3195,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...I was there to learn that five naval aviators lost their lives returning to the TR from operations in support of our presence in the former Yugoslavia. The conflict in that region and those we see elsewhere remind us that we have entered a new world that will test us in new ways. Our Navy will play an important role in getting us past those tests, as it has throughout our history. To help the men and women in our Nav...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg371, pp. 371-372, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg371. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg371. Public record. Public Papers source pagination, pp. 371-372; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3222,7 +3238,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y administration, several critical situations have demanded our attention, in Iraq, in Somalia, in Haiti, in the Middle East, in the former Yugoslavia, and elsewhere. We have sought to develop strategies to address these and other immediate challenges. And I'm encouraged by the progress which has been made in most of the areas of challenge. Yet all of us must also focus on the larger questions that this new era prese...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg372, pp. 372-379, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg372. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg372. Public record. Public Papers source pagination, pp. 372-379; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3273,7 +3289,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rnment Publishing Office www.gpo.gov] Question-and-Answer Session With the American Society of Newspaper Editors in Annapolis April 1, 1993 Bosnia Q. Mr. President, I support your vision and am grateful to be here for this historic speech. As a journalist and a citizen I am deeply anguished over the reports from Bosnia: deliberate, premeditated rape, the shelling of innocent civilians, families forced from their home...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg379, pp. 379-383, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg379. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg379. Public record. Public Papers source pagination, pp. 379-383; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3313,7 +3329,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...f proliferation, to protect the global environment, and to address common challenges to international peace, such as the tragic violence in Bosnia, advancing the promising peace talks we have cosponsored in the Mideast, and continuing our cooperation to end the regional conflicts of the cold war era. Many of the dreams Americans and Russians hold for their children and for generations to come rest on the long-term su...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg393, pp. 393-401, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg393. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg393. Public record. Public Papers source pagination, pp. 393-401; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3359,7 +3375,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (serbia/serbs, milosevic, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...You will know job by job how many they'll be responsible for not putting to work. We'll see. Q. You sound pretty passionate on the subject. Serbia President Clinton. What did you say about Milosevic? Q. How do you feel--[inaudible]--by his message? President Clinton. Oh, that was like the Iraqi charm offensive. He's just trying to head off tougher sanctions if the Vance-Owen plan is not embraced. Q. Is it going to wo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg405, pp. 405-406, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg405. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg405. Public record. Public Papers source pagination, pp. 405-406; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3408,7 +3424,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, milosevic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ents in the different societies to accept the diversity and the coexistence. This has resulted in unprecedented atrocities and suffering in Bosnia and Herzegovina. The world cannot tolerate the savage practices which are committed under the ugly slogan of ethnic cleansing and purification. It is against all human values to see such claims emerge at the threshold of the 21st century. Unfortunately, violence is increas...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg406, pp. 406-412, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg406. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg406. Public record. Public Papers source pagination, pp. 406-412; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3442,7 +3458,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 12 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 12; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 12; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -3484,7 +3500,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e people in that Republican Senate bloc that want to vote for a good stimulus program. I know they do. I hope they'll be released to do it. Bosnia Q. Mr. President, have you rejected the recommendation of your commission that force be used in Bosnia? The President. I saw that story. That commission has not made a report to me yet. We didn't ask anybody not to talk to the Congress. We just asked that policy recommenda...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg418, pp. 418-419, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg418. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg418. Public record. Public Papers source pagination, pp. 418-419; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3530,7 +3546,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [Pages 429-430] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on the No-Fly Zone Over Bosnia April 13, 1993 Dear Mr. Speaker: (Dear Mr. President:) As part of my continuing effort to keep the Congress fully informed, I am providing this report, consistent with section 4 of the War Powers Resolution, to advise you of actions that I have ordered in support of the Un...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg429-3, pp. 429-430, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg429-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg429-3. Public record. Public Papers source pagination, pp. 429-430; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3568,8 +3584,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 3-7 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 3-7; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 3-7; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentType": "Memcon"
     },
     {
@@ -3612,7 +3628,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ent Publishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Prime Minister Kiichi Miyazawa of Japan April 16, 1993 Bosnia Q. Mr. President, we understand that Srebrenica is about to fall and some 60,000 Bosnian Muslims may be evacuated or surrender on your watch. That must be pretty painful. The President. I regret that it's happening. We met and discussed this morning what our other options ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg438, pp. 438, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg438. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg438. Public record. Public Papers source pagination, pp. 438; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3663,7 +3679,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, balkan, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ounded possibilities of our two nations working together in our new partnership to bring a better world for all of us. Thank you very much. Bosnia Q. Mr. President, if all bets are off now, are you seriously considering the use of air power in Bosnia against the Serbs and also lifting the arms embargo? Have you given any kind of ultimatum to the Serbs? And what kind of a feedback are you getting from Russia and the a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg438-2, pp. 438-445, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg438-2. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg438-2. Public record. Public Papers source pagination, pp. 438-445; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3709,7 +3725,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ss the world today people are fighting with each other and killing each other because of their racial and religious differences. In eastern Bosnia, in the town of Srebrenica, Muslims and Serbs that lived together for centuries, and tens of thousands of the Muslims are now about to be forced from their homes through a process called ethnic cleansing and because the Serbs had decided that they just can't live unless th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg450, pp. 450-453, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg450. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg450. Public record. Public Papers source pagination, pp. 450-453; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3743,7 +3759,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 13-14 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 13-14; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 13-14; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -3785,7 +3801,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ice www.gpo.gov] [[Page 465]] Exchange With Reporters Prior to Discussions With President Vaclav Havel of the Czech Republic April 20, 1993 Bosnia Q. Mr. President, President Havel is here for the Holocaust Museum opening, and you toured the museum last night. All this focus on the Holocaust, how does that weigh on your decisionmaking process as far as Bosnia is concerned? The President. Well, I think the Holocaust i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg465, pp. 465, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg465. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg465. Public record. Public Papers source pagination, pp. 465; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3814,12 +3830,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101350. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101350. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/5d531ef1274105f9657199a8a2a3c2ef.pdf",
       "localPdfPageCount": 4,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1993-book1-doc-pg472",
@@ -3864,7 +3881,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, slovenia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...locaust Memorial Museum. All of us are honored to be joined by the heads of state of so many distinguished nations: of Israel and Portugal, Croatia and Romania, Bulgaria and Hungary, Poland, Slovenia, the Czech Republic, the Slovak Republic, Albania and Moldova. These fine people, as you heard, and I had a lot of conversations this afternoon and we are a little late, and for that I apologize. I do want to say that fo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg472, pp. 472-474, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg472. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg472. Public record. Public Papers source pagination, pp. 472-474; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3907,7 +3924,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... world is good. We learn again and again that the world has yet to run its course of animosity and violence. Ethnic cleansing in the former Yugoslavia is but the most brutal and blatant and ever-present manifestation of what we see also with the oppression of the Kurds in Iraq, the abusive treatment of the Baha'i in Iran, the endless race-based violence in South Africa. And in many other places we are reminded again ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg478-2, pp. 478-480, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg478-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg478-2. Public record. Public Papers source pagination, pp. 478-480; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -3947,7 +3964,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...any hours on this myself and, indeed, this afternoon will be spending another 2\\1/2\\ hours on it. So I think we're pretty well on schedule. Bosnia Q. [Inaudible]--Elie Wiesel's comments about Bosnia this morning, sir, as a challenge to you personally? The President. I think it was a challenge to the United States and to me and to the West to take further initiatives in Bosnia. And I accepted it as such. I was eager t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg480, pp. 480-481, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg480. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg480. Public record. Public Papers source pagination, pp. 480-481; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4000,7 +4017,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, arms embargo, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [[Page 484]] The President's News Conference April 23, 1993 The President. Terry [Terence Hunt, Associated Press], do you have a question? Bosnia Q. Mr. President, there's a growing feeling that the Western response to bloodshed in Bosnia has been woefully inadequate. Holocaust survivor Elie Wiesel asked you yesterday to do something, anything to stop the fighting. Is the United States considering taking unilateral ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg484, pp. 484-493, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg484. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg484. Public record. Public Papers source pagination, pp. 484-493; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4040,7 +4057,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...my children and our country's future, all of our futures and all of our children's, are at stake there. We have other interests as well, in Bosnia. The United States in the last 96 days has tried to increase the efforts of the West to bring about a settlement. We led the effort to put a no-fly zone and to enforce it through the United Nations. We started airlifts of supplies to people who were isolated. We got two of...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg496, pp. 496-505, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg496. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg496. Public record. Public Papers source pagination, pp. 496-505; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4089,7 +4106,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...S. Government Publishing Office www.gpo.gov] Question-and-Answer Session With the Newspaper Association of America in Boston April 25, 1993 Bosnia Q. I'm director of the School of Journalism at Northeastern University here in Boston. I apologize for not being an actual member of NAA, but I guess I'm here as your guest. Mr. President, you did refer to Bosnia. And I must say, as we look at that situation, it is horrify...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg505, pp. 505-510, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg505. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg505. Public record. Public Papers source pagination, pp. 505-510; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4129,7 +4146,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...American people and their interests. And so we'll be talking about that. And I expect to make a decision in the fairly near future on that. Bosnia Q. Mr. President, do you now have a course of action that you're free to take by virtue of this result in Russia that you might have been inhibited in taking before, perhaps on Bosnia or perhaps on some other issue, perhaps on Russia itself? The President. Well, what you s...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg512, pp. 512-514, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg512. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg512. Public record. Public Papers source pagination, pp. 512-514; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4178,7 +4195,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m the U.S. Government Publishing Office www.gpo.gov] Message to the Congress on Additional Measures With Respect to the Federal Republic of Yugoslavia (Serbia and Montenegro) April 26, 1993 To the Congress of the United States: On June 1, 1992, pursuant to section 204(b) of the International Emergency Economic Powers Act (50 U.S.C. 1703(b)) and section 301 of the National Emergencies Act (50 U.S.C. 1631), President B...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg514, pp. 514-515, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg514. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg514. Public record. Public Papers source pagination, pp. 514-515; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4218,7 +4235,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ng with some Members of the United States Congress of both parties, some of whom are also here in the crowd, talking about the situation in Bosnia. And I got away as quickly as I could. I thank all of you for coming here. It's a great honor for me as an ardent basketball fan to welcome to the White House two proud new national champions, the Tarheels of North Carolina and the Lady Raiders of Texas Tech, who won the m...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg522, pp. 522-523, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg522. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg522. Public record. Public Papers source pagination, pp. 522-523; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4261,7 +4278,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ther a policy that makes sense. If you try to pick one or the other, you're never going to get the job done. Wolf [Wolf Blitzer, CNN News]? Bosnia Q. Mr. President, you met last night with a bipartisan group of congressional leaders on the situation in Bosnia. And by all accounts, they seem to have given you some conflicting advice. Many of them appear to be more moved by the lessons of Vietnam than they are by the H...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg527-2, pp. 527-530, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg527-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg527-2. Public record. Public Papers source pagination, pp. 527-530; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4301,7 +4318,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d with most previous administrations in a similar time period, I think we're doing pretty well. Q. Did you take on too much, Mr. President? Bosnia Q. Have you reached a decision on Bosnia yet, Mr. President? The President. Helen [Helen Thomas, United Press International], I have not. As you probably know, General Powell was away for most of the week in Europe. And I want to see and talk with him personally and have s...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg532-3, pp. 532-533, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg532-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg532-3. Public record. Public Papers source pagination, pp. 532-533; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4341,7 +4358,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...This is a real moment in the history of this country. You can be a part of it. Now the time has come to bring it home. Thank you very much. Bosnia Q. Mr. President, does this reconvening of the peace talks take the pressure off you at all, sir? The President. Well, let's see what happens there. Let's see what happens. Let's see how serious they are. You know, they've said things before and not meant it. If they mean ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg536, pp. 536-538, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg536. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg536. Public record. Public Papers source pagination, pp. 536-538; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4381,7 +4398,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [April 30, 1993] [Page 543] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters in New Orleans April 30, 1993 Bosnia Q. [Inaudible] The President. I'm going to have another meeting in the morning about it, do a little more work on the way back today, and then have another meeting in the morning. And then I may want to make another round of phone calls after we meet with the principals. A...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg543, pp. 543, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg543. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg543. Public record. Public Papers source pagination, pp. 543; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4424,7 +4441,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...93, Book I)] [May 2, 1993] [Pages 551-552] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Prospects for Peace in Bosnia May 2, 1993 The developments in the Vance-Owen process are a positive step, but we have yet to determine whether the Serbs are serious about peace. We will make that judgment based upon their actions on the ground in Bosnia. As Lord Owen said this morning, ``We still have ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg551-2, pp. 551-552, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg551-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg551-2. Public record. Public Papers source pagination, pp. 551-552; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4467,7 +4484,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Government Publishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Governor Chris Patten of Hong Kong May 3, 1993 Bosnia Q. Mr. President, do you expect the Serbs to keep their word---- The President. The what? Q. ----the Bosnian Serbs? Do you trust the Serbs at this point? The President. Well, I want to reiterate what we've already said. I want to evaluate them by their actions. We'll see w...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg552, pp. 552-553, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg552. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg552. Public record. Public Papers source pagination, pp. 552-553; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4507,7 +4524,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... the American people first. So I wouldn't rule out anything down the road, but I'm confident we need to pass the budget [[Page 561]] first. Bosnia Q. Are there special forces in Bosnia on the ground? The President. There aren't any. I saw the report, Ron [Ron Fournier, Associated Press]. I don't know what the basis of it is. I have not authorized that at all. Note: The teleconference began at 10:30 a.m. The President...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg555, pp. 555-561, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg555. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg555. Public record. Public Papers source pagination, pp. 555-561; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4550,7 +4567,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters Prior to a Meeting With Congressional Leaders May 5, 1993 Bosnia Q. Mr. President, will you be going to Congress to get authorization before any troops would be sent to Bosnia? The President. We're here consulting about Bosnia today, and I have been extensively consulting, and no decision has been made by this administration about this ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg566, pp. 566, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg566. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg566. Public record. Public Papers source pagination, pp. 566; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4590,7 +4607,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... If you'll help me take that message to the Congress, this will be one of the best years the American people ever had. Thank you very much. Bosnia Q. Have you heard anything from Bosnia, sir? The President. No. Q. How quickly are you prepared to move once you do? The President. Well, let's wait and see what they do first. Q. Mr. President, there is word that the parliament has agreed to the peace agreement. Mr. Presi...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg567, pp. 567-569, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg567. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg567. Public record. Public Papers source pagination, pp. 567-569; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4639,7 +4656,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, karadzic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...say to you today about the subject which brings you here. I hope you will understand if I ask for a few moments to address the situation in Bosnia first, not only because the national press is here but because you are very much a part of the world which will be affected by what happens there and how that impacts our friends and neighbors in Europe and particularly in the Mediterranean area. Over the past week we saw ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg576, pp. 576-581, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg576. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg576. Public record. Public Papers source pagination, pp. 576-581; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4682,7 +4699,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": ".... Clinton (1993, Book I)] [May 6, 1993] [Pages 581-582] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia May 6, 1993 Q. Mr. President, the Serbs are now saying that they're going to cut off all but humanitarian supplies to the Bosnians. Do you have any reaction to that? The President. Well, that would be a good start. We'll see. We're working today on a lot of options. I want...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg581, pp. 581-582, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg581. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg581. Public record. Public Papers source pagination, pp. 581-582; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4710,12 +4727,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101351. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101351. Secret. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/3dcddfba1080842a98d3c7af6e455ee8.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Secret"
     },
     {
       "id": "pcdc-1993-05-06-bosnia-principals-summary",
@@ -4748,7 +4766,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 15-16 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 15-16; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 15-16; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -4793,7 +4811,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...us what you and the Europeans have accomplished? The impression is that despite all of his diplomatic skills, that nothing on the ground in Yugoslavia or Bosnia is going to change, at least for the foreseeable future. The President. I'll be happy to answer that, but if I might, can I just answer--and I'll come back to you before I leave, but could we--if there are any other questions on this subject from the press, o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg584-2, pp. 584-589, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg584-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg584-2. Public record. Public Papers source pagination, pp. 584-589; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4844,7 +4862,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, milosevic, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rnment Publishing Office www.gpo.gov] [[Page 590]] Exchange With Reporters Prior to Discussions With European Community Leaders May 7, 1993 Bosnia Q. Mr. President, what makes you so confident that you're going to get a consensus, and a consensus for what? Air strikes? Lifting the arms embargo? The President. First of all, I think I should receive a report from Mr. Christopher before I make a final comment on that. T...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg590, pp. 590, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg590. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg590. Public record. Public Papers source pagination, pp. 590; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4879,7 +4897,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 17-18 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 17-18; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 17-18; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -4932,7 +4950,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...an continue to support it. Q. Mr. President---- The President. Go ahead. We'll take one more and then I'll take this young man's. Go ahead. Bosnia Q. Mr. President, I was wondering with all the news about Bosnia, do you see any differences in sending troops to Bosnia where you were strongly opposed to civil war in Vietnam in the late sixties? The President. Well, first of all, I do. That's a good question. But I have...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg614-2, pp. 614-624, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg614-2. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg614-2. Public record. Public Papers source pagination, pp. 614-624; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -4983,7 +5001,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e been discussed with me, don't in any way undermine the fundamental principles of the tax program and the spending cut program I laid out. Bosnia Mr. Imus. There is a dramatic picture of you and an agonizing Lyndon Johnson on the cover of the current issue of Time magazine asking the question if Bosnia is going to be your Vietnam. One, let me ask you, do you think it has that potential? And two, what is the United S...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg628-2, pp. 628-634, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg628-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg628-2. Public record. Public Papers source pagination, pp. 628-634; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5026,7 +5044,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters Following the Small Business Person Award Ceremony May 12, 1993 Bosnia Q. Mr. President, have you changed your views on the arms embargo at all? The President. No. Q. Does the fighting---- The President. I haven't changed my views. I just don't know if I've changed anybody else's, but I haven't changed my views. Associate Attorney General Nom...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg637, pp. 637-638, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg637. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg637. Public record. Public Papers source pagination, pp. 637-638; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5066,7 +5084,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...accommodated the incredible diversity of our land with remarkable harmony. When you look at what is happening, the heartbreak in the former Yugoslavia today, where there are three ethnic groups that genetically have no ethnic differences at all but call themselves ethnically different solely because of the accidents of religion and history, it is an incredible tribute that in this country, in this great city and acro...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg638, pp. 638-644, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg638. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg638. Public record. Public Papers source pagination, pp. 638-644; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5109,7 +5127,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Means Committee don't reduce the overall contribution from the business sector. They just shift the way it comes. And I think that's okay. Bosnia Q. Mr. President, do you hold out any hope that the referendum in Bosnia this weekend might result in some sort of face-saving way to get out of this mess? The President. The issue is not face saving. The issue is life saving. Face saving has got nothing to do with it. The...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg652, pp. 652-653, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg652. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg652. Public record. Public Papers source pagination, pp. 652-653; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5166,7 +5184,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, kosovo, macedonia, milosevic, unprofor, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e. It has been a good week, and if we're willing to take more tough decisions, there will be more good weeks for the American people ahead. Bosnia Q. Mr. President, you've said that the United States will not go it alone with military action in Bosnia. And yet, the European allies have refused to sign-on to your proposals. If the allies refuse to follow suit, where does that leave the United States? The President. Le...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg659, pp. 659-668, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg659. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg659. Public record. Public Papers source pagination, pp. 659-668; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5206,7 +5224,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nt Chiefs of Staff since becoming President. I've had to, because of the work we've done not only with the defense budget but the crisis in Bosnia, the moving out of our commitment in Somalia--which was a real success--and a lot of other issues. I think it's fair to say that most of them have mixed feelings. They know that we have to reduce defense. They know that we don't need a 2-million or a 3-million-person Armed...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg680, pp. 680-692, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg680. Public Papers granule PDF; 13 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg680. Public record. Public Papers source pagination, pp. 680-692; 13 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5240,8 +5258,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 19-20 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 19-20; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 19-20; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -5285,7 +5303,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Clinton (1993, Book I)] [May 21, 1993] [Pages 713-714] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia May 21, 1993 Q. Mr. President, have you reached agreement with the Russians on a Bosnia policy? The President. Well, Secretary Christopher is talking to Foreign Minister Kozyrev today, and we will try to reach an agreement about what we do next. As you know, the United Sta...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg713-3, pp. 713-714, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg713-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg713-3. Public record. Public Papers source pagination, pp. 713-714; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5331,7 +5349,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, kosovo, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ates: William J. Clinton (1993, Book I)] [May 22, 1993] [Pages 724-725] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on Bosnia and an Exchange With Reporters in Manchester, New Hampshire May 22, 1993 The President. First of all, I'm very pleased by the agreement that has been reached by Secretary Christopher and the foreign ministers from Russia, France, the United Kingdom, and Spain. I think it p...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg724, pp. 724-725, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg724. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg724. Public record. Public Papers source pagination, pp. 724-725; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5377,7 +5395,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, karadzic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...t Publishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With President Richard von Weizsacker of Germany May 24, 1993 Bosnia Q. Mr. President, have you been surprised or disappointed by the reaction in Bosnia and Serbia---- The President. You mean, the opposition to it? Q. The opposition and the initial support from Mr. Karadzic. The President. No, it's about like I expected it to be. Q. [Inaudi...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg728, pp. 728-729, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg728. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg728. Public record. Public Papers source pagination, pp. 728-729; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5426,7 +5444,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ng Office www.gpo.gov] Message to the Congress Transmitting the Notice on Continuation of Emergency With Respect to the Federal Republic of Yugoslavia (Serbia and Montenegro) May 25, 1993 To the Congress of the United States: Section 202(d) of the National Emergencies Act (50 U.S.C. 1622(d)) provides for the automatic termination of a national emergency unless, prior to the anniversary date of its declaration, the Pr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg734, pp. 734-735, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg734. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg734. Public record. Public Papers source pagination, pp. 734-735; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5481,7 +5499,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, slovenia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...1993] [Pages 735-739] [From the U.S. Government Publishing Office www.gpo.gov] Message to the Congress Reporting on the Federal Republic of Yugoslavia (Serbia and Montenegro) May 25, 1993 To the Congress of the United States: On May 30, 1992, in Executive Order No. 12808, President Bush declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United States ari...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg735, pp. 735-739, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg735. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg735. Public record. Public Papers source pagination, pp. 735-739; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5521,7 +5539,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... just lay it out--this guy said, ``I was for you, but I'm mad at you because since you've been in Washington, you've spent all your time on Bosnia and gays in the military.'' I said, ``How do you know that?'' He said, ``I watch the news every night.'' [Laughter] And I said, ``Well,'' I said, ``okay, let me tell you,'' I said, ``I just did an analysis of what I did the first 100 days. I spent 25 percent of my time on ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg742, pp. 742-760, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg742. Public Papers granule PDF; 19 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg742. Public record. Public Papers source pagination, pp. 742-760; 19 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5561,7 +5579,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e forces that plagued the world in the early days of this century. As we scan today's bloodiest conflicts, from the former Soviet Union and Yugoslavia to Armenia to Sudan, the dynamics of the cold war have been replaced by many of the dynamics of old war. A particularly troubling new element in the world you face, however, is the proliferation around the globe of weapons of mass destruction and the means for their de...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg779, pp. 779-783, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg779. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg779. Public record. Public Papers source pagination, pp. 779-783; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5601,7 +5619,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...isit Q. Is this a hail-and-farewell visit? Prime Minister Mulroney. I came down to see the President about NAFTA and some trade matters and Bosnia, where we have troops on the ground, and to work with him. We agree with the prudent and thoughtful course he's been pursuing there. And I'd like to talk to him about further engagement at the United Nations and also to say good-bye and to you, Helen [Helen Thomas, United ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg799, pp. 799-802, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg799. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg799. Public record. Public Papers source pagination, pp. 799-802; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5644,7 +5662,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ying to do, is to get the House and the Senate to work together before the Senate Finance Committee even votes. Former Yugoslav Republic of Macedonia Q. Why are there troops on the ground in Macedonia, Mr. President? The President. To limit the conflict. As we said all along, we would support the United Nations in limiting the conflict. It's a very limited thing. No combat but an attempt to limit the conflict. Note: ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg832, pp. 832-833, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg832. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg832. Public record. Public Papers source pagination, pp. 832-833; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5693,7 +5711,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, macedonia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...a faster track, I think people would have said at Christmastime, that's a pretty good and decisive record. We haven't solved the problem in Bosnia that has plagued everybody. I concede that. The Europeans wouldn't go along with my proposed resolution. I still think they may be compelled to do that or something very near like it if they want to get anything done over there. And I think we're going forward. I like the ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg847-2, pp. 847-853, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg847-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg847-2. Public record. Public Papers source pagination, pp. 847-853; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5746,7 +5764,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, arms embargo, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ringing the deficit down. That's what this last week means. It means continued victory for the American people if we can stay on this road. Bosnia and NATO Q. Since Vance-Owen is dead, will the United States approve of a partition of Bosnia if the three factions meeting in Geneva actually approve it? And also, isn't NATO really obsolescent now? I mean, hasn't it outlived--it can't stop the slaughter in Europe, it won...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg867-2, pp. 867-875, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg867-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg867-2. Public record. Public Papers source pagination, pp. 867-875; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5786,7 +5804,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...eforms and the role Argentina has assumed as an international leader. Today, Argentine troops serve with the United Nations peacekeepers in Croatia, in Kuwait, in Mozambique, and in other troubled lands. In the Organization of American States, Argentina consistently takes a strong stand in favor of collective defenses of democracy. With Argentina's support, the OAS has worked to defend democratic institutions in Peru...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg954, pp. 954-958, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg954. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg954. Public record. Public Papers source pagination, pp. 954-958; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5832,7 +5850,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to the Japanese issue; you asked that and I haven't forgotten--but the only--in Europe is that we have not agreed entirely on how to handle Bosnia, although we've done a lot of work together. The United States has spent almost $300 million in humanitarian assistance. We have strongly enforced and pushed for tougher sanctions and embargoes on Serbia. We believe and the Germans believe the arms embargo ought to be lift...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg976, pp. 976-983, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg976. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg976. Public record. Public Papers source pagination, pp. 976-983; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5883,7 +5901,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, milosevic, karadzic, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...mocracy. We supported a free market economic reform in Russia. And I hope we will do so again at the G-7. We have not solved the problem in Bosnia, and our nations are somewhat divided about it. It is a very difficult problem. But I do have some ideas about those things that I will be discussing with the other leaders. Japan Q. Mr. President, let me start my question with your view on Japan. Since you took office you...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg983, pp. 983-989, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg983. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg983. Public record. Public Papers source pagination, pp. 983-989; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5926,7 +5944,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...he late spring or the early summer and that they will have a very good trip. We are eager to receive them. Q. Thank you very much. Iraq and Bosnia Q. With regard, Mr. President, to the Iraq retaliatory attack. Of course, this took place, and there was no military mobilization that took place on the part of Iraq. However, this attack did take place. And I'm just wondering what your thoughts are on this situation. The ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1019, pp. 1019-1027, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1019. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1019. Public record. Public Papers source pagination, pp. 1019-1027; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -5966,7 +5984,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... I think it's fair to say, support that approach. We also discussed the foreign affairs issues which concern us both, including Somalia and Bosnia, and I was very impressed with the comments and the points that the Prime Minister made. I want to close by thanking Italy for its renewed effort in global problem-solving; the humanitarian and peacekeeping assistance in Bosnia, Albania, Somalia, Mozambique; its mediation ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1027, pp. 1027-1030, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1027. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1027. Public record. Public Papers source pagination, pp. 1027-1030; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6006,7 +6024,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...l expansion. But he's going to have a major role in this meeting tomorrow, and I expect him to be here next year. Q. Isn't the statement on Bosnia somewhat disappointing? Japan-U.S. Relations Q. Will you have dinner tonight with Mr. Miyazawa? And what do you read into the fact that he wants to see you again for a trade agreement or---- The President. I think they are interested in moving our relationships forward. To...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1043, pp. 1043-1045, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1043. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1043. Public record. Public Papers source pagination, pp. 1043-1045; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6055,7 +6073,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia, balkan, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ages 1045-1046] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on the Former Yugoslav Republic of Macedonia July 9, 1993 Dear Mr. Speaker: (Dear Mr. President:) On June 18, 1993, the U.N. Security Council adopted Resolution 842, expanding the size of the U.N. Protection Force (UNPROFOR) in the former Yugoslav Republic of Macedonia. The Security Council acknowledged the import...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1045, pp. 1045-1046, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1045. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1045. Public record. Public Papers source pagination, pp. 1045-1046; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6106,7 +6124,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y settled on but---- Mr. King. Gas tax? The President. Closer to that. There's less opposition to it. Mr. King. Copenhagen, Denmark. Hello. Bosnia [A participant asked about U.S. troop participation in peacekeeping efforts.] The President. Well, let me remind you, sir, that we have had several thousand troops in Somalia. We have contributed hundreds of millions of dollars in humanitarian aid to the former Yugoslavia....",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1137-3, pp. 1137-1148, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1137-3. Public Papers granule PDF; 12 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1137-3. Public record. Public Papers source pagination, pp. 1137-1148; 12 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6146,7 +6164,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...- The President. They may discuss a lot of different things. Let's just see what happens. Q. Are you thinking of 5 cents, 5 cents a gallon? Bosnia Q. Have you given up on Bosnia? The President. No. That's not true. Those stories are not accurate. Q. That's the way Secretary Christopher's remarks were interpreted. The President. I disagree that that's what they said. I realize that that's how one or two sentences were...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1154, pp. 1154-1155, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1154. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1154. Public record. Public Papers source pagination, pp. 1154-1155; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6189,7 +6207,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...993, Book I)] [July 28, 1993] [Page 1212] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 1212]] Exchange With Reporters on Bosnia July 28, 1993 Q. Mr. President, are you going to send air power to Bosnia? The President. Let me say, I saw the stories this morning. The position of the United States has long been that if the United Nations troops were attacked there, we would do our part to protect it a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1212, pp. 1212, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1212. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1212. Public record. Public Papers source pagination, pp. 1212; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6238,7 +6256,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, izetbegovic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Congress. And I assure them that together our best efforts, I believe, will produce a victory in this economic battle. Thank you very much. Bosnia Q. Mr. President, if I could turn your attention to the situation in Bosnia. The United States has long promised to provide air support if U.N. peacekeepers are threatened. French peacekeepers have now been fired on for 2 days in a row. Are you now prepared to deliver your...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1212-2, pp. 1212-1215, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1212-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1212-2. Public record. Public Papers source pagination, pp. 1212-1215; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6284,7 +6302,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ere is for at least four or five of them to let that go in the law because it's good Government. It doesn't have anything to do with party. Bosnia Q. Regarding the situation in Bosnia, now that you have met with Secretary Christopher, can you tell us a little bit about your options in the air strikes? The President. Well, we expect the U.N. forces there in Bosnia to communicate--the commander there to communicate to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1215, pp. 1215-1223, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1215. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1215. Public record. Public Papers source pagination, pp. 1215-1223; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6327,7 +6345,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... stuff. And you ought to make corrections every year, and this is the first time the Government's ever committed itself to that. I like it. Bosnia Q. Mr. President, are you considering the use of war planes over Bosnia, not just to protect U.N. peacekeeping forces but also to keep the supply lines going and perhaps to stop some of the shelling in Sarajevo? The President. The best way for me to answer that today is to...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1224-2, pp. 1224-1227, https://www.govinfo.gov/app/details/PPP-1993-book1/PPP-1993-book1-doc-pg1224-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book I), PPP-1993-book1; PPP-1993-book1-doc-pg1224-2. Public record. Public Papers source pagination, pp. 1224-1227; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6370,7 +6388,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...vernment Publishing Office www.gpo.gov] [[Page 1297]] Exchange With Reporters Prior to a Meeting With the Progressive Caucus August 2, 1993 Bosnia Q. Mr. President, could you clarify U.S. policy towards Bosnia? Is the U.S. prepared to unilaterally use military force to break the siege of Sarajevo and get humanitarian supplies in? Or will it work only in conjunction with the NATO allies? The President. Well, let me sa...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1297, pp. 1297, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1297. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1297. Public record. Public Papers source pagination, pp. 1297; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6416,7 +6434,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...good package; it's solid; it's clearly real numbers. It's very different from the 1990 package in many ways. So I feel quite good about it. Bosnia Q. Mr. President, what message is being sent to Bosnian Serbs and Muslims with this agreement that NATO has reached? The President. The message is, first of all, that the allies are determined to protect the United Nations forces there, determined to secure the humanitaria...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1310, pp. 1310-1312, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1310. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1310. Public record. Public Papers source pagination, pp. 1310-1312; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6456,7 +6474,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...guns and started shooting them. This is crazy. This is crazy. Our television news is filled at night with horrible incidents of violence in Bosnia and other places in the world that break our heart. Twenty-four people were killed in this town, our Nation's Capital, in one week last month. We have to get on with that. You had Hugh McColl here the other day, my friend Hugh McColl, one of the most enlightened bankers in...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1328, pp. 1328-1333, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1328. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1328. Public record. Public Papers source pagination, pp. 1328-1333; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6499,7 +6517,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... The President. I'm going to follow my ironclad rule on this. I'm going to let the Members speak for themselves. Yes, I have spoken to him. Bosnia Q. [Inaudible]--Sarajevo, it looks like the siege is getting worse and may not be able to wait until Monday. Do the allies--[inaudible]-- need to move it up to protect the city before it falls? The President. I can't answer that now, because I haven't been briefed on it. B...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1340-2, pp. 1340-1343, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1340-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1340-2. Public record. Public Papers source pagination, pp. 1340-1343; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6539,7 +6557,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...onsider missions outside traditional alliance boundaries, a very, very important step in the recently announced NATO posture with regard to Bosnia. The end of the cold war has created many opportunities for our security and many new threats that lurk among the world's continuing dangers. General Shali is the right man to lead our forces in this challenging era. Our Nation is blessed with the finest military on the fa...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1363, pp. 1363-1364, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1363. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1363. Public record. Public Papers source pagination, pp. 1363-1364; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6579,7 +6597,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e world both more individual responsibility and more community action. We talked about a wide range of international problems. We discussed Bosnia at length, as you might imagine. We talked about the peacekeeping mission in Somalia. We talked about the efforts of nations working together through the United Nations to reduce violence and support human rights and democracy throughout the world, in Cambodia, for example...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1371, pp. 1371-1372, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1371. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1371. Public record. Public Papers source pagination, pp. 1371-1372; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6619,7 +6637,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...mething that is devoutly to be hoped for by the peoples of all the nations here represented. But there was nothing more specific than that. Bosnia Q. Mr. President, if the Bosnian peace agreement is reached in Geneva, how many American forces would you be willing to offer to help enforce that agreement? How long would they be required to serve? And what would be the risk to those forces? President Clinton. Well, firs...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1407, pp. 1407-1412, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1407. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1407. Public record. Public Papers source pagination, pp. 1407-1412; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6653,7 +6671,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 21-23 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 21-23; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 21-23; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -6701,7 +6719,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rograms, we're talking about slowing the rate of increase--we can fund the drug and long-term care programs, which is what I propose to do. Bosnia Q. With the collapse of the Bosnian peace talks, are you going to repropose lifting the arms embargo on the Bosnian Muslims and the air strikes? The President. Let me answer the question in two parts, if I might. First of all, they are stalled. I don't believe they are col...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1429-2, pp. 1429-1431, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1429-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1429-2. Public record. Public Papers source pagination, pp. 1429-1431; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6741,7 +6759,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...plete withdrawal of forces from Latvia and Estonia. The two leaders also discussed their support for the ongoing effort to promote peace in Bosnia.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1448-2, pp. 1448, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1448-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1448-2. Public record. Public Papers source pagination, pp. 1448; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6781,7 +6799,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ess in Russia and discussed their efforts to assist that process. They also agreed on the need to cooperate on issues related to the former Yugoslavia.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1448-3, pp. 1448-1449, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1448-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1448-3. Public record. Public Papers source pagination, pp. 1448-1449; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6832,7 +6850,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, izetbegovic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...S. Government Publishing Office www.gpo.gov] [[Page 1455]] Remarks and an Exchange With Reporters Prior to Discussions With President Alija Izetbegovic of Bosnia September 8, 1993 Q. Mr. President, are you going to ask President Clinton for air strikes? President Izetbegovic. I have to thanks to Mr. President Clinton to receiving me, on behalf of me and of my colleagues here, and then thanks to the United States and ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1455, pp. 1455, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1455. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1455. Public record. Public Papers source pagination, pp. 1455; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6868,8 +6886,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 10-15 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 10-15; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 10-15; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Memcon"
     },
@@ -6913,7 +6931,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...hance trade, as well as to enhance peace, stability, and democracy. In particular, we agreed on the critical need for a peace settlement in Bosnia and discussed plans for the implementation of such a settlement should it be achieved. I expressed our appreciation for the important role Italy has played in our efforts to secure a just peace in Bosnia, especially the role of its air bases. We also discussed the prospect...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1526-2, pp. 1526-1532, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1526-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1526-2. Public record. Public Papers source pagination, pp. 1526-1532; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -6947,7 +6965,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 24-25 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 24-25; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 24-25; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -6989,7 +7007,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to a multiracial democracy. And so I will be very influenced, obviously, by what Mr. Mandela says. But I'll have a statement about that---- Bosnia Q. Mr. President, when you go to the United Nations on Monday, can you tell us what you'll tell them about your feelings concerning Bosnia? The President. Tune in Monday. I don't want to give the speech today. Russia Q. Mr. President, regarding the situation in Moscow, Pre...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1592, pp. 1592-1594, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1592. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1592. Public record. Public Papers source pagination, pp. 1592-1594; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7029,7 +7047,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...he Golan Heights, and elsewhere, U.N. peacekeepers have helped to stop the fighting, restore civil authority, and enable free elections. In Bosnia, U.N. peacekeepers, against the danger and frustration of that continuing tragedy, have maintained a valiant humanitarian effort. And if the parties of that conflict take the hard steps needed to make a real peace, the international community including the United States mu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1612, pp. 1612-1618, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1612. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1612. Public record. Public Papers source pagination, pp. 1612-1618; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7069,7 +7087,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... other in order to open up bright prospects for both of us. And if that is done, that is beyond what I would hope for. Thank you very much. Bosnia and the War Powers Act Q. [Inaudible]--what form might that agreement take and would it just be consultation of the leadership or a vote in the Congress? And could you, as a former law professor, say what you think the differences are in your view of the War Powers Act as ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1619, pp. 1619-1623, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1619. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1619. Public record. Public Papers source pagination, pp. 1619-1623; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7109,7 +7127,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... We were not asked to go to Somalia to establish a protectorate or a trust relationship or to run the country. That's not what we went for. Bosnia Q. But do you have broader concerns about Bosnia? I mean, there's a similar problem there with no date certain, no exit strategy. The President. I think there, in that case, the United States is in a much better position to establish, I think, the standards and have some d...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1624, pp. 1624-1625, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1624. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1624. Public record. Public Papers source pagination, pp. 1624-1625; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7149,7 +7167,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...blishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Foreign Minister Andrey Kozyrev of Russia September 29, 1993 Bosnia Q. Mr. President, is there anything the United States can now do to bring peace in Bosnia since the Bosnian Parliament has voted against the peace plan? The President. Well, you know, this process--this goes on day by day. We're just going to have to see what happens. They...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1632, pp. 1632-1633, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1632. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1632. Public record. Public Papers source pagination, pp. 1632-1633; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7183,8 +7201,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 26-27 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 26-27; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 26-27; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -7225,7 +7243,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...was over and the Communist empire collapsed, it sort of stripped the veneer off long-simmering ethnic and religious hatreds and tensions in Bosnia and Georgia and lots of other places in the world. We know that there are countries in Africa which are not only embroiled in war but which are suffering mass famine, in Somalia where we are trying to conclude our mission and leave those people a fighting chance not to go ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1707, pp. 1707-1715, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1707. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1707. Public record. Public Papers source pagination, pp. 1707-1715; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7265,7 +7283,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... reach into others and shape a different and more human course. And so we argue about what our responsibilities are and what is possible in Bosnia, in Somalia, in Haiti. And we do the best we can in a time of change, without some quick, easy theory like [[Page 1724]] containment which helped us in the cold war. Here at home, there's an awful lot of good, too. The movements toward opportunity for people from diverse b...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1722, pp. 1722-1728, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1722. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1722. Public record. Public Papers source pagination, pp. 1722-1728; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7322,7 +7340,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, macedonia, balkan, sarajevo, unprofor, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [Pages 1740-1741] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on the No-Fly Zone in Bosnia- Herzegovina October 13, 1993 Dear Mr. Speaker: (Dear Mr. President:) Six months ago I provided you with my initial report on the deployment of U.S. combat-equipped aircraft to support NATO's enforcement of the no-fly zone in Bosnia-Herzegovina. I am now providing this fol...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1740-2, pp. 1740-1741, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1740-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1740-2. Public record. Public Papers source pagination, pp. 1740-1741; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7362,7 +7380,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ions Q. Mr. President, would your experiences this month in Somalia and Haiti make you more cautious about sending American peacekeepers to Bosnia? The President. Well, my experiences in Somalia would make me more cautious about having any Americans in a peacekeeping role where there was any ambiguity at all about what the range of decisions were which could be made by a command other than an American command with di...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1742-2, pp. 1742-1747, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1742-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1742-2. Public record. Public Papers source pagination, pp. 1742-1747; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7408,7 +7426,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...contribution. We discussed Turkey's role in helping to play a stabilizing role in a host of regional trouble spots, ranging from the former Yugoslavia, through the Caucasus, into Central Asia and, of course, toward the Southeast where Iraq and Iran both continue to pose problems for peace and stability in the world. We also discussed the need to work for an end to the tragic conflict in Cyprus, which is dividing too ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1749-3, pp. 1749-1755, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1749-3. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1749-3. Public record. Public Papers source pagination, pp. 1749-1755; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7448,7 +7466,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...otected. That would be some evidence that we had fundamental change. Keep in mind, this is a different mission than Somalia, different from Bosnia, different from any of the existing U.N. missions. The purpose of these people--the reason we could not even think about landing the United States forces that were there a couple of days [[Page 1757]] ago is that primarily they were Seabees going there for the purpose of, ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1755, pp. 1755-1758, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1755. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1755. Public record. Public Papers source pagination, pp. 1755-1758; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7488,7 +7506,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n to Senator Mitchell in the Senate about some potential amendments to the defense appropriation bill and one actual amendment dealing with Bosnia, Haiti, and the whole command and control apparatus of our military as it relates to cooperation with other countries in peacekeeping and other endeavors. That amendment has actually been introduced. The letter essentially says that I oppose the amendment that affects the ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1763, pp. 1763-1769, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1763. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1763. Public record. Public Papers source pagination, pp. 1763-1769; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7531,7 +7549,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ss grave concern about a number of amendments that may be offered to H.R. 3116, the Defense Appropriations bill for FY 94, regarding Haiti, Bosnia and the use of United States armed forces in international operations. I am fundamentally opposed to amendments which improperly limit my ability to perform my constitutional duties as Commander-in-Chief, which may well have unconstitutional provisions, and which if adopte...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1770, pp. 1770-1771, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1770. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1770. Public record. Public Papers source pagination, pp. 1770-1771; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7565,7 +7583,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 28 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 28; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 28; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -7610,7 +7628,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [October 20, 1993] [Page 1781] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on the Conflict in Bosnia October 20, 1993 Dear Mr. Leader: The violent conflict in the former Yugoslavia continues to be a source of deep concern. As you know, my Administration is committed to help stop the bloodshed and implement a fair and enforceable peace agreement, if the parties to the conf...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1781-2, pp. 1781, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1781-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1781-2. Public record. Public Papers source pagination, pp. 1781; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7650,7 +7668,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...peaker: (Dear Mr. President:) I have directed the deployment of U.S. Naval Forces to participate in the implementation of the petroleum and arms embargo of Haiti. At 11:59 p.m. E.S.T., October 18, units under the command of the Commander in Chief, U.S. Atlantic Command, began enforcement operations in the waters around Haiti, including the territorial sea of that country, pursuant to my direction and consistent with ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1782-2, pp. 1782-1783, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1782-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1782-2. Public record. Public Papers source pagination, pp. 1782-1783; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7690,7 +7708,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...dent. ``As alternate head of the U.S. delegation to this year's session of the UNHRC, she spoke eloquently on behalf of women in the former Yugoslavia and brought all of the parties involved to a consensus position. I look forward to her continuing her strong and much-needed advocacy in this new position.'' Note: A biography of the appointee was made available by the Office of the Press Secretary.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1808-3, pp. 1808-1809, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1808-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1808-3. Public record. Public Papers source pagination, pp. 1808-1809; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7724,7 +7742,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 29-30 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 29-30; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 29-30; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -7766,7 +7784,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s close cooperation with the United States in international organizations, particularly for its compliance with United Nations sanctions on Serbia. Romania, like the other frontline states, has made real sacrifices in this important effort, earning the appreciation of the international community. I welcome this positive step in U.S.-Romanian relations and look forward to working with the people and leaders of Romania...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1884, pp. 1884, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1884. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1884. Public record. Public Papers source pagination, pp. 1884; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7806,7 +7824,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y operations, and in many other areas. We found three problems that we inherited here, when we got in, that are very difficult problems, in Bosnia, Somalia, and Haiti. And every day you can pick up the newspaper and see opinions on both sides about what we should do or a myriad of sides. We're doing the best we can on those. And we're going to do it, and we're going to do it with the team we've got, as long as we're ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1920, pp. 1920-1931, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1920. Public Papers granule PDF; 12 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1920. Public record. Public Papers source pagination, pp. 1920-1931; 12 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7849,7 +7867,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Press International]? Foreign Policy Team Q. Mr. President, U.S. foreign policy endeavors have been less than successful in Somalia, Haiti, Bosnia. And on Sunday on ``Meet the Press'' you seemed to be lukewarm about your foreign policy team. Is Secretary Wharton being made your sacrificial lamb? And are you planning a shakeup of your foreign policy team? I mean, is that the signal? The President. No to both questions...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1942-2, pp. 1942-1950, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg1942-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg1942-2. Public record. Public Papers source pagination, pp. 1942-1950; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7883,7 +7901,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 31-32 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 31-32; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 31-32; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -7928,7 +7946,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ue global leadership. Spain is serving the cause of humanitarian relief through its admirable participation in the U.N. protective force in Bosnia. We were all deeply saddened to learn about the death of a Spanish officer and the wounding of another there over the weekend. In Central America, Spain continues to provide important support for the development of peaceful and prosperous democracies. And the Madrid Confer...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2128, pp. 2128-2132, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg2128. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2128. Public record. Public Papers source pagination, pp. 2128-2132; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -7983,7 +8001,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, slovenia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) December 6, 1993 Dear Mr. Speaker: (Dear Mr. President:) On May 30, 1992, in Executive Order No. 12808, President Bush declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United Stat...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2134, pp. 2134-2138, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg2134. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2134. Public record. Public Papers source pagination, pp. 2134-2138; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8023,7 +8041,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...enges of this new era, such as his new counterproliferation initiative. And on a range of tough decisions and tough challenges abroad, from Bosnia to Korea, he has called them as he saw them, bringing to bear a lifetime of experience and dedication and a razor-sharp mind to our Nation's security interest. Above all, Secretary Aspin has provided deep strategic thinking and leadership at a time of profound change in th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2177, pp. 2177, https://www.govinfo.gov/app/details/PPP-1993-book2/PPP-1993-book2-doc-pg2177. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1993, Book II), PPP-1993-book2; PPP-1993-book2-doc-pg2177. Public record. Public Papers source pagination, pp. 2177; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8074,7 +8092,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, serbia/serbs, macedonia, balkan, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "....S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on Peacekeeping Operations in the Former Yugoslav Republic of Macedonia January 8, 1994 Dear Mr. Speaker: (Dear Mr. President:) Six months ago I provided you with my initial report on the deployment of a U.S. peacekeeping contingent as part of the United Nations Protection Force (UNPROFOR) in the former Yugoslav Republic of Macedonia. I am ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg17-2, pp. 17-18, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg17-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg17-2. Public record. Public Papers source pagination, pp. 17-18; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8114,7 +8132,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...po.gov] [[Page 8]] Exchange With Reporters Prior to Discussions With Prime Minister Jean-Luc Dehaene of Belgium in Brussels January 9, 1994 Bosnia Q. Mr. President, do you think that Bosnia should be at the top of the agenda for the NATO consideration? The President. Well, we'll discuss that and a number of other things. We have a lot of issues to discuss. But the Prime Minister and I will discuss that and several ot...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg8, pp. 8, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg8. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg8. Public record. Public Papers source pagination, pp. 8; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8157,7 +8175,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d the outcome will--bound to shape the security of every nation in the transatlantic alliance. Today that race is being played out from the Balkans to central Asia. In one lane are the heirs of the enlightenment who seek to consolidate freedom's gains by building free economies, open democracies, and tolerant civic cultures. Pitted against them are the grim pretenders to tyranny's dark throne, the militant nationalis...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg8-2, pp. 8-14, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg8-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg8-2. Public record. Public Papers source pagination, pp. 8-14; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8197,7 +8215,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...if the best future is not open to us. That's what the Partnership For Peace does. It's not giving anybody a veto on future NATO membership. Bosnia Q. But what do you say to people who say that NATO isn't relevant if it can't guarantee the peace, let's say, in Bosnia? The President. Well, that was never the purpose of NATO. The purpose of NATO was to guarantee the peace and security of the countries that were member n...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg15, pp. 15-16, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg15. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg15. Public record. Public Papers source pagination, pp. 15-16; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8243,7 +8261,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ize of the reactionary vote in Russia's recent election reminds us again of the strength of democracy's opponents. The ongoing slaughter in Bosnia tallies the price when those opponents prevail. If we don't meet our new challenge, then most assuredly we will once again, someday down the road, face our old challenges again. If democracy in the East fails, then violence and disruption from the East will once again harm...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg18, pp. 18-21, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg18. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg18. Public record. Public Papers source pagination, pp. 18-21; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8286,7 +8304,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...of continuing defense cooperation with Russia, and they are certainly welcome to be a part of this. Go ahead, Rita [Rita Braver, CBS News]. Bosnia Q. On the subject of Bosnia, earlier today you said that NATO would be reasserting its warning against the strangulation of Sarajevo. [[Page 23]] You said if we're going to reassert this warning, it cannot be seen as mere rhetoric. Yet, NATO has done nothing in Bosnia real...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg21, pp. 21-24, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg21. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg21. Public record. Public Papers source pagination, pp. 21-24; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8332,7 +8350,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...TO Summit The President. As you know, we had a good, long dinner tonight. And we talked about only two subjects; we talked about Russia and Bosnia. We spent the first half, perhaps more than half the dinner, on Russia. And I basically gave a report about what I would be doing in Russia, and they gave me their advice about what we could do to strengthen the process of reform, create a system of support for people who ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg24, pp. 24-25, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg24. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg24. Public record. Public Papers source pagination, pp. 24-25; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8381,7 +8399,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...the threat of confrontation between nuclear powers, but we do face continuing conflicts, including the reality of the murderous conflict in Bosnia. At this meeting we discussed candidly and at some length NATO's policy towards Bosnia. We reaffirmed our commitment to respond to the strangulation of Sarajevo and to help to implement an enforceable peace agreement if one is reached by all the parties. I want to discuss ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg28, pp. 28-31, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg28. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg28. Public record. Public Papers source pagination, pp. 28-31; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8436,7 +8454,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, kosovo, macedonia, balkan, sarajevo, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Questions immediately, because this is more interesting than what I could add. President Papandreou has spoken on behalf of the Community. Bosnia Q. Helen Thomas, UPI, United Press International. Back to NATO, Mr. President. What makes you think that the Serbs will take the threat seriously now since NATO has been the boy crying wolf in the past? And what really has stiffened everybody's spine now after 2 years of s...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg32, pp. 32-37, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg32. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg32. Public record. Public Papers source pagination, pp. 32-37; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8479,7 +8497,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Czech musicians with whom I played were so good that they covered up all my shortcomings. Is there another question from the foreign press? Bosnia Q. What is the next American step in the Bosnia war? President Clinton. Well, the next thing that we are doing now is what we are doing with NATO. NATO adopted a new resolution and our military commanders in Europe now are looking into the instruction they got from the NAT...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg39-2, pp. 39-43, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg39-2. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg39-2. Public record. Public Papers source pagination, pp. 39-43; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8525,7 +8543,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... have a particular responsibility, the two of us, to try to work toward that vision. Press Secretary Myers. This will be the last question. Bosnia Q. President Clinton, did you discuss the subject of Bosnia? What was the nature of your discussions? And does President Yeltsin agree with the intention expressed at the NATO meetings of launching air strikes if the situation does not improve in Sarajevo, or in all of Bos...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg50, pp. 50-58, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg50. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg50. Public record. Public Papers source pagination, pp. 50-58; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8574,7 +8592,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...es the United States of America plan to get involved in these conflicts? And if so, in what way? And more so because there is an example of Yugoslavia. There is a danger here of taking sides in the West; the West is supporting the Muslims in Yugoslavia. Let me repeat the question: If there will be an involvement in the United States, what kind of involvement would this be? The President. Well, first, I don't think it...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg58, pp. 58-69, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg58. Public Papers granule PDF; 12 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg58. Public record. Public Papers source pagination, pp. 58-69; 12 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8614,7 +8632,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d, including anti-Semitism. They expressed serious concern about the existence and potential for intensification of conflicts in the former Yugoslavia and a number of the New Independent States of the former Soviet Union. President Yeltsin apprised President Clinton of the peacekeeping efforts undertaken by Russia on the territory of the former USSR. The two Presidents are determined to intensify the coordination of ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg74, pp. 74-75, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg74. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg74. Public record. Public Papers source pagination, pp. 74-75; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8654,7 +8672,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...force in any way, even in a very limited way, outside guaranteeing the security of its members. And I just think that, not only in terms of Bosnia but just generally, that whole thing has to really be thought through. Partnership For Peace Q. Just a last question. Did you expect it to take off, the whole question of partnership, like it did? And, two, who thought of the idea first? Was this an NSC--saying we've got t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg85, pp. 85-91, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg85. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg85. Public record. Public Papers source pagination, pp. 85-91; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8703,7 +8721,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...I just want you to know that having you call just redoubles my determination. And I thank you for that. Mr. King. Fort Worth, Texas. Hello. Bosnia Q. Mr. President, I was wondering what the progress on our situation with Bosnia-Herzegovina was? And what has happened to the sense of urgency we once had with that problem? The President. Well, the United States had a position, as you know. When I took office I offered t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg106, pp. 106-116, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg106. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg106. Public record. Public Papers source pagination, pp. 106-116; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8752,7 +8770,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, srebrenica, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...a successor. I've done it, and I expect to have an announcement. Q. Do you think you can twist someone's arm to take it? The President. No. Bosnia Q. Mr. President, there have been new calls for air strikes in Bosnia. You talked about that a lot over this past trip to Europe. Can you give us any update? And what about what you said was your resolve to do something about this? The President. Well, what I said was that...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg121, pp. 121-122, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg121. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg121. Public record. Public Papers source pagination, pp. 121-122; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8792,7 +8810,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r Nation's Armed Forces. We honor their contributions, including those who are carrying out the longest humanitarian air lift in history in Bosnia, those who will complete their mission in Somalia this year and their brave comrades who gave their lives there. Our forces are the finest military our Nation has ever had. And I have pledged that as long as I am President, they will remain the best equipped, the best trai...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg126-3, pp. 126-135, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg126-3. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg126-3. Public record. Public Papers source pagination, pp. 126-135; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8832,7 +8850,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...oup of reporters left the room, and another group entered.] Discussions With Chancellor Kohl Q. Mr. President, are you going to discuss the Bosnia situation with the Chancellor? The President. I'm sure we will. Q. What will you---- The President. I want to talk to him about it. Q. Are you looking forward to the restaurant, Filomena's, Mr. President? The President. Oh, yes. You know, he told me about it, and so I went...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg144, pp. 144-145, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg144. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg144. Public record. Public Papers source pagination, pp. 144-145; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8872,7 +8890,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...linton (1994, Book I)] [February 5, 1994] [Page 186] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 186]] Statement on the Sarajevo Marketplace Attack February 5, 1994 I am outraged by this deliberate attack on the people of Sarajevo. There can be no possible military justification for an attack against a marketplace where women, men, and children of the city were pursuing their everyday lives. The U...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg186, pp. 186, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg186. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg186. Public record. Public Papers source pagination, pp. 186; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8921,7 +8939,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...k I)] [February 6, 1994] [Pages 186-187] [From the U.S. Government Publishing Office www.gpo.gov] Remarks and an Exchange With Reporters on Bosnia February 6, 1994 The President. I have just completed a meeting with advisers discussing the terrible and outrageous incident in Sarajevo yesterday. I'm glad to report that the United States has been able to evacuate several of the wounded and their family members and they...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg186-2, pp. 186-187, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg186-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg186-2. Public record. Public Papers source pagination, pp. 186-187; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -8964,7 +8982,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ll the way home and listen to it again. We're a little bit late today because I spent a good part of the morning dealing with the crisis in Bosnia. And I am sorry we're a little bit late, but I do want to just tell you what has happened before I go into my remarks, just briefly. As you know, there was an outrageous attack on innocent civilians in Sarajevo on Saturday. And our Government is talking with our allies abo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg192, pp. 192-199, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg192. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg192. Public record. Public Papers source pagination, pp. 192-199; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9010,7 +9028,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... keep working together. Thank you, and goodbye. [At this point, the teleconference ended, and the President took questions from reporters.] Bosnia Q. Mr. President, have you had any up-date on the situation in Bosnia? Q. Mr. President, are the allies on board on a new Bosnia strategy? The President. Well, we've made a lot of progress, but I don't have a final word from Brussels yet. They're meeting and they're talkin...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg214, pp. 214-216, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg214. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg214. Public record. Public Papers source pagination, pp. 214-216; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9056,7 +9074,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...he partner of these nations, no longer a pariah. And we are making progress on that. Let me, if I might, speak briefly about the tragedy in Bosnia. I have been meeting with my national security team, and as I am sure most of you know, we have had urgent consultations which continue at this moment with our NATO allies in the wake of the atrocities last Saturday in Sarajevo. Before I go forward, let me, as the Vice Pre...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg216, pp. 216-218, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg216. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg216. Public record. Public Papers source pagination, pp. 216-218; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9105,7 +9123,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ry 9, 1994] [Pages 218-221] [From the U.S. Government Publishing Office www.gpo.gov] Remarks Announcing the NATO Decision on Air Strikes in Bosnia and an Exchange With Reporters February 9, 1994 The President. Good evening. Over the past year, our administration has been working to do what we could to help to end the tragic conflict in Bosnia and to ease the suffering it has caused. Like people everywhere, I was outr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg218, pp. 218-221, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg218. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg218. Public record. Public Papers source pagination, pp. 218-221; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9151,7 +9169,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... to your deliberations eagerly. Senator Kerrey, the floor is yours. [At this point, Senator Kerrey made brief remarks.] Russian Position on Bosnia Q. Mr. President, it seems that in the aftermath of NATO's decision to issue this ultimatum to the Serbs, that you're having a very tough time talking to President Yeltsin. Is he deliberately snubbing you? The President. I don't think so. I don't think so. And I expect to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg223, pp. 223-224, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg223. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg223. Public record. Public Papers source pagination, pp. 223-224; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9197,7 +9215,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "....gpo.gov] Exchange With Reporters Prior to Discussions With Prime Minister Morihiro Hosokawa of Japan February 11, 1994 Russian Position on Bosnia Q. Mr. President, can you tell us about your phone call with Yeltsin, and did you have a big fight? [Laughter] The President. No. We laughed a lot about the marvels of modern technology. Even today it was kind of a difficult connection, interestingly enough. But we had a v...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg228-2, pp. 228-229, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg228-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg228-2. Public record. Public Papers source pagination, pp. 228-229; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9243,7 +9261,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...now. We'd like to reach an agreement as early as possible. But I think there is a need for a little bit of cooling off. Russian Position on Bosnia Q. Mr. President, on Bosnia, how do you avoid a major breach with President Yeltsin? He's quoted today as saying that NATO lacks the authority to approve air strikes. You've taken the position that NATO has that authority. Is there any way to reconcile these differences? T...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg229, pp. 229-235, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg229. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg229. Public record. Public Papers source pagination, pp. 229-235; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9289,7 +9307,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With President Nursultan Nazarbayev of Kazakhstan February 14, 1994 Bosnia Q. President Nazarbayev, do you support NATO's decision to threaten the Bosnian Serbs with air strikes in case they don't remove all their artillery from the hills surrounding Sarajevo? President Nazarbayev. Despite the fact that Kazakhstan is well removed from those event...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg248, pp. 248, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg248. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg248. Public record. Public Papers source pagination, pp. 248; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9338,7 +9356,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...have invited President Clinton to visit Kazakhstan officially, the times of which will be agreed on through diplomatic channels. Thank you. Bosnia Q. Mr. President, Bosnian Serbs have withdrawn only 28 of the 500 heavy guns from around Sarajevo. Will NATO carry out its threatened air strikes if any of those guns remain in place by the deadline? And also, do you foresee expanding the demilitarization formula to other ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg248-2, pp. 248-253, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg248-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg248-2. Public record. Public Papers source pagination, pp. 248-253; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9381,7 +9399,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...bruary 16, 1994] [Page 272] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 272]] Exchange With Reporters February 16, 1994 Bosnia Q. Mr. President, are there a lot of differences between the U.N. and NATO on Bosnia Sunday night? The President. No. Q. What is the problem---- The President. Well, I don't think there is a problem. The decision of the North Atlantic Council still stands. And the rules ar...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg272, pp. 272, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg272. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg272. Public record. Public Papers source pagination, pp. 272; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9430,7 +9448,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...the most gorgeous parts of this country, period, and absolutely, northeastern Arkansas, the Buffalo River country, all of that, absolutely. Bosnia Mr. Imus. Mr. President, the United States--I just wanted to ask you briefly about Bosnia--the United States has always, in my mind, at least, set the agenda for NATO. But in the case of Bosnia, it seems that we are acquiescing to them. As the lone superpower in the world,...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg273-2, pp. 273-279, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg273-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg273-2. Public record. Public Papers source pagination, pp. 273-279; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9476,7 +9494,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...fare Reform Q. Mr. President, are you contemplating taxing food stamps and the poor people to support your welfare plan? The President. No. Bosnia Q. Mr. President, have you prepared the American people psychologically for the possibility of military conflict Monday? The President. Well, I have done my best to talk about this, and we'll continue to talk about it as we get closer. I think the most important thing now ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg279, pp. 279-280, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg279. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg279. Public record. Public Papers source pagination, pp. 279-280; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9531,7 +9549,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, macedonia, sarajevo, unprofor, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s 281-283] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on the Conflict in the Former Yugoslavia February 17, 1994 Dear Mr. Speaker: (Dear Mr. President:) On October 13, 1993, I provided a further report to the Congress on the deployment of U.S. combat-equipped aircraft to support efforts of the United Nations and the North Atlantic Treaty Organization (NATO) to a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg281-2, pp. 281-283, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg281-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg281-2. Public record. Public Papers source pagination, pp. 281-283; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9566,7 +9584,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 33-35 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 33-35; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 33-35; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -9621,7 +9639,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, kosovo, macedonia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...o Address and an Exchange With Reporters February 19, 1994 My fellow Americans, this morning I want to speak with you about the conflict in Bosnia. My administration has worked for over a year to help ease the suffering and end the conflict in that war-torn land. Now, a prolonged siege of the Bosnian capital of Sarajevo has brought us to an important moment. In the coming days, American war planes may participate in ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg283, pp. 283-285, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg283. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg283. Public record. Public Papers source pagination, pp. 283-285; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9664,7 +9682,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... I)] [February 20, 1994] [Pages 285-286] [From the U.S. Government Publishing Office www.gpo.gov] Remarks and an Exchange With Reporters on Bosnia February 20, 1994 The President. I talked this morning with Secretary Perry and General Shali and General Joulwan and Admiral Boorda in Europe. There is a lot of activity on the ground. The Serbs seem to be moving weapons and also bringing the U.N. forces to the weapons th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg285, pp. 285-286, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg285. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg285. Public record. Public Papers source pagination, pp. 285-286; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9707,7 +9725,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ook I)] [February 20, 1994] [Pages 286-287] [From the U.S. Government Publishing Office www.gpo.gov] Statement on Results of NATO Action on Bosnia February 20, 1994 I have just been informed by NATO Secretary General Manfred Woerner that NATO and United Nations commanders have concluded that all known heavy weapons of the parties have been withdrawn from the exclusion zone around Sarajevo, are under the control of th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg286, pp. 286-287, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg286. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg286. Public record. Public Papers source pagination, pp. 286-287; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9753,7 +9771,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...bruary 21, 1994] [Pages 287-289] [From the U.S. Government Publishing Office www.gpo.gov] The President's News Conference February 21, 1994 Bosnia The President. Good afternoon, ladies and gentlemen. It is now over 15 hours since NATO's ultimatum regarding Sarajevo went into effect. According to NATO and United Nations commanders, at this point the parties are in effective compliance with the ultimatum. There continu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg287, pp. 287-289, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg287. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg287. Public record. Public Papers source pagination, pp. 287-289; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9796,7 +9814,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Clinton (1994, Book I)] [February 28, 1994] [Page 326] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia February 28, 1994 Q. Can you give us any sense of what is going on in Bosnia and what has happened---- The President. Well, you know the essential facts, that last evening after midnight our time, United States aircraft, flying under NATO authority, warned some fixed-wing ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg326-2, pp. 326, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg326-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg326-2. Public record. Public Papers source pagination, pp. 326; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9836,7 +9854,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...t to do that in a society where you're really going to be civilized and recognize one another's rights. That's what we're struggling for in Bosnia today. That's what we hope for the people of all those countries in Africa which are embroiled in civil wars. And that's what we have to hope for our own people, that we can decide that we can do that. And in the end, that's what the people of the troubled Middle East are ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg337, pp. 337-345, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg337. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg337. Public record. Public Papers source pagination, pp. 337-345; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9876,7 +9894,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...will make America a safer and more prosperous place for decades to come. We're working together today to respond to the terrible tragedy in Bosnia, to try to bring an end to the killing and to bring peace and to keep that conflict from spreading in ways that could threaten the interests of the United States and Great Britain as well as the conscience of the civilized world. And we do have a great partnership, as Sena...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg345, pp. 345-346, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg345. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg345. Public record. Public Papers source pagination, pp. 345-346; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -9910,7 +9928,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 36-37 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 36-37; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 36-37; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -9963,7 +9981,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...there. We've had an opportunity to discuss, as you might imagine, a lot of issues. I might just mention a few. First of all, with regard to Bosnia, we are committed to continuing to work for a resolution of the crisis. We're encouraged by both the ongoing negotiations between the Government, the Bosnian Government, and the Croats and the willingness of the Russians to work with us and others trying to bring the Serbs...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg348, pp. 348-351, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg348. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg348. Public record. Public Papers source pagination, pp. 348-351; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10012,7 +10030,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, izetbegovic, tudjman), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...es: William J. Clinton (1994, Book I)] [March 1, 1994] [Page 354] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Bosnia-Herzegovina Framework Agreement March 1, 1994 I warmly welcome the signing today in Washington of a framework agreement establishing a federation in the areas of the Republic of Bosnia and Herzegovina with majority Bosnian and Croat populations. This framework agreement al...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg354, pp. 354, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg354. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg354. Public record. Public Papers source pagination, pp. 354; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10055,7 +10073,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... 1994] [Pages 354-355] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on NATO Action in Bosnia March 1, 1994 Dear Mr. Speaker: (Dear Mr. President:) In my report to the Congress of February 17, 1994, I provided further information on the deployment of U.S. combat-equipped aircraft to support NATO's enforcement of the no-fly zone in Bosnia-Herzegovina, as authorized ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg354-2, pp. 354-355, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg354-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg354-2. Public record. Public Papers source pagination, pp. 354-355; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10095,7 +10113,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ic and religious difficulties are very deep and profound, but you just have to keep working at them. And we got some good news yesterday on Bosnia, and we just keep working at these things and do our best to try to bring them to a successful conclusion. Hugh Rodham Q. Are you supporting Hugh Rodham? The President. What? No, what did you say? I couldn't hear you. Q. Oh, I'm sorry. Are you supporting Hugh Rodham in his...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg360, pp. 360-362, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg360. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg360. Public record. Public Papers source pagination, pp. 360-362; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10144,7 +10162,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...edge the importance of democracy, market reform, and respect for neighbors. I'm very hopeful, just to take one example, of what happened in Bosnia recently, where the Russians played a very key role in helping us to create the safe zone around Sarajevo, getting the Serbs to support it. Now that we have the outline of an agreement between the Croats and the Muslims, we hope the Russians will continue to be active with...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg387, pp. 387-394, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg387. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg387. Public record. Public Papers source pagination, pp. 387-394; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10178,8 +10196,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 38-39 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 38-39; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 38-39; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -10220,7 +10238,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...visit. I don't believe we did. You know, I talk to him on a fairly regular basis, but I think the last time we talked we were talking about Bosnia, and I don't think we had a conversation about it. But I did talk with Richard Nixon, President Nixon, before he went there. And he raised this prospect of meeting with some of the opposition leaders. He said he thought it would be interesting. He wanted to get a feel for ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg410-4, pp. 410-413, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg410-4. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg410-4. Public record. Public Papers source pagination, pp. 410-413; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10260,7 +10278,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...in the Persian Gulf, to expanding world trade to promoting democracy in the former Soviet Union and helping to solve the tragic conflict in Bosnia, all have depended on common bonds among the countries present here today. I asked for the conference to summon the same collective energy and intellect and ideas and experience to one of the greatest problems of our era: The challenge of creating and maintaining a high-wa...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg436-2, pp. 436-444, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg436-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg436-2. Public record. Public Papers source pagination, pp. 436-444; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10300,7 +10318,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... Europe/Commander in Chief, Allied Forces, Southern Europe where he is responsible for coordinating and planning NATO military actions over Bosnia-Herzegovina and in the Mediterranean and Adriatic Seas. Admiral Boorda brings to the job of Chief of Naval Operations a keen appreciation of operational requirements in the post-cold-war world and an outstanding ability to work with our allies in complex and challenging ci...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg453, pp. 453-454, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg453. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg453. Public record. Public Papers source pagination, pp. 453-454; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10340,7 +10358,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...know that we may ask our military to undertake a range of missions, fighting aggression in the Gulf, helping to contain the conflict in the Balkans, working to build a democratic peace in Europe through NATO's Partnership For Peace. But whatever the setting, our people in uniform carry the same message of strength and hope and freedom. That's why our forces must always be the best trained, the best equipped, the best...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg467, pp. 467-468, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg467. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg467. Public record. Public Papers source pagination, pp. 467-468; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10383,7 +10401,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...aking a point that it is still a great nation and deserves recognition, gets in the way of restoring stability back in the Middle East, the Balkans, Central Europe, and elsewhere? The President. I don't think they have gotten in the way of restoring peace and stability in the Balkans. I think that so far they have been a constructive force. They are a cosponsor of the Middle East peace talks and, therefore, have a ri...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg471, pp. 471-476, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg471. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg471. Public record. Public Papers source pagination, pp. 471-476; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10423,7 +10441,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... wounds, a 14-year- old child, not in a war zone in a far away country, not in Somalia, not in Sudan, not in Angola, not in Burundi, not in Sarajevo, but in the Capital of the greatest nation on the face of the Earth. That is what has become of childhood, my fellow Americans. While the rest of us have pursued our dreams in life, had our families, raised our children, enjoyed the fruits of freedom, that is what has be...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg477, pp. 477-478, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg477. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg477. Public record. Public Papers source pagination, pp. 477-478; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10463,7 +10481,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... and important that I should pay the warmest tribute to you, Mr. President, for your exceptional efforts to bring peace to the tragedies of Bosnia and the Middle East. We in Ireland know from direct experience that conflicts over territory, identity, and political destiny can only be resolved through peaceful negotiations. That profound belief informs everything that my government and I are doing to resolve the probl...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg479, pp. 479-481, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg479. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg479. Public record. Public Papers source pagination, pp. 479-481; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10506,7 +10524,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...frica is weeks away from its first nonracial election. Tomorrow, here in the White House, we will witness the signing of agreements between Bosnians and Croats that advance the hope for peace in that troubled region. Our Nation's long cooperation with Ireland has never been more important than today. In recent months, Prime Minister Reynolds and Prime Minister Major have tried to bring an end to a generation of troub...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg481, pp. 481-483, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg481. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg481. Public record. Public Papers source pagination, pp. 481-483; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10565,7 +10583,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, sarajevo, izetbegovic, tudjman, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...William J. Clinton (1994, Book I)] [March 18, 1994] [Pages 484-486] [From the U.S. Government Publishing Office www.gpo.gov] Remarks at the Bosnian Federation Agreement Signing Ceremony March 18, 1994 The President. President Izetbegovic, President Tudjman, Prime Minister Silajdzic, Mr. Zubak: The Secretary of State, Mr. Lake, the Vice President, and I are happy to be joined by you, as well as by others here today. W...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg484, pp. 484-486, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg484. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg484. Public record. Public Papers source pagination, pp. 484-486; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10614,7 +10632,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...l to have higher incomes and to have a job. Mr. Jennings. Let's go over to the other side, here. Who's got a question there? Yes, go ahead. Bosnia and Anticrime Efforts Q. Mr. President, why are you fighting a war in another country when you have a war right here? The President. Which war? Q. The war in Bosnia. The President. We're not fighting a war there. We're trying to help them bring the war to an end because ma...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg488, pp. 488-502, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg488. Public Papers granule PDF; 15 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg488. Public record. Public Papers source pagination, pp. 488-502; 15 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10667,7 +10685,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, izetbegovic, tudjman), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...blishing Office www.gpo.gov] [[Page 503]] Statement by the Director of Communications on the President's Discussions With the Presidents of Bosnia-Herzegovina and Croatia March 19, 1994 Following the signing ceremony yesterday, the President met with President Izetbegovic of Bosnia-Herzegovina. The two leaders discussed next steps following yesterday's agreements. The President told President Izetbegovic that the Uni...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg503, pp. 503, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg503. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg503. Public record. Public Papers source pagination, pp. 503; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10713,7 +10731,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...last year, and we're on track to create 2 million more in '94. Around the world, America's efforts have helped to bring much needed calm to Sarajevo and led to an important political accord between the Bosnian Muslims and Croats. Our call for restraint has helped to start talks again the Middle East. We will continue our efforts to stop North Korea's nuclear program and to seek progress on human rights in China, work...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg543, pp. 543-552, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg543. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg543. Public record. Public Papers source pagination, pp. 543-552; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10759,7 +10777,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...April 4, 1994] [Page 570] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters in Cleveland, Ohio April 4, 1994 Bosnia Q. Do the Serbs have a green light in---- The President. I don't think they have a green light. We're looking at what our options are there. But it really depends upon in part what the U.N. mission wants to do there. We are committed to provide air support to troops if the...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg570-2, pp. 570, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg570-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg570-2. Public record. Public Papers source pagination, pp. 570; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10808,7 +10826,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... can clear more timber now if we can just keep pushing ahead and get these things out of the courts and back on the land where they belong. Bosnia and North Korea [Ms. Hindrew introduced a participant in Charlotte who asked why North Korea should take U.S. threats to seize nuclear sites seriously, in view of the recent downsizing of the military and the perception of waffling on using military force in the former Yug...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg581, pp. 581-597, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg581. Public Papers granule PDF; 17 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg581. Public record. Public Papers source pagination, pp. 581-597; 17 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10854,7 +10872,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, gorazde, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...a and keep working with us with China on North Korea. I believe [[Page 645]] that will happen. I would be surprised if that did not happen. Bosnia Q. Which way are we going on Bosnia right now? Q. The Perry way or the Christopher way? The President. We're going--no. Let me just say, I think that's a great overstatement. I talked to both of them in each of the last few days about a number of other issues. But I don't ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg643, pp. 643-645, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg643. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg643. Public record. Public Papers source pagination, pp. 643-645; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10903,7 +10921,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, gorazde, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...es: William J. Clinton (1994, Book I)] [April 10, 1994] [Pages 660-661] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on Bosnia and an Exchange With Reporters April 10, 1994 The President. Today, while negotiations were being held on a cease- fire in Bosnia, the Serbs launched a new attack on Gorazde. These attacks have resulted in heavy casualties and have put United Nations personnel there at ris...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg660, pp. 660-661, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg660. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg660. Public record. Public Papers source pagination, pp. 660-661; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -10937,7 +10955,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 40-41 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 40-41; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 40-41; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -10992,7 +11010,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, gorazde, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...linton (1994, Book I)] [April 11, 1994] [Pages 661-662] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia April 11, 1994 Q. What can you tell us about the latest air strikes in Bosnia? The President. That the latest strikes were a direct response to General Rose's request for close air support, that the continued Serb shelling of Gorazde put the U.N. personnel there in danger,...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg661, pp. 661-662, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg661. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg661. Public record. Public Papers source pagination, pp. 661-662; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11043,7 +11061,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, gorazde, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... we can have a good bipartisan discussion in support of domestic issues like the budget and health care, and also we'll talk a little about Bosnia today and some other foreign policy issues. Bosnia Q. Mr. President, do you have some concern--there's more shelling today. I mean, there's some suspicion that the Muslims may be trying to provoke the Serbs. Have we started something with air strikes that will make matters...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg670, pp. 670-671, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg670. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg670. Public record. Public Papers source pagination, pp. 670-671; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11083,7 +11101,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... I love Helen Thomas. How would you like to start every morning jogging with Helen in your ear? The other day, after we had the incident in Bosnia, she said to me as I was running, trying to wake up, fighting off the allergies of the springtime, ``Yeltsin's mad at you.'' [Laughter] Well, anyway, I'm delighted to be here with you, Brian, and I appreciate your inviting Garrison Keillor to join us this evening, because,...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg673-2, pp. 673-675, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg673-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg673-2. Public record. Public Papers source pagination, pp. 673-675; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11136,7 +11154,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, gorazde, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...-680] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on Protection of United Nations Personnel in Bosnia-Herzegovina April 12, 1994 Dear Mr. Speaker: (Dear Mr. President:) One year ago, I provided you with my initial report on the deployment of U.S. combat-equipped aircraft to support the North Atlantic Treaty Organization's (NATO) enforcement of the no-fly zone in Bosnia-Her...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg679, pp. 679-680, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg679. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg679. Public record. Public Papers source pagination, pp. 679-680; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11187,7 +11205,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e aimed at us and to create new market opportunities for the future, or by harnessing NATO's power and the service of diplomacy in troubled Bosnia, which will help to prevent a wider war and contain a flood of refugees. Our efforts to stop the shelling of Sarajevo and the attacks on Gorazde, to bring the Serbs back to the negotiating table, to build on the agreement made by the Croats and the Bosnian Muslims, enhance...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg680, pp. 680-689, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg680. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg680. Public record. Public Papers source pagination, pp. 680-689; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11227,7 +11245,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ple who literally were at war one with the other. We saw that in a gripping way in these Winter Olympics when the courageous Olympians from Bosnia somehow made their way to Lillehammer. And so I ask all of you who have had the experience of the Olympics always to be emissary for a decent and humane set of relations among the people of the world. Most of what people are fighting for in this old world today, with the e...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg690, pp. 690-692, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg690. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg690. Public record. Public Papers source pagination, pp. 690-692; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11270,7 +11288,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ng that question, that is a question you should direct to Secretary Perry and General Shalikashvili, because they will be briefing shortly. Bosnia Q. Mr. President, in the wake of the decision by the U.N. and NATO to bomb in Bosnia, you're now confronted with a developing hostage crisis, it appears, there where French troops are the latest to be encircled by Serbs. What is your message to the Bosnian Serbs as this ap...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg693, pp. 693-694, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg693. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg693. Public record. Public Papers source pagination, pp. 693-694; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11323,7 +11341,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, sarajevo, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...the course of this investigation, be reviewing all the tactical issues involved. But our policy is sound, and I believe it should continue. Bosnia Q. In Bosnia, sir, there's another issue of peacekeeping. You have recent events by the Bosnian Serbs' actions that have been taken against U.N. peacekeepers and military observers. You yesterday made a statement you've been sending a message to them. But apparently, that ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg698-3, pp. 698-700, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg698-3. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg698-3. Public record. Public Papers source pagination, pp. 698-700; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11378,7 +11396,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, sarajevo, gorazde, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...es: William J. Clinton (1994, Book I)] [April 17, 1994] [Pages 702-703] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on Bosnia and an Exchange With Reporters in Newport News, Virginia April 17, 1994 The President. Ladies and gentlemen, I've received a number of reports today on the situation in Bosnia. I've also been in touch today with President Yeltsin. We don't have any definitive reports on th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg702, pp. 702-703, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg702. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg702. Public record. Public Papers source pagination, pp. 702-703; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11431,7 +11449,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, gorazde, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ook I)] [April 18, 1994] [Pages 703-704] [From the U.S. Government Publishing Office www.gpo.gov] Remarks and an Exchange With Reporters on Bosnia April 18, 1994 The President. Good morning, ladies and gentlemen. I'd like to say a word or two about the situation in Bosnia. First of all, as all of you know, the situation in and around Gorazde remains grim and uncertain. I think it is important to point out why this ha...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg703, pp. 703-704, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg703. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg703. Public record. Public Papers source pagination, pp. 703-704; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11471,7 +11489,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n the economy, and we've got good growth so interest rates ought to stay down, not go up. That's what I hope will happen over the long run. Bosnia Q. Any new actions for Bosnia, Mr. President? The President. Well, I'm going back now to find out what happened today. Thank you. Note: The exchange began at 4:05 p.m. at Leon's Frozen Custard Stand. A tape was not available for verification of the content of this exchange...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg711, pp. 711, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg711. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg711. Public record. Public Papers source pagination, pp. 711; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11505,7 +11523,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 42-43 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 42-43; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 42-43; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -11560,7 +11578,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, gorazde, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...all over the country. Obviously, there are a lot of issues on the President's mind today, including some hard decisions on the U.S. role in Bosnia. But we've invited him here to talk about violence in America. Alison Stewart. ``Enough is Enough'' is a comprehensive campaign put forth by MTV to explore the subject of violence, giving young people an outlet for their concerns and bringing them closer to the people who ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg714, pp. 714-726, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg714. Public Papers granule PDF; 13 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg714. Public record. Public Papers source pagination, pp. 714-726; 13 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11613,7 +11631,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, gorazde, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ook I)] [April 19, 1994] [Pages 726-727] [From the U.S. Government Publishing Office www.gpo.gov] Remarks and an Exchange With Reporters on Bosnia April 19, 1994 The President. Good afternoon. This morning I met for an hour and a half with our national security team to discuss what our options were to regain the momentum in Bosnia for a peaceful settlement. Several options were presented to me, and we discussed some ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg726, pp. 726-727, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg726. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg726. Public record. Public Papers source pagination, pp. 726-727; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11662,7 +11680,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, macedonia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ng Office www.gpo.gov] [[Page 728]] Letter to Congressional Leaders Reporting on Peacekeeping Operations in the Former Yugoslav Republic of Macedonia April 19, 1994 Dear Mr. Speaker: (Dear Mr. President:) On January 8, 1994, I provided my second report to you on the deployment of a U.S. Army peacekeeping contingent as part of the United Nations Protection Force (UNPROFOR) in the former Yugoslav Republic of Macedonia....",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg728, pp. 728, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg728. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg728. Public record. Public Papers source pagination, pp. 728; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11711,7 +11729,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nment Publishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Chancellor Franz Vranitzky of Austria April 20, 1994 Bosnia Q. Mr. President, are the allies on board now for your new Bosnia policy--strategy? The President. Well, I've talked to President Yeltsin and President Mitterrand today, and Prime Minister Chretien. And I have not talked to Chancellor Kohl or to Prime Minister Major today....",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg731, pp. 731-732, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg731. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg731. Public record. Public Papers source pagination, pp. 731-732; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11768,7 +11786,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, srebrenica, gorazde, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...say that his condition remains serious, and I hope he will be in the prayers of all Americans. Over the last several days, the situation in Gorazde has become increasingly grim. The Serb forces have broken their own truce agreements, persisted in brutal attacks on civilians, United Nations personnel, and NATO forces protecting those personnel. These events are clearly a setback for the momentum achieved in recent mon...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg732, pp. 732-736, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg732. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg732. Public record. Public Papers source pagination, pp. 732-736; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11808,7 +11826,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nt:) Six months ago I provided you with my initial report on the deployment of U.S. Naval Forces in the implementation of the petroleum and arms embargo of Haiti. I am now providing this further report, consistent with the War Powers Resolution, to inform the Congress about the status of the U.S. contribution to the ongoing U.N. embargo enforcement effort. In response to the continued obstruction by the military auth...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg736, pp. 736-737, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg736. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg736. Public record. Public Papers source pagination, pp. 736-737; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11851,7 +11869,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...g of life that it was 100 years ago. It's almost as if, in some of the places that you've mentioned--and you've written so powerfully about Bosnia, and I know you care a lot about Azerbaijan; you have the Abkhaz problem, you have all these things-- it's almost as if the cold war sort of imposed a freeze-frame on the history of a lot of these places. And then when it went away, people woke up and resumed the attitudes...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg748, pp. 748-754, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg748. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg748. Public record. Public Papers source pagination, pp. 748-754; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11900,7 +11918,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, macedonia, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Publishing Office www.gpo.gov] Exchange With Reporters Prior to Discussions With Prime Minister Andreas Papandreou of Greece April 22, 1994 Bosnia Q. Mr. President, are you going to start bombing, or are the allies going to start bombing Gorazde very shortly as a result of the NATO Council ultimatum? The President. They're meeting now. Let's see what they do, and I'll have more to say about it later. Q. Do you want t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg754-2, pp. 754-755, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg754-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg754-2. Public record. Public Papers source pagination, pp. 754-755; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11965,7 +11983,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, kosovo, macedonia, balkan, sarajevo, gorazde, bihac, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": ".... Government Publishing Office www.gpo.gov] The President's News Conference With Prime Minister Andreas Papandreou of Greece April 22, 1994 Bosnia The President. Good afternoon, ladies and gentlemen. Before I comment on my meeting with Prime Minister Papandreou, I would like to make a brief statement about developments with regard to Bosnia today. About 2 hours ago in Brussels, NATO's North Atlantic Council reached a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg755, pp. 755-762, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg755. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg755. Public record. Public Papers source pagination, pp. 755-762; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -11999,8 +12017,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 45-46 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 45-46; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 45-46; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -12035,7 +12053,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 44 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 44; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 44; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -12077,7 +12095,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...94, Book I)] [April 25, 1994] [Page 770] [From the U.S. Government Publishing Office www.gpo.gov] Remarks and an Exchange With Reporters on Bosnia April 25, 1994 The President. Good morning. I'm on my way, as you know, to Fort Myer, to the service, so I can't stay and answer a lot of questions. But I did want to make a brief statement about the situation in Bosnia. It appears that the pressure brought to bear by NATO...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg770, pp. 770, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg770. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg770. Public record. Public Papers source pagination, pp. 770; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12120,7 +12138,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y've released the dissident Wang Jontao? The President. Well, I'm very pleased about that. I'm very pleased about it. And it's a good step. Bosnia Q. Mr. President, are you satisfied with the chain of command now in Bosnia after the confusion over the weekend? And exactly what was that confusion, and did the White House contact Boutros-Ghali to try to get it straightened out? The President. Let me answer the first qu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg772, pp. 772-775, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg772. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg772. Public record. Public Papers source pagination, pp. 772-775; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12163,7 +12181,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rful thing. The United States is committed to this process and its success. And we'll be there as your partner when the elections are over. Bosnia Q. Mr. President, are you confident the Serbs will meet the deadline this evening? The President. Well, we expect them to. And of course, we're following it very closely today. Q. Are you confident you've worked out the problems with the United Nations in case they do not?...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg780, pp. 780, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg780. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg780. Public record. Public Papers source pagination, pp. 780; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12218,7 +12236,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, sarajevo, gorazde, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y this kind of vigorous American engagement and leadership remains vital not only in South Africa but around the globe. Consider the former Yugoslavia, where American engagement today is essential. The breakup of that country, inflamed by Serbian aggression, has resulted in 3 years of bloodshed and ethnic cleansing in Bosnia and elsewhere. We have clear interests at stake in helping to bring a peaceful end to the Bos...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg806, pp. 806-807, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg806. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg806. Public record. Public Papers source pagination, pp. 806-807; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12264,7 +12282,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...paper, any given day, and you see how we are worried about the disintegration of civic life in other countries. We read about the horror of Bosnia, and we say, ``My God, why can't the Muslims and the Serbs and the Croats just get along?'' We read about bodies being thrown into the river in Rwanda and say, ``Good Lord, why are those people doing that to each other?'' We read now about the rise of organized crime in Ru...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg813, pp. 813-815, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg813. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg813. Public record. Public Papers source pagination, pp. 813-815; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12299,9 +12317,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 10,
       "localPdfPageCount": 10,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000058; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000058/C09000058.pdf. Direct FOIA PDF; 10 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000058; F-2017-13804. Secret; Nodis. Digital copy, source PDF pp. 1-10; 10 pages.",
       "documentScope": "Policy document",
-      "documentType": "Presidential Memo"
+      "documentType": "Presidential Memo",
+      "classification": "Secret; Nodis"
     },
     {
       "id": "public-papers-1994-book1-doc-pg816-2",
@@ -12340,7 +12359,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ore rapid pace of change, there are dangers there, too. Because now countries instead of invading each other are fighting from within, from Bosnia to Rwanda. And even countries that are trying to promote democracy are made more vulnerable by high technology and organized criminal activity, from organized crime in Russia to the drug kingpins in Mexico and South America to the gangs that terrorize the streets of the Un...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg816-2, pp. 816-818, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg816-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg816-2. Public record. Public Papers source pagination, pp. 816-818; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12401,7 +12420,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, sarajevo, gorazde, brcko, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "..., this era has seen an epidemic of humanitarian catastrophes, many caused by ethnic conflicts or the collapse of governments. Some, such as Bosnia, clearly affect our interests. Others, such as Rwanda, less directly affect our own security interests but still warrant our concern and our assistance. America cannot solve every problem and must not become the world's policeman. But we do [[Page 823]] have an obligation ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg820, pp. 820-833, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg820. Public Papers granule PDF; 14 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg820. Public record. Public Papers source pagination, pp. 820-833; 14 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12441,7 +12460,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m also very grateful for the security partnership we have had and for the contributions that have been made by Malaysia to the operation in Bosnia, to the operation in Somalia, and to being a responsible leader in world affairs. So we've got a lot to talk about and I'm looking forward to it. Note: The exchange began at 2:55 p.m. in the Oval Office at the White House. In his remarks, the President referred to attorney...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg856, pp. 856, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg856. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg856. Public record. Public Papers source pagination, pp. 856; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12481,7 +12500,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ve in harmony and freedom and those who would abuse that very freedom. You see it whether it's in the ethnic brutality and the civil war in Bosnia or the rise, the lamentable rise, of organized crime in Russia where organized criminal thugs murder bankers at will who are trying to see free enterprise take root there or in the work of the gangs and some of the horrible tragedies within our own cities and communities. ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg897-2, pp. 897-899, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg897-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg897-2. Public record. Public Papers source pagination, pp. 897-899; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12521,7 +12540,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... shoulder to shoulder with his former guards to become President of a free and democratic South Africa. Yet each day, across the globe from Bosnia to Rwanda and Burundi, and here in America in neighborhood after neighborhood, we wonder whether peace and progress will win out over the divisions of race and ethnicity, of region and religion, over the impulse of violence to conquer virtue. Each day we are barraged in th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg906, pp. 906-909, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg906. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg906. Public record. Public Papers source pagination, pp. 906-909; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12561,7 +12580,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...th the Summit of the Americas; that from the beginning of my campaign for President, I said that we should not introduce ground troops into Bosnia but that we should try to do what we can to stop ethnic cleansing and to increase the multinational efforts, led by the Europeans who have primary interests there, to bring an end to the fighting on honorable and decent terms--we have certainly done that. And the initiativ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg950, pp. 950-956, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg950. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg950. Public record. Public Papers source pagination, pp. 950-956; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12596,7 +12615,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 47-48 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 47-48; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 47-48; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -12638,7 +12657,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Baltic area voluntarily. Thank you. Russia and the Baltic Countries Q. You're sure they will pull out? And does that mean out of the entire Balkans area, out of Estonia, Lithuania, wherever they are? [President Ulmanis' response was translated by an interpreter as follows.] President Ulmanis. He's convinced that that will be the case, and that's why he's here. President Clinton. Our preliminary--I say it's not prelim...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg982, pp. 982-983, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg982. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg982. Public record. Public Papers source pagination, pp. 982-983; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12693,7 +12712,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, sarajevo, gorazde, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...re, the U.S.S. Saratoga and her battle group are steaming in the Adriatic to help enforce the no-fly zone and to protect the safe havens in Bosnia. At this very moment, the U.S.S. Carl Vinson is in the Persian Gulf to help enforce sanctions on Iraq. Right now, the U.S.S. Independence is patrolling the waters of Northeast Asia to protect our allies and interests in Japan, Korea, and throughout the Asian-Pacific region...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg984-2, pp. 984-989, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg984-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg984-2. Public record. Public Papers source pagination, pp. 984-989; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12742,7 +12761,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...k I)] [May 25, 1994] [Page 989] [From the U.S. Government Publishing Office www.gpo.gov] Message to the Congress on the Federal Republic of Yugoslavia (Serbia and Montenegro) May 25, 1994 To the Congress of the United States: Section 202(d) of the National Emergencies Act (50 U.S.C. 1622(d)) provides for the automatic termination of a national emergency unless, prior to the anniversary date of its declaration, the Pr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg989, pp. 989, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg989. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg989. Public record. Public Papers source pagination, pp. 989; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12799,7 +12818,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, sarajevo, gorazde, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e whole world from becoming engulfed again. And that is what we are attempting to do in working with the British, the French, and others in Bosnia, what we are attempting to do in leading NATO to take action out of area for the first time and trying to support the attempt to secure peace in Bosnia. That's what we're trying to do with the Partnership For Peace. Eighteen nations have now signed up to cooperate with NAT...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg996, pp. 996-998, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg996. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg996. Public record. Public Papers source pagination, pp. 996-998; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12845,7 +12864,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Italy to the sort of partnership we have had. The Italian-American relationship is extremely important for our ability to work for peace in Bosnia, for our ability to maintain a stability in the entire region, and for our long- term economic partnerships as well. So I am looking forward to it, and I am basically quite optimistic. I'm hopeful. Mr. Lugato. Sir, you were just quoting the new Prime Minister. Can I ask yo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg998, pp. 998-1001, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg998. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg998. Public record. Public Papers source pagination, pp. 998-1001; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12879,8 +12898,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 49-50 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 49-50; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 49-50; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -12921,7 +12940,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rge number of things. I'm always amazed to find him so vigorously involved in the affairs of the world. We talked about the difficulties in Bosnia, as you might imagine. We talked a lot about Poland and Eastern Europe. We talked at some length about Russia and our emerging relationships there. We talked for quite a long while about Asia, about the need to protect religious freedoms in Asian countries and to promote t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1009, pp. 1009-1010, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1009. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1009. Public record. Public Papers source pagination, pp. 1009-1010; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -12964,7 +12983,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to tell the Prime Minister personally how much I appreciated the support that Italy has given for NATO's efforts to resolve the conflict in Bosnia and for the support Italy has given particularly to the United States Armed Forces in all the efforts we undertake in this part of the world. We discussed a lot of our common economic and social challenges. We talked about the G-7 meeting coming up, and I think we have lai...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1010-2, pp. 1010-1017, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1010-2. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1010-2. Public record. Public Papers source pagination, pp. 1010-1017; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13004,7 +13023,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...[Inaudible]--say something about the United Nations, whether you think the United Nations is up on this. It has not done a very good job in Bosnia and other parts of the world. Are the allies strong enough to stand up to this regime? The President. I have nothing to add to what I've already said about it right now. Thank you. Nettuno Memorial Ceremony Q. How do you feel about this morning's ceremonies, Mr. President?...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1021, pp. 1021-1022, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1021. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1021. Public record. Public Papers source pagination, pp. 1021-1022; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13055,7 +13074,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, sarajevo, gorazde, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...oth Russia and Ukraine of the problems that exist in the Crimea. Self-evidently today, we spent some time discussing our joint interests in Bosnia. We are at the middle, in the midst of crucial negotiations in Geneva. The United Nations continues to seek a cessation of hostilities. At present, as you'll know, the contact group is still meeting, pressing for settlement of territorial questions, [[Page 1026]] and it's ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1025, pp. 1025-1027, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1025. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1025. Public record. Public Papers source pagination, pp. 1025-1027; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13095,7 +13114,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...inue the reenlistment, the new Chief of Naval Operations, a man who has done a terrific job for our country in dealing with the problems in Bosnia and elsewhere throughout his naval career, a man who has come a long way since he started, Admiral Mike Boorda. Please welcome him. Note: The President spoke at 3:01 p.m. aboard the ship. In his remarks, he referred to Capt. Robert Sprigg, USN, captain of the U.S.S. George...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1029, pp. 1029-1030, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1029. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1029. Public record. Public Papers source pagination, pp. 1029-1030; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13135,7 +13154,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ine to deal with these problems and at least contain them and try to work through them over the long run. That's what we've sought to do in Bosnia, not to commit our sol- [[Page 1033]] diers to intervene in the conflict but to contain it and work toward its resolution. And that's what we've sought to do in many other places in the world. That's what we have sought to do with our humanitarian aid mission in Somalia, t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1030, pp. 1030-1033, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1030. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1030. Public record. Public Papers source pagination, pp. 1030-1033; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13175,7 +13194,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...o make the world less nuclear, which is immediate in its implications in our security. And we are working through a lot of other things. In Bosnia what we have done is to say we're not sure we can solve this, but we can limit its reach, and we must. And we've been somewhat successful there, I think more successful than most people acknowledge. And I think what you will see is as we work through these things and the s...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1038, pp. 1038-1040, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1038. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1038. Public record. Public Papers source pagination, pp. 1038-1040; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13218,7 +13237,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...or Jacques Chirac of Paris, France June 7, 1994 The President. Good morning. How are you? It's a wonderful city. It's wonderful to be back. Bosnia Q. Mr. President, do you think that the Bosnian Muslims should accept Akashi's proposal for a 4-month ceasefire? The President. Well, we'd very much like to see a cessation of the fighting, and we're working on it. Ambassador Redman is here today, and I hope to have a chan...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1049, pp. 1049-1050, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1049. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1049. Public record. Public Papers source pagination, pp. 1049-1050; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13261,7 +13280,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...sed our common concerns in the area of foreign policy. And we reaffirmed our determination to work together very closely on the question of Bosnia to try to first encourage both sides to support Mr. Akashi's proposal for a cease-fire and secondly to support the work of the contact group in attempting to come up with an appropriate division of territory, which can be the basis of a lasting settlement there. We intend ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1050, pp. 1050-1051, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1050. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1050. Public record. Public Papers source pagination, pp. 1050-1051; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13312,7 +13331,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, balkan, unprofor, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...problems in reconciliation, in power-sharing, in sustainable development. We see the signs of this disease from the purposeful slaughter in Bosnia to the random violence of skinheads in all our nations. We see it in the incendiary misuses of history and in the anti-Semitism and irredentism of [[Page 1053]] some former Communist states. And beyond Europe, we see the dark future of these trends in mass slaughter, unbri...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1051, pp. 1051-1055, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1051. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1051. Public record. Public Papers source pagination, pp. 1051-1055; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13361,7 +13380,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, macedonia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...cally with GATT, in terms of security with NATO and the Partnership For Peace. I see us working together to try to deal with the problem of Bosnia. I know it has not been solved, but after all, some progress has been made. The conflict has been limited. The Croatians and the Muslims have made an agreement. We are on the [[Page 1056]] verge of getting a recommended territorial settlement from our contact group. So I t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1055, pp. 1055-1059, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1055. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1055. Public record. Public Papers source pagination, pp. 1055-1059; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13414,7 +13433,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...U.S. Government Publishing Office www.gpo.gov] [[Page 1109]] Message to the Congress Reporting on Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) June 21, 1994 To the Congress of the United States: On May 30, 1992, in Executive Order No. 12808, the President declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United States ari...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1109, pp. 1109-1111, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1109. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1109. Public record. Public Papers source pagination, pp. 1109-1111; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13454,7 +13473,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m which can then spill over. It's not confined to Africa as you see in Europe and the effort we have made to try to contain the conflict in Bosnia even as we worked to resolve it. The United States is presently supporting seven peacekeeping efforts in Africa. And I have issued new guidelines to help us do this work more effectively. I've already discussed Somalia, but we've had special envoys to the Sudan and Angola....",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1150, pp. 1150-1153, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1150. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1150. Public record. Public Papers source pagination, pp. 1150-1153; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13505,7 +13524,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, sarajevo, contact group, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...or Kohl, all the things we work together on, Russian aid, international peacekeeping, a whole range of issues, trying to find a solution in Bosnia, the German people and the American people and their Governments need to work very, very closely together, not only for the well-being of Europe but indeed for the entire world. Central and Eastern Europe Mr. Walther. America is the last remaining world power, and there is...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1172, pp. 1172-1173, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1172. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1172. Public record. Public Papers source pagination, pp. 1172-1173; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13554,7 +13573,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, unprofor, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ships, that the traditional strong relationship between the United States and Italy would be maintained vigorously. That was my impression. Bosnia Negotiations Q. May I follow up with a question that connects to Italy very quickly? It's Yugoslavia. We are in the front line. And one of the first requests of the government of Italy, Mr. Berlusconi's government, was to let Italy get in the contact group that's working i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1181-2, pp. 1181-1186, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1181-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1181-2. Public record. Public Papers source pagination, pp. 1181-1186; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13594,7 +13613,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... no longer pointed at each other, for the first time since the end of World War II. We are working together to try to solve the conflict in Bosnia. So I think in all those ways we can work together. We have a commission between the Prime Minister of Russia and our Vice President working on matters of defense conversion and environmental technology and energy and things of that kind. So we have a good, broad- based re...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1187, pp. 1187-1189, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1187. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1187. Public record. Public Papers source pagination, pp. 1187-1189; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13643,7 +13662,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ond, in Georgia--I think it is possible to put a less threatening interpretation on President Yeltsin's remarks--or the Russian presence in Bosnia. Let's take those three. I have pushed personally very hard for the withdrawal of the Russian troops from the Baltics, and I am looking very much forward to my trip there to Latvia. The troops are out of Lithuania, and they are withdrawing from Latvia, and I think they wil...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1189, pp. 1189-1195, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1189. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1189. Public record. Public Papers source pagination, pp. 1189-1195; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13692,7 +13711,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, macedonia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...o violate the international community's sense of decency and to violate human rights, and they're in there illegally, and they ought to go. Bosnia Q. The contact group has presented a take-it-or-leave-it plan for the party, a plan that basically ratifies ethnic cleansing in several areas. Could you explain how your thinking shifted on this, how you came to believe that stopping the war was more important than taking ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1215, pp. 1215-1222, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1215. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1215. Public record. Public Papers source pagination, pp. 1215-1222; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13741,7 +13760,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...led between leaders of North and South Korea. We also strongly agreed on the importance of pushing ahead with a resolution of the crisis in Bosnia. Finally, the United States and Russia joined all of the nations in expressing regret over the death of the Italian sailors at the hands of terrorists in Algeria and reaffirmed our opposition to terrorism anywhere, anytime. With regard to my meeting with President Yeltsin,...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1230, pp. 1230-1233, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1230. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1230. Public record. Public Papers source pagination, pp. 1230-1233; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13790,7 +13809,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ow between Germany and the United States. As we look forward to further progress in integrating Europe, in dealing with the difficulties in Bosnia--and we hope that peace will be made there--I think it is clear that to imagine any of these things working out over the long run, the German-American [[Page 1235]] partnership will have to be maintained and strengthened, and I am confident that it will be. German Leadersh...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1233, pp. 1233-1238, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1233. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1233. Public record. Public Papers source pagination, pp. 1233-1238; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13839,7 +13858,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... separated from you for long periods of time, also do America's work, and we thank you all. You have done so much in Somalia, in Turkey, in Macedonia, over the skies of Bosnia, and other places in the former Yugoslavia. From 1991 through 1993, during Operation Provide Comfort, you flew nearly 5,000 combat sorties over northern Iraq. Since 1993, as part of Operation Deny Flight, Ramstein F-16's flying out of Aviano Ai...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1239-2, pp. 1239-1241, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1239-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1239-2. Public record. Public Papers source pagination, pp. 1239-1241; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13882,7 +13901,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...sion. So, a number of issues we talked about today were, in fact, issues that had been touched upon in Naples already to raise the issue of Bosnia. In Naples we talked at length about the report of the contact group, and we did, at the time, publish a number of statements. The transatlantic partnership, that is the close cooperation between the European Union and the United States of America, takes on special importa...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1242, pp. 1242-1247, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1242. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1242. Public record. Public Papers source pagination, pp. 1242-1247; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13922,7 +13941,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...tment and a shared experience you have had here in protecting freedom and in your work since the end of the cold war in Iraq and Turkey and Macedonia and elsewhere; General Maddox for his leadership and continuing commitment to our presence in Europe; and especially to my friend Chancellor Kohl, for it is what has happened in the last few years since the Wall fell which has proved that your enduring sacrifice was wor...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1248, pp. 1248-1249, https://www.govinfo.gov/app/details/PPP-1994-book1/PPP-1994-book1-doc-pg1248. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book I), PPP-1994-book1; PPP-1994-book1-doc-pg1248. Public record. Public Papers source pagination, pp. 1248-1249; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -13956,7 +13975,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 51-52 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 51-52; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 51-52; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -13998,7 +14017,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...t to work for the United Nations at the end of World War II. In the fall of 1992 he helped to broker a brief cease-fire during the siege of Sarajevo and personally directed the safe passage of a convoy carrying winter supplies of clothing, blankets, and food. As the international community's guardian of innocent children in troubled regions, he oversees the delivery of humanitarian assistance that without him might o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1447, pp. 1447-1449, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1447. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1447. Public record. Public Papers source pagination, pp. 1447-1449; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14047,7 +14066,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Page 1458] [From the U.S. Government Publishing Office www.gpo.gov] Letter to the Chairman of the Senate Committee on Armed Services on the Arms Embargo on Bosnia-Herzegovina August 10, 1994 Dear Mr. Chairman: I am writing to reaffirm my Administration's support for lifting the international arms embargo on Bosnia and Herzegovina imposed by United Nations Security Council Resolution 713 of September 25, 1991. It has ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1458, pp. 1458, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1458. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1458. Public record. Public Papers source pagination, pp. 1458; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14081,7 +14100,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 53-54 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 53-54; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 53-54; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14123,7 +14142,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ransform our Alliance to meet the new challenges of the post-cold-war era and to direct its critical involvement in the search for peace in Bosnia. Manfred Woerner's central role in forging NATO's partnership with the new democracies of Eastern Europe and the former Soviet Union was a major contribution to our common effort to build an integrated transatlantic community. I will miss the candor, the friendship, and th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1467, pp. 1467, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1467. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1467. Public record. Public Papers source pagination, pp. 1467; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14157,7 +14176,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 55-57 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 55-57; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 55-57; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14212,7 +14231,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, sarajevo, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "..., Book II)] [August 22, 1994] [Pages 1489-1490] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on Bosnia-Herzegovina August 22, 1994 Dear Mr. Speaker: (Dear Mr. President:) I last reported to the Congress on April 12 on our support for the United Nations and North Atlantic Treaty Organization (NATO) efforts to achieve peace and security in Bosnia-Herzegovina. I am informing y...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1489, pp. 1489-1490, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1489. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1489. Public record. Public Papers source pagination, pp. 1489-1490; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14246,7 +14265,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 58-59 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 58-59; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 58-59; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14288,7 +14307,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...as of the world where their interests are directly at stake. The Europeans overwhelmingly, principally aided by the Canadians, have been in Bosnia. The Russians sent a force into Georgia at the request of the Government of Georgia but willing to abide by United Nations standards. Here is a case where the entire world community has spoken on a matter in our backyard involving horrible human rights violations, the thre...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1548, pp. 1548-1553, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1548. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1548. Public record. Public Papers source pagination, pp. 1548-1553; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14324,8 +14343,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 18-25 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 18-25; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 18-25; 8 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Memcon"
     },
@@ -14377,7 +14396,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, gorazde), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ple of Haiti fulfill their aspirations for liberty and when they are once again making genuine economic progress. United Nations actions in Bosnia, as those in Haiti, demonstrate that progress can be made when a coalition backs up diplomacy with military power. For the first time ever, NATO has taken, since we met last year, military actions beyond the territory of its members. The threat of NATO air power helped to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1627, pp. 1627-1631, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1627. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1627. Public record. Public Papers source pagination, pp. 1627-1631; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14417,7 +14436,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ans rejoiced and deeply respected your decision to withdraw your troops from the Baltic nations. Together, we are working to bring peace to Bosnia, to the Middle East, to Nagorno-Karabakh. Together, we will build an international space station and explore the solar system. Together, we will carry the fight against transnational problems like terrorism, environmental degradation, and organized crime. Together, we can ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1633-2, pp. 1633-1634, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1633-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1633-2. Public record. Public Papers source pagination, pp. 1633-1634; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14466,7 +14485,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...head. As you know, the FBI Director has already been to Moscow, and we're working closely on that. So we're looking forward to the meeting. Bosnia Q. President Yeltsin, can we ask you, if Congress forces the President, and he has promised he will do this, to lift the arms embargo if the Serbs don't comply, what will be your response if the United States lifts the arms embargo and lets the Bosnian Muslims arm themselv...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1634, pp. 1634-1635, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1634. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1634. Public record. Public Papers source pagination, pp. 1634-1635; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14515,7 +14534,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...this problem in the near future. We also agreed to work more closely together to help resolve the tragic conflict over Nagorno-Karabakh. On Bosnia, we repeated our commitment to work within the Contact Group to compel the parties to accept the settlement that has been worked out. Once again, I congratulated President Yeltsin on his historic decision to withdraw Russian troops from the Baltic nations. No area better c...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1642-2, pp. 1642-1649, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1642-2. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1642-2. Public record. Public Papers source pagination, pp. 1642-1649; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14561,7 +14580,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...lated to the President's authority and responsibility in the area of foreign affairs. First, with respect to section 1404, which relates to Bosnia and Herzegovina, I note that the language on international policy leaves flexibility to calibrate our actions as events develop. Similarly, the provisions on reporting to and consulting with the Congress on training and the unilateral termination of the Bosnia arms embargo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1704, pp. 1704-1705, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1704. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1704. Public record. Public Papers source pagination, pp. 1704-1705; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14601,7 +14620,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...C News]. Foreign Policy Q. Over the past 20 months, Mr. President, some people would say that you have made very strong threats against the Bosnian aggressors; that you have warned North Korea not to build even one nuclear bomb, yet now there's acknowledgement that they at least have one, if not more; there have been threats against aggressors in Haiti and compromise, leaving the option for the leaders to stay there....",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1714-2, pp. 1714-1724, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1714-2. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1714-2. Public record. Public Papers source pagination, pp. 1714-1724; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14635,7 +14654,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 60-61 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 60-61; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 60-61; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14683,7 +14702,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...te point. We're a lot closer to the appropriate point today because of the announcements that have been made. Bill [Bill Plante, CBS News]. Bosnia Q. Mr. President, are you still committed to lifting the arms embargo against Bosnian Muslims unilaterally if you can't achieve it in the U.N. Security Council by November 15th, even though that might mean the evacuation by peacekeeping forces, a buildup by the Serbs, and ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1818-2, pp. 1818-1828, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1818-2. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1818-2. Public record. Public Papers source pagination, pp. 1818-1828; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14729,7 +14748,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...66-1867] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Presidential Election in the Former Yugoslav Republic of Macedonia October 24, 1994 I congratulate President Gligorov on his election to a second term as President of his country. Under his able leadership, I am confident the Former Yugoslav Republic of Macedonia will continue on its path toward full integration into the international ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1866, pp. 1866-1867, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1866. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1866. Public record. Public Papers source pagination, pp. 1866-1867; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14778,7 +14797,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on Additional Measures Against the Federal Republic of Yugoslavia (Serbia and Montenegro) October 25, 1994 Dear Mr. Speaker: (Dear Mr. President:) On May 30, 1992, pursuant to the International Emergency Economic Powers Act (IEEPA), 50 U.S.C. 1701 et seq., and the National Emergencies Act (NEA), 50 U.S.C. 1601 et seq., President Bush...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1870-2, pp. 1870-1872, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg1870-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg1870-2. Public record. Public Papers source pagination, pp. 1870-1872; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14812,7 +14831,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 62-64 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 62-64; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 62-64; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14863,7 +14882,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, bihac, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... part of the world. The American people cannot be as prosperous as they need to be unless we succeed here in Asia. Thank you. [[Page 2083]] Bosnia Q. Mr. President, we haven't heard you on Bosnia. Do you care to say something about that? The President. Well, I can say that I've obviously been very concerned about the events of the last few days in Bihac. We have tabled a--we have put forth a proposal to our allies th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2079, pp. 2079-2083, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2079. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2079. Public record. Public Papers source pagination, pp. 2079-2083; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14903,7 +14922,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rations--the administration seems increasingly comfortable in multilateral operations such as Haiti, potential U.S. involvement in a future Bosnia peace enforcement operation, potential U.S. commitment to peacekeeping in the Golan. How are you going to prevent the Republicans from blocking you in that area? The President. Well, historically, the Republicans have favored a strong American foreign policy and a robust o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2085, pp. 2085-2094, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2085. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2085. Public record. Public Papers source pagination, pp. 2085-2094; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -14937,7 +14956,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 65-66 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 65-66; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 65-66; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -14982,7 +15001,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, bihac), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ice www.gpo.gov] Remarks Following Discussions With Prime Minister Yitzhak Rabin of Israel and an Exchange With Reporters November 21, 1994 Bosnia The President. I would like to make a brief comment and then give the Prime Minister a chance to make a comment. First of all, with regard to the NATO attack this morning on the airfield, it was a strong and entirely appropriate response. That airfield had been used to con...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2108, pp. 2108-2112, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2108. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2108. Public record. Public Papers source pagination, pp. 2108-2112; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15037,7 +15056,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, bihac, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Book II)] [November 22, 1994] [Pages 2122-2123] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders on Bosnia-Herzegovina November 22, 1994 Dear Mr. Speaker: (Dear Mr. President:) I last reported to the Congress on August 22, 1994, on our support for the United Nations and North Atlantic Treaty Organization's (NATO) efforts to achieve peace and security in Bosnia-Herzegovina. I am...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2122, pp. 2122-2123, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2122. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2122. Public record. Public Papers source pagination, pp. 2122-2123; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15068,12 +15087,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, https://clinton.presidentiallibraries.us/items/show/101400. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2015-0774-M, item 101400. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/f73c20558bec1e770064d699603c9048.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "pcdc-1994-11-28-bosnia-principals-summary",
@@ -15107,7 +15127,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 67-70 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 67-70; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 67-70; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -15152,7 +15172,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... past 2 years, our military has time and again demonstrated its readiness and its war-fighting and peacekeeping capabilities. From Korea to Macedonia to Rwanda and Haiti, we have placed great burdens on our men and women in uniform, and they have responded magnificently. They have demonstrated a truly outstanding ability to deploy quickly, provide security, and to help ensure stability. When our forces deployed with ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2130, pp. 2130-2132, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2130. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2130. Public record. Public Papers source pagination, pp. 2130-2132; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15205,7 +15225,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) December 1, 1994 Dear Mr. Speaker: (Dear Mr. President:) On May 30, 1992, in Executive Order No. 12808, the President declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United State...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2132-2, pp. 2132-2136, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2132-2. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2132-2. Public record. Public Papers source pagination, pp. 2132-2136; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15251,7 +15271,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e nuclear threat; a strong NATO, adapting to new challenges; a strong CSCE, working, among other things, to lead efforts to head off future Bosnias; and a strong effort at cooperating with the United Nations and an effort by all the nations of Europe to work together in harmony on common problems and opportunities. In the 20th century, conflict and distrust have ruled Europe. The steps we are taking today will help t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2144, pp. 2144-2146, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2144. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2144. Public record. Public Papers source pagination, pp. 2144-2146; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15288,7 +15308,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 27-29 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 27-29; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 27-29; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Memcon"
@@ -15330,7 +15350,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... questions about its reliability as a strategic partner, specifically the failure to sign on to the Partnership For Peace, the U.N. veto on Bosnia, and then blocking a statement on Bosnia at the CSCE summit. Do these things cause you to question or have second thoughts about your policy of trying to work for a close relationship with Moscow? The President. No. And I'd like to say why. They don't, because Russia is st...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2175-2, pp. 2175-2181, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2175-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2175-2. Public record. Public Papers source pagination, pp. 2175-2181; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15364,9 +15384,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 7,
       "localPdfPageCount": 7,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (May 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_May2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (May 2022 release); F-2017-13804. No classification marking. Digital copy, source PDF pp. 1-7; 7 pages.",
       "documentScope": "Policy document",
-      "documentType": "Diplomatic Letter"
+      "documentType": "Diplomatic Letter",
+      "classification": "No classification marking"
     },
     {
       "id": "pcdc-1994-12-12-bosnia-principals-summary",
@@ -15399,8 +15420,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 71-73 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 71-73; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 71-73; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -15435,8 +15456,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 74-76 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 74-76; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 74-76; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -15490,7 +15511,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, balkan, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ment Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on Peacekeeping Operations in the Former Yugoslav Republic of Macedonia December 22, 1994 Dear Mr. Speaker: (Dear Mr. President:) I am providing you my fourth report on the continuing deployment of a U.S. Army peacekeeping contingent as part of the United Nations Protection Force (UNPROFOR) in the Former Yugoslav Republic of Macedonia (FYRO...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2200-3, pp. 2200-2201, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2200-3. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2200-3. Public record. Public Papers source pagination, pp. 2200-2201; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15530,7 +15551,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...year, Israelis and Arabs are turning the page on the past and embracing a future of peace. Of course, there are still too many people, from Bosnia to the refugee camps outside Rwanda, who are plagued by violence and cruelty and hatred. And we must continue our efforts to help them find peace. But we should remember how many people around the world are moving toward freedom and how fortunate we are here in America to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2202-2, pp. 2202-2203, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2202-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2202-2. Public record. Public Papers source pagination, pp. 2202-2203; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15573,7 +15594,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... II)] [December 31, 1994] [Page 2209] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Cessation of Hostilities in Bosnia December 31, 1994 I welcome the agreement of the parties for a 4-month cessation of hostilities in Bosnia. We hope it will be respected fully and pave the way for a negotiated settlement that brings peace to all the long-suffering people of Bosnia. We applaud the flexibili...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2209, pp. 2209, https://www.govinfo.gov/app/details/PPP-1994-book2/PPP-1994-book2-doc-pg2209. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1994, Book II), PPP-1994-book2; PPP-1994-book2-doc-pg2209. Public record. Public Papers source pagination, pp. 2209; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15608,7 +15629,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 6-7 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, https://clinton.presidentiallibraries.us/items/show/57229. Confidential. Extracted from source packet PDF pages 6-7; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, item 57229. Confidential. Extracted from source packet PDF, pp. 6-7; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Policy document",
       "documentType": "Cable"
@@ -15645,8 +15666,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 8-11 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, https://clinton.presidentiallibraries.us/items/show/57229. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 8-11; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, item 57229. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 8-11; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "Cable"
     },
@@ -15684,7 +15705,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 2-5 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, https://clinton.presidentiallibraries.us/items/show/57229. Secret. Extracted from source packet PDF pages 2-5; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Date inferred for chronological placement: Internal references place the paper after Zagreb's January 1995 UNPROFOR announcement and before the scheduled January 30 Z-4 presentation. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents Concerning Croatia, 2014-0311-M, item 57229. Secret. Extracted from source packet PDF, pp. 2-5; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "Policy Paper"
@@ -15721,7 +15742,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 77-79 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 77-79; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 77-79; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -15774,7 +15795,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, balkan, contact group, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... implementing market-oriented reforms. The Chancellor and I also discussed a broad range of other issues, including our efforts through the Contact Group to reach a negotiated settlement in Bosnia. Both of us believe it's essential to do what we can to support the Muslim-Croat Federation, which ended hostilities between two of the three parties to that conflict. We believe that strengthening the Federation will provi...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg181, pp. 181-187, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg181. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg181. Public record. Public Papers source pagination, pp. 181-187; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15814,7 +15835,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... We look forward to working together. And we're very, very pleased to have him and the Ambassador and leaders of the Government here. Q. Is Bosnia at the top of your agenda, and the lifting of the embargo? Any move toward that? The President. Well, I imagine we'll discuss that and a number of other things. But we just started. Q. What is this declaration of principles? Is it just a friendship kind of thing? The Presi...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg199, pp. 199, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg199. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg199. Public record. Public Papers source pagination, pp. 199; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15860,7 +15881,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, serbia/serbs, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...tral European democracies is inseparably linked to that of the United States and praised Bulgaria's balanced and constructive policy in the Balkans. Both Presidents noted the importance of continued implementation of Bulgaria's market economic reforms. In this context, they noted the need for Bulgaria to solidify its efforts at stabilization, to accelerate implementation of privatization and to complete the legal and...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg199-2, pp. 199-201, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg199-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg199-2. Public record. Public Papers source pagination, pp. 199-201; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15906,7 +15927,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s: on Israel's border, and Iraq's, in the Mediterranean between two NATO allies, in Europe on the border of the Former Yugoslav Republic of Macedonia to deter a wider Balkan conflict, and in the Caribbean. The UN recently completed and closed successful operations in numerous places, including in our own backyard in Central America, Cambodia, Namibia and Mozambique. Were the UN not engaged in promoting peace and secu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg201, pp. 201-202, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg201. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg201. Public record. Public Papers source pagination, pp. 201-202; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15946,7 +15967,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...bomber under their escort. Some of them are here with us tonight, including Second Lieutenant Luther Smith, who was forced to bail out over Yugoslavia after a successful attack on an ammunition dump, where he was captured and interned as a POW in Austria. He entered that camp weighing 150 pounds. Six months later when the British forces liberated him, he was down to 70 pounds. But he survived, and he's here. God bles...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg220, pp. 220-222, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg220. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg220. Public record. Public Papers source pagination, pp. 220-222; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -15986,7 +16007,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...more free. I thank you for your support of our common endeavors in Haiti. I admire you for your faithfulness in seeking peace in the former Yugoslavia. And I thank you most recently for your support in the action we have taken to try to stabilize the situation in Mexico, our partner and friend. Today, instant communication has made our world so much smaller that some say the entire globe is our neighborhood. Yet, the...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg251, pp. 251-252, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg251. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg251. Public record. Public Papers source pagination, pp. 251-252; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16026,7 +16047,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...troops have played an invaluable role in preventing more violence in those critical hot spots. Today, your 2,000 peacekeepers in the former Yugoslavia are courageously fulfilling their mission in the midst of one of the most intractable, difficult problems in our lifetime. For a half century, the United States has shared your philosophy of action and consistent exercise of leadership abroad. And I am determined, notw...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg252, pp. 252-257, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg252. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg252. Public record. Public Papers source pagination, pp. 252-257; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16061,9 +16082,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "localPdfPageCount": 6,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000085; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000085/C09000085.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000085; F-2017-13804. Confidential. Digital copy, source PDF pp. 1-6; 6 pages.",
       "documentScope": "Policy document",
-      "documentType": "Briefing Memo"
+      "documentType": "Briefing Memo",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book1-doc-pg275",
@@ -16111,7 +16133,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, unprofor, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...titude of the Republican Party? The President. Well, I don't agree with the attitude of the party with regard to the peacekeeping forces in Bosnia and with regard to at least some of what I've seen in the House of Representatives on peacekeeping generally. I believe the United States should participate in peacekeeping. I think we should pay our way. I think we should continue to be a strong force there. With regard t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg275, pp. 275-276, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg275. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg275. Public record. Public Papers source pagination, pp. 275-276; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16166,7 +16188,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, croatia, srebrenica, tudjman, unprofor, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n the multinational force, to the Dutch Marines, who are part of the U.N. mission. Like their involvement in the peacekeeping in the former Yugoslavia, this vital help to the people of Haiti writes yet another chapter in the great Dutch tradition of supporting humanitarian relief efforts and human rights around the world. When I spoke 2 weeks ago at the Iwo Jima Memorial commemoration, I admired once again the wonder...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg276, pp. 276-281, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg276. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg276. Public record. Public Papers source pagination, pp. 276-281; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16217,7 +16239,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, macedonia, tudjman, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ewater investigation is over. Let's look forward. Forget about me; let's let this thing unfold that involves me in an established way. Yes. Bosnia and Croatia Q. Mr. President, if we could come back to foreign policy. Are you prepared to send American troops to Croatia at the end of the month to help in the withdrawal of U.N. peacekeepers if President Tudjman sticks to his deadline? And can you foresee beyond that an...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg291, pp. 291-301, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg291. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg291. Public record. Public Papers source pagination, pp. 291-301; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16246,12 +16268,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "sourcePdfPages": "1-6",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0755-M, https://clinton.presidentiallibraries.us/items/show/101431. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0755-M, item 101431. Secret. Digital copy, source PDF pp. 1-6; 6 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/d0ded4f90ac23c43251c708836610931.pdf",
       "localPdfPageCount": 6,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "Secret"
     },
     {
       "id": "public-papers-1995-book1-doc-pg367-2",
@@ -16290,7 +16313,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ar were Irish-Americans. [[Page 368]] Today the Irish are still fighting the good fight, the fight for peace in Lebanon and Somalia and the Balkans. Irish troops under U.N. command have braved great dangers in the quest for peace. Ireland has also opened a school to train U.N. peacekeepers from other nations so that we may all benefit from Ireland's experience. Ireland has demonstrated its commitment to peace most po...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg367-2, pp. 367-369, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg367-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg367-2. Public record. Public Papers source pagination, pp. 367-369; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16336,7 +16359,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ment of NATO, the alliance must develop and maintain close ties with Russia. We affirmed our shared commitment to a political settlement in Bosnia, based on the Contact Group plan. The conflict is being prolonged because of Bosnian-Serb intransigence. Renewed fighting will not end the conflict but only lead to more bloodshed and continued stalemate. The Prime Minister and I also vowed to continue working together to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg448, pp. 448-455, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg448. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg448. Public record. Public Papers source pagination, pp. 448-455; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16364,12 +16387,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 15,
       "sourcePdfPages": "1-15",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101436. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf; 15 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, item 101436. Confidential. Digital copy, source PDF pp. 1-15; 15 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1a435ca8beac29930ce93b4f4c697757.pdf",
       "localPdfPageCount": 15,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book1-doc-pg493",
@@ -16408,7 +16432,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...away. Folks, they're wrong. They're just wrong. What we did in Haiti was a noble thing and a good thing. But for all of our frustrations in Bosnia, the United Nations troops on the ground there--none of them American--are risking their lives to minimize the slaughter. They're doing it; they don't ask us for our troops. All we do is to supply them food and medicine, and our ships are there, our planes are there to hel...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg493, pp. 493-504, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg493. Public Papers granule PDF; 12 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg493. Public record. Public Papers source pagination, pp. 493-504; 12 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16443,9 +16467,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 16,
       "localPdfPageCount": 16,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000078; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2023/FL-2017-13804/DOC_0C09000078/C09000078.pdf. Direct FOIA PDF; 16 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000078; F-2017-13804. Unclassified. Digital copy, source PDF pp. 1-16; 16 pages.",
       "documentScope": "Policy document",
-      "documentType": "Public Remarks"
+      "documentType": "Public Remarks",
+      "classification": "Unclassified"
     },
     {
       "id": "public-papers-1995-book1-doc-pg541-2",
@@ -16484,7 +16509,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... always said, that NATO is not an offensive alliance; it is a defensive alliance, a security alliance; that NATO has worked with Russia and Bosnia; that NATO has invited Russia to be a part of the Partnership For Peace and has not excluded anybody from potential NATO membership; that Russia, in terms of its security interest, has nothing to fear from a NATO which expands in a gradual, open, straightforward way and, a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg541-2, pp. 541-549, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg541-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg541-2. Public record. Public Papers source pagination, pp. 541-549; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16524,7 +16549,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to fight for the freedom of others. They served in Operations Desert Shield and Desert Storm. They delivered food and supplies to people in Bosnia to help them survive. That's the longest airlift in history, thanks to the United States Armed Forces and the people here. And people here have even helped to fight the fires in California. We're grateful to all of them for all those services. I want to say something about...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg585, pp. 585-586, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg585. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg585. Public record. Public Papers source pagination, pp. 585-586; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16559,8 +16584,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 80-82 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 80-82; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 80-82; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -16610,7 +16635,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n. I believe in a balanced budget. But I also know we've got to invest in the people of this country if we're going to raise their incomes. Bosnia Q. You spoke earlier about keeping foreign commitments and why you thought that was important. Two years ago in this room, Secretary of State Warren Christopher said the clock is ticking on Serb aggression. The blockade of Sarajevo has been tightened; the snipers are back ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg735-2, pp. 735-739, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg735-2. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg735-2. Public record. Public Papers source pagination, pp. 735-739; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16645,7 +16670,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 83-84 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 83-84; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 83-84; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -16708,7 +16733,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, balkan, sarajevo, unprofor, contact group, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ok I)] [May 24, 1995] [Pages 744-746] [From the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on Bosnia-Herzegovina May 24, 1995 Dear Mr. Speaker: (Dear Mr. President:) In my report to the Congress of November 22, 1994, I provided further information on the deployment of U.S. combat-equipped aircraft to support efforts of the United Nations and the North Atlantic Treaty Orga...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg744, pp. 744-746, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg744. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg744. Public record. Public Papers source pagination, pp. 744-746; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16751,7 +16776,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ery clear, and it has nothing to do with deficit reduction. I am for as much--I will support more spending reduction, but not in this form. Bosnia Q. Do you support, sir--do you support NATO air strikes around Sarajevo today? The President. Well, my position is that NATO should be prepared to react when our commanders on the ground need them. And you know, I've been--of all of our NATO allies, the United States has b...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg746, pp. 746-748, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg746. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg746. Public record. Public Papers source pagination, pp. 746-748; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16802,7 +16827,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, sarajevo, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ges 751-752] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the United Nations/NATO Decision To Launch Airstrikes in Bosnia-Herzegovina May 25, 1995 I welcome the decision of the U.N. and NATO to launch airstrikes today against a Bosnian-Serb ammunition site following the violence of the past several days in and around Sarajevo. This action was taken in response to Bosnian-Serb defiance of yest...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg751, pp. 751-752, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg751. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg751. Public record. Public Papers source pagination, pp. 751-752; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16848,7 +16873,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y, I want to thank the President, his administration, congressional Members, and my family for supporting me so stoutly during these times. Bosnia Q. Mr. President, what are you going to do if the U.N. peacekeepers are harmed in Bosnia by the Serbs? They have threatened to retaliate on the bombing. The President. We'll have to examine their actions as they take them. The United States is in a--I want to make clear th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg756, pp. 756-757, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg756. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg756. Public record. Public Papers source pagination, pp. 756-757; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16878,12 +16903,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118528. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118528. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/81dee7e4a731a49f1609b7bde7c782b8.pdf",
       "localPdfPageCount": 4,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book1-doc-pg765",
@@ -16935,7 +16961,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e more destructive today because they have access to modern technology. Nowhere are the forces of disintegration more obvious today than in Bosnia. For the past 2\\1/2\\ years, the United States has sought to contain and end the conflict, to help to preserve the Bosnian nation as a multistate entity, multiethnic entity, to keep faith with our NATO allies, and to relieve human suffering. To these ends, we have led the N...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg765, pp. 765-770, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg765. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg765. Public record. Public Papers source pagination, pp. 765-770; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -16975,7 +17001,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...the United States are being used all around the world in different ways. We have obligations in the Atlantic and in the Adriatic related to Bosnia and NATO generally, and we have to be available to do the kinds of things that we had to do in Haiti, the kind of things we did in Rwanda. So I believe we're just about leveled out. And I think it's important that we not go too low. We don't want to repeat the mistake that...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg770, pp. 770-773, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg770. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg770. Public record. Public Papers source pagination, pp. 770-773; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17026,7 +17052,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...right to violate the law or take the law into their own hands against Federal officials who are just doing their job. I don't believe that. Bosnia Mr. Gransbery. If U.S. combat ground troops are sent to Bosnia, what are the rules of engagement? Will they be there to secure the safety of the U.N. peacekeepers, or will they be asked to neutralize the Bosnian Serbs as well? [[Page 776]] The President. Well, the answer i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg774, pp. 774-777, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg774. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg774. Public record. Public Papers source pagination, pp. 774-777; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17079,7 +17105,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...untry to lawfully use their weapons. Mr. Koernig. We promise not to scream tonight. Our first question. The President. You can if you want. Bosnia [A 14-year-old exchange student from Serbian-occupied territory asked about efforts to bring peace to her country and to encourage more student exchanges in the meantime.] The President. Thank you very much. Let me answer the second question first, because it's an easier a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg790, pp. 790-801, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg790. Public Papers granule PDF; 12 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg790. Public record. Public Papers source pagination, pp. 790-801; 12 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17119,7 +17145,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...une 2, 1995] [Pages 801-802] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Downing of a United States Aircraft in Bosnia June 2, 1995 Good afternoon. I am very concerned about the loss of our F-16 over Bosnia and the fate of the American pilot, and we are following that situation closely. I have spoken today with President Chirac about the situation in Bosnia and about the meetings that Secr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg801, pp. 801-802, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg801. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg801. Public record. Public Papers source pagination, pp. 801-802; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17174,7 +17200,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, balkan, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Publishing Office www.gpo.gov] The President's Radio Address June 3, 1995 Good morning. I want to talk with you today about the conflict in Bosnia and the United States policy with regard to it for the last 2\\1/ 2\\ years since I've been President. Let me begin by saying that I know all Americans join with me in sending their prayers to the family and loved ones of an American pilot who was shot down yesterday while d...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg804, pp. 804-805, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg804. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg804. Public record. Public Papers source pagination, pp. 804-805; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17220,7 +17246,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, macedonia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... to be able to work for and with President Clinton. You shouldn't have any doubt about that. But we're waiting on any formal announcements. Bosnia Mr. King. I just wanted to know. Anything you can tell us about the pilot? The President. No, except that we're working on it very hard. Mr. King. Is he signaling? Is there a report of signals out of Bosnia? The President. Well, you know what the news reports are, but I ca...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg808, pp. 808-818, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg808. Public Papers granule PDF; 11 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg808. Public record. Public Papers source pagination, pp. 808-818; 11 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17255,9 +17281,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "localPdfPageCount": 6,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000098; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000098/C09000098.pdf. Direct FOIA PDF; 6 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000098; F-2017-13804. Secret. Digital copy, source PDF pp. 1-6; 6 pages.",
       "documentScope": "Policy document",
-      "documentType": "Official-Informal"
+      "documentType": "Official-Informal",
+      "classification": "Secret"
     },
     {
       "id": "public-papers-1995-book1-doc-pg831",
@@ -17296,7 +17323,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n to get regular reports and then it became obvious that he could be rescued but that the group could not get in and out before daylight in Bosnia, there was no doubt in the minds of either the commanders or our people in uniform that even though that entailed some increased risk, they had to go and get him out, that he had survived for 6 days, and 6 days was long enough. And they did their job. And last night, when ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg831, pp. 831-833, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg831. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg831. Public record. Public Papers source pagination, pp. 831-833; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17339,7 +17366,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...persuasive to enough Members of the House to sustain a possible veto. We are particularly concerned about the vote to lift unilaterally the arms embargo in Bosnia. As we have said, we believe this is counterproductive to our efforts to bring about a negotiated settlement.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg833, pp. 833, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg833. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg833. Public record. Public Papers source pagination, pp. 833; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17388,7 +17415,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, croatia, macedonia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...kinds of people in here from all over America. But mostly we have been celebrating the liberation of that fine young Air Force captain from Bosnia. Sometimes I read even in the American press from time to time that we don't seem to be doing anything in Bosnia and we don't seem to have exerted ourselves. You should know that we have over 1,000 American troops on the border of Bosnia in the Former Yugoslav Republic of ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg833-2, pp. 833-835, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg833-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg833-2. Public record. Public Papers source pagination, pp. 833-835; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17428,7 +17455,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...June 10. In his remarks, the President referred to Capt. Scott O'Grady, USAF, who was rescued after being shot down and stranded in western Bosnia.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg843, pp. 843-844, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg843. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg843. Public record. Public Papers source pagination, pp. 843-844; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17471,7 +17498,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...NATO. And we took enormous risks. And our children--my father fought in Korea and Viet- [[Page 856]] nam. We're now risking our children in Bosnia, in Iraq, in a whole range of--in Haiti, where the President, frankly, has so far--and I hope it works out perfectly--has so far had a much better policy than I thought he would. It worked better than I thought it would. And he deserves to be commended for, I think, having...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg848, pp. 848-861, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg848. Public Papers granule PDF; 14 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg848. Public record. Public Papers source pagination, pp. 848-861; 14 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17511,7 +17538,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...his friends, at the White House for lunch today. I can tell you that he certifies he got a better meal today than he did in those 6 days in Bosnia. But he gave us something more precious than we can ever give him, a reminder of what is very best about our country. And I'd like to now ask Captain O'Grady to come up here and say what's on his mind and heart to the people who gave him back his freedom. Captain Scott O'G...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg870, pp. 870-871, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg870. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg870. Public record. Public Papers source pagination, pp. 870-871; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17545,9 +17572,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "localPdfPageCount": 3,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000087; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000087/C09000087.pdf. Direct FOIA PDF; 3 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000087; F-2017-13804. No classification marking. Digital copy, source PDF pp. 1-3; 3 pages.",
       "documentScope": "Policy document",
-      "documentType": "Diplomatic Letter"
+      "documentType": "Diplomatic Letter",
+      "classification": "No classification marking"
     },
     {
       "id": "public-papers-1995-book1-doc-pg881-2",
@@ -17597,7 +17625,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, unprofor, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s dialog in his recent speech in Madrid. We discussed our efforts to strengthen the U.N. peacekeeping forces and to reduce the suffering in Bosnia. In the midst of the tragedy, we must not forget that the common efforts have already saved thousands of lives, and we must continue to work together. We also explored a number of issues that the leaders of the G-7 will deal with in Halifax, and I'd like to mention a coupl...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg881-2, pp. 881-888, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg881-2. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg881-2. Public record. Public Papers source pagination, pp. 881-888; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17626,12 +17654,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 10,
       "sourcePdfPages": "1-10",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101402. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2013-0517-M, item 101402. Confidential. Digital copy, source PDF pp. 1-10; 10 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9554ae2a65c3b9422bbbb0b3c8d0db66.pdf",
       "localPdfPageCount": 10,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book1-doc-pg888",
@@ -17670,7 +17699,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...muggling, drug trafficking, and organized crime. And of course, we will discuss a lot of the security issues that concern us all, including Bosnia and Iran's nuclear ambitions. When I arrive in Halifax today, I'll be meeting with Prime Minister Murayama of Japan. Our relationship is strong, and we are cooperating on a broad variety of issues, including North Korea, which is terribly important to both of us, the envir...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg888, pp. 888-889, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg888. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg888. Public record. Public Papers source pagination, pp. 888-889; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17731,7 +17760,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, sarajevo, unprofor, contact group, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ple, and I believe it will help us to prevent future Mexicos and to deal with those crises in a much more effective way when they do occur. Bosnia Q. Mr. President, the United States has told the United Nations that for budgetary reasons it could not be counted on to pay the lion's share for a rapid response force in Bosnia. My question is, can a rapid response force in Bosnia be effective without the major financial...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg893-2, pp. 893-899, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg893-2. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg893-2. Public record. Public Papers source pagination, pp. 893-899; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17759,12 +17788,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, https://clinton.presidentiallibraries.us/items/show/101439. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2012-0801-M, item 101439. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/b50fb932aee0c34e21229c106451da34.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book1-doc-pg923",
@@ -17803,7 +17833,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...agree. And then something good happened to this country when that brave young Air Force pilot, Scott O'Grady, survived for 6 lonely days in Bosnia and was rescued. And we saw what was best about America. And nobody cared if he had an Irish or a Polish name or if his skin was black, brown, or white. He had done something very brave and profoundly good that didn't have much to do with the kind of partisanship that cove...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg923, pp. 923-926, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg923. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg923. Public record. Public Papers source pagination, pp. 923-926; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17843,7 +17873,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r sort of heart and our common sense were reasserted. After that wonderful young Air Force Captain Scott O'Grady survived 6 hideous days in Bosnia and was rescued by a brilliant American operation, we were all exhilarated, and that put some of the energy back in all of us. What I want you to know is to get to tomorrow, we have to have the heart and the openness to other people that we found in the tragedy of Oklahoma...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg929, pp. 929-937, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg929. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg929. Public record. Public Papers source pagination, pp. 929-937; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17886,7 +17916,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...be. Ms. Yoachum. Mr. President, given the difficulties, the highly publicized difficulties, of course, with the U.N. peacekeeping forces in Bosnia and other U.N. difficulties, doesn't it make it more difficult for you to try to sell this to Americans, and don't you run some political risk in trying to do so? The President. Well, I suppose there's--in a time like this, when a lot of people are bewildered almost by all...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg940, pp. 940-944, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg940. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg940. Public record. Public Papers source pagination, pp. 940-944; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17926,7 +17956,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ions: [[Page 949]] in Iraq, to help stop that nation from developing weapons of mass destruction or threatening its neighbors again; in the Balkans, to isolate aggressors; in North Africa, to pressure Libya to turn over for trial those indicted in the bombing of Pan Am flight 103. The record of the United Nations includes a proud battle for child survival and against human suffering and disease of all kinds. Every ye...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg947-2, pp. 947-951, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg947-2. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg947-2. Public record. Public Papers source pagination, pp. 947-951; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -17966,7 +17996,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...us all think again about what it is that we share as human beings across all the divides. And when Captain O'Grady survived those 6 days in Bosnia and came home, it gave a little lift back to our country, and it made us think about all the things we're proud of about America, that brings us together across all the divides. And I leave you with this: The Democrats--the Democrats believe that we're here to help each ot...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg966-3, pp. 966-973, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg966-3. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg966-3. Public record. Public Papers source pagination, pp. 966-973; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18006,7 +18036,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...words and our feelings and how we've been conducting ourselves. And then when Captain O'Grady survived that magnificent, terrible 6 days in Bosnia and he was rescued, it put a little zip back in our step and made us realize what was best about this country. And I think our heads are kind of getting on straighter today as a people. But I want you to know, I'm going to spend the next year determined to continue to move...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg979, pp. 979-986, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg979. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg979. Public record. Public Papers source pagination, pp. 979-986; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18049,7 +18079,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ave seen it on television. How exciting it was. But when you take the heavy hand of authoritarianism away, you see the horrible conflict in Bosnia, where centuries old religious animosities flare up again today once there is no Yugoslavia run by a Tito to control people. Even in Russia, as it becomes more democratic, you see the ethnic fighting in a place like Chechnya consuming the energies of the nation and threate...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg991, pp. 991-996, https://www.govinfo.gov/app/details/PPP-1995-book1/PPP-1995-book1-doc-pg991. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book I), PPP-1995-book1; PPP-1995-book1-doc-pg991. Public record. Public Papers source pagination, pp. 991-996; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18098,7 +18128,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, srebrenica, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s been hospitalized this morning for heart problems. The President. Yes, I know, but I have heard nothing this morning about the condition. Bosnia Q. Sir, the Bosnian Serbs are moving into Srebrenica fast, according to the reports. Is it time for NATO air strikes? The President. We may have something to say on that later today. But let me say I'm concerned about the people who are there, and I'm also concerned about ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1072, pp. 1072, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1072. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1072. Public record. Public Papers source pagination, pp. 1072; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18144,7 +18174,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...een killed in mass numbers and persecuted because of their religious convictions. You can make a compelling argument that the tragic war in Bosnia today is more of a religious war than an ethnic war. The truth is, biologically, there is no difference in the Serbs, the Croats, and the Muslims. They are Catholics, Orthodox Christians, and Muslims, and they [[Page 1078]] are so for historic reasons. But it's really more...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1075-2, pp. 1075-1083, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1075-2. Public Papers granule PDF; 9 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1075-2. Public record. Public Papers source pagination, pp. 1075-1083; 9 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18195,7 +18225,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, srebrenica, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y from the extreme position toward the common ground of sensible welfare reform. I thank all these people who are here for supporting that. Bosnia Q. Mr. President, is it time for the U.N. troops to get out of Bosnia and for the U.S. to lift the arms embargo, as Senator Dole and others are proposing? The President. Well, first of all, let me comment on the events of the last few days. I am very disturbed about what h...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1088, pp. 1088-1091, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1088. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1088. Public record. Public Papers source pagination, pp. 1088-1091; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18232,8 +18262,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 35-37 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 35-37; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 35-37; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Telcon"
     },
@@ -18271,7 +18301,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 51-55 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 51-55; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 51-55; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Telcon"
@@ -18308,7 +18338,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 6-9 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 6-9; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Secret. Extracted from source packet PDF, pp. 6-9; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "Policy Memo"
@@ -18363,7 +18393,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...05] [From the U.S. Government Publishing Office www.gpo.gov] Message to the Congress Reporting on Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) July 18, 1995 To the Congress of the United States: On May 30, 1992, in Executive Order No. 12808, the President declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United States ari...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1101, pp. 1101-1105, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1101. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1101. Public record. Public Papers source pagination, pp. 1101-1105; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18400,7 +18430,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 66-71 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 66-71; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 66-71; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Telcon"
@@ -18439,7 +18469,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 76-83 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 76-83; 8 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Secret. Extracted from source packet PDF, pp. 76-83; 8 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Conversation",
       "documentType": "Telcon"
@@ -18478,7 +18508,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 2-4 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Secret. Extracted from source packet PDF pages 2-4; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Secret. Extracted from source packet PDF, pp. 2-4; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Conversation",
       "documentType": "Telcon"
@@ -18517,8 +18547,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 32-34 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 32-34; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 32-34; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Telcon"
     },
@@ -18556,7 +18586,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 93-95 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Confidential. Extracted from source packet PDF pages 93-95; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Confidential. Extracted from source packet PDF, pp. 93-95; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Telcon"
@@ -18609,7 +18639,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, gorazde, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...sorry we're beginning a little late, but I think all of you know that we have been working very hard for the last few days on the crisis in Bosnia. So I'd like to say a few words about that and then make the remarks that I wanted to make to the delegates to Girls Nation. As you know, there are meetings now going on in London in which the United States is working with our allies to reach a common position which would ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1128, pp. 1128-1130, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1128. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1128. Public record. Public Papers source pagination, pp. 1128-1130; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18644,8 +18674,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 103-106 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, https://clinton.presidentiallibraries.us/items/show/101088. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 103-106; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified documents concerning Bosnia, 2013-0517-M, item 101088. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 103-106; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "Presidential Memo"
     },
@@ -18676,12 +18706,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "sourcePdfPages": "1-4",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118529. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf; 4 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118529. Confidential. Digital copy, source PDF pp. 1-4; 4 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/8c1594df3181403f8ae652dad9856ddf.pdf",
       "localPdfPageCount": 4,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1149",
@@ -18726,7 +18757,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...eam effort and the success of Apollo 13 to come back to be a successful recovery. And so, thank you very much. I really do appreciate this. Bosnia Q. Mr. President, do you think that the Senate vote on the arms lift is a repudiation of your policies? The President. No, I think it is an expression of the concern the Senate has for the inability of the United Nations mission in the past to do what it said it was going ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1149, pp. 1149-1151, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1149. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1149. Public record. Public Papers source pagination, pp. 1149-1151; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18779,7 +18810,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, srebrenica, bihac, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to be able to sign this legislation that you've provided to the American people. Thank you. [At this point, the President signed the bill.] Bosnia Q. Mr. President, are you going to veto the Bosnia arms bill? The President. Hasn't passed yet. Q. Mr. President, do you think it's time for the allies to make a similar agreement with the U.N. to defend Bihac? The President. Well, you know what we did at NATO. We agreed t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1152-2, pp. 1152-1153, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1152-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1152-2. Public record. Public Papers source pagination, pp. 1152-1153; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18836,7 +18867,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, srebrenica, unprofor, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... and the U.S. Government for their warm hospitality and kindness extended to me and my delegation. Thank you. President Clinton. Thank you. Bosnia Q. Mr. President, your administration said that if the Congress voted to lift the arms embargo on Bosnia that that would almost guarantee that U.S. ground troops would have to be sent in. The Senate voted that way yesterday by a margin that suggests you couldn't sustain a ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1155, pp. 1155-1159, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1155. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1155. Public record. Public Papers source pagination, pp. 1155-1159; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18876,7 +18907,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...is morning, I think we got [[Page 1165]] a chance to do it. And with your help, we'll continue to make progress on it. Thank you very much. Bosnia Q. Is the United States orchestrating the transfer of arms to the Bosnian Muslims through Arab or Middle Eastern countries or anywhere else? The President. No. The Economy Q. Mr. President, have you managed to achieve the economic soft landing? The President. Well, I think...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1164, pp. 1164-1165, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1164. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1164. Public record. Public Papers source pagination, pp. 1164-1165; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18925,7 +18956,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, gorazde, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...pposition From Congress Q. Mr. President, your policies and your judgment calls appear to be under siege on Capitol Hill, Waco, Whitewater, Bosnia, social programs, and so forth. How debilitating has this been on you personally, on your administration, on the country? And obviously, you're whistling in the dark if you think you're going to have common ground. The President. I disagree. It's not been debilitating; it'...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1186, pp. 1186-1189, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1186. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1186. Public record. Public Papers source pagination, pp. 1186-1189; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -18959,7 +18990,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 85-86 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 85-86; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 85-86; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -19010,7 +19041,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, bihac), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ing the budget, we are consigning millions more Americans to a more limited future. It is wrong, and I certainly hope it is defeated today. Bosnia and Croatia Q. Mr. President, does it help to have Croatian forces engaging the Bosnian Serbs on the western edge? The President. Well, we have--what we have cautioned the Croatians about is widening the war. We don't want to see a widening of the war. We understand their ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1195, pp. 1195-1196, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1195. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1195. Public record. Public Papers source pagination, pp. 1195-1196; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19044,8 +19075,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 2-8 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, https://clinton.presidentiallibraries.us/items/show/36591. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 2-8; 7 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, item 36591. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 2-8; 7 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "Policy Memo"
     },
@@ -19097,7 +19128,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, balkan, bihac), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...concerns that I have, the Vice President shares, our administration has. We'll just have to review the bill when it gets in its final form. Bosnia and Croatia Q. What about the war in Croatia? Are you concerned that that could spread into an all-out war in the Balkans? The President. Yes--well, I'm concerned that it could spread the war in Bosnia and in the Croatia-Serbia area. Let me just back up and say the Croatia...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1200, pp. 1200-1203, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1200. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1200. Public record. Public Papers source pagination, pp. 1200-1203; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19134,8 +19165,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 15-20 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, https://clinton.presidentiallibraries.us/items/show/36591. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 15-20; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Date inferred for chronological placement: Filed as Tab D to Anthony Lake's August 5, 1995 memorandum to the President and adjacent to August 3-4 endgame papers. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, item 36591. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 15-20; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "Policy Paper"
     },
@@ -19171,7 +19202,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 9-14 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, https://clinton.presidentiallibraries.us/items/show/36591. Secret. Extracted from source packet PDF pages 9-14; 6 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, item 36591. Secret. Extracted from source packet PDF, pp. 9-14; 6 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "Policy Paper"
@@ -19208,8 +19239,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 21-24 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, https://clinton.presidentiallibraries.us/items/show/36591. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 21-24; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2012-0799-M, item 36591. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 21-24; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "Presidential Memo"
     },
@@ -19273,7 +19304,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, balkan, gorazde, bihac, tudjman, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...From the U.S. Government Publishing Office www.gpo.gov] Interview with Bob Edwards and Mara Liasson of National Public Radio August 7, 1995 Bosnia and Croatia Mr. Edwards. Well, Croatia is back into it, and we wonder how the Croat offensive affects the prospects of a U.N. withdrawal and the accompanying commitment of U.S. ground troops. The President. Well, my guess is that if the Croat offensive concludes successful...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1208, pp. 1208-1215, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1208. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1208. Public record. Public Papers source pagination, pp. 1208-1215; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19301,12 +19332,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "sourcePdfPages": "1-3",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118530. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf; 3 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Telcons - Memoranda of Telephone Conversation, 2017-0775-M, item 118530. Confidential. Digital copy, source PDF pp. 1-3; 3 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/cc683224fd33203efd308e802bcaa400.pdf",
       "localPdfPageCount": 3,
       "documentScope": "Conversation",
-      "documentType": "Telcon"
+      "documentType": "Telcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1237",
@@ -19351,7 +19383,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...s of America's children. And I think it is more important than any political consequence. Helen [Helen Thomas, United Press International]. Bosnia Q. Mr. President, the war in Bosnia is widening. How long is the world, particularly the Europeans who have been there in the past, how long are they going to stand--we all are going to stand by and watch this barbarism on both sides? And what are your new initiatives to e...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1237, pp. 1237-1246, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1237. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1237. Public record. Public Papers source pagination, pp. 1237-1246; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19404,7 +19436,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, srebrenica, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n a legal defense fund that had the same financial restrictions that running for Federal office does. And so that's what we've tried to do. Bosnia Ms. Soren. Senator Dole and Senator Helms have proposed asking for $100 million in arms aid for Bosnia. Do you support this legislation? The President. Not now because the arms embargo is on. My position is that the United States should not, by ourselves, violate the U.N. ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1246, pp. 1246-1251, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1246. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1246. Public record. Public Papers source pagination, pp. 1246-1251; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19457,7 +19489,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...] [August 11, 1995] [Pages 1253-1254] [From the U.S. Government Publishing Office www.gpo.gov] Statement on Vetoing Legislation To Lift the Arms Embargo Against Bosnia August 11, 1995 I am announcing today my decision to veto legislation that would unilaterally lift the arms embargo against Bosnia and Herzegovina. I know that Members of Congress share my goals of reducing the violence in Bosnia and working to end the...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1253, pp. 1253-1254, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1253. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1253. Public record. Public Papers source pagination, pp. 1253-1254; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19516,7 +19548,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, balkan, sarajevo, gorazde, unprofor, arms embargo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ages 1255-1256] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 1255]] Message to the Senate Returning Without Approval the Bosnia and Herzegovina Self-Defense Act of 1995 August 11, 1995 To the Senate of the United States: I am returning herewith without my approval S. 21, the ``Bosnia and Herzegovina Self-Defense Act of 1995.'' I share the Congress' frustration with the situation in Bosnia and am al...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1255, pp. 1255-1256, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1255. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1255. Public record. Public Papers source pagination, pp. 1255-1256; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19550,7 +19582,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 87-88 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 87-88; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 87-88; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -19598,7 +19630,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, izetbegovic), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [August 19, 1995] [Pages 1261-1262] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Death of American Diplomats in Bosnia-Herzegovina and an Exchange With Reporters in Jackson Hole, Wyoming August 19, 1995 The President. Good morning. As all of you know by now, we lost some fine Americans in Bosnia in a terrible accident a few hours ago, working for the cause of peace there. I have spoken wit...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1261, pp. 1261-1262, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1261. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1261. Public record. Public Papers source pagination, pp. 1261-1262; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19644,7 +19676,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...II)] [August 19, 1995] [Page 1262] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Death of American Diplomats in Bosnia-Herzegovina August 19, 1995 I am deeply saddened by the deaths today of three dedicated Americans serving the cause of peace, near Sarajevo, Bosnia-Herzegovina. We have confirmed reports that Ambassador Robert Frasure, Deputy Assistant Secretary of State for European and C...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1262, pp. 1262, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1262. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1262. Public record. Public Papers source pagination, pp. 1262; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19678,7 +19710,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 89-90 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 89-90; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 89-90; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -19726,7 +19758,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...U.S. Government Publishing Office www.gpo.gov] Remarks at a Memorial Service in Arlington, Virginia, for the American Diplomats Who Died in Bosnia-Herzegovina August 23, 1995 My fellow Americans, distinguished members of the diplomatic corps; most importantly, to the family, the friends, the colleagues, the loved ones of Robert Frasure, Joseph Kruzel, and Nelson Drew: Today we gather to honor three peacemakers who ga...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1262-2, pp. 1262-1263, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1262-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1262-2. Public record. Public Papers source pagination, pp. 1262-1263; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19761,8 +19793,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 91-95 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 91-95; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 91-95; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -19812,7 +19844,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... and prayers must also be with the men and women of our Armed Forces who are putting their bravery and their professionalism on the line in Bosnia. I want to restate to you and to all the American people why our forces and their NATO allies are engaged in the military operation there. The massacre of civilians in Sarajevo on [[Page 1274]] Monday, caused by a Bosnian Serb shell, was an outrageous act in a terrible war...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1273-2, pp. 1273-1275, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1273-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1273-2. Public record. Public Papers source pagination, pp. 1273-1275; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19845,9 +19877,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 2,
       "localPdfPageCount": 2,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000009; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000009/C09000009.pdf. Direct FOIA PDF; 2 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000009; F-2017-13804. Secret; Nodis. Digital copy, source PDF pp. 1-2; 2 pages.",
       "documentScope": "Policy document",
-      "documentType": "State FOIA Record"
+      "documentType": "State FOIA Record",
+      "classification": "Secret; Nodis"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1276",
@@ -19897,7 +19930,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... end of a war that engulfed the world, I ask your leave to say a few words about recent developments in the prospects for peace in troubled Bosnia. Just a couple of hours ago, we were able to announce that the Foreign Ministers of Bosnia, Croatia, and Serbia have agreed to meet late next week in Geneva to try to reach agreement on the basic principles of a settlement for peace. This is a positive step forward, but mu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1276, pp. 1276-1278, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1276. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1276. Public record. Public Papers source pagination, pp. 1276-1278; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -19956,7 +19989,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, sarajevo, srebrenica, gorazde, bihac, unprofor, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...the U.S. Government Publishing Office www.gpo.gov] Letter to Congressional Leaders Reporting on the Deployment of United States Aircraft to Bosnia-Herzegovina September 1, 1995 Dear Mr. Speaker: (Dear Mr. President:) I last reported to the Congress on May 24, 1995, concerning U.S. support for the United Nations and North Atlantic Treaty Organization (NATO) efforts in the former Yugoslavia. I am today reporting on the...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1279-2, pp. 1279-1280, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1279-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1279-2. Public record. Public Papers source pagination, pp. 1279-1280; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20009,7 +20042,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...297] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Agreement Between Greece and the Former Yugoslav Republic of Macedonia September 4, 1995 I welcome the decision by Prime Minister Papandreou and President Gligorov to send their Foreign Ministers to New York next week to complete an agreement on steps to establish friendly relations between their two countries. This courageous and visionar...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1297, pp. 1297, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1297. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1297. Public record. Public Papers source pagination, pp. 1297; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20055,7 +20088,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... How can we get along? How can we find common ground and work together? I'm sure you see on the [[Page 1300]] news at night the problems in Bosnia or you see what happened in Rwanda or Burundi in Africa where people of different tribes or ethnic groups or religious groups--they don't threaten you in the sense that nobody is threatening to drop a bomb on you, but they're killing each other rapidly. And even in this co...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1298, pp. 1298-1305, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1298. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1298. Public record. Public Papers source pagination, pp. 1298-1305; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20104,7 +20137,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e, I want to talk about education today. This is back-to-school day. But before I do, I have to say just a few words about the situation in Bosnia. You may know that this morning our pilots and crews and their NATO allies resumed the bombing of Bosnian Serb military positions. I support that; it's appropriate; its necessary, because the Bosnian Serbs failed to comply with the conditions set over the weekend to withdr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1305, pp. 1305-1308, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1305. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1305. Public record. Public Papers source pagination, pp. 1305-1308; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20144,7 +20177,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...all the young men and women who engaged in it. And I am very proud of all the young people in uniform who are part of the NATO operation in Bosnia, which is going to give us a chance to make a decent, honorable peace there and stop the slaughter of innocent civilians. And as John Breaux said, the economic consequences of what we've tried to do have been, I think, quite impressive. We now have well over 7 million new ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1321, pp. 1321-1326, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1321. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1321. Public record. Public Papers source pagination, pp. 1321-1326; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20190,7 +20223,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...o be a force for peace in the last 3 years in Northern Ireland and South Africa and the Middle East, in Haiti. We even see signs of hope in Bosnia. Today representatives of Bosnia, Croatia, and Serbia are meeting as a part of the peace initiative the United States has pushed so hard in Europe, and we pray for their success. They need to quit killing each other; it's not that much land involved. And there is nothing i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1327, pp. 1327-1332, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1327. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1327. Public record. Public Papers source pagination, pp. 1327-1332; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20243,7 +20276,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e 1333] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 1333]] Statement on the Agreed Basic Principles for a Settlement in Bosnia- Herzegovina September 8, 1995 Today's successful meeting in Geneva of the Foreign Ministers of Bosnia, Croatia, and the Federal Republic of Yugoslavia is an important milestone on the road to peace in the former Yugoslavia. As a result of intensive mediation by Ambassador...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1333, pp. 1333, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1333. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1333. Public record. Public Papers source pagination, pp. 1333; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20277,7 +20310,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 96-97 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 96-97; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 96-97; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -20328,7 +20361,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...White House for the meeting today. I'm looking forward to having a chance to discuss a number of things, including the present situation in Bosnia, the status of the welfare reform legislation, the budget-- progress toward a balanced budget, and a number of other issues, including the lobby reform measure passed by the Senate and the line- item veto and anything else that might be on the minds of the congressional Me...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1352, pp. 1352-1353, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1352. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1352. Public record. Public Papers source pagination, pp. 1352-1353; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20374,7 +20407,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia, macedonia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... U.S. Government Publishing Office www.gpo.gov] Statement on the Normalization Agreement Between Greece and the Former Yugoslav Republic of Macedonia September 13, 1995 I welcome the agreement signed by the Foreign Ministers of Greece and the Former Yugoslav Republic of Macedonia in New York today normalizing their relations. The agreement is very much in the interest of both nations and will significantly strengthen...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1358, pp. 1358, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1358. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1358. Public record. Public Papers source pagination, pp. 1358; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20427,7 +20460,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, macedonia, balkan, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Government Publishing Office www.gpo.gov] Remarks Prior to Discussions With Representatives From Greece and the Former Yugoslav Republic of Macedonia and an Exchange With Reporters September 14, 1995 Normalization Agreement The President. First of all, let me say that I am delighted to be joined here by the Foreign Minister of the Former Yugoslav Republic of Macedonia and the Ambassador to Greece to formally congratu...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1358-2, pp. 1358-1359, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1358-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1358-2. Public record. Public Papers source pagination, pp. 1358-1359; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20482,7 +20515,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, karadzic, mladic, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ptember 15, 1995] [Pages 1359-1360] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Agreement To End Air Strikes in Bosnia and an Exchange With Reporters September 15, 1995 The President. Good morning. I welcome the agreement by the Bosnian Serbs to comply with a condition set by NATO and the United Nations for ending the NATO air strikes. American pilots and crews and their NATO colleagues ha...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1359, pp. 1359-1360, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1359. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1359. Public record. Public Papers source pagination, pp. 1359-1360; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20533,7 +20566,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, balkan, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ptember 20, 1995] [Pages 1410-1411] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Decision To End Airstrikes in Bosnia September 20, 1995 The U.N. and NATO commanders are in agreement that the Serbs have completed the required withdrawal of heavy weapons from the exclusion zone. The Sarajevo airport has been opened. U.N. and humanitarian traffic is moving along the main routes into the cit...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1410, pp. 1410-1411, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1410. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1410. Public record. Public Papers source pagination, pp. 1410-1411; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20573,7 +20606,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nd social disintegration. In its sharpest sense, you see it manifested in racial and ethnic and religious hatred, whether it's a war in the Balkans or the horrible things in Rwanda and Burundi or a bus blowing up in Israel or sarin gas breaking open in the subway in Japan or the awful bombing of the Federal building in Oklahoma City. It is, in short, a world that is full of possibility, the most exciting period the w...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1421, pp. 1421-1427, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1421. Public Papers granule PDF; 7 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1421. Public record. Public Papers source pagination, pp. 1421-1427; 7 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20616,7 +20649,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r 20 or 30 years from now, and I'm convinced that NAFTA and the GATT world trade agreement will be very good for America over the long run. Bosnia Mr. King. A report just in, Mr. President, from Reuters, that all the factions in Bosnia are going to meet in New York this week. What can you tell us? The President. We just released that information, I think, from our plane. Ambassador Holbrooke, who is handling those ne...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1427, pp. 1427-1440, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1427. Public Papers granule PDF; 14 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1427. Public record. Public Papers source pagination, pp. 1427-1440; 14 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20662,7 +20695,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...uclear age. I'm proud of what we were able to do in the Middle East and Northern Ireland and Southern Africa. I'm proud of the fact that in Bosnia we may be on the verge of a breakthrough because good people now in all those factions, the Muslims, the Croatians, and the Serbs, I think, have seen it is time to make a decent peace and quit killing each other. I'm proud of that. But don't you forget: The real threat to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1440, pp. 1440-1447, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1440. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1440. Public record. Public Papers source pagination, pp. 1440-1447; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20696,7 +20729,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 98-100 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 98-100; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 98-100; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -20753,7 +20786,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, sarajevo, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ce www.gpo.gov] The President's Radio Address September 23, 1995 Good morning. I want to talk to you today about the prospects for peace in Bosnia. Over the past weeks, American leadership and the determination demonstrated by NATO and the United Nations have helped to bring Bosnia closer to peace than at any time since the war began there 4 years ago. Let me be clear: There are many tough obstacles still to overcome...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1464-2, pp. 1464-1465, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1464-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1464-2. Public record. Public Papers source pagination, pp. 1464-1465; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20802,7 +20835,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, srebrenica), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "..., this is going to be a busy week around here. And you may have heard already, but in case you haven't, not too long ago, this morning, the Bosnian Government announced that they would participate in the resumption of the peace talks tomorrow in New York, which is very good news. And [[Page 1474]] we do have the best chance we've had, I think, since the beginning of the conflict now to have a peace agreement come out...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1473, pp. 1473-1486, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1473. Public Papers granule PDF; 14 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1473. Public record. Public Papers source pagination, pp. 1473-1486; 14 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20836,7 +20869,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 101-102 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 101-102; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 101-102; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -20887,7 +20920,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "..., Book II)] [September 26, 1995] [Pages 1493-1494] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Peace Process in Bosnia and an Exchange With Reporters September 26, 1995 The President. Good afternoon. I have just spoken with Secretary Christopher and the rest of our negotiating team in New York, and I am pleased to announce another positive step on the path to peace in Bosnia. The Foreign M...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1493, pp. 1493-1494, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1493. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1493. Public record. Public Papers source pagination, pp. 1493-1494; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20927,7 +20960,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...to just leave alone. In the world, I'm proud of the foreign policy accomplishments that Terry mentioned. I'm glad for what happened here in Bosnia today with the new agreement. And I am glad that on Thursday we will have a second signing between Israel and the Palestinians, moving forward on peace in the Middle East. But we are still vulnerable in our country to the forces of organized destruction, from terrorism and...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1494, pp. 1494-1499, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1494. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1494. Public record. Public Papers source pagination, pp. 1494-1499; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -20967,7 +21000,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...l have tomorrow on the next step on the road to peace in the Middle East. I thank you for the work we have done to bring a genuine peace in Bosnia. And one of your members, of course, I must thank specifically, because through his combination of energy and imagination, heart and diplomacy, he has helped time and time again to make the world a safer place, Congressman Bill Richardson. Thank you. On Friday, I will have...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1502, pp. 1502-1506, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1502. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1502. Public record. Public Papers source pagination, pp. 1502-1506; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21007,7 +21040,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ed all across the world, the United States is honored and obligated to be a force for peace, from Northern Ireland to Southern Africa, from Bosnia to Haiti, to reducing the nuclear threat and the threat of biological and chemical weapons to fighting against terrorism and organized crime. But this is special, for it is in this place that those of us who believe that the world was created by, is looked over by, and ult...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1510, pp. 1510-1511, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1510. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1510. Public record. Public Papers source pagination, pp. 1510-1511; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21047,7 +21080,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r the people of the Middle East but for ourselves as well. For when we work for peace in Northern Ireland, in Southern Africa, in Haiti, in Bosnia, when we work to dismantle the threat of nuclear war and fight terrorism, we help ourselves and our children's future. [[Page 1513]] But I will say again what I said today: If we can make peace in the Middle East, if we can help the people who live there to make their own ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1511, pp. 1511-1513, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1511. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1511. Public record. Public Papers source pagination, pp. 1511-1513; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21087,7 +21120,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...we have an agreement between Syria and Lebanon and Israel, we won't be able to go all the way, but I think there is a sense of that. And in Bosnia, I think there is at least a sense that what has been our thorniest and most difficult problem, we may be able to work through. Now, we're a long way from getting there, but we are making progress. And I'm hopeful and--these things will make the American people more secure...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1518, pp. 1518-1520, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1518. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1518. Public record. Public Papers source pagination, pp. 1518-1520; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21127,7 +21160,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...adies and gentlemen, we are about to begin a meeting between the congressional leadership and the administration to discuss our progress in Bosnia and where we're going from here. But before we do, let me begin by saying a thank you to the leadership of Congress for their successful effort to avoid any kind of interruption in our Government operations as we work toward a balanced budget over the next several weeks. T...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1521, pp. 1521-1522, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1521. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1521. Public record. Public Papers source pagination, pp. 1521-1522; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21161,8 +21194,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 103-104 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 103-104; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 103-104; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
     },
@@ -21203,7 +21236,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... had a great week in Washington. We celebrated progress in peace in the Middle East. We celebrated the beginnings of peaceful agreements in Bosnia. I spend a whole lot of my time trying to make or keep peace, Northern Ireland, Southern Africa, Haiti, trying to get rid of the nuclear weapons that have threatened to disturb our peace profoundly and permanently. But we don't need just peace with other countries, we need...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1526, pp. 1526-1528, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1526. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1526. Public record. Public Papers source pagination, pp. 1526-1528; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21237,7 +21270,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 105 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 105; 1 document page counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 105; 1 page counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -21279,7 +21312,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ently celebrated the advance of peace in the Middle East, and we are trying, earnestly, with your support, to knock on the door of peace in Bosnia. We see peace advancing in Northern Ireland, in Haiti, in Southern Africa. All this has been an answer to many, many prayers around the world, but many of them were led by you, Holy Father, and for that, you have the gratitude of all the American people. On the threshold o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1534, pp. 1534-1535, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1534. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1534. Public record. Public Papers source pagination, pp. 1534-1535; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21328,7 +21361,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m J. Clinton (1995, Book II)] [October 5, 1995] [Page 1536] [From the U.S. Government Publishing Office www.gpo.gov] Remarks Announcing the Bosnia-Herzegovina Cease-Fire Agreement and an Exchange With Reporters October 5, 1995 The President. Good morning. Today we take another solid step on the hard but hopeful road to peace in Bosnia. I'm pleased to announce that the parties in Bosnia have agreed to a cease-fire to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1536, pp. 1536, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1536. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1536. Public record. Public Papers source pagination, pp. 1536; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21368,7 +21401,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...aps even more importantly, I learned early this morning that in 5 days from now, if we can just get a couple of things done, the parties in Bosnia have agreed to a complete cease-fire of all military hostilities. They have furthermore agreed to come for what are called ``proximity peace talks''--I'll tell you about that in a minute; that's a Government language word--to the United States to actually talk about hammer...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1536-2, pp. 1536-1543, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1536-2. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1536-2. Public record. Public Papers source pagination, pp. 1536-1543; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21414,7 +21447,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, sarajevo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...if we are to be truly secure in the world of the 21st century. We see the benefits of American leadership in the progress now being made in Bosnia. In recent weeks, our military muscle through NATO, our determined diplomacy throughout the region, have brought the parties closer to a settlement than at any time since this terrible war began 4 years ago. Yesterday, we helped to produce an agreement on a Bosnia-wide cea...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1544, pp. 1544-1551, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1544. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1544. Public record. Public Papers source pagination, pp. 1544-1551; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21454,7 +21487,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nced budget. Q. Will it take a budget summit, Mr. President? Q. Why don't you invite them over for a budget summit here? You're getting the Bosnians---- Q. Will it take a budget summit? The President. I don't know. I don't know. Q. --for peace talks. Why don't you have peace talks with the Republicans? The President. Well, you know, like I said, I try to talk to as many of them as I can, all the time. I think, to be ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1572-2, pp. 1572-1581, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1572-2. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1572-2. Public record. Public Papers source pagination, pp. 1572-1581; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21494,7 +21527,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...roud of it. And America has been gratified to be a part of making peace in the Middle East, progress in Northern Ireland, the cease-fire in Bosnia, making sure that for the first time since the dawn of the nuclear age there aren't any missiles pointed at Americans or their children tonight. North Korea is moving away from its nuclear program, and, by the grace of God, we might get a comprehensive test ban treaty on a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1585, pp. 1585-1592, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1585. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1585. Public record. Public Papers source pagination, pp. 1585-1592; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21527,9 +21560,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 3,
       "localPdfPageCount": 3,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000010; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000010/C09000010.pdf. Direct FOIA PDF; 3 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000010; F-2017-13804. Secret. Digital copy, source PDF pp. 1-3; 3 pages.",
       "documentScope": "Policy document",
-      "documentType": "State FOIA Record"
+      "documentType": "State FOIA Record",
+      "classification": "Secret"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1595",
@@ -21577,7 +21611,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, sarajevo, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ost basic human rights. We have an obligation to carry forward the lessons of Nuremberg. That is why we strongly support the United Nations War Crimes Tribunals for the former Yugoslavia and for Rwanda. The goals of these tribunals are straightforward: to punish those responsible for genocide, war crimes, and crimes against humanity; to deter future such crimes; and to help nations that were torn apart by violence be...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1595, pp. 1595-1600, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1595. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1595. Public record. Public Papers source pagination, pp. 1595-1600; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21617,7 +21651,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...of biological and chemical weapons, in trying to make the American people safer. I am proud of that. And we have to continue to do it. This Bosnia issue has been difficult, but we must lead here. And if we can get a peace agreement, as the leader of NATO we have to help implement it. Otherwise, we will have a terrible problem in the middle of Europe that can engulf us in the future. Do we have problems? Yes, of cours...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1616, pp. 1616-1625, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1616. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1616. Public record. Public Papers source pagination, pp. 1616-1625; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21657,7 +21691,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ance the budget and to secure the Medicare Trust Fund without really burning our seniors. Helen [Helen Thomas, United Press International]. Bosnia Q. Mr. President, slight change of subject. Would you send peacekeeping troops to Bosnia if we do not get congressional approval? And you have never stated that you would only keep them for one year. Your people have and the Cabinet has, but is that a flat commitment? The ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1628, pp. 1628-1632, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1628. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1628. Public record. Public Papers source pagination, pp. 1628-1632; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21692,9 +21726,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 5,
       "localPdfPageCount": 5,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000055; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2025/FL-2017-13804/DOC_0C09000055/C09000055.pdf. Direct FOIA PDF; 5 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000055; F-2017-13804. Confidential. Digital copy, source PDF pp. 1-5; 5 pages.",
       "documentScope": "Policy document",
-      "documentType": "Dissent Channel Message"
+      "documentType": "Dissent Channel Message",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1638",
@@ -21739,7 +21774,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...adership in the world. In just a few days, Ohio will become the center of the world's attention for quite another reason, when the heads of Bosnia and Croatia and Serbia come to Wright-Patterson Air Force Base to try to make peace in Bosnia. And I have to tell you that--I have to say one sad thing today. A very distinguished graduate of Ohio State University, Joe Kruzel, was one of the three Americans who was killed ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1638, pp. 1638-1640, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1638. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1638. Public record. Public Papers source pagination, pp. 1638-1640; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21779,7 +21814,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e work against terrorism, [[Page 1643]] when we work against drug trafficking, when we help to make peace from Northern Ireland to Haiti to Bosnia to the Middle East. We are stronger in a more peaceful world where we are living by our values and the power of our example. But most important of all, this country is coming together around its values again. In almost every State, believe it or not, the crime rate is down...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1640, pp. 1640-1647, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1640. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1640. Public record. Public Papers source pagination, pp. 1640-1647; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21819,7 +21854,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ove. Not the renewal of peace, though the United States is leading hopeful efforts toward peace from the Middle East to Northern Ireland to Bosnia. Not even the renewal of the American spirit, though there is a tide of optimism rising over our country as we harness technology and other changes to increase opportunities for all our people and strengthen our families and communities. No, the American renewal I want to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1647, pp. 1647-1648, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1647. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1647. Public record. Public Papers source pagination, pp. 1647-1648; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21859,7 +21894,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... of destruction. We have tried to be a force for peace and freedom from the Middle East to Northern Ireland to Haiti and, most recently, in Bosnia, where we are hoping and praying that the peace talks will succeed and that the cease- fire will turn into a genuine peace agreement. All of that, of course, especially affects the efforts of these two Presidents to secure their own people and their future. The Czech Repub...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1648, pp. 1648-1650, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1648. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1648. Public record. Public Papers source pagination, pp. 1648-1650; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21899,7 +21934,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ce of God, we will continue the road to peace, beginning on October 31st, when the leaders of all the countries involved in the conflict in Bosnia meet in the United States in Ohio. If we are able to make a peace and enforce it, I want all my fellow Americans to know that it would not have been possible but for the strong and firm leadership and involvement of Italy. And I am very grateful for what they have done to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1651, pp. 1651-1654, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1651. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1651. Public record. Public Papers source pagination, pp. 1651-1654; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21950,7 +21985,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, unprofor, dayton, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...one has chosen democracy, and the goal of an integrated, peaceful, and democratic Europe is now within our reach for the first time. In the Balkans, the international community's determination and NATO's resolve have made prospects for peace brighter than they have been for 4 long years. Let me salute the U.N.'s efforts on behalf of the people of Bosnia. The nations that took part in UNPROFOR kept the toll of this te...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1654, pp. 1654-1657, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1654. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1654. Public record. Public Papers source pagination, pp. 1654-1657; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -21993,7 +22028,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d the stability and the strength of the partnership between the United States and Russia. We spent the vast majority of our time discussing Bosnia, and we reached complete agreement about how we would work together for peace there. We reached agreement on the importance of the involvement of Russia and the other Contact Group partners in the peace process. On the question of what our roles would be in the implementat...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1661, pp. 1661-1663, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1661. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1661. Public record. Public Papers source pagination, pp. 1661-1663; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22033,7 +22068,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ou know, from Hyde Park and a meeting with President Yeltsin of Russia. We made a lot of progress today in agreeing to work toward peace in Bosnia, something that concerns every citizen of the world whose conscience has been shocked by all the children and other innocent people who have been killed there. We also agreed on working together, very importantly, to control the spread of nuclear materials, something that ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1664, pp. 1664-1671, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1664. Public Papers granule PDF; 8 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1664. Public record. Public Papers source pagination, pp. 1664-1671; 8 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22072,8 +22107,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 5-16 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 5-16; 12 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 5-16; 12 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Memcon"
     },
@@ -22112,7 +22147,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 31-35 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, National Archives Catalog / Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436, https://catalog.archives.gov/id/163545436. Secret. Extracted from source packet PDF pages 31-35; 5 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton NSC Records Management Office, 2014-0948-M; NAID 163545436. Secret. Extracted from source packet PDF, pp. 31-35; 5 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Conversation",
       "documentType": "Memcon"
@@ -22175,7 +22210,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, slovenia, balkan, milosevic, izetbegovic, tudjman, dayton, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ages 1674-1675] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters in New York City Prior to Discussions With Balkan Leaders October 24, 1995 Balkan Peace Process President Clinton. Let me begin by saying that I am delighted to have this opportunity to meet with President Izetbegovic and President Tudjman. We are very much looking forward to having the chance to discuss the prospects of ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1674, pp. 1674-1675, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1674. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1674. Public record. Public Papers source pagination, pp. 1674-1675; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22212,7 +22247,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 37-43 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Secret. Extracted from source packet PDF pages 37-43; 7 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Secret. Extracted from source packet PDF, pp. 37-43; 7 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Conversation",
       "documentType": "Memcon"
@@ -22254,7 +22289,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... time of remarkable progress for peace. You heard the Secretary talk about what we hope and pray will happen when the parties to the war in Bosnia meet in the next few days. We have seen a remarkable transformation in South Africa. In Northern Ireland they have laid down their arms, and we are working and hoping and praying for peace there. But nowhere has the progress been more dramatic and nowhere has it moved more...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1680-2, pp. 1680-1681, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1680-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1680-2. Public record. Public Papers source pagination, pp. 1680-1681; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22309,7 +22344,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, sarajevo, unprofor, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Russia are mutually exclusive choices. I want to emphasize one other thing. NATO is at work for us right now, as we speak, demonstrating in Bosnia how vital it is to securing the peace in Europe. The efforts of our negotiators, the military changes on the ground, and NATO's air strikes have brought these parties to the negotiating table and to an agreement on the basic principles of a settlement and a nationwide ceas...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1682, pp. 1682-1685, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1682. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1682. Public record. Public Papers source pagination, pp. 1682-1685; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22349,7 +22384,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...g developments, peace in the Middle East coming along, more peace and less violence in Northern Ireland, tomorrow peace talks opening about Bosnia here in the United States, something we are proud to host. We also know that there are new threats to our security that go across all national boundaries, that the organized forces of destruction and terror know no nationalism. We saw terrorism at home blow up the Federal ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1694, pp. 1694-1699, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1694. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1694. Public record. Public Papers source pagination, pp. 1694-1699; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22412,7 +22447,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, sarajevo, srebrenica, izetbegovic, tudjman, ifor, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...am J. Clinton (1995, Book II)] [October 31, 1995] [Pages 1700-1703] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Balkan Peace Process and an Exchange With Reporters October 31, 1995 The President. Good morning. I have just met with Secretary Christopher and our Bosnia negotiating team, led by Ambassador Holbrooke. As you know, they are preparing to leave for Day- [[Page 1701]] ton, Ohio, in...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1700-2, pp. 1700-1703, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1700-2. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1700-2. Public record. Public Papers source pagination, pp. 1700-1703; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22452,7 +22487,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... in the Middle East, in Northern Ireland, and God willing, our people are working as hard as they can now in Ohio for the cause of peace in Bosnia, to put an end to the horrible slaughter in that troubled land. We have lessened the nuclear threat. We have fought terrorism and international drug running and organized crime. We are doing what can be done to stand up for this country's values. And yes, we were honored t...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1709, pp. 1709-1712, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1709. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1709. Public record. Public Papers source pagination, pp. 1709-1712; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22487,7 +22522,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 106-108 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 106-108; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 106-108; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -22532,7 +22567,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... the cold war; who served with such skill and compassion in Haiti; who saved so many lives in more than one place in Africa; who halted the Bosnia Serb attacks against innocent civilians; and the men and women who, even as we gather here, safeguard the frontiers of freedom with their courage, their commitment, and their confidence. Our Nation has obligations to all those who wear our uniform, ensuring that our milita...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1732, pp. 1732-1734, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1732. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1732. Public record. Public Papers source pagination, pp. 1732-1734; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22578,7 +22613,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (serbia/serbs, croatia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...lliam J. Clinton (1995, Book II)] [November 12, 1995] [Page 1739] [From the U.S. Government Publishing Office www.gpo.gov] Statement on the Balkan Peace Process November 12, 1995 Today's agreement between the Government of Croatia and the leaders of the local Serbian community on the region of Eastern Slavonia is a major step toward the achievement of an overall peace settlement in the Balkans. This agreement provide...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1739-2, pp. 1739, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1739-2. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1739-2. Public record. Public Papers source pagination, pp. 1739; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22629,7 +22664,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, sarajevo, dayton, safe areas), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d. And from Northern Ireland to Haiti to the Middle East, the United States is leading the world to peace. Now, we are working for peace in Bosnia, to stop the slaughter of innocents, to prevent the war from spreading, to bring real peace to Europe. Our military might, through NATO, stopped the Bosnian-Serb attacks on the safe areas. Our mediators helped the parties to reach a cease-fire and agree on principles of a ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1743-2, pp. 1743-1748, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1743-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1743-2. Public record. Public Papers source pagination, pp. 1743-1748; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22669,7 +22704,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... of global responsibilities. You have been very forthright and strong in Cambodia. You have even committed to help in the reconstruction of Bosnia, a long way from home, and many, many other examples I could cite. So my view is that this is still a fair partner- [[Page 1765]] ship for security matters. And barring some dramatic change of circumstances, we should try to modify the partnership to meet the demands of th...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1762-2, pp. 1762-1771, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1762-2. Public Papers granule PDF; 10 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1762-2. Public record. Public Papers source pagination, pp. 1762-1771; 10 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22730,7 +22765,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, milosevic, izetbegovic, tudjman, ifor, dayton, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nton (1995, Book II)] [November 21, 1995] [Pages 1776-1778] [From the U.S. Government Publishing Office www.gpo.gov] Remarks Announcing the Bosnia-Herzegovina Peace Agreement and an Exchange With Reporters November 21, 1995 Good morning. About an hour ago I spoke with Secretary Christopher in Dayton, Ohio. He informed me that the Presidents of Bosnia, Croatia, and Serbia have reached a peace agreement to end the war ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1776-2, pp. 1776-1778, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1776-2. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1776-2. Public record. Public Papers source pagination, pp. 1776-1778; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22770,7 +22805,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": ".... I'd like to say one other thing, too, on this Thanksgiving. Yesterday I made an announcement that an agreement for peace has been made in Bosnia. A lot of people today are asking questions about how it will all be implemented. I'd just like to ask you to think of one human fact. In that little country so much smaller than ours, in that little bitty country, there are one million homeless families because of that wa...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1778, pp. 1778-1779, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1778. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1778. Public record. Public Papers source pagination, pp. 1778-1779; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22810,7 +22845,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ful that the United States has been a force for peace, from the Middle East to Northern Ireland and to Haiti and now of course, we hope, in Bosnia. But we should never forget that there are still people in our country that need our concern and our caring. The young people who are here today are interested in making the most of their own lives and serving those in their community. And that's an important part of Thank...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1779, pp. 1779-1780, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1779. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1779. Public record. Public Papers source pagination, pp. 1779-1780; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22845,7 +22880,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 109-111 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, https://clinton.presidentiallibraries.us/items/show/36614. Secret. Extracted from source packet PDF pages 109-111; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2010-0533-M, item 36614. Secret. Extracted from source packet PDF, pp. 109-111; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Secret",
       "documentScope": "Policy document",
       "documentType": "NSC Summary"
@@ -22900,7 +22935,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, balkan, sarajevo, dayton, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r the future--where I will visit next week. And in this week of Thanksgiving, we have seen the results of America's leadership for peace in Bosnia. After 4 years of terrible conflict, we have helped the people of Bosnia turn from the horror of war to the promise of peace. America's negotiating team, backed by NATO's resolve and airpower, brokered a cease-fire. We got the parties to agree on the principles of the sett...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1780, pp. 1780-1782, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1780. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1780. Public record. Public Papers source pagination, pp. 1780-1782; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -22951,7 +22986,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, croatia, balkan, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...r 27, 1995] [Pages 1782-1783] [From the U.S. Government Publishing Office www.gpo.gov] Remarks Announcing the Child Survival Initiative for Bosnia-Herzegovina and an Exchange With Reporters November 27, 1995 The President. Ladies and gentlemen, I am honored to be here today, especially with Congressman Tony Hall, a longstanding champion of children in our own country and throughout the world and the leading fighter i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1782-2, pp. 1782-1783, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1782-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1782-2. Public record. Public Papers source pagination, pp. 1782-1783; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23004,7 +23039,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, ifor, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...7] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 1784]] Address to the Nation on Implementation of the Peace Agreement in Bosnia-Herzegovina November 27, 1995 Good evening. Last week, the warring factions in Bosnia reached a peace agreement as a result of our efforts in Dayton, Ohio, and the support of our European and Russian partners. Tonight I want to speak with you about implementing the Bosnian...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1784, pp. 1784-1787, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1784. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1784. Public record. Public Papers source pagination, pp. 1784-1787; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23044,7 +23079,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nment Publishing Office www.gpo.gov] Remarks Prior to a Meeting With Congressional Leaders and an Exchange With Reporters November 28, 1995 Bosnia The President. Well, thank you very much for coming today. I just wanted to say, again, I appreciate the interest here in the Congress, the remarkable turnout. I'm looking forward to this meeting. As I said last night, the United States faces an historic choice between pea...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1787, pp. 1787-1788, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1787. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1787. Public record. Public Papers source pagination, pp. 1787-1788; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23084,7 +23119,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... meeting with the congressional leadership, where we discussed the importance of continuing America's leadership in the search for peace in Bosnia. I emphasized to them this afternoon, as I did to the American people last evening, that our mission will be clear, limited, and achievable and that the risks to our troops will be minimized. Bosnia is a case where our leadership can make the difference between peace and w...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1791-2, pp. 1791-1792, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1791-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1791-2. Public record. Public Papers source pagination, pp. 1791-1792; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23139,7 +23174,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, unprofor, ifor, dayton, contact group), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m explaining to Congress and the American people his plans for a very large United States contribution to the peace implementation force in Bosnia. Bosnia is, and has been for some years, a shared responsibility. British troops have been there now for something over 3 years, in numbers ranging up to 8,000 at a time. And both of our countries have made huge contributions to the international aid effort. What I think w...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1792, pp. 1792-1795, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1792. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1792. Public record. Public Papers source pagination, pp. 1792-1795; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23179,7 +23214,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...inst terrorism, working together to remove the nuclear cloud from our children's bright future, and together preparing the way for peace in Bosnia, where your peacekeepers have performed heroically and saved the lives of so many innocent people. I thank the British nation for its strength and its sacrifice through all these struggles. And I am proud to stand here on behalf of the American people to salute you. Ladies...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1795, pp. 1795-1799, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1795. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1795. Public record. Public Papers source pagination, pp. 1795-1799; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23219,7 +23254,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... anxious to have this time to visit with him about his views on conditions here and matters affecting both of our countries, especially the Bosnian question. And I don't know whether he was looking forward to coming here or not because he's just come from that ``question time'' that I referred to in my speech to the Parliament today. Northern Ireland Peace Process Q. Are you interested in his views on Ireland? The Pr...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1799, pp. 1799-1800, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1799. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1799. Public record. Public Papers source pagination, pp. 1799-1800; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23265,7 +23300,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, sarajevo, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ile ago it was impossible. The philosophy of the United States is simple and consistent. It runs in a seamless way from Northern Ireland to Bosnia to the Middle East. We will support those who take risks for peace. We will not attempt to tell people what peace they should make but only to urge on them the need to make peace at the soonest possible date in a fair and honorable and decent way. I look forward to my trip...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1802, pp. 1802-1803, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1802. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1802. Public record. Public Papers source pagination, pp. 1802-1803; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23311,7 +23346,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... to a global village where communication and cooperation are the order of the day. From South Africa to the Middle East and now to troubled Bosnia, conflicts long thought impossible to solve are moving along the road to resolution. Once-bitter foes are clasping hands and changing history, and long-suffering people are moving closer to normal lives. Here in Northern Ireland, you are making a miracle, a miracle symboli...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1804, pp. 1804-1807, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1804. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1804. Public record. Public Papers source pagination, pp. 1804-1807; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23351,7 +23386,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...sten to their sides of the story. I have come to the conclusion that here, as in so many other places in the world, from the Middle East to Bosnia, the divisions that are most important here are not the divisions between opposing views or opposing interests. Those divisions can be reconciled. The deep divisions, the most important ones, are those between the peacemakers and the enemies of peace: those who, deep, deep...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1809, pp. 1809-1811, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1809. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1809. Public record. Public Papers source pagination, pp. 1809-1811; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23391,7 +23426,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... to a religious fanatic of his own faith because he dared to make peace and give the children of his country a better future. We need it in Bosnia, where the leaders have agreed to make peace, but where the people must now purge their heart of the hatred borne of 4 years of merciless slaughter. We need this everywhere. So, my friends, I pray not only for your success in making a peace, but I pray that through this ch...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1811, pp. 1811-1812, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1811. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1811. Public record. Public Papers source pagination, pp. 1811-1812; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23431,7 +23466,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...essional leaders to provide funding, out of the funds contained in this bill, for the troop deployment and other efforts to secure peace in Bosnia. The pressing demands of peace and of our military service men and women compel my approval of this measure. I have expressed my strong concerns that this legislation contains excessive spending for projects that are not currently needed for our defense. I will forward to ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1813, pp. 1813, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1813. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1813. Public record. Public Papers source pagination, pp. 1813; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23471,7 +23506,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ict and unyielding position about the role of the United States as a force for peace throughout the world. Whether in the Middle East or in Bosnia or here, it is that we cannot, and we could not even if we wanted to, impose a peace on anyone. People must make their own peace from their heads and from their hearts. All we can do is to do the very best we can to create the best conditions in which people can make peace...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1815, pp. 1815-1816, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1815. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1815. Public record. Public Papers source pagination, pp. 1815-1816; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23511,7 +23546,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... to be with President Robinson again. Q. What's on the agenda for the discussions this morning? The President. More of the same. [Laughter] Bosnia Q. How do you like Senator Dole's support of Bosnia? The President. I'm very gratified by it. I appreciate it very much. Note: The exchange began at 11:07 a.m. at Aras an Uachtarain, President Robinson's residence. A tape was not available for verification of the content o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1816, pp. 1816, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1816. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1816. Public record. Public Papers source pagination, pp. 1816; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23551,7 +23586,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...k, and I'm going to do everything I can to be supportive. [At this point, one group of reporters left the room, and another group entered.] Bosnia Q. Will you be talking about Bosnia today, Mr. President? The President. I expect we will, yes. Q. What are some of the issues that you want to discuss about Bosnia? The President. Well, I just want to basically give the Prime Minister an update on where we are now. And of...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1817, pp. 1817-1818, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1817. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1817. Public record. Public Papers source pagination, pp. 1817-1818; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23594,7 +23629,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...The United States is honored to stand with those who take risks for peace, and we are doing it all across the world, in the Middle East, in Bosnia, and here. It is a difficult road to travel. It is always easier to stay in the known way and to play on the known fears. But the right thing to do is to do what is being done here, and I applaud it and I want to do everything I can to support it. Let me also say that we h...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1819, pp. 1819-1822, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1819. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1819. Public record. Public Papers source pagination, pp. 1819-1822; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23634,7 +23669,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...use] Not only that, I know we have a handy football team. [Laughter] Let me say that, as a lot of you know, because of events developing in Bosnia and the prospect of peace there, I had to cut short my trip. But there are a few signs out there I want to respond to. I will return to Ballybunion for my golf game. [Laughter] I am also pleased to announce that President Robinson has accepted my invitation to come to the ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1822, pp. 1822-1824, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1822. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1822. Public record. Public Papers source pagination, pp. 1822-1824; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23674,7 +23709,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nt of Europe so many centuries ago. But we know such a Europe can never be built as long as conflict tears at the heart of the Continent in Bosnia. The fire there threatens the emerging democracies of the region and our allies nearby. And it also breaks our heart and violates our conscience. That is why, now that the parties have committed themselves to peace, we in the United States are determined to help them find ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1824, pp. 1824-1826, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1824. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1824. Public record. Public Papers source pagination, pp. 1824-1826; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23714,7 +23749,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...who survive these sufferings, there is future.'' The young person from Dublin who wrote me that was Zlata Filpovic, the young teenager from Bosnia who is now living here, who wrote her wonderful diary that captured the imagination of people all over the world. I am honored that at this moment in the history of the world the United States has had the great good fortune to stand for the future of children in Ireland, i...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1826, pp. 1826-1828, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1826. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1826. Public record. Public Papers source pagination, pp. 1826-1828; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23765,7 +23800,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...d of that remarkable record. Now America summons you to service again, this time not with a call to war but a call to peace. The leaders of Bosnia, Croatia, and Serbia have agreed to end 4 long years of war and atrocities. They have asked for our help to implement their peace agreement. It is in our Nation's interest and consistent with our values to see that this peace succeeds and endures. And we are counting on yo...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1828, pp. 1828-1830, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1828. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1828. Public record. Public Papers source pagination, pp. 1828-1830; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23805,7 +23840,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... The President. Good afternoon. I have just finished a very good set of briefings from our military commanders about the plans to deploy in Bosnia to enforce the peace agreement. And I have received a report from General Joulwan about the meeting of the North Atlantic Council which has, in essence, approved the military plan for implementing the peace agreement, which I signed off on just a few days ago in the Oval O...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1830, pp. 1830-1832, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1830. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1830. Public record. Public Papers source pagination, pp. 1830-1832; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23858,7 +23893,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, ifor, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... shaken the hands, heard the voices, and seen the faces of those all over Europe who long for peace, peace in Northern Ireland and peace in Bosnia. I will never forget the two young children in Belfast, one Catholic, who lost her father, and one Protestant. These children joined their hands and told the world of their dreams for a future of peace and their gratitude that America is working for peace. [[Page 1833]] I'...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1832, pp. 1832-1834, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1832. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1832. Public record. Public Papers source pagination, pp. 1832-1834; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23898,7 +23933,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...tle bit, has having a U.S. forward-deployed force in Europe been an advantage for the planning and potential and ultimate execution of this Bosnia mission? The President. Absolutely. It's been a huge advantage. For one thing, we are here, obviously part of the unified NATO Command, but we can do our planning not just through General Joulwan and the NATO Command Headquarters but right down through the Americans that a...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1834, pp. 1834-1835, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1834. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1834. Public record. Public Papers source pagination, pp. 1834-1835; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23955,7 +23990,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, sarajevo, milosevic, mladic, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...organized violence. We have common goals, and this morning we also spoke about converging actions such as the peace plan that was signed in Dayton with regard to Bosnia. I would like to point out that, keeping in mind our responsibility as the President of the European Union and the presence of Spanish troops and Spanish nongovernmental organizations in Bosnia, but I would like to point out how significant it is that...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1835-2, pp. 1835-1840, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1835-2. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1835-2. Public record. Public Papers source pagination, pp. 1835-1840; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -23985,12 +24020,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 10,
       "sourcePdfPages": "1-10",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0548-M, https://clinton.presidentiallibraries.us/items/show/118881. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf; 10 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2015-0548-M, item 118881. Confidential. Digital copy, source PDF pp. 1-10; 10 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/af632a0ca106bdddd19d802cd3a5ba6e.pdf",
       "localPdfPageCount": 10,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "Confidential"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1842",
@@ -24035,7 +24071,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...n December 5, 1995 Thank you very much. Thank you for being here. And most important of all, thank you for your commitment to the people of Bosnia, for your care and your courage. Many of you in this room have worked throughout the war to stop the human rights abuses that horrified the world and to ease the suffering of the people of Bosnia. Now the Balkan leaders have ended the war and have made a commitment to peac...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1842, pp. 1842-1843, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1842. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1842. Public record. Public Papers source pagination, pp. 1842-1843; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24081,7 +24117,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ber 6, 1995] [Pages 1844-1845] [From the U.S. Government Publishing Office www.gpo.gov] Remarks to the Committee for American Leadership in Bosnia and an Exchange With Reporters December 6, 1995 The President. I want to welcome this distinguished group of Americans to the White House. Each of you has worked very hard throughout your career to preserve and to project America's leadership around the world. Today you ha...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1844, pp. 1844-1845, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1844. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1844. Public record. Public Papers source pagination, pp. 1844-1845; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24121,7 +24157,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ed are the peacemakers.'' Let us bless the peacemakers at this Christmas time from the Middle East to Northern Ireland to our own troops in Bosnia. Let us pray especially for our peacemakers, those who will go to Bosnia and those who are soon to come home from Haiti. And let us resolve, my fellow Americans, to be peacemakers. For just as so many nations around the world and so many children around the world cry for p...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1855, pp. 1855-1856, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1855. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1855. Public record. Public Papers source pagination, pp. 1855-1856; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24176,7 +24212,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, unprofor, ifor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...Publishing Office www.gpo.gov] Letter to Congressional Leaders on the Deployment of United States Military Forces for Implementation of the Balkan Peace Process December 6, 1995 Dear Mr. Speaker: (Mr. President:) I last reported to the Congress on September 1, 1995, concerning the use of U.S. aircraft in support of United Nations and North Atlantic Treaty Organization (NATO) efforts in the former Yugoslavia. In that ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1856, pp. 1856-1857, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1856. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1856. Public record. Public Papers source pagination, pp. 1856-1857; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24216,7 +24252,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rnment Publishing Office www.gpo.gov] Remarks Prior to a Meeting With Congressional Leaders and an Exchange With Reporters December 7, 1995 Bosnia and the Budget The President. I'd like to just say a couple of opening words. First, I want to welcome the bipartisan delegation of House Members who are here and thank them for coming as we continue to discuss the question of our mission in Bosnia and search for unity on ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1857, pp. 1857-1858, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1857. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1857. Public record. Public Papers source pagination, pp. 1857-1858; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24259,7 +24295,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...y premature. [[Page 1860]] I haven't even given much thought to it, one way or the other. We've had a few other things on the griddle here. Balkan Peace Process Q. Speaking of that, Mr. President, do you think you'll have a resolution of support on Bosnia before the treaty signing in Paris next week? The President. Will we have one? Well, I hope so. I don't know. I'm working on it, but I hope so. Q. What do you think...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1859, pp. 1859-1860, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1859. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1859. Public record. Public Papers source pagination, pp. 1859-1860; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24299,7 +24335,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (yugoslavia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...e Secretary of Defense may determine necessary. The deployment of United States forces to conduct operational missions in and around former Yugoslavia necessitates this action. A copy of the Executive order implementing this action is attached. William J. Clinton The White House, December 8, 1995. Note: The Executive order is listed in Appendix D at the end of this volume.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1861, pp. 1861, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1861. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1861. Public record. Public Papers source pagination, pp. 1861; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24354,7 +24390,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, macedonia, slovenia, unprofor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...U.S. Government Publishing Office www.gpo.gov] [[Page 1862]] Message to the Congress Reporting on Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) December 8, 1995 To the Congress of the United States: On May 30, 1992, in Executive Order No. 12808, the President declared a national emergency to deal with the threat to the national security, foreign policy, and economy of the United States ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1862, pp. 1862-1865, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1862. Public Papers granule PDF; 4 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1862. Public record. Public Papers source pagination, pp. 1862-1865; 4 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24400,7 +24436,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...can leadership is opening the door to peace and reconciliation all over the world, from Northern Ireland to the Middle East to Haiti and to Bosnia. The United States is leading the world toward a more peaceful future. We've got a chance to end the misery in Bosnia for good. It was our diplomacy, backed by NATO's resolve, that brought the leaders of the Balkans to the peace table in Dayton, OH. And now they have made ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1870, pp. 1870-1875, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1870. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1870. Public record. Public Papers source pagination, pp. 1870-1875; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24440,7 +24476,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ssed are the peacemakers.'' And let us ask the blessings of peace this Christmas for everyone, from the Middle East to Northern Ireland, to Bosnia, and not only for the children there but, of course, for our troops as well. And let us also as Americans resolve, each of us, to do what we can to be peacemakers, not only to bring peace and reconciliation around the world but also to the most difficult neighborhoods of o...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1875-2, pp. 1875-1876, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1875-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1875-2. Public record. Public Papers source pagination, pp. 1875-1876; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24491,7 +24527,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, balkan, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... peace are manifestly clear to Israel and to its neighbors as well. This is a constant direction, not a point of passing. May I say that as Bosnia reeled in agony, you offered a compass and a lamp to a confused situation, ending blood, offering hope, like in the Middle East. It is time to put an end to the Arab-Israeli conflict. With you, Mr. President, in the forefront, by our side, it may become possible, as it did...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1877, pp. 1877-1882, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1877. Public Papers granule PDF; 6 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1877. Public record. Public Papers source pagination, pp. 1877-1882; 6 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24548,7 +24584,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan, ifor, dayton, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... the U.S. Government Publishing Office www.gpo.gov] Letter to Senate Democratic Leader Thomas Daschle on the Plan for Implementation of the Balkan Peace Agreement December 11, 1995 Dear Mr. Leader: Just four weeks ago, the leaders of Bosnia, Croatia and Serbia came to Dayton, Ohio, in America's heartland, to negotiate and initial a peace agreement to end the war in Bosnia. There, they made a commitment to peace. They...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1882-2, pp. 1882-1883, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1882-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1882-2. Public record. Public Papers source pagination, pp. 1882-1883; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24588,7 +24624,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... [Pages 1883-1884] [From the U.S. Government Publishing Office www.gpo.gov] Remarks to Citizens Involved in Humanitarian Relief Efforts for Bosnia and an Exchange With Reporters December 12, 1995 The President. Well, first of all, let me say that I know I speak for everyone here in thanking the people who have spoken and thanking them, more importantly, for their remarkable efforts. I want to express my appreciation ...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1883, pp. 1883-1884, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1883. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1883. Public record. Public Papers source pagination, pp. 1883-1884; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24634,7 +24670,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, balkan, ifor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...rom the U.S. Government Publishing Office www.gpo.gov] Letter to Senators Robert Dole and John McCain on the Plan for Implementation of the Balkan Peace Agreement December 12, 1995 Dear Mr. Leader: I am writing in response to your December 12 letter on equip and train. You raise several questions to which I would like to respond. First of all, the United States will take a leadership role in coordinating an internati...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1884, pp. 1884-1885, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1884. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1884. Public record. Public Papers source pagination, pp. 1884-1885; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24685,7 +24721,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, croatia, balkan), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...m J. Clinton (1995, Book II)] [December 13, 1995] [Pages 1886-1887] [From the U.S. Government Publishing Office www.gpo.gov] Remarks on the Balkan Peace Process Following a Meeting With Elie Wiesel and an Exchange With Reporters December 13, 1995 The President. Good morning. I have just had the pleasure of a meeting with Elie Wiesel to discuss our efforts to secure the peace in Bosnia. The citation on the Nobel Peace...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1886, pp. 1886-1887, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1886. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1886. Public record. Public Papers source pagination, pp. 1886-1887; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24740,7 +24776,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, balkan, milosevic, izetbegovic, tudjman), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...(1995, Book II)] [December 14, 1995] [Page 1888] [From the U.S. Government Publishing Office www.gpo.gov] Remarks Prior to Discussions With Balkan Leaders and an Exchange With Reporters in Paris, France December 14, 1995 Balkan Peace Process The President. As you know, we will be having formal ceremonies later today, and more remarks will be made then. I just want to say very briefly, because we want to get on to our...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1888, pp. 1888, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1888. Public Papers granule PDF; 1 page counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1888. Public record. Public Papers source pagination, pp. 1888; 1 page.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24801,7 +24837,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, balkan, sarajevo, milosevic, izetbegovic, tudjman, dayton, war crimes), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... 14, 1995] [Pages 1889-1890] [From the U.S. Government Publishing Office www.gpo.gov] [[Page 1889]] Remarks at the Signing Ceremony for the Balkan Peace Agreement in Paris December 14, 1995 President Chirac, President Izetbegovic, President Tudjman, President Milosevic, Secretary-General Boutros-Ghali, Secretary General Solana, High Representative Bildt, Prime Minister Filali, Prime Minister Chernomyrdin, Prime Minis...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1889, pp. 1889-1890, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1889. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1889. Public record. Public Papers source pagination, pp. 1889-1890; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -24833,12 +24869,13 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 6,
       "sourcePdfPages": "1-6",
       "extractionStatus": "Item page exposes a single declassified memcon/telcon PDF; pageCount is the full PDF.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2017-0775-M, https://clinton.presidentiallibraries.us/items/show/118556. Classification and handling markings require PDF verification. Direct item PDF https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf; 6 pages counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Memcons - Memoranda of Conversation, 2017-0775-M, item 118556. No classification marking. Digital copy, source PDF pp. 1-6; 6 pages.",
       "repository": "William J. Clinton Presidential Library, Clinton Digital Library",
       "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/28b500a860ad0aecee40dd23978f6a85.pdf",
       "localPdfPageCount": 6,
       "documentScope": "Conversation",
-      "documentType": "Memcon"
+      "documentType": "Memcon",
+      "classification": "No classification marking"
     },
     {
       "id": "izetbegovic-1995-12-14-pull-aside",
@@ -24874,7 +24911,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 55-57 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 55-57; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 55-57; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Memcon"
@@ -24913,7 +24950,7 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 52-53 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Confidential. Extracted from source packet PDF pages 52-53; 2 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Confidential. Extracted from source packet PDF, pp. 52-53; 2 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
       "classification": "Confidential",
       "documentScope": "Conversation",
       "documentType": "Memcon"
@@ -24952,8 +24989,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 59-61 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 59-61; 3 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 59-61; 3 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Memcon"
     },
@@ -24992,8 +25029,8 @@ window.COMPILER_MAP_DATA = {
       "annotationSheet": "Appended source packet page 1 after the extracted document pages.",
       "annotationSourcePdfPages": "1",
       "extractionStatus": "Extracted source pages 47-50 as the document text and appended source packet page 1 as the annotation sheet.",
-      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, https://clinton.presidentiallibraries.us/items/show/36589. Original classification marking visible in PDF; verify. Extracted from source packet PDF pages 47-50; 4 document pages counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.",
-      "classification": "Original classification marking visible in PDF; verify",
+      "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Declassified Documents concerning Bosnia, 2011-0964-M, item 36589. Classification marking not yet transcribed. Extracted from source packet PDF, pp. 47-50; 4 pages counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.",
+      "classification": "Classification marking not yet transcribed",
       "documentScope": "Conversation",
       "documentType": "Memcon"
     },
@@ -25026,9 +25063,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 1,
       "localPdfPageCount": 1,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000068; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_June2022/FL-2017-13804/DOC_0C09000068/C09000068.pdf. Direct FOIA PDF; 1 page counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000068; F-2017-13804. No classification marking. Digital copy, source PDF pp. 1-1; 1 page.",
       "documentScope": "Policy document",
-      "documentType": "State FOIA Record"
+      "documentType": "State FOIA Record",
+      "classification": "No classification marking"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1890",
@@ -25078,7 +25116,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia, sarajevo, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... a great honor to welcome the Frasure family, the Kruzel family, the Drew family here today. Yesterday in Paris I watched the Presidents of Bosnia, Croatia, and Serbia sign an agreement that turns their troubled region from war to peace. Then on behalf of our Nation, I witnessed the agreement. I witnessed it also in a more personal sense on behalf of three great Americans who could not be there: Bob Frasure, Joe Kruz...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1890, pp. 1890-1892, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1890. Public Papers granule PDF; 3 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1890. Public record. Public Papers source pagination, pp. 1890-1892; 3 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25110,9 +25148,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 4,
       "localPdfPageCount": 4,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000051; F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000051/C09000051.pdf. Direct FOIA PDF; 4 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000051; F-2017-13804. Personal and Confidential; Eyes Only. Digital copy, source PDF pp. 1-4; 4 pages.",
       "documentScope": "Policy document",
-      "documentType": "State FOIA Record"
+      "documentType": "State FOIA Record",
+      "classification": "Personal and Confidential; Eyes Only"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1917",
@@ -25164,7 +25203,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, croatia, balkan, ifor, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ice www.gpo.gov] [[Page 1917]] Letter to Congressional Leaders on the Deployment of United States Military Forces for Implementation of the Balkan Peace Process December 21, 1995 Dear Mr. Speaker: (Mr. President:) I last reported to the Congress on December 6, 1995, concerning U.S. support for the United Nations and North Atlantic Treaty Organization (NATO) efforts to bring peace to the former Yugoslavia. In that rep...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1917, pp. 1917-1918, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1917. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1917. Public record. Public Papers source pagination, pp. 1917-1918; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25207,7 +25246,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, ifor), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "... (1995, Book II)] [December 22, 1995] [Pages 1918-1919] [From the U.S. Government Publishing Office www.gpo.gov] Exchange With Reporters on Bosnia in Arlington, Virginia December 22, 1995 The President. Good morning. Q. Mr. President, do you hope to go to Bosnia in the next month or so? The President. I want to go when the Secretary of Defense and General Shalikashvili tell me it's an appropriate thing to do. I don't...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1918-2, pp. 1918-1919, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1918-2. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1918-2. Public record. Public Papers source pagination, pp. 1918-1919; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25256,7 +25295,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, sarajevo, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...2, 1995] [Pages 1919-1923] [From the U.S. Government Publishing Office www.gpo.gov] Interview With the Armed Forces Media December 22, 1995 Bosnia The President. First let me say that I have just come from a briefing here at the Pentagon with our senior military officials who are working on the mission in Bosnia. We've also had a teleconference with General Joulwan, getting the latest up-to-date briefing on the condi...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1919, pp. 1919-1923, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1919. Public Papers granule PDF; 5 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1919. Public record. Public Papers source pagination, pp. 1919-1923; 5 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25302,7 +25341,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, dayton), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...together in the United States to seek a way to resolve their differences and live together peacefully. We're also helping to bring peace to Bosnia. The Dayton agreement and our decision to join in the international effort to secure the peace in Bosnia has given the people of the former Yugoslavia a chance to rebuild their lives. After 4 long years of horrible violence, America now has the opportunity to lead in the e...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1926, pp. 1926-1927, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1926. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1926. Public record. Public Papers source pagination, pp. 1926-1927; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25348,7 +25387,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, serbia/serbs, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ember 24, 1995] [Pages 1927-1928] [From the U.S. Government Publishing Office www.gpo.gov] Christmas Eve Message to United States Troops in Bosnia-Herzegovina December 24, 1995 Merry Christmas, and best wishes to all of you on this Christmas Eve. I am honored to speak today to the men and women of Operation Joint Endeavor, in Bosnia, Croatia, Hungary, and Italy, on ships at sea and skies overhead, and those preparing...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1927, pp. 1927-1928, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1927. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1927. Public record. Public Papers source pagination, pp. 1927-1928; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25401,7 +25440,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, yugoslavia, serbia/serbs, ifor, dayton, arms embargo), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...[From the U.S. Government Publishing Office www.gpo.gov] Message to the Congress on Suspension of Sanctions Against the Federal Republic of Yugoslavia (Serbia and Montenegro) December 27, 1995 To the Congress of the United States: Section 1511 of the National Defense Authorization Act for Fiscal Year 1994 (hereinafter the ``Act''), requires that the sanctions imposed on Serbia and Montenegro, as described in that sec...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1928, pp. 1928-1929, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1928. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1928. Public record. Public Papers source pagination, pp. 1928-1929; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25436,9 +25475,10 @@ window.COMPILER_MAP_DATA = {
       "pageCount": 7,
       "localPdfPageCount": 7,
       "extractionStatus": "Direct State FOIA PDF; no packet extraction required.",
-      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (July 2022 release); F-2017-13804, https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000052/C09000052.pdf. Direct FOIA PDF; 7 pages counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.",
+      "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, C09000052 (July 2022 release); F-2017-13804. No classification marking. Digital copy, source PDF pp. 1-7; 7 pages.",
       "documentScope": "Policy document",
-      "documentType": "Diplomatic Letter"
+      "documentType": "Diplomatic Letter",
+      "classification": "No classification marking"
     },
     {
       "id": "public-papers-1995-book2-doc-pg1930",
@@ -25477,7 +25517,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...ation is imperative at a time when our military personnel are working under challenging conditions to help implement the peace agreement in Bosnia. I urge Congress to enact this legislation as quickly as possible. Sincerely, William J. Clinton Note: This letter was made available by the Office of the Press Secretary but was not issued as a White House press release.",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1930, pp. 1930-1931, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1930. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1930. Public record. Public Papers source pagination, pp. 1930-1931; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25517,7 +25557,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...g America has been the world's strongest force for freedom, peace, and democracy in 1995. Our brave men and women today are in the snows of Bosnia, helping to uphold the peace agreement to end the worst bloodshed in Europe since World War II. And from the cobblestone streets of Northern Ireland to the sands of the Middle East, a strong America has [[Page 1935]] helped to bring peace to regions long torn by strife. Ye...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1934, pp. 1934-1935, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1934. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1934. Public record. Public Papers source pagination, pp. 1934-1935; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     },
     {
@@ -25560,7 +25600,7 @@ window.COMPILER_MAP_DATA = {
       ],
       "compilerUse": "Public Papers record with Balkans-related term hits (bosnia, croatia), inserted chronologically as public-record context for compiler consideration; not a recommendation for inclusion.",
       "snippet": "...nk we made a good start yesterday; we're making progress; and I believe we need to open the Government. I hope we can agree to do all that. Bosnia Q. Sir, do you know any more information on the soldier who was wounded in Bosnia? The President. Our reports are sketchy, and I have tried to get an update, but what I do know is that there were apparently two vehicles and four soldiers involved. Only one was seri- [[Page...",
-      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1935, pp. 1935-1936, https://www.govinfo.gov/app/details/PPP-1995-book2/PPP-1995-book2-doc-pg1935. Public Papers granule PDF; 2 pages counted from GovInfo source pagination. Public record, not a declassified archival record; verify official title, date, location, speaker context, editorial note, and transcript metadata against GovInfo before final FRUS treatment.",
+      "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton (1995, Book II), PPP-1995-book2; PPP-1995-book2-doc-pg1935. Public record. Public Papers source pagination, pp. 1935-1936; 2 pages.",
       "sourceReport": "reports/public-papers-balkans-search.json"
     }
   ]

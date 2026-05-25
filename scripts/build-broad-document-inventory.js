@@ -1294,7 +1294,7 @@ function detectClassification(pdfPath, pages) {
   if (/SECRET|SECRBT|SECKET|CECRET|0ECRET|ODCRDT/.test(text)) return "Secret";
   if (/CONFIDENTIAL|CONFID/.test(text)) return "Confidential";
   if (/UNCLASSIFIED|UNCLAS/.test(text)) return "Unclassified";
-  return "Original classification marking visible in PDF; verify";
+  return "Classification marking not yet transcribed";
 }
 
 function extractPages(sourcePath, pages, outPath) {
@@ -1317,18 +1317,32 @@ function normalizeIdentifier(identifier = "") {
   return identifier.replace(/\s+\/\s+/g, "; ");
 }
 
+function itemIdFromUrl(url = "") {
+  const itemMatch = url.match(/\/items\/show\/([^/?#]+)/);
+  if (itemMatch) return `item ${itemMatch[1]}`;
+  const catalogMatch = url.match(/\/id\/([^/?#]+)/);
+  if (catalogMatch) return `NAID ${catalogMatch[1]}`;
+  return "";
+}
+
 function sourceNoteFor(record, packet, pageCountValue, classification) {
-  const locator = [packet.repository, "Clinton Presidential Records", packet.collection, normalizeIdentifier(packet.identifier), packet.itemUrl]
+  const locator = [
+    packet.repository,
+    "Clinton Presidential Records",
+    packet.collection,
+    normalizeIdentifier(packet.identifier),
+    itemIdFromUrl(packet.itemUrl || "")
+  ]
     .filter(Boolean)
     .join(", ");
   const dateClause = record.dateCertainty === "inferred" ? ` Date inferred for chronological placement: ${record.dateBasis}` : "";
   const pageWord = pageCountValue === 1 ? "page" : "pages";
-  return `Source: ${locator}. ${classification}. Extracted from source packet PDF pages ${record.pages}; ${pageCountValue} document ${pageWord} counted. The displayed review PDF appends page 1 of the source packet as an annotation sheet.${dateClause} Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.`;
+  return `Source: ${locator}. ${classification}. Extracted from source packet PDF, pp. ${record.pages}; ${pageCountValue} ${pageWord} counted. Source packet p. 1 is appended as an annotation sheet in the local review PDF.${dateClause}`;
 }
 
 function directSourceNoteFor(record, pageCountValue) {
   const pageWord = pageCountValue === 1 ? "page" : "pages";
-  return `Source: ${record.repository}, ${record.collection}, ${normalizeIdentifier(record.identifier)}, ${record.pdfUrl}. Direct FOIA PDF; ${pageCountValue} ${pageWord} counted. Verify classification, handling controls, drafting, clearance, annotations, attachments, and excisions against the PDF before final FRUS treatment.`;
+  return `Source: ${record.repository}, ${record.collection}, ${normalizeIdentifier(record.identifier)}. Classification and handling markings not yet transcribed. Digital copy, source PDF pp. 1-${pageCountValue}; ${pageCountValue} ${pageWord}.`;
 }
 
 function directClintonLibrarySourceNoteFor(record, pageCountValue) {
@@ -1338,11 +1352,11 @@ function directClintonLibrarySourceNoteFor(record, pageCountValue) {
     "Clinton Presidential Records",
     record.collection,
     normalizeIdentifier(record.identifier),
-    record.url
+    itemIdFromUrl(record.url || "")
   ]
     .filter(Boolean)
     .join(", ");
-  return `Source: ${locator}. Classification and handling markings require PDF verification. Direct item PDF ${record.pdfUrl}; ${pageCountValue} ${pageWord} counted. Verify drafting, clearance, distribution, handwritten annotations, attachments, and excisions against the PDF before final FRUS treatment.`;
+  return `Source: ${locator}. Classification and handling markings not yet transcribed. Digital copy, source PDF pp. 1-${pageCountValue}; ${pageCountValue} ${pageWord}.`;
 }
 
 function isDirectClintonLibraryPdf(record) {

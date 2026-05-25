@@ -197,14 +197,14 @@ function sentenceCase(value = "") {
 
 function sourcePdfLabel(record) {
   if (isDirectPdf(record)) {
-    return `direct PDF, pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}`;
+    return `digital copy, source PDF pp. ${record.sourcePdfPages || `1-${record.pageCount || "?"}`}`;
   }
 
   if (record.sourcePdfPages) {
-    return `source packet PDF, pp. ${record.sourcePdfPages}; document-level PDF extracted for review`;
+    return `extracted from source packet PDF, pp. ${record.sourcePdfPages}; document-level PDF prepared for review`;
   }
 
-  return "PDF locator recorded; source page range pending";
+  return "digital locator recorded; source pagination pending";
 }
 
 function localExtractLabel(record) {
@@ -220,10 +220,12 @@ function sourceNoteDraft(record) {
   const itemId = locatorLabel(record);
   const citationStem = [repositoryLabel(record), record.collection, control, itemId].filter(Boolean).join(", ");
   const sourcePdf = sentenceCase(sourcePdfLabel(record));
-  const reviewClause =
-    "Original classification/handling, drafting or notetaker data, distribution/clearance, annotations, attachments, and excisions require PDF-level verification before compiler review.";
+  const marking =
+    record.documentScope === "Public statement"
+      ? "Public record."
+      : "Classification and handling markings not yet transcribed.";
 
-  return `Source: ${citationStem}. ${sourcePdf}. ${reviewClause}`;
+  return `Source: ${citationStem}. ${marking} ${sourcePdf}.`;
 }
 
 function citationOpenItems(record) {
@@ -1022,7 +1024,7 @@ function renderSourceNotePanel(data) {
       "Source and locator stem",
       "Ready",
       `${locatorReady}/${documents.length}`,
-      "Draft notes begin with repository, collection, control number, item or NAID, and the record URL in the order used by FRUS source notes."
+      "Draft notes begin with repository, collection, control number, and item or NAID in the order used by FRUS source notes."
     ),
     readinessRow(
       "PDF page accounting",

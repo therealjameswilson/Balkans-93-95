@@ -251,11 +251,20 @@ async function countPages(url, apiPages) {
 }
 
 function sourceNote(record, pageCount) {
+  const pageWord = Number(pageCount) === 1 ? "page" : "pages";
+  const cableLine = [
+    record.classification,
+    record.doctype,
+    record.from && record.to ? `${record.from} to ${record.to}` : "",
+    displayDate(datePart(record.docdate))
+  ]
+    .filter(Boolean)
+    .join("; ");
   return [
-    `Source: Department of State, FOIA Virtual Reading Room, case ${record.casenumber}, document ${record.messagenumber || path.basename(pdfUrl(record), ".pdf")}, ${recordUrl(record)}.`,
-    `${record.classification || "Classification marking"}; ${record.doctype || "document type"}; ${record.from || "from line not parsed"} to ${record.to || "to line not parsed"}; ${displayDate(datePart(record.docdate))}.`,
-    `Direct PDF ${pdfUrl(record)}; ${pageCount || "unverified"} pages counted.`,
-    "State FOIA candidate lead only; verify cable number, TAGS/SUBJECT, drafting/clearance, addressees, attachments, distribution, and excisions against the PDF before final FRUS treatment."
+    `Source: Department of State, FOIA Virtual Reading Room, case ${record.casenumber}, document ${record.messagenumber || path.basename(pdfUrl(record), ".pdf")}.`,
+    `${cableLine || "Classification and transmission metadata not yet transcribed."}.`,
+    `Direct FOIA PDF; ${pageCount || "unverified"} ${pageWord}.`,
+    "Cable number, TAGS/SUBJECT, drafting/clearance, addressees, attachments, distribution, and excisions not yet verified."
   ].join(" ");
 }
 

@@ -231,7 +231,7 @@ function onsiteActionFor(row, priority) {
 }
 
 function sourceNoteLead(target) {
-  return `Source: William J. Clinton Presidential Library, Clinton Presidential Records, National Security Council, 2013-0185-M, ${target.staffOrOffice || "folder list"}, OA/ID ${target.oaBox}, folder "${target.folderTitle}," finding aid ${target.findingAidPart}, p. ${target.findingAidPage}. Pull onsite to verify exact folder title, box/OA label, withdrawal sheets, restriction/declassification markers, attachments, annotations, and document-level dates before final FRUS source-note treatment.`;
+  return `Source: William J. Clinton Presidential Library, Clinton Presidential Records, National Security Council, 2013-0185-M, ${target.staffOrOffice || "folder list"}, OA/ID ${target.oaBox}, folder "${target.folderTitle}", finding aid ${target.findingAidPart}, p. ${target.findingAidPage}. Folder-level lead; exact folder title, box/OA label, withdrawal sheets, restriction/declassification markers, attachments, annotations, and document-level dates require onsite verification.`;
 }
 
 function parseFindingAid(aid) {
