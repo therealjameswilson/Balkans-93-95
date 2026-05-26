@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260525-pdd" />
+    <link rel="stylesheet" href="styles.css?v=20260526-chronology" />
   </head>
   <body>
     <header class="site-header">
@@ -18,12 +18,12 @@
         <span>Wars in the Balkans</span>
       </a>
       <nav aria-label="Primary navigation">
+        <a href="#conversations">Chronology</a>
         <a href="#audit">Audit</a>
         <a href="#compiler-gaps">Gaps</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
-        <a href="#conversations">Documents</a>
         <a href="#sources">Sources</a>
         <a href="#queue">Queue</a>
       </nav>
@@ -44,7 +44,7 @@
             volume should be organized.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#conversations">Review Documents</a>
+            <a class="button primary" href="#conversations">Review Chronology</a>
             <a class="button secondary" href="#sources">Check Sources</a>
           </div>
         </div>
@@ -68,6 +68,46 @@
             </div>
           </dl>
         </aside>
+      </section>
+
+      <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Primary Chronology</p>
+            <h2 id="conversations-title">Chronology of Declassified Documents</h2>
+          </div>
+          <p class="section-note">
+            The list is ordered by document date across the searched
+            declassified releases. Packet PDFs are reduced to document pages,
+            with page 1 of the source PDF appended as an annotation sheet;
+            Public Papers records remain visible as public-record context.
+            Presence here means "available for consideration," not
+            "recommended for inclusion."
+          </p>
+        </div>
+        <div class="conversation-tools" aria-label="Document filters">
+          <label class="search-field">
+            <span>Search documents</span>
+            <input
+              id="conversation-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Person, subject, source, tag"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Form</p>
+            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Document form filters"></div>
+          </div>
+          <div>
+            <p class="tool-label">Year</p>
+            <div id="conversation-year-filters" class="filter-row compact" aria-label="Document year filters"></div>
+          </div>
+          <button id="conversation-reset" class="reset-button" type="button">Reset</button>
+          <button id="conversation-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="conversation-summary" class="result-summary" aria-live="polite"></p>
+        <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
       </section>
 
       <section class="stats" aria-label="Compiler workspace summary">
@@ -266,47 +306,6 @@
         </details>
       </section>
 
-      <section class="section conversation-section" id="conversations" aria-labelledby="conversations-title">
-        <div class="section-heading">
-          <div>
-            <p class="kicker">Chronological Records</p>
-            <h2 id="conversations-title">Chronological Clinton-Era Balkans Records</h2>
-          </div>
-          <p class="section-note">
-            The list is ordered by document date across the searched public
-            releases and GovInfo Public Papers. Packet PDFs are reduced to the
-            pages of each document, with page 1 of the source PDF appended as
-            an annotation sheet; Public Papers records retain GovInfo source
-            pagination.
-            Presence here means "available for consideration," not
-            "recommended for inclusion."
-          </p>
-        </div>
-        <div class="conversation-tools" aria-label="Document filters">
-          <label class="search-field">
-            <span>Search documents</span>
-            <input
-              id="conversation-search"
-              type="search"
-              autocomplete="off"
-              placeholder="Person, subject, source, tag"
-            />
-          </label>
-          <div>
-            <p class="tool-label">Form</p>
-            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Document form filters"></div>
-          </div>
-          <div>
-            <p class="tool-label">Year</p>
-            <div id="conversation-year-filters" class="filter-row compact" aria-label="Document year filters"></div>
-          </div>
-          <button id="conversation-reset" class="reset-button" type="button">Reset</button>
-          <button id="conversation-export" class="reset-button export-button" type="button">Export CSV</button>
-        </div>
-        <p id="conversation-summary" class="result-summary" aria-live="polite"></p>
-        <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
-      </section>
-
       <section class="section source-section" id="sources" aria-labelledby="sources-title">
         <div class="section-heading">
           <div>
@@ -389,7 +388,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260525-pdd"></script>
-    <script src="app.js?v=20260525-pdd"></script>
+    <script src="data/compiler-map.js?v=20260526-chronology"></script>
+    <script src="app.js?v=20260526-chronology"></script>
   </body>
 </html>
