@@ -71,6 +71,9 @@ published "About the Series" guidance for FRUS production:
   behind the Virtual Reading Room UI, runs targeted 1993-1995 Balkans searches,
   de-duplicates direct PDFs, selects high-confidence cable/memorandum leads, and
   counts pages.
+- `scripts/search-presidential-daily-diary.js` searches NARA Catalog FOIA
+  `2010-0083-F`, OCRs 1993-1995 Presidential Daily Diary hardcopy source
+  images, and selects Balkans-relevant presidential call and meeting references.
 - `scripts/harvest-cia-btf-documents.js` harvests item-level Clinton Library
   Bosnian Declassified Records / CIA Balkan Task Force PDFs, filters in-period
   standalone records, records provenance, and counts pages.
@@ -112,6 +115,9 @@ published "About the Series" guidance for FRUS production:
   Declassified Records / CIA Balkan Task Force document harvest, selected
   in-period standalone records, direct PDFs, source-note stems, and counted
   pages.
+- `reports/presidential-daily-diary-search.json` records the Presidential Daily
+  Diary / FOIA `2010-0083-F` Catalog search, in-period hardcopy file units, OCR
+  page count, raw event matches, and selected call/meeting references.
 - `reports/defense-jcs-source-search.json` records Defense/JCS and military
   implementation leads aggregated from CIA/BTF, State FOIA, NARA, and Clinton
   Library source layers.
@@ -177,6 +183,9 @@ The first-pass source matrix supports completeness checks across:
   pull plan prioritizing Soderberg PC/DC notes, Records Management PC/DC
   folders, Lake/Berger/Holbrooke policy files, Soderberg subject files, and
   humanitarian/war-crimes source families.
+- NARA Catalog Presidential Daily Diary FOIA `2010-0083-F`, OCR-searched for
+  1993-1995 presidential calls and meetings that can reconcile memcons,
+  telcons, schedules, no-document events, and withheld-record checks.
 - Bosnian Declassified Records and the DCI Interagency Balkan Task Force trail.
 - Alexander Vershbow's Bosnia files, `2013-0687-F`.
 - PC/DC, memcon/telcon, Croatia, Srebrenica, and Dayton-track MDR releases.
@@ -192,8 +201,9 @@ records plus `31` separate presidential memcon/telcon conversation records. The
 document inventory has `3,939` counted pages, the conversation audit has `166`
 counted pages, and the public chronology includes `446` Clinton Public Papers
 records.
-Every displayed card has a PDF link, source-page metadata, and provenance
-labeling that distinguishes direct PDFs from locally extracted packet documents.
+Every displayed card has a PDF or source-image link, source-page metadata, and
+provenance labeling that distinguishes direct PDFs, locally extracted packet
+documents, and source-image references.
 
 Packet extractions include only the document pages and append page 1 of the
 source PDF as an annotation sheet for the compiler's provenance review.
@@ -209,9 +219,9 @@ supplemental collection leads from the research plan. The online sweep found
 `462` selected declassified/digitized PDF leads across `93` ranked targets and
 `1` supplemental target, with `16,293` counted PDF pages. With NARA
 source-family, State FOIA, and CIA/Balkan Task Force layers included, the
-combined research/candidate source layers expose `1,196` file leads totaling
-`22,237` counted pages; the `321` CIA/BTF records are also promoted into the
-chronology as document-level records.
+combined research/candidate source layers expose `1,222` file/source leads
+totaling `22,263` counted pages or source-image references; the `321` CIA/BTF
+records are also promoted into the chronology as document-level records.
 
 The Clinton Library finding-aid pass processed `4` local 2013-0185-M PDFs
 totaling `1,290` finding-aid pages. It found `2,692` raw Balkans line hits and
@@ -238,6 +248,12 @@ The Defense/JCS source-base report aggregates `163` military-implementation
 leads totaling `1,664` counted pages from CIA/BTF, State FOIA, NARA, and Clinton
 Library source layers.
 
+The Presidential Daily Diary pass searched NARA Catalog FOIA `2010-0083-F`,
+OCRed `12` in-period hardcopy file units totaling `882` source images, and
+selects `26` call/meeting references for compiler reconciliation, including
+`13` high-confidence entries where the diary text itself supplies the topic or
+NATO/alliance context.
+
 The presidential-conversation reconciliation report accounts for `32`
 memcon/telcon-form chronology records totaling `166` counted pages and surfaces
 `65` schedule or call-folder leads for absence, withheld-record, and onsite
@@ -250,7 +266,7 @@ classification/handling transcription queue for final compiler verification.
 
 The compiler gap register tracks `8` risks: all `8` are mitigated by generated
 source layers, document-level harvests, or review queues, and `0` remain open.
-The generated extraction/promotion queue currently contains `110` follow-up
+The generated extraction/promotion queue currently contains `130` follow-up
 items.
 
 The Strobe Talbott FOIA full-text sweep searched all `1,474` manifest PDFs,

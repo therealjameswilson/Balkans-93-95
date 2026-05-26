@@ -12,6 +12,7 @@ const REPORT_URLS = {
   defenseJcs: "reports/defense-jcs-source-search.json",
   conversationReconciliation: "reports/presidential-conversation-reconciliation.json",
   sourceNoteAudit: "reports/source-note-verification-audit.json",
+  presidentialDailyDiary: "reports/presidential-daily-diary-search.json",
   gapRegister: "reports/compiler-gap-register.json",
   libraryVisit: "reports/clinton-library-visit-plan.json"
 };
@@ -534,7 +535,7 @@ function renderCompilerGaps(report = {}) {
     auditCard(
       "Extraction Queue",
       formatNumber(summary.extractionQueue),
-      "Prioritized follow-up items combine research-plan PDFs, State FOIA candidates, and NARA source-family leads.",
+      "Prioritized follow-up items combine research-plan PDFs, State FOIA candidates, NARA source-family leads, and Presidential Daily Diary references.",
       "Promotion to chronology requires duplicate and source-note review."
     ),
     auditCard(
@@ -1080,7 +1081,8 @@ function researchFiles(report = {}) {
     ...(report.digitizedFiles || []),
     ...(report.sourceCrosscheckFiles || []),
     ...(report.stateFoiaFiles || []),
-    ...(report.btfFiles || [])
+    ...(report.btfFiles || []),
+    ...(report.presidentialDailyDiaryFiles || [])
   ];
 }
 
@@ -1093,7 +1095,8 @@ function relationshipLabel(value = "") {
     "nara-catalog-7388808": "NARA 7388808 cross-check",
     "nara-scout-europe-scopes": "NARA Scout cross-check",
     "state-foia-virtual-reading-room": "State FOIA candidate",
-    "cia-btf-document-level": "CIA/BTF document"
+    "cia-btf-document-level": "CIA/BTF document",
+    "presidential-daily-diary-reference": "Presidential Daily Diary reference"
   };
   return labels[value] || value || "Unclassified";
 }
@@ -1157,6 +1160,7 @@ function renderResearchSummary(report = {}) {
   const sourceCrosscheck = report.sourceCrosscheckSummary || {};
   const stateFoia = report.stateFoiaSummary || {};
   const btf = report.btfSummary || {};
+  const presidentialDailyDiary = report.presidentialDailyDiarySummary || {};
   const exactFiles = researchFiles(report).filter((file) =>
     (file.targets || []).some((target) => target.relationship === "exact-folder-title")
   ).length;
@@ -1170,6 +1174,8 @@ function renderResearchSummary(report = {}) {
   const stateFoiaPages = stateFoia.countedPages || 0;
   const btfFiles = btf.inPeriodDocuments || 0;
   const btfPages = btf.countedPages || 0;
+  const pddFiles = presidentialDailyDiary.selectedReferences || 0;
+  const pddPages = pddFiles;
 
   nodes.researchSummaryRoot.replaceChildren(
     auditCard(
@@ -1181,19 +1187,19 @@ function renderResearchSummary(report = {}) {
     auditCard(
       "Digitized Files",
       formatNumber(totalFiles),
-      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads, ${formatNumber(crosscheckFiles)} NARA source-family potential documents, ${formatNumber(stateFoiaFiles)} State FOIA candidates, and ${formatNumber(btfFiles)} CIA/BTF documents.`,
+      `${formatNumber(baseFiles)} Clinton Digital Library research-plan leads, ${formatNumber(crosscheckFiles)} NARA source-family potential documents, ${formatNumber(stateFoiaFiles)} State FOIA candidates, ${formatNumber(btfFiles)} CIA/BTF documents, and ${formatNumber(pddFiles)} Presidential Daily Diary references.`,
       `${formatNumber(exactFiles)} files have folder-title matches.`
     ),
     auditCard(
       "Page Accounting",
       formatNumber(totalPages),
-      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} from NARA source-family leads; ${formatNumber(stateFoiaPages)} from State FOIA candidates; ${formatNumber(btfPages)} from CIA/BTF documents.`,
+      `${formatNumber(basePages)} pages counted from the Clinton Digital Library sweep; ${formatNumber(crosscheckPages)} from NARA source-family leads; ${formatNumber(stateFoiaPages)} from State FOIA candidates; ${formatNumber(btfPages)} from CIA/BTF documents; ${formatNumber(pddPages)} source-image references from the Presidential Daily Diary.`,
       "Large folder PDFs and source-family leads are kept as research leads, not converted into chronology entries here."
     ),
     auditCard(
       "Source Check",
-      formatNumber(crosscheckFiles + stateFoiaFiles + btfFiles),
-      "Checked companion-page NARA source families, the Department of State FOIA Virtual Reading Room, and the Clinton Library Bosnian Declassified Records collection for in-period Balkans PDF leads.",
+      formatNumber(crosscheckFiles + stateFoiaFiles + btfFiles + pddFiles),
+      "Checked companion-page NARA source families, the Department of State FOIA Virtual Reading Room, the Clinton Library Bosnian Declassified Records collection, and the Presidential Daily Diary for in-period Balkans PDF/image leads.",
       "Research leads and document-level harvests only; this does not recommend inclusion or volume structure."
     ),
     auditCard(
@@ -1285,7 +1291,7 @@ function createResearchLinks(file) {
   links.className = "conversation-links research-links";
 
   for (const [label, url] of [
-    ["Open PDF", file.pdfUrl],
+    [isDirectPdf(file) ? "Open PDF" : "Open source", file.pdfUrl],
     ["Open record", file.itemUrl]
   ]) {
     if (!url) continue;
@@ -1462,7 +1468,7 @@ function renderResearchCollections(report) {
   renderResearchTargets(report);
 }
 
-function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia, btfDocuments) {
+function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia, btfDocuments, presidentialDailyDiary) {
   if (!researchCollections) return null;
   return {
     ...researchCollections,
@@ -1474,7 +1480,10 @@ function combineResearchReports(researchCollections, sourceCrosscheck, stateFoia
     stateFoiaFiles: stateFoia?.stateFoiaDocuments || [],
     btfDocuments,
     btfSummary: btfDocuments?.summary || null,
-    btfFiles: btfDocuments?.documents || []
+    btfFiles: btfDocuments?.documents || [],
+    presidentialDailyDiary,
+    presidentialDailyDiarySummary: presidentialDailyDiary?.summary || null,
+    presidentialDailyDiaryFiles: presidentialDailyDiary?.researchLeads || []
   };
 }
 
@@ -1931,6 +1940,7 @@ async function loadReports() {
     defenseJcs,
     conversationReconciliation,
     sourceNoteAudit,
+    presidentialDailyDiary,
     gapRegister,
     libraryVisit
   ] = await Promise.all([
@@ -1946,6 +1956,7 @@ async function loadReports() {
     loadOptionalJson(REPORT_URLS.defenseJcs),
     loadOptionalJson(REPORT_URLS.conversationReconciliation),
     loadOptionalJson(REPORT_URLS.sourceNoteAudit),
+    loadOptionalJson(REPORT_URLS.presidentialDailyDiary),
     loadOptionalJson(REPORT_URLS.gapRegister),
     loadOptionalJson(REPORT_URLS.libraryVisit)
   ]);
@@ -1963,6 +1974,7 @@ async function loadReports() {
     defenseJcs,
     conversationReconciliation,
     sourceNoteAudit,
+    presidentialDailyDiary,
     gapRegister,
     libraryVisit
   };
@@ -1984,7 +1996,8 @@ async function init() {
       reports.researchCollections,
       reports.sourceCrosscheck,
       reports.stateFoia,
-      reports.btfDocuments
+      reports.btfDocuments,
+      reports.presidentialDailyDiary
     );
     renderStats(data);
     renderAudit(data, reports);

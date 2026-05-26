@@ -1,0 +1,2599 @@
+{
+  "generatedAt": "2026-05-26T02:23:25.413Z",
+  "sourceUrl": "https://catalog.archives.gov/search?q=%222010-0083-F%22&collectionIdentifier=WJC*",
+  "apiUrl": "https://catalog.archives.gov/proxy/records/search?q=%222010-0083-F%22&collectionIdentifier=WJC*&limit=100&page=1",
+  "missionBoundary": "This report identifies Presidential Daily Diary call and meeting references for compiler reconciliation. It does not recommend document inclusion and does not infer topic when the diary entry does not state one.",
+  "query": {
+    "caseNumber": "2010-0083-F",
+    "collectionIdentifier": "WJC*",
+    "years": [
+      1993,
+      1994,
+      1995
+    ]
+  },
+  "summary": {
+    "catalogSearchHits": 59,
+    "inPeriodFileUnits": 12,
+    "ocrPages": 882,
+    "rawEventMatches": 53,
+    "selectedReferences": 26,
+    "highConfidenceReferences": 13,
+    "mediumConfidenceReferences": 13
+  },
+  "fileUnits": [
+    {
+      "naId": 17367481,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17367481",
+      "titleDates": [
+        "1993-01-24",
+        "1993-01-28",
+        "1993-02-06",
+        "1993-02-10",
+        "1993-02-16",
+        "1993-02-25"
+      ]
+    },
+    {
+      "naId": 17367492,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17367492",
+      "titleDates": [
+        "1993-03-02",
+        "1993-03-08",
+        "1993-03-12",
+        "1993-04-06",
+        "1993-04-14",
+        "1993-04-27",
+        "1993-04-30"
+      ]
+    },
+    {
+      "naId": 17367502,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy [5/2/93; 5/20/93; 5/24/93; 5/28/93; 6/2/93; 6/10/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17367502",
+      "titleDates": [
+        "1993-05-02",
+        "1993-05-20",
+        "1993-05-24",
+        "1993-05-28",
+        "1993-06-02",
+        "1993-06-10"
+      ]
+    },
+    {
+      "naId": 17367517,
+      "title": "[Ellen McCathran - Presidential Daily Diary - [Hardcopy 7/6/93; 7/16/93; 7/18/93; 8/2/93; 8/7/93; 8/20/93; 8/29/93; 9/1/93; 9/17/93; 9/21/93; 9/25/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17367517",
+      "titleDates": [
+        "1993-07-06",
+        "1993-07-16",
+        "1993-07-18",
+        "1993-08-02",
+        "1993-08-07",
+        "1993-08-20",
+        "1993-08-29",
+        "1993-09-01",
+        "1993-09-17",
+        "1993-09-21",
+        "1993-09-25"
+      ]
+    },
+    {
+      "naId": 17368174,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368174",
+      "titleDates": [
+        "1993-10-06",
+        "1993-10-11",
+        "1993-10-18",
+        "1993-10-26",
+        "1993-11-06",
+        "1993-11-17",
+        "1993-11-18",
+        "1993-11-30"
+      ]
+    },
+    {
+      "naId": 17368175,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 12/8/93; 12/14/93; 12/23/93]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368175",
+      "titleDates": [
+        "1993-12-08",
+        "1993-12-14",
+        "1993-12-23"
+      ]
+    },
+    {
+      "naId": 17368176,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "titleDates": [
+        "1994-01-10",
+        "1994-01-23",
+        "1994-01-27",
+        "1994-02-05",
+        "1994-02-09",
+        "1994-02-15",
+        "1994-02-24",
+        "1994-03-01",
+        "1994-03-11",
+        "1994-03-14"
+      ]
+    },
+    {
+      "naId": 17368177,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368177",
+      "titleDates": [
+        "1994-04-05",
+        "1994-04-13",
+        "1994-04-26",
+        "1994-04-29",
+        "1994-05-01",
+        "1994-05-19",
+        "1994-05-23",
+        "1994-05-27",
+        "1994-06-01",
+        "1994-06-09",
+        "1994-06-19",
+        "1994-07-05",
+        "1994-07-15",
+        "1994-07-17",
+        "1994-08-01",
+        "1994-08-06",
+        "1994-08-19",
+        "1994-09-07",
+        "1994-09-16",
+        "1994-09-20",
+        "1994-09-24",
+        "1994-10-05",
+        "1994-10-10",
+        "1994-10-17",
+        "1994-10-25",
+        "1994-11-05",
+        "1994-11-16",
+        "1994-11-17",
+        "1994-11-29"
+      ]
+    },
+    {
+      "naId": 17368178,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 12/13/94; 12/14/94; 12/22/94; 12/31/94]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368178",
+      "titleDates": [
+        "1994-12-13",
+        "1994-12-14",
+        "1994-12-22",
+        "1994-12-31"
+      ]
+    },
+    {
+      "naId": 17368179,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368179",
+      "titleDates": [
+        "1995-01-09",
+        "1995-01-22",
+        "1995-01-26",
+        "1995-02-04",
+        "1995-02-08",
+        "1995-03-13",
+        "1995-03-13"
+      ]
+    },
+    {
+      "naId": 17368180,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "titleDates": [
+        "1995-04-04",
+        "1995-04-12",
+        "1995-04-25",
+        "1995-05-07",
+        "1995-05-18",
+        "1995-05-22",
+        "1995-05-26",
+        "1995-06-07",
+        "1995-06-08",
+        "1995-06-18",
+        "1995-06-30"
+      ]
+    },
+    {
+      "naId": 17368181,
+      "title": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "titleDates": [
+        "1995-07-04",
+        "1995-07-16",
+        "1995-07-21",
+        "1995-08-05",
+        "1995-08-07",
+        "1995-08-18",
+        "1995-09-06",
+        "1995-09-15",
+        "1995-09-19",
+        "1995-09-23",
+        "1995-10-04",
+        "1995-10-09",
+        "1995-10-16",
+        "1995-10-24",
+        "1995-11-04",
+        "1995-11-15",
+        "1995-11-16",
+        "1995-12-12",
+        "1995-12-13",
+        "1995-12-28",
+        "1995-12-30"
+      ]
+    }
+  ],
+  "selectedReferences": [
+    {
+      "id": "pdd-1993-02-10-17367481-35298018-1",
+      "naId": 17367481,
+      "pageNumber": 26,
+      "objectId": "35298018",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367481",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "people": [
+        "Boris Yeltsin"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "1:46 1250 P The President talked with Senator Orrin G. Hatch (R-Utah). 754 Le Si 2215 P The President talked on a conference call with: Boris N. Yeltsin, President of the Russian Federation Jane E. Holl, Director, European and continued",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298018, source image p. 26."
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-2",
+      "naId": 17367481,
+      "pageNumber": 27,
+      "objectId": "35298019",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367481",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "2:16 2728 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britain and Northern | Ireland (UK) Ms. Holl Mr. O'Leary 756",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298019, source image p. 27."
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-3",
+      "naId": 17367481,
+      "pageNumber": 27,
+      "objectId": "35298019",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367481",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+      "matchedTerms": [
+        "Helmut Kohl",
+        "Boutros Boutros-Ghali"
+      ],
+      "people": [
+        "Helmut Kohl",
+        "Boutros Boutros-Ghali"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "2:30 2:38 P The President talked on a conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Holl Mr. O'Leary Harry Obst, interpreter, Department of State 757 | 2:44 2:50 P The President talked on a conference call with: Boutros Boutros-Gahli, Secretary General of the United Nations (UN) Ms. Holl Mr. O'Leary | 1006",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298019, source image p. 27."
+    },
+    {
+      "id": "pdd-1993-03-02-17367492-35298075-4",
+      "naId": 17367492,
+      "pageNumber": 8,
+      "objectId": "35298075",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367492",
+      "date": "Mar 2, 1993",
+      "sortDate": "1993-03-02",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "people": [
+        "Manfred Woerner"
+      ],
+      "topics": [
+        "NATO"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "NATO/alliance meeting"
+      ],
+      "relationship": "Contextual call/meeting lead",
+      "snippet": "4:15 4:50 The President met with: Vice President Gore Warren M. Christopher, Secretary of State Thomas F. \"Mack\" McLarty III, Assistant and Chief of Staff Anthony \"Tony\" Lake, Assistant for National Security Affairs Manfred Woerner, Secretary General of the North American Treaty Organization (NATO) John Friendler, Deputy Assistant continued",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298075, source image p. 8."
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298140-5",
+      "naId": 17367492,
+      "pageNumber": 73,
+      "objectId": "35298140",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367492",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "people": [],
+      "topics": [
+        "Bosnia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "4:01 4:44 The President met to discuss the situation in Bosnia with Members of Congress. For a list of attendees, see APPENDIX \"A.\" 4928",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298140, source image p. 73."
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298141-6",
+      "naId": 17367492,
+      "pageNumber": 74,
+      "objectId": "35298141",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17367492",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "people": [],
+      "topics": [
+        "Bosnia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "5:07 6:36 The President continued his meeting to discuss the situation in Bosnia with Members of Congress. 4931",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298141, source image p. 74."
+    },
+    {
+      "id": "pdd-1993-10-06-17368174-35298294-7",
+      "naId": 17368174,
+      "pageNumber": 5,
+      "objectId": "35298294",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-005-2015/42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368174",
+      "date": "Oct 6, 1993",
+      "sortDate": "1993-10-06",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93]",
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "people": [
+        "Manfred Woerner"
+      ],
+      "topics": [
+        "NATO"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "NATO/alliance meeting"
+      ],
+      "relationship": "Contextual call/meeting lead",
+      "snippet": "11:45 12:00 The President met with Manfred Woerner, Secretary General of the North American Treaty Organization (NATO). For a list of other attendees, see APPENDIX \"C.\" 9944",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368174, digital object 35298294, source image p. 5."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298421-8",
+      "naId": 17368176,
+      "pageNumber": 24,
+      "objectId": "35298421",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "10:25 10:50 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britain and Northern Ireland (UK) Jane E. Holl, Director, European and Eurasian Affairs, National Security Council (NSC) Neil G. Bleicken, Intelligence Analyst (Intern), White House Situation Room, National Security Council (NSC) Anne D. Alexander, Intelligence Analyst, White House Situation Room, National Security Council (NSC) 15478",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298421, source image p. 24."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298424-9",
+      "naId": 17368176,
+      "pageNumber": 27,
+      "objectId": "35298424",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "people": [
+        "Helmut Kohl"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "3:05 3:18 R The President talked on a conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Holl Mr. Bleicken Ms. Alexander 15506",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298424, source image p. 27."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298425-10",
+      "naId": 17368176,
+      "pageNumber": 28,
+      "objectId": "35298425",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "people": [],
+      "topics": [
+        "Bosnia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "6:20 7:02 The President participated in a debriefing for Members of Congress on the recent , European trip and the current situation in Bosnia. For a partial list of attendees, see APPENDIX \"B.\" 11799 . 6:59 R The President was telephoned by Mike Beardon, Arkansas State Senator (D). The President's Deputy Assistant for Appointments and Scheduling, Nancy V. Hernreich took the call. 155177 : 7302 The President returned to the second floor Residence. 11800 ,",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298425, source image p. 28."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-11",
+      "naId": 17368176,
+      "pageNumber": 66,
+      "objectId": "35298463",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "Tudjman",
+        "Croatia",
+        "Franjo Tudjman"
+      ],
+      "people": [
+        "Franjo Tudjman"
+      ],
+      "topics": [
+        "Tudjman",
+        "Croatia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic",
+        "known conversation date"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "5:30 P The President telephoned the President of the Republic of Croatia Franjo Tudjman. The call was not completed. ' - 12324 oe St",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298463, source image p. 66."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-12",
+      "naId": 17368176,
+      "pageNumber": 66,
+      "objectId": "35298463",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "Tudjman",
+        "Franjo Tudjman"
+      ],
+      "people": [
+        "Franjo Tudjman"
+      ],
+      "topics": [
+        "Tudjman"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic",
+        "known conversation date"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "5:42 5:45 P The President talked on a conference call with: President Tudjman Neil G. Bleicken, Intelligence Analyst (Intern), White House Situation Room, National Security Council (NSC) Anne D. Alexander, Intelligence Analyst, White House Situation Room, National Security Council (NSC) ; Victor Jackovich, interpreter, Department of State 17062",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298463, source image p. 66."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298464-13",
+      "naId": 17368176,
+      "pageNumber": 67,
+      "objectId": "35298464",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368176",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+      "matchedTerms": [
+        "Bosnia",
+        "Herzegovina",
+        "Izetbegovic",
+        "Alija Izetbegovic"
+      ],
+      "people": [
+        "Alija Izetbegovic"
+      ],
+      "topics": [
+        "Bosnia",
+        "Herzegovina",
+        "Izetbegovic"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic",
+        "known conversation date"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "5:50 6:00 P The President talked on a conference call with: Alija Izetbegovic, President of the Republic of Bosnia and Herzegovina Mr. Bleicken Ms. Alexander —— Mr. Jackovich 17063",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298464, source image p. 67."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-14",
+      "naId": 17368179,
+      "pageNumber": 65,
+      "objectId": "35298691",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368179",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+      "matchedTerms": [
+        "NATO"
+      ],
+      "people": [],
+      "topics": [
+        "NATO"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "NATO/alliance meeting"
+      ],
+      "relationship": "Contextual call/meeting lead",
+      "snippet": "12:01 12:07 The President met for a briefing with: Vice President Gore .. ; Warren M. Christopher, Secretary of State William J. Perry, Secretary of Defense John C. Kornblum, Principal Deputy Assistant Secretary of State for European and Canadian Affairs Robert Hunter, U.S. Permanent Representative to the North American Treaty Organization (NATO) Mr. Panetta Mr. Lake Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Donald L. Kerrick, Director, European Affairs, National Security Council (NSC) 24780",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298691, source image p. 65."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-15",
+      "naId": 17368179,
+      "pageNumber": 65,
+      "objectId": "35298691",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368179",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+      "matchedTerms": [
+        "NATO"
+      ],
+      "people": [],
+      "topics": [
+        "NATO"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "NATO/alliance meeting"
+      ],
+      "relationship": "Contextual call/meeting lead",
+      "snippet": "12:08 12:45 The President participated in a meeting with U.S. and NATO officials. For a list of attendees, see APPENDIX \"A.\" 24781",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298691, source image p. 65."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298696-16",
+      "naId": 17368179,
+      "pageNumber": 70,
+      "objectId": "35298696",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368179",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+      "matchedTerms": [
+        "NATO",
+        "Willy Claes"
+      ],
+      "people": [
+        "Willy Claes"
+      ],
+      "topics": [
+        "NATO"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "NATO/alliance meeting"
+      ],
+      "relationship": "Contextual call/meeting lead",
+      "snippet": "MEETING WITH U.S. AND NATO OFFICIALS APPENDIX \"A\" March 7, 1995 Attendance not confirmed. The Oval Office ATTENDEES : The President Albert A. Gore Jr., Vice President Warren M. Christopher, Secretary of State Anthony \"Tony\" Lake, Assistant for National Security Affairs Leon E. Panetta, Assistant and Chief of Staff Robert Hunter, U.S. Permanent Representative to the North American Treaty Organization (NATO) John C. Kornblum, Principal Deputy Assistant Secretary of State for European and Canadian Affairs Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Donald L. Kerrick, Director, European Affairs, National Security Council (NSC) Willy Claes, Secretary General of the North American Treaty Organization (NATO) Klaus Scharioth, Director, Secretary General's Private office Jamie P. Shea, Deputy Director for Press and Inform",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298696, source image p. 70."
+    },
+    {
+      "id": "pdd-1995-04-04-17368180-35298722-17",
+      "naId": 17368180,
+      "pageNumber": 5,
+      "objectId": "35298722",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "12:05 12:40 The President met with: Prime Minister Major Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Members of Press in/out 26204",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298722, source image p. 5."
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-19",
+      "naId": 17368180,
+      "pageNumber": 70,
+      "objectId": "35298787",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "3:50 4:09 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Mr. Drew Mr. Sens Mr. Wallack Mr. Martinez 23430",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298787, source image p. 70."
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-18",
+      "naId": 17368180,
+      "pageNumber": 70,
+      "objectId": "35298787",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "people": [
+        "Jacques Chirac"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "3321 3:43 P The President talked on a conference call with: Jacques R. Chirac, President of France Matthew D. Wallack, Duty Officer, White House Situation Room, National Security Council (NSC) Samuel Drew, Director, European Affairs, National Security Council (NSC) Andrew D. Sens, Executive Secretary of the National Security Council (NSC) Alejandro D. Martinez, Duty Officer, White House Situation Room, National Security Council (NSC) Stephanie van Reigersberg, interpreter, Department of State 23445",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298787, source image p. 70."
+    },
+    {
+      "id": "pdd-1995-06-08-17368180-35298801-20",
+      "naId": 17368180,
+      "pageNumber": 84,
+      "objectId": "35298801",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "people": [],
+      "topics": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "1:38 1:41 P The President talked with Dr. William O'Grady, father of Capt. Scott F. O'Grady, the stranded pilot of a downed U.S. Air Force F-16 jet fighter recently rescued after spending 6 nights in the Bosnian hills eluding capture by Serbian rebels. 23711",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298801, source image p. 84."
+    },
+    {
+      "id": "pdd-1995-06-08-17368180-35298801-21",
+      "naId": 17368180,
+      "pageNumber": 84,
+      "objectId": "35298801",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368180",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "people": [],
+      "topics": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "confidence": "high",
+      "matchBasis": [
+        "explicit topic"
+      ],
+      "relationship": "Explicit diary topic",
+      "snippet": "1:43 1:49 P The President talked with Mrs. Joseph (Mary Lou) Scardapane, mother of Capt. Scott F. O'Grady, the stranded pilot of a downed U.S. Air Force F-16 jet fighter recently rescued after spending 6 nights in the Bosnian hills eluding capture by Serbian rebels. 23716",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298801, source image p. 84."
+    },
+    {
+      "id": "pdd-1995-07-04-17368181-35298815-22",
+      "naId": 17368181,
+      "pageNumber": 7,
+      "objectId": "35298815",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "date": "Jul 4, 1995",
+      "sortDate": "1995-07-04",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "7:26 7:28 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Kevin B. Wooton, Duty Officer, White House Situation Room, National Security Council (NSC) Brian K. Gates, Duty Officer, White House Situation Room, National Security Council (NSC) Mary T. Canty, Duty Officer, White House Situation Room, National Security Council (NSC)",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298815, source image p. 7."
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298825-23",
+      "naId": 17368181,
+      "pageNumber": 17,
+      "objectId": "35298825",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "people": [
+        "John Major"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "3:10 3:13 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Mary Ann Peters, Director, European Affairs, National Security Council (NSC) continued |",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298825, source image p. 17."
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298826-24",
+      "naId": 17368181,
+      "pageNumber": 18,
+      "objectId": "35298826",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "people": [
+        "Jacques Chirac"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "3:21 3:34 P The President talked on a conference call with: , ' Jacques R. Chirac, President of France Mary Ann Peters, Director, European . Affairs, National Security Council (NSC) Joyce A. Harmon, Director, White House a ee . .. ... Situation Room, National Security , Council (NSC) —_ re an Ms. O'Loughlin. an Ms. Marmol Mr. Miller 25174 ‘ : . 7 ce",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298826, source image p. 18."
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298826-25",
+      "naId": 17368181,
+      "pageNumber": 18,
+      "objectId": "35298826",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "people": [
+        "Helmut Kohl"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "5:30 5:49 P The President talked on a conference call , with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Peters Sue L. Bremner, Director, European Affairs, National Security Council (NSC) Ms. Harmon Ms. O'Loughlin Ms. Marmol continued",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298826, source image p. 18."
+    },
+    {
+      "id": "pdd-1995-09-19-17368181-35298834-26",
+      "naId": 17368181,
+      "pageNumber": 26,
+      "objectId": "35298834",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "catalogUrl": "https://catalog.archives.gov/id/17368181",
+      "date": "Sep 19, 1995",
+      "sortDate": "1995-09-19",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+      "matchedTerms": [
+        "Willy Claes"
+      ],
+      "people": [
+        "Willy Claes"
+      ],
+      "topics": [],
+      "confidence": "medium",
+      "matchBasis": [
+        "known conversation date"
+      ],
+      "relationship": "Known conversation/date corroboration",
+      "snippet": "11:52 12:02 P The President talked over a secure voice conference call with: Willy Claes, Secretary General of the United Nations (UN) Katherine E. O'Loughlin, Senior Duty Officer, White House Situation Room, National Security Council (NSC) Theodore T. Sevigny, Duty Officer, White House Situation Room, National Security Council (NSC) Thomas G. Crispell, Duty Officer, White House Situation Room, National Security . ee ee ee es . Council (NSC) ce ee David Johnson, Duty Officer, White House Situation Room, National Security * Council (NSC) 25975 . ; Cs",
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298834, source image p. 26."
+    }
+  ],
+  "researchLeads": [
+    {
+      "id": "pdd-1993-02-10-17367481-35298018-1",
+      "title": "Presidential Daily Diary reference: Boris Yeltsin",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367481; object 35298018",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367481",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298018, source image p. 26.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-2",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367481; object 35298019",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367481",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298019, source image p. 27.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-3",
+      "title": "Presidential Daily Diary reference: Helmut Kohl; Boutros Boutros-Ghali",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367481; object 35298019",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367481",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Helmut Kohl",
+        "Boutros Boutros-Ghali"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367481, digital object 35298019, source image p. 27.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-03-02-17367492-35298075-4",
+      "title": "Presidential Daily Diary reference: Manfred Woerner",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 2, 1993",
+      "sortDate": "1993-03-02",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367492; object 35298075",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367492",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298075, source image p. 8.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298140-5",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367492; object 35298140",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367492",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298140, source image p. 73.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298141-6",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17367492; object 35298141",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17367492",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17367492, digital object 35298141, source image p. 74.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1993-10-06-17368174-35298294-7",
+      "title": "Presidential Daily Diary reference: Manfred Woerner",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Oct 6, 1993",
+      "sortDate": "1993-10-06",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368174; object 35298294",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368174",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-005-2015/42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368174, digital object 35298294, source image p. 5.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298421-8",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298421",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298421, source image p. 24.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298424-9",
+      "title": "Presidential Daily Diary reference: Helmut Kohl",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298424",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298424, source image p. 27.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298425-10",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298425",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298425, source image p. 28.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-11",
+      "title": "Presidential Daily Diary reference: Franjo Tudjman",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298463",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Tudjman",
+        "Croatia",
+        "Franjo Tudjman"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298463, source image p. 66.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-12",
+      "title": "Presidential Daily Diary reference: Franjo Tudjman",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298463",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Tudjman",
+        "Franjo Tudjman"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298463, source image p. 66.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298464-13",
+      "title": "Presidential Daily Diary reference: Alija Izetbegovic",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368176; object 35298464",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368176",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnia",
+        "Herzegovina",
+        "Izetbegovic",
+        "Alija Izetbegovic"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368176, digital object 35298464, source image p. 67.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-14",
+      "title": "Presidential Daily Diary reference: NATO",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368179; object 35298691",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368179",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "NATO"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298691, source image p. 65.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-15",
+      "title": "Presidential Daily Diary reference: NATO",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368179; object 35298691",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368179",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "NATO"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298691, source image p. 65.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298696-16",
+      "title": "Presidential Daily Diary reference: Willy Claes",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368179; object 35298696",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368179",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "NATO",
+        "Willy Claes"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368179, digital object 35298696, source image p. 70.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-04-04-17368180-35298722-17",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368180; object 35298722",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368180",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298722, source image p. 5.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-19",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368180; object 35298787",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368180",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298787, source image p. 70.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-18",
+      "title": "Presidential Daily Diary reference: Jacques Chirac",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368180; object 35298787",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368180",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298787, source image p. 70.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-06-08-17368180-35298801-20",
+      "title": "Presidential Daily Diary reference: Bosnian; Serbia",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368180; object 35298801",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368180",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298801, source image p. 84.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-06-08-17368180-35298801-21",
+      "title": "Presidential Daily Diary reference: Bosnian; Serbia",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368180; object 35298801",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368180",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "high",
+      "score": 97,
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368180, digital object 35298801, source image p. 84.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-07-04-17368181-35298815-22",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Jul 4, 1995",
+      "sortDate": "1995-07-04",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368181; object 35298815",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368181",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298815, source image p. 7.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298825-23",
+      "title": "Presidential Daily Diary reference: John Major",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368181; object 35298825",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368181",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "John Major"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298825, source image p. 17.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298826-24",
+      "title": "Presidential Daily Diary reference: Jacques Chirac",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368181; object 35298826",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368181",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298826, source image p. 18.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-08-07-17368181-35298826-25",
+      "title": "Presidential Daily Diary reference: Helmut Kohl",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368181; object 35298826",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368181",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298826, source image p. 18.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "id": "pdd-1995-09-19-17368181-35298834-26",
+      "title": "Presidential Daily Diary reference: Willy Claes",
+      "kind": "Presidential Daily Diary reference",
+      "documentScope": "Schedule/call reference",
+      "date": "Sep 19, 1995",
+      "sortDate": "1995-09-19",
+      "repository": "National Archives Catalog / William J. Clinton Presidential Library",
+      "collection": "Presidential Daily Diary hardcopy",
+      "identifier": "FOIA 2010-0083-F; NAID 17368181; object 35298834",
+      "sourceFamily": "presidential-daily-diary",
+      "sourceFamilyLabel": "Presidential Daily Diary search",
+      "itemUrl": "https://catalog.archives.gov/id/17368181",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "originalFile": "42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "pageCount": 1,
+      "pageCountStatus": "source image",
+      "confidence": "medium",
+      "score": 88,
+      "matchedTerms": [
+        "Willy Claes"
+      ],
+      "sourceNoteDraft": "Source: National Archives Catalog, William J. Clinton Presidential Library, Presidential Daily Diary hardcopy, FOIA case 2010-0083-F, NAID 17368181, digital object 35298834, source image p. 26.",
+      "compilerUse": "Use as a Presidential Daily Diary call/meeting reference to reconcile known memcons, telcons, and possible no-document or withheld-record events.",
+      "targets": [
+        {
+          "type": "NARA Catalog",
+          "relationship": "presidential-daily-diary-reference",
+          "staff": "Presidential Daily Diary",
+          "folderTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]",
+          "rank": 0
+        }
+      ]
+    }
+  ],
+  "rawMatches": [
+    {
+      "naId": 17367481,
+      "pageNumber": 26,
+      "objectId": "35298018",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "1:46 1250 P The President talked with Senator Orrin G. Hatch (R-Utah). 754 Le Si 2215 P The President talked on a conference call with: Boris N. Yeltsin, President of the Russian Federation Jane E. Holl, Director, European and continued",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]"
+    },
+    {
+      "naId": 17367481,
+      "pageNumber": 27,
+      "objectId": "35298019",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "2:16 2728 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britain and Northern | Ireland (UK) Ms. Holl Mr. O'Leary 756",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]"
+    },
+    {
+      "naId": 17367481,
+      "pageNumber": 27,
+      "objectId": "35298019",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "date": "Feb 10, 1993",
+      "sortDate": "1993-02-10",
+      "matchedTerms": [
+        "Helmut Kohl",
+        "Boutros Boutros-Ghali"
+      ],
+      "snippet": "2:30 2:38 P The President talked on a conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Holl Mr. O'Leary Harry Obst, interpreter, Department of State 757 | 2:44 2:50 P The President talked on a conference call with: Boutros Boutros-Gahli, Secretary General of the United Nations (UN) Ms. Holl Mr. O'Leary | 1006",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/24/93; 1/28/93; 2/6/93; 2/10/93; 2/16/93; 2/25/93]"
+    },
+    {
+      "naId": 17367492,
+      "pageNumber": 8,
+      "objectId": "35298075",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "date": "Mar 2, 1993",
+      "sortDate": "1993-03-02",
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "snippet": "4:15 4:50 The President met with: Vice President Gore Warren M. Christopher, Secretary of State Thomas F. \"Mack\" McLarty III, Assistant and Chief of Staff Anthony \"Tony\" Lake, Assistant for National Security Affairs Manfred Woerner, Secretary General of the North American Treaty Organization (NATO) John Friendler, Deputy Assistant continued",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]"
+    },
+    {
+      "naId": 17367492,
+      "pageNumber": 73,
+      "objectId": "35298140",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "snippet": "4:01 4:44 The President met to discuss the situation in Bosnia with Members of Congress. For a list of attendees, see APPENDIX \"A.\" 4928",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]"
+    },
+    {
+      "naId": 17367492,
+      "pageNumber": 74,
+      "objectId": "35298141",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "date": "Apr 27, 1993",
+      "sortDate": "1993-04-27",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "snippet": "5:07 6:36 The President continued his meeting to discuss the situation in Bosnia with Members of Congress. 4931",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 3/2/93; 3/8/93; 3/12/93; 4/6/93; 4/14/93; 4/27/93; 4/30/93]"
+    },
+    {
+      "naId": 17367502,
+      "pageNumber": 5,
+      "objectId": "35298167",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/2/3675/17367502/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-003-2015/42_t_7262157_20100083F_001_003_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_003_2015_Page_005.JPG",
+      "date": "May 2, 1993",
+      "sortDate": "1993-05-02",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "8:25 P The President telephoned Boris N. Yeltsin, President of the Russian Federation. The call was not completed. 3621",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy [5/2/93; 5/20/93; 5/24/93; 5/28/93; 6/2/93; 6/10/93]"
+    },
+    {
+      "naId": 17367502,
+      "pageNumber": 5,
+      "objectId": "35298167",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/2/3675/17367502/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-003-2015/42_t_7262157_20100083F_001_003_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_003_2015_Page_005.JPG",
+      "date": "May 2, 1993",
+      "sortDate": "1993-05-02",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "8:42 8:51 P The President talked on a conference call with: President Yeltsin Ms. Soderberg R. Nicholas Burns, Director, European and Eurasian Affairs, National Security Council (NSC) Ms. Holl Dimitry Zarechnak, interpreter, Department of State 3602",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy [5/2/93; 5/20/93; 5/24/93; 5/28/93; 6/2/93; 6/10/93]"
+    },
+    {
+      "naId": 17367517,
+      "pageNumber": 47,
+      "objectId": "35298278",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/17/3675/17367517/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-004-2015/42_t_7262157_20100083F_001_004_2015_Page_047.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_004_2015_Page_047.JPG",
+      "date": "Sep 21, 1993",
+      "sortDate": "1993-09-21",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "3:13 P The President telephoned Boris N. Yeltsin, President of Russia (Russian Federation). The call was not completed. 8931",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - [Hardcopy 7/6/93; 7/16/93; 7/18/93; 8/2/93; 8/7/93; 8/20/93; 8/29/93; 9/1/93; 9/17/93; 9/21/93; 9/25/93]"
+    },
+    {
+      "naId": 17367517,
+      "pageNumber": 47,
+      "objectId": "35298278",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/17/3675/17367517/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-004-2015/42_t_7262157_20100083F_001_004_2015_Page_047.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_004_2015_Page_047.JPG",
+      "date": "Sep 21, 1993",
+      "sortDate": "1993-09-21",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "3:56 4:13 P The President talked on a conference call with: President Yeltsin Rose E. Gottemoeller, Director of Russian, Ukrainian and Eurasian Affairs, National Security Council (NSC) John R. Beyrle, Director, Russian/Ukraine/Eurasian Affairs, National Security Council (NSC) Dimitry Zarechnak, interpreter, Department of State 7963 |",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - [Hardcopy 7/6/93; 7/16/93; 7/18/93; 8/2/93; 8/7/93; 8/20/93; 8/29/93; 9/1/93; 9/17/93; 9/21/93; 9/25/93]"
+    },
+    {
+      "naId": 17367517,
+      "pageNumber": 48,
+      "objectId": "35298279",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/17/3675/17367517/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-004-2015/42_t_7262157_20100083F_001_004_2015_Page_048.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_004_2015_Page_048.JPG",
+      "date": "Sep 21, 1993",
+      "sortDate": "1993-09-21",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "4:22 P The President telephoned Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG). The call was not completed. 7965",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - [Hardcopy 7/6/93; 7/16/93; 7/18/93; 8/2/93; 8/7/93; 8/20/93; 8/29/93; 9/1/93; 9/17/93; 9/21/93; 9/25/93]"
+    },
+    {
+      "naId": 17367517,
+      "pageNumber": 48,
+      "objectId": "35298279",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/17/3675/17367517/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-004-2015/42_t_7262157_20100083F_001_004_2015_Page_048.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_004_2015_Page_048.JPG",
+      "date": "Sep 21, 1993",
+      "sortDate": "1993-09-21",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "4:40 4:52 P The President talked on a conference call with: Chancellor Kohl Timothy A. McGeath, Inteligence Analyst, White House Situation Room, National Security Council (NSC) James N. Pitman, Duty Officer, White House Situation Room, National Security Council (NSC) Leon E. Konuk, interpreter, Department of State 7954 531 R The President was telephoned by Daniel S. Goldin, Administrator of the National Aeronautics and Space Administration (NASA). The call was not completed. 7955",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - [Hardcopy 7/6/93; 7/16/93; 7/18/93; 8/2/93; 8/7/93; 8/20/93; 8/29/93; 9/1/93; 9/17/93; 9/21/93; 9/25/93]"
+    },
+    {
+      "naId": 17368174,
+      "pageNumber": 5,
+      "objectId": "35298294",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-005-2015/42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "date": "Oct 6, 1993",
+      "sortDate": "1993-10-06",
+      "matchedTerms": [
+        "NATO",
+        "Manfred Woerner"
+      ],
+      "snippet": "11:45 12:00 The President met with Manfred Woerner, Secretary General of the North American Treaty Organization (NATO). For a list of other attendees, see APPENDIX \"C.\" 9944",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 24,
+      "objectId": "35298421",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "10:25 10:50 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britain and Northern Ireland (UK) Jane E. Holl, Director, European and Eurasian Affairs, National Security Council (NSC) Neil G. Bleicken, Intelligence Analyst (Intern), White House Situation Room, National Security Council (NSC) Anne D. Alexander, Intelligence Analyst, White House Situation Room, National Security Council (NSC) 15478",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 27,
+      "objectId": "35298424",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "3:05 3:18 R The President talked on a conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Holl Mr. Bleicken Ms. Alexander 15506",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 28,
+      "objectId": "35298425",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "matchedTerms": [
+        "Bosnia",
+        "NATO"
+      ],
+      "snippet": "6:05 6:19 The President made an announcement to members of the press on the North Atlantic Treaty Organization's (NATO) decision on air strikes in Bosnia. Members of Press 1SS15 ;",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 28,
+      "objectId": "35298425",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "date": "Feb 9, 1994",
+      "sortDate": "1994-02-09",
+      "matchedTerms": [
+        "Bosnia"
+      ],
+      "snippet": "6:20 7:02 The President participated in a debriefing for Members of Congress on the recent , European trip and the current situation in Bosnia. For a partial list of attendees, see APPENDIX \"B.\" 11799 . 6:59 R The President was telephoned by Mike Beardon, Arkansas State Senator (D). The President's Deputy Assistant for Appointments and Scheduling, Nancy V. Hernreich took the call. 155177 : 7302 The President returned to the second floor Residence. 11800 ,",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 61,
+      "objectId": "35298458",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_061.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_061.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "12:26 The President went to the second floor Residence. He was accompanied by: John Major, Prime Minister of the United Kingdom of Great Britain and Northern Ireland (UK) Roderick Lyne, Assistant to the Prime Minister 16702",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "8:10 The President had breakfast with the Prime Minister of Great Britain and Northern Ireland (UK) John Major in the Solarium. 17036",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "8:40 The President and Prime Minister Major were joined by the First Lady. 17037",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "9:13 The President escorted Prime Minister Major to the Diplomatic Reception Room. 17038",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "9:17 The President escorted Prime Minister Major to the South Grounds of the White House. 17039",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "9:20 ? The President participated in his 50th News Conference. He was accompanied by Prime Minister Major. The President's remarks were broadcast live over nationwide radio and television. Members of Press 17040",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 62,
+      "objectId": "35298459",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_062.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "9:34 The President bade farewell to Prime Minister Major. 17041",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 66,
+      "objectId": "35298463",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "Tudjman",
+        "Croatia",
+        "Franjo Tudjman"
+      ],
+      "snippet": "5:30 P The President telephoned the President of the Republic of Croatia Franjo Tudjman. The call was not completed. ' - 12324 oe St",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 66,
+      "objectId": "35298463",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "Tudjman",
+        "Franjo Tudjman"
+      ],
+      "snippet": "5:42 5:45 P The President talked on a conference call with: President Tudjman Neil G. Bleicken, Intelligence Analyst (Intern), White House Situation Room, National Security Council (NSC) Anne D. Alexander, Intelligence Analyst, White House Situation Room, National Security Council (NSC) ; Victor Jackovich, interpreter, Department of State 17062",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368176,
+      "pageNumber": 67,
+      "objectId": "35298464",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "date": "Mar 1, 1994",
+      "sortDate": "1994-03-01",
+      "matchedTerms": [
+        "Bosnia",
+        "Herzegovina",
+        "Izetbegovic",
+        "Alija Izetbegovic"
+      ],
+      "snippet": "5:50 6:00 P The President talked on a conference call with: Alija Izetbegovic, President of the Republic of Bosnia and Herzegovina Mr. Bleicken Ms. Alexander —— Mr. Jackovich 17063",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 1/10/94; 1/23/94; 1/27/94; 2/5/94; 2/9/94; 2/15/94; 2/24/94; 3/1/94; 3/11/94; 3/14/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 34,
+      "objectId": "35298519",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_034.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_034.JPG",
+      "date": "Apr 29, 1994",
+      "sortDate": "1994-04-29",
+      "matchedTerms": [
+        "Dayton"
+      ],
+      "snippet": "LUNCHEON MEETING WITH BUSINESS CEO'S APPENDIX \"B\" April 29, 1994 Attendance not confirmed. The Roosevelt Room ATTENDEES: The President Albert Gore Jr., Vice President Lloyd Bentsen, Secretary of the Treasury Robert Campbell, Chairman, President and Chief Executive Officer, Sun Company, Philadelphia, Pennsylvania Karen Horn, Chairman and Chief Executive Officer, Bank One, Cleveland, Ohio Richard Jenrette, Chairman and Chief Executive Officer, Equitable Life Assurance, New York, New York Rollie Kimbrough, President and Chief Executive Officer, MCSI Technologies, Silver Spring, Maryland Steven Mason, Chairman and Chief Executive Officer, Mead Corporation, Dayton, Ohio Christian Poindexter, Chairman and Chief Executive Officer, Baltimore Gas and Electric, Baltimore, Maryland Howard Schultz, President, Chairman and Chief Executive Officer, Starbucks Coffee Company, Seattle, Washington Bernard",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 81,
+      "objectId": "35298566",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_081.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_081.JPG",
+      "date": "Oct 5, 1994",
+      "sortDate": "1994-10-05",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "10:30 11:03 R The President talked on a conference call with: Boris N. Yeltsin, President of Russia (Russian Federation) Todd D. Stern, Special Assistant and Deputy Staff Secretary Ralph H. Sigler, Deputy Director, White House Situation Room, National Security Council (NSC) Katherine E. O'Loughlin, Senior Duty Officer, White House Situation Room, National Security Council (NSC) Thomas G. Crispell, Duty Officer, White House Situation Room, National Security Council (NSC) Dimitry Zarechnak, interpreter, Department of State",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 83,
+      "objectId": "35298568",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_083.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_083.JPG",
+      "date": "Oct 10, 1994",
+      "sortDate": "1994-10-10",
+      "matchedTerms": [
+        "Boris Yeltsin"
+      ],
+      "snippet": "12312 12:38 P The President talked on a conference call with: Boris N. Yeltsin, President of Russia (Russian Federation) James W. Reed, Executive Assistant to the Assistant and Deputy Assistant to the President, National Security Council (NSC) Stephen G. Niemerski, Duty Officer, White House Situation Room, National Security Council (NSC) Anne D. Alexander, Intelligence Analyst, White House Situation Room, National Security Council (NSC) Jessica Stern, ---need to better id Jennifer C. Haskell, Duty Officer, White House Situation Room, National Security Council (NSC) Dimitry Zarechnak, interpreter, Department of State 17504",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 83,
+      "objectId": "35298568",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_083.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_083.JPG",
+      "date": "Oct 10, 1994",
+      "sortDate": "1994-10-10",
+      "matchedTerms": [
+        "Francois Mitterrand"
+      ],
+      "snippet": "12:39 12:46 Pp The President talked on a conference call with: Francois Mitterrand, President of France continued",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 84,
+      "objectId": "35298569",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_084.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_084.JPG",
+      "date": "Oct 10, 1994",
+      "sortDate": "1994-10-10",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "1:39 1:51 Pp The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britain and Northern Ireland (UK) Mr. Reed Mr. Brown . Jessica Stern, Director for Russian, Ukrainian and Eurasian Affairs, National Security Council (NSC) : Mr. Niemerski Ms. Haskell Kevin B. Wooton, Duty Officer, White House Situation Room, National Security Council (NSC) 17508",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 90,
+      "objectId": "35298575",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_090.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_090.JPG",
+      "date": "Oct 17, 1994",
+      "sortDate": "1994-10-17",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "11:30 11:34 P The President talked on a secure voice call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. O'Loughlin Mr. Crispell Mr. Turner Ms. Alexander 18219",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368177,
+      "pageNumber": 90,
+      "objectId": "35298575",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/77/3681/17368177/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-008-2015/42_t_7262157_20100083F_001_008_2015_Page_090.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_008_2015_Page_090.JPG",
+      "date": "Oct 17, 1994",
+      "sortDate": "1994-10-17",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "11:30 11:34 P The President talked over a secure voice conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. O'Loughlin Mr. Crispell Mr. Turner Ms. Alexander 17592 U:51 R The President was telephoned by Mr. Panetta. The call was not completed. 18220",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/5/94; 4/13/94; 4/26/94; 4/29/94; 5/1/94; 5/19/94; 5/23/94; 5/27/94; 6/1/94; 6/9/94; 6/19/94; 7/5/94; 7/15/94; 7/17/94; 8/1/94; 8/6/94; 8/19/94; 9/7/94; 9/16/94; 9/20/94; 9/24/94; 10/5/94; 10/10/94; 10/17/94; 10/25/94; 11/5/94; 11/16/94; 11/17/94; 11/29/94]"
+    },
+    {
+      "naId": 17368178,
+      "pageNumber": 5,
+      "objectId": "35298592",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/78/3681/17368178/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-009-2015/42_t_7262157_20100083F_001_009_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_009_2015_Page_005.JPG",
+      "date": "Dec 13, 1994",
+      "sortDate": "1994-12-13",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "10:34 10:56 P The President talked on a conference call with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Julien D. LeBourgeois, Director, European Affairs, National Security Council (NSC) , James W. Reed, Director, White House Situation Room, National Security Council (NSC) Matthew D. Wallack, Duty Officer, White House Situation Room, National Security Council (NSC) Madelyn P. Marmol, Duty Officer, White House Situation Room, National Security Council (NSC) Brian K. Gates, Senior Duty Officer, White House Situation Room, National Security Council (NSC) Harry Obst, interpreter, Department of State 21237",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 12/13/94; 12/14/94; 12/22/94; 12/31/94]"
+    },
+    {
+      "naId": 17368179,
+      "pageNumber": 65,
+      "objectId": "35298691",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "matchedTerms": [
+        "NATO"
+      ],
+      "snippet": "12:01 12:07 The President met for a briefing with: Vice President Gore .. ; Warren M. Christopher, Secretary of State William J. Perry, Secretary of Defense John C. Kornblum, Principal Deputy Assistant Secretary of State for European and Canadian Affairs Robert Hunter, U.S. Permanent Representative to the North American Treaty Organization (NATO) Mr. Panetta Mr. Lake Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Donald L. Kerrick, Director, European Affairs, National Security Council (NSC) 24780",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]"
+    },
+    {
+      "naId": 17368179,
+      "pageNumber": 65,
+      "objectId": "35298691",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "matchedTerms": [
+        "NATO"
+      ],
+      "snippet": "12:08 12:45 The President participated in a meeting with U.S. and NATO officials. For a list of attendees, see APPENDIX \"A.\" 24781",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]"
+    },
+    {
+      "naId": 17368179,
+      "pageNumber": 70,
+      "objectId": "35298696",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "date": "Mar 7, 1995",
+      "sortDate": "1995-03-07",
+      "matchedTerms": [
+        "NATO",
+        "Willy Claes"
+      ],
+      "snippet": "MEETING WITH U.S. AND NATO OFFICIALS APPENDIX \"A\" March 7, 1995 Attendance not confirmed. The Oval Office ATTENDEES : The President Albert A. Gore Jr., Vice President Warren M. Christopher, Secretary of State Anthony \"Tony\" Lake, Assistant for National Security Affairs Leon E. Panetta, Assistant and Chief of Staff Robert Hunter, U.S. Permanent Representative to the North American Treaty Organization (NATO) John C. Kornblum, Principal Deputy Assistant Secretary of State for European and Canadian Affairs Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Donald L. Kerrick, Director, European Affairs, National Security Council (NSC) Willy Claes, Secretary General of the North American Treaty Organization (NATO) Klaus Scharioth, Director, Secretary General's Private office Jamie P. Shea, Deputy Director for Press and Inform",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 5,
+      "objectId": "35298722",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "12:00 12:05 The President greeted the Prime Minister of Great Britain and Norther Ireland (UK) John Major. 26203",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 5,
+      "objectId": "35298722",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "12:05 12:40 The President met with: Prime Minister Major Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Members of Press in/out 26204",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 5,
+      "objectId": "35298722",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "12:50 The President excorted Prime Minister Major to the State Dining Room. 26205",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 6,
+      "objectId": "35298723",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_006.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_006.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "Page 3 APRIL 4, 1995 THE WHITE HOUSE WASHINGTON, D.C. 2:32 p.m. TUESDAY Canadian Affairs Mr. Panetta Mr. Lake George R. Stephanopoulos, Senior Advisor to the President and Executive Assistant to the Chief of Staff for Policy Michael D. McCurry, Assistant and Press Secretary Mr. Vershbow 26209 2750 The President and Prime Minister Major went to the East Room. 26210 2250 3220 The President participated in his 90th News Conference. He was accompanied by Prime Minister Major. The President's remarks were broadcast live over nationwide radio and television. Members of Press 26211 3320 The President escorted Prime Minister Major to the Blue Room. 26212 3227 The President escorted Prime Minister Major to the South Grounds of the White House. 26213 The President bade farewell to Prime Minister Major. Members of Press in/out 26214",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 9,
+      "objectId": "35298726",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_009.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_009.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "9:29 9:32 P The President talked with Richard M. Daley, Mayor (D-Chicago, Illinois). 26227 The President joined Prime Minister Major for dessert. : 26228",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 14,
+      "objectId": "35298731",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_014.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_014.JPG",
+      "date": "Apr 4, 1995",
+      "sortDate": "1995-04-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "WORKING LUNCHEON WITH U.S. AND BRITISH APPENDIX \"C\" OFFICIALS Attendance not confirmed. April 4, 1995 The Old Family Dining Room ATTENDEES : The President Albert A. Gore Jr., Vice President Warren M. Christopher, Secretary of State John M. Deutch, Deputy Secretary of Defense Leon E. Panetta, Assistant and Chief of Staff Anthony \"Tony\" Lake, Assistant for National Security Affairs Laura D'Andrea Tyson, Assistant for Economic Policy William J. Crowe Jr., Ambassador of the U.S. to the United Kingdom of Great Britain and Northern Ireland (UK) Richard C. Holbrooke, Assistant Secretary of State for European and Canadian Affairs Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) John Major, Prime Minister of the United Kingdom of Great Britain and Northern Ireland (UK) Robin William Renwick, Ambassador of the United Kingdom of",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 70,
+      "objectId": "35298787",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "snippet": "3321 3:43 P The President talked on a conference call with: Jacques R. Chirac, President of France Matthew D. Wallack, Duty Officer, White House Situation Room, National Security Council (NSC) Samuel Drew, Director, European Affairs, National Security Council (NSC) Andrew D. Sens, Executive Secretary of the National Security Council (NSC) Alejandro D. Martinez, Duty Officer, White House Situation Room, National Security Council (NSC) Stephanie van Reigersberg, interpreter, Department of State 23445",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 70,
+      "objectId": "35298787",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "date": "May 26, 1995",
+      "sortDate": "1995-05-26",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "3:50 4:09 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Mr. Drew Mr. Sens Mr. Wallack Mr. Martinez 23430",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 84,
+      "objectId": "35298801",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "snippet": "1:38 1:41 P The President talked with Dr. William O'Grady, father of Capt. Scott F. O'Grady, the stranded pilot of a downed U.S. Air Force F-16 jet fighter recently rescued after spending 6 nights in the Bosnian hills eluding capture by Serbian rebels. 23711",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368180,
+      "pageNumber": 84,
+      "objectId": "35298801",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "date": "Jun 8, 1995",
+      "sortDate": "1995-06-08",
+      "matchedTerms": [
+        "Bosnian",
+        "Serbia"
+      ],
+      "snippet": "1:43 1:49 P The President talked with Mrs. Joseph (Mary Lou) Scardapane, mother of Capt. Scott F. O'Grady, the stranded pilot of a downed U.S. Air Force F-16 jet fighter recently rescued after spending 6 nights in the Bosnian hills eluding capture by Serbian rebels. 23716",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/95; 4/12/95; 4/25/95; 5/7/95; 5/18/95; 5/22/95; 5/26/95; 6/7/95; 6/8/95; 6/18/95; 6/30/95]"
+    },
+    {
+      "naId": 17368181,
+      "pageNumber": 7,
+      "objectId": "35298815",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_007.JPG",
+      "date": "Jul 4, 1995",
+      "sortDate": "1995-07-04",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "7:26 7:28 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Alexander R. \"Sandy\" Vershbow, Special Assistant and Senior Director, European Affairs, National Security Council (NSC) Kevin B. Wooton, Duty Officer, White House Situation Room, National Security Council (NSC) Brian K. Gates, Duty Officer, White House Situation Room, National Security Council (NSC) Mary T. Canty, Duty Officer, White House Situation Room, National Security Council (NSC)",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]"
+    },
+    {
+      "naId": 17368181,
+      "pageNumber": 17,
+      "objectId": "35298825",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_017.JPG",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "matchedTerms": [
+        "John Major"
+      ],
+      "snippet": "3:10 3:13 P The President talked on a conference call with: John Major, Prime Minister of the United Kingdom of Great Britian and Northern Ireland (UK) Mary Ann Peters, Director, European Affairs, National Security Council (NSC) continued |",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]"
+    },
+    {
+      "naId": 17368181,
+      "pageNumber": 18,
+      "objectId": "35298826",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "matchedTerms": [
+        "Jacques Chirac"
+      ],
+      "snippet": "3:21 3:34 P The President talked on a conference call with: , ' Jacques R. Chirac, President of France Mary Ann Peters, Director, European . Affairs, National Security Council (NSC) Joyce A. Harmon, Director, White House a ee . .. ... Situation Room, National Security , Council (NSC) —_ re an Ms. O'Loughlin. an Ms. Marmol Mr. Miller 25174 ‘ : . 7 ce",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]"
+    },
+    {
+      "naId": 17368181,
+      "pageNumber": 18,
+      "objectId": "35298826",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_018.JPG",
+      "date": "Aug 7, 1995",
+      "sortDate": "1995-08-07",
+      "matchedTerms": [
+        "Helmut Kohl"
+      ],
+      "snippet": "5:30 5:49 P The President talked on a conference call , with: Helmut Kohl, Chancellor of the Federal Republic of Germany (FRG) Ms. Peters Sue L. Bremner, Director, European Affairs, National Security Council (NSC) Ms. Harmon Ms. O'Loughlin Ms. Marmol continued",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]"
+    },
+    {
+      "naId": 17368181,
+      "pageNumber": 26,
+      "objectId": "35298834",
+      "objectUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3681/17368181/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-012-2015/42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "objectFilename": "42_t_7262157_20100083F_001_012_2015_Page_026.JPG",
+      "date": "Sep 19, 1995",
+      "sortDate": "1995-09-19",
+      "matchedTerms": [
+        "Willy Claes"
+      ],
+      "snippet": "11:52 12:02 P The President talked over a secure voice conference call with: Willy Claes, Secretary General of the United Nations (UN) Katherine E. O'Loughlin, Senior Duty Officer, White House Situation Room, National Security Council (NSC) Theodore T. Sevigny, Duty Officer, White House Situation Room, National Security Council (NSC) Thomas G. Crispell, Duty Officer, White House Situation Room, National Security . ee ee ee es . Council (NSC) ce ee David Johnson, Duty Officer, White House Situation Room, National Security * Council (NSC) 25975 . ; Cs",
+      "fileUnitTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/4/95; 7/16/95; 7/21/95; 8/5/95; 8/7/95; 8/18/95; 9/6/95; 9/15/95; 9/19/95; 9/23/95; 10/4/95; 10/9/95; 10/16/95; 10/24/95; 11/4/95; 11/15/95; 11/16/95; 12/12/95; 12/13/95; 12/28/95; 12/30/95]"
+    }
+  ]
+}

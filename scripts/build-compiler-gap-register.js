@@ -12,6 +12,11 @@ function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, relativePath), "utf8"));
 }
 
+function readJsonIfExists(relativePath, fallback) {
+  const fullPath = path.join(ROOT, relativePath);
+  return fs.existsSync(fullPath) ? JSON.parse(fs.readFileSync(fullPath, "utf8")) : fallback;
+}
+
 function countBy(items, getKey) {
   const counts = new Map();
   for (const item of items) {
@@ -117,6 +122,10 @@ function main() {
   const defense = readJson("reports/defense-jcs-source-search.json");
   const conversationReconciliation = readJson("reports/presidential-conversation-reconciliation.json");
   const sourceNoteAudit = readJson("reports/source-note-verification-audit.json");
+  const presidentialDailyDiary = readJsonIfExists("reports/presidential-daily-diary-search.json", {
+    summary: { selectedReferences: 0 },
+    researchLeads: []
+  });
   const documents = data.documents || [];
   const archivalDocs = documents.filter((record) => record.documentScope !== "Public statement");
   const conversations = documents.filter((record) => ["Memcon", "Telcon"].includes(record.kind));
@@ -128,7 +137,8 @@ function main() {
   const researchFiles = research.digitizedFiles || [];
   const btfDocs = btf.documents || [];
   const defenseDocs = defense.documents || [];
-  const candidateLeadCount = researchFiles.length + crossDocs.length + stateDocs.length + btfDocs.length;
+  const pddRefs = presidentialDailyDiary.researchLeads || [];
+  const candidateLeadCount = researchFiles.length + crossDocs.length + stateDocs.length + btfDocs.length + pddRefs.length;
 
   const extractionQueue = [
     ...unselectedWithPdfHits.slice(0, 20).map((target) => ({
@@ -182,6 +192,17 @@ function main() {
       url: record.pdfUrl,
       reason: `${record.sourceFamilyLabel || record.sourceFamily || record.repository}; military-implementation hit.`,
       nextAction: "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    })),
+    ...pddRefs.slice(0, 20).map((record) => ({
+      id: record.id,
+      sourceFamily: "Presidential Daily Diary",
+      priority: record.confidence === "high" ? "High" : "Medium",
+      title: record.title,
+      date: record.sortDate,
+      pageCount: record.pageCount,
+      url: record.pdfUrl,
+      reason: `${record.identifier}; ${record.sourceFamilyLabel || "Daily Diary call/meeting reference"}.`,
+      nextAction: "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
     }))
   ];
 
@@ -239,6 +260,15 @@ function main() {
       currentLeads: conversationReconciliation.summary.conversationRecords,
       countedPages: conversationReconciliation.summary.pages,
       remainingRisk: `${conversationReconciliation.summary.residualOnsiteChecks} schedule/call folder leads remain for onsite absence/withheld-record checks.`
+    },
+    {
+      id: "presidential-daily-diary",
+      label: "Presidential Daily Diary FOIA 2010-0083-F",
+      url: "reports/presidential-daily-diary-search.json",
+      status: "Mitigated by OCR source-image search",
+      currentLeads: presidentialDailyDiary.summary.selectedReferences,
+      countedPages: presidentialDailyDiary.summary.selectedReferences,
+      remainingRisk: "Diary references reconcile calls and meetings but do not establish topic when the entry itself is silent."
     },
     {
       id: "source-note-audit",
@@ -403,15 +433,20 @@ function main() {
       evidence: [
         `${conversations.length} memcon/telcon chronology records are present.`,
         `Conversation years: ${JSON.stringify(countBy(conversations, (item) => (item.sortDate || "").slice(0, 4)))}.`,
-        `${conversationReconciliation.summary.scheduleAndCallFolderLeads} schedule/call folder leads are now surfaced for absence/withheld-record checks.`
+        `${conversationReconciliation.summary.scheduleAndCallFolderLeads} schedule/call folder leads are now surfaced for absence/withheld-record checks.`,
+        `${presidentialDailyDiary.summary.selectedReferences} Presidential Daily Diary call/meeting references now support date-by-date reconciliation.`
       ],
       nextActions: [
         "Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.",
+        "Use reports/presidential-daily-diary-search.json to cross-check source-image references for known and possible no-document calls or meetings.",
         "Mark known no-document or withheld conversations as source gaps, not absent events.",
         "Record Washington time when available."
       ],
-      sourcePools: ["clinton-research-pdfs"],
-      candidateLeadIds: conversationReconciliation.reconciliation.map((item) => item.id).slice(0, 30)
+      sourcePools: ["clinton-research-pdfs", "conversation-reconciliation", "presidential-daily-diary"],
+      candidateLeadIds: [
+        ...conversationReconciliation.reconciliation.map((item) => item.id).slice(0, 20),
+        ...pddRefs.map((item) => item.id).slice(0, 10)
+      ]
     }),
     makeGap({
       id: "source-note-finalization",
@@ -449,7 +484,11 @@ function main() {
       publicStatementRecords: documents.length - archivalDocs.length,
       candidateLeadCount,
       candidateLeadPages:
-        research.summary.countedPages + sourceCrosscheck.summary.countedPages + stateFoia.summary.countedPages + btf.summary.countedPages,
+        research.summary.countedPages +
+        sourceCrosscheck.summary.countedPages +
+        stateFoia.summary.countedPages +
+        btf.summary.countedPages +
+        pddRefs.reduce((sum, item) => sum + (item.pageCount || 0), 0),
       byYear: countBy(documents, (item) => (item.sortDate || "").slice(0, 4)),
       byScope: countBy(documents, (item) => item.documentScope),
       byRepository: countBy(documents, (item) => item.repository || item.institution || item.collection)

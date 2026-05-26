@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-25T23:40:05.742Z",
+  "generatedAt": "2026-05-26T02:23:35.625Z",
   "missionBoundary": "This register identifies compiler-risk gaps and mitigation queues. It does not recommend document inclusion and does not impose a FRUS volume structure.",
   "metrics": {
     "chronologyRecords": 870,
     "chronologyPages": 3939,
     "archivalChronologyRecords": 424,
     "publicStatementRecords": 446,
-    "candidateLeadCount": 1196,
-    "candidateLeadPages": 22237,
+    "candidateLeadCount": 1222,
+    "candidateLeadPages": 22263,
     "byYear": {
       "1993": {
         "count": 190,
@@ -70,9 +70,9 @@
     "critical": 2,
     "high": 3,
     "medium": 3,
-    "sourcePools": 7,
-    "extractionQueue": 110,
-    "candidateLeads": 1196
+    "sourcePools": 8,
+    "extractionQueue": 130,
+    "candidateLeads": 1222
   },
   "sourcePools": [
     {
@@ -128,6 +128,15 @@
       "currentLeads": 32,
       "countedPages": 166,
       "remainingRisk": "65 schedule/call folder leads remain for onsite absence/withheld-record checks."
+    },
+    {
+      "id": "presidential-daily-diary",
+      "label": "Presidential Daily Diary FOIA 2010-0083-F",
+      "url": "reports/presidential-daily-diary-search.json",
+      "status": "Mitigated by OCR source-image search",
+      "currentLeads": 26,
+      "countedPages": 26,
+      "remainingRisk": "Diary references reconcile calls and meetings but do not establish topic when the entry itself is silent."
     },
     {
       "id": "source-note-audit",
@@ -1289,6 +1298,226 @@
       "url": "https://clinton.presidentiallibraries.us/files/original/e02bbe93693a210ac783b2ab4a91137b.pdf",
       "reason": "undefined; military-implementation hit.",
       "nextAction": "Review against PC/DC decision points and presidential conversations; promote only standalone, non-duplicate records."
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298018-1",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: Boris Yeltsin",
+      "date": "1993-02-10",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_026.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367481; object 35298018; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-2",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: John Major",
+      "date": "1993-02-10",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367481; object 35298019; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-02-10-17367481-35298019-3",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: Helmut Kohl; Boutros Boutros-Ghali",
+      "date": "1993-02-10",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/81/3674/17367481/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-001-2015/42_t_7262157_20100083F_001_001_2015_Page_027.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367481; object 35298019; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-03-02-17367492-35298075-4",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Manfred Woerner",
+      "date": "1993-03-02",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_008.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367492; object 35298075; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298140-5",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "date": "1993-04-27",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_073.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367492; object 35298140; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-04-27-17367492-35298141-6",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "date": "1993-04-27",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/92/3674/17367492/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-002-2015/42_t_7262157_20100083F_001_002_2015_Page_074.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17367492; object 35298141; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1993-10-06-17368174-35298294-7",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Manfred Woerner",
+      "date": "1993-10-06",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-005-2015/42_t_7262157_20100083F_001_005_2015_Page_005.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368174; object 35298294; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298421-8",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: John Major",
+      "date": "1994-02-09",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_024.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298421; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298424-9",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: Helmut Kohl",
+      "date": "1994-02-09",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_027.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298424; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-02-09-17368176-35298425-10",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Bosnia",
+      "date": "1994-02-09",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_028.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298425; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-11",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Franjo Tudjman",
+      "date": "1994-03-01",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298463; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298463-12",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Franjo Tudjman",
+      "date": "1994-03-01",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_066.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298463; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1994-03-01-17368176-35298464-13",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Alija Izetbegovic",
+      "date": "1994-03-01",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/76/3681/17368176/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-007-2015/42_t_7262157_20100083F_001_007_2015_Page_067.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368176; object 35298464; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-14",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: NATO",
+      "date": "1995-03-07",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368179; object 35298691; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298691-15",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: NATO",
+      "date": "1995-03-07",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_065.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368179; object 35298691; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-03-07-17368179-35298696-16",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Willy Claes",
+      "date": "1995-03-07",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-010-2015/42_t_7262157_20100083F_001_010_2015_Page_070.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368179; object 35298696; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-04-04-17368180-35298722-17",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: John Major",
+      "date": "1995-04-04",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_005.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368180; object 35298722; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-19",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: John Major",
+      "date": "1995-05-26",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368180; object 35298787; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-05-26-17368180-35298787-18",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "Medium",
+      "title": "Presidential Daily Diary reference: Jacques Chirac",
+      "date": "1995-05-26",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_070.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368180; object 35298787; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
+    },
+    {
+      "id": "pdd-1995-06-08-17368180-35298801-20",
+      "sourceFamily": "Presidential Daily Diary",
+      "priority": "High",
+      "title": "Presidential Daily Diary reference: Bosnian; Serbia",
+      "date": "1995-06-08",
+      "pageCount": 1,
+      "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/80/3681/17368180/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-JPG/Box_001/42-t-7262157-20100083F-001-011-2015/42_t_7262157_20100083F_001_011_2015_Page_084.JPG",
+      "reason": "FOIA 2010-0083-F; NAID 17368180; object 35298801; Presidential Daily Diary search.",
+      "nextAction": "Use to reconcile known memcons, telcons, schedules, no-document events, and withheld-record checks."
     }
   ],
   "gaps": [
@@ -1609,15 +1838,19 @@
       "evidence": [
         "32 memcon/telcon chronology records are present.",
         "Conversation years: {\"1993\":{\"count\":6,\"pages\":24},\"1994\":{\"count\":3,\"pages\":14},\"1995\":{\"count\":23,\"pages\":128}}.",
-        "65 schedule/call folder leads are now surfaced for absence/withheld-record checks."
+        "65 schedule/call folder leads are now surfaced for absence/withheld-record checks.",
+        "26 Presidential Daily Diary call/meeting references now support date-by-date reconciliation."
       ],
       "nextActions": [
         "Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.",
+        "Use reports/presidential-daily-diary-search.json to cross-check source-image references for known and possible no-document calls or meetings.",
         "Mark known no-document or withheld conversations as source gaps, not absent events.",
         "Record Washington time when available."
       ],
       "sourcePools": [
-        "clinton-research-pdfs"
+        "clinton-research-pdfs",
+        "conversation-reconciliation",
+        "presidential-daily-diary"
       ],
       "candidateLeadIds": [
         "mitterrand-1993-02-15",
@@ -1640,16 +1873,16 @@
         "major-1995-07-19",
         "christopher-de-charette-1995-07-19",
         "izetbegovic-1995-07-20",
-        "chirac-1995-07-20",
-        "chirac-1995-07-24",
-        "chirac-1995-08-07",
-        "yeltsin-1995-10-23-hyde-park-one-on-one",
-        "yeltsin-1995-10-23-hyde-park-lunch",
-        "izetbegovic-tudjman-1995-10-24",
-        "gonzalez-1995-12-03",
-        "chirac-1995-12-14",
-        "izetbegovic-1995-12-14-pull-aside",
-        "tudjman-1995-12-14-pull-aside"
+        "pdd-1993-02-10-17367481-35298018-1",
+        "pdd-1993-02-10-17367481-35298019-2",
+        "pdd-1993-02-10-17367481-35298019-3",
+        "pdd-1993-03-02-17367492-35298075-4",
+        "pdd-1993-04-27-17367492-35298140-5",
+        "pdd-1993-04-27-17367492-35298141-6",
+        "pdd-1993-10-06-17368174-35298294-7",
+        "pdd-1994-02-09-17368176-35298421-8",
+        "pdd-1994-02-09-17368176-35298424-9",
+        "pdd-1994-02-09-17368176-35298425-10"
       ]
     },
     {

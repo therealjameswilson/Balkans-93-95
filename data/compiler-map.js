@@ -500,6 +500,24 @@ window.COMPILER_MAP_DATA = {
         "Page counts"
       ],
       "compilerUse": "Use as the source-note finalization queue."
+    },
+    {
+      "id": "presidential-daily-diary-search",
+      "title": "Presidential Daily Diary Search",
+      "identifier": "FOIA 2010-0083-F",
+      "institution": "National Archives Catalog / William J. Clinton Presidential Library",
+      "type": "Schedule / Call Log",
+      "priority": "Core",
+      "description": "OCR-searched FOIA 2010-0083-F: 12 in-period Presidential Daily Diary hardcopy file units totaling 882 source images; selected 26 Balkans-relevant call/meeting references.",
+      "compilerUse": "Use to reconcile presidential calls and meetings against memcons, telcons, schedules, and no-document or withheld-record checks. References do not recommend inclusion.",
+      "url": "reports/presidential-daily-diary-search.json",
+      "tags": [
+        "Presidential Daily Diary",
+        "Calls",
+        "Meetings",
+        "NARA Catalog",
+        "2010-0083-F"
+      ]
     }
   ],
   "conversations": [

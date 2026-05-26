@@ -1,13 +1,13 @@
 # Balkans 1993-1995 Compiler Gap Register
 
-Generated: 2026-05-25T23:40:05.742Z
+Generated: 2026-05-26T02:23:35.625Z
 
 ## Summary
 
 - 8 compiler-risk gaps tracked.
 - 8 mitigated by a new reproducible source layer or queue.
 - 0 still open after this pass.
-- 1196 candidate/source leads now available for compiler review.
+- 1222 candidate/source leads now available for compiler review.
 
 ## Critical: State Department cable and memorandum base was thin
 
@@ -136,9 +136,11 @@ Evidence:
 - 32 memcon/telcon chronology records are present.
 - Conversation years: {"1993":{"count":6,"pages":24},"1994":{"count":3,"pages":14},"1995":{"count":23,"pages":128}}.
 - 65 schedule/call folder leads are now surfaced for absence/withheld-record checks.
+- 26 Presidential Daily Diary call/meeting references now support date-by-date reconciliation.
 
 Next actions:
 - Use reports/presidential-conversation-reconciliation.json for date-by-date schedule checks.
+- Use reports/presidential-daily-diary-search.json to cross-check source-image references for known and possible no-document calls or meetings.
 - Mark known no-document or withheld conversations as source gaps, not absent events.
 - Record Washington time when available.
 
