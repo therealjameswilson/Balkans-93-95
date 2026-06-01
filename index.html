@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-sourcenotequeue1" />
+    <link rel="stylesheet" href="styles.css?v=20260601-pdd1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -90,6 +90,7 @@
         <a href="#conversations">Chronology</a>
         <a href="#audit">Audit</a>
         <a href="#compiler-gaps">Gaps</a>
+        <a href="#presidential-daily-diary">Diary</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
@@ -214,6 +215,53 @@
         <div class="gap-followup-layout">
           <div id="source-pool-root" class="research-panel" aria-live="polite"></div>
           <div id="extraction-queue-root" class="research-panel" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section pdd-section" id="presidential-daily-diary" aria-labelledby="pdd-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Schedule Reconciliation</p>
+            <h2 id="pdd-title">Presidential Daily Diary References</h2>
+          </div>
+          <p class="section-note">
+            NARA Catalog FOIA 2010-0083-F source-image hits are listed here as
+            call and meeting references for reconciling known memcons/telcons,
+            no-document events, and withheld-record checks. These entries are
+            schedule evidence, not chronology selections.
+          </p>
+        </div>
+        <div id="pdd-summary-root" class="audit-grid pdd-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools pdd-tools" aria-label="Presidential Daily Diary reference filters">
+          <label class="search-field">
+            <span>Search diary references</span>
+            <input
+              id="pdd-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Person, topic, NAID, file unit"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Confidence</p>
+            <div id="pdd-confidence-filters" class="filter-row compact" aria-label="Daily Diary confidence filters"></div>
+          </div>
+          <button id="pdd-reset" class="reset-button" type="button">Reset</button>
+          <button id="pdd-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="pdd-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap pdd-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Reference</th>
+                <th scope="col">Reconciliation</th>
+                <th scope="col">Source Image</th>
+              </tr>
+            </thead>
+            <tbody id="pdd-references-root"></tbody>
+          </table>
         </div>
       </section>
 
@@ -437,7 +485,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-sourcenotequeue1"></script>
-    <script src="app.js?v=20260601-sourcenotequeue1"></script>
+    <script src="data/compiler-map.js?v=20260601-pdd1"></script>
+    <script src="app.js?v=20260601-pdd1"></script>
   </body>
 </html>

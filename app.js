@@ -29,7 +29,9 @@ const state = {
   researchRelationship: "All",
   researchSearch: "",
   libraryPriority: "Critical + High",
-  librarySearch: ""
+  librarySearch: "",
+  pddConfidence: "All",
+  pddSearch: ""
 };
 
 const nodes = {
@@ -45,6 +47,13 @@ const nodes = {
   gapRoot: document.querySelector("#gap-root"),
   sourcePoolRoot: document.querySelector("#source-pool-root"),
   extractionQueueRoot: document.querySelector("#extraction-queue-root"),
+  pddSummaryRoot: document.querySelector("#pdd-summary-root"),
+  pddSearch: document.querySelector("#pdd-search"),
+  pddConfidenceFilters: document.querySelector("#pdd-confidence-filters"),
+  pddReset: document.querySelector("#pdd-reset"),
+  pddExport: document.querySelector("#pdd-export"),
+  pddReferenceSummary: document.querySelector("#pdd-reference-summary"),
+  pddReferencesRoot: document.querySelector("#pdd-references-root"),
   librarySummaryRoot: document.querySelector("#library-summary-root"),
   libraryPlanRoot: document.querySelector("#library-plan-root"),
   libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
@@ -662,6 +671,258 @@ function renderExtractionQueue(report = {}) {
   }
 
   nodes.extractionQueueRoot.replaceChildren(heading, list);
+}
+
+function pddReferences(report = {}) {
+  return (report.researchLeads || report.selectedReferences || []).slice();
+}
+
+function pddReferenceText(reference) {
+  return [
+    reference.title,
+    reference.date,
+    reference.confidence,
+    reference.identifier,
+    reference.collection,
+    reference.repository,
+    reference.fileUnitTitle,
+    reference.originalFile,
+    reference.sourceNoteDraft,
+    reference.compilerUse,
+    ...(reference.matchedTerms || []),
+    ...((reference.targets || []).map((target) => [target.folderTitle, target.staff, target.relationship].join(" ")))
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredPddReferences(report = {}) {
+  return pddReferences(report)
+    .filter((reference) => state.pddConfidence === "All" || sentenceCase(reference.confidence) === state.pddConfidence)
+    .filter((reference) => !state.pddSearch || pddReferenceText(reference).includes(state.pddSearch.toLowerCase()))
+    .sort((a, b) => {
+      const confidenceOrder = { high: 0, medium: 1, low: 2 };
+      return (
+        String(a.sortDate || "").localeCompare(String(b.sortDate || "")) ||
+        (confidenceOrder[a.confidence] ?? 9) - (confidenceOrder[b.confidence] ?? 9) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function pddReferenceLabel(reference = {}) {
+  return String(reference.title || "Presidential Daily Diary reference").replace(/^Presidential Daily Diary reference:\s*/i, "");
+}
+
+function pddPersonTokens(reference = {}) {
+  return (reference.matchedTerms || [])
+    .flatMap((term) => String(term).split(/[;/,]|\band\b/i))
+    .map((term) => term.trim().split(/\s+/).filter(Boolean).pop())
+    .filter((term) => term && term.length > 2 && !/bosnia|bosnian|serbia|serbian|un|ifor/i.test(term))
+    .map((term) => term.toLowerCase());
+}
+
+function pddKnownConversationMatches(reference = {}, data = {}) {
+  const tokens = pddPersonTokens(reference);
+  if (!tokens.length) return [];
+  return conversationRecords(data)
+    .filter(isConversationRecord)
+    .filter((record) => record.sortDate === reference.sortDate)
+    .filter((record) => {
+      const haystack = [record.title, record.counterpart, ...(record.tags || []), ...(record.subjects || [])]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return tokens.some((token) => haystack.includes(token));
+    });
+}
+
+function pddReconciliationAction(reference, data) {
+  const matches = pddKnownConversationMatches(reference, data);
+  if (matches.length) {
+    return {
+      status: "Known chronology match",
+      detail: matches.map((record) => `${record.kind}: ${record.counterpart || record.title}`).join(" | "),
+      matches
+    };
+  }
+
+  return {
+    status: "Schedule-only lead",
+    detail: "Check daily schedule, call-log, and foreign-leader-call folders for a no-document event, withheld record, or non-Balkans reference before closing.",
+    matches: []
+  };
+}
+
+function renderPddSummary(report = {}, data = {}) {
+  const refs = pddReferences(report);
+  const high = refs.filter((reference) => reference.confidence === "high").length;
+  const medium = refs.filter((reference) => reference.confidence === "medium").length;
+  const matched = refs.filter((reference) => pddKnownConversationMatches(reference, data).length).length;
+  const uniqueImages = new Set(refs.map((reference) => reference.pdfUrl).filter(Boolean)).size;
+
+  nodes.pddSummaryRoot.replaceChildren(
+    auditCard(
+      "Diary References",
+      formatNumber(refs.length),
+      `${formatNumber(high)} high-confidence and ${formatNumber(medium)} medium-confidence call/meeting references from FOIA 2010-0083-F.`,
+      `${formatNumber(report.summary?.ocrPages)} OCR pages searched across ${formatNumber(report.summary?.inPeriodFileUnits)} in-period file units.`
+    ),
+    auditCard(
+      "Known Matches",
+      formatNumber(matched),
+      "References with same-date known memcon/telcon matches are flagged for reconciliation against the chronology.",
+      "Unmatched references are schedule-only leads, not absence claims."
+    ),
+    auditCard(
+      "Source Images",
+      formatNumber(uniqueImages),
+      "Each row links the source image and NARA Catalog file-unit page used for the lead.",
+      "Use source images to verify exact time, context, and OCR false positives."
+    )
+  );
+}
+
+function renderPddConfidenceFilters(report = {}, data = {}) {
+  const confidences = ["All", "High", "Medium", "Low"].filter(
+    (confidence) => confidence === "All" || pddReferences(report).some((reference) => sentenceCase(reference.confidence) === confidence)
+  );
+
+  renderButtonGroup(nodes.pddConfidenceFilters, confidences, state.pddConfidence, (value) => {
+    state.pddConfidence = value;
+    renderPddConfidenceFilters(report, data);
+    renderPddReferences(report, data);
+  });
+}
+
+function renderPddReferences(report = {}, data = {}) {
+  const references = filteredPddReferences(report);
+  const totalReferences = pddReferences(report).length;
+  nodes.pddReferenceSummary.textContent = `Showing ${formatNumber(references.length)} of ${formatNumber(
+    totalReferences
+  )} Presidential Daily Diary call/meeting references.`;
+  nodes.pddReferencesRoot.replaceChildren();
+
+  if (!references.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 4;
+    cell.className = "empty-state";
+    cell.textContent = "No Presidential Daily Diary references match the current filters.";
+    row.append(cell);
+    nodes.pddReferencesRoot.append(row);
+    return;
+  }
+
+  for (const reference of references) {
+    const action = pddReconciliationAction(reference, data);
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = reference.date || "Date pending";
+
+    const referenceCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = pddReferenceLabel(reference);
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [
+      sentenceCase(reference.confidence || "confidence pending"),
+      (reference.matchedTerms || []).join("; "),
+      reference.identifier
+    ]
+      .filter(Boolean)
+      .join(" | ");
+    referenceCell.append(title, meta);
+
+    const reconciliationCell = document.createElement("td");
+    const status = document.createElement("span");
+    status.className = `citation-status ${action.matches.length ? "ready" : "check"}`;
+    status.textContent = action.status;
+    const detail = document.createElement("p");
+    detail.className = "queue-record-meta";
+    detail.textContent = action.detail;
+    reconciliationCell.append(status, detail);
+    if (action.matches.length) {
+      const links = document.createElement("div");
+      links.className = "queue-link-list";
+      for (const match of action.matches) {
+        const link = document.createElement("a");
+        link.className = "source-link";
+        link.href = stableChronologyRecordUrl(match);
+        link.textContent = `Open ${match.kind}`;
+        links.append(link);
+      }
+      reconciliationCell.append(links);
+    }
+
+    const sourceCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open source image", reference.pdfUrl],
+      ["Open Catalog file unit", reference.itemUrl]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = reference.sourceNoteDraft || "";
+    sourceCell.append(links, note);
+
+    row.append(dateCell, referenceCell, reconciliationCell, sourceCell);
+    nodes.pddReferencesRoot.append(row);
+  }
+}
+
+function exportPddReferences(report = {}, data = {}) {
+  const fields = [
+    "date",
+    "reference",
+    "confidence",
+    "matchedTerms",
+    "identifier",
+    "reconciliationStatus",
+    "reconciliationDetail",
+    "knownChronologyLinks",
+    "sourceImage",
+    "catalogFileUnit",
+    "sourceNoteDraft",
+    "compilerUse"
+  ];
+  const rows = filteredPddReferences(report).map((reference) => {
+    const action = pddReconciliationAction(reference, data);
+    return [
+      reference.date,
+      pddReferenceLabel(reference),
+      reference.confidence,
+      (reference.matchedTerms || []).join("; "),
+      reference.identifier,
+      action.status,
+      action.detail,
+      action.matches.map(stableChronologyRecordUrl).join("; "),
+      reference.pdfUrl,
+      reference.itemUrl,
+      reference.sourceNoteDraft,
+      reference.compilerUse
+    ];
+  });
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-presidential-daily-diary-references.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderPresidentialDailyDiary(report = {}, data = {}) {
+  if (!report || !nodes.pddSummaryRoot) return;
+  renderPddSummary(report, data);
+  renderPddConfidenceFilters(report, data);
+  renderPddReferences(report, data);
 }
 
 function libraryTargets(report = {}) {
@@ -2591,6 +2852,27 @@ function bindLibrarySearch(report) {
   });
 }
 
+function bindPddSearch(report, data) {
+  if (!report || !nodes.pddSearch) return;
+
+  nodes.pddSearch.addEventListener("input", (event) => {
+    state.pddSearch = event.target.value.trim();
+    renderPddReferences(report, data);
+  });
+
+  nodes.pddReset.addEventListener("click", () => {
+    state.pddConfidence = "All";
+    state.pddSearch = "";
+    nodes.pddSearch.value = "";
+    renderPddConfidenceFilters(report, data);
+    renderPddReferences(report, data);
+  });
+
+  nodes.pddExport.addEventListener("click", () => {
+    exportPddReferences(report, data);
+  });
+}
+
 async function loadOptionalJson(url) {
   try {
     const response = await fetch(url);
@@ -2678,6 +2960,7 @@ async function init() {
     renderStats(data);
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);
+    renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
     renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
@@ -2688,6 +2971,7 @@ async function init() {
     renderSources(data);
     renderQueue(data);
     bindSearch(data);
+    bindPddSearch(reports.presidentialDailyDiary, data);
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {

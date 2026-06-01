@@ -570,6 +570,25 @@ dd {
   margin-top: 16px;
 }
 
+.pdd-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(250px, 0.8fr) auto auto;
+  margin-top: 14px;
+}
+
+.pdd-table-wrap {
+  margin-top: 14px;
+}
+
+.pdd-table-wrap table {
+  min-width: 1040px;
+}
+
+.pdd-table-wrap td:nth-child(2),
+.pdd-table-wrap td:nth-child(3),
+.pdd-table-wrap td:nth-child(4) {
+  overflow-wrap: anywhere;
+}
+
 .library-table-wrap table {
   min-width: 1080px;
 }
