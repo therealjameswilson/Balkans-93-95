@@ -67,6 +67,7 @@ const nodes = {
   chronologyIndexRoot: document.querySelector("#chronology-index-root"),
   conversationReset: document.querySelector("#conversation-reset"),
   conversationExport: document.querySelector("#conversation-export"),
+  conversationMdExport: document.querySelector("#conversation-md-export"),
   conversationSummary: document.querySelector("#conversation-summary"),
   researchSummaryRoot: document.querySelector("#research-summary-root"),
   researchTierRoot: document.querySelector("#research-tier-root"),
@@ -1546,6 +1547,76 @@ function compilerWorksheetText(record) {
     .join("\n");
 }
 
+function chronologyFilterLabel() {
+  return [
+    `Scope: ${state.conversationScope}`,
+    `Focus: ${conversationFocusOption(state.conversationFocus).label}`,
+    `Form: ${state.conversationKind}`,
+    `Year: ${state.conversationYear}`,
+    `Month: ${monthLabel(state.conversationMonth)}`,
+    state.conversationSearch ? `Search: ${state.conversationSearch}` : ""
+  ]
+    .filter(Boolean)
+    .join("; ");
+}
+
+function markdownLineBreak(value = "") {
+  return String(value).replace(/\n/g, "\n\n");
+}
+
+function markdownRecordWorksheet(record, index) {
+  return [
+    `## ${index + 1}. ${record.date} | ${record.kind} | ${record.title}`,
+    "",
+    `- Scope: ${record.documentScope || "Unscoped"}`,
+    record.counterpart ? `- Counterpart: ${record.counterpart}` : "",
+    `- Identifier: ${normalizedIdentifier(record.identifier)}`,
+    `- Collection: ${record.collection}`,
+    `- Repository: ${repositoryLabel(record)}`,
+    `- Page accounting: ${pageLabel(record.pageCount)}; source PDF pp. ${record.sourcePdfPages || "pending"}; ${localExtractLabel(record)}`,
+    record.dateBasis ? `- Chronology note: ${record.dateBasis}` : "",
+    record.annotationSheet ? `- Annotation sheet: ${record.annotationSheet}` : "",
+    "",
+    "### FRUS-style source note draft",
+    "",
+    markdownLineBreak(sourceNoteDraft(record)),
+    "",
+    "### Citation verification worklist",
+    "",
+    markdownLineBreak(citationOpenItems(record)),
+    "",
+    "### Compiler relevance",
+    "",
+    markdownLineBreak(record.compilerUse || "Relevance note pending."),
+    "",
+    "### Links",
+    "",
+    record.pdfUrl ? `- Review PDF: ${record.pdfUrl}` : "",
+    distinctSourcePacketUrl(record) ? `- Original source packet PDF: ${distinctSourcePacketUrl(record)}` : "",
+    record.url ? `- Record locator: ${record.url}` : ""
+  ]
+    .filter((line) => line !== "")
+    .join("\n");
+}
+
+function filteredWorksheetMarkdown(data) {
+  const records = filteredConversations(data);
+  const direct = records.filter(isDirectPdf).length;
+  const extracted = records.filter(isExtractedDocument).length;
+  const annotated = records.filter((record) => record.annotationSheet).length;
+  return [
+    "# Balkans 1993-1995 Chronology Worksheet Export",
+    "",
+    "This export is a working provenance packet for compiler review. It is not a recommendation about inclusion or volume structure.",
+    "",
+    `Exported: ${new Date().toISOString()}`,
+    `Active filters: ${chronologyFilterLabel()}`,
+    `Records: ${formatNumber(records.length)} of ${formatNumber(conversationRecords(data).length)}; pages: ${formatNumber(sumPages(records))}; direct PDFs: ${formatNumber(direct)}; extracted PDFs: ${formatNumber(extracted)}; annotation sheets: ${formatNumber(annotated)}.`,
+    "",
+    ...records.map(markdownRecordWorksheet)
+  ].join("\n");
+}
+
 async function copyTextToClipboard(text) {
   if (navigator.clipboard?.writeText && window.isSecureContext) {
     await navigator.clipboard.writeText(text);
@@ -1994,6 +2065,39 @@ function csvCell(value) {
   return `"${String(value ?? "").replace(/"/g, '""')}"`;
 }
 
+function downloadTextFile(filename, contents, type) {
+  const blob = new Blob([contents], { type });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  URL.revokeObjectURL(link.href);
+  link.remove();
+}
+
+function safeFilenameSegment(value = "") {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 48);
+}
+
+function chronologyExportStem() {
+  const parts = [
+    state.conversationScope,
+    state.conversationFocus,
+    state.conversationKind === "All" ? "" : state.conversationKind,
+    state.conversationYear === "All" ? "" : state.conversationYear,
+    state.conversationMonth === "All" ? "" : state.conversationMonth,
+    state.conversationSearch ? `search-${state.conversationSearch}` : ""
+  ]
+    .map(safeFilenameSegment)
+    .filter(Boolean);
+  return `balkans-93-95-${parts.join("-") || "chronology"}`;
+}
+
 function exportFilteredConversations(data) {
   const fields = [
     "date",
@@ -2032,14 +2136,15 @@ function exportFilteredConversations(data) {
     record.compilerUse
   ]);
   const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
-  const blob = new Blob([`${csv}\n`], { type: "text/csv;charset=utf-8" });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "balkans-93-95-filtered-declassified-documents.csv";
-  document.body.append(link);
-  link.click();
-  URL.revokeObjectURL(link.href);
-  link.remove();
+  downloadTextFile(`${chronologyExportStem()}-records.csv`, `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function exportFilteredWorksheetMarkdown(data) {
+  downloadTextFile(
+    `${chronologyExportStem()}-worksheets.md`,
+    `${filteredWorksheetMarkdown(data)}\n`,
+    "text/markdown;charset=utf-8"
+  );
 }
 
 function renderFilters(data) {
@@ -2159,6 +2264,10 @@ function bindSearch(data) {
 
   nodes.conversationExport.addEventListener("click", () => {
     exportFilteredConversations(data);
+  });
+
+  nodes.conversationMdExport.addEventListener("click", () => {
+    exportFilteredWorksheetMarkdown(data);
   });
 }
 

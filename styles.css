@@ -863,7 +863,7 @@ dd {
 
 .conversation-tools {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(260px, 0.8fr) minmax(150px, 0.28fr) minmax(120px, 0.22fr) auto auto;
+  grid-template-columns: minmax(260px, 1fr) minmax(260px, 0.8fr) minmax(150px, 0.28fr) minmax(120px, 0.22fr) minmax(260px, auto);
   gap: 18px;
   align-items: end;
   margin-bottom: 12px;
@@ -871,6 +871,13 @@ dd {
   background: rgba(255, 253, 248, 0.74);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.chronology-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .reset-button {
@@ -1324,6 +1331,10 @@ td:first-child {
   .conversation-tools,
   .chronology-drilldown {
     grid-template-columns: 1fr;
+  }
+
+  .chronology-actions {
+    justify-content: flex-start;
   }
 
   .coverage-row {
