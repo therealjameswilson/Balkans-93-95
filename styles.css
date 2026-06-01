@@ -444,7 +444,8 @@ dd {
 
 .frus-method-card,
 .readiness-panel,
-.source-note-panel {
+.source-note-panel,
+.source-note-queue-panel {
   min-width: 0;
   padding: 20px;
   background: var(--surface);
@@ -651,6 +652,49 @@ dd {
 .readiness-status.next,
 .readiness-status.gap {
   background: var(--red);
+}
+
+.source-note-queue-panel {
+  margin-top: 14px;
+}
+
+.source-note-queue-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.source-note-queue-header h3 {
+  margin-bottom: 4px;
+}
+
+.source-note-queue-header p,
+.queue-record-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
+.source-note-queue-wrap table {
+  min-width: 1120px;
+}
+
+.source-note-queue-wrap td:nth-child(3),
+.source-note-queue-wrap td:nth-child(4) {
+  overflow-wrap: anywhere;
+}
+
+.queue-record-title {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.queue-link-list {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
 }
 
 .source-grid,
@@ -1361,6 +1405,11 @@ td:first-child {
 
   .section-heading {
     align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .source-note-queue-header {
+    align-items: stretch;
     flex-direction: column;
   }
 

@@ -57,6 +57,7 @@ const nodes = {
   frusMethodRoot: document.querySelector("#frus-method-root"),
   readinessRoot: document.querySelector("#readiness-root"),
   sourceNoteRoot: document.querySelector("#source-note-root"),
+  sourceNoteQueueRoot: document.querySelector("#source-note-queue-root"),
   conversationRoot: document.querySelector("#conversation-root"),
   conversationSearch: document.querySelector("#conversation-search"),
   conversationScopeFilters: document.querySelector("#conversation-scope-filters"),
@@ -931,7 +932,7 @@ function readinessRow(label, status, count, detail) {
   return row;
 }
 
-function renderFrusMethod(data) {
+function renderFrusMethod(data, reports = {}) {
   const documents = conversationRecords(data);
   const conversations = conversationSubsetRecords(data);
   const direct = documents.filter(isDirectPdf);
@@ -973,6 +974,7 @@ function renderFrusMethod(data) {
 
   renderReadinessPanel(data);
   renderSourceNotePanel(data);
+  renderSourceNoteQueue(data, reports);
 }
 
 function renderReadinessPanel(data) {
@@ -1094,6 +1096,189 @@ function renderSourceNotePanel(data) {
   );
 
   nodes.sourceNoteRoot.replaceChildren(heading, list);
+}
+
+function hasUntranscribedSourceNote(record) {
+  return /not yet transcribed/i.test(record.sourceNote || sourceNoteDraft(record) || "");
+}
+
+function sourceNoteQueuePriority(record) {
+  const haystack = [record.kind, record.documentScope, record.sourceFamilyLabel, record.sourceSeries, record.title].join(" ");
+  if (isConversationRecord(record)) return { rank: 1, label: "Conversations" };
+  if (/NSC Summary|Principals|Deputies|PC\/DC|P\/DC|PCDC/i.test(haystack)) return { rank: 2, label: "PC/DC" };
+  if (/State FOIA|Cable|Dissent|Telegram|Department of State/i.test(haystack)) return { rank: 3, label: "State" };
+  if (/Intelligence|CIA|BTF|Balkan Task Force|Estimate/i.test(haystack)) return { rank: 4, label: "Intelligence" };
+  if (/Policy|Memorandum|Presidential Memo|Diplomatic Letter|Paper/i.test(haystack)) {
+    return { rank: 5, label: "Policy" };
+  }
+  return { rank: 6, label: "Other" };
+}
+
+function sourceNoteQueueAction(record) {
+  if (isConversationRecord(record)) {
+    return "Transcribe classification and handling markings; verify participants, place, exact time, notetaker, distribution, attachments, excisions, and any related call-log evidence.";
+  }
+  if (/State FOIA|Cable|Dissent|Telegram|Department of State/i.test([record.kind, record.sourceFamilyLabel, record.title].join(" "))) {
+    return "Transcribe classification, channel, cable number, TAGS/SUBJECT, from/to line, distribution, drafting or clearance, attachments, and deletion/excision counts.";
+  }
+  if (/Intelligence|CIA|BTF|Estimate/i.test([record.documentScope, record.sourceFamilyLabel, record.sourceSeries, record.kind].join(" "))) {
+    return "Transcribe classification and handling controls; verify product office, distribution, attachments, excisions, and whether the item duplicates another release.";
+  }
+  return "Transcribe classification and handling markings; verify drafting, clearance, distribution, annotations, attachments, excisions, and source-page accounting.";
+}
+
+function stableChronologyRecordUrl(record) {
+  const url = new URL(window.location.href);
+  const params = new URLSearchParams();
+  if (isPublicPaperRecord(record)) params.set("scope", "Public Papers");
+  url.search = params.toString();
+  url.hash = `record-${record.id}`;
+  return url.toString();
+}
+
+function sourceNoteQueueRecords(data) {
+  return conversationRecords(data)
+    .filter((record) => record.documentScope !== "Public statement")
+    .filter(hasUntranscribedSourceNote)
+    .sort((a, b) => {
+      const priorityA = sourceNoteQueuePriority(a);
+      const priorityB = sourceNoteQueuePriority(b);
+      return (
+        priorityA.rank - priorityB.rank ||
+        String(a.sortDate || "").localeCompare(String(b.sortDate || "")) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function exportSourceNoteQueue(data) {
+  const fields = [
+    "priority",
+    "date",
+    "kind",
+    "title",
+    "identifier",
+    "collection",
+    "sourceFamily",
+    "pageCount",
+    "sourcePdfPages",
+    "reviewPdf",
+    "recordLink",
+    "sourceNoteDraft",
+    "compilerCheck"
+  ];
+  const rows = sourceNoteQueueRecords(data).map((record) => [
+    sourceNoteQueuePriority(record).label,
+    record.date,
+    record.kind,
+    record.title,
+    record.identifier,
+    record.collection,
+    record.sourceFamilyLabel || record.sourceFamily,
+    record.pageCount,
+    record.sourcePdfPages,
+    record.pdfUrl,
+    stableChronologyRecordUrl(record),
+    sourceNoteDraft(record),
+    sourceNoteQueueAction(record)
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-source-note-finalization-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function sourceNoteQueueLinks(record) {
+  const links = document.createElement("div");
+  links.className = "queue-link-list";
+
+  for (const [label, url] of [
+    ["Open record", stableChronologyRecordUrl(record)],
+    ["Review PDF", record.pdfUrl],
+    ["Source packet", distinctSourcePacketUrl(record)]
+  ]) {
+    if (!url) continue;
+    const link = document.createElement("a");
+    link.className = "source-link";
+    link.href = url;
+    link.rel = "noreferrer";
+    link.textContent = label;
+    links.append(link);
+  }
+
+  return links;
+}
+
+function renderSourceNoteQueue(data, reports = {}) {
+  if (!nodes.sourceNoteQueueRoot) return;
+  const records = sourceNoteQueueRecords(data);
+  const auditTotal = reports.sourceNoteAudit?.summary?.classificationOrHandlingNotTranscribed ?? records.length;
+  const byPriority = groupCounts(records, (record) => sourceNoteQueuePriority(record).label)
+    .map((item) => `${item.label}: ${formatNumber(item.count)}`)
+    .join(" / ");
+
+  const header = document.createElement("div");
+  header.className = "source-note-queue-header";
+  const copy = document.createElement("div");
+  const heading = document.createElement("h3");
+  heading.textContent = "Source-Note Finalization Queue";
+  const summary = document.createElement("p");
+  summary.textContent = `${formatNumber(records.length)} chronology records still require classification/handling transcription before final FRUS source-note clearance. ${auditTotal !== records.length ? `The audit report counts ${formatNumber(auditTotal)} chronology/conversation rows including cross-reference rows. ` : ""}${byPriority}`;
+  copy.append(heading, summary);
+
+  const exportButton = document.createElement("button");
+  exportButton.type = "button";
+  exportButton.className = "reset-button export-button";
+  exportButton.textContent = "Export Queue CSV";
+  exportButton.addEventListener("click", () => exportSourceNoteQueue(data));
+  header.append(copy, exportButton);
+
+  const tableWrap = document.createElement("div");
+  tableWrap.className = "table-wrap source-note-queue-wrap";
+  const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  thead.innerHTML = `
+    <tr>
+      <th scope="col">Priority</th>
+      <th scope="col">Date</th>
+      <th scope="col">Record</th>
+      <th scope="col">Source-note work</th>
+      <th scope="col">Links</th>
+    </tr>
+  `;
+  const tbody = document.createElement("tbody");
+
+  for (const record of records) {
+    const priority = sourceNoteQueuePriority(record);
+    const row = document.createElement("tr");
+
+    const priorityCell = document.createElement("td");
+    priorityCell.textContent = priority.label;
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || "Date pending";
+
+    const recordCell = document.createElement("td");
+    const title = document.createElement("a");
+    title.href = stableChronologyRecordUrl(record);
+    title.textContent = record.title;
+    title.className = "queue-record-title";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [record.kind, record.identifier, record.collection, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    recordCell.append(title, meta);
+
+    const actionCell = document.createElement("td");
+    actionCell.textContent = sourceNoteQueueAction(record);
+
+    const linkCell = document.createElement("td");
+    linkCell.append(sourceNoteQueueLinks(record));
+
+    row.append(priorityCell, dateCell, recordCell, actionCell, linkCell);
+    tbody.append(row);
+  }
+
+  table.append(thead, tbody);
+  tableWrap.append(table);
+  nodes.sourceNoteQueueRoot.replaceChildren(header, tableWrap);
 }
 
 function researchFiles(report = {}) {
@@ -2494,7 +2679,7 @@ async function init() {
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);
     renderClintonLibraryVisit(reports.libraryVisit);
-    renderFrusMethod(data);
+    renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
     renderConversationFilters(data);
     renderConversations(data);
