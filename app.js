@@ -66,6 +66,7 @@ const nodes = {
   conversationMonth: document.querySelector("#conversation-month"),
   chronologyIndexRoot: document.querySelector("#chronology-index-root"),
   conversationReset: document.querySelector("#conversation-reset"),
+  conversationViewLink: document.querySelector("#conversation-view-link"),
   conversationExport: document.querySelector("#conversation-export"),
   conversationMdExport: document.querySelector("#conversation-md-export"),
   conversationSummary: document.querySelector("#conversation-summary"),
@@ -375,7 +376,7 @@ function renderStats(data) {
   nodes.totalConversations.textContent = documents.length.toString();
   nodes.totalPages.textContent = sumPages(documents).toString();
   nodes.totalSourceRanges.textContent = documents.filter((record) => record.sourcePdfPages).length.toString();
-  nodes.status.textContent = data.volume.status;
+  if (nodes.status) nodes.status.textContent = data.volume.status;
 }
 
 function auditCard(title, value, detail, meta) {
@@ -1520,6 +1521,39 @@ function distinctSourcePacketUrl(record) {
   return record.sourcePdfUrl;
 }
 
+const DEFAULT_CHRONOLOGY_STATE = {
+  scope: "Declassified",
+  focus: "All",
+  kind: "All",
+  year: "All",
+  month: "All",
+  search: ""
+};
+
+function chronologySearchParams() {
+  const params = new URLSearchParams();
+  if (state.conversationScope !== DEFAULT_CHRONOLOGY_STATE.scope) params.set("scope", state.conversationScope);
+  if (state.conversationFocus !== DEFAULT_CHRONOLOGY_STATE.focus) params.set("focus", state.conversationFocus);
+  if (state.conversationKind !== DEFAULT_CHRONOLOGY_STATE.kind) params.set("form", state.conversationKind);
+  if (state.conversationYear !== DEFAULT_CHRONOLOGY_STATE.year) params.set("year", state.conversationYear);
+  if (state.conversationMonth !== DEFAULT_CHRONOLOGY_STATE.month) params.set("month", state.conversationMonth);
+  if (state.conversationSearch !== DEFAULT_CHRONOLOGY_STATE.search) params.set("q", state.conversationSearch);
+  return params;
+}
+
+function chronologyUrl(record = null) {
+  const url = new URL(window.location.href);
+  const params = chronologySearchParams();
+  url.search = params.toString();
+  url.hash = record?.id ? `record-${record.id}` : "conversations";
+  return url.toString();
+}
+
+function updateChronologyUrl() {
+  if (!window.history?.replaceState) return;
+  window.history.replaceState(null, "", chronologyUrl());
+}
+
 function compilerWorksheetText(record) {
   return [
     `${record.date} | ${record.kind} | ${record.title}`,
@@ -1539,6 +1573,7 @@ function compilerWorksheetText(record) {
     citationOpenItems(record),
     "",
     "Links:",
+    record.id ? `Workspace record link: ${chronologyUrl(record)}` : "",
     record.pdfUrl ? `Review PDF: ${record.pdfUrl}` : "",
     distinctSourcePacketUrl(record) ? `Original source packet PDF: ${distinctSourcePacketUrl(record)}` : "",
     record.url ? `Record locator: ${record.url}` : ""
@@ -1591,6 +1626,7 @@ function markdownRecordWorksheet(record, index) {
     "",
     "### Links",
     "",
+    record.id ? `- Workspace record link: ${chronologyUrl(record)}` : "",
     record.pdfUrl ? `- Review PDF: ${record.pdfUrl}` : "",
     distinctSourcePacketUrl(record) ? `- Original source packet PDF: ${distinctSourcePacketUrl(record)}` : "",
     record.url ? `- Record locator: ${record.url}` : ""
@@ -1678,6 +1714,7 @@ function createConversationLinks(record) {
   }
 
   links.append(createCopyButton("Copy worksheet", "Worksheet copied", () => compilerWorksheetText(record)));
+  links.append(createCopyButton("Copy record link", "Record link copied", () => chronologyUrl(record)));
   return links;
 }
 
@@ -1760,6 +1797,8 @@ function isConversationRecord(record) {
   return ["Memcon", "Telcon"].includes(record.kind) || /conversation/i.test(record.documentScope || "");
 }
 
+const CONVERSATION_SCOPES = ["Declassified", "All", "Presidential conversations", "Public Papers"];
+
 function matchesConversationScope(record) {
   if (state.conversationScope === "All") return true;
   if (state.conversationScope === "Public Papers") return isPublicPaperRecord(record);
@@ -1795,6 +1834,32 @@ const CONVERSATION_FOCUS_OPTIONS = [
   { value: "Extracted PDFs", label: "Extracted packet PDFs", match: isExtractedDocument },
   { value: "Inferred dates", label: "Inferred-date records", match: isInferredDateRecord }
 ];
+
+function applyChronologyUrlState(data) {
+  const params = new URLSearchParams(window.location.search);
+  const documents = conversationRecords(data);
+  const scope = params.get("scope");
+  const focus = params.get("focus");
+  const form = params.get("form");
+  const year = params.get("year");
+  const month = params.get("month");
+  const search = params.get("q");
+
+  if (CONVERSATION_SCOPES.includes(scope)) state.conversationScope = scope;
+  if (CONVERSATION_FOCUS_OPTIONS.some((option) => option.value === focus)) state.conversationFocus = focus;
+  if (form === "All" || documents.some((record) => record.kind === form)) state.conversationKind = form;
+  if (year === "All" || documents.some((record) => conversationYear(record) === year)) state.conversationYear = year;
+  if (month === "All" || documents.some((record) => conversationMonth(record) === month)) state.conversationMonth = month;
+  if (search !== null) state.conversationSearch = search.trim();
+
+  const hashId = window.location.hash.startsWith("#record-") ? window.location.hash.slice("#record-".length) : "";
+  const hashRecord = documents.find((record) => record.id === hashId);
+  if (hashRecord && !params.has("scope")) {
+    state.conversationScope = isPublicPaperRecord(hashRecord) ? "Public Papers" : "Declassified";
+  }
+
+  nodes.conversationSearch.value = state.conversationSearch;
+}
 
 function conversationFocusOption(value) {
   return CONVERSATION_FOCUS_OPTIONS.find((option) => option.value === value) || CONVERSATION_FOCUS_OPTIONS[0];
@@ -1846,7 +1911,7 @@ function renderSelect(root, options, activeValue, onSelect) {
 
 function renderConversationFilters(data) {
   const conversations = conversationRecords(data);
-  const scopes = ["Declassified", "All", "Presidential conversations", "Public Papers"];
+  const scopes = CONVERSATION_SCOPES;
   const scopeRecords = conversations.filter(matchesConversationScope);
   const focusOptions = CONVERSATION_FOCUS_OPTIONS.filter(
     (option) => option.value === "All" || scopeRecords.some((record) => option.match(record))
@@ -1874,35 +1939,30 @@ function renderConversationFilters(data) {
     state.conversationScope = value;
     state.conversationFocus = "All";
     state.conversationMonth = "All";
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
   });
 
   renderSelect(nodes.conversationFocus, focusOptions, state.conversationFocus, (value) => {
     state.conversationFocus = value;
     state.conversationMonth = "All";
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
   });
 
   renderSelect(nodes.conversationKind, kinds, state.conversationKind, (value) => {
     state.conversationKind = value;
     state.conversationMonth = "All";
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
   });
 
   renderSelect(nodes.conversationYear, years, state.conversationYear, (value) => {
     state.conversationYear = value;
     state.conversationMonth = "All";
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
   });
 
   renderSelect(nodes.conversationMonth, months, state.conversationMonth, (value) => {
     state.conversationMonth = value;
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
   });
 }
 
@@ -1945,8 +2005,7 @@ function renderChronologyIndex(data) {
     all.setAttribute("aria-pressed", state.conversationMonth === "All" ? "true" : "false");
     all.addEventListener("click", () => {
       state.conversationMonth = "All";
-      renderConversationFilters(data);
-      renderConversations(data);
+      refreshChronology(data);
     });
     chips.append(all);
 
@@ -1957,8 +2016,7 @@ function renderChronologyIndex(data) {
       button.textContent = `${monthLabel(item.label)} | ${formatNumber(item.count)} / ${formatNumber(item.pages)} pp.`;
       button.addEventListener("click", () => {
         state.conversationMonth = item.label;
-        renderConversationFilters(data);
-        renderConversations(data);
+        refreshChronology(data);
       });
       chips.append(button);
     }
@@ -1992,6 +2050,7 @@ function renderConversations(data) {
   for (const record of records) {
     const card = document.createElement("article");
     card.className = "conversation-card";
+    card.id = `record-${record.id}`;
 
     const date = document.createElement("time");
     date.className = "conversation-date";
@@ -2059,6 +2118,23 @@ function renderConversations(data) {
     card.append(date, body, createConversationLinks(record));
     nodes.conversationRoot.append(card);
   }
+}
+
+function scrollToRecordHash() {
+  if (!window.location.hash.startsWith("#record-")) return;
+  const target = document.getElementById(window.location.hash.slice(1));
+  if (!target) return;
+  window.setTimeout(() => {
+    target.scrollIntoView({ block: "start" });
+    target.classList.add("target-record");
+    window.setTimeout(() => target.classList.remove("target-record"), 2400);
+  }, 100);
+}
+
+function refreshChronology(data, syncUrl = true) {
+  renderConversationFilters(data);
+  renderConversations(data);
+  if (syncUrl) updateChronologyUrl();
 }
 
 function csvCell(value) {
@@ -2248,6 +2324,7 @@ function bindSearch(data) {
   nodes.conversationSearch.addEventListener("input", (event) => {
     state.conversationSearch = event.target.value.trim();
     renderConversations(data);
+    updateChronologyUrl();
   });
 
   nodes.conversationReset.addEventListener("click", () => {
@@ -2258,8 +2335,24 @@ function bindSearch(data) {
     state.conversationMonth = "All";
     state.conversationSearch = "";
     nodes.conversationSearch.value = "";
-    renderConversationFilters(data);
-    renderConversations(data);
+    refreshChronology(data);
+  });
+
+  nodes.conversationViewLink.addEventListener("click", async () => {
+    const original = nodes.conversationViewLink.textContent;
+    try {
+      await copyTextToClipboard(chronologyUrl());
+      nodes.conversationViewLink.textContent = "Link copied";
+      nodes.conversationViewLink.classList.add("copied");
+    } catch {
+      nodes.conversationViewLink.textContent = "Copy failed";
+      nodes.conversationViewLink.classList.add("copy-failed");
+    } finally {
+      window.setTimeout(() => {
+        nodes.conversationViewLink.textContent = original;
+        nodes.conversationViewLink.classList.remove("copied", "copy-failed");
+      }, 2200);
+    }
   });
 
   nodes.conversationExport.addEventListener("click", () => {
@@ -2396,6 +2489,7 @@ async function init() {
       reports.btfDocuments,
       reports.presidentialDailyDiary
     );
+    applyChronologyUrlState(data);
     renderStats(data);
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);
@@ -2404,6 +2498,7 @@ async function init() {
     renderResearchCollections(researchReport);
     renderConversationFilters(data);
     renderConversations(data);
+    scrollToRecordHash();
     renderFilters(data);
     renderSources(data);
     renderQueue(data);

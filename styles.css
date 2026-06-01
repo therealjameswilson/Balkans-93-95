@@ -899,6 +899,18 @@ dd {
   outline: none;
 }
 
+.reset-button.copied {
+  color: white;
+  background: var(--olive);
+  border-color: var(--olive);
+}
+
+.reset-button.copy-failed {
+  color: white;
+  background: var(--red);
+  border-color: var(--red);
+}
+
 .export-button {
   color: white;
   background: var(--teal);
@@ -1001,6 +1013,7 @@ dd {
 }
 
 .conversation-card {
+  scroll-margin-top: 96px;
   display: grid;
   grid-template-columns: 142px minmax(0, 1fr) auto;
   gap: 18px;
@@ -1010,6 +1023,11 @@ dd {
   border: 1px solid var(--line);
   border-left: 5px solid var(--red);
   border-radius: 8px;
+}
+
+.conversation-card.target-record {
+  outline: 3px solid rgba(184, 135, 49, 0.68);
+  outline-offset: 3px;
 }
 
 .conversation-date {
