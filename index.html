@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-scope2" />
+    <link rel="stylesheet" href="styles.css?v=20260601-drilldown1" />
   </head>
   <body>
     <header class="site-header">
@@ -99,16 +99,27 @@
             <p class="tool-label">Scope</p>
             <div id="conversation-scope-filters" class="filter-row compact" aria-label="Document scope filters"></div>
           </div>
-          <div>
-            <p class="tool-label">Form</p>
-            <div id="conversation-kind-filters" class="filter-row compact" aria-label="Document form filters"></div>
-          </div>
-          <div>
-            <p class="tool-label">Year</p>
-            <div id="conversation-year-filters" class="filter-row compact" aria-label="Document year filters"></div>
-          </div>
+          <label class="select-field">
+            <span>Form</span>
+            <select id="conversation-kind"></select>
+          </label>
+          <label class="select-field">
+            <span>Year</span>
+            <select id="conversation-year"></select>
+          </label>
           <button id="conversation-reset" class="reset-button" type="button">Reset</button>
           <button id="conversation-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <div class="chronology-drilldown" aria-label="Chronology drilldown">
+          <label class="select-field">
+            <span>Focus</span>
+            <select id="conversation-focus"></select>
+          </label>
+          <label class="select-field">
+            <span>Month</span>
+            <select id="conversation-month"></select>
+          </label>
+          <div id="chronology-index-root" class="chronology-index" aria-live="polite"></div>
         </div>
         <p id="conversation-summary" class="result-summary" aria-live="polite"></p>
         <div id="conversation-root" class="conversation-list" aria-live="polite"></div>
@@ -392,7 +403,7 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-scope2"></script>
-    <script src="app.js?v=20260601-scope2"></script>
+    <script src="data/compiler-map.js?v=20260601-drilldown1"></script>
+    <script src="app.js?v=20260601-drilldown1"></script>
   </body>
 </html>

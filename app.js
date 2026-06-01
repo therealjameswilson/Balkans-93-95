@@ -21,8 +21,10 @@ const state = {
   filter: "All",
   search: "",
   conversationScope: "Declassified",
+  conversationFocus: "All",
   conversationKind: "All",
   conversationYear: "All",
+  conversationMonth: "All",
   conversationSearch: "",
   researchRelationship: "All",
   researchSearch: "",
@@ -58,8 +60,11 @@ const nodes = {
   conversationRoot: document.querySelector("#conversation-root"),
   conversationSearch: document.querySelector("#conversation-search"),
   conversationScopeFilters: document.querySelector("#conversation-scope-filters"),
-  conversationKindFilters: document.querySelector("#conversation-kind-filters"),
-  conversationYearFilters: document.querySelector("#conversation-year-filters"),
+  conversationFocus: document.querySelector("#conversation-focus"),
+  conversationKind: document.querySelector("#conversation-kind"),
+  conversationYear: document.querySelector("#conversation-year"),
+  conversationMonth: document.querySelector("#conversation-month"),
+  chronologyIndexRoot: document.querySelector("#chronology-index-root"),
   conversationReset: document.querySelector("#conversation-reset"),
   conversationExport: document.querySelector("#conversation-export"),
   conversationSummary: document.querySelector("#conversation-summary"),
@@ -1586,6 +1591,20 @@ function conversationYear(record) {
   return (record.sortDate || "").slice(0, 4);
 }
 
+function conversationMonth(record) {
+  return (record.sortDate || "").slice(0, 7);
+}
+
+const MONTH_NAMES = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+
+function monthLabel(value) {
+  if (value === "All") return "All months";
+  const [year, month] = String(value).split("-");
+  const monthIndex = Number(month) - 1;
+  if (!year || monthIndex < 0 || monthIndex > 11) return value || "Unsorted";
+  return `${MONTH_NAMES[monthIndex]} ${year}`;
+}
+
 function isPublicPaperRecord(record) {
   return record.documentScope === "Public statement";
 }
@@ -1601,11 +1620,50 @@ function matchesConversationScope(record) {
   return !isPublicPaperRecord(record);
 }
 
+function isPcDcRecord(record) {
+  const haystack = [record.kind, record.title, record.collection, record.compilerUse, ...(record.tags || [])].join(" ");
+  return /NSC|Principals|Deputies|Summary of Conclusions|PC\/DC|P\/DC|PCDC/i.test(haystack);
+}
+
+function isIntelligenceRecord(record) {
+  const haystack = [record.documentScope, record.kind, record.title, record.collection, ...(record.tags || [])].join(" ");
+  return /Intelligence|CIA|NIC|NIE|Estimate|Office of European Analysis|Office of Slavic/i.test(haystack);
+}
+
+function isStateFoiaRecord(record) {
+  const haystack = [record.kind, record.repository, record.collection, record.identifier, record.title].join(" ");
+  return /State FOIA|FOIA Virtual Reading Room|Cable|Dissent Channel/i.test(haystack);
+}
+
+function isInferredDateRecord(record) {
+  return record.dateCertainty === "inferred" || Boolean(record.dateBasis) || /inferred/i.test(record.date || "");
+}
+
+const CONVERSATION_FOCUS_OPTIONS = [
+  { value: "All", label: "All records in scope", match: () => true },
+  { value: "Conversations", label: "Memcons and telcons", match: isConversationRecord },
+  { value: "NSC / PC-DC", label: "NSC / PC-DC records", match: isPcDcRecord },
+  { value: "Intelligence", label: "Intelligence records", match: isIntelligenceRecord },
+  { value: "State FOIA / cables", label: "State FOIA / cables", match: isStateFoiaRecord },
+  { value: "Extracted PDFs", label: "Extracted packet PDFs", match: isExtractedDocument },
+  { value: "Inferred dates", label: "Inferred-date records", match: isInferredDateRecord }
+];
+
+function conversationFocusOption(value) {
+  return CONVERSATION_FOCUS_OPTIONS.find((option) => option.value === value) || CONVERSATION_FOCUS_OPTIONS[0];
+}
+
+function matchesConversationFocus(record) {
+  return conversationFocusOption(state.conversationFocus).match(record);
+}
+
 function filteredConversations(data) {
   return conversationRecords(data)
     .filter(matchesConversationScope)
+    .filter(matchesConversationFocus)
     .filter((record) => state.conversationKind === "All" || record.kind === state.conversationKind)
     .filter((record) => state.conversationYear === "All" || conversationYear(record) === state.conversationYear)
+    .filter((record) => state.conversationMonth === "All" || conversationMonth(record) === state.conversationMonth)
     .filter(conversationTextMatch)
     .sort(byDateThenType);
 }
@@ -1623,29 +1681,143 @@ function renderButtonGroup(root, values, activeValue, onSelect) {
   }
 }
 
+function renderSelect(root, options, activeValue, onSelect) {
+  root.replaceChildren();
+
+  for (const option of options) {
+    const value = typeof option === "string" ? option : option.value;
+    const label = typeof option === "string" ? option : option.label;
+    const item = document.createElement("option");
+    item.value = value;
+    item.textContent = label;
+    item.selected = value === activeValue;
+    root.append(item);
+  }
+
+  root.onchange = (event) => onSelect(event.target.value);
+}
+
 function renderConversationFilters(data) {
   const conversations = conversationRecords(data);
   const scopes = ["Declassified", "All", "Presidential conversations", "Public Papers"];
-  const kinds = ["All", ...new Set(conversations.map((record) => record.kind).sort())];
-  const years = ["All", ...new Set(conversations.map(conversationYear).filter(Boolean).sort())];
+  const scopeRecords = conversations.filter(matchesConversationScope);
+  const focusOptions = CONVERSATION_FOCUS_OPTIONS.filter(
+    (option) => option.value === "All" || scopeRecords.some((record) => option.match(record))
+  );
+  if (!focusOptions.some((option) => option.value === state.conversationFocus)) state.conversationFocus = "All";
+
+  const focusRecords = scopeRecords.filter(matchesConversationFocus);
+  const kinds = ["All", ...new Set(focusRecords.map((record) => record.kind).sort())];
+  if (!kinds.includes(state.conversationKind)) state.conversationKind = "All";
+
+  const kindRecords = focusRecords.filter(
+    (record) => state.conversationKind === "All" || record.kind === state.conversationKind
+  );
+  const years = ["All", ...new Set(kindRecords.map(conversationYear).filter(Boolean).sort())];
+  if (!years.includes(state.conversationYear)) state.conversationYear = "All";
+
+  const yearRecords = kindRecords.filter(
+    (record) => state.conversationYear === "All" || conversationYear(record) === state.conversationYear
+  );
+  const monthValues = ["All", ...new Set(yearRecords.map(conversationMonth).filter(Boolean).sort())];
+  if (!monthValues.includes(state.conversationMonth)) state.conversationMonth = "All";
+  const months = monthValues.map((value) => ({ value, label: monthLabel(value) }));
 
   renderButtonGroup(nodes.conversationScopeFilters, scopes, state.conversationScope, (value) => {
     state.conversationScope = value;
+    state.conversationFocus = "All";
+    state.conversationMonth = "All";
     renderConversationFilters(data);
     renderConversations(data);
   });
 
-  renderButtonGroup(nodes.conversationKindFilters, kinds, state.conversationKind, (value) => {
+  renderSelect(nodes.conversationFocus, focusOptions, state.conversationFocus, (value) => {
+    state.conversationFocus = value;
+    state.conversationMonth = "All";
+    renderConversationFilters(data);
+    renderConversations(data);
+  });
+
+  renderSelect(nodes.conversationKind, kinds, state.conversationKind, (value) => {
     state.conversationKind = value;
+    state.conversationMonth = "All";
     renderConversationFilters(data);
     renderConversations(data);
   });
 
-  renderButtonGroup(nodes.conversationYearFilters, years, state.conversationYear, (value) => {
+  renderSelect(nodes.conversationYear, years, state.conversationYear, (value) => {
     state.conversationYear = value;
+    state.conversationMonth = "All";
     renderConversationFilters(data);
     renderConversations(data);
   });
+
+  renderSelect(nodes.conversationMonth, months, state.conversationMonth, (value) => {
+    state.conversationMonth = value;
+    renderConversationFilters(data);
+    renderConversations(data);
+  });
+}
+
+function chronologyIndexRecords(data) {
+  return conversationRecords(data)
+    .filter(matchesConversationScope)
+    .filter(matchesConversationFocus)
+    .filter((record) => state.conversationKind === "All" || record.kind === state.conversationKind)
+    .filter((record) => state.conversationYear === "All" || conversationYear(record) === state.conversationYear)
+    .filter(conversationTextMatch)
+    .sort(byDateThenType);
+}
+
+function renderChronologyIndex(data) {
+  const records = chronologyIndexRecords(data);
+  const months = groupCounts(records, conversationMonth)
+    .filter((item) => item.label)
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  const heading = document.createElement("div");
+  heading.className = "chronology-index-heading";
+  const title = document.createElement("strong");
+  title.textContent = "Month index";
+  const note = document.createElement("span");
+  note.textContent = `${formatNumber(records.length)} records before month drilldown.`;
+  heading.append(title, note);
+
+  const chips = document.createElement("div");
+  chips.className = "chronology-month-list";
+
+  if (!months.length) {
+    const empty = document.createElement("span");
+    empty.className = "chronology-empty";
+    empty.textContent = "No dated records for the current filters.";
+    chips.append(empty);
+  } else {
+    const all = document.createElement("button");
+    all.type = "button";
+    all.textContent = "All months";
+    all.setAttribute("aria-pressed", state.conversationMonth === "All" ? "true" : "false");
+    all.addEventListener("click", () => {
+      state.conversationMonth = "All";
+      renderConversationFilters(data);
+      renderConversations(data);
+    });
+    chips.append(all);
+
+    for (const item of months) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.setAttribute("aria-pressed", state.conversationMonth === item.label ? "true" : "false");
+      button.textContent = `${monthLabel(item.label)} | ${formatNumber(item.count)} / ${formatNumber(item.pages)} pp.`;
+      button.addEventListener("click", () => {
+        state.conversationMonth = item.label;
+        renderConversationFilters(data);
+        renderConversations(data);
+      });
+      chips.append(button);
+    }
+  }
+
+  nodes.chronologyIndexRoot.replaceChildren(heading, chips);
 }
 
 function renderConversations(data) {
@@ -1660,6 +1832,7 @@ function renderConversations(data) {
   )} records, ${formatNumber(sumPages(records))} pages, ${formatNumber(direct)} direct PDFs, ${formatNumber(
     extracted
   )} extracted PDFs, ${formatNumber(annotated)} with annotation sheets.`;
+  renderChronologyIndex(data);
 
   if (!records.length) {
     const empty = document.createElement("p");
@@ -1898,8 +2071,10 @@ function bindSearch(data) {
 
   nodes.conversationReset.addEventListener("click", () => {
     state.conversationScope = "Declassified";
+    state.conversationFocus = "All";
     state.conversationKind = "All";
     state.conversationYear = "All";
+    state.conversationMonth = "All";
     state.conversationSearch = "";
     nodes.conversationSearch.value = "";
     renderConversationFilters(data);

@@ -521,6 +521,7 @@ dd {
 }
 
 .research-file-card {
+  min-width: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
@@ -534,6 +535,10 @@ dd {
 
 .research-file-card h3 {
   overflow-wrap: anywhere;
+}
+
+.research-file-card > * {
+  min-width: 0;
 }
 
 .research-links {
@@ -776,6 +781,29 @@ dd {
   text-transform: none;
 }
 
+.select-field {
+  display: grid;
+  gap: 6px;
+  min-width: 180px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.select-field select {
+  min-height: 42px;
+  width: 100%;
+  padding: 0 36px 0 12px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.95rem;
+  text-transform: none;
+}
+
 .filter-row {
   display: flex;
   flex-wrap: wrap;
@@ -808,7 +836,7 @@ dd {
 
 .conversation-tools {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) repeat(3, minmax(150px, max-content)) auto auto;
+  grid-template-columns: minmax(260px, 1fr) minmax(260px, 0.8fr) minmax(150px, 0.28fr) minmax(120px, 0.22fr) auto auto;
   gap: 18px;
   align-items: end;
   margin-bottom: 12px;
@@ -841,6 +869,72 @@ dd {
   color: white;
   background: var(--teal);
   border-color: var(--teal);
+}
+
+.chronology-drilldown {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.35fr) minmax(170px, 0.25fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  margin-bottom: 12px;
+  padding: 16px;
+  background: rgba(255, 253, 248, 0.68);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.chronology-index {
+  min-width: 0;
+}
+
+.chronology-index-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.chronology-index-heading strong {
+  color: var(--navy);
+  text-transform: uppercase;
+}
+
+.chronology-month-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 112px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.chronology-month-list button {
+  min-height: 31px;
+  padding: 0 8px;
+  color: var(--navy);
+  background: rgba(255, 253, 248, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 820;
+  cursor: pointer;
+}
+
+.chronology-month-list button[aria-pressed="true"] {
+  color: white;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.chronology-empty {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 780;
 }
 
 .tool-label {
@@ -918,6 +1012,7 @@ dd {
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.48;
+  overflow-wrap: anywhere;
 }
 
 .source-note-details {
@@ -1194,13 +1289,14 @@ td:first-child {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-	  .evidence-layout,
-	  .readiness-layout,
-	  .research-overview-layout,
-	  .library-overview-layout,
-	  .gap-followup-layout,
-	  .conversation-tools {
-	    grid-template-columns: 1fr;
+  .evidence-layout,
+  .readiness-layout,
+  .research-overview-layout,
+  .library-overview-layout,
+  .gap-followup-layout,
+  .conversation-tools,
+  .chronology-drilldown {
+    grid-template-columns: 1fr;
   }
 
   .coverage-row {
@@ -1317,6 +1413,10 @@ td:first-child {
   table {
     min-width: 0;
     table-layout: fixed;
+  }
+
+  .library-table-wrap table {
+    min-width: 0;
   }
 
   th,
