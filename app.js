@@ -1514,12 +1514,87 @@ function pageLabel(pageCount) {
   return pageCount === 1 ? "1 page" : `${pageCount} pages`;
 }
 
+function distinctSourcePacketUrl(record) {
+  if (!record.sourcePdfUrl || record.sourcePdfUrl === record.pdfUrl) return "";
+  return record.sourcePdfUrl;
+}
+
+function compilerWorksheetText(record) {
+  return [
+    `${record.date} | ${record.kind} | ${record.title}`,
+    record.counterpart ? `Counterpart: ${record.counterpart}` : "",
+    `Scope: ${record.documentScope || "Unscoped"}`,
+    `Identifier: ${normalizedIdentifier(record.identifier)}`,
+    `Collection: ${record.collection}`,
+    `Repository: ${repositoryLabel(record)}`,
+    `Pages: ${pageLabel(record.pageCount)}; source PDF pp. ${record.sourcePdfPages || "pending"}; ${localExtractLabel(record)}`,
+    record.dateBasis ? `Chronology note: ${record.dateBasis}` : "",
+    record.annotationSheet ? `Annotation sheet: ${record.annotationSheet}` : "",
+    "",
+    "FRUS-style source note draft:",
+    sourceNoteDraft(record),
+    "",
+    "Citation verification worklist:",
+    citationOpenItems(record),
+    "",
+    "Links:",
+    record.pdfUrl ? `Review PDF: ${record.pdfUrl}` : "",
+    distinctSourcePacketUrl(record) ? `Original source packet PDF: ${distinctSourcePacketUrl(record)}` : "",
+    record.url ? `Record locator: ${record.url}` : ""
+  ]
+    .filter((line) => line !== "")
+    .join("\n");
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.top = "-999px";
+  document.body.append(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  if (!copied) throw new Error("Unable to copy text");
+}
+
+function createCopyButton(label, copiedLabel, textForCopy) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "source-action";
+  button.textContent = label;
+  button.addEventListener("click", async () => {
+    const original = button.textContent;
+    try {
+      await copyTextToClipboard(textForCopy());
+      button.textContent = copiedLabel;
+      button.classList.add("copied");
+    } catch {
+      button.textContent = "Copy failed";
+      button.classList.add("copy-failed");
+    } finally {
+      window.setTimeout(() => {
+        button.textContent = original;
+        button.classList.remove("copied", "copy-failed");
+      }, 2200);
+    }
+  });
+  return button;
+}
+
 function createConversationLinks(record) {
   const links = document.createElement("div");
   links.className = "conversation-links";
 
   for (const [label, url] of [
-    ["Open PDF", record.pdfUrl],
+    [isExtractedDocument(record) ? "Open review PDF" : "Open PDF", record.pdfUrl],
+    ["Open source packet", distinctSourcePacketUrl(record)],
     ["Open record", record.url]
   ]) {
     if (!url) continue;
@@ -1531,6 +1606,7 @@ function createConversationLinks(record) {
     links.append(link);
   }
 
+  links.append(createCopyButton("Copy worksheet", "Worksheet copied", () => compilerWorksheetText(record)));
   return links;
 }
 
