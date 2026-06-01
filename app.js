@@ -20,6 +20,7 @@ const REPORT_URLS = {
 const state = {
   filter: "All",
   search: "",
+  conversationScope: "Declassified",
   conversationKind: "All",
   conversationYear: "All",
   conversationSearch: "",
@@ -56,6 +57,7 @@ const nodes = {
   sourceNoteRoot: document.querySelector("#source-note-root"),
   conversationRoot: document.querySelector("#conversation-root"),
   conversationSearch: document.querySelector("#conversation-search"),
+  conversationScopeFilters: document.querySelector("#conversation-scope-filters"),
   conversationKindFilters: document.querySelector("#conversation-kind-filters"),
   conversationYearFilters: document.querySelector("#conversation-year-filters"),
   conversationReset: document.querySelector("#conversation-reset"),
@@ -80,11 +82,14 @@ const nodes = {
 function textMatch(source) {
   const haystack = [
     source.title,
+    source.label,
     source.identifier,
     source.institution,
     source.description,
     source.compilerUse,
     source.type,
+    source.status,
+    source.scope,
     ...(source.tags || [])
   ]
     .join(" ")
@@ -95,11 +100,19 @@ function textMatch(source) {
 
 function byPriority(a, b) {
   const order = { Anchor: 0, Core: 1, High: 2, Contextual: 3 };
-  return (order[a.priority] ?? 9) - (order[b.priority] ?? 9) || a.title.localeCompare(b.title);
+  return (order[a.priority] ?? 9) - (order[b.priority] ?? 9) || sourceTitle(a).localeCompare(sourceTitle(b));
 }
 
 function priorityClass(priority) {
   return (priority || "").toLowerCase();
+}
+
+function sourceTitle(source = {}) {
+  return source.title || source.label || source.id || "Untitled source";
+}
+
+function sourceTypeLabel(source = {}) {
+  return source.type || source.status || "Report";
 }
 
 function createTagRow(tags = []) {
@@ -1573,8 +1586,24 @@ function conversationYear(record) {
   return (record.sortDate || "").slice(0, 4);
 }
 
+function isPublicPaperRecord(record) {
+  return record.documentScope === "Public statement";
+}
+
+function isConversationRecord(record) {
+  return ["Memcon", "Telcon"].includes(record.kind) || /conversation/i.test(record.documentScope || "");
+}
+
+function matchesConversationScope(record) {
+  if (state.conversationScope === "All") return true;
+  if (state.conversationScope === "Public Papers") return isPublicPaperRecord(record);
+  if (state.conversationScope === "Presidential conversations") return isConversationRecord(record);
+  return !isPublicPaperRecord(record);
+}
+
 function filteredConversations(data) {
   return conversationRecords(data)
+    .filter(matchesConversationScope)
     .filter((record) => state.conversationKind === "All" || record.kind === state.conversationKind)
     .filter((record) => state.conversationYear === "All" || conversationYear(record) === state.conversationYear)
     .filter(conversationTextMatch)
@@ -1596,8 +1625,15 @@ function renderButtonGroup(root, values, activeValue, onSelect) {
 
 function renderConversationFilters(data) {
   const conversations = conversationRecords(data);
+  const scopes = ["Declassified", "All", "Presidential conversations", "Public Papers"];
   const kinds = ["All", ...new Set(conversations.map((record) => record.kind).sort())];
   const years = ["All", ...new Set(conversations.map(conversationYear).filter(Boolean).sort())];
+
+  renderButtonGroup(nodes.conversationScopeFilters, scopes, state.conversationScope, (value) => {
+    state.conversationScope = value;
+    renderConversationFilters(data);
+    renderConversations(data);
+  });
 
   renderButtonGroup(nodes.conversationKindFilters, kinds, state.conversationKind, (value) => {
     state.conversationKind = value;
@@ -1628,7 +1664,7 @@ function renderConversations(data) {
   if (!records.length) {
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "No declassified records match the current filters.";
+    empty.textContent = "No records match the current filters.";
     nodes.conversationRoot.append(empty);
     return;
   }
@@ -1758,7 +1794,7 @@ function exportFilteredConversations(data) {
 }
 
 function renderFilters(data) {
-  const types = ["All", ...new Set(data.sources.map((source) => source.type))];
+  const types = ["All", ...new Set(data.sources.map(sourceTypeLabel))];
   nodes.sourceFilters.replaceChildren();
 
   for (const type of types) {
@@ -1779,7 +1815,7 @@ function renderSources(data) {
   nodes.sourcesRoot.replaceChildren();
 
   const sources = data.sources
-    .filter((source) => state.filter === "All" || source.type === state.filter)
+    .filter((source) => state.filter === "All" || sourceTypeLabel(source) === state.filter)
     .filter(textMatch)
     .sort(byPriority);
 
@@ -1800,7 +1836,7 @@ function renderSources(data) {
 
     const headingWrap = document.createElement("div");
     const heading = document.createElement("h3");
-    heading.textContent = source.title;
+    heading.textContent = sourceTitle(source);
     const meta = document.createElement("p");
     meta.className = "source-meta";
     meta.textContent = [source.identifier, source.institution].filter(Boolean).join(" | ");
@@ -1808,13 +1844,13 @@ function renderSources(data) {
 
     const priority = document.createElement("span");
     priority.className = `priority ${priorityClass(source.priority)}`;
-    priority.textContent = source.priority;
+    priority.textContent = source.priority || source.status || "Source";
 
     top.append(headingWrap, priority);
 
     const type = document.createElement("span");
     type.className = "source-type";
-    type.textContent = source.type;
+    type.textContent = sourceTypeLabel(source);
 
     const description = document.createElement("p");
     description.textContent = source.description;
@@ -1861,6 +1897,7 @@ function bindSearch(data) {
   });
 
   nodes.conversationReset.addEventListener("click", () => {
+    state.conversationScope = "Declassified";
     state.conversationKind = "All";
     state.conversationYear = "All";
     state.conversationSearch = "";
@@ -2014,6 +2051,7 @@ async function init() {
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {
+    console.error(error);
     nodes.sourcesRoot.innerHTML = '<p class="empty-state">Compiler data could not be loaded.</p>';
   }
 }

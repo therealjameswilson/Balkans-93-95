@@ -808,7 +808,7 @@ dd {
 
 .conversation-tools {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) auto auto auto;
+  grid-template-columns: minmax(260px, 1fr) repeat(3, minmax(150px, max-content)) auto auto;
   gap: 18px;
   align-items: end;
   margin-bottom: 12px;
