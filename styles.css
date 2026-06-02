@@ -589,6 +589,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.public-papers-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(230px, 0.62fr) minmax(180px, 0.45fr) minmax(130px, 0.32fr) auto auto;
+  margin-top: 14px;
+}
+
+.public-papers-table-wrap {
+  margin-top: 14px;
+}
+
+.public-papers-table-wrap table {
+  min-width: 1240px;
+}
+
+.public-papers-table-wrap td:nth-child(2),
+.public-papers-table-wrap td:nth-child(4),
+.public-papers-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .state-foia-tools {
   grid-template-columns: minmax(260px, 1fr) minmax(300px, 1fr) auto auto;
   margin-top: 14px;

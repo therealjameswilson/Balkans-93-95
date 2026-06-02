@@ -32,6 +32,10 @@ const state = {
   librarySearch: "",
   pddConfidence: "All",
   pddSearch: "",
+  publicPapersFocus: "All",
+  publicPapersForm: "All",
+  publicPapersYear: "All",
+  publicPapersSearch: "",
   stateFoiaRoute: "All",
   stateFoiaSearch: "",
   talbottFoiaStatus: "All",
@@ -80,6 +84,15 @@ const nodes = {
   pddExport: document.querySelector("#pdd-export"),
   pddReferenceSummary: document.querySelector("#pdd-reference-summary"),
   pddReferencesRoot: document.querySelector("#pdd-references-root"),
+  publicPapersSummaryRoot: document.querySelector("#public-papers-summary-root"),
+  publicPapersSearch: document.querySelector("#public-papers-search"),
+  publicPapersFocus: document.querySelector("#public-papers-focus"),
+  publicPapersForm: document.querySelector("#public-papers-form"),
+  publicPapersYear: document.querySelector("#public-papers-year"),
+  publicPapersReset: document.querySelector("#public-papers-reset"),
+  publicPapersExport: document.querySelector("#public-papers-export"),
+  publicPapersReferenceSummary: document.querySelector("#public-papers-reference-summary"),
+  publicPapersReferencesRoot: document.querySelector("#public-papers-references-root"),
   stateFoiaSummaryRoot: document.querySelector("#state-foia-summary-root"),
   stateFoiaSearch: document.querySelector("#state-foia-search"),
   stateFoiaRouteFilters: document.querySelector("#state-foia-route-filters"),
@@ -1108,6 +1121,273 @@ function renderPresidentialDailyDiary(report = {}, data = {}) {
   renderPddSummary(report, data);
   renderPddConfidenceFilters(report, data);
   renderPddReferences(report, data);
+}
+
+function publicPapersRecords(report = {}) {
+  return (report.selectedRecords || []).slice();
+}
+
+function publicPapersYear(record = {}) {
+  const year = String(record.sortDate || "").slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : "Date pending";
+}
+
+function publicPapersForm(record = {}) {
+  return record.publicPaperForm || record.kind || record.documentType || "Form pending";
+}
+
+function publicPapersFocus(record = {}) {
+  const text = [
+    record.title,
+    record.snippet,
+    ...(record.subjects || []),
+    ...(record.matchedTerms || []),
+    ...(record.tags || [])
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (/Dayton|peace agreement|peace process|peace plan|settlement|negotiat/i.test(text)) return "Dayton / peace process";
+  if (/IFOR|UNPROFOR|NATO|air ?strike|airpower|no-fly|military|troops|peacekeeping|ground troops|safe areas/i.test(text)) {
+    return "Military / NATO / UN";
+  }
+  if (/war crimes|atrocit|Srebrenica|tribunal|genocide/i.test(text)) return "War crimes / atrocities";
+  if (/Kosovo|Macedonia|Albania|Albanian/i.test(text)) return "Kosovo / Macedonia / Albania";
+  if (/Croatia|Croat|Zagreb|Eastern Slavonia/i.test(text)) return "Croatia / Eastern Slavonia";
+  if (/Serbia|Serb|Yugoslav|Milosevic|Belgrade/i.test(text)) return "Serbia / Yugoslavia";
+  if (/Bosnia|Herzegovina|Sarajevo|Gorazde|Balkan/i.test(text)) return "Bosnia / Balkans";
+  return "Other public context";
+}
+
+function publicPapersText(record = {}) {
+  return [
+    record.title,
+    record.date,
+    record.identifier,
+    record.pkg,
+    record.granule,
+    record.collection,
+    publicPapersFocus(record),
+    publicPapersForm(record),
+    record.sourceNote,
+    record.compilerUse,
+    record.snippet,
+    ...(record.subjects || []),
+    ...(record.matchedTerms || []),
+    ...(record.tags || [])
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredPublicPapersRecords(report = {}) {
+  return publicPapersRecords(report)
+    .filter((record) => state.publicPapersFocus === "All" || publicPapersFocus(record) === state.publicPapersFocus)
+    .filter((record) => state.publicPapersForm === "All" || publicPapersForm(record) === state.publicPapersForm)
+    .filter((record) => state.publicPapersYear === "All" || publicPapersYear(record) === state.publicPapersYear)
+    .filter((record) => !state.publicPapersSearch || publicPapersText(record).includes(state.publicPapersSearch.toLowerCase()))
+    .sort((a, b) => {
+      return (
+        String(a.sortDate || "9999").localeCompare(String(b.sortDate || "9999")) ||
+        Number(a.sourceOrder || 0) - Number(b.sourceOrder || 0) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function publicPapersReviewAction(record = {}) {
+  return `${record.extractionStatus || "Direct GovInfo Public Papers granule."} Verify official title, date, speaker/place, transcript or editorial-note status, source pagination, and whether the Balkans hit is substantive or only passing public context.`;
+}
+
+function renderPublicPapersSummary(report = {}) {
+  const summary = report.summary || {};
+  const records = publicPapersRecords(report);
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const forms = groupCounts(records, publicPapersForm).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+  const focusCount = groupCounts(records, publicPapersFocus).length;
+  const byYear = summary.selectedByYear || {};
+  const yearText = Object.keys(byYear)
+    .sort()
+    .map((year) => `${year}: ${formatNumber(byYear[year].records)} records / ${formatNumber(byYear[year].pages)} pages`)
+    .join("; ");
+
+  nodes.publicPapersSummaryRoot.replaceChildren(
+    auditCard(
+      "Public Records",
+      formatNumber(records.length || summary.selectedRecords),
+      `${formatNumber(summary.rawHits)} raw hits; ${formatNumber(summary.excludedRecords)} excluded after date/topic review.`,
+      "Public context layer, not declassified archival evidence."
+    ),
+    auditCard(
+      "Source Pages",
+      formatNumber(pages || summary.selectedPages),
+      yearText || "Year breakdown pending.",
+      summary.pageCountBasis || "GovInfo source pagination used for page counts."
+    ),
+    auditCard(
+      "Forms / Focus",
+      `${formatNumber(forms.length)} / ${formatNumber(focusCount)}`,
+      `${formatNumber(summary.scannedGranules)} GovInfo granules scanned across ${formatNumber(summary.scannedPackages)} Public Papers packages.`,
+      "Use filters to distinguish remarks, exchanges, news conferences, statements, interviews, letters, and messages."
+    )
+  );
+}
+
+function renderPublicPapersFilters(report = {}) {
+  const records = publicPapersRecords(report);
+  const focusOrder = [
+    "All",
+    "Dayton / peace process",
+    "Military / NATO / UN",
+    "Serbia / Yugoslavia",
+    "Croatia / Eastern Slavonia",
+    "Kosovo / Macedonia / Albania",
+    "War crimes / atrocities",
+    "Bosnia / Balkans",
+    "Other public context"
+  ];
+  const focusSet = new Set(records.map(publicPapersFocus));
+  const focuses = focusOrder.filter((focus) => focus === "All" || focusSet.has(focus));
+  const forms = ["All", ...new Set(records.map(publicPapersForm).filter(Boolean).sort())];
+  const years = ["All", ...new Set(records.map(publicPapersYear).filter(Boolean).sort())];
+  if (!focuses.includes(state.publicPapersFocus)) state.publicPapersFocus = "All";
+  if (!forms.includes(state.publicPapersForm)) state.publicPapersForm = "All";
+  if (!years.includes(state.publicPapersYear)) state.publicPapersYear = "All";
+
+  renderSelect(nodes.publicPapersFocus, focuses, state.publicPapersFocus, (value) => {
+    state.publicPapersFocus = value;
+    renderPublicPapersRecords(report);
+  });
+  renderSelect(nodes.publicPapersForm, forms, state.publicPapersForm, (value) => {
+    state.publicPapersForm = value;
+    renderPublicPapersRecords(report);
+  });
+  renderSelect(nodes.publicPapersYear, years, state.publicPapersYear, (value) => {
+    state.publicPapersYear = value;
+    renderPublicPapersRecords(report);
+  });
+}
+
+function renderPublicPapersRecords(report = {}) {
+  const records = filteredPublicPapersRecords(report);
+  const total = publicPapersRecords(report).length;
+  nodes.publicPapersReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    total
+  )} Clinton Public Papers / GovInfo records.`;
+  nodes.publicPapersReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No Public Papers records match the current filters.";
+    row.append(cell);
+    nodes.publicPapersReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || record.sortDate || "Date pending";
+
+    const recordCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title || "Untitled Public Papers record";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [publicPapersForm(record), record.identifier, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    recordCell.append(title, meta);
+
+    const focusCell = document.createElement("td");
+    const focus = document.createElement("span");
+    focus.className = "source-type collection";
+    focus.textContent = publicPapersFocus(record);
+    const terms = document.createElement("p");
+    terms.className = "queue-record-meta";
+    terms.textContent = (record.matchedTerms || record.subjects || []).slice(0, 8).join(" | ");
+    focusCell.append(focus, terms);
+
+    const sourceCell = document.createElement("td");
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = record.sourceNote || "Source note pending.";
+    const review = document.createElement("p");
+    review.className = "queue-record-meta";
+    review.textContent = publicPapersReviewAction(record);
+    sourceCell.append(note, review);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["GovInfo", record.url],
+      ["HTML", record.htmlUrl],
+      ["PDF", record.pdfUrl]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    linkCell.append(links);
+
+    row.append(dateCell, recordCell, focusCell, sourceCell, linkCell);
+    nodes.publicPapersReferencesRoot.append(row);
+  }
+}
+
+function exportPublicPapersRecords(report = {}) {
+  const fields = [
+    "date",
+    "sortDate",
+    "title",
+    "focus",
+    "form",
+    "identifier",
+    "pageCount",
+    "sourcePdfPages",
+    "matchedTerms",
+    "govinfoUrl",
+    "htmlUrl",
+    "pdfUrl",
+    "sourceNote",
+    "compilerReview",
+    "compilerUse",
+    "snippet"
+  ];
+  const rows = filteredPublicPapersRecords(report).map((record) => [
+    record.date,
+    record.sortDate,
+    record.title,
+    publicPapersFocus(record),
+    publicPapersForm(record),
+    record.identifier,
+    record.pageCount,
+    record.sourcePdfPages,
+    (record.matchedTerms || []).join("; "),
+    record.url,
+    record.htmlUrl,
+    record.pdfUrl,
+    record.sourceNote,
+    publicPapersReviewAction(record),
+    record.compilerUse,
+    record.snippet
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-clinton-public-papers-govinfo-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderPublicPapersQueue(report = {}) {
+  if (!report || !nodes.publicPapersSummaryRoot) return;
+  renderPublicPapersSummary(report);
+  renderPublicPapersFilters(report);
+  renderPublicPapersRecords(report);
 }
 
 function stateFoiaDocuments(report = {}) {
@@ -4311,6 +4591,29 @@ function bindPddSearch(report, data) {
   });
 }
 
+function bindPublicPapersSearch(report) {
+  if (!report || !nodes.publicPapersSearch) return;
+
+  nodes.publicPapersSearch.addEventListener("input", (event) => {
+    state.publicPapersSearch = event.target.value.trim();
+    renderPublicPapersRecords(report);
+  });
+
+  nodes.publicPapersReset.addEventListener("click", () => {
+    state.publicPapersFocus = "All";
+    state.publicPapersForm = "All";
+    state.publicPapersYear = "All";
+    state.publicPapersSearch = "";
+    nodes.publicPapersSearch.value = "";
+    renderPublicPapersFilters(report);
+    renderPublicPapersRecords(report);
+  });
+
+  nodes.publicPapersExport.addEventListener("click", () => {
+    exportPublicPapersRecords(report);
+  });
+}
+
 function bindStateFoiaSearch(report) {
   if (!report || !nodes.stateFoiaSearch) return;
 
@@ -4533,6 +4836,7 @@ async function init() {
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);
     renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
+    renderPublicPapersQueue(reports.publicPapers);
     renderStateFoiaQueue(reports.stateFoia);
     renderTalbottFoiaQueue(reports.talbott);
     renderDefenseJcsQueue(reports.defenseJcs);
@@ -4550,6 +4854,7 @@ async function init() {
     bindSearch(data);
     bindPromotionSearch(reports.gapRegister);
     bindPddSearch(reports.presidentialDailyDiary, data);
+    bindPublicPapersSearch(reports.publicPapers);
     bindStateFoiaSearch(reports.stateFoia);
     bindTalbottFoiaSearch(reports.talbott);
     bindDefenseJcsSearch(reports.defenseJcs);

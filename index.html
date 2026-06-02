@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260602-talbottqueue1" />
+    <link rel="stylesheet" href="styles.css?v=20260602-publicpapers1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -118,6 +118,7 @@
         <a href="#audit">Audit</a>
         <a href="#compiler-gaps">Gaps</a>
         <a href="#presidential-daily-diary">Diary</a>
+        <a href="#public-papers">Public</a>
         <a href="#state-foia">State FOIA</a>
         <a href="#talbott-foia">Talbott</a>
         <a href="#defense-jcs">Defense/JCS</a>
@@ -329,6 +330,62 @@
               </tr>
             </thead>
             <tbody id="pdd-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section public-papers-section" id="public-papers" aria-labelledby="public-papers-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Public Record Context</p>
+            <h2 id="public-papers-title">Clinton Public Papers / GovInfo Queue</h2>
+          </div>
+          <p class="section-note">
+            Public Papers records with Balkans-related term hits are kept here
+            as public-context records. They are not declassified archival
+            documents, but they preserve the public chronology, source
+            pagination, and official GovInfo locators for compiler review.
+          </p>
+        </div>
+        <div id="public-papers-summary-root" class="audit-grid public-papers-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools public-papers-tools" aria-label="Public Papers filters">
+          <label class="search-field">
+            <span>Search Public Papers</span>
+            <input
+              id="public-papers-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Bosnia, Dayton, NATO, statement, title"
+            />
+          </label>
+          <label class="select-field">
+            <span>Focus</span>
+            <select id="public-papers-focus"></select>
+          </label>
+          <label class="select-field">
+            <span>Form</span>
+            <select id="public-papers-form"></select>
+          </label>
+          <label class="select-field">
+            <span>Year</span>
+            <select id="public-papers-year"></select>
+          </label>
+          <button id="public-papers-reset" class="reset-button" type="button">Reset</button>
+          <button id="public-papers-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="public-papers-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap public-papers-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Public Record</th>
+                <th scope="col">Focus</th>
+                <th scope="col">Source Note</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="public-papers-references-root"></tbody>
           </table>
         </div>
       </section>
@@ -817,8 +874,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260602-talbottqueue1"></script>
-    <script src="app.js?v=20260602-talbottqueue1"></script>
+    <script src="data/compiler-map.js?v=20260602-publicpapers1"></script>
+    <script src="app.js?v=20260602-publicpapers1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
