@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-naracrosscheck1" />
+    <link rel="stylesheet" href="styles.css?v=20260602-btfcollection1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -121,6 +121,7 @@
         <a href="#state-foia">State FOIA</a>
         <a href="#defense-jcs">Defense/JCS</a>
         <a href="#nara-crosscheck">NARA</a>
+        <a href="#collection-37">BTF</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
@@ -483,6 +484,62 @@
         </div>
       </section>
 
+      <section class="section collection-37-section" id="collection-37" aria-labelledby="collection-37-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Collection 37</p>
+            <h2 id="collection-37-title">Bosnian Declassified Records / CIA-BTF Queue</h2>
+          </div>
+          <p class="section-note">
+            Chronological review queue for the Clinton Digital Library
+            Bosnian Declassified Records collection. These are direct
+            digitized PDFs from collection 37, retained with page counts,
+            item links, and draft source notes for compiler consideration.
+          </p>
+        </div>
+        <div id="collection-37-summary-root" class="audit-grid collection-37-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools collection-37-tools" aria-label="Collection 37 filters">
+          <label class="search-field">
+            <span>Search collection 37</span>
+            <input
+              id="collection-37-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Bosnia, Serbia, sanctions, PC, BTF item"
+            />
+          </label>
+          <label class="select-field">
+            <span>Focus</span>
+            <select id="collection-37-focus"></select>
+          </label>
+          <label class="select-field">
+            <span>Form</span>
+            <select id="collection-37-kind"></select>
+          </label>
+          <label class="select-field">
+            <span>Year</span>
+            <select id="collection-37-year"></select>
+          </label>
+          <button id="collection-37-reset" class="reset-button" type="button">Reset</button>
+          <button id="collection-37-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="collection-37-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap collection-37-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Document</th>
+                <th scope="col">Focus</th>
+                <th scope="col">Source Note</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="collection-37-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="section research-section" id="clinton-library" aria-labelledby="clinton-library-title">
         <div class="section-heading">
           <div>
@@ -703,8 +760,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-naracrosscheck1"></script>
-    <script src="app.js?v=20260601-naracrosscheck1"></script>
+    <script src="data/compiler-map.js?v=20260602-btfcollection1"></script>
+    <script src="app.js?v=20260602-btfcollection1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");

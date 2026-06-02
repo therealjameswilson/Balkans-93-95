@@ -666,6 +666,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.collection-37-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(220px, 0.6fr) minmax(180px, 0.45fr) minmax(130px, 0.32fr) auto auto;
+  margin-top: 14px;
+}
+
+.collection-37-table-wrap {
+  margin-top: 14px;
+}
+
+.collection-37-table-wrap table {
+  min-width: 1240px;
+}
+
+.collection-37-table-wrap td:nth-child(2),
+.collection-37-table-wrap td:nth-child(4),
+.collection-37-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .library-table-wrap table {
   min-width: 1080px;
 }

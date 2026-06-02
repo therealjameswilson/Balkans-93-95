@@ -42,7 +42,11 @@ const state = {
   defenseJcsSearch: "",
   naraCrosscheckSource: "All",
   naraCrosscheckYear: "All",
-  naraCrosscheckSearch: ""
+  naraCrosscheckSearch: "",
+  collection37Focus: "All",
+  collection37Kind: "All",
+  collection37Year: "All",
+  collection37Search: ""
 };
 
 const nodes = {
@@ -95,6 +99,15 @@ const nodes = {
   naraCrosscheckExport: document.querySelector("#nara-crosscheck-export"),
   naraCrosscheckReferenceSummary: document.querySelector("#nara-crosscheck-reference-summary"),
   naraCrosscheckReferencesRoot: document.querySelector("#nara-crosscheck-references-root"),
+  collection37SummaryRoot: document.querySelector("#collection-37-summary-root"),
+  collection37Search: document.querySelector("#collection-37-search"),
+  collection37Focus: document.querySelector("#collection-37-focus"),
+  collection37Kind: document.querySelector("#collection-37-kind"),
+  collection37Year: document.querySelector("#collection-37-year"),
+  collection37Reset: document.querySelector("#collection-37-reset"),
+  collection37Export: document.querySelector("#collection-37-export"),
+  collection37ReferenceSummary: document.querySelector("#collection-37-reference-summary"),
+  collection37ReferencesRoot: document.querySelector("#collection-37-references-root"),
   librarySummaryRoot: document.querySelector("#library-summary-root"),
   libraryPlanRoot: document.querySelector("#library-plan-root"),
   libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
@@ -1803,6 +1816,284 @@ function renderNaraCrosscheckQueue(report = {}) {
   renderNaraCrosscheckSummary(report);
   renderNaraCrosscheckFilters(report);
   renderNaraCrosscheckDocuments(report);
+}
+
+function collection37Documents(report = {}) {
+  return (report.documents || []).slice();
+}
+
+function collection37Year(record = {}) {
+  const year = String(record.sortDate || "").slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : "Date pending";
+}
+
+function collection37Kind(record = {}) {
+  return record.kind || record.documentType || "Form pending";
+}
+
+function collection37Focus(record = {}) {
+  const text = [
+    record.title,
+    record.kind,
+    record.documentScope,
+    record.sourceSeries,
+    ...(record.subjects || []),
+    ...(record.tags || [])
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (/Principals|Deputies|PC\/DC|P\/DC|PCDC|Summary of Conclusions|SVTS/i.test(text)) return "PC/DC and NSC process";
+  if (/IFOR|UNPROFOR|NATO|air ?strike|no-fly|military|Defense|JCS|arms embargo|lift/i.test(text)) {
+    return "Military / NATO";
+  }
+  if (/sanction/i.test(text)) return "Sanctions";
+  if (/Serbia|Serb|Milosevic|Montenegro|Belgrade/i.test(text)) return "Serbia / Montenegro";
+  if (/war crime|atrocit|Srebrenica|genocide|tribunal|ICTY/i.test(text)) return "War crimes / atrocities";
+  if (/Kosovo|Albania|Albanian/i.test(text)) return "Kosovo / Albania";
+  if (/Contact Group|peace|negotiat|diplomacy|Dayton|Croatia|Croat|Zagreb|Sarajevo/i.test(text)) {
+    return "Diplomacy / peace process";
+  }
+  if (/Intelligence|CIA|BTF|Estimate|NIC|Office of/i.test(text)) return "Intelligence";
+  return "Other collection 37";
+}
+
+function collection37Text(record = {}) {
+  return [
+    record.title,
+    record.kind,
+    record.documentType,
+    record.date,
+    record.sortDate,
+    record.identifier,
+    record.itemId,
+    record.collection,
+    record.repository,
+    record.sourceSeries,
+    collection37Focus(record),
+    record.sourceNoteDraft,
+    record.compilerUse,
+    record.extractionStatus,
+    record.originalFile,
+    ...(record.subjects || []),
+    ...(record.tags || [])
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredCollection37Documents(report = {}) {
+  return collection37Documents(report)
+    .filter((record) => state.collection37Focus === "All" || collection37Focus(record) === state.collection37Focus)
+    .filter((record) => state.collection37Kind === "All" || collection37Kind(record) === state.collection37Kind)
+    .filter((record) => state.collection37Year === "All" || collection37Year(record) === state.collection37Year)
+    .filter((record) => !state.collection37Search || collection37Text(record).includes(state.collection37Search.toLowerCase()))
+    .sort((a, b) => {
+      return (
+        String(a.sortDate || "9999").localeCompare(String(b.sortDate || "9999")) ||
+        collection37Focus(a).localeCompare(collection37Focus(b)) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function collection37ReviewAction(record = {}) {
+  const certainty = record.dateCertainty ? `date from ${record.dateCertainty}` : "date basis pending";
+  const pages = pageLabel(record.pageCount);
+  const extraction = record.extractionStatus || "Direct PDF status pending.";
+  return `${certainty}; ${pages}; ${extraction} Verify classification and handling markings, distribution, attachments, annotations, excisions, and duplicate status before treating this as chronology-ready.`;
+}
+
+function renderCollection37Summary(report = {}) {
+  const summary = report.summary || {};
+  const records = collection37Documents(report);
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const years = groupCounts(records, collection37Year).sort((a, b) => a.label.localeCompare(b.label));
+  const forms = groupCounts(records, collection37Kind).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+  const defenseCount = summary.defenseMilitaryDocuments || records.filter((record) => collection37Focus(record) === "Military / NATO").length;
+  const atrocityCount =
+    summary.warCrimesAtrocityDocuments || records.filter((record) => collection37Focus(record) === "War crimes / atrocities").length;
+
+  nodes.collection37SummaryRoot.replaceChildren(
+    auditCard(
+      "In-Period Documents",
+      formatNumber(records.length || summary.inPeriodDocuments),
+      `${formatNumber(summary.collectionItems)} collection items screened from Clinton Digital Library collection 37.`,
+      "Direct digitized PDF inventory for consideration, not a volume selection list."
+    ),
+    auditCard(
+      "Counted Pages",
+      formatNumber(pages || summary.countedPages),
+      years.map((year) => `${year.label}: ${formatNumber(year.count)} docs / ${formatNumber(year.pages)} pages`).join("; "),
+      "Page counts come from the direct Clinton Library PDFs."
+    ),
+    auditCard(
+      "Review Angles",
+      formatNumber(forms.length),
+      `${formatNumber(defenseCount)} military/defense-tagged records and ${formatNumber(atrocityCount)} war-crimes/atrocity-tagged records in the source report.`,
+      "Use filters to separate BTF intelligence papers, memoranda, reports, estimates, minutes, and letters."
+    )
+  );
+}
+
+function renderCollection37Filters(report = {}) {
+  const documents = collection37Documents(report);
+  const focusOrder = [
+    "All",
+    "PC/DC and NSC process",
+    "Military / NATO",
+    "Diplomacy / peace process",
+    "Serbia / Montenegro",
+    "Sanctions",
+    "War crimes / atrocities",
+    "Kosovo / Albania",
+    "Intelligence",
+    "Other collection 37"
+  ];
+  const focusSet = new Set(documents.map(collection37Focus));
+  const focuses = focusOrder.filter((focus) => focus === "All" || focusSet.has(focus));
+  const kinds = ["All", ...new Set(documents.map(collection37Kind).filter(Boolean).sort())];
+  const years = ["All", ...new Set(documents.map(collection37Year).filter(Boolean).sort())];
+  if (!focuses.includes(state.collection37Focus)) state.collection37Focus = "All";
+  if (!kinds.includes(state.collection37Kind)) state.collection37Kind = "All";
+  if (!years.includes(state.collection37Year)) state.collection37Year = "All";
+
+  renderSelect(nodes.collection37Focus, focuses, state.collection37Focus, (value) => {
+    state.collection37Focus = value;
+    renderCollection37Documents(report);
+  });
+  renderSelect(nodes.collection37Kind, kinds, state.collection37Kind, (value) => {
+    state.collection37Kind = value;
+    renderCollection37Documents(report);
+  });
+  renderSelect(nodes.collection37Year, years, state.collection37Year, (value) => {
+    state.collection37Year = value;
+    renderCollection37Documents(report);
+  });
+}
+
+function renderCollection37Documents(report = {}) {
+  const records = filteredCollection37Documents(report);
+  const total = collection37Documents(report).length;
+  nodes.collection37ReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    total
+  )} Bosnian Declassified Records / CIA-BTF collection 37 documents.`;
+  nodes.collection37ReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No collection 37 documents match the current filters.";
+    row.append(cell);
+    nodes.collection37ReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || record.sortDate || "Date pending";
+
+    const documentCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title || "Untitled collection 37 document";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [collection37Kind(record), record.identifier, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    documentCell.append(title, meta);
+
+    const focusCell = document.createElement("td");
+    const focus = document.createElement("span");
+    focus.className = "source-type direct";
+    focus.textContent = collection37Focus(record);
+    const tags = document.createElement("p");
+    tags.className = "queue-record-meta";
+    tags.textContent = [...(record.subjects || []), ...(record.tags || [])].slice(0, 5).join(" | ");
+    focusCell.append(focus, tags);
+
+    const sourceCell = document.createElement("td");
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = record.sourceNoteDraft || record.sourceNote || "Source-note draft pending.";
+    const review = document.createElement("p");
+    review.className = "queue-record-meta";
+    review.textContent = collection37ReviewAction(record);
+    sourceCell.append(note, review);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open PDF", record.pdfUrl],
+      ["Open item", record.itemUrl || record.url],
+      ["Original file", record.originalFile]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    linkCell.append(links);
+
+    row.append(dateCell, documentCell, focusCell, sourceCell, linkCell);
+    nodes.collection37ReferencesRoot.append(row);
+  }
+}
+
+function exportCollection37Documents(report = {}) {
+  const fields = [
+    "date",
+    "sortDate",
+    "title",
+    "focus",
+    "kind",
+    "identifier",
+    "itemId",
+    "pageCount",
+    "sourcePdfPages",
+    "pdfUrl",
+    "itemUrl",
+    "originalFile",
+    "sourceNoteDraft",
+    "compilerReview",
+    "compilerUse",
+    "subjects",
+    "tags"
+  ];
+  const rows = filteredCollection37Documents(report).map((record) => [
+    record.date,
+    record.sortDate,
+    record.title,
+    collection37Focus(record),
+    collection37Kind(record),
+    record.identifier,
+    record.itemId,
+    record.pageCount,
+    record.sourcePdfPages,
+    record.pdfUrl,
+    record.itemUrl || record.url,
+    record.originalFile,
+    record.sourceNoteDraft || record.sourceNote,
+    collection37ReviewAction(record),
+    record.compilerUse,
+    (record.subjects || []).join("; "),
+    (record.tags || []).join("; ")
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-collection-37-cia-btf-review-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderCollection37Queue(report = {}) {
+  if (!report || !nodes.collection37SummaryRoot) return;
+  renderCollection37Summary(report);
+  renderCollection37Filters(report);
+  renderCollection37Documents(report);
 }
 
 function libraryTargets(report = {}) {
@@ -3818,6 +4109,29 @@ function bindNaraCrosscheckSearch(report) {
   });
 }
 
+function bindCollection37Search(report) {
+  if (!report || !nodes.collection37Search) return;
+
+  nodes.collection37Search.addEventListener("input", (event) => {
+    state.collection37Search = event.target.value.trim();
+    renderCollection37Documents(report);
+  });
+
+  nodes.collection37Reset.addEventListener("click", () => {
+    state.collection37Focus = "All";
+    state.collection37Kind = "All";
+    state.collection37Year = "All";
+    state.collection37Search = "";
+    nodes.collection37Search.value = "";
+    renderCollection37Filters(report);
+    renderCollection37Documents(report);
+  });
+
+  nodes.collection37Export.addEventListener("click", () => {
+    exportCollection37Documents(report);
+  });
+}
+
 function bindPromotionSearch(report) {
   if (!report || !nodes.promotionSearch) return;
 
@@ -3932,6 +4246,7 @@ async function init() {
     renderStateFoiaQueue(reports.stateFoia);
     renderDefenseJcsQueue(reports.defenseJcs);
     renderNaraCrosscheckQueue(reports.sourceCrosscheck);
+    renderCollection37Queue(reports.btfDocuments);
     renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
@@ -3947,6 +4262,7 @@ async function init() {
     bindStateFoiaSearch(reports.stateFoia);
     bindDefenseJcsSearch(reports.defenseJcs);
     bindNaraCrosscheckSearch(reports.sourceCrosscheck);
+    bindCollection37Search(reports.btfDocuments);
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {
