@@ -54,7 +54,10 @@ const state = {
   collection37Focus: "All",
   collection37Kind: "All",
   collection37Year: "All",
-  collection37Search: ""
+  collection37Search: "",
+  sourceNotePriority: "All",
+  sourceNoteYear: "All",
+  sourceNoteSearch: ""
 };
 
 const nodes = {
@@ -3130,6 +3133,38 @@ function sourceNoteQueueRecords(data) {
     });
 }
 
+function sourceNoteQueueYear(record = {}) {
+  const year = String(record.sortDate || "").slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : "Date pending";
+}
+
+function sourceNoteQueueText(record = {}) {
+  return [
+    sourceNoteQueuePriority(record).label,
+    record.date,
+    record.kind,
+    record.title,
+    record.identifier,
+    record.collection,
+    record.sourceFamilyLabel,
+    record.sourceFamily,
+    record.sourceSeries,
+    record.documentScope,
+    sourceNoteDraft(record),
+    sourceNoteQueueAction(record)
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredSourceNoteQueueRecords(data) {
+  return sourceNoteQueueRecords(data)
+    .filter((record) => state.sourceNotePriority === "All" || sourceNoteQueuePriority(record).label === state.sourceNotePriority)
+    .filter((record) => state.sourceNoteYear === "All" || sourceNoteQueueYear(record) === state.sourceNoteYear)
+    .filter((record) => !state.sourceNoteSearch || sourceNoteQueueText(record).includes(state.sourceNoteSearch.toLowerCase()));
+}
+
 function exportSourceNoteQueue(data) {
   const fields = [
     "priority",
@@ -3146,7 +3181,7 @@ function exportSourceNoteQueue(data) {
     "sourceNoteDraft",
     "compilerCheck"
   ];
-  const rows = sourceNoteQueueRecords(data).map((record) => [
+  const rows = filteredSourceNoteQueueRecords(data).map((record) => [
     sourceNoteQueuePriority(record).label,
     record.date,
     record.kind,
@@ -3188,11 +3223,16 @@ function sourceNoteQueueLinks(record) {
 
 function renderSourceNoteQueue(data, reports = {}) {
   if (!nodes.sourceNoteQueueRoot) return;
-  const records = sourceNoteQueueRecords(data);
+  const allRecords = sourceNoteQueueRecords(data);
+  const records = filteredSourceNoteQueueRecords(data);
   const auditTotal = reports.sourceNoteAudit?.summary?.classificationOrHandlingNotTranscribed ?? records.length;
-  const byPriority = groupCounts(records, (record) => sourceNoteQueuePriority(record).label)
+  const byPriority = groupCounts(allRecords, (record) => sourceNoteQueuePriority(record).label)
     .map((item) => `${item.label}: ${formatNumber(item.count)}`)
     .join(" / ");
+  const priorities = ["All", ...new Set(allRecords.map((record) => sourceNoteQueuePriority(record).label).filter(Boolean))];
+  const years = ["All", ...new Set(allRecords.map(sourceNoteQueueYear).filter(Boolean).sort())];
+  if (!priorities.includes(state.sourceNotePriority)) state.sourceNotePriority = "All";
+  if (!years.includes(state.sourceNoteYear)) state.sourceNoteYear = "All";
 
   const header = document.createElement("div");
   header.className = "source-note-queue-header";
@@ -3200,15 +3240,84 @@ function renderSourceNoteQueue(data, reports = {}) {
   const heading = document.createElement("h3");
   heading.textContent = "Source-Note Finalization Queue";
   const summary = document.createElement("p");
-  summary.textContent = `${formatNumber(records.length)} chronology records still require classification/handling transcription before final FRUS source-note clearance. ${auditTotal !== records.length ? `The audit report counts ${formatNumber(auditTotal)} chronology/conversation rows including cross-reference rows. ` : ""}${byPriority}`;
+  summary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    allRecords.length
+  )} chronology records still requiring classification/handling transcription before final FRUS source-note clearance. ${auditTotal !== allRecords.length ? `The audit report counts ${formatNumber(auditTotal)} chronology/conversation rows including cross-reference rows. ` : ""}${byPriority}`;
   copy.append(heading, summary);
+
+  const controls = document.createElement("div");
+  controls.className = "source-note-queue-controls";
+
+  const searchLabel = document.createElement("label");
+  searchLabel.className = "search-field source-note-search-field";
+  const searchText = document.createElement("span");
+  searchText.textContent = "Search notes";
+  const searchInput = document.createElement("input");
+  searchInput.type = "search";
+  searchInput.autocomplete = "off";
+  searchInput.placeholder = "Title, source, identifier, marking";
+  searchInput.value = state.sourceNoteSearch;
+  searchInput.addEventListener("input", (event) => {
+    state.sourceNoteSearch = event.target.value.trim();
+    renderSourceNoteQueue(data, reports);
+  });
+  searchLabel.append(searchText, searchInput);
+
+  const priorityLabel = document.createElement("label");
+  priorityLabel.className = "select-field";
+  const priorityText = document.createElement("span");
+  priorityText.textContent = "Priority";
+  const prioritySelect = document.createElement("select");
+  for (const priority of priorities) {
+    const option = document.createElement("option");
+    option.value = priority;
+    option.textContent = priority;
+    prioritySelect.append(option);
+  }
+  prioritySelect.value = state.sourceNotePriority;
+  prioritySelect.addEventListener("change", (event) => {
+    state.sourceNotePriority = event.target.value;
+    renderSourceNoteQueue(data, reports);
+  });
+  priorityLabel.append(priorityText, prioritySelect);
+
+  const yearLabel = document.createElement("label");
+  yearLabel.className = "select-field";
+  const yearText = document.createElement("span");
+  yearText.textContent = "Year";
+  const yearSelect = document.createElement("select");
+  for (const year of years) {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    yearSelect.append(option);
+  }
+  yearSelect.value = state.sourceNoteYear;
+  yearSelect.addEventListener("change", (event) => {
+    state.sourceNoteYear = event.target.value;
+    renderSourceNoteQueue(data, reports);
+  });
+  yearLabel.append(yearText, yearSelect);
+
+  const resetButton = document.createElement("button");
+  resetButton.type = "button";
+  resetButton.className = "reset-button";
+  resetButton.textContent = "Reset";
+  resetButton.addEventListener("click", () => {
+    state.sourceNotePriority = "All";
+    state.sourceNoteYear = "All";
+    state.sourceNoteSearch = "";
+    renderSourceNoteQueue(data, reports);
+  });
 
   const exportButton = document.createElement("button");
   exportButton.type = "button";
   exportButton.className = "reset-button export-button";
   exportButton.textContent = "Export Queue CSV";
   exportButton.addEventListener("click", () => exportSourceNoteQueue(data));
-  header.append(copy, exportButton);
+
+  controls.append(searchLabel, priorityLabel, yearLabel, resetButton, exportButton);
+  header.append(copy, controls);
 
   const tableWrap = document.createElement("div");
   tableWrap.className = "table-wrap source-note-queue-wrap";
@@ -3219,11 +3328,22 @@ function renderSourceNoteQueue(data, reports = {}) {
       <th scope="col">Priority</th>
       <th scope="col">Date</th>
       <th scope="col">Record</th>
+      <th scope="col">Draft Source Note</th>
       <th scope="col">Source-note work</th>
       <th scope="col">Links</th>
     </tr>
   `;
   const tbody = document.createElement("tbody");
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 6;
+    cell.className = "empty-state";
+    cell.textContent = "No source-note finalization records match the current filters.";
+    row.append(cell);
+    tbody.append(row);
+  }
 
   for (const record of records) {
     const priority = sourceNoteQueuePriority(record);
@@ -3245,13 +3365,16 @@ function renderSourceNoteQueue(data, reports = {}) {
     meta.textContent = [record.kind, record.identifier, record.collection, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
     recordCell.append(title, meta);
 
+    const draftCell = document.createElement("td");
+    draftCell.textContent = sourceNoteDraft(record);
+
     const actionCell = document.createElement("td");
     actionCell.textContent = sourceNoteQueueAction(record);
 
     const linkCell = document.createElement("td");
     linkCell.append(sourceNoteQueueLinks(record));
 
-    row.append(priorityCell, dateCell, recordCell, actionCell, linkCell);
+    row.append(priorityCell, dateCell, recordCell, draftCell, actionCell, linkCell);
     tbody.append(row);
   }
 
