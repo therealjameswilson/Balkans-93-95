@@ -832,9 +832,9 @@ dd {
 
 .source-note-queue-controls {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(150px, 0.45fr) minmax(110px, 0.32fr) auto auto;
+  grid-template-columns: minmax(220px, 1fr) minmax(150px, 0.42fr) minmax(110px, 0.28fr) minmax(150px, 0.4fr) auto auto;
   gap: 10px;
-  min-width: min(100%, 720px);
+  min-width: min(100%, 860px);
 }
 
 .source-note-search-field {
@@ -842,13 +842,36 @@ dd {
 }
 
 .source-note-queue-wrap table {
-  min-width: 1280px;
+  min-width: 1480px;
 }
 
 .source-note-queue-wrap td:nth-child(3),
 .source-note-queue-wrap td:nth-child(4),
-.source-note-queue-wrap td:nth-child(5) {
+.source-note-queue-wrap td:nth-child(5),
+.source-note-queue-wrap td:nth-child(6) {
   overflow-wrap: anywhere;
+}
+
+.ocr-candidate {
+  margin-top: 8px;
+}
+
+.source-type.ocr-high,
+.source-type.ocr-medium {
+  color: white;
+  background: var(--olive);
+}
+
+.source-type.ocr-release-stamp-only {
+  color: var(--ink);
+  background: #e8c16e;
+}
+
+.source-type.ocr-none,
+.source-type.ocr-error,
+.source-type.ocr-not-scanned {
+  color: white;
+  background: var(--red);
 }
 
 .queue-record-title {

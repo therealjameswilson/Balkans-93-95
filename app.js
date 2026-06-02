@@ -14,7 +14,8 @@ const REPORT_URLS = {
   sourceNoteAudit: "reports/source-note-verification-audit.json",
   presidentialDailyDiary: "reports/presidential-daily-diary-search.json",
   gapRegister: "reports/compiler-gap-register.json",
-  libraryVisit: "reports/clinton-library-visit-plan.json"
+  libraryVisit: "reports/clinton-library-visit-plan.json",
+  btfMarkings: "reports/btf-marking-extraction.json"
 };
 
 const state = {
@@ -57,6 +58,7 @@ const state = {
   collection37Search: "",
   sourceNotePriority: "All",
   sourceNoteYear: "All",
+  sourceNoteOcr: "All",
   sourceNoteSearch: ""
 };
 
@@ -2955,7 +2957,7 @@ function renderFrusMethod(data, reports = {}) {
   );
 
   renderReadinessPanel(data);
-  renderSourceNotePanel(data);
+  renderSourceNotePanel(data, reports);
   renderSourceNoteQueue(data, reports);
 }
 
@@ -3022,12 +3024,14 @@ function renderReadinessPanel(data) {
   nodes.readinessRoot.replaceChildren(heading, list);
 }
 
-function renderSourceNotePanel(data) {
+function renderSourceNotePanel(data, reports = {}) {
   const documents = conversationRecords(data);
   const locatorReady = documents.filter((record) => record.collection && record.identifier && (record.url || record.pdfUrl)).length;
   const pageReady = documents.filter((record) => record.pageCount && record.sourcePdfPages).length;
   const metadataReady = documents.filter((record) => record.date && record.kind).length;
   const publicStatements = documents.filter((record) => record.documentScope === "Public statement").length;
+  const markingSummary = reports.btfMarkings?.summary;
+  const markingCandidateCount = (markingSummary?.withHighConfidenceMarking || 0) + (markingSummary?.withMediumConfidenceMarking || 0);
   const heading = document.createElement("h3");
   heading.textContent = "Source Note Worklist";
   const list = document.createElement("div");
@@ -3047,9 +3051,11 @@ function renderSourceNotePanel(data) {
     ),
     readinessRow(
       "Classification / handling controls",
-      "Next",
-      "PDF/OCR",
-      "For declassified records, extract markings from the PDF header or face sheet; Public Papers records instead require GovInfo publication metadata checks."
+      markingSummary ? "Partial" : "Next",
+      markingSummary ? `${markingCandidateCount}/${markingSummary.candidatesReviewed}` : "PDF/OCR",
+      markingSummary
+        ? "The CIA/BTF first-page OCR pass now supplies candidate classification/handling lines for rapid human verification."
+        : "For declassified records, extract markings from the PDF header or face sheet; Public Papers records instead require GovInfo publication metadata checks."
     ),
     readinessRow(
       "Public Papers publication metadata",
@@ -3118,6 +3124,55 @@ function stableChronologyRecordUrl(record) {
   return url.toString();
 }
 
+function btfMarkingMap(reports = {}) {
+  return new Map((reports.btfMarkings?.records || []).map((record) => [record.id, record]));
+}
+
+function btfMarkingForRecord(record, reports = {}) {
+  if (!record?.id) return null;
+  return btfMarkingMap(reports).get(record.id) || null;
+}
+
+function btfMarkingConfidenceLabel(marking = null) {
+  const labels = {
+    high: "High OCR",
+    medium: "Medium OCR",
+    "release-stamp-only": "Release stamp only",
+    none: "No OCR candidate",
+    error: "OCR error"
+  };
+  return labels[marking?.confidence] || "Not scanned";
+}
+
+function btfMarkingShortCandidate(marking = null) {
+  if (!marking) return "";
+  const candidate = (marking.classificationCandidates || [])[0];
+  if (candidate) return candidate;
+  const release = (marking.releaseStampCandidates || [])[0];
+  if (release) return release;
+  return marking.suggestedCompilerAction || "";
+}
+
+function btfMarkingStatus(record, reports = {}) {
+  const marking = btfMarkingForRecord(record, reports);
+  if (!marking) return "Not scanned";
+  return btfMarkingConfidenceLabel(marking);
+}
+
+function btfMarkingText(marking = null) {
+  if (!marking) return "";
+  return [
+    btfMarkingConfidenceLabel(marking),
+    marking.level,
+    ...(marking.classificationCandidates || []),
+    ...(marking.releaseStampCandidates || []),
+    marking.suggestedCompilerAction
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 function sourceNoteQueueRecords(data) {
   return conversationRecords(data)
     .filter((record) => record.documentScope !== "Public statement")
@@ -3138,9 +3193,11 @@ function sourceNoteQueueYear(record = {}) {
   return /^\d{4}$/.test(year) ? year : "Date pending";
 }
 
-function sourceNoteQueueText(record = {}) {
+function sourceNoteQueueText(record = {}, reports = {}) {
+  const marking = btfMarkingForRecord(record, reports);
   return [
     sourceNoteQueuePriority(record).label,
+    btfMarkingStatus(record, reports),
     record.date,
     record.kind,
     record.title,
@@ -3151,6 +3208,7 @@ function sourceNoteQueueText(record = {}) {
     record.sourceSeries,
     record.documentScope,
     sourceNoteDraft(record),
+    btfMarkingText(marking),
     sourceNoteQueueAction(record)
   ]
     .filter(Boolean)
@@ -3158,16 +3216,21 @@ function sourceNoteQueueText(record = {}) {
     .toLowerCase();
 }
 
-function filteredSourceNoteQueueRecords(data) {
+function filteredSourceNoteQueueRecords(data, reports = {}) {
   return sourceNoteQueueRecords(data)
     .filter((record) => state.sourceNotePriority === "All" || sourceNoteQueuePriority(record).label === state.sourceNotePriority)
     .filter((record) => state.sourceNoteYear === "All" || sourceNoteQueueYear(record) === state.sourceNoteYear)
-    .filter((record) => !state.sourceNoteSearch || sourceNoteQueueText(record).includes(state.sourceNoteSearch.toLowerCase()));
+    .filter((record) => state.sourceNoteOcr === "All" || btfMarkingStatus(record, reports) === state.sourceNoteOcr)
+    .filter((record) => !state.sourceNoteSearch || sourceNoteQueueText(record, reports).includes(state.sourceNoteSearch.toLowerCase()));
 }
 
-function exportSourceNoteQueue(data) {
+function exportSourceNoteQueue(data, reports = {}) {
   const fields = [
     "priority",
+    "ocrConfidence",
+    "ocrLevel",
+    "ocrClassificationCandidates",
+    "ocrReleaseStampCandidates",
     "date",
     "kind",
     "title",
@@ -3181,21 +3244,28 @@ function exportSourceNoteQueue(data) {
     "sourceNoteDraft",
     "compilerCheck"
   ];
-  const rows = filteredSourceNoteQueueRecords(data).map((record) => [
-    sourceNoteQueuePriority(record).label,
-    record.date,
-    record.kind,
-    record.title,
-    record.identifier,
-    record.collection,
-    record.sourceFamilyLabel || record.sourceFamily,
-    record.pageCount,
-    record.sourcePdfPages,
-    record.pdfUrl,
-    stableChronologyRecordUrl(record),
-    sourceNoteDraft(record),
-    sourceNoteQueueAction(record)
-  ]);
+  const rows = filteredSourceNoteQueueRecords(data, reports).map((record) => {
+    const marking = btfMarkingForRecord(record, reports);
+    return [
+      sourceNoteQueuePriority(record).label,
+      btfMarkingConfidenceLabel(marking),
+      marking?.level || "",
+      (marking?.classificationCandidates || []).join(" | "),
+      (marking?.releaseStampCandidates || []).join(" | "),
+      record.date,
+      record.kind,
+      record.title,
+      record.identifier,
+      record.collection,
+      record.sourceFamilyLabel || record.sourceFamily,
+      record.pageCount,
+      record.sourcePdfPages,
+      record.pdfUrl,
+      stableChronologyRecordUrl(record),
+      sourceNoteDraft(record),
+      sourceNoteQueueAction(record)
+    ];
+  });
   const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
   downloadTextFile("balkans-93-95-source-note-finalization-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
 }
@@ -3224,15 +3294,24 @@ function sourceNoteQueueLinks(record) {
 function renderSourceNoteQueue(data, reports = {}) {
   if (!nodes.sourceNoteQueueRoot) return;
   const allRecords = sourceNoteQueueRecords(data);
-  const records = filteredSourceNoteQueueRecords(data);
+  const records = filteredSourceNoteQueueRecords(data, reports);
   const auditTotal = reports.sourceNoteAudit?.summary?.classificationOrHandlingNotTranscribed ?? records.length;
+  const markingSummary = reports.btfMarkings?.summary;
   const byPriority = groupCounts(allRecords, (record) => sourceNoteQueuePriority(record).label)
     .map((item) => `${item.label}: ${formatNumber(item.count)}`)
     .join(" / ");
   const priorities = ["All", ...new Set(allRecords.map((record) => sourceNoteQueuePriority(record).label).filter(Boolean))];
   const years = ["All", ...new Set(allRecords.map(sourceNoteQueueYear).filter(Boolean).sort())];
+  const ocrStatuses = [
+    "All",
+    ...new Set(allRecords.map((record) => btfMarkingStatus(record, reports)).filter(Boolean))
+  ].sort((a, b) => {
+    const order = ["All", "High OCR", "Medium OCR", "Release stamp only", "No OCR candidate", "OCR error", "Not scanned"];
+    return order.indexOf(a) - order.indexOf(b);
+  });
   if (!priorities.includes(state.sourceNotePriority)) state.sourceNotePriority = "All";
   if (!years.includes(state.sourceNoteYear)) state.sourceNoteYear = "All";
+  if (!ocrStatuses.includes(state.sourceNoteOcr)) state.sourceNoteOcr = "All";
 
   const header = document.createElement("div");
   header.className = "source-note-queue-header";
@@ -3242,7 +3321,15 @@ function renderSourceNoteQueue(data, reports = {}) {
   const summary = document.createElement("p");
   summary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
     allRecords.length
-  )} chronology records still requiring classification/handling transcription before final FRUS source-note clearance. ${auditTotal !== allRecords.length ? `The audit report counts ${formatNumber(auditTotal)} chronology/conversation rows including cross-reference rows. ` : ""}${byPriority}`;
+  )} chronology records still requiring classification/handling transcription before final FRUS source-note clearance. ${auditTotal !== allRecords.length ? `The audit report counts ${formatNumber(auditTotal)} chronology/conversation rows including cross-reference rows. ` : ""}${byPriority}${
+    markingSummary
+      ? ` BTF OCR marking audit: ${formatNumber(markingSummary.withHighConfidenceMarking)} high-confidence, ${formatNumber(
+          markingSummary.withMediumConfidenceMarking
+        )} medium-confidence, ${formatNumber(markingSummary.releaseStampOnly)} release-stamp-only, ${formatNumber(
+          markingSummary.noCandidate
+        )} no-candidate rows.`
+      : ""
+  }`;
   copy.append(heading, summary);
 
   const controls = document.createElement("div");
@@ -3299,6 +3386,24 @@ function renderSourceNoteQueue(data, reports = {}) {
   });
   yearLabel.append(yearText, yearSelect);
 
+  const ocrLabel = document.createElement("label");
+  ocrLabel.className = "select-field";
+  const ocrText = document.createElement("span");
+  ocrText.textContent = "OCR";
+  const ocrSelect = document.createElement("select");
+  for (const status of ocrStatuses) {
+    const option = document.createElement("option");
+    option.value = status;
+    option.textContent = status;
+    ocrSelect.append(option);
+  }
+  ocrSelect.value = state.sourceNoteOcr;
+  ocrSelect.addEventListener("change", (event) => {
+    state.sourceNoteOcr = event.target.value;
+    renderSourceNoteQueue(data, reports);
+  });
+  ocrLabel.append(ocrText, ocrSelect);
+
   const resetButton = document.createElement("button");
   resetButton.type = "button";
   resetButton.className = "reset-button";
@@ -3306,6 +3411,7 @@ function renderSourceNoteQueue(data, reports = {}) {
   resetButton.addEventListener("click", () => {
     state.sourceNotePriority = "All";
     state.sourceNoteYear = "All";
+    state.sourceNoteOcr = "All";
     state.sourceNoteSearch = "";
     renderSourceNoteQueue(data, reports);
   });
@@ -3314,9 +3420,9 @@ function renderSourceNoteQueue(data, reports = {}) {
   exportButton.type = "button";
   exportButton.className = "reset-button export-button";
   exportButton.textContent = "Export Queue CSV";
-  exportButton.addEventListener("click", () => exportSourceNoteQueue(data));
+  exportButton.addEventListener("click", () => exportSourceNoteQueue(data, reports));
 
-  controls.append(searchLabel, priorityLabel, yearLabel, resetButton, exportButton);
+  controls.append(searchLabel, priorityLabel, yearLabel, ocrLabel, resetButton, exportButton);
   header.append(copy, controls);
 
   const tableWrap = document.createElement("div");
@@ -3329,6 +3435,7 @@ function renderSourceNoteQueue(data, reports = {}) {
       <th scope="col">Date</th>
       <th scope="col">Record</th>
       <th scope="col">Draft Source Note</th>
+      <th scope="col">OCR Marking Candidate</th>
       <th scope="col">Source-note work</th>
       <th scope="col">Links</th>
     </tr>
@@ -3338,7 +3445,7 @@ function renderSourceNoteQueue(data, reports = {}) {
   if (!records.length) {
     const row = document.createElement("tr");
     const cell = document.createElement("td");
-    cell.colSpan = 6;
+    cell.colSpan = 7;
     cell.className = "empty-state";
     cell.textContent = "No source-note finalization records match the current filters.";
     row.append(cell);
@@ -3368,13 +3475,23 @@ function renderSourceNoteQueue(data, reports = {}) {
     const draftCell = document.createElement("td");
     draftCell.textContent = sourceNoteDraft(record);
 
+    const marking = btfMarkingForRecord(record, reports);
+    const markingCell = document.createElement("td");
+    const markingBadge = document.createElement("span");
+    markingBadge.className = `source-type ocr-${(marking?.confidence || "not-scanned").replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`;
+    markingBadge.textContent = btfMarkingConfidenceLabel(marking);
+    const markingCandidate = document.createElement("p");
+    markingCandidate.className = "queue-record-meta ocr-candidate";
+    markingCandidate.textContent = [marking?.level, btfMarkingShortCandidate(marking)].filter(Boolean).join(" | ") || "Open PDF for manual marking check.";
+    markingCell.append(markingBadge, markingCandidate);
+
     const actionCell = document.createElement("td");
     actionCell.textContent = sourceNoteQueueAction(record);
 
     const linkCell = document.createElement("td");
     linkCell.append(sourceNoteQueueLinks(record));
 
-    row.append(priorityCell, dateCell, recordCell, draftCell, actionCell, linkCell);
+    row.append(priorityCell, dateCell, recordCell, draftCell, markingCell, actionCell, linkCell);
     tbody.append(row);
   }
 
@@ -4897,7 +5014,8 @@ async function loadReports() {
     sourceNoteAudit,
     presidentialDailyDiary,
     gapRegister,
-    libraryVisit
+    libraryVisit,
+    btfMarkings
   ] = await Promise.all([
     loadOptionalJson(REPORT_URLS.documents),
     loadOptionalJson(REPORT_URLS.conversations),
@@ -4913,7 +5031,8 @@ async function loadReports() {
     loadOptionalJson(REPORT_URLS.sourceNoteAudit),
     loadOptionalJson(REPORT_URLS.presidentialDailyDiary),
     loadOptionalJson(REPORT_URLS.gapRegister),
-    loadOptionalJson(REPORT_URLS.libraryVisit)
+    loadOptionalJson(REPORT_URLS.libraryVisit),
+    loadOptionalJson(REPORT_URLS.btfMarkings)
   ]);
 
   return {
@@ -4931,7 +5050,8 @@ async function loadReports() {
     sourceNoteAudit,
     presidentialDailyDiary,
     gapRegister,
-    libraryVisit
+    libraryVisit,
+    btfMarkings
   };
 }
 
