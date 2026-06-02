@@ -31,7 +31,9 @@ const state = {
   libraryPriority: "Critical + High",
   librarySearch: "",
   pddConfidence: "All",
-  pddSearch: ""
+  pddSearch: "",
+  stateFoiaRoute: "All",
+  stateFoiaSearch: ""
 };
 
 const nodes = {
@@ -54,6 +56,13 @@ const nodes = {
   pddExport: document.querySelector("#pdd-export"),
   pddReferenceSummary: document.querySelector("#pdd-reference-summary"),
   pddReferencesRoot: document.querySelector("#pdd-references-root"),
+  stateFoiaSummaryRoot: document.querySelector("#state-foia-summary-root"),
+  stateFoiaSearch: document.querySelector("#state-foia-search"),
+  stateFoiaRouteFilters: document.querySelector("#state-foia-route-filters"),
+  stateFoiaReset: document.querySelector("#state-foia-reset"),
+  stateFoiaExport: document.querySelector("#state-foia-export"),
+  stateFoiaReferenceSummary: document.querySelector("#state-foia-reference-summary"),
+  stateFoiaReferencesRoot: document.querySelector("#state-foia-references-root"),
   librarySummaryRoot: document.querySelector("#library-summary-root"),
   libraryPlanRoot: document.querySelector("#library-plan-root"),
   libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
@@ -923,6 +932,253 @@ function renderPresidentialDailyDiary(report = {}, data = {}) {
   renderPddSummary(report, data);
   renderPddConfidenceFilters(report, data);
   renderPddReferences(report, data);
+}
+
+function stateFoiaDocuments(report = {}) {
+  return (report.stateFoiaDocuments || []).slice();
+}
+
+function stateFoiaRouteLabel(record = {}) {
+  return [record.from, record.to].filter(Boolean).join(" to ") || "Route pending";
+}
+
+function stateFoiaRouteBucket(record = {}) {
+  const route = stateFoiaRouteLabel(record);
+  if (/BELGRADE/i.test(route)) return "Belgrade";
+  if (/ZAGREB/i.test(route)) return "Zagreb";
+  if (/SARAJEVO/i.test(route)) return "Sarajevo";
+  if (/USNATO|NATO/i.test(route)) return "USNATO / NATO";
+  if (/USUN|United Nations|UN\b/i.test(route)) return "USUN / UN";
+  if (/MOSCOW/i.test(route)) return "Moscow";
+  if (/TOSEC|SECSTATE|S\/S/i.test(route)) return "Secretary / TOSEC";
+  if (/STATE/i.test(route)) return "State outgoing";
+  return "Other";
+}
+
+function stateFoiaText(record = {}) {
+  return [
+    record.title,
+    record.kind,
+    record.date,
+    record.identifier,
+    record.caseNumber,
+    record.messageNumber,
+    record.classification,
+    record.releasedecision,
+    record.doctype,
+    record.from,
+    record.to,
+    record.sourceSeries,
+    record.sourceNoteDraft,
+    record.compilerUse,
+    ...(record.matchedQueries || []),
+    ...((record.targets || []).map((target) => [target.staff, target.folderTitle, target.relationship].join(" ")))
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredStateFoiaDocuments(report = {}) {
+  return stateFoiaDocuments(report)
+    .filter((record) => state.stateFoiaRoute === "All" || stateFoiaRouteBucket(record) === state.stateFoiaRoute)
+    .filter((record) => !state.stateFoiaSearch || stateFoiaText(record).includes(state.stateFoiaSearch.toLowerCase()))
+    .sort((a, b) => {
+      return (
+        String(a.sortDate || "").localeCompare(String(b.sortDate || "")) ||
+        stateFoiaRouteBucket(a).localeCompare(stateFoiaRouteBucket(b)) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function renderStateFoiaSummary(report = {}) {
+  const summary = report.summary || {};
+  const records = stateFoiaDocuments(report);
+  const routes = new Set(records.map(stateFoiaRouteBucket));
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const classified = records.filter((record) => /^(S|C|SECRET|CONFIDENTIAL)$/i.test(record.classification || "")).length;
+
+  nodes.stateFoiaSummaryRoot.replaceChildren(
+    auditCard(
+      "Candidate Records",
+      formatNumber(records.length),
+      `${formatNumber(summary.totalHitsAcrossQueries)} total API hits across ${formatNumber(summary.queryPacks)} targeted search packs; ${formatNumber(summary.fetchedRows)} rows fetched for screening.`,
+      "Candidate layer only; not a volume selection list."
+    ),
+    auditCard(
+      "Counted Pages",
+      formatNumber(pages || summary.countedPages),
+      `${formatNumber(summary.uniqueBalkansPdfRows)} unique Balkans PDF rows; ${formatNumber(records.length)} high-confidence candidates retained.`,
+      "Direct State FOIA PDFs are linked for document-boundary and duplicate review."
+    ),
+    auditCard(
+      "Routes",
+      formatNumber(routes.size),
+      `${formatNumber(classified)} records carry Secret or Confidential metadata in the State FOIA row.`,
+      "Route buckets help separate embassy, mission, and Washington traffic before promotion."
+    )
+  );
+}
+
+function renderStateFoiaRouteFilters(report = {}) {
+  const preferred = [
+    "All",
+    "Belgrade",
+    "Zagreb",
+    "Sarajevo",
+    "USNATO / NATO",
+    "USUN / UN",
+    "Moscow",
+    "Secretary / TOSEC",
+    "State outgoing",
+    "Other"
+  ];
+  const buckets = new Set(stateFoiaDocuments(report).map(stateFoiaRouteBucket));
+  const routes = preferred.filter((route) => route === "All" || buckets.has(route));
+
+  renderButtonGroup(nodes.stateFoiaRouteFilters, routes, state.stateFoiaRoute, (value) => {
+    state.stateFoiaRoute = value;
+    renderStateFoiaRouteFilters(report);
+    renderStateFoiaDocuments(report);
+  });
+}
+
+function stateFoiaReviewAction(record = {}) {
+  const cableParts = [
+    record.messageNumber ? `message ${record.messageNumber}` : "",
+    record.classification ? `classification ${record.classification}` : "",
+    record.releasedecision ? `release ${record.releasedecision}` : ""
+  ]
+    .filter(Boolean)
+    .join("; ");
+  return `${cableParts || "State FOIA metadata recorded"}. Verify cable number, TAGS/SUBJECT, from/to line, addressees, drafting/clearance, distribution, attachments, excisions, and duplicate status before chronology promotion.`;
+}
+
+function renderStateFoiaDocuments(report = {}) {
+  const records = filteredStateFoiaDocuments(report);
+  const totalRecords = stateFoiaDocuments(report).length;
+  nodes.stateFoiaReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    totalRecords
+  )} State FOIA cable/memorandum candidates.`;
+  nodes.stateFoiaReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No State FOIA candidates match the current filters.";
+    row.append(cell);
+    nodes.stateFoiaReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || "Date pending";
+
+    const titleCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title;
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [record.identifier, record.caseNumber, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    titleCell.append(title, meta);
+
+    const routeCell = document.createElement("td");
+    const route = document.createElement("span");
+    route.className = "source-type direct";
+    route.textContent = stateFoiaRouteBucket(record);
+    const routeMeta = document.createElement("p");
+    routeMeta.className = "queue-record-meta";
+    routeMeta.textContent = stateFoiaRouteLabel(record);
+    routeCell.append(route, routeMeta);
+
+    const reviewCell = document.createElement("td");
+    const action = document.createElement("p");
+    action.className = "queue-record-meta";
+    action.textContent = stateFoiaReviewAction(record);
+    const queries = document.createElement("p");
+    queries.className = "queue-record-meta";
+    queries.textContent = `Matched: ${(record.matchedQueries || []).join("; ") || "State FOIA search pack"}`;
+    reviewCell.append(action, queries);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open PDF", record.pdfUrl],
+      ["Open FOIA result", record.itemUrl]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = record.sourceNoteDraft || "";
+    linkCell.append(links, note);
+
+    row.append(dateCell, titleCell, routeCell, reviewCell, linkCell);
+    nodes.stateFoiaReferencesRoot.append(row);
+  }
+}
+
+function exportStateFoiaDocuments(report = {}) {
+  const fields = [
+    "date",
+    "title",
+    "routeBucket",
+    "from",
+    "to",
+    "classification",
+    "releaseDecision",
+    "caseNumber",
+    "messageNumber",
+    "identifier",
+    "pageCount",
+    "matchedQueries",
+    "pdfUrl",
+    "foiaResultUrl",
+    "sourceSeries",
+    "sourceNoteDraft",
+    "compilerReview"
+  ];
+  const rows = filteredStateFoiaDocuments(report).map((record) => [
+    record.date,
+    record.title,
+    stateFoiaRouteBucket(record),
+    record.from,
+    record.to,
+    record.classification,
+    record.releasedecision,
+    record.caseNumber,
+    record.messageNumber,
+    record.identifier,
+    record.pageCount,
+    (record.matchedQueries || []).join("; "),
+    record.pdfUrl,
+    record.itemUrl,
+    record.sourceSeries,
+    record.sourceNoteDraft,
+    stateFoiaReviewAction(record)
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-state-foia-cable-review-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderStateFoiaQueue(report = {}) {
+  if (!report || !nodes.stateFoiaSummaryRoot) return;
+  renderStateFoiaSummary(report);
+  renderStateFoiaRouteFilters(report);
+  renderStateFoiaDocuments(report);
 }
 
 function libraryTargets(report = {}) {
@@ -2873,6 +3129,27 @@ function bindPddSearch(report, data) {
   });
 }
 
+function bindStateFoiaSearch(report) {
+  if (!report || !nodes.stateFoiaSearch) return;
+
+  nodes.stateFoiaSearch.addEventListener("input", (event) => {
+    state.stateFoiaSearch = event.target.value.trim();
+    renderStateFoiaDocuments(report);
+  });
+
+  nodes.stateFoiaReset.addEventListener("click", () => {
+    state.stateFoiaRoute = "All";
+    state.stateFoiaSearch = "";
+    nodes.stateFoiaSearch.value = "";
+    renderStateFoiaRouteFilters(report);
+    renderStateFoiaDocuments(report);
+  });
+
+  nodes.stateFoiaExport.addEventListener("click", () => {
+    exportStateFoiaDocuments(report);
+  });
+}
+
 async function loadOptionalJson(url) {
   try {
     const response = await fetch(url);
@@ -2961,6 +3238,7 @@ async function init() {
     renderAudit(data, reports);
     renderCompilerGaps(reports.gapRegister);
     renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
+    renderStateFoiaQueue(reports.stateFoia);
     renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
@@ -2972,6 +3250,7 @@ async function init() {
     renderQueue(data);
     bindSearch(data);
     bindPddSearch(reports.presidentialDailyDiary, data);
+    bindStateFoiaSearch(reports.stateFoia);
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {

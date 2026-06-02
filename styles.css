@@ -589,6 +589,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.state-foia-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(300px, 1fr) auto auto;
+  margin-top: 14px;
+}
+
+.state-foia-table-wrap {
+  margin-top: 14px;
+}
+
+.state-foia-table-wrap table {
+  min-width: 1180px;
+}
+
+.state-foia-table-wrap td:nth-child(2),
+.state-foia-table-wrap td:nth-child(4),
+.state-foia-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .library-table-wrap table {
   min-width: 1080px;
 }

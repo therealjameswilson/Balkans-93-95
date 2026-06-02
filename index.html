@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-pdd1" />
+    <link rel="stylesheet" href="styles.css?v=20260601-statefoia1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -58,6 +58,32 @@
         border-color: #0b5cab;
         background: #edf6ff;
       }
+
+      .compiler-network__links button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        border: 1px solid #b8c7d9;
+        border-radius: 7px;
+        padding: 0 9px;
+        color: #1f2933;
+        background: #ffffff;
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 900;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .compiler-network__links button:hover,
+      .compiler-network__links button:focus-visible {
+        border-color: #0b5cab;
+        background: #edf6ff;
+        outline: none;
+      }
+      .compiler-network__links button[data-copied="true"] {
+        border-color: #2f675f;
+        color: #2f675f;
+      }
       @media (max-width: 640px) {
         .compiler-network__inner {
           align-items: flex-start;
@@ -78,6 +104,7 @@
           <a href="https://history.state.gov/historicaldocuments/status-of-the-series" rel="noreferrer">FRUS Status</a>
           <a href="https://therealjameswilson.github.io/nara-scout/" rel="noreferrer">NARA Scout</a>
           <a href="https://therealjameswilson.github.io/strobe-talbott-foia/" rel="noreferrer">Strobe FOIA</a>
+          <button class="compiler-network__copy" type="button" data-compiler-handoff>Copy Handoff</button>
         </div>
       </div>
     </div>
@@ -91,6 +118,7 @@
         <a href="#audit">Audit</a>
         <a href="#compiler-gaps">Gaps</a>
         <a href="#presidential-daily-diary">Diary</a>
+        <a href="#state-foia">State FOIA</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
@@ -261,6 +289,54 @@
               </tr>
             </thead>
             <tbody id="pdd-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section state-foia-section" id="state-foia" aria-labelledby="state-foia-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">State Department Review</p>
+            <h2 id="state-foia-title">State FOIA Cable and Memorandum Queue</h2>
+          </div>
+          <p class="section-note">
+            Targeted State FOIA Virtual Reading Room hits are kept here as
+            candidate operational records for compiler review. Promotion into
+            the chronology still requires duplicate checks, document-boundary
+            review, and FRUS-level source-note verification.
+          </p>
+        </div>
+        <div id="state-foia-summary-root" class="audit-grid state-foia-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools state-foia-tools" aria-label="State FOIA candidate filters">
+          <label class="search-field">
+            <span>Search State FOIA</span>
+            <input
+              id="state-foia-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Post, title, case, subject, person"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Route</p>
+            <div id="state-foia-route-filters" class="filter-row compact" aria-label="State FOIA route filters"></div>
+          </div>
+          <button id="state-foia-reset" class="reset-button" type="button">Reset</button>
+          <button id="state-foia-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="state-foia-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap state-foia-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Cable / Memo Lead</th>
+                <th scope="col">Route</th>
+                <th scope="col">Compiler Review</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="state-foia-references-root"></tbody>
           </table>
         </div>
       </section>
@@ -485,7 +561,57 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-pdd1"></script>
-    <script src="app.js?v=20260601-pdd1"></script>
+    <script src="data/compiler-map.js?v=20260601-statefoia1"></script>
+    <script src="app.js?v=20260601-statefoia1"></script>
+    <script id="compiler-network-script">
+      (() => {
+        const button = document.querySelector("[data-compiler-handoff]");
+        if (!button) return;
+
+        function fallbackCopy(text) {
+          const area = document.createElement("textarea");
+          area.value = text;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.left = "-9999px";
+          document.body.append(area);
+          area.select();
+          try { document.execCommand("copy"); } finally { area.remove(); }
+        }
+
+        function handoffText() {
+          const title = document.querySelector("h1")?.textContent.trim() || document.title || "FRUS compiler page";
+          return [
+            "# " + title,
+            "",
+            "Page: " + window.location.href,
+            "Compiler Assist: https://therealjameswilson.github.io/Compiler-Assist/",
+            "FRUS Status: https://history.state.gov/historicaldocuments/status-of-the-series",
+            "NARA Scout: https://therealjameswilson.github.io/nara-scout/",
+            "Strobe FOIA: https://therealjameswilson.github.io/strobe-talbott-foia/",
+            "",
+            "Use this note as the starting point for a pull request, source-note check, or compiler handoff."
+          ].join("\n");
+        }
+
+        button.addEventListener("click", async () => {
+          const text = handoffText();
+          try {
+            if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(text);
+            else fallbackCopy(text);
+            button.textContent = "Copied";
+            button.dataset.copied = "true";
+            window.setTimeout(() => {
+              button.textContent = "Copy Handoff";
+              delete button.dataset.copied;
+            }, 1800);
+          } catch (error) {
+            fallbackCopy(text);
+            button.textContent = "Copied";
+            button.dataset.copied = "true";
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
