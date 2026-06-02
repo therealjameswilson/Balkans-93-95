@@ -36,7 +36,10 @@ const state = {
   stateFoiaSearch: "",
   promotionPriority: "All",
   promotionSource: "All",
-  promotionSearch: ""
+  promotionSearch: "",
+  defenseJcsTopic: "All",
+  defenseJcsSource: "All",
+  defenseJcsSearch: ""
 };
 
 const nodes = {
@@ -73,6 +76,14 @@ const nodes = {
   stateFoiaExport: document.querySelector("#state-foia-export"),
   stateFoiaReferenceSummary: document.querySelector("#state-foia-reference-summary"),
   stateFoiaReferencesRoot: document.querySelector("#state-foia-references-root"),
+  defenseJcsSummaryRoot: document.querySelector("#defense-jcs-summary-root"),
+  defenseJcsSearch: document.querySelector("#defense-jcs-search"),
+  defenseJcsTopic: document.querySelector("#defense-jcs-topic"),
+  defenseJcsSource: document.querySelector("#defense-jcs-source"),
+  defenseJcsReset: document.querySelector("#defense-jcs-reset"),
+  defenseJcsExport: document.querySelector("#defense-jcs-export"),
+  defenseJcsReferenceSummary: document.querySelector("#defense-jcs-reference-summary"),
+  defenseJcsReferencesRoot: document.querySelector("#defense-jcs-references-root"),
   librarySummaryRoot: document.querySelector("#library-summary-root"),
   libraryPlanRoot: document.querySelector("#library-plan-root"),
   libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
@@ -1307,6 +1318,242 @@ function renderStateFoiaQueue(report = {}) {
   renderStateFoiaSummary(report);
   renderStateFoiaRouteFilters(report);
   renderStateFoiaDocuments(report);
+}
+
+function defenseJcsDocuments(report = {}) {
+  return (report.documents || []).slice();
+}
+
+function defenseJcsSourceLabel(record = {}) {
+  const explicit = record.sourceFamilyLabel || record.sourceFamily;
+  if (explicit && explicit !== "Unknown") return explicit;
+  if ((record.targets || []).some((target) => target.type === "ranked-folder" || target.relationship === "exact-folder-title")) {
+    return "Clinton Digital Library research plan";
+  }
+  return record.repository || "Other source family";
+}
+
+function defenseJcsTopic(record = {}) {
+  const text = [
+    record.title,
+    record.kind,
+    record.documentScope,
+    record.sourceFamilyLabel,
+    record.sourceSeries,
+    record.compilerUse,
+    ...(record.tags || []),
+    ...(record.subjects || [])
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (/IFOR|Implementation Force|implementation/i.test(text)) return "IFOR / implementation";
+  if (/UNPROFOR|withdrawal|redeployment/i.test(text)) return "UNPROFOR / withdrawal";
+  if (/arms embargo|lift and strike|lift-and-strike/i.test(text)) return "Arms embargo / lift-strike";
+  if (/air ?strike|air ?power|no-fly|NAC|NATO|Deliberate Force/i.test(text)) return "Air power / NATO";
+  if (/JCS|Joint Chiefs|OSD|SECDEF|Perry|Shalikashvili|Defense/i.test(text)) return "JCS / OSD / Defense";
+  if (/military|OPLAN|contingency|ground forces/i.test(text)) return "Military planning";
+  return "Other military";
+}
+
+function defenseJcsText(record = {}) {
+  return [
+    record.title,
+    record.kind,
+    record.date,
+    record.identifier,
+    defenseJcsTopic(record),
+    defenseJcsSourceLabel(record),
+    record.sourceSeries,
+    record.sourceNoteDraft,
+    record.compilerUse,
+    ...(record.tags || []),
+    ...(record.subjects || []),
+    ...((record.targets || []).map((target) => [target.staff, target.folderTitle, target.tier, target.oaBox].join(" ")))
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredDefenseJcsDocuments(report = {}) {
+  return defenseJcsDocuments(report)
+    .filter((record) => state.defenseJcsTopic === "All" || defenseJcsTopic(record) === state.defenseJcsTopic)
+    .filter((record) => state.defenseJcsSource === "All" || defenseJcsSourceLabel(record) === state.defenseJcsSource)
+    .filter((record) => !state.defenseJcsSearch || defenseJcsText(record).includes(state.defenseJcsSearch.toLowerCase()))
+    .sort((a, b) => {
+      return (
+        String(a.sortDate || "9999").localeCompare(String(b.sortDate || "9999")) ||
+        defenseJcsTopic(a).localeCompare(defenseJcsTopic(b)) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function renderDefenseJcsSummary(report = {}) {
+  const summary = report.summary || {};
+  const records = defenseJcsDocuments(report);
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const topics = new Set(records.map(defenseJcsTopic));
+  const sources = new Set(records.map(defenseJcsSourceLabel));
+  const dated = records.filter((record) => record.sortDate).length;
+
+  nodes.defenseJcsSummaryRoot.replaceChildren(
+    auditCard(
+      "Military Leads",
+      formatNumber(records.length),
+      `${formatNumber(pages || summary.countedPages)} counted pages across ${formatNumber(sources.size)} source families.`,
+      "Aggregated from CIA/BTF, State FOIA, NARA, and Clinton Library research-plan layers."
+    ),
+    auditCard(
+      "Topic Buckets",
+      formatNumber(topics.size),
+      "Filters separate IFOR, UNPROFOR withdrawal, air power/NATO, arms embargo, JCS/OSD, and planning leads.",
+      "Use with PC/DC decision points and presidential-call chronology."
+    ),
+    auditCard(
+      "Chronology Readiness",
+      formatNumber(dated),
+      `${formatNumber(records.length - dated)} leads still need exact document-date or source-boundary verification before promotion.`,
+      "This section is a source-base review queue, not a selection list."
+    )
+  );
+}
+
+function renderDefenseJcsFilters(report = {}) {
+  const topicOrder = [
+    "All",
+    "IFOR / implementation",
+    "UNPROFOR / withdrawal",
+    "Air power / NATO",
+    "Arms embargo / lift-strike",
+    "JCS / OSD / Defense",
+    "Military planning",
+    "Other military"
+  ];
+  const topicSet = new Set(defenseJcsDocuments(report).map(defenseJcsTopic));
+  const topics = topicOrder.filter((topic) => topic === "All" || topicSet.has(topic));
+  const sources = ["All", ...new Set(defenseJcsDocuments(report).map(defenseJcsSourceLabel).filter(Boolean).sort())];
+  if (!topics.includes(state.defenseJcsTopic)) state.defenseJcsTopic = "All";
+  if (!sources.includes(state.defenseJcsSource)) state.defenseJcsSource = "All";
+
+  renderSelect(nodes.defenseJcsTopic, topics, state.defenseJcsTopic, (value) => {
+    state.defenseJcsTopic = value;
+    renderDefenseJcsDocuments(report);
+  });
+  renderSelect(nodes.defenseJcsSource, sources, state.defenseJcsSource, (value) => {
+    state.defenseJcsSource = value;
+    renderDefenseJcsDocuments(report);
+  });
+}
+
+function renderDefenseJcsDocuments(report = {}) {
+  const records = filteredDefenseJcsDocuments(report);
+  const total = defenseJcsDocuments(report).length;
+  nodes.defenseJcsReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    total
+  )} Defense/JCS and military-implementation leads.`;
+  nodes.defenseJcsReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No Defense/JCS leads match the current filters.";
+    row.append(cell);
+    nodes.defenseJcsReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || record.sortDate || "Date pending";
+
+    const leadCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title || "Untitled military lead";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [record.kind, record.identifier, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    leadCell.append(title, meta);
+
+    const topicCell = document.createElement("td");
+    const topic = document.createElement("span");
+    topic.className = "source-type direct";
+    topic.textContent = defenseJcsTopic(record);
+    topicCell.append(topic);
+
+    const sourceCell = document.createElement("td");
+    const source = document.createElement("strong");
+    source.textContent = defenseJcsSourceLabel(record);
+    const provenance = document.createElement("p");
+    provenance.className = "queue-record-meta";
+    provenance.textContent = record.sourceNoteDraft || "Source-note draft pending.";
+    sourceCell.append(source, provenance);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open PDF", record.pdfUrl],
+      ["Open record", record.itemUrl],
+      ["Original file", record.originalFile]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    linkCell.append(links);
+
+    row.append(dateCell, leadCell, topicCell, sourceCell, linkCell);
+    nodes.defenseJcsReferencesRoot.append(row);
+  }
+}
+
+function exportDefenseJcsDocuments(report = {}) {
+  const fields = [
+    "date",
+    "title",
+    "topic",
+    "sourceFamily",
+    "kind",
+    "identifier",
+    "pageCount",
+    "pdfUrl",
+    "recordUrl",
+    "originalFile",
+    "sourceNoteDraft",
+    "compilerUse"
+  ];
+  const rows = filteredDefenseJcsDocuments(report).map((record) => [
+    record.date || record.sortDate,
+    record.title,
+    defenseJcsTopic(record),
+    defenseJcsSourceLabel(record),
+    record.kind,
+    record.identifier,
+    record.pageCount,
+    record.pdfUrl,
+    record.itemUrl,
+    record.originalFile,
+    record.sourceNoteDraft,
+    record.compilerUse
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-defense-jcs-review-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderDefenseJcsQueue(report = {}) {
+  if (!report || !nodes.defenseJcsSummaryRoot) return;
+  renderDefenseJcsSummary(report);
+  renderDefenseJcsFilters(report);
+  renderDefenseJcsDocuments(report);
 }
 
 function libraryTargets(report = {}) {
@@ -3278,6 +3525,28 @@ function bindStateFoiaSearch(report) {
   });
 }
 
+function bindDefenseJcsSearch(report) {
+  if (!report || !nodes.defenseJcsSearch) return;
+
+  nodes.defenseJcsSearch.addEventListener("input", (event) => {
+    state.defenseJcsSearch = event.target.value.trim();
+    renderDefenseJcsDocuments(report);
+  });
+
+  nodes.defenseJcsReset.addEventListener("click", () => {
+    state.defenseJcsTopic = "All";
+    state.defenseJcsSource = "All";
+    state.defenseJcsSearch = "";
+    nodes.defenseJcsSearch.value = "";
+    renderDefenseJcsFilters(report);
+    renderDefenseJcsDocuments(report);
+  });
+
+  nodes.defenseJcsExport.addEventListener("click", () => {
+    exportDefenseJcsDocuments(report);
+  });
+}
+
 function bindPromotionSearch(report) {
   if (!report || !nodes.promotionSearch) return;
 
@@ -3390,6 +3659,7 @@ async function init() {
     renderCompilerGaps(reports.gapRegister);
     renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
     renderStateFoiaQueue(reports.stateFoia);
+    renderDefenseJcsQueue(reports.defenseJcs);
     renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
@@ -3403,6 +3673,7 @@ async function init() {
     bindPromotionSearch(reports.gapRegister);
     bindPddSearch(reports.presidentialDailyDiary, data);
     bindStateFoiaSearch(reports.stateFoia);
+    bindDefenseJcsSearch(reports.defenseJcs);
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {

@@ -628,6 +628,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.defense-jcs-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(210px, 0.55fr) minmax(260px, 0.75fr) auto auto;
+  margin-top: 14px;
+}
+
+.defense-jcs-table-wrap {
+  margin-top: 14px;
+}
+
+.defense-jcs-table-wrap table {
+  min-width: 1180px;
+}
+
+.defense-jcs-table-wrap td:nth-child(2),
+.defense-jcs-table-wrap td:nth-child(4),
+.defense-jcs-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .library-table-wrap table {
   min-width: 1080px;
 }

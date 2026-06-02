@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-promotionqueue1" />
+    <link rel="stylesheet" href="styles.css?v=20260601-defensejcs1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -119,6 +119,7 @@
         <a href="#compiler-gaps">Gaps</a>
         <a href="#presidential-daily-diary">Diary</a>
         <a href="#state-foia">State FOIA</a>
+        <a href="#defense-jcs">Defense/JCS</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
@@ -377,6 +378,58 @@
         </div>
       </section>
 
+      <section class="section defense-jcs-section" id="defense-jcs" aria-labelledby="defense-jcs-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Military Implementation</p>
+            <h2 id="defense-jcs-title">Defense, JCS, and Military Implementation Queue</h2>
+          </div>
+          <p class="section-note">
+            This cross-source queue gathers digitized leads for IFOR,
+            UNPROFOR withdrawal, air power, no-fly-zone enforcement,
+            lift-and-strike, OSD/JCS planning, and military implementation.
+            It is a source-base review aid, not an inclusion recommendation.
+          </p>
+        </div>
+        <div id="defense-jcs-summary-root" class="audit-grid defense-jcs-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools defense-jcs-tools" aria-label="Defense and JCS source-base filters">
+          <label class="search-field">
+            <span>Search Defense/JCS</span>
+            <input
+              id="defense-jcs-search"
+              type="search"
+              autocomplete="off"
+              placeholder="IFOR, UNPROFOR, air power, OSD, JCS"
+            />
+          </label>
+          <label class="select-field">
+            <span>Topic</span>
+            <select id="defense-jcs-topic"></select>
+          </label>
+          <label class="select-field">
+            <span>Source Family</span>
+            <select id="defense-jcs-source"></select>
+          </label>
+          <button id="defense-jcs-reset" class="reset-button" type="button">Reset</button>
+          <button id="defense-jcs-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="defense-jcs-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap defense-jcs-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Lead</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Source / Provenance</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="defense-jcs-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="section research-section" id="clinton-library" aria-labelledby="clinton-library-title">
         <div class="section-heading">
           <div>
@@ -597,8 +650,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-promotionqueue1"></script>
-    <script src="app.js?v=20260601-promotionqueue1"></script>
+    <script src="data/compiler-map.js?v=20260601-defensejcs1"></script>
+    <script src="app.js?v=20260601-defensejcs1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
