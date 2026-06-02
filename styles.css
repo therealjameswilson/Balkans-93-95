@@ -608,6 +608,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.talbott-foia-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(210px, 0.55fr) minmax(180px, 0.45fr) minmax(130px, 0.32fr) auto auto;
+  margin-top: 14px;
+}
+
+.talbott-foia-table-wrap {
+  margin-top: 14px;
+}
+
+.talbott-foia-table-wrap table {
+  min-width: 1180px;
+}
+
+.talbott-foia-table-wrap td:nth-child(2),
+.talbott-foia-table-wrap td:nth-child(4),
+.talbott-foia-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .promotion-tools {
   grid-template-columns: minmax(260px, 1fr) minmax(220px, 0.55fr) minmax(260px, 0.75fr) auto auto;
   margin-top: 16px;

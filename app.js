@@ -34,6 +34,10 @@ const state = {
   pddSearch: "",
   stateFoiaRoute: "All",
   stateFoiaSearch: "",
+  talbottFoiaStatus: "All",
+  talbottFoiaKind: "All",
+  talbottFoiaYear: "All",
+  talbottFoiaSearch: "",
   promotionPriority: "All",
   promotionSource: "All",
   promotionSearch: "",
@@ -83,6 +87,15 @@ const nodes = {
   stateFoiaExport: document.querySelector("#state-foia-export"),
   stateFoiaReferenceSummary: document.querySelector("#state-foia-reference-summary"),
   stateFoiaReferencesRoot: document.querySelector("#state-foia-references-root"),
+  talbottFoiaSummaryRoot: document.querySelector("#talbott-foia-summary-root"),
+  talbottFoiaSearch: document.querySelector("#talbott-foia-search"),
+  talbottFoiaStatus: document.querySelector("#talbott-foia-status"),
+  talbottFoiaKind: document.querySelector("#talbott-foia-kind"),
+  talbottFoiaYear: document.querySelector("#talbott-foia-year"),
+  talbottFoiaReset: document.querySelector("#talbott-foia-reset"),
+  talbottFoiaExport: document.querySelector("#talbott-foia-export"),
+  talbottFoiaReferenceSummary: document.querySelector("#talbott-foia-reference-summary"),
+  talbottFoiaReferencesRoot: document.querySelector("#talbott-foia-references-root"),
   defenseJcsSummaryRoot: document.querySelector("#defense-jcs-summary-root"),
   defenseJcsSearch: document.querySelector("#defense-jcs-search"),
   defenseJcsTopic: document.querySelector("#defense-jcs-topic"),
@@ -1342,6 +1355,260 @@ function renderStateFoiaQueue(report = {}) {
   renderStateFoiaSummary(report);
   renderStateFoiaRouteFilters(report);
   renderStateFoiaDocuments(report);
+}
+
+function talbottFoiaDocuments(report = {}) {
+  return (report.standaloneCandidates || []).slice();
+}
+
+function talbottFoiaYear(record = {}) {
+  const year = record.year || String(record.date || "").match(/\b(19|20)\d{2}\b/)?.[0];
+  return year ? String(year) : "Date pending";
+}
+
+function talbottFoiaSortDate(record = {}) {
+  const parts = String(record.date || "").match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (!parts) return "9999";
+  const [, month, day, year] = parts;
+  return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+}
+
+function talbottFoiaStatus(record = {}) {
+  return /already included/i.test(record.selectedReason || "") ? "Already in chronology" : "Needs chronology review";
+}
+
+function talbottFoiaKind(record = {}) {
+  const title = record.title || "";
+  if (/Dissent Channel/i.test(title)) return "Dissent channel";
+  if (/Memorandum|Memo/i.test(title)) return "Memorandum";
+  if (/Official\s*-\s*Informal/i.test(title)) return "Official-informal";
+  if (/Note/i.test(title)) return "Note";
+  if (/Letter|Handwritten/i.test(title)) return "Letter";
+  if (/Appearance|Briefing/i.test(title)) return "Briefing";
+  if (/Remarks|Intervention|Leadership/i.test(title)) return "Remarks / speech";
+  return "Other Talbott record";
+}
+
+function talbottFoiaReleaseLabel(record = {}) {
+  const match = String(record.pdfUrl || "").match(/FOIA_L_([^/]+)/i);
+  if (!match) return "";
+  return match[1].replace(/([A-Za-z]+)(\d{4})/, "$1 $2");
+}
+
+function talbottFoiaSourceNote(record = {}) {
+  const release = talbottFoiaReleaseLabel(record);
+  const releaseLabel = release ? ` (${release} release)` : "";
+  const pages = record.pageCount ? `source PDF pp. 1-${record.pageCount}; ${pageLabel(record.pageCount)}` : "source PDF pages pending";
+  return `Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA case F-2017-13804, ${record.documentId}${releaseLabel}. Classification and handling markings require PDF transcription. Digital copy, ${pages}.`;
+}
+
+function talbottFoiaReviewAction(record = {}) {
+  return `${record.selectedReason || "Standalone Talbott FOIA hit selected for compiler review."} Verify document boundary, classification and handling markings, distribution, attachments, annotations, excisions, and duplicate status against the chronology before promotion.`;
+}
+
+function talbottFoiaText(record = {}) {
+  return [
+    record.documentId,
+    record.date,
+    record.title,
+    talbottFoiaStatus(record),
+    talbottFoiaKind(record),
+    talbottFoiaReleaseLabel(record),
+    record.selectedReason,
+    record.snippet,
+    ...(record.matchedTerms || [])
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredTalbottFoiaDocuments(report = {}) {
+  return talbottFoiaDocuments(report)
+    .filter((record) => state.talbottFoiaStatus === "All" || talbottFoiaStatus(record) === state.talbottFoiaStatus)
+    .filter((record) => state.talbottFoiaKind === "All" || talbottFoiaKind(record) === state.talbottFoiaKind)
+    .filter((record) => state.talbottFoiaYear === "All" || talbottFoiaYear(record) === state.talbottFoiaYear)
+    .filter((record) => !state.talbottFoiaSearch || talbottFoiaText(record).includes(state.talbottFoiaSearch.toLowerCase()))
+    .sort((a, b) => {
+      return (
+        talbottFoiaSortDate(a).localeCompare(talbottFoiaSortDate(b)) ||
+        talbottFoiaStatus(a).localeCompare(talbottFoiaStatus(b)) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function renderTalbottFoiaSummary(report = {}) {
+  const summary = report.summary || {};
+  const records = talbottFoiaDocuments(report);
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const already = records.filter((record) => talbottFoiaStatus(record) === "Already in chronology").length;
+  const needsReview = records.length - already;
+  const fullTextHits = summary.fullTextHits || report.matchedCount || 0;
+  const searchedRows = summary.searchedPdfFiles || report.rowCount || 0;
+
+  nodes.talbottFoiaSummaryRoot.replaceChildren(
+    auditCard(
+      "Standalone Records",
+      formatNumber(records.length || summary.selectedStandaloneRecords),
+      `${formatNumber(needsReview)} need chronology review; ${formatNumber(already)} are already represented in the chronology.`,
+      "Selected from the Strobe Talbott FOIA manifest; not an inclusion recommendation."
+    ),
+    auditCard(
+      "Counted Pages",
+      formatNumber(pages || summary.selectedStandalonePages),
+      `${formatNumber(fullTextHits)} full-text hits from ${formatNumber(searchedRows)} manifest PDF rows.`,
+      "Open each PDF to transcribe markings and confirm boundaries before promotion."
+    ),
+    auditCard(
+      "Boundary Note",
+      formatNumber(summary.postVolumeFollowOnHits || report.buckets?.postVolumeFollowOn || 0),
+      "Post-1995 follow-on hits remain outside this volume window but preserve a useful trail for later volumes.",
+      "This queue keeps the 1993-1995 standalone candidates separate."
+    )
+  );
+}
+
+function renderTalbottFoiaFilters(report = {}) {
+  const documents = talbottFoiaDocuments(report);
+  const statuses = ["All", "Needs chronology review", "Already in chronology"].filter(
+    (status) => status === "All" || documents.some((record) => talbottFoiaStatus(record) === status)
+  );
+  const kinds = ["All", ...new Set(documents.map(talbottFoiaKind).filter(Boolean).sort())];
+  const years = ["All", ...new Set(documents.map(talbottFoiaYear).filter(Boolean).sort())];
+  if (!statuses.includes(state.talbottFoiaStatus)) state.talbottFoiaStatus = "All";
+  if (!kinds.includes(state.talbottFoiaKind)) state.talbottFoiaKind = "All";
+  if (!years.includes(state.talbottFoiaYear)) state.talbottFoiaYear = "All";
+
+  renderSelect(nodes.talbottFoiaStatus, statuses, state.talbottFoiaStatus, (value) => {
+    state.talbottFoiaStatus = value;
+    renderTalbottFoiaDocuments(report);
+  });
+  renderSelect(nodes.talbottFoiaKind, kinds, state.talbottFoiaKind, (value) => {
+    state.talbottFoiaKind = value;
+    renderTalbottFoiaDocuments(report);
+  });
+  renderSelect(nodes.talbottFoiaYear, years, state.talbottFoiaYear, (value) => {
+    state.talbottFoiaYear = value;
+    renderTalbottFoiaDocuments(report);
+  });
+}
+
+function renderTalbottFoiaDocuments(report = {}) {
+  const records = filteredTalbottFoiaDocuments(report);
+  const total = talbottFoiaDocuments(report).length;
+  nodes.talbottFoiaReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    total
+  )} Strobe Talbott FOIA standalone records.`;
+  nodes.talbottFoiaReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No Talbott FOIA standalone records match the current filters.";
+    row.append(cell);
+    nodes.talbottFoiaReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || "Date pending";
+
+    const documentCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title || "Untitled Talbott FOIA record";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [talbottFoiaKind(record), record.documentId, pageLabel(record.pageCount)].filter(Boolean).join(" | ");
+    documentCell.append(title, meta);
+
+    const statusCell = document.createElement("td");
+    const status = document.createElement("span");
+    status.className = talbottFoiaStatus(record) === "Already in chronology" ? "source-type direct" : "source-type collection";
+    status.textContent = talbottFoiaStatus(record);
+    const terms = document.createElement("p");
+    terms.className = "queue-record-meta";
+    terms.textContent = (record.matchedTerms || []).slice(0, 8).join(" | ");
+    statusCell.append(status, terms);
+
+    const reviewCell = document.createElement("td");
+    const action = document.createElement("p");
+    action.className = "queue-record-meta";
+    action.textContent = talbottFoiaReviewAction(record);
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = talbottFoiaSourceNote(record);
+    reviewCell.append(action, note);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open PDF", record.pdfUrl],
+      ["Open manifest", report.manifestUrl]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    linkCell.append(links);
+
+    row.append(dateCell, documentCell, statusCell, reviewCell, linkCell);
+    nodes.talbottFoiaReferencesRoot.append(row);
+  }
+}
+
+function exportTalbottFoiaDocuments(report = {}) {
+  const fields = [
+    "date",
+    "sortDate",
+    "documentId",
+    "title",
+    "status",
+    "kind",
+    "pageCount",
+    "matchedTerms",
+    "selectedReason",
+    "pdfUrl",
+    "manifestUrl",
+    "sourceNoteDraft",
+    "compilerReview",
+    "snippet"
+  ];
+  const rows = filteredTalbottFoiaDocuments(report).map((record) => [
+    record.date,
+    talbottFoiaSortDate(record),
+    record.documentId,
+    record.title,
+    talbottFoiaStatus(record),
+    talbottFoiaKind(record),
+    record.pageCount,
+    (record.matchedTerms || []).join("; "),
+    record.selectedReason,
+    record.pdfUrl,
+    report.manifestUrl,
+    talbottFoiaSourceNote(record),
+    talbottFoiaReviewAction(record),
+    record.snippet
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-strobe-talbott-foia-standalone-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderTalbottFoiaQueue(report = {}) {
+  if (!report || !nodes.talbottFoiaSummaryRoot) return;
+  renderTalbottFoiaSummary(report);
+  renderTalbottFoiaFilters(report);
+  renderTalbottFoiaDocuments(report);
 }
 
 function defenseJcsDocuments(report = {}) {
@@ -4065,6 +4332,29 @@ function bindStateFoiaSearch(report) {
   });
 }
 
+function bindTalbottFoiaSearch(report) {
+  if (!report || !nodes.talbottFoiaSearch) return;
+
+  nodes.talbottFoiaSearch.addEventListener("input", (event) => {
+    state.talbottFoiaSearch = event.target.value.trim();
+    renderTalbottFoiaDocuments(report);
+  });
+
+  nodes.talbottFoiaReset.addEventListener("click", () => {
+    state.talbottFoiaStatus = "All";
+    state.talbottFoiaKind = "All";
+    state.talbottFoiaYear = "All";
+    state.talbottFoiaSearch = "";
+    nodes.talbottFoiaSearch.value = "";
+    renderTalbottFoiaFilters(report);
+    renderTalbottFoiaDocuments(report);
+  });
+
+  nodes.talbottFoiaExport.addEventListener("click", () => {
+    exportTalbottFoiaDocuments(report);
+  });
+}
+
 function bindDefenseJcsSearch(report) {
   if (!report || !nodes.defenseJcsSearch) return;
 
@@ -4244,6 +4534,7 @@ async function init() {
     renderCompilerGaps(reports.gapRegister);
     renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
     renderStateFoiaQueue(reports.stateFoia);
+    renderTalbottFoiaQueue(reports.talbott);
     renderDefenseJcsQueue(reports.defenseJcs);
     renderNaraCrosscheckQueue(reports.sourceCrosscheck);
     renderCollection37Queue(reports.btfDocuments);
@@ -4260,6 +4551,7 @@ async function init() {
     bindPromotionSearch(reports.gapRegister);
     bindPddSearch(reports.presidentialDailyDiary, data);
     bindStateFoiaSearch(reports.stateFoia);
+    bindTalbottFoiaSearch(reports.talbott);
     bindDefenseJcsSearch(reports.defenseJcs);
     bindNaraCrosscheckSearch(reports.sourceCrosscheck);
     bindCollection37Search(reports.btfDocuments);

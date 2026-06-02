@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260602-btfcollection1" />
+    <link rel="stylesheet" href="styles.css?v=20260602-talbottqueue1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -119,6 +119,7 @@
         <a href="#compiler-gaps">Gaps</a>
         <a href="#presidential-daily-diary">Diary</a>
         <a href="#state-foia">State FOIA</a>
+        <a href="#talbott-foia">Talbott</a>
         <a href="#defense-jcs">Defense/JCS</a>
         <a href="#nara-crosscheck">NARA</a>
         <a href="#collection-37">BTF</a>
@@ -376,6 +377,62 @@
               </tr>
             </thead>
             <tbody id="state-foia-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section talbott-foia-section" id="talbott-foia" aria-labelledby="talbott-foia-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Strobe Talbott FOIA</p>
+            <h2 id="talbott-foia-title">Talbott Standalone Document Queue</h2>
+          </div>
+          <p class="section-note">
+            Standalone Balkans records selected from the Strobe Talbott FOIA
+            manifest. The queue separates documents already represented in the
+            chronology from records still needing promotion, duplicate, and
+            source-note review.
+          </p>
+        </div>
+        <div id="talbott-foia-summary-root" class="audit-grid talbott-foia-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools talbott-foia-tools" aria-label="Talbott FOIA standalone document filters">
+          <label class="search-field">
+            <span>Search Talbott</span>
+            <input
+              id="talbott-foia-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Mamedov, Holbrooke, IFOR, Dayton, document ID"
+            />
+          </label>
+          <label class="select-field">
+            <span>Status</span>
+            <select id="talbott-foia-status"></select>
+          </label>
+          <label class="select-field">
+            <span>Type</span>
+            <select id="talbott-foia-kind"></select>
+          </label>
+          <label class="select-field">
+            <span>Year</span>
+            <select id="talbott-foia-year"></select>
+          </label>
+          <button id="talbott-foia-reset" class="reset-button" type="button">Reset</button>
+          <button id="talbott-foia-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="talbott-foia-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap talbott-foia-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Document</th>
+                <th scope="col">Status</th>
+                <th scope="col">Compiler Review</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="talbott-foia-references-root"></tbody>
           </table>
         </div>
       </section>
@@ -760,8 +817,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260602-btfcollection1"></script>
-    <script src="app.js?v=20260602-btfcollection1"></script>
+    <script src="data/compiler-map.js?v=20260602-talbottqueue1"></script>
+    <script src="app.js?v=20260602-talbottqueue1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
