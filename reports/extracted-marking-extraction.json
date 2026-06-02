@@ -1,0 +1,892 @@
+{
+  "generatedAt": "2026-06-02T11:18:02.674Z",
+  "method": "First-page text-layer plus OCR audit of local extracted review PDFs. Candidates require human comparison against the PDF before final FRUS source-note text.",
+  "summary": {
+    "candidatesReviewed": 23,
+    "withHighConfidenceMarking": 4,
+    "withMediumConfidenceMarking": 4,
+    "releaseStampOnly": 13,
+    "noCandidate": 2,
+    "errors": 0,
+    "byConfidence": {
+      "release-stamp-only": 13,
+      "none": 2,
+      "medium": 4,
+      "high": 4
+    },
+    "byLevel": {
+      "No level candidate": 19,
+      "Secret": 4
+    }
+  },
+  "records": [
+    {
+      "id": "gore-izetbegovic-1993-04-14",
+      "itemId": "",
+      "date": "Apr 14, 1993",
+      "sortDate": "1993-04-14",
+      "title": "Memorandum of Conversation - Vice President Gore and President Alija Izetbegovic",
+      "kind": "Memcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 5,
+      "sourcePdfPages": "3-7",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1993-04-14-gore-izetbegovic-1993-04-14.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED",
+        "| DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED",
+        "| DECLASSIFIED"
+      ],
+      "firstLines": [
+        "iGRErP",
+        "OFFICE OF THE VICE PRESIDENT",
+        "WASHINGTON",
+        "A p r i l 14, 1993",
+        "MEMORANDUM OF CONVERSATION",
+        "SUBJECT: Meeting between Vice P r e s i d e n t Gore and P r e s i d e n t",
+        "A l i j a I z e t b e g o v i c o f Bosnia and Herzegovina",
+        "PARTICIPANTS United States",
+        "The V i c e P r e s i d e n t",
+        "Warren C h r i s t o p h e r, S e c r e t a r y o f S t a t e"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1993-05-17-bosnia-principals-summary",
+      "itemId": "",
+      "date": "May 17, 1993",
+      "sortDate": "1993-05-17",
+      "title": "Decisions of Principals Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "19-20",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1993-05-17-pcdc-1993-05-17-bosnia-principals-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "none",
+      "level": "",
+      "classificationCandidates": [],
+      "releaseStampCandidates": [],
+      "firstLines": [
+        "CEGRBT 20527",
+        "SUBJECT: D e c i s i o n s o f P r i n c i p a l s Committee Meeting on",
+        "Bosnia, May 17, 1993",
+        "1. P o s s i b l e Meeting o f UNSC F o r e i g n M i n i s t e r s. I f a meeting o f",
+        "F o r e i g n M i n i s t e r s o f t h e S e c u r i t y C o u n c i l cannot be d e f e r r e d,",
+        "S e c r e t a r y C h r i s t o p h e r w i l l a t t e n d. We w i l l c o n t i n u e t o make",
+        "c l e a r o u r b e l i e f t h a t such a meeting s h o u l d be b e t t e r p r e p a r e d",
+        "b u t w i l l n o t s t a y away i f o t h e r s a t t e n d.",
+        "2. Basic U.S. P o l i c y. We w i l l c o n t i n u e r a i s i n g o u r p r e f e r r e d",
+        "course o f l i f t i n g t h e arms embargo on Bosnia and i n t e r i m a i r"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "izetbegovic-1993-09-08",
+      "itemId": "",
+      "date": "Sep 8, 1993",
+      "sortDate": "1993-09-08",
+      "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
+      "kind": "Memcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 6,
+      "sourcePdfPages": "10-15",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1993-09-08-izetbegovic-1993-09-08.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "medium",
+      "level": "",
+      "classificationCandidates": [
+        "GECRBT p JNTHK unrnrnnv DECLASSIFIED",
+        "SHERET DECLASSIFIED",
+        "Declassify on L dole! ONG ERA PHOTOCOPY PER E.O. 13526"
+      ],
+      "releaseStampCandidates": [
+        "GECRBT p JNTHK unrnrnnv DECLASSIFIED",
+        "SHERET DECLASSIFIED"
+      ],
+      "firstLines": [
+        ".SECREJ. 6787",
+        "THE W H I T E H O U S E",
+        "WASHINGTON",
+        "MEMORANDUM OF CONVERSATION",
+        "SUBJECT: Meeting w i t h P r e s i d e n t A l i j a I z e t b e g o v i c o f",
+        "Bosnia-Herzegovina",
+        "PARTICIPANTS The P r e s i d e n t",
+        "Warren C h r i s t o p h e r, S e c r e t a r y o f S t a t e",
+        "Anthony Lake, A s s i s t a n t t o t h e P r e s i d e n t f o r",
+        "National Security A f f a i r s"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "pcdc-1993-10-02-bosnia-principals-summary",
+      "itemId": "",
+      "date": "Oct 2, 1993",
+      "sortDate": "1993-10-02",
+      "title": "Summary of Conclusions, NSC Principals Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "26-27",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1993-10-02-pcdc-1993-10-02-bosnia-principals-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "CBGRET 21108",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions f o r",
+        "Meeting o f NSC P r i n c i p a l s Committee",
+        "DATE October 2, 1993",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 9:30am - 11:30am",
+        "SUBJECT: Summary o f Conclusions o f P r i n c i p a l s Committee Meeting",
+        "on Bosnia f-ef"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1994-03-08-bosnia-summary",
+      "itemId": "",
+      "date": "Mar 8, 1994",
+      "sortDate": "1994-03-08",
+      "title": "Summary of Conclusions on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "38-39",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1994-03-08-pcdc-1994-03-08-bosnia-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED",
+        "eecpnr. _ DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED",
+        "eecpnr. _ DECLASSIFIED"
+      ],
+      "firstLines": [
+        "SCCR'Ti>T 20320",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions f o r",
+        "DATE: March 8, 1994",
+        "LOCATION: White House S i t u a t i o n",
+        "TIME: 5:00 -- 6:30pm",
+        "SUBJECT: Summary o f Conclusions o f P r i n c i p a l s Committee Meeting",
+        "on Bosnia -(G)-",
+        "PARTICIPANTS:"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1994-04-23-bosnia-principals-1330",
+      "itemId": "",
+      "date": "Apr 23, 1994",
+      "sortDate": "1994-04-23",
+      "title": "Summary of Conclusions, NSC Principals Committee Meeting on Bosnia, 1:30 p.m.",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "45-46",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1994-04-23-pcdc-1994-04-23-bosnia-principals-1330.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "MOU LIBRARY PHOTOCOPY DECLASSIFIED",
+        "SERERET DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "MOU LIBRARY PHOTOCOPY DECLASSIFIED",
+        "SERERET DECLASSIFIED"
+      ],
+      "firstLines": [
+        "20691",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions f o r",
+        "Meeting o f NSC P r i n c i p a l s Committee",
+        "DATE A p r i l 23, 1994",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 1:30 - 2:30pm",
+        "SUBJECT: Summary o f Conclusions o f P r i n c i p a l s Committee Meeting",
+        "on Bosnia f S f -"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1994-05-31-bosnia-principals-summary",
+      "itemId": "",
+      "date": "May 31, 1994",
+      "sortDate": "1994-05-31",
+      "title": "Summary of Conclusions, NSC Principals Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "49-50",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1994-05-31-pcdc-1994-05-31-bosnia-principals-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "none",
+      "level": "",
+      "classificationCandidates": [],
+      "releaseStampCandidates": [],
+      "firstLines": [
+        "20682",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions f o r",
+        "Meeting o f NSC P r i n c i p a l s Committee",
+        "DATE May 3 1, 1994",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 1:00pm - 1:20pm",
+        "SUBJECT: Summary o f Conclusions o f P r i n c i p a l s Committee Meeting",
+        "on Bosnia -fO)"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "izetbegovic-1994-09-25",
+      "itemId": "",
+      "date": "Sep 25, 1994",
+      "sortDate": "1994-09-25",
+      "title": "Memorandum of Conversation - President Clinton and President Alija Izetbegovic",
+      "kind": "Memcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 8,
+      "sourcePdfPages": "18-25",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1994-09-25-izetbegovic-1994-09-25.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "n 1 -.^CIMION LIBRARY PHOTOCOPY DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "n 1 -.^CIMION LIBRARY PHOTOCOPY DECLASSIFIED"
+      ],
+      "firstLines": [
+        "1",
+        "-tJUWL l U L N T l A L 7756",
+        "THE WHITE H O U S E",
+        "WAS HIN G T O N",
+        "MEMORANDUM OF CONVERSATION",
+        "SUBJECT: Meeting w i t h P r e s i d e n t I z e t b e g o v i c o f Bosnia-",
+        "Herzegovina",
+        "PARTICIPANTS The P r e s i d e n t",
+        "Warren C h r i s t o p h e r, S e c r e t a r y o f S t a t e",
+        "Anthony Lake, A s s i s t a n t t o t h e P r e s i d e n t f o r"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1994-12-12-bosnia-principals-summary",
+      "itemId": "",
+      "date": "Dec 12, 1994",
+      "sortDate": "1994-12-12",
+      "title": "Summary of Conclusions, NSC Principals Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 3,
+      "sourcePdfPages": "71-73",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1994-12-12-pcdc-1994-12-12-bosnia-principals-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "-OBCRET 21467",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D C. 2 0 5 0 6",
+        "Summary o f Conclusions",
+        "Meeting o f NSC P r i n c i p a l s Committee",
+        "DATE December 12, 1994",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 2:00 - 3:20pm",
+        "SUBJECT: Summary o f Conclusions o f P r i n c i p a l s Committee Meeting",
+        "on Bosnia ( !)'"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1994-12-19-bosnia-deputies-summary",
+      "itemId": "",
+      "date": "Dec 19, 1994",
+      "sortDate": "1994-12-19",
+      "title": "Summary of Conclusions, NSC Deputies Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 3,
+      "sourcePdfPages": "74-76",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1994-12-19-pcdc-1994-12-19-bosnia-deputies-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "r n n \\ / DECLASSIFIED",
+        "~SECRER DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "r n n \\ / DECLASSIFIED",
+        "~SECRER DECLASSIFIED"
+      ],
+      "firstLines": [
+        "GECRB? 21486",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions",
+        "Meeting o f NSC Deputies Committee",
+        "DATE December 19, 1994",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 11:10 - 1:15pm",
+        "SUBJECT: Summary o f Conclusions o f Deputies Committee M e e t i n g",
+        "on Bosnia -f3)"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "croatia-1995-01-17-meeting-milosevic",
+      "itemId": "",
+      "date": "Jan 17, 1995",
+      "sortDate": "1995-01-17",
+      "title": "January 16 Meeting with Milosevic",
+      "kind": "Cable",
+      "collection": "Declassified Documents Concerning Croatia",
+      "identifier": "2014-0311-M",
+      "pageCount": 4,
+      "sourcePdfPages": "8-11",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/57229",
+      "pdfUrl": "documents/extracted/1995-01-17-croatia-1995-01-17-meeting-milosevic.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/8ca82ec60f1a687eac595b0564ff674c.pdf",
+      "ocrPage": 1,
+      "confidence": "medium",
+      "level": "",
+      "classificationCandidates": [
+        "EXDIS",
+        "E.O. 12356: DECL:OADR",
+        "ADVISED: DECLASSIFIED",
+        "E.0. 12356: DECL:OADR"
+      ],
+      "releaseStampCandidates": [
+        "ADVISED: DECLASSIFIED"
+      ],
+      "firstLines": [
+        "r;\\(^aDie\\jL aLa ^)Ource\\\\^aDies\\UJL ui i \\jAiNyD\\MSUSUVll40/:) /y.ntml Page 1 ot 4",
+        "Cable",
+        "PREC IMMEDIATE",
+        "CLASS GONriDDHTIAL",
+        "LINEl OAACZYUW RUEHBWA0169 0171208-CCCC--RHEHAAX.",
+        "LINE2 ZNY CCCCC ZZH",
+        "LINE3 0 171208Z JAN 95",
+        "LINE4 FM AMEMBASSY BELGRADE",
+        "OSRI RUEHBW",
+        "DTG 171208Z JAN 95"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "pcdc-1995-05-09-bosnia-deputies-summary",
+      "itemId": "",
+      "date": "May 9, 1995",
+      "sortDate": "1995-05-09",
+      "title": "Summary of Conclusions, NSC Deputies Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 3,
+      "sourcePdfPages": "80-82",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1995-05-09-pcdc-1995-05-09-bosnia-deputies-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "JECRET 20602",
+        "THE WHITE HOUSE",
+        "W A S H 1N G T O N",
+        "Summary o f Conclusions f o r",
+        "Meeting o f the NSC Deputies Committee",
+        "DATE: May 9, 1995",
+        "LOCATION: White House S i t u a t i o n Room",
+        "TIME: 1:15 p.m. - 3:00 p.m.",
+        "SUBJECT: Summary o f Conclusions o f Deputies Committee M e e t i n g on",
+        "Bosnia and C r o a t i a -(G)"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "kohl-1995-07-13",
+      "itemId": "",
+      "date": "Jul 13, 1995",
+      "sortDate": "1995-07-13",
+      "title": "Memorandum of Telephone Conversation - Chancellor Helmut Kohl of Germany",
+      "kind": "Telcon",
+      "collection": "Declassified documents concerning Bosnia",
+      "identifier": "2013-0517-M",
+      "pageCount": 3,
+      "sourcePdfPages": "35-37",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-13-kohl-1995-07-13.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "ocrPage": 1,
+      "confidence": "medium",
+      "level": "",
+      "classificationCandidates": [
+        "WASH INGTON DECLASSIFIED",
+        "Declassify on: i OAD;",
+        ". a | WASHINGTON DECLASSIFIED.",
+        "| Declassify on:: OAD RA *"
+      ],
+      "releaseStampCandidates": [
+        "WASH INGTON DECLASSIFIED",
+        ". a | WASHINGTON DECLASSIFIED."
+      ],
+      "firstLines": [
+        "COHFIDENT-ITa 5422",
+        "THE WHITE HOUSE",
+        "WASH INGTON DECLASSIFIED",
+        "PER E.0.13526 ^",
+        "Kan",
+        "MEMORANDUM OF TELEPHONE CONVERSATION",
+        "SUBJECT: Telcon with Chancellor Helmut Kohl of Germany",
+        "(U)",
+        "PARTICIPANTS The President",
+        "Chancellor Helmut Kohl"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "izetbegovic-1995-07-20",
+      "itemId": "",
+      "date": "Jul 20, 1995",
+      "sortDate": "1995-07-20",
+      "title": "Memorandum of Telephone Conversation - President Clinton and President Alija Izetbegovic",
+      "kind": "Telcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 3,
+      "sourcePdfPages": "32-34",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-07-20-izetbegovic-1995-07-20.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "~CONEEDENPIAT DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "~CONEEDENPIAT DECLASSIFIED"
+      ],
+      "firstLines": [
+        "GOHFIDDNTIAL 5650",
+        "THE WHITE HOUSE",
+        "WASH I NGTON",
+        "MEMORANDUM OF TELEPHONE CONVERSATION",
+        "SUBJECT: P r e s i d e n t i a l Telephone C a l l w i t h Bosnian P r e s i d e n t",
+        "Izetbegovic",
+        "PARTICIPANTS: President C l i n t o n",
+        "Bosnian P r e s i d e n t I z e t b e g o v i c",
+        "NOTETAKERS: Kenneth Baldwin, K a t h e r i n e O'Loughlin, John",
+        "Schmidt and Matt M i l l e r"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "allied-1995-07-22-london-meeting-bosnia",
+      "itemId": "",
+      "date": "Jul 22, 1995",
+      "sortDate": "1995-07-22",
+      "title": "Memorandum From Anthony Lake to President Clinton: Your Meeting with Christopher and Shalikashvili on the London Meeting on Bosnia",
+      "kind": "Presidential Memo",
+      "collection": "Declassified documents concerning Bosnia",
+      "identifier": "2013-0517-M",
+      "pageCount": 4,
+      "sourcePdfPages": "103-106",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/101088",
+      "pdfUrl": "documents/extracted/1995-07-22-allied-1995-07-22-london-meeting-bosnia.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/9a9ec5fd06f06d2069a286cf7c02fc03.pdf",
+      "ocrPage": 1,
+      "confidence": "medium",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED THE WHITE HOUSE",
+        "Declassify on; Chief of Staff",
+        "DECLASSIFIED THE WHITE HOUSE |",
+        "Declassify on: OADR _... w eee Chief of Staff"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED THE WHITE HOUSE",
+        "DECLASSIFIED THE WHITE HOUSE |"
+      ],
+      "firstLines": [
+        "THE PRESIDENT HAS SEEN",
+        "-6 )]>ffIDENTIAL.",
+        "-eOTOfflM: --",
+        "DECLASSIFIED THE WHITE HOUSE",
+        "PER E.0.13526 WASH I NGTON",
+        "O' -) 9SJ11Z2 All; 45",
+        "July 22, 1995",
+        "INFORMATION",
+        "MEMORANDUM FOR THE PRSGIDENT",
+        "FROM: ANTHONY L."
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "dayton-1995-08-03-albright-endgame",
+      "itemId": "",
+      "date": "Aug 3, 1995",
+      "sortDate": "1995-08-03",
+      "title": "Memorandum From Ambassador Albright to the National Security Advisor on Bosnia Endgame Strategy",
+      "kind": "Policy Memo",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2012-0799-M",
+      "pageCount": 7,
+      "sourcePdfPages": "2-8",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36591",
+      "pdfUrl": "documents/extracted/1995-08-03-dayton-1995-08-03-albright-endgame.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/eb29cdb4aad08354ef620554cda41298.pdf",
+      "ocrPage": 1,
+      "confidence": "high",
+      "level": "Secret",
+      "classificationCandidates": [
+        "; ~ SECRET",
+        "L DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "L DECLASSIFIED"
+      ],
+      "firstLines": [
+        "DEPARTMENT OF S T A T E (TH) 0 8. 0 3. -95 20:45 NO. M60I20307 PAGE",
+        "August 3, 1995",
+        "ODCIIDT >",
+        "MEMORANDUM FOR THE NATIONAL SECURITY ADVISOR",
+        "FROM AMBASSADOR ALBRIGHT",
+        "At o u r meeting on August 1 you asked f o r each P r i n c i p a l ' s",
+        "views on our endgame s t r a t e g y f o r Bosnia. I would be l a r g e l y",
+        "c o m f o r t a b l e w i t h your o r i g i n a l paper t h a t e n v i s i o n s a m o d i f i e d",
+        "l i f t and s t r i k e i f UNPROFOR were t o c o l l a p s e.",
+        "But I have t h o u g h t f o r some t i m e t h a t we must p u t Bosnia i n"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "dayton-1995-08-04-sustainable-defense",
+      "itemId": "",
+      "date": "Undated [inferred Aug 4-5, 1995]",
+      "sortDate": "1995-08-04",
+      "title": "Endgame Strategy: A Sustainable Defense of a Viable Bosnia after UNPROFOR Withdrawal",
+      "kind": "Policy Paper",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2012-0799-M",
+      "pageCount": 6,
+      "sourcePdfPages": "15-20",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36591",
+      "pdfUrl": "documents/extracted/1995-08-04-dayton-1995-08-04-sustainable-defense.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/eb29cdb4aad08354ef620554cda41298.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "OECRET",
+        "(",
+        "Endgame Strategy: A S u s t a i n a b l e Defense o f a V i a b l e Bosnia",
+        "a f t e r UNPROFOR Withdrawal",
+        "Summary: I f UNPROFOR w i t h d r a w s, t h e r e i s a s e r i o u s r i s k",
+        "t h a t, l e f t on i t s own, t h e Bosnian government w i l l be unable",
+        "t o defend t h e t e r r i t o r y i t c u r r e n t l y h o l d s. A l i m i t e d",
+        "package o f US a s s i s t a n c e, s u f f i c i e n t t o ensure t h e Bosnian",
+        "government's s u r v i v a l as a v i a b l e e n t i t y, would serve",
+        "i m p o r t a n t US i n t e r e s t s. T h i s s u p p o r t would c o n s i s t o f a"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "dayton-1995-08-05-lake-balkan-strategy",
+      "itemId": "",
+      "date": "Aug 5, 1995",
+      "sortDate": "1995-08-05",
+      "title": "Memorandum From Anthony Lake to President Clinton: Balkan Strategy Options for Discussion",
+      "kind": "Presidential Memo",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2012-0799-M",
+      "pageCount": 4,
+      "sourcePdfPages": "21-24",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36591",
+      "pdfUrl": "documents/extracted/1995-08-05-dayton-1995-08-05-lake-balkan-strategy.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/eb29cdb4aad08354ef620554cda41298.pdf",
+      "ocrPage": 1,
+      "confidence": "high",
+      "level": "Secret",
+      "classificationCandidates": [
+        "SECRET AG al ee 6050"
+      ],
+      "releaseStampCandidates": [],
+      "firstLines": [
+        "see^ET- - r-r, IN a. ? l; - ^ - f 6050",
+        "THE WHITE HOUSE THE PRESIDENT HAS SEEN",
+        "WASHINGTON",
+        "August 5, 1995 95AUG 5 A|0 ! 1*1",
+        "INFORMATION",
+        "MEMORANDUM FOR THE PRESIDENT",
+        "FROM: ANTHONY U",
+        "SUBJECT: Balkan S t r a t e g y: Options f o r D i s c u s s i o n a t F o r e i g n",
+        "P o l i c y Group Meeting, August 7, 1995",
+        "P r i n c i p a l s have taken f o r w a r d t h e r e v i e w you r e q u e s t e d o f l o n g -"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "pcdc-1995-08-23-bosnia-deputies-summary",
+      "itemId": "",
+      "date": "Aug 23, 1995",
+      "sortDate": "1995-08-23",
+      "title": "Summary of Conclusions, NSC Deputies Committee Meeting on Bosnia",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 5,
+      "sourcePdfPages": "91-95",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1995-08-23-pcdc-1995-08-23-bosnia-deputies-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "CECRBT 21002",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C. 20506",
+        "Summary o f Conclusions f o r",
+        "M e e t i n g o f t h e NSC Deputies Committee",
+        "DATE August 23, 1995",
+        "LOCATION White House S i t u a t i o n Room",
+        "TIME 3:35 p.m. - 6:25 p.m.",
+        "SUBJECT: Summary o f Conclusions o f Deputies Committee M e e t i n g on",
+        "Bosnia 4 ^"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "pcdc-1995-09-29-bosnia-deputies-summary",
+      "itemId": "",
+      "date": "Sep 29, 1995",
+      "sortDate": "1995-09-29",
+      "title": "Summary of Conclusions, SVTS Meeting of the NSC Deputies Committee",
+      "kind": "NSC Summary",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2010-0533-M",
+      "pageCount": 2,
+      "sourcePdfPages": "103-104",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36614",
+      "pdfUrl": "documents/extracted/1995-09-29-pcdc-1995-09-29-bosnia-deputies-summary.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/dca58d1ec9f1ee6508cb03fc7ae5c98f.pdf",
+      "ocrPage": 1,
+      "confidence": "high",
+      "level": "Secret",
+      "classificationCandidates": [
+        "DECLASSIFIED",
+        "SECRET NATIONAL SECURITY COUNCIL 21141"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED"
+      ],
+      "firstLines": [
+        "21141",
+        "NATIONAL SECURITY COUNCIL",
+        "WASHINGTON. D.C 20506",
+        "Summary o f Conclusions f o r",
+        "SVTS Meeting o f t h e NSC Deputies Committee",
+        "DATE: September 29, 1995",
+        "LOCATION: S i t u a t i o n Room",
+        "TIME: 5:00 p.m. - 6:00 p.m.",
+        "SUBJECT: Summary o f Conclusions o f Deputies Committee Meeting on",
+        "Bosnia ( G)"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "yeltsin-1995-10-23-hyde-park-one-on-one",
+      "itemId": "",
+      "date": "Oct 23, 1995",
+      "sortDate": "1995-10-23",
+      "title": "Memorandum of Conversation - Clinton-Yeltsin One-on-One at Hyde Park",
+      "kind": "Memcon",
+      "collection": "National Archives Catalog / Clinton NSC Records Management Office",
+      "identifier": "2014-0948-M / NAID 163545436",
+      "pageCount": 12,
+      "sourcePdfPages": "5-16",
+      "itemUrl": "https://catalog.archives.gov/id/163545436",
+      "pdfUrl": "documents/extracted/1995-10-23-yeltsin-1995-10-23-hyde-park-one-on-one.pdf",
+      "sourcePdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/wjc-nscrm/7585721/7-YeltsinHydePark.pdf",
+      "ocrPage": 1,
+      "confidence": "high",
+      "level": "Secret",
+      "classificationCandidates": [
+        "DECLASSIFIED",
+        "SECRET/NODTS- |",
+        "| DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "DECLASSIFIED",
+        "| DECLASSIFIED"
+      ],
+      "firstLines": [
+        "Limited Access",
+        "7853",
+        "-gECRET\"/WOP IS-",
+        "DECL: 10/25/00",
+        "DECLASSIFIED",
+        "PER E.0.13526 ^",
+        "aoi^- 0^ (^ o\\)",
+        "Clinton-Yeltsin One-on-One",
+        "Hyde Park, NY",
+        "October 23, 1995"
+      ],
+      "suggestedCompilerAction": "Compare candidate against the extracted review PDF first page, then replace the generic placeholder in the FRUS-style source note."
+    },
+    {
+      "id": "milosevic-1995-12-14-pull-aside",
+      "itemId": "",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "title": "Memorandum of Conversation - Pull-Aside with President Slobodan Milosevic",
+      "kind": "Memcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 3,
+      "sourcePdfPages": "59-61",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-milosevic-1995-12-14-pull-aside.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "Reason: 1.5 (b) (g) DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "Reason: 1.5 (b) (g) DECLASSIFIED"
+      ],
+      "firstLines": [
+        "-COHn DDNT IAL ' 9024",
+        "THE WHITE HOUSE",
+        "WASHINGTON",
+        "MEMORANDUM OF CONVERSATION",
+        "SUBJECT: P u l l - A s i d e Meeting w i t h P r e s i d e n t Slobodan",
+        "M i l o s e v i c o f Serbia (U)",
+        "PARTICIPANTS U.S.",
+        "The P r e s i d e n t",
+        "Warren C h r i s t o p h e r, S e c r e t a r y o f S t a t e",
+        "Anthony Lake, A s s i s t a n t t o t h e P r e s i d e n t"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    },
+    {
+      "id": "quadrilateral-1995-12-14",
+      "itemId": "",
+      "date": "Dec 14, 1995",
+      "sortDate": "1995-12-14",
+      "title": "Memorandum of Conversation - Quadrilateral Meeting with Tudjman, Izetbegovic, and Milosevic",
+      "kind": "Memcon",
+      "collection": "Declassified Documents concerning Bosnia",
+      "identifier": "2011-0964-M",
+      "pageCount": 4,
+      "sourcePdfPages": "47-50",
+      "itemUrl": "https://clinton.presidentiallibraries.us/items/show/36589",
+      "pdfUrl": "documents/extracted/1995-12-14-quadrilateral-1995-12-14.pdf",
+      "sourcePdfUrl": "https://clinton.presidentiallibraries.us/files/original/1e07f85597e7a0a171bbd0b1ad67cdf1.pdf",
+      "ocrPage": 1,
+      "confidence": "release-stamp-only",
+      "level": "",
+      "classificationCandidates": [
+        "Reason: 1.5(b) (g) DECLASSIFIED"
+      ],
+      "releaseStampCandidates": [
+        "Reason: 1.5(b) (g) DECLASSIFIED"
+      ],
+      "firstLines": [
+        "COHFIDENTiftfr 9024",
+        "THE WHITE HOUSE",
+        "WASHINGTON",
+        "MEMORANDUM OF CONVERSATION",
+        "SUBJECT: Q u a d r i l a t e r a l Meeting w i t h P r e s i d e n t s F r a n j o",
+        "Tudjman o f C r o a t i a, A l i j a I z e t b e g o v i c o f",
+        "Bosnia-Herzegovina, and Slobodan M i l o s e v i c o f",
+        "Serbia (U)",
+        "PARTICIPANTS U.S.",
+        "The P r e s i d e n t"
+      ],
+      "suggestedCompilerAction": "OCR/text extraction did not produce a reliable marking candidate; inspect the extracted review PDF manually."
+    }
+  ]
+}

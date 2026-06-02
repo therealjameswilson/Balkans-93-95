@@ -80,6 +80,9 @@ published "About the Series" guidance for FRUS production:
 - `scripts/extract-btf-markings.js` OCRs the first page of CIA/Balkan Task
   Force PDFs, extracts candidate classification/handling lines, and writes a
   source-note marking triage report for human verification.
+- `scripts/extract-extracted-markings.js` OCRs the first page of local
+  extracted review PDFs not covered by the BTF pass and records candidate
+  source-note marking lines for human verification.
 - `scripts/build-gap-closure-reports.js` builds the Defense/JCS source-base
   report, presidential-conversation reconciliation matrix, and source-note
   verification audit used to close the compiler gap register.
@@ -121,6 +124,9 @@ published "About the Series" guidance for FRUS production:
 - `reports/btf-marking-extraction.json` records the CIA/Balkan Task Force
   first-page OCR marking audit, including confidence, level candidates, release
   stamp snippets, and compiler review actions for source-note finalization.
+- `reports/extracted-marking-extraction.json` records the same marking audit
+  for the locally extracted memcon, telcon, PC/DC, cable, and policy review PDFs
+  that remained outside the BTF harvest.
 - `reports/presidential-daily-diary-search.json` records the Presidential Daily
   Diary / FOIA `2010-0083-F` Catalog search, in-period hardcopy file units, OCR
   page count, raw event matches, and selected call/meeting references.
@@ -269,10 +275,10 @@ The source-note verification audit covers `901` chronology and conversation
 records, finds `0` missing source notes, `0` FRUS-style source-note pattern
 failures, and `0` pending page counts, while keeping `351` records in the
 classification/handling transcription queue for final compiler verification.
-The CIA/Balkan Task Force OCR marking pass reviews `321` first-page source
-images and surfaces `121` high-confidence and `31` medium-confidence
-classification/handling candidates, leaving `149` release-stamp-only and `20`
-no-candidate rows for direct PDF inspection.
+The OCR marking passes now cover all `344` chronology records in the live
+source-note finalization queue: `125` high-confidence and `35`
+medium-confidence classification/handling candidates, plus `162`
+release-stamp-only and `22` no-candidate rows for direct PDF inspection.
 
 The compiler gap register tracks `8` risks: all `8` are mitigated by generated
 source layers, document-level harvests, or review queues, and `0` remain open.
