@@ -33,7 +33,10 @@ const state = {
   pddConfidence: "All",
   pddSearch: "",
   stateFoiaRoute: "All",
-  stateFoiaSearch: ""
+  stateFoiaSearch: "",
+  promotionPriority: "All",
+  promotionSource: "All",
+  promotionSearch: ""
 };
 
 const nodes = {
@@ -49,6 +52,13 @@ const nodes = {
   gapRoot: document.querySelector("#gap-root"),
   sourcePoolRoot: document.querySelector("#source-pool-root"),
   extractionQueueRoot: document.querySelector("#extraction-queue-root"),
+  promotionSearch: document.querySelector("#promotion-search"),
+  promotionPriorityFilters: document.querySelector("#promotion-priority-filters"),
+  promotionSource: document.querySelector("#promotion-source"),
+  promotionReset: document.querySelector("#promotion-reset"),
+  promotionExport: document.querySelector("#promotion-export"),
+  promotionSummary: document.querySelector("#promotion-summary"),
+  promotionRoot: document.querySelector("#promotion-root"),
   pddSummaryRoot: document.querySelector("#pdd-summary-root"),
   pddSearch: document.querySelector("#pdd-search"),
   pddConfidenceFilters: document.querySelector("#pdd-confidence-filters"),
@@ -640,6 +650,9 @@ function renderCompilerGaps(report = {}) {
 
   renderSourcePools(report);
   renderExtractionQueue(report);
+  renderPromotionPriorityFilters(report);
+  renderPromotionSourceOptions(report);
+  renderPromotionQueue(report);
 }
 
 function renderSourcePools(report = {}) {
@@ -680,6 +693,121 @@ function renderExtractionQueue(report = {}) {
   }
 
   nodes.extractionQueueRoot.replaceChildren(heading, list);
+}
+
+function promotionItems(report = {}) {
+  return (report.extractionQueue || []).slice();
+}
+
+function promotionPriorityOrder(value = "") {
+  return { High: 0, Medium: 1, Low: 2 }[value] ?? 9;
+}
+
+function promotionTextMatch(item = {}) {
+  if (!state.promotionSearch) return true;
+  const haystack = [item.priority, item.sourceFamily, item.title, item.reason, item.nextAction, item.date, item.url]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  return haystack.includes(state.promotionSearch.toLowerCase());
+}
+
+function filteredPromotionItems(report = {}) {
+  return promotionItems(report)
+    .filter((item) => state.promotionPriority === "All" || item.priority === state.promotionPriority)
+    .filter((item) => state.promotionSource === "All" || item.sourceFamily === state.promotionSource)
+    .filter(promotionTextMatch)
+    .sort((a, b) => {
+      return (
+        promotionPriorityOrder(a.priority) - promotionPriorityOrder(b.priority) ||
+        String(a.sourceFamily || "").localeCompare(String(b.sourceFamily || "")) ||
+        String(a.date || "9999").localeCompare(String(b.date || "9999")) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function renderPromotionPriorityFilters(report = {}) {
+  if (!nodes.promotionPriorityFilters) return;
+  const priorities = ["All", ...new Set(promotionItems(report).map((item) => item.priority).filter(Boolean).sort((a, b) => promotionPriorityOrder(a) - promotionPriorityOrder(b)))];
+  renderButtonGroup(nodes.promotionPriorityFilters, priorities, state.promotionPriority, (value) => {
+    state.promotionPriority = value;
+    renderPromotionPriorityFilters(report);
+    renderPromotionQueue(report);
+  });
+}
+
+function renderPromotionSourceOptions(report = {}) {
+  if (!nodes.promotionSource) return;
+  const sources = ["All", ...new Set(promotionItems(report).map((item) => item.sourceFamily).filter(Boolean).sort())];
+  if (!sources.includes(state.promotionSource)) state.promotionSource = "All";
+  renderSelect(nodes.promotionSource, sources, state.promotionSource, (value) => {
+    state.promotionSource = value;
+    renderPromotionQueue(report);
+  });
+}
+
+function renderPromotionQueue(report = {}) {
+  if (!nodes.promotionRoot) return;
+  const items = filteredPromotionItems(report);
+  const total = promotionItems(report).length;
+  nodes.promotionSummary.textContent = `Showing ${formatNumber(items.length)} of ${formatNumber(
+    total
+  )} extraction and promotion leads from the compiler gap register.`;
+  nodes.promotionRoot.replaceChildren();
+
+  if (!items.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No promotion queue items match the current filters.";
+    row.append(cell);
+    nodes.promotionRoot.append(row);
+    return;
+  }
+
+  for (const item of items) {
+    const row = document.createElement("tr");
+
+    const priorityCell = document.createElement("td");
+    const priority = document.createElement("span");
+    priority.className = `priority ${priorityClass(item.priority)}`;
+    priority.textContent = item.priority || "Priority";
+    priorityCell.append(priority);
+
+    const sourceCell = document.createElement("td");
+    sourceCell.textContent = item.sourceFamily || "Source family pending";
+
+    const leadCell = document.createElement("td");
+    const title = item.url ? document.createElement("a") : document.createElement("strong");
+    title.textContent = item.title || "Untitled lead";
+    if (item.url) {
+      title.href = item.url;
+      title.rel = "noreferrer";
+      title.className = "queue-record-title";
+    }
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [item.date, item.pageCount ? pageLabel(item.pageCount) : ""].filter(Boolean).join(" | ");
+    leadCell.append(title, meta);
+
+    const reasonCell = document.createElement("td");
+    reasonCell.textContent = item.reason || "Review reason pending.";
+
+    const actionCell = document.createElement("td");
+    actionCell.textContent = item.nextAction || "Review source, duplicate status, document boundaries, and source-note metadata.";
+
+    row.append(priorityCell, sourceCell, leadCell, reasonCell, actionCell);
+    nodes.promotionRoot.append(row);
+  }
+}
+
+function exportPromotionQueue(report = {}) {
+  const fields = ["priority", "sourceFamily", "title", "date", "pageCount", "reason", "nextAction", "url"];
+  const rows = filteredPromotionItems(report).map((item) => fields.map((field) => item[field] || ""));
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-promotion-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
 }
 
 function pddReferences(report = {}) {
@@ -3150,6 +3278,29 @@ function bindStateFoiaSearch(report) {
   });
 }
 
+function bindPromotionSearch(report) {
+  if (!report || !nodes.promotionSearch) return;
+
+  nodes.promotionSearch.addEventListener("input", (event) => {
+    state.promotionSearch = event.target.value.trim();
+    renderPromotionQueue(report);
+  });
+
+  nodes.promotionReset.addEventListener("click", () => {
+    state.promotionPriority = "All";
+    state.promotionSource = "All";
+    state.promotionSearch = "";
+    nodes.promotionSearch.value = "";
+    renderPromotionPriorityFilters(report);
+    renderPromotionSourceOptions(report);
+    renderPromotionQueue(report);
+  });
+
+  nodes.promotionExport.addEventListener("click", () => {
+    exportPromotionQueue(report);
+  });
+}
+
 async function loadOptionalJson(url) {
   try {
     const response = await fetch(url);
@@ -3249,6 +3400,7 @@ async function init() {
     renderSources(data);
     renderQueue(data);
     bindSearch(data);
+    bindPromotionSearch(reports.gapRegister);
     bindPddSearch(reports.presidentialDailyDiary, data);
     bindStateFoiaSearch(reports.stateFoia);
     bindResearchSearch(researchReport);

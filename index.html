@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-statefoia1" />
+    <link rel="stylesheet" href="styles.css?v=20260601-promotionqueue1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -243,6 +243,42 @@
         <div class="gap-followup-layout">
           <div id="source-pool-root" class="research-panel" aria-live="polite"></div>
           <div id="extraction-queue-root" class="research-panel" aria-live="polite"></div>
+        </div>
+        <div class="conversation-tools promotion-tools" aria-label="Promotion queue filters">
+          <label class="search-field">
+            <span>Search promotion queue</span>
+            <input
+              id="promotion-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Title, source family, action"
+            />
+          </label>
+          <div>
+            <p class="tool-label">Priority</p>
+            <div id="promotion-priority-filters" class="filter-row compact" aria-label="Promotion priority filters"></div>
+          </div>
+          <label class="select-field">
+            <span>Source Family</span>
+            <select id="promotion-source"></select>
+          </label>
+          <button id="promotion-reset" class="reset-button" type="button">Reset</button>
+          <button id="promotion-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="promotion-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap promotion-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Priority</th>
+                <th scope="col">Source Family</th>
+                <th scope="col">Lead</th>
+                <th scope="col">Why It Matters</th>
+                <th scope="col">Next Action</th>
+              </tr>
+            </thead>
+            <tbody id="promotion-root"></tbody>
+          </table>
         </div>
       </section>
 
@@ -561,8 +597,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-statefoia1"></script>
-    <script src="app.js?v=20260601-statefoia1"></script>
+    <script src="data/compiler-map.js?v=20260601-promotionqueue1"></script>
+    <script src="app.js?v=20260601-promotionqueue1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
