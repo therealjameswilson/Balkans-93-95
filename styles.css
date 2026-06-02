@@ -647,6 +647,25 @@ dd {
   overflow-wrap: anywhere;
 }
 
+.nara-crosscheck-tools {
+  grid-template-columns: minmax(260px, 1fr) minmax(260px, 0.75fr) minmax(130px, 0.35fr) auto auto;
+  margin-top: 14px;
+}
+
+.nara-crosscheck-table-wrap {
+  margin-top: 14px;
+}
+
+.nara-crosscheck-table-wrap table {
+  min-width: 1180px;
+}
+
+.nara-crosscheck-table-wrap td:nth-child(2),
+.nara-crosscheck-table-wrap td:nth-child(4),
+.nara-crosscheck-table-wrap td:nth-child(5) {
+  overflow-wrap: anywhere;
+}
+
 .library-table-wrap table {
   min-width: 1080px;
 }

@@ -9,7 +9,7 @@
       content="A public compiler workspace with a chronological inventory of declassified and public U.S. Clinton-era records for Foreign Relations of the United States, 1993-2000, Volume XV, Wars in the Balkans, 1993-1995."
     />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260601-defensejcs1" />
+    <link rel="stylesheet" href="styles.css?v=20260601-naracrosscheck1" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -120,6 +120,7 @@
         <a href="#presidential-daily-diary">Diary</a>
         <a href="#state-foia">State FOIA</a>
         <a href="#defense-jcs">Defense/JCS</a>
+        <a href="#nara-crosscheck">NARA</a>
         <a href="#clinton-library">Library</a>
         <a href="#frus-method">Method</a>
         <a href="#research-collections">Collections</a>
@@ -430,6 +431,58 @@
         </div>
       </section>
 
+      <section class="section nara-crosscheck-section" id="nara-crosscheck" aria-labelledby="nara-crosscheck-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">NARA Source-Family Review</p>
+            <h2 id="nara-crosscheck-title">NARA Source-Family Crosscheck Queue</h2>
+          </div>
+          <p class="section-note">
+            Digitized leads surfaced by checking NARA source families already
+            useful for companion FRUS compiler work. These file-level records
+            need document-boundary, duplicate, classification, and source-note
+            review before any promotion into the chronology.
+          </p>
+        </div>
+        <div id="nara-crosscheck-summary-root" class="audit-grid nara-crosscheck-summary-grid" aria-live="polite"></div>
+        <div class="conversation-tools nara-crosscheck-tools" aria-label="NARA source-family crosscheck filters">
+          <label class="search-field">
+            <span>Search NARA leads</span>
+            <input
+              id="nara-crosscheck-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Bosnia, Kosovo, DC meeting, NAID, file"
+            />
+          </label>
+          <label class="select-field">
+            <span>Source Family</span>
+            <select id="nara-crosscheck-source"></select>
+          </label>
+          <label class="select-field">
+            <span>Year</span>
+            <select id="nara-crosscheck-year"></select>
+          </label>
+          <button id="nara-crosscheck-reset" class="reset-button" type="button">Reset</button>
+          <button id="nara-crosscheck-export" class="reset-button export-button" type="button">Export CSV</button>
+        </div>
+        <p id="nara-crosscheck-reference-summary" class="result-summary" aria-live="polite"></p>
+        <div class="table-wrap nara-crosscheck-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Digitized Lead</th>
+                <th scope="col">Source Family</th>
+                <th scope="col">Compiler Review</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="nara-crosscheck-references-root"></tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="section research-section" id="clinton-library" aria-labelledby="clinton-library-title">
         <div class="section-heading">
           <div>
@@ -650,8 +703,8 @@
       </p>
     </footer>
 
-    <script src="data/compiler-map.js?v=20260601-defensejcs1"></script>
-    <script src="app.js?v=20260601-defensejcs1"></script>
+    <script src="data/compiler-map.js?v=20260601-naracrosscheck1"></script>
+    <script src="app.js?v=20260601-naracrosscheck1"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");

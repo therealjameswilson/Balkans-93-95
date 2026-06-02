@@ -39,7 +39,10 @@ const state = {
   promotionSearch: "",
   defenseJcsTopic: "All",
   defenseJcsSource: "All",
-  defenseJcsSearch: ""
+  defenseJcsSearch: "",
+  naraCrosscheckSource: "All",
+  naraCrosscheckYear: "All",
+  naraCrosscheckSearch: ""
 };
 
 const nodes = {
@@ -84,6 +87,14 @@ const nodes = {
   defenseJcsExport: document.querySelector("#defense-jcs-export"),
   defenseJcsReferenceSummary: document.querySelector("#defense-jcs-reference-summary"),
   defenseJcsReferencesRoot: document.querySelector("#defense-jcs-references-root"),
+  naraCrosscheckSummaryRoot: document.querySelector("#nara-crosscheck-summary-root"),
+  naraCrosscheckSearch: document.querySelector("#nara-crosscheck-search"),
+  naraCrosscheckSource: document.querySelector("#nara-crosscheck-source"),
+  naraCrosscheckYear: document.querySelector("#nara-crosscheck-year"),
+  naraCrosscheckReset: document.querySelector("#nara-crosscheck-reset"),
+  naraCrosscheckExport: document.querySelector("#nara-crosscheck-export"),
+  naraCrosscheckReferenceSummary: document.querySelector("#nara-crosscheck-reference-summary"),
+  naraCrosscheckReferencesRoot: document.querySelector("#nara-crosscheck-references-root"),
   librarySummaryRoot: document.querySelector("#library-summary-root"),
   libraryPlanRoot: document.querySelector("#library-plan-root"),
   libraryCallslipsRoot: document.querySelector("#library-callslips-root"),
@@ -1554,6 +1565,244 @@ function renderDefenseJcsQueue(report = {}) {
   renderDefenseJcsSummary(report);
   renderDefenseJcsFilters(report);
   renderDefenseJcsDocuments(report);
+}
+
+function naraCrosscheckDocuments(report = {}) {
+  return (report.potentialDocuments || []).slice();
+}
+
+function naraCrosscheckSourceLabel(record = {}) {
+  return record.sourceFamilyLabel || record.sourceFamily || record.repository || "NARA source family";
+}
+
+function naraCrosscheckYear(record = {}) {
+  const year = String(record.sortDate || "").slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : "Date pending";
+}
+
+function naraCrosscheckReviewAction(record = {}) {
+  const certainty = record.dateCertainty ? `date from ${record.dateCertainty}` : "date basis pending";
+  const pages = pageLabel(record.pageCount);
+  const confidence = record.confidence ? `${sentenceCase(record.confidence)} confidence` : "Confidence pending";
+  return `${confidence}; ${certainty}; ${pages}. Verify document boundary inside the PDF, duplicate status against the chronology and other queues, classification and release markings, distribution, annotations, attachments, excisions, and exact FRUS source-note wording before promotion.`;
+}
+
+function naraCrosscheckText(record = {}) {
+  return [
+    record.title,
+    record.kind,
+    record.date,
+    record.sortDate,
+    record.identifier,
+    record.naid,
+    record.originalFile,
+    record.repository,
+    naraCrosscheckSourceLabel(record),
+    record.sourceSeries,
+    record.category,
+    record.confidence,
+    record.sourceNoteDraft,
+    record.compilerUse,
+    ...(record.sections || []),
+    ...(record.otherTitles || []),
+    ...((record.targets || []).map((target) => [target.staff, target.folderTitle, target.relationship, target.naid].join(" ")))
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function filteredNaraCrosscheckDocuments(report = {}) {
+  return naraCrosscheckDocuments(report)
+    .filter((record) => state.naraCrosscheckSource === "All" || naraCrosscheckSourceLabel(record) === state.naraCrosscheckSource)
+    .filter((record) => state.naraCrosscheckYear === "All" || naraCrosscheckYear(record) === state.naraCrosscheckYear)
+    .filter(
+      (record) =>
+        !state.naraCrosscheckSearch || naraCrosscheckText(record).includes(state.naraCrosscheckSearch.toLowerCase())
+    )
+    .sort((a, b) => {
+      return (
+        String(a.sortDate || "9999").localeCompare(String(b.sortDate || "9999")) ||
+        naraCrosscheckSourceLabel(a).localeCompare(naraCrosscheckSourceLabel(b)) ||
+        String(a.title || "").localeCompare(String(b.title || ""))
+      );
+    });
+}
+
+function renderNaraCrosscheckSummary(report = {}) {
+  const summary = report.summary || {};
+  const records = naraCrosscheckDocuments(report);
+  const pages = records.reduce((sum, record) => sum + (record.pageCount || 0), 0);
+  const families = groupCounts(records, naraCrosscheckSourceLabel).sort((a, b) => a.label.localeCompare(b.label));
+  const skipped = summary.skipped ? Object.values(summary.skipped).reduce((sum, value) => sum + (value || 0), 0) : 0;
+  const highConfidence = records.filter((record) => String(record.confidence || "").toLowerCase() === "high").length;
+  const dated = records.filter((record) => record.sortDate).length;
+
+  nodes.naraCrosscheckSummaryRoot.replaceChildren(
+    auditCard(
+      "Potential Leads",
+      formatNumber(records.length || summary.addedPotentialDocuments),
+      families.map((family) => `${formatNumber(family.count)} ${family.label}`).join("; "),
+      "Candidate source-family layer only; not a volume selection list."
+    ),
+    auditCard(
+      "Counted Pages",
+      formatNumber(pages || summary.countedPages),
+      `${formatNumber(summary.inputCandidates)} source-family candidates screened; ${formatNumber(skipped)} skipped as outside scope, duplicate, outside 1993-1995, or JPG-only.`,
+      "Open each PDF before promotion to confirm the internal document boundary."
+    ),
+    auditCard(
+      "Review Readiness",
+      formatNumber(highConfidence),
+      `${formatNumber(dated)} leads have sortable dates; all retained leads still need classification, handling, annotations, attachments, and excision checks.`,
+      "Use this queue to find review work, not to decide inclusion."
+    )
+  );
+}
+
+function renderNaraCrosscheckFilters(report = {}) {
+  const documents = naraCrosscheckDocuments(report);
+  const sources = ["All", ...new Set(documents.map(naraCrosscheckSourceLabel).filter(Boolean).sort())];
+  const years = ["All", ...new Set(documents.map(naraCrosscheckYear).filter(Boolean).sort())];
+  if (!sources.includes(state.naraCrosscheckSource)) state.naraCrosscheckSource = "All";
+  if (!years.includes(state.naraCrosscheckYear)) state.naraCrosscheckYear = "All";
+
+  renderSelect(nodes.naraCrosscheckSource, sources, state.naraCrosscheckSource, (value) => {
+    state.naraCrosscheckSource = value;
+    renderNaraCrosscheckDocuments(report);
+  });
+  renderSelect(nodes.naraCrosscheckYear, years, state.naraCrosscheckYear, (value) => {
+    state.naraCrosscheckYear = value;
+    renderNaraCrosscheckDocuments(report);
+  });
+}
+
+function renderNaraCrosscheckDocuments(report = {}) {
+  const records = filteredNaraCrosscheckDocuments(report);
+  const total = naraCrosscheckDocuments(report).length;
+  nodes.naraCrosscheckReferenceSummary.textContent = `Showing ${formatNumber(records.length)} of ${formatNumber(
+    total
+  )} NARA source-family digitized leads.`;
+  nodes.naraCrosscheckReferencesRoot.replaceChildren();
+
+  if (!records.length) {
+    const row = document.createElement("tr");
+    const cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "empty-state";
+    cell.textContent = "No NARA source-family leads match the current filters.";
+    row.append(cell);
+    nodes.naraCrosscheckReferencesRoot.append(row);
+    return;
+  }
+
+  for (const record of records) {
+    const row = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = record.date || record.sortDate || "Date pending";
+
+    const leadCell = document.createElement("td");
+    const title = document.createElement("strong");
+    title.textContent = record.title || "Untitled NARA source-family lead";
+    const meta = document.createElement("p");
+    meta.className = "queue-record-meta";
+    meta.textContent = [record.kind, record.identifier, pageLabel(record.pageCount), record.originalFile]
+      .filter(Boolean)
+      .join(" | ");
+    leadCell.append(title, meta);
+
+    const sourceCell = document.createElement("td");
+    const source = document.createElement("span");
+    source.className = "source-type collection";
+    source.textContent = naraCrosscheckSourceLabel(record);
+    const series = document.createElement("p");
+    series.className = "queue-record-meta";
+    series.textContent = record.sourceSeries || record.repository || "Source series pending.";
+    sourceCell.append(source, series);
+
+    const reviewCell = document.createElement("td");
+    const action = document.createElement("p");
+    action.className = "queue-record-meta";
+    action.textContent = naraCrosscheckReviewAction(record);
+    const compilerUse = document.createElement("p");
+    compilerUse.className = "queue-record-meta";
+    compilerUse.textContent = record.compilerUse || "";
+    reviewCell.append(action, compilerUse);
+
+    const linkCell = document.createElement("td");
+    const links = document.createElement("div");
+    links.className = "queue-link-list";
+    for (const [label, url] of [
+      ["Open PDF", record.pdfUrl],
+      ["Open catalog record", record.itemUrl]
+    ]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = url;
+      link.rel = "noreferrer";
+      link.textContent = label;
+      links.append(link);
+    }
+    const note = document.createElement("p");
+    note.className = "queue-record-meta";
+    note.textContent = record.sourceNoteDraft || "Source-note draft pending.";
+    linkCell.append(links, note);
+
+    row.append(dateCell, leadCell, sourceCell, reviewCell, linkCell);
+    nodes.naraCrosscheckReferencesRoot.append(row);
+  }
+}
+
+function exportNaraCrosscheckDocuments(report = {}) {
+  const fields = [
+    "date",
+    "sortDate",
+    "title",
+    "sourceFamily",
+    "sourceSeries",
+    "identifier",
+    "naid",
+    "confidence",
+    "dateCertainty",
+    "pageCount",
+    "pageCountStatus",
+    "pdfUrl",
+    "catalogUrl",
+    "originalFile",
+    "sourceNoteDraft",
+    "compilerReview",
+    "compilerUse"
+  ];
+  const rows = filteredNaraCrosscheckDocuments(report).map((record) => [
+    record.date,
+    record.sortDate,
+    record.title,
+    naraCrosscheckSourceLabel(record),
+    record.sourceSeries,
+    record.identifier,
+    record.naid,
+    record.confidence,
+    record.dateCertainty,
+    record.pageCount,
+    record.pageCountStatus,
+    record.pdfUrl,
+    record.itemUrl,
+    record.originalFile,
+    record.sourceNoteDraft,
+    naraCrosscheckReviewAction(record),
+    record.compilerUse
+  ]);
+  const csv = [fields, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
+  downloadTextFile("balkans-93-95-nara-source-family-crosscheck-queue.csv", `${csv}\n`, "text/csv;charset=utf-8");
+}
+
+function renderNaraCrosscheckQueue(report = {}) {
+  if (!report || !nodes.naraCrosscheckSummaryRoot) return;
+  renderNaraCrosscheckSummary(report);
+  renderNaraCrosscheckFilters(report);
+  renderNaraCrosscheckDocuments(report);
 }
 
 function libraryTargets(report = {}) {
@@ -3547,6 +3796,28 @@ function bindDefenseJcsSearch(report) {
   });
 }
 
+function bindNaraCrosscheckSearch(report) {
+  if (!report || !nodes.naraCrosscheckSearch) return;
+
+  nodes.naraCrosscheckSearch.addEventListener("input", (event) => {
+    state.naraCrosscheckSearch = event.target.value.trim();
+    renderNaraCrosscheckDocuments(report);
+  });
+
+  nodes.naraCrosscheckReset.addEventListener("click", () => {
+    state.naraCrosscheckSource = "All";
+    state.naraCrosscheckYear = "All";
+    state.naraCrosscheckSearch = "";
+    nodes.naraCrosscheckSearch.value = "";
+    renderNaraCrosscheckFilters(report);
+    renderNaraCrosscheckDocuments(report);
+  });
+
+  nodes.naraCrosscheckExport.addEventListener("click", () => {
+    exportNaraCrosscheckDocuments(report);
+  });
+}
+
 function bindPromotionSearch(report) {
   if (!report || !nodes.promotionSearch) return;
 
@@ -3660,6 +3931,7 @@ async function init() {
     renderPresidentialDailyDiary(reports.presidentialDailyDiary, data);
     renderStateFoiaQueue(reports.stateFoia);
     renderDefenseJcsQueue(reports.defenseJcs);
+    renderNaraCrosscheckQueue(reports.sourceCrosscheck);
     renderClintonLibraryVisit(reports.libraryVisit);
     renderFrusMethod(data, reports);
     renderResearchCollections(researchReport);
@@ -3674,6 +3946,7 @@ async function init() {
     bindPddSearch(reports.presidentialDailyDiary, data);
     bindStateFoiaSearch(reports.stateFoia);
     bindDefenseJcsSearch(reports.defenseJcs);
+    bindNaraCrosscheckSearch(reports.sourceCrosscheck);
     bindResearchSearch(researchReport);
     bindLibrarySearch(reports.libraryVisit);
   } catch (error) {
