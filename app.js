@@ -2932,27 +2932,27 @@ function renderFrusMethod(data, reports = {}) {
 
   nodes.frusMethodRoot.replaceChildren(
     methodCard(
-      "Mission Boundary",
+      "Human Judgment First",
       "Set",
-      "This page is not a proposed FRUS selection list and does not suggest how the volume should be structured.",
-      "It inventories declassified and public U.S. records for chronological consideration by the compiler."
+      "This page is not a proposed FRUS selection list, ranking system, or substitute for compiler judgment.",
+      "It inventories declassified and public U.S. records so the compiler can review the evidence directly."
     ),
     methodCard(
       "Chronological Inventory",
       "Ready",
-      "Records are ordered by document date, not by release packet or item discovery order; inferred dates are labeled.",
+      "Records are ordered by document date, not by release packet or discovery order; inferred dates are labeled and filters can be exported.",
       dateMeasure
     ),
     methodCard(
       "Source Note Drafts",
       "Partial",
-      "Each card starts its draft note in FRUS order: repository, collection/control number, record locator, PDF source pages, then original-document metadata to verify.",
+      "Each card starts its draft note in FRUS order, while OCR candidates and unresolved checks remain labeled for human verification.",
       `${sourceNotes.length}/${documents.length} draft source notes; ${sourceRanges.length}/${documents.length} source page ranges.`
     ),
     methodCard(
       "Declassification Accounting",
       "Partial",
-      "Packet PDFs are reduced to the pages of each memo or record, with the packet first page appended as an annotation sheet; public statements retain GovInfo source pagination.",
+      "Packet PDFs are reduced to the pages of each memo or record, with page counts, source ranges, and annotation sheets preserved for audit.",
       `${sumPages(documents)} counted pages; ${direct.length} direct PDFs; ${extracted.length} extracted PDFs; ${inferredDates.length} inferred-date records; ${conversations.length} memcon/telcon records.`
     )
   );

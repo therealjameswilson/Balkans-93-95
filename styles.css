@@ -292,6 +292,41 @@ dd {
   line-height: 1.56;
 }
 
+.review-posture {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  margin: -10px 0 18px;
+  background: rgba(215, 202, 187, 0.78);
+  border: 1px solid rgba(215, 202, 187, 0.86);
+  border-radius: 8px;
+}
+
+.review-posture div {
+  min-width: 0;
+  padding: 14px 16px;
+  background: rgba(255, 253, 248, 0.7);
+}
+
+.review-posture strong,
+.review-posture span {
+  display: block;
+}
+
+.review-posture strong {
+  margin-bottom: 5px;
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.review-posture span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.46;
+}
+
 .audit-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1579,7 +1614,8 @@ td:first-child {
   .library-overview-layout,
   .gap-followup-layout,
   .conversation-tools,
-  .chronology-drilldown {
+  .chronology-drilldown,
+  .review-posture {
     grid-template-columns: 1fr;
   }
 
