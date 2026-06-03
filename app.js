@@ -12,6 +12,7 @@ const REPORT_URLS = {
   defenseJcs: "reports/defense-jcs-source-search.json",
   conversationReconciliation: "reports/presidential-conversation-reconciliation.json",
   sourceNoteAudit: "reports/source-note-verification-audit.json",
+  frusSourceNoteStandardsAudit: "reports/frus-source-note-standards-audit.json",
   presidentialDailyDiary: "reports/presidential-daily-diary-search.json",
   gapRegister: "reports/compiler-gap-register.json",
   libraryVisit: "reports/clinton-library-visit-plan.json",
@@ -2925,6 +2926,7 @@ function renderFrusMethod(data, reports = {}) {
   const sourceNotes = documents.filter((record) => record.sourceNote);
   const sourceRanges = documents.filter((record) => record.sourcePdfPages);
   const inferredDates = documents.filter((record) => record.dateCertainty === "inferred");
+  const frusAudit = reports.frusSourceNoteStandardsAudit?.summary;
   const dateYears = groupCounts(documents, (record) => (record.sortDate || "").slice(0, 4)).sort((a, b) =>
     a.label.localeCompare(b.label)
   );
@@ -2946,8 +2948,10 @@ function renderFrusMethod(data, reports = {}) {
     methodCard(
       "Source Note Drafts",
       "Partial",
-      "Each card starts its draft note in FRUS order, while OCR candidates and unresolved checks remain labeled for human verification.",
-      `${sourceNotes.length}/${documents.length} draft source notes; ${sourceRanges.length}/${documents.length} source page ranges.`
+      "Draft provenance follows the published FRUS first-footnote order; unresolved markings and document-specific details stay labeled for human verification.",
+      frusAudit
+        ? `${frusAudit.publishedFrusOrderPass}/${frusAudit.totalRecords} records pass provenance-order audit; ${frusAudit.classificationOrHandlingNotTranscribed} still need marking transcription.`
+        : `${sourceNotes.length}/${documents.length} draft source notes; ${sourceRanges.length}/${documents.length} source page ranges.`
     ),
     methodCard(
       "Declassification Accounting",
@@ -3032,12 +3036,19 @@ function renderSourceNotePanel(data, reports = {}) {
   const metadataReady = documents.filter((record) => record.date && record.kind).length;
   const publicStatements = documents.filter((record) => record.documentScope === "Public statement").length;
   const markingSummary = markingAuditSummary(reports);
+  const frusAudit = reports.frusSourceNoteStandardsAudit?.summary;
   const markingCandidateCount = (markingSummary?.withHighConfidenceMarking || 0) + (markingSummary?.withMediumConfidenceMarking || 0);
   const heading = document.createElement("h3");
   heading.textContent = "Source Note Worklist";
   const list = document.createElement("div");
   list.className = "source-note-list";
   list.append(
+    readinessRow(
+      "Published FRUS first-footnote order",
+      frusAudit && frusAudit.provenanceFailures === 0 ? "Ready" : "Partial",
+      frusAudit ? `${frusAudit.publishedFrusOrderPass}/${frusAudit.totalRecords}` : "Audit",
+      "Checks that draft notes lead with repository and file locator, then classification/handling, then drafting, distribution, meeting/call, annotation, excision, and related-document evidence as verified."
+    ),
     readinessRow(
       "Source and locator stem",
       "Ready",
@@ -5037,6 +5048,7 @@ async function loadReports() {
     defenseJcs,
     conversationReconciliation,
     sourceNoteAudit,
+    frusSourceNoteStandardsAudit,
     presidentialDailyDiary,
     gapRegister,
     libraryVisit,
@@ -5055,6 +5067,7 @@ async function loadReports() {
     loadOptionalJson(REPORT_URLS.defenseJcs),
     loadOptionalJson(REPORT_URLS.conversationReconciliation),
     loadOptionalJson(REPORT_URLS.sourceNoteAudit),
+    loadOptionalJson(REPORT_URLS.frusSourceNoteStandardsAudit),
     loadOptionalJson(REPORT_URLS.presidentialDailyDiary),
     loadOptionalJson(REPORT_URLS.gapRegister),
     loadOptionalJson(REPORT_URLS.libraryVisit),
@@ -5075,6 +5088,7 @@ async function loadReports() {
     defenseJcs,
     conversationReconciliation,
     sourceNoteAudit,
+    frusSourceNoteStandardsAudit,
     presidentialDailyDiary,
     gapRegister,
     libraryVisit,

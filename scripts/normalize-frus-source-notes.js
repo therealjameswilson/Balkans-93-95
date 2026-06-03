@@ -108,8 +108,15 @@ function sourcePaginationSentence(record = {}) {
   return "Digital locator recorded; source pagination pending.";
 }
 
+function provenanceSupplementSentence(record = {}) {
+  if (record.documentScope === "Public statement") {
+    return "Official public record; no declassification source-note fields apply.";
+  }
+  return "Distribution, drafting/clearance, meeting or call metadata, read-status, annotations, attachments, and excisions require final comparison against the source image where present.";
+}
+
 function chronologySourceNote(record = {}) {
-  return `Source: ${sourceStem(record)}. ${classificationSentence(record)} ${sourcePaginationSentence(record)}`;
+  return `Source: ${sourceStem(record)}. ${classificationSentence(record)} ${sourcePaginationSentence(record)} ${provenanceSupplementSentence(record)}`;
 }
 
 function researchFileSourceNote(file = {}) {
@@ -170,7 +177,7 @@ function findingAidNote(target = {}) {
 function normalizeData() {
   const data = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
   data.volume.sourceNoteStandard =
-    "FRUS-style source notes follow Office of the Historian practice: repository and collection/file locator first; classification and handling markings next; then drafting/clearance, meeting/place, attachments, annotations, excisions, and related-document notes as verified from the record.";
+    "FRUS-style source notes follow Office of the Historian first-footnote practice: repository and collection/file locator first; original classification and handling status next; then distribution, drafting/clearance, meeting or call place/time, read-status, attachments, annotations, excisions, and related-document notes as verified from the record.";
 
   for (const record of data.documents || []) {
     record.sourceNote = chronologySourceNote(record);

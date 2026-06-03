@@ -86,6 +86,9 @@ published "About the Series" guidance for FRUS production:
 - `scripts/build-gap-closure-reports.js` builds the Defense/JCS source-base
   report, presidential-conversation reconciliation matrix, and source-note
   verification audit used to close the compiler gap register.
+- `scripts/audit-frus-source-note-standards.js` checks chronology and
+  conversation source-note drafts against published FRUS first-footnote
+  provenance order and writes a separate standards audit.
 - `scripts/build-compiler-gap-register.js` turns the source-family audit into a
   generated compiler-risk register, source-pool list, and extraction/promotion
   queue.
@@ -139,6 +142,10 @@ published "About the Series" guidance for FRUS production:
 - `reports/source-note-verification-audit.json` records FRUS-style source-note
   coverage, page-count coverage, and remaining classification/handling
   transcription queues.
+- `reports/frus-source-note-standards-audit.json` records the published-FRUS
+  source-note provenance audit: repository/file locator first, classification
+  and handling next, then distribution, drafting/clearance, meeting or call
+  details, annotations, excisions, and related-document evidence as verified.
 - `reports/compiler-gap-register.json` and
   `reports/compiler-gap-register.md` record the gap register, source pools, and
   extraction queue.
@@ -275,6 +282,11 @@ The source-note verification audit covers `901` chronology and conversation
 records, finds `0` missing source notes, `0` FRUS-style source-note pattern
 failures, and `0` pending page counts, while keeping `351` records in the
 classification/handling transcription queue for final compiler verification.
+The FRUS source-note standards audit separately checks the same `901`
+chronology and conversation records against published first-footnote provenance
+order, including source stem, repository path, control locator, classification
+or public-record status, page accounting, annotation-sheet treatment, and
+supplemental-detail queues.
 The OCR marking passes now cover all `344` chronology records in the live
 source-note finalization queue: `125` high-confidence and `35`
 medium-confidence classification/handling candidates, plus `162`

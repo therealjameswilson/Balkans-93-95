@@ -1,22 +1,52 @@
 {
-  "generatedAt": "2026-06-03T02:17:34.743Z",
-  "missionBoundary": "This audit verifies source-note data quality for the public compiler workspace. It is not final FRUS source-note clearance.",
+  "generatedAt": "2026-06-03T02:17:34.833Z",
+  "missionBoundary": "This audit checks whether draft provenance notes follow published FRUS first-footnote order. It does not clear the notes for publication or decide which records belong in the volume.",
+  "publishedFrusOrder": "Repository and collection/file locator first; original classification and handling status next; then distribution, drafting/clearance, place/time, read-status, attachments, annotations, excisions, and related-document evidence as verified from the record. Digital page and extraction accounting are retained here as a compiler-review layer.",
+  "officialStandardBasis": [
+    {
+      "label": "About the Series: Editorial Methodology",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries",
+      "use": "The first footnote gives the document source, original classification, distribution, drafting information, background, and read-by evidence when known."
+    },
+    {
+      "label": "Volume XXXI Sources",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/sources",
+      "use": "The source essay organizes provenance by repository, record group or office file, lot file, Presidential Library collection, and source family."
+    },
+    {
+      "label": "Department of State memcon example",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d72",
+      "use": "Published note gives Department of State file path, lot and folder, classification/handling, meeting place, drafting/clearance, and related-volume reference."
+    },
+    {
+      "label": "Presidential Library notes example",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d73",
+      "use": "Published note gives Presidential Library collection and file path, classification status, drafting evidence, absence of a formal memcon, editorial transcription, and related-document references."
+    },
+    {
+      "label": "Read-status and copy-routing example",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d78",
+      "use": "Published note adds copy-routing and stamped read-status information after source and classification."
+    }
+  ],
   "summary": {
+    "totalRecords": 901,
     "chronologyRecords": 870,
-    "conversationRecords": 31,
-    "sourceNotesPresent": 901,
-    "missingSourceNotes": 0,
-    "sourceNotePatternFailures": 0,
-    "pageCountPending": 0,
-    "classificationOrHandlingNotTranscribed": 351,
-    "stateFoiaCandidateSourceNotes": 250,
-    "naraCandidateSourceNotes": 163,
-    "btfCandidateSourceNotes": 321
+    "conversationCrossReferences": 31,
+    "sourcePrefixPass": 901,
+    "noRawUrlPass": 901,
+    "repositoryPathPass": 901,
+    "collectionOrControlLocatorPass": 901,
+    "classificationOrPublicStatusPass": 901,
+    "pageAccountingPass": 901,
+    "annotationSheetPass": 901,
+    "supplementalDetailOrQueuePass": 901,
+    "publishedFrusOrderPass": 901,
+    "provenanceFailures": 0,
+    "classificationOrHandlingNotTranscribed": 351
   },
   "unresolvedRecords": {
-    "missingSourceNotes": [],
-    "sourceNotePatternFailures": [],
-    "pageCountPending": [],
+    "provenanceFailures": [],
     "classificationOrHandlingNotTranscribed": [
       "cia-btf-12298",
       "cia-btf-12299",
