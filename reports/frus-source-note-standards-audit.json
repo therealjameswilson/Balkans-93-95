@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T02:17:34.833Z",
+  "generatedAt": "2026-10-31T00:16:39.284Z",
   "missionBoundary": "This audit checks whether draft provenance notes follow published FRUS first-footnote order. It does not clear the notes for publication or decide which records belong in the volume.",
   "publishedFrusOrder": "Repository and collection/file locator first; original classification and handling status next; then distribution, drafting/clearance, place/time, read-status, attachments, annotations, excisions, and related-document evidence as verified from the record. Digital page and extraction accounting are retained here as a compiler-review layer.",
   "officialStandardBasis": [
@@ -30,20 +30,20 @@
     }
   ],
   "summary": {
-    "totalRecords": 901,
-    "chronologyRecords": 870,
+    "totalRecords": 1185,
+    "chronologyRecords": 1154,
     "conversationCrossReferences": 31,
-    "sourcePrefixPass": 901,
-    "noRawUrlPass": 901,
-    "repositoryPathPass": 901,
-    "collectionOrControlLocatorPass": 901,
-    "classificationOrPublicStatusPass": 901,
-    "pageAccountingPass": 901,
-    "annotationSheetPass": 901,
-    "supplementalDetailOrQueuePass": 901,
-    "publishedFrusOrderPass": 901,
+    "sourcePrefixPass": 1185,
+    "noRawUrlPass": 1185,
+    "repositoryPathPass": 1185,
+    "collectionOrControlLocatorPass": 1185,
+    "classificationOrPublicStatusPass": 1185,
+    "pageAccountingPass": 1185,
+    "annotationSheetPass": 1185,
+    "supplementalDetailOrQueuePass": 1185,
+    "publishedFrusOrderPass": 1185,
     "provenanceFailures": 0,
-    "classificationOrHandlingNotTranscribed": 351
+    "classificationOrHandlingNotTranscribed": 635
   },
   "unresolvedRecords": {
     "provenanceFailures": [],

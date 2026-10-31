@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-03T02:17:34.745Z",
-  "documentRecordCount": 870,
+  "generatedAt": "2026-10-31T00:00:00Z",
+  "documentRecordCount": 1154,
   "conversationRecordCount": 31,
   "extractedDocumentCount": 77,
-  "directDocumentCount": 793,
-  "documentPageTotal": 3939,
+  "directDocumentCount": 1077,
+  "documentPageTotal": 5576,
   "sourcePacketAnnotation": "Every packet extraction appends page 1 of the original source PDF after the extracted document pages.",
   "extracted": [
     {
@@ -4931,5 +4931,11 @@
       "annotationSheet": null,
       "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, Bosnian Declassified Records, BTF item 12618. Classification and handling markings not yet transcribed. Digital copy, source PDF pp. 1-18; 18 pages. Distribution, drafting/clearance, meeting or call metadata, read-status, annotations, attachments, and excisions require final comparison against the source image where present."
     }
-  ]
+  ],
+  "octoberRelease": {
+    "coreLeadCount": 284,
+    "fullPdfPages": 1637,
+    "pageBasis": "Physical pages from the release text manifest; complete packets may contain non-Bosnia content. Facsimile comparison pending.",
+    "reviewData": "../data/october-2026-review.json"
+  }
 }

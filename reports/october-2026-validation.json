@@ -1,0 +1,32 @@
+{
+  "validatedAt": "2026-10-31",
+  "baselineCommit": "ea0280e4a881bf305dbf799c37150b73aa3af508",
+  "records": 345,
+  "physicalPdfPages": 1754,
+  "core": 284,
+  "coreSubstantive": 277,
+  "coreReference": 7,
+  "laterContext": 31,
+  "verification": 30,
+  "physicalPageCitationsValidated": 445,
+  "excerptsMatchedToRecoveredText": 257,
+  "checks": [
+    "870 existing document rows byte-equivalent after JSON parse",
+    "31 existing conversation rows unchanged",
+    "284 core rows added; context and unresolved rows excluded from core",
+    "1,185/1,185 source-note standards pass",
+    "Unique hashed-ID plus full-PDF-URL keys",
+    "Every cited page exists in recovered text",
+    "Every excerpt matches normalized recovered page text",
+    "JSON/JavaScript mirrors equal",
+    "JavaScript syntax and git diff --check pass"
+  ],
+  "reviewDataSha256": "08ade18bca478399b7eac2a1dfb5995fb949f58a0c03674bfce7bd81654737a3",
+  "sourceFacsimileVerification": "Pending; these checks validate recovered text and inventory integrity, not archival/image accuracy.",
+  "browserChecks": [
+    "Desktop and 390px mobile release search and scope filters pass",
+    "No undefined evidence text",
+    "Deep links reveal the selected release record",
+    "No browser errors"
+  ]
+}

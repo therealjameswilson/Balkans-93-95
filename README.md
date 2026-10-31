@@ -213,9 +213,9 @@ The first-pass source matrix supports completeness checks across:
   source-family gaps.
 - Paris signing and daily schedule contextual sources.
 
-## Evidence Audit
+## Earlier source-search and audit baseline
 
-The page currently surfaces `870` chronological declassified and public document
+The pre-October baseline surfaced `870` chronological declassified and public document
 records plus `31` separate presidential memcon/telcon conversation records. The
 document inventory has `3,939` counted pages, the conversation audit has `166`
 counted pages, and the public chronology includes `446` Clinton Public Papers
@@ -305,6 +305,14 @@ The GovInfo Public Papers sweep searched all `3,472` document granules across
 the six 1993-1995 Clinton Public Papers packages, found `466` in-period
 Balkans-related hits, excluded `20` reviewed false positives, and adds `446`
 public records totaling `1,864` counted Public Papers pages.
+
+## October 30, 2026 release integration
+
+The current inventory contains **1,154 chronology records**, plus the **31 existing conversation cross-references**. This update appends **284 dated 1993–1995 documentary leads** (277 substantive and 7 reference items) from the release, pending compiler selection. Their full source PDFs contain 1,637 physical pages; not every page is substantive or specific to Bosnia. The combined document/packet page count is 5,576.
+
+The separate searchable review contains all **345** records examined in case M-2013-12509: the 284 dated core leads, **31 later context records**, and **30 date/content verification leads**. It retains distinct relays, translations, covers and possible copies, with physical PDF citations, source links, compiler rationale, missing evidence and uncertainty. Historical dates are separated from the release posting date. Summaries use recovered text/OCR; facsimiles and source notes still need verification.
+
+`data/october-2026-review.json` and its JavaScript mirror drive `release-review.js`. See `reports/october-2026-review.md` for the review method and documentary sequences. Existing compiler decisions, notes and document IDs remain intact. Current source-note audits cover 1,185 chronology/cross-reference records, with no missing notes or page-accounting omissions and 635 classification/handling transcription queues. The gap register adds one open verification risk; older source searches above retain their original scope and counts.
 
 ## Local Preview
 

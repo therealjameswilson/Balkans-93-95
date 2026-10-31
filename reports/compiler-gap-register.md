@@ -2,7 +2,7 @@
 
 Generated: 2026-05-26T02:23:35.625Z
 
-## Summary
+## Historical May 2026 baseline
 
 - 8 compiler-risk gaps tracked.
 - 8 mitigated by a new reproducible source layer or queue.
@@ -163,3 +163,7 @@ Next actions:
 - For State cables, verify cable number, TAGS/SUBJECT, from/to line, and distribution before final source-note clearance.
 - Track attachments-not-printed and wholly withheld cross-references separately.
 
+
+## October 30, 2026 release update
+
+The historical register above is retained. The current JSON register adds one open, high-priority risk for the new release: facsimile, source-note, duplicate and attachment verification. There are now 1,154 chronology records (5,576 full-document/packet pages), plus 31 existing conversation cross-references. The 345-record release review separates 284 dated core leads, 31 later context records and 30 unresolved leads. Its counts are pending compiler selection, not a claim of completeness. See `data/october-2026-review.json` and `reports/october-2026-review.md`.
